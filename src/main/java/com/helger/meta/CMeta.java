@@ -30,7 +30,7 @@ import com.helger.commons.annotations.PresentForCodeCoverage;
 @Immutable
 public final class CMeta
 {
-  public static final File BASE_PATH = new File (".").getAbsoluteFile ().getParentFile ();
+  public static final File GIT_BASE_DIR = new File ("").getAbsoluteFile ().getParentFile ();
 
   @PresentForCodeCoverage
   @SuppressWarnings ("unused")
