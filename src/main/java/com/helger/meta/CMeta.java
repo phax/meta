@@ -16,6 +16,8 @@
  */
 package com.helger.meta;
 
+import java.io.File;
+
 import javax.annotation.concurrent.Immutable;
 
 import com.helger.commons.annotations.PresentForCodeCoverage;
@@ -28,6 +30,7 @@ import com.helger.commons.annotations.PresentForCodeCoverage;
 @Immutable
 public final class CMeta
 {
+  public static final File BASE_PATH = new File (".").getAbsoluteFile ().getParentFile ();
 
   @PresentForCodeCoverage
   @SuppressWarnings ("unused")
