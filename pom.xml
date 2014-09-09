@@ -26,7 +26,7 @@
   </parent>
   <artifactId>meta</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
   <name>meta</name>
   <description>A meta project for easy management of my other projects :)</description>
   <url>https://github.com/phax/meta</url>
@@ -41,9 +41,9 @@
   </licenses>
   
   <scm>
-    <connection>scm:git:git@github.com:phax/ph-datetime.git</connection>
-    <developerConnection>scm:git:git@github.com:phax/ph-datetime.git</developerConnection>
-    <url>http://github.com/phax/ph-datetime</url>
+    <connection>scm:git:git@github.com:phax/meta.git</connection>
+    <developerConnection>scm:git:git@github.com:phax/meta.git</developerConnection>
+    <url>http://github.com/phax/meta</url>
     <tag>HEAD</tag>
   </scm>
   

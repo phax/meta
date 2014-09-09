@@ -16,7 +16,7 @@ import com.helger.commons.string.StringHelper;
 public enum EProject
 {
   AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY),
-  AS2_SERVER ("as2-server", EProjectType.JAVA_APPLICATION),
+  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY),
   BOTANIK_MANAGER ("botanik-manager", EProjectType.JAVA_WEB_APPLICATION),
   CIPA_START_JMS_API ("cipa-start-jms-api", EProjectType.JAVA_LIBRARY),
   CIPA_START_JMSRECEIVER ("cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY),
