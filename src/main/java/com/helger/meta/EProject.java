@@ -53,6 +53,7 @@ public enum EProject
   PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY),
+  PH_SCH2XSLT_MAVEN_PLUGIN ("ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN),
   PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_TESTFILES ("ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),

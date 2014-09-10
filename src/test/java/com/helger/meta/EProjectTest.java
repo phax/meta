@@ -37,7 +37,8 @@ public class EProjectTest
     {
       // Ignore all Wiki directories
       if (aFile.isDirectory () && !aFile.getName ().endsWith (".wiki"))
-        assertNotNull (aFile.getName () + " is missing", EProject.getFromProjectNameOrNull (aFile.getName ()));
+        assertNotNull (aFile.getName () + " is missing in the project list",
+                       EProject.getFromProjectNameOrNull (aFile.getName ()));
     }
   }
 }
