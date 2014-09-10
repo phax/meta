@@ -2,9 +2,6 @@ package com.helger.meta.buildsystem;
 
 import javax.annotation.Nonnull;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
@@ -21,21 +18,12 @@ import com.helger.meta.EProjectType;
  *
  * @author Philip Helger
  */
-public final class MainCheckPOM
+public final class MainCheckPOM extends AbstractMainUtils
 {
-  private static final Logger s_aLogger = LoggerFactory.getLogger (MainCheckPOM.class);
-  private static int s_nWarnCount = 0;
-
   // Parent POM requirements
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
   private static final String PARENT_POM_VERSION = "1.3";
-
-  private static void _warn (@Nonnull final EProject eProject, @Nonnull final String sMsg)
-  {
-    s_aLogger.warn ("Project " + eProject.getProjectName () + ": " + sMsg);
-    s_nWarnCount++;
-  }
 
   @Nonnull
   @Nonempty
@@ -178,6 +166,6 @@ public final class MainCheckPOM
           throw new IllegalStateException ("Failed to read " + e.getPOMFile ());
         _validatePOM (e, aDoc);
       }
-    s_aLogger.info ("Done - " + s_nWarnCount + " warning(s)");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
   }
 }
