@@ -30,22 +30,32 @@ import com.helger.meta.EProjectType;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractMainUtils
 {
-  private static void _checkFile (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
+  private static void _checkFileExisting (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
       _warn (eProject, "File " + f.getAbsolutePath () + " does not exist!");
   }
 
+  private static void _checkFileNotExisting (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
+  {
+    final File f = new File (eProject.getBaseDir (), sRelativeFilename);
+    if (f.exists ())
+      _warn (eProject, "File " + f.getAbsolutePath () + " should not exist!");
+  }
+
   private static void _validateProject (@Nonnull final EProject eProject)
   {
-    _checkFile (eProject, ".classpath");
-    _checkFile (eProject, ".project");
-    _checkFile (eProject, "pom.xml");
-    _checkFile (eProject, "README.MD");
-    _checkFile (eProject, "findbugs-exclude.xml");
-    _checkFile (eProject, "src/etc/javadoc.css");
-    _checkFile (eProject, "src/etc/license-template.txt");
+    _checkFileExisting (eProject, ".classpath");
+    _checkFileExisting (eProject, ".project");
+    _checkFileExisting (eProject, "pom.xml");
+    _checkFileExisting (eProject, "README.MD");
+    _checkFileExisting (eProject, "findbugs-exclude.xml");
+    _checkFileExisting (eProject, "src/etc/javadoc.css");
+    _checkFileExisting (eProject, "src/etc/license-template.txt");
+    _checkFileExisting (eProject, "src/main/resources/LICENSE");
+    _checkFileExisting (eProject, "src/main/resources/NOTICE");
+    _checkFileNotExisting (eProject, "LICENSE");
   }
 
   public static void main (final String [] args)
