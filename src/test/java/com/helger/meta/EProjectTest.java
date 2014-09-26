@@ -52,7 +52,7 @@ public class EProjectTest
     for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR))
     {
       // Ignore all Wiki directories
-      if (aFile.isDirectory () && !aFile.getName ().endsWith (".wiki"))
+      if (aFile.isDirectory () && !aFile.getName ().endsWith (".wiki") && !aFile.getName ().endsWith (".pages"))
         assertNotNull (aFile.getName () + " is missing in the project list",
                        EProject.getFromProjectNameOrNull (aFile.getName ()));
     }
