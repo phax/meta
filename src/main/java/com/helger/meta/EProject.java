@@ -74,6 +74,7 @@ public enum EProject
   PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_TESTFILES ("ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_VALIDATOR ("ph-schematron-validator", EProjectType.JAVA_LIBRARY),
   PH_SCOPES ("ph-scopes", EProjectType.JAVA_LIBRARY),
   PH_SETTINGS ("ph-settings", EProjectType.JAVA_LIBRARY),
   PH_TINYMCE4 ("ph-tinymce4", EProjectType.JAVA_LIBRARY),
