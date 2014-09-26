@@ -32,6 +32,9 @@ public final class CMeta
 {
   public static final File GIT_BASE_DIR = new File ("").getAbsoluteFile ().getParentFile ();
 
+  public static final String EXTENSION_PAGES_PROJECT = ".pages";
+  public static final String EXTENSION_WIKI_PROJECT = ".wiki";
+
   @PresentForCodeCoverage
   @SuppressWarnings ("unused")
   private static final CMeta s_aInstance = new CMeta ();

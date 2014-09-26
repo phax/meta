@@ -50,11 +50,15 @@ public class EProjectTest
   public void testForMissingEProject ()
   {
     for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR))
-    {
-      // Ignore all Wiki directories
-      if (aFile.isDirectory () && !aFile.getName ().endsWith (".wiki") && !aFile.getName ().endsWith (".pages"))
+      if (aFile.isDirectory ())
+      {
+        // Ignore all Pages and Wiki directories
+        String sProjectName = aFile.getName ();
+        sProjectName = StringHelper.trimEnd (sProjectName, CMeta.EXTENSION_PAGES_PROJECT);
+        sProjectName = StringHelper.trimEnd (sProjectName, CMeta.EXTENSION_WIKI_PROJECT);
+
         assertNotNull (aFile.getName () + " is missing in the project list",
-                       EProject.getFromProjectNameOrNull (aFile.getName ()));
-    }
+                       EProject.getFromProjectNameOrNull (sProjectName));
+      }
   }
 }
