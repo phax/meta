@@ -17,13 +17,12 @@
 package com.helger.meta.cmdline;
 
 import java.io.File;
-import java.nio.charset.Charset;
 
 import javax.annotation.Nonnull;
 
 import com.helger.commons.annotations.Nonempty;
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
+import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.EProject;
 
@@ -33,29 +32,15 @@ import com.helger.meta.EProject;
  *
  * @author Philip Helger
  */
-public final class MainCreateBatchFiles
+public final class MainCreateBatchFiles extends AbstractProjectMain
 {
   private static final int PROJECT_COUNT = EProject.values ().length;
-  private static final String HEADER = "@echo off\n" +
-                                       "rem This files is generated - DO NOT EDIT\n" +
-                                       "rem A total of " +
-                                       PROJECT_COUNT +
-                                       " projects are handled\n";
-  private static final String FOOTER = "goto end\n"
-                                       + ":error\n"
-                                       + "echo An error occured!!!\n"
-                                       + "pause\n"
-                                       + "goto exit\n"
-                                       + ":end\n"
-                                       + "echo Successfully done\n"
-                                       + ":exit\n";
-  private static final Charset CHARSET_BATCH = CCharset.CHARSET_ISO_8859_1_OBJ;
 
   private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
                                         @Nonnull @Nonempty final String sBatchFileName)
   {
     final StringBuilder aSB = new StringBuilder ();
-    aSB.append (HEADER);
+    aSB.append (BATCH_HEADER);
     int nIndex = 1;
     for (final EProject e : EProject.values ())
     {
@@ -72,8 +57,8 @@ public final class MainCreateBatchFiles
          .append ("\nif errorlevel 1 goto error\ncd ..\n");
       ++nIndex;
     }
-    aSB.append (FOOTER);
-    SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), CHARSET_BATCH);
+    aSB.append (BATCH_FOOTER);
+    SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }
 
   private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand,

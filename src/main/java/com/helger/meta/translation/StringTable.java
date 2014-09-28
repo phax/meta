@@ -137,6 +137,7 @@ public final class StringTable implements ICloneable <StringTable>
     Map <String, String> aMap = m_aMap.get (sID);
     if (aMap == null)
     {
+      // Tree map for defined order
       aMap = new TreeMap <String, String> ();
       m_aMap.put (sID, aMap);
     }

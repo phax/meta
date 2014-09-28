@@ -16,11 +16,15 @@
  */
 package com.helger.meta;
 
+import java.nio.charset.Charset;
+
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.helger.commons.charset.CCharset;
 
 /**
  * Base class for the main utilities in this package
@@ -29,6 +33,17 @@ import org.slf4j.LoggerFactory;
  */
 public abstract class AbstractProjectMain
 {
+  public static final String BATCH_HEADER = "@echo off\n" + "rem This files is generated - DO NOT EDIT\n";
+  public static final String BATCH_FOOTER = "goto end\n"
+                                            + ":error\n"
+                                            + "echo An error occured!!!\n"
+                                            + "pause\n"
+                                            + "goto exit\n"
+                                            + ":end\n"
+                                            + "echo Successfully done\n"
+                                            + ":exit\n";
+  public static final Charset BATCH_CHARSET = CCharset.CHARSET_ISO_8859_1_OBJ;
+
   protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 

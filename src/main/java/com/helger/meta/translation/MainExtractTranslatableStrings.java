@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -17,15 +19,19 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
+import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.text.impl.TextProvider;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.CMeta;
 import com.helger.meta.EProject;
 import com.helger.meta.asm.ASMUtils;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
+  private static Set <String> s_aActions = new LinkedHashSet <String> ();
+
   @Nullable
   private static StringTable _extractSTFromFile (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
@@ -82,6 +88,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     // Second find the initialization calls in the static ctor
     final MethodNode aStaticInit = ASMUtils.findMethod (cn, "<clinit>");
     final List <String> aAllConstantStrings = new ArrayList <String> ();
+    final String sIDPrefix = CGStringHelper.getClassFromPath (cn.name) + ".";
     // static initializer
     final Iterator <?> aInstructionIter = aStaticInit.instructions.iterator ();
     while (aInstructionIter.hasNext ())
@@ -98,8 +105,9 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         if (aAllConstantStrings.size () == 3)
         {
           // We have ID, DE and EN texts
-          ret.setText (aAllConstantStrings.get (0), TextProvider.DE, aAllConstantStrings.get (1));
-          ret.setText (aAllConstantStrings.get (0), TextProvider.EN, aAllConstantStrings.get (2));
+          final String sID = sIDPrefix + aAllConstantStrings.get (0);
+          ret.setText (sID, TextProvider.DE, aAllConstantStrings.get (1));
+          ret.setText (sID, TextProvider.EN, aAllConstantStrings.get (2));
           aAllConstantStrings.clear ();
         }
       }
@@ -144,6 +152,16 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           }
         }
       }
+
+    if (!aSTProject.isEmpty ())
+    {
+      final File aDstFileXML = new File (eProject.getBaseDir (),
+                                         "src/main/resources/translation/translatable-texts.xml");
+      if (StringTableSerializer.writeStringTableAsXML (aDstFileXML, aSTProject).isSuccess ())
+        s_aActions.add ("cd " + eProject.getProjectName () + " && call mvn license:format && cd..");
+      else
+        _warn (eProject, "Failed to writing translatable-texts.xml");
+    }
   }
 
   public static void main (final String [] args) throws IOException
@@ -153,5 +171,15 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
       if (eProject.getProjectType ().hasJavaCode ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    if (!s_aActions.isEmpty ())
+    {
+      final StringBuilder aSB = new StringBuilder (BATCH_HEADER);
+      for (final String sAction : s_aActions)
+        aSB.append (sAction).append ('\n');
+      aSB.append (BATCH_FOOTER);
+      final File aDestFile = new File (CMeta.GIT_BASE_DIR, "translation-actions.cmd");
+      SimpleFileIO.writeFile (aDestFile, aSB.toString (), BATCH_CHARSET);
+      s_aLogger.info ("Execute " + aDestFile.getAbsolutePath ());
+    }
   }
 }
