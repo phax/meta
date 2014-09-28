@@ -1,7 +1,9 @@
-package com.helger.meta.asm.translation;
+package com.helger.meta.translation;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -15,6 +17,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.ICloneable;
+import com.helger.commons.ValueEnforcer;
+import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.annotations.ReturnsMutableObject;
 import com.helger.commons.equals.EqualsUtils;
@@ -23,9 +27,10 @@ import com.helger.commons.state.EChange;
 import com.helger.commons.string.ToStringGenerator;
 
 /**
- * Represents a single string table, mapping and ID to the different texts.
+ * Represents a string table. This is a mapping from ID to texts in different
+ * locales.
  *
- * @author philip
+ * @author Philip Helger
  */
 @NotThreadSafe
 public final class StringTable implements ICloneable <StringTable>
@@ -86,8 +91,20 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  public EChange setText (@Nonnull final String sID, @Nonnull final String sLocale, @Nonnull final String sNewText)
+  public EChange setText (@Nonnull final String sID, @Nonnull final Locale aLocale, @Nonnull final String sNewText)
   {
+    return setText (sID, aLocale.getLanguage (), sNewText);
+  }
+
+  @Nonnull
+  public EChange setText (@Nonnull final String sID,
+                          @Nonnull @Nonempty final String sLocale,
+                          @Nonnull final String sNewText)
+  {
+    ValueEnforcer.notNull (sID, "ID");
+    ValueEnforcer.notEmpty (sLocale, "Locale");
+    ValueEnforcer.notNull (sNewText, "NewText");
+
     final Map <String, String> aMap = m_aMap.get (sID);
     if (m_bWarnOnDuplicateIDs && aMap != null && aMap.containsKey (sLocale))
     {
@@ -109,14 +126,13 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  public EChange overwriteText (@Nonnull final String sID, @Nonnull final String sLocale, @Nonnull final String sText)
+  public EChange overwriteText (@Nonnull final String sID,
+                                @Nonnull @Nonempty final String sLocale,
+                                @Nonnull final String sText)
   {
-    if (sID == null)
-      throw new NullPointerException ("ID");
-    if (sLocale == null)
-      throw new NullPointerException ("locale");
-    if (sText == null)
-      throw new NullPointerException ("text");
+    ValueEnforcer.notNull (sID, "ID");
+    ValueEnforcer.notEmpty (sLocale, "Locale");
+    ValueEnforcer.notNull (sText, "Text");
 
     Map <String, String> aMap = m_aMap.get (sID);
     if (aMap == null)
@@ -157,7 +173,8 @@ public final class StringTable implements ICloneable <StringTable>
     return m_aMap;
   }
 
-  public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText, @Nonnull final Set <String> aIDCont)
+  public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText,
+                                        @Nonnull final Collection <String> aIDCont)
   {
     for (final Map.Entry <String, Map <String, String>> aEntry : m_aMap.entrySet ())
     {

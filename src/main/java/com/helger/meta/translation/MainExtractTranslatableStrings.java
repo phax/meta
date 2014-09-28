@@ -1,4 +1,4 @@
-package com.helger.meta.asm.translation;
+package com.helger.meta.translation;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,46 +26,13 @@ import com.helger.meta.asm.ASMUtils;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
-  public static final class ExtractItem
-  {
-    private final String m_sID;
-    private final String m_sDE;
-    private final String m_sEN;
-
-    public ExtractItem (@Nonnull final String sID, @Nonnull final String sDE, @Nonnull final String sEN)
-    {
-      m_sID = sID;
-      m_sDE = sDE;
-      m_sEN = sEN;
-    }
-
-    @Nonnull
-    public String getID ()
-    {
-      return m_sID;
-    }
-
-    @Nonnull
-    public String getDE ()
-    {
-      return m_sDE;
-    }
-
-    @Nonnull
-    public String getEN ()
-    {
-      return m_sEN;
-    }
-  }
-
   @Nullable
-  private static List <ExtractItem> _extractFromFile (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  private static StringTable _extractSTFromFile (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
-    final List <ExtractItem> ret = new ArrayList <ExtractItem> ();
+    final StringTable ret = new StringTable ();
 
     // First extract static and non-static fields
     boolean m_bHasTP = false;
-    ;
     for (final Object oField : cn.fields)
     {
       final FieldNode fn = (FieldNode) oField;
@@ -131,9 +98,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         if (aAllConstantStrings.size () == 3)
         {
           // We have ID, DE and EN texts
-          ret.add (new ExtractItem (aAllConstantStrings.get (0),
-                                    aAllConstantStrings.get (1),
-                                    aAllConstantStrings.get (2)));
+          ret.setText (aAllConstantStrings.get (0), TextProvider.DE, aAllConstantStrings.get (1));
+          ret.setText (aAllConstantStrings.get (0), TextProvider.EN, aAllConstantStrings.get (2));
           aAllConstantStrings.clear ();
         }
       }
@@ -154,7 +120,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     if (false)
       s_aLogger.info ("  " + eProject.getProjectName ());
     final File aTargetDir = new File (eProject.getBaseDir (), "target/classes").getCanonicalFile ();
-    final String sTargetDir = aTargetDir.getAbsolutePath ();
+
+    final StringTable aSTProject = new StringTable ();
 
     // Find all class files
     for (final File aClassFile : new FileSystemRecursiveIterator (aTargetDir))
@@ -171,9 +138,9 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           if (bIsRelevant)
           {
             // Enum and annotated
-            final List <ExtractItem> aItems = _extractFromFile (eProject, cn);
-            if (aItems != null)
-            {}
+            final StringTable aSTFile = _extractSTFromFile (eProject, cn);
+            if (aSTFile != null)
+              aSTProject.addAll (aSTFile);
           }
         }
       }

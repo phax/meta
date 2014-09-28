@@ -1,4 +1,4 @@
-package com.helger.meta.asm.translation;
+package com.helger.meta.translation;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.Immutable;
