@@ -17,6 +17,7 @@
 package com.helger.meta;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
@@ -43,6 +44,16 @@ public class EProjectTest
       assertTrue (e.getPOMFile ().exists ());
       assertNotNull (e.getProjectType ());
       assertSame (e, EProject.getFromProjectNameOrNull (e.getProjectName ()));
+      if (e.isPublished ())
+      {
+        assertNotNull (e.getLastPublishedVersionString ());
+        assertNotNull (e.getLastPublishedVersion ());
+      }
+      else
+      {
+        assertNull (e.getLastPublishedVersionString ());
+        assertNull (e.getLastPublishedVersion ());
+      }
     }
   }
 

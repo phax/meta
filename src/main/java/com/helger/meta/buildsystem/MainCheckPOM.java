@@ -21,10 +21,13 @@ import javax.annotation.Nonnull;
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
+import com.helger.commons.microdom.IMicroNode;
 import com.helger.commons.microdom.serialize.MicroReader;
+import com.helger.commons.microdom.utils.MicroRecursiveIterator;
 import com.helger.commons.microdom.utils.MicroUtils;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
+import com.helger.commons.version.Version;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
 
@@ -170,6 +173,87 @@ public final class MainCheckPOM extends AbstractMainUtils
           _warn (eProject, "Unexpected SCM tag '" + sTag + "'. Expected '" + sExpectedTag + "'");
       }
     }
+
+    // Check all relevant dependencies or the like
+    for (final IMicroNode aNode : new MicroRecursiveIterator (eRoot))
+      if (aNode.isElement ())
+      {
+        final IMicroElement aElement = (IMicroElement) aNode;
+        // groupId is optional e.g. for the defined artefact
+        if (aElement.getLocalName ().equals ("artifactId"))
+        {
+          // Check if the current artefact is in the "com.helger" group
+          final String sGroupID = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                         "groupId");
+          if (PARENT_POM_GROUPID.equals (sGroupID))
+          {
+            // Match!
+            final String sArtifactID = aElement.getTextContentTrimmed ();
+            final EProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
+            if (eReferencedProject == null)
+            {
+              _warn (eProject, "Referenced unknown project '" + sArtifactID + "'");
+            }
+            else
+            {
+              // Version is optional e.g. when dependencyManagement is used
+              final String sVersion = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                             "version");
+              if (sVersion != null)
+              {
+                final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT");
+                if (eReferencedProject.isPublished ())
+                {
+                  // Referenced project published at least once
+                  final Version aVersionInFile = new Version (bIsSnapshot
+                                                                         ? StringHelper.trimEnd (sVersion, "-SNAPSHOT")
+                                                                         : sVersion);
+                  if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
+                  {
+                    // Version in file lower than known
+                    _warn (eProject, sArtifactID +
+                                     ":" +
+                                     sVersion +
+                                     " is out of date. The latest version is " +
+                                     eReferencedProject.getLastPublishedVersionString ());
+                  }
+                  else
+                    if (aVersionInFile.equals (eReferencedProject.getLastPublishedVersion ()))
+                    {
+                      // Version matches - check for SNAPSHOT differences
+                      if (bIsSnapshot)
+                        _warn (eProject, sArtifactID +
+                                         ":" +
+                                         sVersion +
+                                         " is out of date. The latest version is " +
+                                         eReferencedProject.getLastPublishedVersionString ());
+                    }
+                    else
+                      if (aVersionInFile.isGreaterThan (eReferencedProject.getLastPublishedVersion ()))
+                      {
+                        // Version in file greater than in referenced project
+                        if (!bIsSnapshot)
+                          _warn (eProject, "Referenced project 'last published version' of '" +
+                                           eReferencedProject +
+                                           "' is out of date. Should be " +
+                                           sVersion +
+                                           " instead of " +
+                                           eReferencedProject.getLastPublishedVersionString ());
+                      }
+                }
+                else
+                {
+                  // Referenced project not yet published
+                  if (!bIsSnapshot)
+                    _warn (eProject, "Referenced project " +
+                                     eReferencedProject +
+                                     " is marked as not published, but a non-SNAPSHOT version is referenced!");
+                }
+              }
+            }
+          }
+        }
+      }
   }
 
   public static void main (final String [] args)
