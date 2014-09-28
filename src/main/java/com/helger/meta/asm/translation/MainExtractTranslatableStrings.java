@@ -4,15 +4,19 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import org.objectweb.asm.Type;
+import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
+import org.objectweb.asm.tree.LdcInsnNode;
+import org.objectweb.asm.tree.MethodNode;
 
-import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.text.impl.TextProvider;
@@ -54,29 +58,22 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     }
   }
 
-  @Nonnull
-  @ReturnsMutableCopy
+  @Nullable
   private static List <ExtractItem> _extractFromFile (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final List <ExtractItem> ret = new ArrayList <ExtractItem> ();
 
     // First extract static and non-static fields
-    final List <String> aAllEnumConstants = new ArrayList <String> ();
-    final List <String> aAllFields = new ArrayList <String> ();
+    boolean m_bHasTP = false;
+    ;
     for (final Object oField : cn.fields)
     {
       final FieldNode fn = (FieldNode) oField;
-      if (Modifier.isStatic (fn.access))
+      if (!Modifier.isStatic (fn.access))
       {
-        // $ is used for compiler generated constants
-        if (fn.name.contains ("$"))
-          aAllEnumConstants.add (fn.name);
-      }
-      else
-      {
-        aAllFields.add (fn.name);
         if (fn.name.equals ("m_aTP"))
         {
+          m_bHasTP = true;
           // We have the right field
           if (fn.desc.equals (Type.getDescriptor (TextProvider.class)))
           {
@@ -101,9 +98,54 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
                            " of type " +
                            Type.getType (fn.desc) +
                            " should not be in a translatable enum - remove this member");
+          return null;
         }
       }
     }
+
+    // Small checks
+    if (!m_bHasTP)
+      _warn (eProject, cn.name + " is missing the standard m_aTP field");
+
+    // Find the constructor
+    final MethodNode aCtor = ASMUtils.findMethod (cn, "<init>");
+    if (!ASMUtils.containsStaticCall (aCtor, TextProvider.class))
+      _warn (eProject, cn.name + " should use the TextProvider static factory methods in the constructor");
+
+    // Second find the initialization calls in the static ctor
+    final MethodNode aStaticInit = ASMUtils.findMethod (cn, "<clinit>");
+    final List <String> aAllConstantStrings = new ArrayList <String> ();
+    // static initializer
+    final Iterator <?> aInstructionIter = aStaticInit.instructions.iterator ();
+    while (aInstructionIter.hasNext ())
+    {
+      final AbstractInsnNode in = (AbstractInsnNode) aInstructionIter.next ();
+      if (in instanceof LdcInsnNode)
+      {
+        // Load constant node
+        final Object aConstant = ((LdcInsnNode) in).cst;
+        // This is always supposed to be a String but may not be, in case any
+        // other field and therefore any other argument is present
+        aAllConstantStrings.add ((String) aConstant);
+
+        if (aAllConstantStrings.size () == 3)
+        {
+          // We have ID, DE and EN texts
+          ret.add (new ExtractItem (aAllConstantStrings.get (0),
+                                    aAllConstantStrings.get (1),
+                                    aAllConstantStrings.get (2)));
+          aAllConstantStrings.clear ();
+        }
+      }
+    }
+
+    if (!aAllConstantStrings.isEmpty ())
+    {
+      _warn (eProject, cn.name + " contains a weird number of constants. Left: " + aAllConstantStrings);
+      // Avoid serious damage
+      return null;
+    }
+
     return ret;
   }
 
@@ -129,7 +171,9 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           if (bIsRelevant)
           {
             // Enum and annotated
-            _extractFromFile (eProject, cn);
+            final List <ExtractItem> aItems = _extractFromFile (eProject, cn);
+            if (aItems != null)
+            {}
           }
         }
       }
