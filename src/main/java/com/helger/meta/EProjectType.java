@@ -17,10 +17,17 @@
 package com.helger.meta;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.id.IHasID;
+import com.helger.commons.lang.EnumHelper;
 
+/**
+ * Defines the overall project type, based on a very subjective point of view :)
+ *
+ * @author Philip Helger
+ */
 public enum EProjectType implements IHasID <String>
 {
   JAVA_LIBRARY ("java-library"),
@@ -42,5 +49,11 @@ public enum EProjectType implements IHasID <String>
   public String getID ()
   {
     return m_sID;
+  }
+
+  @Nullable
+  public static EProjectType getFromIDOrNull (@Nullable final String sID)
+  {
+    return EnumHelper.getFromIDOrNull (EProjectType.class, sID);
   }
 }
