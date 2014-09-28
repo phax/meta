@@ -28,6 +28,7 @@ import com.helger.commons.microdom.utils.MicroUtils;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
+import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
 
@@ -37,7 +38,7 @@ import com.helger.meta.EProjectType;
  *
  * @author Philip Helger
  */
-public final class MainCheckPOM extends AbstractMainUtils
+public final class MainCheckPOM extends AbstractProjectMain
 {
   // Parent POM requirements
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.buildsystem;
+package com.helger.meta;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -22,16 +22,14 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.meta.EProject;
-
 /**
  * Base class for the main utilities in this package
  *
  * @author Philip Helger
  */
-public abstract class AbstractMainUtils
+public abstract class AbstractProjectMain
 {
-  protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractMainUtils.class);
+  protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 
   protected static final void _warn (@Nonnull final EProject eProject, @Nonnull final String sMsg)

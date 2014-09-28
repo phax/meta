@@ -20,6 +20,7 @@ import java.io.File;
 
 import javax.annotation.Nonnull;
 
+import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
 
@@ -28,7 +29,7 @@ import com.helger.meta.EProjectType;
  *
  * @author Philip Helger
  */
-public final class MainCheckProjectRequiredFiles extends AbstractMainUtils
+public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
   private static void _checkFileExisting (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
   {

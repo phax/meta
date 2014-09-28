@@ -51,6 +51,11 @@ public enum EProjectType implements IHasID <String>
     return m_sID;
   }
 
+  public boolean hasJavaCode ()
+  {
+    return this != MAVEN_POM;
+  }
+
   @Nullable
   public static EProjectType getFromIDOrNull (@Nullable final String sID)
   {
