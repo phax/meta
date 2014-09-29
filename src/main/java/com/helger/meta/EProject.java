@@ -32,7 +32,7 @@ import com.helger.commons.version.Version;
  */
 public enum EProject
 {
-  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, false, false, null),
+  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, false, false, null),
   AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, false, false, null),
   BOTANIK_MANAGER ("botanik-manager", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
@@ -49,7 +49,7 @@ public enum EProject
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),
   PH_COMMONS ("ph-commons", EProjectType.JAVA_LIBRARY, false, false, "5.0.2"),
   PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, false, false, "3.8.1"),
-  PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.3.0"),
+  PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.3.1"),
   PH_DATETIME ("ph-datetime", EProjectType.JAVA_LIBRARY, false, false, "3.2.0"),
   PH_DB_API ("ph-db-api", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),
   PH_DB_JDBC ("ph-db-jdbc", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),

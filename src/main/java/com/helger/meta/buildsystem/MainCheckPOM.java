@@ -17,6 +17,7 @@
 package com.helger.meta.buildsystem;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.microdom.IMicroDocument;
@@ -66,6 +67,11 @@ public final class MainCheckPOM extends AbstractProjectMain
       default:
         throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     }
+  }
+
+  private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
+  {
+    return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
   }
 
   private static void _validatePOM (@Nonnull final EProject eProject, @Nonnull final IMicroDocument aDoc)
@@ -186,7 +192,7 @@ public final class MainCheckPOM extends AbstractProjectMain
           // Check if the current artefact is in the "com.helger" group
           final String sGroupID = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
                                                                          "groupId");
-          if (PARENT_POM_GROUPID.equals (sGroupID))
+          if (_isSupportedGroupID (sGroupID))
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
