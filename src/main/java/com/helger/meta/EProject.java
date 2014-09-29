@@ -87,6 +87,7 @@ public enum EProject
   PH_UBL21_CODELISTS ("ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, false, false, "3.3.0"),
   PH_VALIDATION ("ph-validation", EProjectType.JAVA_LIBRARY, false, false, "3.3.2"),
   PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, false, false, "6.0.0"),
+  PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
   PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, false, false, "3.3.0"),
   PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, false, false, "2.3.0"),
   PH_WEBSCOPES ("ph-webscopes", EProjectType.JAVA_LIBRARY, false, false, "6.5.0"),

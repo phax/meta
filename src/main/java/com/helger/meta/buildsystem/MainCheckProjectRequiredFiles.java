@@ -20,6 +20,9 @@ import java.io.File;
 
 import javax.annotation.Nonnull;
 
+import com.helger.commons.CGlobal;
+import com.helger.commons.charset.CCharset;
+import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
@@ -45,6 +48,16 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _warn (eProject, "File " + f.getAbsolutePath () + " should not exist!");
   }
 
+  private static void _checkFileContains (@Nonnull final EProject eProject,
+                                          @Nonnull final String sRelativeFilename,
+                                          @Nonnull final String sExpectedContent)
+  {
+    final File f = new File (eProject.getBaseDir (), sRelativeFilename);
+    final String sContent = SimpleFileIO.readFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+    if (!sContent.contains (sExpectedContent))
+      _warn (eProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
+  }
+
   private static void _validateProject (@Nonnull final EProject eProject)
   {
     _checkFileExisting (eProject, ".classpath");
@@ -54,6 +67,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (eProject, "findbugs-exclude.xml");
     _checkFileExisting (eProject, "src/etc/javadoc.css");
     _checkFileExisting (eProject, "src/etc/license-template.txt");
+    _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
     if (false)
       _checkFileExisting (eProject, "src/main/resources/changelog.xml");
     _checkFileExisting (eProject, "src/main/resources/LICENSE");
