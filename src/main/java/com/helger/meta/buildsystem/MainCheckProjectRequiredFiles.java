@@ -54,6 +54,8 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (eProject, "findbugs-exclude.xml");
     _checkFileExisting (eProject, "src/etc/javadoc.css");
     _checkFileExisting (eProject, "src/etc/license-template.txt");
+    if (false)
+      _checkFileExisting (eProject, "src/main/resources/changelog.xml");
     _checkFileExisting (eProject, "src/main/resources/LICENSE");
     _checkFileExisting (eProject, "src/main/resources/NOTICE");
     _checkFileNotExisting (eProject, "LICENSE");
