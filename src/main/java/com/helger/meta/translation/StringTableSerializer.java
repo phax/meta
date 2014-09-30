@@ -11,6 +11,7 @@ import com.helger.commons.hash.HashCodeGenerator;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.impl.MicroDocument;
+import com.helger.commons.microdom.impl.MicroElement;
 import com.helger.commons.microdom.serialize.MicroWriter;
 import com.helger.commons.state.ESuccess;
 import com.helger.commons.string.StringHelper;
@@ -21,13 +22,10 @@ public final class StringTableSerializer
   {}
 
   @Nonnull
-  public static ESuccess writeStringTableAsXML (@Nonnull final File aFile, @Nonnull final StringTable aST)
+  public static IMicroElement getStringTableAsXML (@Nonnull final StringTable aST)
   {
-    ValueEnforcer.notNull (aFile, "File");
     ValueEnforcer.notNull (aST, "ST");
-
-    final IMicroDocument aDoc = new MicroDocument ();
-    final IMicroElement eRoot = aDoc.appendElement ("translationitems");
+    final IMicroElement eRoot = new MicroElement ("translationitems");
     eRoot.setAttribute ("count", aST.size ());
 
     int nHashCode = HashCodeGenerator.INITIAL_HASHCODE;
@@ -56,6 +54,17 @@ public final class StringTableSerializer
 
     // Small consistency check
     eRoot.setAttribute ("hashcode", StringHelper.getHexStringLeadingZero (nHashCode & 0xffffffffl, 8));
+    return eRoot;
+  }
+
+  @Nonnull
+  public static ESuccess writeStringTableAsXML (@Nonnull final File aFile, @Nonnull final StringTable aST)
+  {
+    ValueEnforcer.notNull (aFile, "File");
+    ValueEnforcer.notNull (aST, "ST");
+
+    final IMicroDocument aDoc = new MicroDocument ();
+    aDoc.appendChild (getStringTableAsXML (aST));
 
     return MicroWriter.writeToFile (aDoc, aFile);
   }
