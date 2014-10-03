@@ -88,7 +88,7 @@ public enum EProject
   PH_VALIDATION ("ph-validation", EProjectType.JAVA_LIBRARY, false, false, "3.3.2"),
   PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, false, false, "6.0.0"),
   PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
-  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, false, false, "3.3.0"),
+  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, false, false, "3.4.0"),
   PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, false, false, "2.3.0"),
   PH_WEBSCOPES ("ph-webscopes", EProjectType.JAVA_LIBRARY, false, false, "6.5.0"),
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, false, false, null),
