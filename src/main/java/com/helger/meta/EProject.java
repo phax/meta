@@ -32,7 +32,7 @@ import com.helger.commons.version.Version;
  */
 public enum EProject
 {
-  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
+  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, false, false, "1.0.1"),
   AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   BOTANIK_MANAGER ("botanik-manager", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
