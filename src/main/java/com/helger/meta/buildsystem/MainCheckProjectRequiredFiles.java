@@ -70,8 +70,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
     if (false)
       _checkFileExisting (eProject, "src/main/resources/changelog.xml");
-    _checkFileExisting (eProject, "src/main/resources/LICENSE");
-    _checkFileExisting (eProject, "src/main/resources/NOTICE");
+    if (eProject != EProject.JCODEMODEL)
+    {
+      // Not Apache2 license
+      _checkFileExisting (eProject, "src/main/resources/LICENSE");
+      _checkFileExisting (eProject, "src/main/resources/NOTICE");
+    }
     _checkFileNotExisting (eProject, "LICENSE");
   }
 
