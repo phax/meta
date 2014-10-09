@@ -48,7 +48,7 @@ public enum EProject
   PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, false, false, "1.6.0"),
   PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.2.1"),
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),
-  PH_COMMONS ("ph-commons", EProjectType.JAVA_LIBRARY, false, false, "5.0.2"),
+  PH_COMMONS ("ph-commons", EProjectType.JAVA_LIBRARY, false, false, "5.1.0"),
   PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, false, false, "3.8.1"),
   PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.3.1"),
   PH_DATETIME ("ph-datetime", EProjectType.JAVA_LIBRARY, false, false, "3.2.0"),
