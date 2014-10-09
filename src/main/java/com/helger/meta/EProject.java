@@ -205,6 +205,8 @@ public enum EProject
       // Handle differences between directory name and project name
       if ("parent-pom".equals (sProjectName))
         return EProject.PH_PARENT_POM;
+      if ("webservice-client".equals (sProjectName))
+        return EProject.ERECHNUNG_WS_CLIENT;
     }
     return null;
   }
