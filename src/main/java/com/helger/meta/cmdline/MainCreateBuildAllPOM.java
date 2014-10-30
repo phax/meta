@@ -198,7 +198,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
       eModules.appendElement (MAVEN_NS, "module").appendText (eCurProject.getProjectName ());
     }
 
-    MicroWriter.writeToFile (aDoc, new File (CMeta.GIT_BASE_DIR, "pom.xml"));
+    MicroWriter.writeToFile (aDoc, new File (CMeta.GIT_BASE_DIR, "pom-all.xml"));
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
   }
 }
