@@ -38,3 +38,6 @@ de
 serializable
 inline
 multi
+endpoint
+metadata
+username
