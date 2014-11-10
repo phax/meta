@@ -33,12 +33,13 @@ import com.helger.commons.version.Version;
 public enum EProject
 {
   AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, false, false, "1.0.4"),
+  AS2_PEPPOL_CLIENT ("as2-peppol-client", EProjectType.JAVA_APPLICATION, false, false, null),
   AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   BOTANIK_MANAGER ("botanik-manager", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
-  CIPA_START_JMS_API ("cipa-start-jms-api", EProjectType.JAVA_LIBRARY, false, false, "1.4.0"),
-  CIPA_START_JMSRECEIVER ("cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, false, false, "1.0.1"),
-  CIPA_START_JMSSENDER ("cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, false, false, "1.0.1"),
+  CIPA_START_JMS_API ("cipa-start-jms-api", EProjectType.JAVA_LIBRARY, false, false, "1.5.0"),
+  CIPA_START_JMSRECEIVER ("cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, false, false, "1.0.2"),
+  CIPA_START_JMSSENDER ("cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, false, false, "1.0.2"),
   ERECHNUNG_WS_CLIENT ("erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
   JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, true, false, "2.7.7"),
   JGATSP ("jgatsp", EProjectType.JAVA_LIBRARY, false, false, null),
