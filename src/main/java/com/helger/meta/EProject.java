@@ -66,7 +66,7 @@ public enum EProject
   PH_JDK5 ("ph-jdk5", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),
   PH_JMS ("ph-jms", EProjectType.JAVA_LIBRARY, false, false, "1.2.0"),
   PH_JSCOMPRESS_MAVEN_PLUGIN ("ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.1.0"),
-  PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, false, false, "1.3.0"),
+  PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, false, false, "1.3.1"),
   PH_MASTERDATA ("ph-masterdata", EProjectType.JAVA_LIBRARY, false, false, "3.6.2"),
   PH_MATH ("ph-math", EProjectType.JAVA_LIBRARY, false, false, "1.2.0"),
   PH_PARENT_POM ("ph-parent-pom", EProjectType.MAVEN_POM, false, false, "1.3"),
