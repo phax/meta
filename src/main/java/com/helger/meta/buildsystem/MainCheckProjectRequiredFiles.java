@@ -60,6 +60,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   private static void _validateProject (@Nonnull final EProject eProject)
   {
+    // Check for file existence
     _checkFileExisting (eProject, ".classpath");
     _checkFileExisting (eProject, ".project");
     _checkFileExisting (eProject, "pom.xml");
@@ -67,7 +68,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (eProject, "findbugs-exclude.xml");
     _checkFileExisting (eProject, "src/etc/javadoc.css");
     _checkFileExisting (eProject, "src/etc/license-template.txt");
-    _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
     if (false)
       _checkFileExisting (eProject, "src/main/resources/changelog.xml");
     if (eProject != EProject.JCODEMODEL)
@@ -77,6 +77,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (eProject, "src/main/resources/NOTICE");
     }
     _checkFileNotExisting (eProject, "LICENSE");
+
+    // Check for file contents
+    _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
   }
 
   public static void main (final String [] args)
