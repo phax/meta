@@ -47,7 +47,7 @@ public enum EProject
   META ("meta", EProjectType.JAVA_APPLICATION, false, false, null),
   PEPPOL_PRACTICAL ("peppol-practical", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
   PEPPOL_SBDH ("peppol-sbdh", EProjectType.JAVA_LIBRARY, false, false, "1.0.0"),
-  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, false, false, "1.7.0"),
+  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, false, false, "1.7.1"),
   PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, false, false, "1.2.1"),
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, false, false, "1.1.0"),
   PH_COMMONS ("ph-commons", EProjectType.JAVA_LIBRARY, false, false, "5.2.0"),
@@ -92,7 +92,7 @@ public enum EProject
   PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, false, false, "6.0.2"),
   PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, false, false, null),
   PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, false, false, "3.5.0"),
-  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, false, false, "2.5.0"),
+  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, false, false, "2.5.1"),
   PH_WEBSCOPES ("ph-webscopes", EProjectType.JAVA_LIBRARY, false, false, "6.6.1"),
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, false, false, null),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, false, false, "1.1.0");
