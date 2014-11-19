@@ -4,14 +4,12 @@ artefact
 artefacts
 callbacks
 charset
-charset
 codelists
 config
 de
 downloaded
 endpoint
 exemption
-fallback
 fallback
 generalisation
 hectare
@@ -31,10 +29,9 @@ maven
 metadata
 micro
 multi
-multi
 multilingual
 namespace
-namespace
+namespaces
 param
 params
 peppol
