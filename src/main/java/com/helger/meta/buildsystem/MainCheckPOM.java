@@ -240,11 +240,11 @@ public final class MainCheckPOM extends AbstractProjectMain
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
-                          _warn (eProject, "Referenced project 'last published version' of '" +
-                                           eReferencedProject +
-                                           "' is out of date. Should be " +
+                          _warn (eProject, "Referenced version " +
                                            sVersion +
-                                           " instead of " +
+                                           " of project '" +
+                                           eReferencedProject +
+                                           "' is newer than the latest known version " +
                                            eReferencedProject.getLastPublishedVersionString ());
                       }
                 }
@@ -258,6 +258,11 @@ public final class MainCheckPOM extends AbstractProjectMain
                 }
               }
             }
+          }
+          else
+          {
+            if (false)
+              _warn (eProject, "Unsuported group " + sGroupID);
           }
         }
       }
