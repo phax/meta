@@ -44,7 +44,7 @@ public final class MainCheckPOM extends AbstractProjectMain
   // Parent POM requirements
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
-  private static final String PARENT_POM_VERSION = "1.3";
+  private static final String PARENT_POM_VERSION = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
 
   @Nonnull
   @Nonempty
@@ -212,8 +212,7 @@ public final class MainCheckPOM extends AbstractProjectMain
                 if (eReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
-                  final Version aVersionInFile = new Version (bIsSnapshot
-                                                                         ? StringHelper.trimEnd (sVersion, "-SNAPSHOT")
+                  final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion, "-SNAPSHOT")
                                                                          : sVersion);
                   if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
                   {
