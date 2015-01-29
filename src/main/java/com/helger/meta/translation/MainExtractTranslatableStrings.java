@@ -35,6 +35,7 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
+import com.helger.commons.io.file.FileUtils;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
@@ -143,7 +144,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   {
     if (false)
       s_aLogger.info ("  " + eProject.getProjectName ());
-    final File aTargetDir = new File (eProject.getBaseDir (), "target/classes").getCanonicalFile ();
+    final File aTargetDir = FileUtils.getCanonicalFile (new File (eProject.getBaseDir (), "target/classes"));
 
     final StringTable aSTProject = new StringTable ();
 
@@ -151,17 +152,17 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     for (final File aClassFile : new FileSystemRecursiveIterator (aTargetDir))
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
-        // Interprete byte code
+        // Interpret byte code
         final ClassNode cn = ASMUtils.readClassFile (aClassFile);
         final boolean bIsEnum = CGStringHelper.getPathFromClass (Enum.class).equals (cn.superName);
         if (bIsEnum)
         {
-          // Okay, it's an enum
+          // Okay, it's an enumeration
           final boolean bIsRelevant = ASMUtils.containsRequiresTranslationAnnotation (cn) &&
                                       !ASMUtils.containsNoTranslationRequiredAnnotation (cn);
           if (bIsRelevant)
           {
-            // Enum and annotated
+            // Enumeration and annotated
             final StringTable aSTFile = _extractSTFromFile (eProject, cn);
             if (aSTFile != null)
               aSTProject.addAll (aSTFile);
