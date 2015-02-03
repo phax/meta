@@ -77,7 +77,7 @@ public enum EProject
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_SCH2XSLT_MAVEN_PLUGIN ("ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
   PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.6.3"),
-  PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.9.0"),
+  PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.9.1"),
   PH_SCHEMATRON_TESTFILES ("ph-schematron-testfiles", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
   PH_SCHEMATRON_VALIDATOR ("ph-schematron-validator", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
   PH_SCOPES ("ph-scopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.6.0"),
