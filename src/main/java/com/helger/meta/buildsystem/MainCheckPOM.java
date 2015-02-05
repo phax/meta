@@ -270,7 +270,7 @@ public final class MainCheckPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final EProject e : EProject.values ())
-      if (e.getProjectType () != EProjectType.MAVEN_POM)
+      if (e.getProjectType () != EProjectType.MAVEN_POM && !e.isDeprecated ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
         if (aDoc == null)
