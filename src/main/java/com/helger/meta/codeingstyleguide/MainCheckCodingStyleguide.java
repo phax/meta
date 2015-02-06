@@ -43,7 +43,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   private static void _checkClass (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
+    final boolean bIsSpecialCase = sClassLocalName.equals ("package-info") ||
+                                   eProject == EProject.JCODEMODEL ||
+                                   ((eProject == EProject.PH_CSS || eProject == EProject.PH_JSON) && (sClassLocalName.equals ("CharStream") ||
+                                                                                                      sClassLocalName.equals ("Node") || (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants"))));
     if (bIsSpecialCase)
       return;
 
@@ -71,10 +74,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = (eProject == EProject.PH_CSS && (sClassLocalName.equals ("ParseException") ||
                                                                     sClassLocalName.startsWith ("ParserCSS21") ||
-                                                                    sClassLocalName.startsWith ("ParserCSS30") || sClassLocalName.startsWith ("ParserCSSCharsetDetector"))) ||
-                                   eProject == EProject.PH_JAVACC_MAVEN_PLUGIN ||
-                                   (eProject == EProject.PH_JSON && (sClassLocalName.equals ("Token") ||
-                                                                     sClassLocalName.equals ("ParseException") || sClassLocalName.startsWith ("ParserJson"))) ||
+                                                                    sClassLocalName.startsWith ("ParserCSS30") ||
+                                                                    sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
+                                                                    sClassLocalName.startsWith ("JJTParserCSS") ||
+                                                                    sClassLocalName.equals ("SimpleNode") ||
+                                                                    sClassLocalName.equals ("Token") || sClassLocalName.startsWith ("TokenMgrError"))) ||
+                                   (eProject == EProject.PH_JSON && (sClassLocalName.equals ("ParseException") ||
+                                                                     sClassLocalName.startsWith ("ParserJson") ||
+                                                                     sClassLocalName.equals ("Token") || sClassLocalName.startsWith ("TokenMgrError"))) ||
                                    (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
@@ -154,7 +161,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
     for (final EProject eProject : EProject.values ())
-      if (eProject.getProjectType ().hasJavaCode ())
+      if (eProject.getProjectType ().hasJavaCode () && eProject != EProject.PH_JAVACC_MAVEN_PLUGIN)
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
   }
