@@ -36,7 +36,6 @@ public final class CMeta
   public static final String EXTENSION_WIKI_PROJECT = ".wiki";
 
   @PresentForCodeCoverage
-  @SuppressWarnings ("unused")
   private static final CMeta s_aInstance = new CMeta ();
 
   private CMeta ()
