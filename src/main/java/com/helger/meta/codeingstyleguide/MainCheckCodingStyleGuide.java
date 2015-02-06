@@ -32,6 +32,7 @@ import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
+import com.helger.meta.EProjectType;
 import com.helger.meta.asm.ASMUtils;
 
 public final class MainCheckCodingStyleGuide extends AbstractProjectMain
@@ -41,48 +42,64 @@ public final class MainCheckCodingStyleGuide extends AbstractProjectMain
   private static void _checkVariables (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final boolean bIsSpecialCase = ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class) ||
+                                   sClassLocalName.equals ("ObjectFactory") ||
+                                   (eProject == EProject.PH_CSS && (sClassLocalName.equals ("ParseException") ||
+                                                                    sClassLocalName.startsWith ("ParserCSS21") ||
+                                                                    sClassLocalName.startsWith ("ParserCSS30") || sClassLocalName.startsWith ("ParserCSSCharsetDetector"))) ||
+                                   eProject == EProject.PH_JAVACC_MAVEN_PLUGIN ||
+                                   (eProject == EProject.PH_JSON && (sClassLocalName.equals ("Token") ||
+                                                                     sClassLocalName.equals ("ParseException") || sClassLocalName.startsWith ("ParserJson"))) ||
+                                   (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
+    if (bIsSpecialCase)
+      return;
+
     final String sPrefix = "[" + sClassLocalName + "] ";
+    for (final Object oField : cn.fields)
+    {
+      final FieldNode fn = (FieldNode) oField;
 
-    final boolean bIsSpecialCase = sClassLocalName.equals ("ObjectFactory") ||
-                                   ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class);
-    if (!bIsSpecialCase)
-      for (final Object oField : cn.fields)
+      final boolean bIsStatic = Modifier.isStatic (fn.access);
+      final boolean bIsFinal = Modifier.isFinal (fn.access);
+      final boolean bIsPrivate = Modifier.isPrivate (fn.access);
+
+      if (bIsStatic)
       {
-        final FieldNode fn = (FieldNode) oField;
-
         // Internal variable names
         if (fn.name.startsWith ("$SWITCH_TABLE$") ||
             fn.name.equals ("$assertionsDisabled") ||
             ASMUtils.containsAnnotation (fn, CodingStyleguideUnaware.class))
           continue;
 
-        final boolean bIsStatic = Modifier.isStatic (fn.access);
-        final boolean bIsFinal = Modifier.isFinal (fn.access);
-        final boolean bIsPrivate = Modifier.isPrivate (fn.access);
-
-        if (bIsStatic)
+        if (bIsFinal)
         {
-          if (bIsFinal)
-          {
-            if (!fn.name.startsWith ("s_") &&
-                !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
-                !fn.name.equals ("serialVersionUID"))
-              _warn (eProject, sPrefix + "Static final member " + fn.name + " does not match");
-          }
-          else
-          {
-            if (!fn.name.startsWith ("s_"))
-              _warn (eProject, sPrefix + "Static member " + fn.name + " does not match");
-
-            if (!bIsPrivate)
-              _warn (eProject, sPrefix + "Static member " + fn.name + " is not private");
-          }
+          if (!fn.name.startsWith ("s_") &&
+              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
+              !fn.name.equals ("serialVersionUID"))
+            _warn (eProject, sPrefix + "Static final member '" + fn.name + "' does not match");
         }
         else
         {
-          //
+          if (!fn.name.startsWith ("s_"))
+            _warn (eProject, sPrefix + "Static member '" + fn.name + "' does not match");
+
+          if (!bIsPrivate)
+            _warn (eProject, sPrefix + "Static member '" + fn.name + "' is not private");
         }
       }
+      else
+      {
+        if (eProject == EProject.JCODEMODEL ||
+            eProject == EProject.PH_UBL20 ||
+            eProject == EProject.PH_UBL21 ||
+            fn.name.startsWith ("this$") ||
+            fn.name.startsWith ("val$"))
+          continue;
+
+        if (!fn.name.startsWith ("m_"))
+          _warn (eProject, sPrefix + "Instance member '" + fn.name + "' does not match");
+      }
+    }
   }
 
   private static void _scanProject (@Nonnull final EProject eProject) throws IOException
