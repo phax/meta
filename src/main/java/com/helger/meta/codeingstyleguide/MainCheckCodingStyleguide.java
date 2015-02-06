@@ -26,6 +26,7 @@ import javax.annotation.Nonnull;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
+import org.objectweb.asm.tree.MethodNode;
 
 import com.helger.commons.annotations.CodingStyleguideUnaware;
 import com.helger.commons.io.file.FileUtils;
@@ -43,10 +44,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   private static void _checkClass (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = sClassLocalName.equals ("package-info") ||
-                                   eProject == EProject.JCODEMODEL ||
-                                   ((eProject == EProject.PH_CSS || eProject == EProject.PH_JSON) && (sClassLocalName.equals ("CharStream") ||
-                                                                                                      sClassLocalName.equals ("Node") || (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants"))));
+    final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
     if (bIsSpecialCase)
       return;
 
@@ -69,20 +67,40 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
+  private static void _checkMethods (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  {
+    final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final boolean bIsSpecialCase = false;
+    if (bIsSpecialCase)
+      return;
+
+    for (final Object oMethod : cn.methods)
+    {
+      final MethodNode mn = (MethodNode) oMethod;
+      final String sPrefix = "[" + sClassLocalName + "::" + mn.name + "] ";
+
+      final boolean bIsConstructor = mn.name.equals ("<init>");
+      final boolean bIsStatic = Modifier.isStatic (mn.access);
+      final boolean bIsFinal = Modifier.isFinal (mn.access);
+      final boolean bIsPrivate = Modifier.isPrivate (mn.access);
+
+      if (bIsPrivate)
+      {
+        if (!bIsConstructor &&
+            !mn.name.startsWith ("_") &&
+            !mn.name.equals ("readObject") &&
+            !mn.name.equals ("writeObject") &&
+            !mn.name.equals ("readResolve") &&
+            !mn.name.startsWith ("lambda$"))
+          _warn (eProject, sPrefix + "Privat methods should start with an underscore");
+      }
+    }
+  }
+
   private static void _checkVariables (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = (eProject == EProject.PH_CSS && (sClassLocalName.equals ("ParseException") ||
-                                                                    sClassLocalName.startsWith ("ParserCSS21") ||
-                                                                    sClassLocalName.startsWith ("ParserCSS30") ||
-                                                                    sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
-                                                                    sClassLocalName.startsWith ("JJTParserCSS") ||
-                                                                    sClassLocalName.equals ("SimpleNode") ||
-                                                                    sClassLocalName.equals ("Token") || sClassLocalName.startsWith ("TokenMgrError"))) ||
-                                   (eProject == EProject.PH_JSON && (sClassLocalName.equals ("ParseException") ||
-                                                                     sClassLocalName.startsWith ("ParserJson") ||
-                                                                     sClassLocalName.equals ("Token") || sClassLocalName.startsWith ("TokenMgrError"))) ||
-                                   (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
+    final boolean bIsSpecialCase = (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
 
@@ -110,12 +128,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           if (!fn.name.startsWith ("s_") &&
               !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
               !fn.name.equals ("serialVersionUID"))
-            _warn (eProject, sPrefix + "Static final member '" + fn.name + "' does not match");
+            _warn (eProject, sPrefix + "Static final member name '" + fn.name + "' does not match");
         }
         else
         {
           if (!fn.name.startsWith ("s_"))
-            _warn (eProject, sPrefix + "Static member '" + fn.name + "' does not match");
+            _warn (eProject, sPrefix + "Static member name '" + fn.name + "' does not match");
 
           if (!bIsPrivate)
             _warn (eProject, sPrefix + "Static member '" + fn.name + "' is not private");
@@ -123,11 +141,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
       else
       {
-        if (eProject == EProject.JCODEMODEL || fn.name.startsWith ("this$") || fn.name.startsWith ("val$"))
+        if (fn.name.startsWith ("this$") || fn.name.startsWith ("val$"))
           continue;
 
         if (!fn.name.startsWith ("m_"))
-          _warn (eProject, sPrefix + "Instance member '" + fn.name + "' does not match");
+          _warn (eProject, sPrefix + "Instance member name '" + fn.name + "' does not match");
 
         if (bClassIsFinal && !bIsPrivate)
           _warn (eProject, sPrefix + "Instance member '" + fn.name + "' is not private");
@@ -152,8 +170,35 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class))
           continue;
 
+        final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+
+        // Special generated classes
+        if (eProject == EProject.PH_CSS &&
+            (sClassLocalName.equals ("CharStream") ||
+             sClassLocalName.equals ("ParseException") ||
+             sClassLocalName.startsWith ("ParserCSS21") ||
+             sClassLocalName.startsWith ("ParserCSS30") ||
+             sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
+             sClassLocalName.equals ("Token") ||
+             sClassLocalName.equals ("TokenMgrError") ||
+             sClassLocalName.startsWith ("JJTParser") ||
+             sClassLocalName.equals ("Node") ||
+             (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) || sClassLocalName.equals ("SimpleNode")))
+          continue;
+
+        if (eProject == EProject.PH_JSON &&
+            (sClassLocalName.equals ("CharStream") ||
+             sClassLocalName.equals ("ParseException") ||
+             sClassLocalName.startsWith ("ParserJson") ||
+             sClassLocalName.equals ("Token") || sClassLocalName.equals ("TokenMgrError")))
+          continue;
+
+        if (eProject == EProject.JCODEMODEL)
+          continue;
+
         _checkClass (eProject, cn);
         _checkVariables (eProject, cn);
+        _checkMethods (eProject, cn);
       }
   }
 
