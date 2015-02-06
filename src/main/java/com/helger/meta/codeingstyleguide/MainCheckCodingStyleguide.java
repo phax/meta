@@ -49,7 +49,6 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return;
 
     final String sPrefix = "[" + sClassLocalName + "] ";
-    final boolean bClassIsFinal = Modifier.isFinal (cn.access);
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
     final boolean bClassIsAnnotation = (cn.access & Opcodes.ACC_ANNOTATION) != 0;
 
@@ -59,10 +58,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       {}
       else
       {
-        if (!sClassLocalName.startsWith ("I") &&
-            !sClassLocalName.contains ("$I") &&
-            !sClassLocalName.endsWith ("MBean"))
-          _warn (eProject, sPrefix + "Interface names should start with an uppercase 'I'");
+        if (sClassLocalName.startsWith ("I"))
+        {
+          if (sClassLocalName.length () > 1 && !Character.isUpperCase (sClassLocalName.charAt (1)))
+            _warn (eProject, sPrefix + "Interface names should have an upper case second letter");
+        }
+        else
+          if (!sClassLocalName.contains ("$I") && !sClassLocalName.endsWith ("MBean"))
+            _warn (eProject, sPrefix + "Interface names should start with an uppercase 'I'");
       }
     }
   }
@@ -77,11 +80,13 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
+
+      if (ASMUtils.containsAnnotation (mn, CodingStyleguideUnaware.class))
+        continue;
+
       final String sPrefix = "[" + sClassLocalName + "::" + mn.name + "] ";
 
       final boolean bIsConstructor = mn.name.equals ("<init>");
-      final boolean bIsStatic = Modifier.isStatic (mn.access);
-      final boolean bIsFinal = Modifier.isFinal (mn.access);
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
 
       if (bIsPrivate)
@@ -111,6 +116,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     {
       final FieldNode fn = (FieldNode) oField;
 
+      if (ASMUtils.containsAnnotation (fn, CodingStyleguideUnaware.class))
+        continue;
+
       final boolean bIsStatic = Modifier.isStatic (fn.access);
       final boolean bIsFinal = Modifier.isFinal (fn.access);
       final boolean bIsPrivate = Modifier.isPrivate (fn.access);
@@ -118,9 +126,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (bIsStatic)
       {
         // Internal variable names
-        if (fn.name.startsWith ("$SWITCH_TABLE$") ||
-            fn.name.equals ("$assertionsDisabled") ||
-            ASMUtils.containsAnnotation (fn, CodingStyleguideUnaware.class))
+        if (fn.name.startsWith ("$SWITCH_TABLE$") || fn.name.equals ("$assertionsDisabled"))
           continue;
 
         if (bIsFinal)
