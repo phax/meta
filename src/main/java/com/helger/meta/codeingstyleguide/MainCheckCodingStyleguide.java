@@ -35,7 +35,7 @@ import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
 import com.helger.meta.asm.ASMUtils;
 
-public final class MainCheckCodingStyleGuide extends AbstractProjectMain
+public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
@@ -89,11 +89,7 @@ public final class MainCheckCodingStyleGuide extends AbstractProjectMain
       }
       else
       {
-        if (eProject == EProject.JCODEMODEL ||
-            eProject == EProject.PH_UBL20 ||
-            eProject == EProject.PH_UBL21 ||
-            fn.name.startsWith ("this$") ||
-            fn.name.startsWith ("val$"))
+        if (eProject == EProject.JCODEMODEL || fn.name.startsWith ("this$") || fn.name.startsWith ("val$"))
           continue;
 
         if (!fn.name.startsWith ("m_"))

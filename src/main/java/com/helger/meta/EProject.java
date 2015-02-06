@@ -64,7 +64,7 @@ public enum EProject
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
   PH_HTML ("ph-html", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "4.5.2"),
   PH_JAVACC_MAVEN_PLUGIN ("ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
-  PH_JAXB22_PLUGIN ("ph-jaxb22-plugin", EProjectType.JAXB_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11"),
+  PH_JAXB22_PLUGIN ("ph-jaxb22-plugin", EProjectType.JAXB_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.2"),
   PH_JDK5 ("ph-jdk5", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_JMS ("ph-jms", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.0"),
   PH_JSCOMPRESS_MAVEN_PLUGIN ("ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
