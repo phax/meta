@@ -35,7 +35,7 @@ public enum EProjectType implements IHasID <String>
   JAVA_WEB_APPLICATION ("java-web-application"),
   MAVEN_PLUGIN ("maven-plugin"),
   MAVEN_POM ("maven-pom"),
-  JAXB_PLUGIN ("jaxb-plugin");
+  OTHER_PLUGIN ("other-plugin");
 
   private final String m_sID;
 

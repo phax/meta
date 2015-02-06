@@ -23,6 +23,7 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 
+import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
 
@@ -39,12 +40,36 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
+  private static void _checkClass (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  {
+    final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
+    if (bIsSpecialCase)
+      return;
+
+    final String sPrefix = "[" + sClassLocalName + "] ";
+    final boolean bClassIsFinal = Modifier.isFinal (cn.access);
+    final boolean bClassIsInterface = Modifier.isInterface (cn.access);
+    final boolean bClassIsAnnotation = (cn.access & Opcodes.ACC_ANNOTATION) != 0;
+
+    if (bClassIsInterface)
+    {
+      if (bClassIsAnnotation)
+      {}
+      else
+      {
+        if (!sClassLocalName.startsWith ("I") &&
+            !sClassLocalName.contains ("$I") &&
+            !sClassLocalName.endsWith ("MBean"))
+          _warn (eProject, sPrefix + "Interface names should start with an uppercase 'I'");
+      }
+    }
+  }
+
   private static void _checkVariables (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class) ||
-                                   sClassLocalName.equals ("ObjectFactory") ||
-                                   (eProject == EProject.PH_CSS && (sClassLocalName.equals ("ParseException") ||
+    final boolean bIsSpecialCase = (eProject == EProject.PH_CSS && (sClassLocalName.equals ("ParseException") ||
                                                                     sClassLocalName.startsWith ("ParserCSS21") ||
                                                                     sClassLocalName.startsWith ("ParserCSS30") || sClassLocalName.startsWith ("ParserCSSCharsetDetector"))) ||
                                    eProject == EProject.PH_JAVACC_MAVEN_PLUGIN ||
@@ -55,6 +80,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return;
 
     final String sPrefix = "[" + sClassLocalName + "] ";
+    final boolean bClassIsFinal = Modifier.isFinal (cn.access);
+
     for (final Object oField : cn.fields)
     {
       final FieldNode fn = (FieldNode) oField;
@@ -94,6 +121,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
         if (!fn.name.startsWith ("m_"))
           _warn (eProject, sPrefix + "Instance member '" + fn.name + "' does not match");
+
+        if (bClassIsFinal && !bIsPrivate)
+          _warn (eProject, sPrefix + "Instance member '" + fn.name + "' is not private");
       }
     }
   }
@@ -110,6 +140,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       {
         // Interpret byte code
         final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+
+        // Ignore classes explicitly marked as unaware
+        if (ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class))
+          continue;
+
+        _checkClass (eProject, cn);
         _checkVariables (eProject, cn);
       }
   }

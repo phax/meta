@@ -62,7 +62,7 @@ public final class MainCheckPOM extends AbstractProjectMain
         return "maven-plugin";
       case MAVEN_POM:
         return "pom";
-      case JAXB_PLUGIN:
+      case OTHER_PLUGIN:
         return "jar";
       default:
         throw new IllegalArgumentException ("Unsupported project type in " + eProject);
