@@ -126,7 +126,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (bIsStatic)
       {
         // Internal variable names
-        if (fn.name.startsWith ("$SWITCH_TABLE$") || fn.name.equals ("$assertionsDisabled"))
+        if (fn.name.startsWith ("$SWITCH_TABLE$") ||
+            fn.name.equals ("$assertionsDisabled") ||
+            fn.name.startsWith ("$SwitchMap$"))
           continue;
 
         if (bIsFinal)
