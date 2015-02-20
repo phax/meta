@@ -25,6 +25,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.EProject;
+import com.helger.meta.IProject;
 
 /**
  * Create a set of batch files that contains content that in most cases is
@@ -42,7 +43,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
-    for (final EProject e : EProject.values ())
+    for (final IProject e : EProject.values ())
     {
       aSB.append ("echo ")
          .append (e.getProjectName ())

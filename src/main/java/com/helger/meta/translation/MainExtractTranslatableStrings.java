@@ -43,6 +43,7 @@ import com.helger.commons.text.impl.TextProvider;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.EProject;
+import com.helger.meta.IProject;
 import com.helger.meta.asm.ASMUtils;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
@@ -50,7 +51,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   private static Set <String> s_aActions = new LinkedHashSet <String> ();
 
   @Nullable
-  private static StringTable _extractSTFromFile (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  private static StringTable _extractSTFromFile (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
   {
     final StringTable ret = new StringTable ();
 
@@ -140,7 +141,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     return ret;
   }
 
-  private static void _scanProject (@Nonnull final EProject eProject) throws IOException
+  private static void _scanProject (@Nonnull final IProject eProject) throws IOException
   {
     if (false)
       s_aLogger.info ("  " + eProject.getProjectName ());
@@ -184,7 +185,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start extracting text from .class files!");
-    for (final EProject eProject : EProject.values ())
+    for (final IProject eProject : EProject.values ())
       if (eProject.getProjectType ().hasJavaCode ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");

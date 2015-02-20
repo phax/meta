@@ -26,6 +26,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
+import com.helger.meta.IProject;
 
 /**
  * Check whether all project has all the required files
@@ -34,21 +35,21 @@ import com.helger.meta.EProjectType;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static void _checkFileExisting (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
+  private static void _checkFileExisting (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
       _warn (eProject, "File " + f.getAbsolutePath () + " does not exist!");
   }
 
-  private static void _checkFileNotExisting (@Nonnull final EProject eProject, @Nonnull final String sRelativeFilename)
+  private static void _checkFileNotExisting (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
     if (f.exists ())
       _warn (eProject, "File " + f.getAbsolutePath () + " should not exist!");
   }
 
-  private static void _checkFileContains (@Nonnull final EProject eProject,
+  private static void _checkFileContains (@Nonnull final IProject eProject,
                                           @Nonnull final String sRelativeFilename,
                                           @Nonnull final String sExpectedContent)
   {
@@ -58,7 +59,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _warn (eProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
   }
 
-  private static void _validateProject (@Nonnull final EProject eProject)
+  private static void _validateProject (@Nonnull final IProject eProject)
   {
     // Check for file existence
     _checkFileExisting (eProject, ".classpath");
@@ -84,7 +85,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final EProject e : EProject.values ())
+    for (final IProject e : EProject.values ())
       if (e.getProjectType () != EProjectType.MAVEN_POM)
       {
         _validateProject (e);

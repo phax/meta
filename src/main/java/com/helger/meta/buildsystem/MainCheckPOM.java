@@ -32,6 +32,7 @@ import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
+import com.helger.meta.IProject;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the
@@ -48,7 +49,7 @@ public final class MainCheckPOM extends AbstractProjectMain
 
   @Nonnull
   @Nonempty
-  private static String _getDesiredPackaging (@Nonnull final EProject eProject)
+  private static String _getDesiredPackaging (@Nonnull final IProject eProject)
   {
     switch (eProject.getProjectType ())
     {
@@ -74,7 +75,7 @@ public final class MainCheckPOM extends AbstractProjectMain
     return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
   }
 
-  private static void _validatePOM (@Nonnull final EProject eProject, @Nonnull final IMicroDocument aDoc)
+  private static void _validatePOM (@Nonnull final IProject eProject, @Nonnull final IMicroDocument aDoc)
   {
     if (s_aLogger.isDebugEnabled ())
       s_aLogger.debug (eProject.getProjectName ());
@@ -196,7 +197,7 @@ public final class MainCheckPOM extends AbstractProjectMain
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
-            final EProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
+            final IProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
             if (eReferencedProject == null)
             {
               _warn (eProject, "Referenced unknown project '" + sArtifactID + "'");
@@ -272,7 +273,7 @@ public final class MainCheckPOM extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final EProject e : EProject.values ())
+    for (final IProject e : EProject.values ())
       if (e.getProjectType () != EProjectType.MAVEN_POM && !e.isDeprecated ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());

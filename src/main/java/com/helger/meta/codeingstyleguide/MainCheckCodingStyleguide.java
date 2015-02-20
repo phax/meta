@@ -35,13 +35,14 @@ import com.helger.commons.lang.CGStringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
+import com.helger.meta.IProject;
 import com.helger.meta.asm.ASMUtils;
 
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
-  private static void _checkClass (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkClass (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
@@ -70,7 +71,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  private static void _checkMethods (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkMethods (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = false;
@@ -111,7 +112,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  private static void _checkVariables (@Nonnull final EProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkVariables (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
@@ -170,7 +171,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  private static void _scanProject (@Nonnull final EProject eProject) throws IOException
+  private static void _scanProject (@Nonnull final IProject eProject) throws IOException
   {
     if (false)
       s_aLogger.info ("  " + eProject.getProjectName ());
@@ -222,7 +223,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
-    for (final EProject eProject : EProject.values ())
+    for (final IProject eProject : EProject.values ())
       if (eProject.getProjectType ().hasJavaCode () &&
           eProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
           !eProject.isDeprecated ())

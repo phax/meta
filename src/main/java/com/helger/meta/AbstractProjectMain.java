@@ -47,7 +47,7 @@ public abstract class AbstractProjectMain
   protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 
-  protected static final void _warn (@Nonnull final EProject eProject, @Nonnull final String sMsg)
+  protected static final void _warn (@Nonnull final IProject eProject, @Nonnull final String sMsg)
   {
     s_aLogger.warn ("[" + eProject.getProjectName () + "] " + sMsg);
     s_nWarnCount++;

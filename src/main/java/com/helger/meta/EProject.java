@@ -30,7 +30,7 @@ import com.helger.commons.version.Version;
  *
  * @author Philip Helger
  */
-public enum EProject
+public enum EProject implements IProject
 {
   AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.6"),
   AS2_PEPPOL_CLIENT ("as2-peppol-client", EProjectType.JAVA_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
@@ -199,16 +199,19 @@ public enum EProject
     return m_sLastPublishedVersion != null;
   }
 
-  @Nullable
   public String getLastPublishedVersionString ()
   {
     return m_sLastPublishedVersion;
   }
 
-  @Nullable
   public Version getLastPublishedVersion ()
   {
     return m_aLastPublishedVersion;
+  }
+
+  public int compareTo (@Nonnull final IProject aProject)
+  {
+    return m_sProjectName.compareTo (aProject.getProjectName ());
   }
 
   @Nullable

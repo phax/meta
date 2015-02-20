@@ -38,7 +38,7 @@ public class EProjectTest
   @Test
   public void testBasic ()
   {
-    for (final EProject e : EProject.values ())
+    for (final IProject e : EProject.values ())
     {
       assertTrue (StringHelper.hasText (e.getProjectName ()));
       assertTrue (e.getPOMFile ().exists ());

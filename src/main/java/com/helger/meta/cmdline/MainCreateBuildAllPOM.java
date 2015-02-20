@@ -41,6 +41,7 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.EProject;
 import com.helger.meta.EProjectType;
+import com.helger.meta.IProject;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the
@@ -57,9 +58,9 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
   }
 
-  private static void _readPOM (@Nonnull final EProject eProject,
+  private static void _readPOM (@Nonnull final IProject eProject,
                                 @Nonnull final IMicroDocument aDoc,
-                                @Nonnull final Map <EProject, Set <EProject>> aTree)
+                                @Nonnull final Map <IProject, Set <IProject>> aTree)
   {
     if (s_aLogger.isDebugEnabled ())
       s_aLogger.debug (eProject.getProjectName ());
@@ -95,10 +96,10 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
             {
               if (!sArtifactID.equals (sThisArtefactID))
               {
-                Set <EProject> aRefProjects = aTree.get (eThisProject);
+                Set <IProject> aRefProjects = aTree.get (eThisProject);
                 if (aRefProjects == null)
                 {
-                  aRefProjects = new HashSet <EProject> ();
+                  aRefProjects = new HashSet <IProject> ();
                   aTree.put (eThisProject, aRefProjects);
                 }
                 aRefProjects.add (eReferencedProject);
@@ -112,8 +113,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     // Read all dependencies
-    final Map <EProject, Set <EProject>> aTree = new HashMap <EProject, Set <EProject>> ();
-    for (final EProject e : EProject.values ())
+    final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
+    for (final IProject e : EProject.values ())
       if (e.getProjectType () != EProjectType.MAVEN_POM)
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
@@ -129,12 +130,12 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     {
       bChanged = false;
       ++nIterations;
-      for (final Map.Entry <EProject, Set <EProject>> aEntry : aTree.entrySet ())
+      for (final Map.Entry <IProject, Set <IProject>> aEntry : aTree.entrySet ())
       {
         final int nOld = aEntry.getValue ().size ();
-        for (final EProject eReferencedProject : ContainerHelper.newList (aEntry.getValue ()))
+        for (final IProject eReferencedProject : ContainerHelper.newList (aEntry.getValue ()))
         {
-          final Set <EProject> aTransitiveDeps = aTree.get (eReferencedProject);
+          final Set <IProject> aTransitiveDeps = aTree.get (eReferencedProject);
           if (aTransitiveDeps != null)
             aEntry.getValue ().addAll (aTransitiveDeps);
         }
@@ -145,10 +146,10 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     s_aLogger.info ("Found all transitive dependencies after " + nIterations + " iterations");
 
     // Evaluate dependencies
-    final List <Map.Entry <EProject, Set <EProject>>> aEntries = ContainerHelper.newList (aTree.entrySet ());
-    ContainerHelper.getSortedInline (aEntries, new Comparator <Map.Entry <EProject, Set <EProject>>> ()
+    final List <Map.Entry <IProject, Set <IProject>>> aEntries = ContainerHelper.newList (aTree.entrySet ());
+    ContainerHelper.getSortedInline (aEntries, new Comparator <Map.Entry <IProject, Set <IProject>>> ()
     {
-      public int compare (final Entry <EProject, Set <EProject>> o1, final Entry <EProject, Set <EProject>> o2)
+      public int compare (final Entry <IProject, Set <IProject>> o1, final Entry <IProject, Set <IProject>> o2)
       {
         // Less dependencies before many dependencies, because transitivity was
         // already handled
@@ -191,9 +192,9 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM.getProjectName ());
 
     // Parent POM and Maven plugins always go first!
-    for (final Map.Entry <EProject, Set <EProject>> aEntry : aEntries)
+    for (final Map.Entry <IProject, Set <IProject>> aEntry : aEntries)
     {
-      final EProject eCurProject = aEntry.getKey ();
+      final IProject eCurProject = aEntry.getKey ();
       eModules.appendComment (eCurProject + " -> " + aEntry.getValue ());
       eModules.appendElement (MAVEN_NS, "module").appendText (eCurProject.getProjectName ());
     }
