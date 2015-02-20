@@ -101,14 +101,7 @@ public enum EProject implements IProject
   PH_SCOPES ("ph-scopes", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "6.6.0"),
   PH_WEBSCOPES ("ph-webscopes", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1");
 
-  private final String m_sProjectName;
-  private final File m_aBaseDir;
-  private final EProjectType m_eProjectType;
-  private final boolean m_bIsDeprecated;
-  private final boolean m_bHasPagesProject;
-  private final boolean m_bHasWikiProject;
-  private final String m_sLastPublishedVersion;
-  private final Version m_aLastPublishedVersion;
+  private final SimpleProject m_aProject;
 
   private EProject (@Nonnull @Nonempty final String sProjectName,
                     @Nonnull final EProjectType eProjectType,
@@ -117,101 +110,87 @@ public enum EProject implements IProject
                     @Nonnull final EHasWiki eHasWikiProject,
                     @Nullable final String sLastPublishedVersion)
   {
-    m_sProjectName = sProjectName;
-    m_eProjectType = eProjectType;
-    m_aBaseDir = new File (CMeta.GIT_BASE_DIR, sProjectName);
-    if (!m_aBaseDir.exists ())
-      throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
-    m_bIsDeprecated = eIsDeprecated.isTrue ();
-    m_bHasPagesProject = eHasPagesProject.isTrue ();
-    m_bHasWikiProject = eHasWikiProject.isTrue ();
-    m_sLastPublishedVersion = sLastPublishedVersion;
-    m_aLastPublishedVersion = sLastPublishedVersion == null ? null : new Version (sLastPublishedVersion);
+    m_aProject = new SimpleProject (sProjectName,
+                                    eProjectType,
+                                    eIsDeprecated,
+                                    eHasPagesProject,
+                                    eHasWikiProject,
+                                    sLastPublishedVersion);
   }
 
   @Nonnull
   @Nonempty
   public String getProjectName ()
   {
-    return m_sProjectName;
+    return m_aProject.getProjectName ();
   }
 
   @Nonnull
   public File getBaseDir ()
   {
-    return m_aBaseDir;
+    return m_aProject.getBaseDir ();
   }
 
   @Nonnull
   public File getPOMFile ()
   {
-    return new File (m_aBaseDir, "pom.xml");
+    return m_aProject.getPOMFile ();
   }
 
   @Nonnull
   public EProjectType getProjectType ()
   {
-    return m_eProjectType;
+    return m_aProject.getProjectType ();
   }
 
   public boolean isDeprecated ()
   {
-    return m_bIsDeprecated;
+    return m_aProject.isDeprecated ();
   }
 
-  /**
-   * @return <code>true</code> if this project has the auto-generated
-   *         <code>gh-pages</code> branch.
-   */
   public boolean hasPagesProject ()
   {
-    return m_bHasPagesProject;
+    return m_aProject.hasPagesProject ();
   }
 
   @Nonnull
   @Nonempty
   public String getPagesProjectName ()
   {
-    return m_sProjectName + CMeta.EXTENSION_PAGES_PROJECT;
+    return m_aProject.getPagesProjectName ();
   }
 
-  /**
-   * @return <code>true</code> if this project has a special Wiki project.
-   */
   public boolean hasWikiProject ()
   {
-    return m_bHasWikiProject;
+    return m_aProject.hasWikiProject ();
   }
 
   @Nonnull
   @Nonempty
   public String getWikiProjectName ()
   {
-    return m_sProjectName + CMeta.EXTENSION_WIKI_PROJECT;
+    return m_aProject.getWikiProjectName ();
   }
 
-  /**
-   * @return <code>true</code> if this project had at least one release,
-   *         <code>false</code> if not.
-   */
   public boolean isPublished ()
   {
-    return m_sLastPublishedVersion != null;
+    return m_aProject.isPublished ();
   }
 
   public String getLastPublishedVersionString ()
   {
-    return m_sLastPublishedVersion;
+    return m_aProject.getLastPublishedVersionString ();
   }
 
+  @Nullable
   public Version getLastPublishedVersion ()
   {
-    return m_aLastPublishedVersion;
+    return m_aProject.getLastPublishedVersion ();
   }
 
   public int compareTo (@Nonnull final IProject aProject)
   {
-    return m_sProjectName.compareTo (aProject.getProjectName ());
+    return m_aProject.compareTo (aProject);
   }
 
   @Nullable
