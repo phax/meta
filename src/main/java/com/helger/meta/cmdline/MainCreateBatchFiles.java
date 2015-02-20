@@ -24,8 +24,8 @@ import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
-import com.helger.meta.EProject;
-import com.helger.meta.IProject;
+import com.helger.meta.project.EProject;
+import com.helger.meta.project.IProject;
 
 /**
  * Create a set of batch files that contains content that in most cases is

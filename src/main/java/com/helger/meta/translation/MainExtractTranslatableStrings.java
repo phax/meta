@@ -42,9 +42,9 @@ import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.text.impl.TextProvider;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
-import com.helger.meta.EProject;
-import com.helger.meta.IProject;
 import com.helger.meta.asm.ASMUtils;
+import com.helger.meta.project.EProject;
+import com.helger.meta.project.IProject;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {

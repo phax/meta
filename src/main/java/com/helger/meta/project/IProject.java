@@ -1,4 +1,4 @@
-package com.helger.meta;
+package com.helger.meta.project;
 
 import java.io.File;
 

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta;
+package com.helger.meta.project;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -27,6 +27,7 @@ import org.junit.Test;
 
 import com.helger.commons.io.file.iterate.FileSystemIterator;
 import com.helger.commons.string.StringHelper;
+import com.helger.meta.CMeta;
 
 /**
  * Test class for {@link EProject}
@@ -65,8 +66,8 @@ public class EProjectTest
       {
         // Ignore all Pages and Wiki directories
         String sProjectName = aFile.getName ();
-        sProjectName = StringHelper.trimEnd (sProjectName, CMeta.EXTENSION_PAGES_PROJECT);
-        sProjectName = StringHelper.trimEnd (sProjectName, CMeta.EXTENSION_WIKI_PROJECT);
+        sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
+        sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
 
         assertNotNull (aFile.getName () + " is missing in the project list",
                        EProject.getFromProjectNameOrNull (sProjectName));

@@ -33,10 +33,10 @@ import com.helger.commons.io.file.FileUtils;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.meta.AbstractProjectMain;
-import com.helger.meta.EProject;
-import com.helger.meta.EProjectType;
-import com.helger.meta.IProject;
 import com.helger.meta.asm.ASMUtils;
+import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectType;
+import com.helger.meta.project.IProject;
 
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {

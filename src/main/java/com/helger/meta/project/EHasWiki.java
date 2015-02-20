@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta;
+package com.helger.meta.project;
 
-public enum EIsDeprecated
+public enum EHasWiki
 {
   TRUE,
   FALSE;

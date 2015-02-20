@@ -1,4 +1,4 @@
-package com.helger.meta;
+package com.helger.meta.project;
 
 import java.io.File;
 
@@ -7,9 +7,13 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.version.Version;
+import com.helger.meta.CMeta;
 
 public class SimpleProject implements IProject
 {
+  public static final String EXTENSION_PAGES_PROJECT = ".pages";
+  public static final String EXTENSION_WIKI_PROJECT = ".wiki";
+
   private final String m_sProjectName;
   private final File m_aBaseDir;
   private final EProjectType m_eProjectType;
@@ -81,7 +85,7 @@ public class SimpleProject implements IProject
   @Nonempty
   public String getPagesProjectName ()
   {
-    return m_sProjectName + CMeta.EXTENSION_PAGES_PROJECT;
+    return m_sProjectName + EXTENSION_PAGES_PROJECT;
   }
 
   /**
@@ -96,7 +100,7 @@ public class SimpleProject implements IProject
   @Nonempty
   public String getWikiProjectName ()
   {
-    return m_sProjectName + CMeta.EXTENSION_WIKI_PROJECT;
+    return m_sProjectName + EXTENSION_WIKI_PROJECT;
   }
 
   /**

@@ -30,9 +30,9 @@ import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
-import com.helger.meta.EProject;
-import com.helger.meta.EProjectType;
-import com.helger.meta.IProject;
+import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectType;
+import com.helger.meta.project.IProject;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the

@@ -24,9 +24,9 @@ import com.helger.commons.CGlobal;
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
-import com.helger.meta.EProject;
-import com.helger.meta.EProjectType;
-import com.helger.meta.IProject;
+import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectType;
+import com.helger.meta.project.IProject;
 
 /**
  * Check whether all project has all the required files

@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.charset.CCharset;
+import com.helger.meta.project.IProject;
 
 /**
  * Base class for the main utilities in this package
