@@ -24,6 +24,7 @@ import javax.annotation.Nullable;
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.version.Version;
+import com.helger.meta.CMeta;
 
 /**
  * Defines all the available projects.
@@ -112,6 +113,7 @@ public enum EProject implements IProject
   {
     m_aProject = new SimpleProject (sProjectName,
                                     eProjectType,
+                                    new File (CMeta.GIT_BASE_DIR, sProjectName),
                                     eIsDeprecated,
                                     eHasPagesProject,
                                     eHasWikiProject,

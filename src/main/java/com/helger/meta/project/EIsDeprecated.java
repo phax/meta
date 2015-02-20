@@ -16,13 +16,33 @@
  */
 package com.helger.meta.project;
 
-public enum EIsDeprecated
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+import com.helger.commons.annotations.ReturnsMutableCopy;
+import com.helger.commons.id.IHasID;
+import com.helger.commons.lang.EnumHelper;
+
+public enum EIsDeprecated implements IHasID <String>
 {
   TRUE,
   FALSE;
 
+  @Nonnull
+  @ReturnsMutableCopy
+  public String getID ()
+  {
+    return Boolean.toString (isTrue ());
+  }
+
   public boolean isTrue ()
   {
     return this == TRUE;
+  }
+
+  @Nullable
+  public static EIsDeprecated getFromIDOrNull (@Nullable final String sID)
+  {
+    return EnumHelper.getFromIDOrNull (EIsDeprecated.class, sID);
   }
 }

@@ -16,13 +16,33 @@
  */
 package com.helger.meta.project;
 
-public enum EHasWiki
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+import com.helger.commons.annotations.ReturnsMutableCopy;
+import com.helger.commons.id.IHasID;
+import com.helger.commons.lang.EnumHelper;
+
+public enum EHasWiki implements IHasID <String>
 {
   TRUE,
   FALSE;
 
+  @Nonnull
+  @ReturnsMutableCopy
+  public String getID ()
+  {
+    return Boolean.toString (isTrue ());
+  }
+
   public boolean isTrue ()
   {
     return this == TRUE;
+  }
+
+  @Nullable
+  public static EHasWiki getFromIDOrNull (@Nullable final String sID)
+  {
+    return EnumHelper.getFromIDOrNull (EHasWiki.class, sID);
   }
 }

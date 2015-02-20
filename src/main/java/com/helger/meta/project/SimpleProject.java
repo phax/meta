@@ -5,9 +5,9 @@ import java.io.File;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.version.Version;
-import com.helger.meta.CMeta;
 
 public class SimpleProject implements IProject
 {
@@ -25,14 +25,29 @@ public class SimpleProject implements IProject
 
   public SimpleProject (@Nonnull @Nonempty final String sProjectName,
                         @Nonnull final EProjectType eProjectType,
+                        @Nonnull final File aBaseDir,
+                        @Nullable final String sLastPublishedVersion)
+  {
+    this (sProjectName,
+          eProjectType,
+          aBaseDir,
+          EIsDeprecated.FALSE,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
+          sLastPublishedVersion);
+  }
+
+  public SimpleProject (@Nonnull @Nonempty final String sProjectName,
+                        @Nonnull final EProjectType eProjectType,
+                        @Nonnull final File aBaseDir,
                         @Nonnull final EIsDeprecated eIsDeprecated,
                         @Nonnull final EHasPages eHasPagesProject,
                         @Nonnull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion)
   {
-    m_sProjectName = sProjectName;
-    m_eProjectType = eProjectType;
-    m_aBaseDir = new File (CMeta.GIT_BASE_DIR, sProjectName);
+    m_sProjectName = ValueEnforcer.notEmpty (sProjectName, "ProjectName");
+    m_eProjectType = ValueEnforcer.notNull (eProjectType, "ProjectType");
+    m_aBaseDir = ValueEnforcer.notNull (aBaseDir, "BaseDir");
     if (!m_aBaseDir.exists ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
     m_bIsDeprecated = eIsDeprecated.isTrue ();
