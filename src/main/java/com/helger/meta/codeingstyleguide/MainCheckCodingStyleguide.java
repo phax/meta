@@ -77,6 +77,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (bIsSpecialCase)
       return;
 
+    final boolean bClassIsFinal = Modifier.isFinal (cn.access);
+
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
@@ -88,6 +90,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
       final boolean bIsConstructor = mn.name.equals ("<init>");
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
+      final boolean bIsFinal = Modifier.isFinal (mn.access);
 
       if (bIsPrivate)
       {
@@ -98,6 +101,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             !mn.name.equals ("readResolve") &&
             !mn.name.startsWith ("lambda$"))
           _warn (eProject, sPrefix + "Privat methods should start with an underscore");
+      }
+
+      if (bIsFinal)
+      {
+        if (bClassIsFinal)
+          _warn (eProject, sPrefix + "final method in final class");
       }
     }
   }
@@ -214,7 +223,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
     for (final EProject eProject : EProject.values ())
-      if (eProject.getProjectType ().hasJavaCode () && eProject != EProject.PH_JAVACC_MAVEN_PLUGIN)
+      if (eProject.getProjectType ().hasJavaCode () &&
+          eProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
+          !eProject.isDeprecated ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
   }

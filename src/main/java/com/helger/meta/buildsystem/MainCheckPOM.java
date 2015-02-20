@@ -203,6 +203,9 @@ public final class MainCheckPOM extends AbstractProjectMain
             }
             else
             {
+              if (eReferencedProject.isDeprecated ())
+                _warn (eProject, sArtifactID + ": is deprecated!");
+
               // Version is optional e.g. when dependencyManagement is used
               final String sVersion = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
                                                                              "version");

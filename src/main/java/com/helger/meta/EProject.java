@@ -32,7 +32,7 @@ import com.helger.commons.version.Version;
  */
 public enum EProject
 {
-  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.5"),
+  AS2_LIB ("as2-lib", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.6"),
   AS2_PEPPOL_CLIENT ("as2-peppol-client", EProjectType.JAVA_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
   AS2_PEPPOL_SERVER ("as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
@@ -44,7 +44,7 @@ public enum EProject
   PEPPOL_PRACTICAL ("peppol-practical", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PEPPOL_SBDH ("peppol-sbdh", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
   PEPPOL_VALIDATION_ENGINE ("peppol-validation-engine", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.9.0"),
+  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.9.1"),
   PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_COMMONS ("ph-commons", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "5.5.0"),
@@ -72,12 +72,12 @@ public enum EProject
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.2"),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_SCH2XSLT_MAVEN_PLUGIN ("ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
-  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.7.0"),
+  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.7.1"),
   PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.TRUE, EHasWiki.FALSE, "2.9.1"),
   PH_SCHEMATRON_TESTFILES ("ph-schematron-testfiles", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
   PH_SCHEMATRON_VALIDATOR ("ph-schematron-validator", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
   PH_SETTINGS ("ph-settings", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
-  PH_SMTP ("ph-smtp", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
+  PH_SMTP ("ph-smtp", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.1"),
   PH_TINYMCE4 ("ph-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "0.3.4"),
   PH_UBL ("ph-ubl", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
   PH_UBL_JAXB_PLUGIN ("ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.0"),
@@ -86,10 +86,10 @@ public enum EProject
   PH_UBL21 ("ph-ubl21", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
   PH_UBL21_CODELISTS ("ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
   PH_VALIDATION ("ph-validation", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.3"),
-  PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "6.2.0"),
+  PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "6.3.0"),
   PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.8.0"),
-  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.7.0"),
+  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.8.1"),
+  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.7.1"),
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8"),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
@@ -190,6 +190,10 @@ public enum EProject
     return m_sProjectName + CMeta.EXTENSION_WIKI_PROJECT;
   }
 
+  /**
+   * @return <code>true</code> if this project had at least one release,
+   *         <code>false</code> if not.
+   */
   public boolean isPublished ()
   {
     return m_sLastPublishedVersion != null;
