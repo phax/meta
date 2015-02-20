@@ -120,6 +120,11 @@ public enum EProject implements IProject
                                     sLastPublishedVersion);
   }
 
+  public boolean isBuildInProject ()
+  {
+    return true;
+  }
+
   @Nonnull
   @Nonempty
   public String getProjectName ()

@@ -26,10 +26,18 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.helger.commons.GlobalDebug;
 import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.charset.CCharset;
+import com.helger.commons.io.IReadableResource;
+import com.helger.commons.io.resource.ClassPathResource;
+import com.helger.commons.microdom.IMicroDocument;
+import com.helger.commons.microdom.IMicroElement;
+import com.helger.commons.microdom.convert.MicroTypeConverter;
+import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.SimpleProject;
 
 /**
  * Base class for the main utilities in this package
@@ -52,6 +60,11 @@ public abstract class AbstractProjectMain
   protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 
+  static
+  {
+    GlobalDebug.setDebugModeDirect (false);
+  }
+
   protected static final void _warn (@Nonnull final IProject eProject, @Nonnull final String sMsg)
   {
     s_aLogger.warn ("[" + eProject.getProjectName () + "] " + sMsg);
@@ -71,6 +84,16 @@ public abstract class AbstractProjectMain
     final List <IProject> ret = new ArrayList <IProject> ();
     for (final IProject aProject : EProject.values ())
       ret.add (aProject);
+
+    final IReadableResource aRes = new ClassPathResource ("other-projects.xml");
+    if (aRes.exists ())
+    {
+      final IMicroDocument aOthers = MicroReader.readMicroXML (aRes);
+      if (aOthers != null)
+        for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
+          ret.add (MicroTypeConverter.convertToNative (eProject, SimpleProject.class));
+    }
+
     return ret;
   }
 }

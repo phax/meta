@@ -17,6 +17,7 @@
 package com.helger.meta.buildsystem;
 
 import java.io.File;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 
@@ -85,11 +86,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject e : getAllProjects ())
+    final List <IProject> aAllProjects = getAllProjects ();
+    for (final IProject e : aAllProjects)
       if (e.getProjectType () != EProjectType.MAVEN_POM)
       {
         _validateProject (e);
       }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + aAllProjects.size () + " projects");
   }
 }

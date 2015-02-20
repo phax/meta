@@ -57,6 +57,11 @@ public class SimpleProject implements IProject
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : new Version (sLastPublishedVersion);
   }
 
+  public boolean isBuildInProject ()
+  {
+    return false;
+  }
+
   @Nonnull
   @Nonempty
   public String getProjectName ()

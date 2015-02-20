@@ -16,6 +16,8 @@
  */
 package com.helger.meta.buildsystem;
 
+import java.util.List;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -75,10 +77,10 @@ public final class MainCheckPOM extends AbstractProjectMain
     return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
   }
 
-  private static void _validatePOM (@Nonnull final IProject eProject, @Nonnull final IMicroDocument aDoc)
+  private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
   {
     if (s_aLogger.isDebugEnabled ())
-      s_aLogger.debug (eProject.getProjectName ());
+      s_aLogger.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
@@ -86,24 +88,27 @@ public final class MainCheckPOM extends AbstractProjectMain
     {
       final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
       if (eParent == null)
-        _warn (eProject, "No parent element found");
+        _warn (aProject, "No parent element found");
       else
       {
         final String sGroupId = MicroUtils.getChildTextContent (eParent, "groupId");
         if (!PARENT_POM_GROUPID.equals (sGroupId))
-          _warn (eProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
+        {
+          if (aProject.isBuildInProject ())
+            _warn (aProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
+        }
         else
         {
           // Check only if groupId matches
           final String sArtifactId = MicroUtils.getChildTextContent (eParent, "artifactId");
           if (!PARENT_POM_ARTIFACTID.equals (sArtifactId))
-            _warn (eProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+            _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
           else
           {
             // Check version only if group and artifact match
             final String sVersion = MicroUtils.getChildTextContent (eParent, "version");
             if (!PARENT_POM_VERSION.equals (sVersion))
-              _warn (eProject, "Parent POM uses non-standard version '" + sVersion + "'");
+              _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
           }
         }
       }
@@ -118,67 +123,70 @@ public final class MainCheckPOM extends AbstractProjectMain
         sPackaging = "jar";
       }
 
-      final String sExpectedPackaging = _getDesiredPackaging (eProject);
-      if (!sPackaging.equals (sExpectedPackaging))
-        _warn (eProject, "Unexpected packaging '" + sPackaging + "' used. Expected '" + sExpectedPackaging + "'");
+      final String sExpectedPackaging = _getDesiredPackaging (aProject);
+      if (!sPackaging.equals (sExpectedPackaging) && !aProject.isBuildInProject ())
+        _warn (aProject, "Unexpected packaging '" + sPackaging + "' used. Expected '" + sExpectedPackaging + "'");
     }
 
     // Check URL
+    if (aProject.isBuildInProject ())
     {
       final String sURL = MicroUtils.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/phax/" + eProject.getProjectName ();
+      final String sExpectedURL = "https://github.com/phax/" + aProject.getProjectName ();
       if (!sExpectedURL.equals (sURL))
-        _warn (eProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
+        _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
 
     // Check for inception year
     {
       final String sInceptionYear = MicroUtils.getChildTextContent (eRoot, "inceptionYear");
       if (StringHelper.hasNoText (sInceptionYear))
-        _warn (eProject, "inceptionYear element is missing or empty");
+        _warn (aProject, "inceptionYear element is missing or empty");
       else
         if (!StringParser.isUnsignedInt (sInceptionYear))
-          _warn (eProject, "Inception year '" + sInceptionYear + "' is not numeric");
+          _warn (aProject, "Inception year '" + sInceptionYear + "' is not numeric");
     }
 
     // Check for license element
+    if (aProject.isBuildInProject ())
     {
       if (!eRoot.hasChildElements ("licenses"))
-        _warn (eProject, "licenses element is missing");
+        _warn (aProject, "licenses element is missing");
     }
 
     // Check SCM
+    if (aProject.isBuildInProject ())
     {
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)
-        _warn (eProject, "scm element is missing");
+        _warn (aProject, "scm element is missing");
       else
       {
         final String sConnection = MicroUtils.getChildTextContent (eSCM, "connection");
-        final String sExpectedConnection = "scm:git:git@github.com:phax/" + eProject.getProjectName () + ".git";
+        final String sExpectedConnection = "scm:git:git@github.com:phax/" + aProject.getProjectName () + ".git";
         // Alternatively:
         // "scm:git:https://github.com/phax/"+eProject.getProjectName ()
         if (!sExpectedConnection.equals (sConnection))
-          _warn (eProject, "Unexpected SCM connection '" + sConnection + "'. Expected '" + sExpectedConnection + "'");
+          _warn (aProject, "Unexpected SCM connection '" + sConnection + "'. Expected '" + sExpectedConnection + "'");
 
         final String sDeveloperConnection = MicroUtils.getChildTextContent (eSCM, "developerConnection");
         final String sExpectedDeveloperConnection = sExpectedConnection;
         if (!sExpectedDeveloperConnection.equals (sDeveloperConnection))
-          _warn (eProject, "Unexpected SCM developer connection '" +
+          _warn (aProject, "Unexpected SCM developer connection '" +
                            sDeveloperConnection +
                            "'. Expected '" +
                            sExpectedDeveloperConnection +
                            "'");
 
         final String sURL = MicroUtils.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://github.com/phax/" + eProject.getProjectName ();
+        final String sExpectedURL = "http://github.com/phax/" + aProject.getProjectName ();
         if (!sExpectedURL.equals (sURL))
-          _warn (eProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
+          _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 
         final String sTag = MicroUtils.getChildTextContent (eSCM, "tag");
         final String sExpectedTag = "HEAD";
         if (!sExpectedTag.equals (sTag))
-          _warn (eProject, "Unexpected SCM tag '" + sTag + "'. Expected '" + sExpectedTag + "'");
+          _warn (aProject, "Unexpected SCM tag '" + sTag + "'. Expected '" + sExpectedTag + "'");
       }
     }
 
@@ -200,12 +208,12 @@ public final class MainCheckPOM extends AbstractProjectMain
             final IProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
             if (eReferencedProject == null)
             {
-              _warn (eProject, "Referenced unknown project '" + sArtifactID + "'");
+              _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
             }
             else
             {
               if (eReferencedProject.isDeprecated ())
-                _warn (eProject, sArtifactID + ": is deprecated!");
+                _warn (aProject, sArtifactID + ": is deprecated!");
 
               // Version is optional e.g. when dependencyManagement is used
               final String sVersion = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
@@ -221,7 +229,7 @@ public final class MainCheckPOM extends AbstractProjectMain
                   if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
-                    _warn (eProject, sArtifactID +
+                    _warn (aProject, sArtifactID +
                                      ":" +
                                      sVersion +
                                      " is out of date. The latest version is " +
@@ -232,7 +240,7 @@ public final class MainCheckPOM extends AbstractProjectMain
                     {
                       // Version matches - check for SNAPSHOT differences
                       if (bIsSnapshot)
-                        _warn (eProject, sArtifactID +
+                        _warn (aProject, sArtifactID +
                                          ":" +
                                          sVersion +
                                          " is out of date. The latest version is " +
@@ -243,7 +251,7 @@ public final class MainCheckPOM extends AbstractProjectMain
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
-                          _warn (eProject, "Referenced version " +
+                          _warn (aProject, "Referenced version " +
                                            sVersion +
                                            " of project '" +
                                            eReferencedProject +
@@ -255,7 +263,7 @@ public final class MainCheckPOM extends AbstractProjectMain
                 {
                   // Referenced project not yet published
                   if (!bIsSnapshot)
-                    _warn (eProject, "Referenced project " +
+                    _warn (aProject, "Referenced project " +
                                      eReferencedProject +
                                      " is marked as not published, but a non-SNAPSHOT version is referenced!");
                 }
@@ -265,7 +273,7 @@ public final class MainCheckPOM extends AbstractProjectMain
           else
           {
             if (false)
-              _warn (eProject, "Unsuported group " + sGroupID);
+              _warn (aProject, "Unsuported group " + sGroupID);
           }
         }
       }
@@ -273,7 +281,8 @@ public final class MainCheckPOM extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject e : getAllProjects ())
+    final List <IProject> aAllProjects = getAllProjects ();
+    for (final IProject e : aAllProjects)
       if (e.getProjectType () != EProjectType.MAVEN_POM && !e.isDeprecated ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
@@ -281,6 +290,6 @@ public final class MainCheckPOM extends AbstractProjectMain
           throw new IllegalStateException ("Failed to read " + e.getPOMFile ());
         _validatePOM (e, aDoc);
       }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + aAllProjects.size () + " projects");
   }
 }

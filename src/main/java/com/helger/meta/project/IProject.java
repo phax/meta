@@ -10,6 +10,11 @@ import com.helger.commons.version.Version;
 
 public interface IProject
 {
+  /**
+   * @return <code>true</code> if this project is part of {@link EProject}.
+   */
+  boolean isBuildInProject ();
+
   @Nonnull
   @Nonempty
   String getProjectName ();

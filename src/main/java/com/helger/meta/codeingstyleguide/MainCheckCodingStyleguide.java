@@ -19,6 +19,7 @@ package com.helger.meta.codeingstyleguide;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
+import java.util.List;
 import java.util.Locale;
 
 import javax.annotation.Nonnull;
@@ -223,11 +224,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
-    for (final IProject eProject : getAllProjects ())
+    final List <IProject> aAllProjects = getAllProjects ();
+    for (final IProject eProject : aAllProjects)
       if (eProject.getProjectType ().hasJavaCode () &&
           eProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
           !eProject.isDeprecated ())
         _scanProject (eProject);
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + aAllProjects.size () + " projects");
   }
 }
