@@ -17,6 +17,7 @@
 package com.helger.meta.cmdline;
 
 import java.io.File;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 
@@ -24,7 +25,6 @@ import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
-import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 
 /**
@@ -35,22 +35,21 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
-  private static final int PROJECT_COUNT = EProject.values ().length;
-
   private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
                                         @Nonnull @Nonempty final String sBatchFileName)
   {
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
-    for (final IProject e : EProject.values ())
+    final List <IProject> aAllProjects = getAllProjects ();
+    for (final IProject e : aAllProjects)
     {
       aSB.append ("echo ")
          .append (e.getProjectName ())
          .append (" [")
          .append (nIndex)
          .append ("/")
-         .append (PROJECT_COUNT)
+         .append (aAllProjects.size ())
          .append ("]\ncd ")
          .append (e.getProjectName ())
          .append ("\n")

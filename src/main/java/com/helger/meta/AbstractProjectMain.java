@@ -17,6 +17,8 @@
 package com.helger.meta;
 
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -24,7 +26,9 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.charset.CCharset;
+import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 
 /**
@@ -58,5 +62,15 @@ public abstract class AbstractProjectMain
   protected static int getWarnCount ()
   {
     return s_nWarnCount;
+  }
+
+  @Nonnull
+  @ReturnsMutableCopy
+  protected static List <IProject> getAllProjects ()
+  {
+    final List <IProject> ret = new ArrayList <IProject> ();
+    for (final IProject aProject : EProject.values ())
+      ret.add (aProject);
+    return ret;
   }
 }

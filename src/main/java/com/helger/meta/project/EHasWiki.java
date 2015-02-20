@@ -16,24 +16,12 @@
  */
 package com.helger.meta.project;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.helger.commons.annotations.ReturnsMutableCopy;
-import com.helger.commons.id.IHasID;
-import com.helger.commons.lang.EnumHelper;
-
-public enum EHasWiki implements IHasID <String>
+public enum EHasWiki
 {
   TRUE,
   FALSE;
-
-  @Nonnull
-  @ReturnsMutableCopy
-  public String getID ()
-  {
-    return Boolean.toString (isTrue ());
-  }
 
   public boolean isTrue ()
   {
@@ -41,8 +29,8 @@ public enum EHasWiki implements IHasID <String>
   }
 
   @Nullable
-  public static EHasWiki getFromIDOrNull (@Nullable final String sID)
+  public static EHasWiki value (final boolean bTrue)
   {
-    return EnumHelper.getFromIDOrNull (EHasWiki.class, sID);
+    return bTrue ? TRUE : FALSE;
   }
 }

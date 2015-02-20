@@ -43,7 +43,6 @@ import com.helger.commons.text.impl.TextProvider;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMUtils;
-import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
@@ -185,7 +184,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start extracting text from .class files!");
-    for (final IProject eProject : EProject.values ())
+    for (final IProject eProject : getAllProjects ())
       if (eProject.getProjectType ().hasJavaCode ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");

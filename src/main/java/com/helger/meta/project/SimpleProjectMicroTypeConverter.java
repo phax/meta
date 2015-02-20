@@ -25,12 +25,16 @@ import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.convert.IMicroTypeConverter;
 import com.helger.commons.microdom.impl.MicroElement;
+import com.helger.commons.string.StringParser;
 
 public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter
 {
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
   private static final String ATTR_BASE_DIR = "basedir";
+  private static final String ATTR_IS_DEPRECATED = "isdeprecated";
+  private static final String ATTR_HAS_PAGES = "haspages";
+  private static final String ATTR_HAS_WIKI = "haswiki";
   private static final String ATTR_LAST_PUBLISHED_VERSION = "lastpubversion";
 
   @Nonnull
@@ -43,23 +47,36 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     ret.setAttribute (ATTR_PROJECT_NAME, aPrice.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aPrice.getProjectType ().getID ());
     ret.setAttribute (ATTR_BASE_DIR, aPrice.getBaseDir ().getAbsolutePath ());
+    ret.setAttribute (ATTR_IS_DEPRECATED, Boolean.toString (aPrice.isDeprecated ()));
+    ret.setAttribute (ATTR_HAS_PAGES, Boolean.toString (aPrice.hasPagesProject ()));
+    ret.setAttribute (ATTR_HAS_WIKI, Boolean.toString (aPrice.hasWikiProject ()));
     ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aPrice.getLastPublishedVersionString ());
     return ret;
   }
 
   @Nonnull
-  public SimpleProject convertToNative (@Nonnull final IMicroElement ePrice)
+  public SimpleProject convertToNative (@Nonnull final IMicroElement aElement)
   {
-    final String sProjectName = ePrice.getAttributeValue (ATTR_PROJECT_NAME);
+    final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
 
-    final String sProjectTypeID = ePrice.getAttributeValue (ATTR_PROJECT_TYPE);
+    final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
     final EProjectType eProjectType = EProjectType.getFromIDOrNull (sProjectTypeID);
 
-    final String sBaseDir = ePrice.getAttributeValue (ATTR_BASE_DIR);
+    final String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
     final File aBaseDir = new File (sBaseDir);
 
-    final String sLastPublishedVersion = ePrice.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
+    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED));
+    final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES));
+    final boolean bHasWiki = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_WIKI));
 
-    return new SimpleProject (sProjectName, eProjectType, aBaseDir, sLastPublishedVersion);
+    final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
+
+    return new SimpleProject (sProjectName,
+                              eProjectType,
+                              aBaseDir,
+                              EIsDeprecated.value (bIsDeprecated),
+                              EHasPages.value (bHasPages),
+                              EHasWiki.value (bHasWiki),
+                              sLastPublishedVersion);
   }
 }
