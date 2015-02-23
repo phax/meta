@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.sysinfo;
+package com.helger.meta.tools.sysinfo;
 
 import java.security.Provider;
 import java.security.Provider.Service;

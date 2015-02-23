@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.codeingstyleguide;
+package com.helger.meta.tools.codeingstyleguide;
 
 import java.io.File;
 import java.io.IOException;

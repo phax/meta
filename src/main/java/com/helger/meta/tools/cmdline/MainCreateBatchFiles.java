@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.cmdline;
+package com.helger.meta.tools.cmdline;
 
 import java.io.File;
 import java.util.List;

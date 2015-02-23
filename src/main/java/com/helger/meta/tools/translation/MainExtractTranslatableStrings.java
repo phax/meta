@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.translation;
+package com.helger.meta.tools.translation;
 
 import java.io.File;
 import java.io.IOException;
@@ -44,6 +44,8 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMUtils;
 import com.helger.meta.project.IProject;
+import com.helger.meta.translation.StringTable;
+import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
