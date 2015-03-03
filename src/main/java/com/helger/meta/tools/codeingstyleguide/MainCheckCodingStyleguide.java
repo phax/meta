@@ -30,9 +30,12 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodNode;
 
 import com.helger.commons.annotations.CodingStyleguideUnaware;
+import com.helger.commons.annotations.Nonempty;
+import com.helger.commons.annotations.OverrideOnDemand;
 import com.helger.commons.io.file.FileUtils;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
+import com.helger.commons.state.EContinue;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMUtils;
 import com.helger.meta.project.EProject;
@@ -109,6 +112,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       {
         if (bClassIsFinal)
           _warn (eProject, sPrefix + "final method in final class");
+
+        if (ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
+          _warn (eProject, sPrefix + "final method uses @OverrideOnDemand annotation");
+      }
+      else
+      {
+        if (bClassIsFinal && ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
+          _warn (eProject, sPrefix + "final class uses @OverrideOnDemand annotation");
       }
     }
   }
@@ -147,12 +158,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           if (!fn.name.startsWith ("s_") &&
               !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
               !fn.name.equals ("serialVersionUID"))
-            _warn (eProject, sPrefix + "Static final member name '" + fn.name + "' does not match");
+            _warn (eProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
         }
         else
         {
           if (!fn.name.startsWith ("s_"))
-            _warn (eProject, sPrefix + "Static member name '" + fn.name + "' does not match");
+            _warn (eProject, sPrefix + "Static member name '" + fn.name + "' does not match naming conventions");
 
           if (!bIsPrivate)
             _warn (eProject, sPrefix + "Static member '" + fn.name + "' is not private");
@@ -172,11 +183,78 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  private static void _scanProject (@Nonnull final IProject eProject) throws IOException
+  @Nonnull
+  private static EContinue _doScanClass (@Nonnull final IProject aProject,
+                                         @Nonnull final String sPackageName,
+                                         @Nonnull @Nonempty final String sClassLocalName)
+  {
+    if (aProject == EProject.ERECHNUNG_WS_CLIENT &&
+        (sPackageName.equals ("at.gv.brz.eproc.erb.ws.documentupload._20121205") ||
+         sPackageName.equals ("at.gv.brz.eproc.erb.ws.invoicedelivery._201306") ||
+         sPackageName.equals ("at.gv.brz.eproc.erb.ws.invoicedeliverycallback._201305") || sPackageName.equals ("at.gv.brz.schema.eproc.invoice_uploadstatus_1_0")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.JCODEMODEL)
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PEPPOL_PRACTICAL && sPackageName.equals ("com.helger.peppol.wsclient"))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_CSS &&
+        (sClassLocalName.equals ("CharStream") ||
+         sClassLocalName.equals ("ParseException") ||
+         sClassLocalName.startsWith ("ParserCSS21") ||
+         sClassLocalName.startsWith ("ParserCSS30") ||
+         sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
+         sClassLocalName.equals ("Token") ||
+         sClassLocalName.equals ("TokenMgrError") ||
+         sClassLocalName.startsWith ("JJTParser") ||
+         sClassLocalName.equals ("Node") ||
+         (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) || sClassLocalName.equals ("SimpleNode")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_EBINTERFACE &&
+        (sPackageName.startsWith ("com.helger.ebinterface.v30") ||
+         sPackageName.startsWith ("com.helger.ebinterface.v40") ||
+         sPackageName.startsWith ("com.helger.ebinterface.v41") || sPackageName.equals ("com.helger.ebinterface.xmldsig")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_GENERICODE &&
+        (sPackageName.equals ("com.helger.cva.v10") || sPackageName.equals ("com.helger.genericode.v04") || sPackageName.equals ("com.helger.genericode.v10")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_JSON &&
+        (sClassLocalName.equals ("CharStream") ||
+         sClassLocalName.equals ("ParseException") ||
+         sClassLocalName.startsWith ("ParserJson") ||
+         sClassLocalName.equals ("Token") || sClassLocalName.equals ("TokenMgrError")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_SBDH && sPackageName.equals ("org.unece.cefact.namespaces.sbdh"))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_SCHEMATRON && sPackageName.equals ("org.oclc.purl.dsdl.svrl"))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_UBL20 &&
+        (sPackageName.startsWith ("oasis.names.specification.ubl.schema.xsd.") ||
+         sPackageName.startsWith ("un.unece.uncefact.codelist.specification.") || sPackageName.startsWith ("un.unece.uncefact.data.specification.")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_UBL21 &&
+        (sPackageName.startsWith ("oasis.names.specification.ubl.schema.xsd.") ||
+         sPackageName.startsWith ("org.etsi.uri.") ||
+         sPackageName.equals ("org.w3._2000._09.xmldsig") || sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
+      return EContinue.BREAK;
+
+    return EContinue.CONTINUE;
+  }
+
+  private static void _scanProject (@Nonnull final IProject aProject) throws IOException
   {
     if (false)
-      s_aLogger.info ("  " + eProject.getProjectName ());
-    final File aTargetDir = FileUtils.getCanonicalFile (new File (eProject.getBaseDir (), "target/classes"));
+      s_aLogger.info ("  " + aProject.getProjectName ());
+    final File aTargetDir = FileUtils.getCanonicalFile (new File (aProject.getBaseDir (), "target/classes"));
 
     // Find all class files
     for (final File aClassFile : new FileSystemRecursiveIterator (aTargetDir))
@@ -189,35 +267,17 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class))
           continue;
 
-        final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+        final String sClassName = CGStringHelper.getClassFromPath (cn.name);
+        final String sPackageName = CGStringHelper.getClassPackageName (sClassName);
+        final String sClassLocalName = CGStringHelper.getClassLocalName (sClassName);
 
         // Special generated classes
-        if (eProject == EProject.PH_CSS &&
-            (sClassLocalName.equals ("CharStream") ||
-             sClassLocalName.equals ("ParseException") ||
-             sClassLocalName.startsWith ("ParserCSS21") ||
-             sClassLocalName.startsWith ("ParserCSS30") ||
-             sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
-             sClassLocalName.equals ("Token") ||
-             sClassLocalName.equals ("TokenMgrError") ||
-             sClassLocalName.startsWith ("JJTParser") ||
-             sClassLocalName.equals ("Node") ||
-             (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) || sClassLocalName.equals ("SimpleNode")))
+        if (_doScanClass (aProject, sPackageName, sClassLocalName).isBreak ())
           continue;
 
-        if (eProject == EProject.PH_JSON &&
-            (sClassLocalName.equals ("CharStream") ||
-             sClassLocalName.equals ("ParseException") ||
-             sClassLocalName.startsWith ("ParserJson") ||
-             sClassLocalName.equals ("Token") || sClassLocalName.equals ("TokenMgrError")))
-          continue;
-
-        if (eProject == EProject.JCODEMODEL)
-          continue;
-
-        _checkClass (eProject, cn);
-        _checkVariables (eProject, cn);
-        _checkMethods (eProject, cn);
+        _checkClass (aProject, cn);
+        _checkVariables (aProject, cn);
+        _checkMethods (aProject, cn);
       }
   }
 
