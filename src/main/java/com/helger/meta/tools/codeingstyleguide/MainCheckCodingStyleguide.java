@@ -19,6 +19,7 @@ package com.helger.meta.tools.codeingstyleguide;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -36,6 +37,8 @@ import com.helger.commons.io.file.FileUtils;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.state.EContinue;
+import com.helger.commons.string.StringHelper;
+import com.helger.commons.string.StringParser;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMUtils;
 import com.helger.meta.project.EProject;
@@ -53,24 +56,54 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (bIsSpecialCase)
       return;
 
+    String sInnerClassLocalName = StringHelper.getFromLastExcl (sClassLocalName, '$');
+    if (sInnerClassLocalName == null)
+      sInnerClassLocalName = sClassLocalName;
+    else
+      if (StringParser.isUnsignedInt (sInnerClassLocalName))
+      {
+        // It's an anonymous inner class - use the full name
+        sInnerClassLocalName = sClassLocalName;
+      }
+
     final String sPrefix = "[" + sClassLocalName + "] ";
-    final boolean bClassIsInterface = Modifier.isInterface (cn.access);
+    final boolean bClassIsAbstract = Modifier.isAbstract (cn.access);
     final boolean bClassIsAnnotation = (cn.access & Opcodes.ACC_ANNOTATION) != 0;
+    final boolean bClassIsEnum = (cn.access & Opcodes.ACC_ENUM) != 0;
+    final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
     if (bClassIsInterface)
     {
       if (bClassIsAnnotation)
-      {}
+      {
+        // TODO
+      }
       else
       {
-        if (sClassLocalName.startsWith ("I"))
+        if (sInnerClassLocalName.startsWith ("I"))
         {
-          if (sClassLocalName.length () > 1 && !Character.isUpperCase (sClassLocalName.charAt (1)))
+          if (sInnerClassLocalName.length () > 1 && !Character.isUpperCase (sInnerClassLocalName.charAt (1)))
             _warn (eProject, sPrefix + "Interface names should have an upper case second letter");
         }
         else
-          if (!sClassLocalName.contains ("$I") && !sClassLocalName.endsWith ("MBean"))
+          if (!sInnerClassLocalName.startsWith ("I") && !sClassLocalName.endsWith ("MBean"))
             _warn (eProject, sPrefix + "Interface names should start with an uppercase 'I'");
+      }
+    }
+    else
+    {
+      if (bClassIsEnum)
+      {
+        if (!sInnerClassLocalName.startsWith ("E"))
+          _warn (eProject, sPrefix + "enum classes should start with 'E'");
+      }
+      else
+      {
+        if (bClassIsAbstract)
+        {
+          if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.contains ("Singleton"))
+            _warn (eProject, sPrefix + "Abstract classes should start with 'Abstract'");
+        }
       }
     }
   }
@@ -82,8 +115,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (bIsSpecialCase)
       return;
 
+    final boolean bClassIsAbstract = Modifier.isAbstract (cn.access);
+    final boolean bClassIsEnum = (cn.access & Opcodes.ACC_ENUM) != 0;
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
+    final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
+    final List <MethodNode> aAllCtors = new ArrayList <> ();
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
@@ -96,6 +133,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       final boolean bIsConstructor = mn.name.equals ("<init>");
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
       final boolean bIsFinal = Modifier.isFinal (mn.access);
+
+      if (bIsConstructor)
+        aAllCtors.add (mn);
 
       if (bIsPrivate)
       {
@@ -121,6 +161,19 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bClassIsFinal && ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
           _warn (eProject, sPrefix + "final class uses @OverrideOnDemand annotation");
       }
+    }
+
+    if (bClassIsAbstract && !bClassIsInterface && !bClassIsEnum)
+    {
+      boolean bAnyNonPrivateCtor = false;
+      for (final MethodNode aCtor : aAllCtors)
+        if (!Modifier.isPrivate (aCtor.access))
+        {
+          bAnyNonPrivateCtor = true;
+          break;
+        }
+      if (!bAnyNonPrivateCtor)
+        _warn (eProject, "[" + sClassLocalName + "] The abstract class contains only private constructors!");
     }
   }
 
