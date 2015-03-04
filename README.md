@@ -4,7 +4,7 @@ A meta project for easy management of my other projects :)
 
 This project is not meant for release but only helps me internally to get them all aligned.
 
-Current list of all projects (as of Wed Mar 04 09:46:52 CET 2015):
+Current list of all projects (as of Wed Mar 04 14:44:14 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.6
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -33,7 +33,7 @@ Current list of all projects (as of Wed Mar 04 09:46:52 CET 2015):
  * [ph-events](https://github.com/phax/ph-events) - Version 3.0.0
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 1.1.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.0
- * [ph-html](https://github.com/phax/ph-html) - Version 4.5.2
+ * [ph-html](https://github.com/phax/ph-html) - Version 4.6.0
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.2
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
