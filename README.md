@@ -4,7 +4,7 @@ A meta project for easy management of my other projects :)
 
 This project is not meant for release but only helps me internally to get them all aligned.
 
-Current list of all projects (as of Wed Mar 04 14:44:14 CET 2015):
+Current list of all projects (as of Thu Mar 05 13:45:23 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.6
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -47,7 +47,7 @@ Current list of all projects (as of Wed Mar 04 14:44:14 CET 2015):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.2
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 1.1.0
  * [ph-sch2xslt-maven-plugin](https://github.com/phax/ph-sch2xslt-maven-plugin) - Version 2.8.0
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 1.7.1
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 1.8.0
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 2.9.1
  * [ph-schematron-testfiles](https://github.com/phax/ph-schematron-testfiles) - Version 1.1.2
  * [ph-schematron-validator](https://github.com/phax/ph-schematron-validator) - Version 2.8.0

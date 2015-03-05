@@ -74,7 +74,7 @@ public enum EProject implements IProject
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.2"),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_SCH2XSLT_MAVEN_PLUGIN ("ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
-  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.7.1"),
+  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.8.0"),
   PH_SCHEMATRON ("ph-schematron", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.TRUE, EHasWiki.FALSE, "2.9.1"),
   PH_SCHEMATRON_TESTFILES ("ph-schematron-testfiles", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
   PH_SCHEMATRON_VALIDATOR ("ph-schematron-validator", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
