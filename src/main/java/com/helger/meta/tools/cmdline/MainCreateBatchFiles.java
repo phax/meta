@@ -43,20 +43,21 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     int nIndex = 1;
     final List <IProject> aAllProjects = getAllProjects ();
     for (final IProject e : aAllProjects)
-    {
-      aSB.append ("echo ")
-         .append (e.getProjectName ())
-         .append (" [")
-         .append (nIndex)
-         .append ("/")
-         .append (aAllProjects.size ())
-         .append ("]\ncd ")
-         .append (e.getProjectName ())
-         .append ("\n")
-         .append (sCommand)
-         .append ("\nif errorlevel 1 goto error\ncd ..\n");
-      ++nIndex;
-    }
+      if (e.isBuildInProject ())
+      {
+        aSB.append ("echo ")
+           .append (e.getProjectName ())
+           .append (" [")
+           .append (nIndex)
+           .append ("/")
+           .append (aAllProjects.size ())
+           .append ("]\ncd ")
+           .append (e.getProjectName ())
+           .append ("\n")
+           .append (sCommand)
+           .append ("\nif errorlevel 1 goto error\ncd ..\n");
+        ++nIndex;
+      }
     aSB.append (BATCH_FOOTER);
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }

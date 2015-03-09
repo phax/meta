@@ -115,7 +115,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     // Read all dependencies
     final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
     for (final IProject e : getAllProjects ())
-      if (e.getProjectType () != EProjectType.MAVEN_POM)
+      if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
         if (aDoc == null)
