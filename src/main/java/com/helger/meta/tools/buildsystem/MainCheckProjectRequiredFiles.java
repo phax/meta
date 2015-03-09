@@ -88,7 +88,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   {
     final List <IProject> aAllProjects = getAllProjects ();
     for (final IProject e : aAllProjects)
-      if (e.getProjectType () != EProjectType.MAVEN_POM)
+      if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject ())
       {
         _validateProject (e);
       }
