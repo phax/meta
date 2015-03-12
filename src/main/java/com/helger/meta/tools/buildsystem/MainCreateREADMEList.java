@@ -17,7 +17,7 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Map;
 
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -30,13 +30,14 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCreateREADMEList extends AbstractProjectMain
 {
+  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
+
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ("Current list of all projects (as of " +
                                                  new Date ().toString () +
                                                  "):\n\n");
-    final List <IProject> aAllProjects = getAllProjects ();
-    for (final IProject e : aAllProjects)
+    for (final IProject e : ALL_PROJECTS.values ())
       if (e.isBuildInProject () && !e.isDeprecated ())
       {
         aSB.append (" * [")

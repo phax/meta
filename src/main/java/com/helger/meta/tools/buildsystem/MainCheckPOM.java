@@ -16,7 +16,7 @@
  */
 package com.helger.meta.tools.buildsystem;
 
-import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -33,7 +33,6 @@ import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 
 /**
@@ -48,6 +47,8 @@ public final class MainCheckPOM extends AbstractProjectMain
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
   private static final String PARENT_POM_VERSION = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
+
+  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
 
   @Nonnull
   @Nonempty
@@ -88,7 +89,10 @@ public final class MainCheckPOM extends AbstractProjectMain
     {
       final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
       if (eParent == null)
-        _warn (aProject, "No parent element found");
+      {
+        if (aProject != EProject.PH_PARENT_POM)
+          _warn (aProject, "No parent element found");
+      }
       else
       {
         final String sGroupId = MicroUtils.getChildTextContent (eParent, "groupId");
@@ -205,7 +209,7 @@ public final class MainCheckPOM extends AbstractProjectMain
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
-            final IProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
+            final IProject eReferencedProject = ALL_PROJECTS.get (sArtifactID);
             if (eReferencedProject == null)
             {
               _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
@@ -281,15 +285,14 @@ public final class MainCheckPOM extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    final List <IProject> aAllProjects = getAllProjects ();
-    for (final IProject e : aAllProjects)
-      if (e.getProjectType () != EProjectType.MAVEN_POM && !e.isDeprecated ())
+    for (final IProject e : ALL_PROJECTS.values ())
+      if (!e.isDeprecated ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
         if (aDoc == null)
           throw new IllegalStateException ("Failed to read " + e.getPOMFile ());
         _validatePOM (e, aDoc);
       }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + aAllProjects.size () + " projects");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ALL_PROJECTS.size () + " projects");
   }
 }

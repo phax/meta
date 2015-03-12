@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
@@ -49,6 +50,7 @@ import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
+  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
   private static Set <String> s_aActions = new LinkedHashSet <String> ();
 
   @Nullable
@@ -172,7 +174,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         }
       }
 
-    if (!aSTProject.isEmpty ())
+    if (!aSTProject.isEmpty () && eProject.isBuildInProject ())
     {
       final File aDstFileXML = new File (eProject.getBaseDir (),
                                          "src/main/resources/translation/translatable-texts.xml");
@@ -186,7 +188,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start extracting text from .class files!");
-    for (final IProject eProject : getAllProjects ())
+    for (final IProject eProject : ALL_PROJECTS.values ())
       if (eProject.getProjectType ().hasJavaCode ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");

@@ -17,8 +17,8 @@
 package com.helger.meta;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -79,11 +79,14 @@ public abstract class AbstractProjectMain
 
   @Nonnull
   @ReturnsMutableCopy
-  protected static List <IProject> getAllProjects ()
+  protected static Map <String, IProject> getAllProjects ()
   {
-    final List <IProject> ret = new ArrayList <IProject> ();
+    final Map <String, IProject> ret = new LinkedHashMap <String, IProject> ();
     for (final IProject aProject : EProject.values ())
-      ret.add (aProject);
+      ret.put (aProject.getProjectName (), aProject);
+    // Handle differences between directory name and project name
+    ret.put ("parent-pom", EProject.PH_PARENT_POM);
+    ret.put ("webservice-client", EProject.ERECHNUNG_WS_CLIENT);
 
     final IReadableResource aRes = new ClassPathResource ("other-projects.xml");
     if (aRes.exists ())
@@ -91,7 +94,10 @@ public abstract class AbstractProjectMain
       final IMicroDocument aOthers = MicroReader.readMicroXML (aRes);
       if (aOthers != null)
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
-          ret.add (MicroTypeConverter.convertToNative (eProject, SimpleProject.class));
+        {
+          final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
+          ret.put (aProject.getProjectName (), aProject);
+        }
     }
 
     return ret;

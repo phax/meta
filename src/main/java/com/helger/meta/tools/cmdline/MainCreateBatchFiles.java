@@ -17,7 +17,7 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Nonnull;
 
@@ -35,14 +35,15 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
+  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
+
   private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
                                         @Nonnull @Nonempty final String sBatchFileName)
   {
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
-    final List <IProject> aAllProjects = getAllProjects ();
-    for (final IProject e : aAllProjects)
+    for (final IProject e : ALL_PROJECTS.values ())
       if (e.isBuildInProject ())
       {
         aSB.append ("echo ")
@@ -50,7 +51,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
            .append (" [")
            .append (nIndex)
            .append ("/")
-           .append (aAllProjects.size ())
+           .append (ALL_PROJECTS.size ())
            .append ("]\ncd ")
            .append (e.getProjectName ())
            .append ("\n")

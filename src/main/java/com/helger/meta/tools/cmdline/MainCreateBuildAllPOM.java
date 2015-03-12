@@ -28,7 +28,7 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.helger.commons.collections.ContainerHelper;
+import com.helger.commons.collections.CollectionHelper;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
@@ -52,25 +52,26 @@ import com.helger.meta.project.IProject;
 public final class MainCreateBuildAllPOM extends AbstractProjectMain
 {
   private static final String MAVEN_NS = "http://maven.apache.org/POM/4.0.0";
+  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
     return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
   }
 
-  private static void _readPOM (@Nonnull final IProject eProject,
+  private static void _readPOM (@Nonnull final IProject aProject,
                                 @Nonnull final IMicroDocument aDoc,
                                 @Nonnull final Map <IProject, Set <IProject>> aTree)
   {
     if (s_aLogger.isDebugEnabled ())
-      s_aLogger.debug (eProject.getProjectName ());
+      s_aLogger.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
     final String sThisArtefactID = MicroUtils.getChildTextContentTrimmed (eRoot, "artifactId");
-    final EProject eThisProject = EProject.getFromProjectNameOrNull (sThisArtefactID);
-    if (eThisProject != eProject)
-      throw new IllegalStateException (sThisArtefactID + " is weird: " + eThisProject + " vs. " + eProject);
+    final IProject aThisProject = ALL_PROJECTS.get (sThisArtefactID);
+    if (aThisProject != aProject)
+      throw new IllegalStateException (sThisArtefactID + " is weird: " + aThisProject + " vs. " + aProject);
 
     // Check all relevant dependencies or the like
     for (final IMicroNode aNode : new MicroRecursiveIterator (eRoot))
@@ -87,22 +88,22 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
-            final EProject eReferencedProject = EProject.getFromProjectNameOrNull (sArtifactID);
-            if (eReferencedProject == null)
+            final IProject aReferencedProject = ALL_PROJECTS.get (sArtifactID);
+            if (aReferencedProject == null)
             {
-              _warn (eProject, "Referenced unknown project '" + sArtifactID + "'");
+              _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
             }
             else
             {
               if (!sArtifactID.equals (sThisArtefactID))
               {
-                Set <IProject> aRefProjects = aTree.get (eThisProject);
+                Set <IProject> aRefProjects = aTree.get (aThisProject);
                 if (aRefProjects == null)
                 {
                   aRefProjects = new HashSet <IProject> ();
-                  aTree.put (eThisProject, aRefProjects);
+                  aTree.put (aThisProject, aRefProjects);
                 }
-                aRefProjects.add (eReferencedProject);
+                aRefProjects.add (aReferencedProject);
               }
             }
           }
@@ -114,7 +115,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   {
     // Read all dependencies
     final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
-    for (final IProject e : getAllProjects ())
+    for (final IProject e : ALL_PROJECTS.values ())
       if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
@@ -133,7 +134,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
       for (final Map.Entry <IProject, Set <IProject>> aEntry : aTree.entrySet ())
       {
         final int nOld = aEntry.getValue ().size ();
-        for (final IProject eReferencedProject : ContainerHelper.newList (aEntry.getValue ()))
+        for (final IProject eReferencedProject : CollectionHelper.newList (aEntry.getValue ()))
         {
           final Set <IProject> aTransitiveDeps = aTree.get (eReferencedProject);
           if (aTransitiveDeps != null)
@@ -146,8 +147,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     s_aLogger.info ("Found all transitive dependencies after " + nIterations + " iterations");
 
     // Evaluate dependencies
-    final List <Map.Entry <IProject, Set <IProject>>> aEntries = ContainerHelper.newList (aTree.entrySet ());
-    ContainerHelper.getSortedInline (aEntries, new Comparator <Map.Entry <IProject, Set <IProject>>> ()
+    final List <Map.Entry <IProject, Set <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
+    CollectionHelper.getSortedInline (aEntries, new Comparator <Map.Entry <IProject, Set <IProject>>> ()
     {
       public int compare (final Entry <IProject, Set <IProject>> o1, final Entry <IProject, Set <IProject>> o2)
       {
