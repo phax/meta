@@ -17,7 +17,6 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
-import java.util.Map;
 
 import javax.annotation.Nonnull;
 
@@ -28,6 +27,7 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 /**
  * Check whether all project has all the required files
@@ -36,8 +36,6 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
-
   private static void _checkFileExisting (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
@@ -88,11 +86,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject e : ALL_PROJECTS.values ())
+    for (final IProject e : ProjectList.getAllProjects ())
       if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject ())
       {
         _validateProject (e);
       }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ALL_PROJECTS.size () + " projects");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

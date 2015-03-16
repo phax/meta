@@ -22,7 +22,6 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 import javax.annotation.Nonnull;
 
@@ -45,11 +44,11 @@ import com.helger.meta.asm.ASMUtils;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
 
   private static void _checkClass (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
   {
@@ -339,11 +338,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
-    for (final IProject eProject : ALL_PROJECTS.values ())
+    for (final IProject eProject : ProjectList.getAllProjects ())
       if (eProject.getProjectType ().hasJavaCode () &&
           eProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
           !eProject.isDeprecated ())
         _scanProject (eProject);
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ALL_PROJECTS.size () + " projects");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

@@ -17,8 +17,6 @@
 package com.helger.meta;
 
 import java.nio.charset.Charset;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -27,17 +25,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.GlobalDebug;
-import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.charset.CCharset;
-import com.helger.commons.io.IReadableResource;
-import com.helger.commons.io.resource.ClassPathResource;
-import com.helger.commons.microdom.IMicroDocument;
-import com.helger.commons.microdom.IMicroElement;
-import com.helger.commons.microdom.convert.MicroTypeConverter;
-import com.helger.commons.microdom.serialize.MicroReader;
-import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
-import com.helger.meta.project.SimpleProject;
 
 /**
  * Base class for the main utilities in this package
@@ -75,31 +64,5 @@ public abstract class AbstractProjectMain
   protected static int getWarnCount ()
   {
     return s_nWarnCount;
-  }
-
-  @Nonnull
-  @ReturnsMutableCopy
-  protected static Map <String, IProject> getAllProjects ()
-  {
-    final Map <String, IProject> ret = new LinkedHashMap <String, IProject> ();
-    for (final IProject aProject : EProject.values ())
-      ret.put (aProject.getProjectName (), aProject);
-    // Handle differences between directory name and project name
-    ret.put ("parent-pom", EProject.PH_PARENT_POM);
-    ret.put ("webservice-client", EProject.ERECHNUNG_WS_CLIENT);
-
-    final IReadableResource aRes = new ClassPathResource ("other-projects.xml");
-    if (aRes.exists ())
-    {
-      final IMicroDocument aOthers = MicroReader.readMicroXML (aRes);
-      if (aOthers != null)
-        for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
-        {
-          final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
-          ret.put (aProject.getProjectName (), aProject);
-        }
-    }
-
-    return ret;
   }
 }

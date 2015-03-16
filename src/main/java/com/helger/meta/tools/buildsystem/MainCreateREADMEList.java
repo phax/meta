@@ -17,10 +17,10 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.util.Date;
-import java.util.Map;
 
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the
@@ -30,14 +30,12 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCreateREADMEList extends AbstractProjectMain
 {
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
-
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ("Current list of all projects (as of " +
                                                  new Date ().toString () +
                                                  "):\n\n");
-    for (final IProject e : ALL_PROJECTS.values ())
+    for (final IProject e : ProjectList.getAllProjects ())
       if (e.isBuildInProject () && !e.isDeprecated ())
       {
         aSB.append (" * [")

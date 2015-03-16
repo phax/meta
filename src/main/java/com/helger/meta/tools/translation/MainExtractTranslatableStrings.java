@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
@@ -45,12 +44,12 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMUtils;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 import com.helger.meta.translation.StringTable;
 import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
   private static Set <String> s_aActions = new LinkedHashSet <String> ();
 
   @Nullable
@@ -188,7 +187,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start extracting text from .class files!");
-    for (final IProject eProject : ALL_PROJECTS.values ())
+    for (final IProject eProject : ProjectList.getAllProjects ())
       if (eProject.getProjectType ().hasJavaCode ())
         _scanProject (eProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");

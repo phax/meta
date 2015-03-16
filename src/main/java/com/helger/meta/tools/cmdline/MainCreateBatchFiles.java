@@ -17,7 +17,6 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.Map;
 
 import javax.annotation.Nonnull;
 
@@ -26,6 +25,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 /**
  * Create a set of batch files that contains content that in most cases is
@@ -35,15 +35,13 @@ import com.helger.meta.project.IProject;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
-
   private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
                                         @Nonnull @Nonempty final String sBatchFileName)
   {
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
-    for (final IProject e : ALL_PROJECTS.values ())
+    for (final IProject e : ProjectList.getAllProjects ())
       if (e.isBuildInProject ())
       {
         aSB.append ("echo ")
@@ -51,7 +49,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
            .append (" [")
            .append (nIndex)
            .append ("/")
-           .append (ALL_PROJECTS.size ())
+           .append (ProjectList.size ())
            .append ("]\ncd ")
            .append (e.getProjectName ())
            .append ("\n")

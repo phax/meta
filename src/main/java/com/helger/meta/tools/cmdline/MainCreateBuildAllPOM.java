@@ -42,6 +42,7 @@ import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the
@@ -52,7 +53,6 @@ import com.helger.meta.project.IProject;
 public final class MainCreateBuildAllPOM extends AbstractProjectMain
 {
   private static final String MAVEN_NS = "http://maven.apache.org/POM/4.0.0";
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
@@ -69,7 +69,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
     final String sThisArtefactID = MicroUtils.getChildTextContentTrimmed (eRoot, "artifactId");
-    final IProject aThisProject = ALL_PROJECTS.get (sThisArtefactID);
+    final IProject aThisProject = ProjectList.getProjectOfName (sThisArtefactID);
     if (aThisProject != aProject)
       throw new IllegalStateException (sThisArtefactID + " is weird: " + aThisProject + " vs. " + aProject);
 
@@ -88,7 +88,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
-            final IProject aReferencedProject = ALL_PROJECTS.get (sArtifactID);
+            final IProject aReferencedProject = ProjectList.getProjectOfName (sArtifactID);
             if (aReferencedProject == null)
             {
               _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
@@ -115,7 +115,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   {
     // Read all dependencies
     final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
-    for (final IProject e : ALL_PROJECTS.values ())
+    for (final IProject e : ProjectList.getAllProjects ())
       if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());

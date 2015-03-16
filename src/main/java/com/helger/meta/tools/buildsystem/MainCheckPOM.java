@@ -16,8 +16,6 @@
  */
 package com.helger.meta.tools.buildsystem;
 
-import java.util.Map;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -34,6 +32,7 @@ import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the
@@ -47,8 +46,6 @@ public final class MainCheckPOM extends AbstractProjectMain
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
   private static final String PARENT_POM_VERSION = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
-
-  private static final Map <String, IProject> ALL_PROJECTS = getAllProjects ();
 
   @Nonnull
   @Nonempty
@@ -209,7 +206,7 @@ public final class MainCheckPOM extends AbstractProjectMain
           {
             // Match!
             final String sArtifactID = aElement.getTextContentTrimmed ();
-            final IProject eReferencedProject = ALL_PROJECTS.get (sArtifactID);
+            final IProject eReferencedProject = ProjectList.getProjectOfName (sArtifactID);
             if (eReferencedProject == null)
             {
               _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
@@ -285,7 +282,7 @@ public final class MainCheckPOM extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject e : ALL_PROJECTS.values ())
+    for (final IProject e : ProjectList.getAllProjects ())
       if (!e.isDeprecated ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
@@ -293,6 +290,6 @@ public final class MainCheckPOM extends AbstractProjectMain
           throw new IllegalStateException ("Failed to read " + e.getPOMFile ());
         _validatePOM (e, aDoc);
       }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ALL_PROJECTS.size () + " projects");
+    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }
