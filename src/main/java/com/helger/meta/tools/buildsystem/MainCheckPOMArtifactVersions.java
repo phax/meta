@@ -40,7 +40,7 @@ import com.helger.meta.project.ProjectList;
  *
  * @author Philip Helger
  */
-public final class MainCheckPOM extends AbstractProjectMain
+public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
   // Parent POM requirements
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
