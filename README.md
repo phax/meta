@@ -4,7 +4,7 @@ A meta project for easy management of my other projects :)
 
 This project is not meant for release but only helps me internally to get them all aligned.
 
-Current list of all projects (as of Thu Mar 12 08:14:31 CET 2015):
+Current list of all projects (as of Fri Mar 20 12:20:03 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -21,7 +21,7 @@ Current list of all projects (as of Thu Mar 12 08:14:31 CET 2015):
  * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 1.9.1
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.2.2
  * [ph-charset](https://github.com/phax/ph-charset) - Version 1.1.1
- * [ph-commons](https://github.com/phax/ph-commons) - Version 5.6.0
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 5.6.1
  * [ph-css](https://github.com/phax/ph-css) - Version 3.9.1
  * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.3.3
  * [ph-datetime](https://github.com/phax/ph-datetime) - Version 3.3.1
@@ -33,7 +33,7 @@ Current list of all projects (as of Thu Mar 12 08:14:31 CET 2015):
  * [ph-events](https://github.com/phax/ph-events) - Version 3.0.1
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 1.1.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.1
- * [ph-html](https://github.com/phax/ph-html) - Version 4.6.2
+ * [ph-html](https://github.com/phax/ph-html) - Version 4.7.0
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.3
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
@@ -47,7 +47,7 @@ Current list of all projects (as of Thu Mar 12 08:14:31 CET 2015):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.3
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 1.1.1
  * [ph-sch2xslt-maven-plugin](https://github.com/phax/ph-sch2xslt-maven-plugin) - Version 2.8.1
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 1.8.1
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 1.8.2
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 2.9.2
  * [ph-schematron-testfiles](https://github.com/phax/ph-schematron-testfiles) - Version 1.1.2
  * [ph-schematron-validator](https://github.com/phax/ph-schematron-validator) - Version 2.8.1
@@ -68,6 +68,7 @@ Current list of all projects (as of Thu Mar 12 08:14:31 CET 2015):
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen) - no release so far
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 1.1.2
+ * [ph-xpath2](https://github.com/phax/ph-xpath2) - no release so far
 
 ---
 
