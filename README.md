@@ -1,8 +1,7 @@
 #meta
 
 A meta project for easy management of my other projects :)
-
-This project is not meant for release but only helps me internally to get them all aligned.
+This project is not meant to be released but only helps me internally to get all of them aligned.
 
 Current list of all projects (as of Tue Mar 24 08:18:04 CET 2015):
 
