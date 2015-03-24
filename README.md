@@ -4,7 +4,7 @@ A meta project for easy management of my other projects :)
 
 This project is not meant for release but only helps me internally to get them all aligned.
 
-Current list of all projects (as of Fri Mar 20 12:20:03 CET 2015):
+Current list of all projects (as of Tue Mar 24 08:18:04 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -13,8 +13,9 @@ Current list of all projects (as of Fri Mar 20 12:20:03 CET 2015):
  * [as2-server](https://github.com/phax/as2-server) - Version 1.0.1
  * [botanik-manager](https://github.com/phax/botanik-manager) - no release so far
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 1.0.0
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.8
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.9
  * [meta](https://github.com/phax/meta) - no release so far
+ * [peppol-commons](https://github.com/phax/peppol-commons) - no release so far
  * [peppol-practical](https://github.com/phax/peppol-practical) - no release so far
  * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 1.0.1
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
