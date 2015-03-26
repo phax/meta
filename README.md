@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Mar 24 08:18:04 CET 2015):
+Current list of all projects (as of Thu Mar 26 19:17:58 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -17,6 +17,11 @@ Current list of all projects (as of Tue Mar 24 08:18:04 CET 2015):
  * [peppol-commons](https://github.com/phax/peppol-commons) - no release so far
  * [peppol-practical](https://github.com/phax/peppol-practical) - no release so far
  * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 1.0.1
+ * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - no release so far
+ * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - no release so far
+ * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - no release so far
+ * [peppol-smp-server-library](https://github.com/phax/peppol-smp-server-library) - no release so far
+ * [peppol-smp-server-lightweight](https://github.com/phax/peppol-smp-server-lightweight) - no release so far
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
  * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 1.9.1
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.2.2
@@ -33,7 +38,7 @@ Current list of all projects (as of Tue Mar 24 08:18:04 CET 2015):
  * [ph-events](https://github.com/phax/ph-events) - Version 3.0.1
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 1.1.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.1
- * [ph-html](https://github.com/phax/ph-html) - Version 4.7.0
+ * [ph-html](https://github.com/phax/ph-html) - Version 4.7.1
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.3
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
