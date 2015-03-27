@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Mar 27 13:43:17 CET 2015):
+Current list of all projects (as of Fri Mar 27 14:03:05 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -19,9 +19,9 @@ Current list of all projects (as of Fri Mar 27 13:43:17 CET 2015):
  * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 1.0.1
  * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 3.0.0
  * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 3.0.0
- * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - no release so far
+ * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 3.0.0
  * [peppol-smp-server-library](https://github.com/phax/peppol-smp-server-library) - Version 3.0.0
- * [peppol-smp-server-lightweight](https://github.com/phax/peppol-smp-server-lightweight) - no release so far
+ * [peppol-smp-server-lightweight](https://github.com/phax/peppol-smp-server-lightweight) - Version 3.0.0
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
  * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 2.0.0
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.2.2
