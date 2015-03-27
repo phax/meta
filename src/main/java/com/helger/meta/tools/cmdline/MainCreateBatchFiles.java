@@ -75,6 +75,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     _createMvnBatchFile ("clean install", "mvn_clean_install.cmd");
     _createMvnBatchFile ("clean install sonar:sonar", "mvn_clean_install_sonar.cmd");
     _createBatchFile ("git pull", "git_pull.cmd");
+    _createBatchFile ("git gc", "git_gc.cmd");
     System.out.println ("Batch files created in " + CMeta.GIT_BASE_DIR);
   }
 }

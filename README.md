@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Thu Mar 26 19:17:58 CET 2015):
+Current list of all projects (as of Fri Mar 27 13:43:17 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -14,16 +14,16 @@ Current list of all projects (as of Thu Mar 26 19:17:58 CET 2015):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 1.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.9
  * [meta](https://github.com/phax/meta) - no release so far
- * [peppol-commons](https://github.com/phax/peppol-commons) - no release so far
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 3.0.0
  * [peppol-practical](https://github.com/phax/peppol-practical) - no release so far
  * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 1.0.1
- * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - no release so far
- * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - no release so far
+ * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 3.0.0
+ * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 3.0.0
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - no release so far
- * [peppol-smp-server-library](https://github.com/phax/peppol-smp-server-library) - no release so far
+ * [peppol-smp-server-library](https://github.com/phax/peppol-smp-server-library) - Version 3.0.0
  * [peppol-smp-server-lightweight](https://github.com/phax/peppol-smp-server-lightweight) - no release so far
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
- * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 1.9.1
+ * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 2.0.0
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.2.2
  * [ph-charset](https://github.com/phax/ph-charset) - Version 1.1.1
  * [ph-commons](https://github.com/phax/ph-commons) - Version 5.6.1
@@ -58,7 +58,7 @@ Current list of all projects (as of Thu Mar 26 19:17:58 CET 2015):
  * [ph-schematron-validator](https://github.com/phax/ph-schematron-validator) - Version 2.8.1
  * [ph-settings](https://github.com/phax/ph-settings) - Version 1.1.2
  * [ph-smtp](https://github.com/phax/ph-smtp) - Version 1.0.2
- * [ph-tinymce4](https://github.com/phax/ph-tinymce4) - Version 0.3.4
+ * [ph-tinymce4](https://github.com/phax/ph-tinymce4) - Version 0.3.5
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 3.3.1
  * [ph-ubl-jaxb-plugin](https://github.com/phax/ph-ubl-jaxb-plugin) - Version 1.2.1
  * [ph-ubl20](https://github.com/phax/ph-ubl20) - Version 3.3.0
@@ -68,8 +68,8 @@ Current list of all projects (as of Thu Mar 26 19:17:58 CET 2015):
  * [ph-validation](https://github.com/phax/ph-validation) - Version 3.3.4
  * [ph-web](https://github.com/phax/ph-web) - Version 6.4.1
  * [ph-webapp-demo](https://github.com/phax/ph-webapp-demo) - no release so far
- * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 3.8.1
- * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 2.7.1
+ * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.0
+ * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.0
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen) - no release so far
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 1.1.2
