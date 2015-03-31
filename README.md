@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Mar 31 17:24:14 CEST 2015):
+Current list of all projects (as of Tue Mar 31 22:58:04 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -14,7 +14,7 @@ Current list of all projects (as of Tue Mar 31 17:24:14 CEST 2015):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 1.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.9
  * [meta](https://github.com/phax/meta) - no release so far
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 3.0.0
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 3.0.1
  * [peppol-practical](https://github.com/phax/peppol-practical) - no release so far
  * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 1.0.1
  * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 3.0.0
@@ -40,7 +40,7 @@ Current list of all projects (as of Tue Mar 31 17:24:14 CEST 2015):
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.1
  * [ph-html](https://github.com/phax/ph-html) - Version 4.7.1
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
- * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.3
+ * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.4
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
  * [ph-jms](https://github.com/phax/ph-jms) - Version 1.2.0
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.0.0
