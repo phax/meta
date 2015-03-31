@@ -94,7 +94,7 @@ public enum EProject implements IProject
   PH_UBL21 ("ph-ubl21", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
   PH_UBL21_CODELISTS ("ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
   PH_VALIDATION ("ph-validation", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.4"),
-  PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "6.4.1"),
+  PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "6.4.2"),
   PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
   PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),

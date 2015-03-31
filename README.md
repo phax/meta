@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Mar 27 14:03:05 CET 2015):
+Current list of all projects (as of Tue Mar 31 11:47:04 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -66,7 +66,7 @@ Current list of all projects (as of Fri Mar 27 14:03:05 CET 2015):
  * [ph-ubl21](https://github.com/phax/ph-ubl21) - Version 3.3.0
  * [ph-ubl21-codelists](https://github.com/phax/ph-ubl21-codelists) - Version 3.3.1
  * [ph-validation](https://github.com/phax/ph-validation) - Version 3.3.4
- * [ph-web](https://github.com/phax/ph-web) - Version 6.4.1
+ * [ph-web](https://github.com/phax/ph-web) - Version 6.4.2
  * [ph-webapp-demo](https://github.com/phax/ph-webapp-demo) - no release so far
  * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.0
  * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.0
