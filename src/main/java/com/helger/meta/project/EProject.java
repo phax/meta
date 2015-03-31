@@ -77,7 +77,7 @@ public enum EProject implements IProject
   PH_MATH ("ph-math", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
   PH_PARENT_POM ("ph-parent-pom", EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
   PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.4"),
-  PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.3"),
+  PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.4"),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
   PH_SCH2XSLT_MAVEN_PLUGIN ("ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.1"),
   PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.8.2"),

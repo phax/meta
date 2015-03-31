@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Mar 31 11:56:17 CEST 2015):
+Current list of all projects (as of Tue Mar 31 17:24:14 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -49,7 +49,7 @@ Current list of all projects (as of Tue Mar 31 11:56:17 CEST 2015):
  * [ph-math](https://github.com/phax/ph-math) - Version 1.2.1
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.3.3
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 1.3.4
- * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.3
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.4
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 1.1.1
  * [ph-sch2xslt-maven-plugin](https://github.com/phax/ph-sch2xslt-maven-plugin) - Version 2.8.1
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 1.8.2
