@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Mar 31 11:47:04 CEST 2015):
+Current list of all projects (as of Tue Mar 31 11:56:17 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.7
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -34,7 +34,7 @@ Current list of all projects (as of Tue Mar 31 11:47:04 CEST 2015):
  * [ph-db-jdbc](https://github.com/phax/ph-db-jdbc) - Version 1.1.1
  * [ph-db-jpa](https://github.com/phax/ph-db-jpa) - Version 3.3.1
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 1.1.1
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 3.1.1
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 3.1.2
  * [ph-events](https://github.com/phax/ph-events) - Version 3.0.1
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 1.1.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.1

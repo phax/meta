@@ -62,7 +62,7 @@ public enum EProject implements IProject
   PH_DB_JDBC ("ph-db-jdbc", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
   PH_DB_JPA ("ph-db-jpa", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
   PH_DIRINDEX_MAVEN_PLUGIN ("ph-dirindex-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
-  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.TRUE, "3.1.1"),
+  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.TRUE, "3.1.2"),
   PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
   PH_FONTS ("ph-fonts", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
