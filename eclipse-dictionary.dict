@@ -112,3 +112,6 @@ wildcard
 accessor
 undiscounted
 marshaller
+whitespaces
+decodable
+endpoints
