@@ -1,0 +1,21 @@
+2015-04-29:
+Releases:
+  ph-web
+  ph-db-jpa
+  ph-math
+  ph-validation
+  ph-smtp
+  ph-masterdata
+  ph-xmldsig
+  ph-schedule
+  peppol-commons
+  peppol-sml*
+  peppol-smp*
+  ph-html
+  ph-webbasics
+  ph-webctrls
+  ph-bootstrap3
+  ph-tinymce3
+  as2-lib
+  as2-peppol-servlet
+  
