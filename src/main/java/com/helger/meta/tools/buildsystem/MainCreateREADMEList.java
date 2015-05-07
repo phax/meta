@@ -37,10 +37,10 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     // Show all
     aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && !aProject.isNestedProject () && !aProject.isDeprecated ())
+      if (aProject.isBuildInProject () && !aProject.isDeprecated ())
       {
         aSB.append (" * [")
-           .append (aProject.getProjectName ())
+           .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
            .append (aProject.getFullBaseDirName ())
            .append (") - ");
@@ -54,10 +54,10 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     // Add deprecated projects
     aSB.append ("\nAll deprecated projects:\n\n");
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && !aProject.isNestedProject () && aProject.isDeprecated ())
+      if (aProject.isBuildInProject () && aProject.isDeprecated ())
       {
         aSB.append (" * [")
-           .append (aProject.getProjectName ())
+           .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
            .append (aProject.getFullBaseDirName ())
            .append (") - ");

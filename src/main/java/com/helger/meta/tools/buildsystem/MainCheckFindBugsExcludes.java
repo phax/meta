@@ -21,7 +21,6 @@ import java.io.File;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.meta.AbstractProjectMain;
-import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -35,7 +34,7 @@ public final class MainCheckFindBugsExcludes extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType () != EProjectType.MAVEN_POM)
+      if (aProject.getProjectType ().hasJavaCode ())
       {
         final File f = new File (aProject.getBaseDir (), "findbugs-exclude.xml");
         if (f.exists ())

@@ -338,11 +338,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
-    for (final IProject eProject : ProjectList.getAllProjects ())
-      if (eProject.getProjectType ().hasJavaCode () &&
-          eProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
-          !eProject.isDeprecated ())
-        _scanProject (eProject);
+    for (final IProject aProject : ProjectList.getAllProjects ())
+      if (aProject.getProjectType ().hasJavaCode () &&
+          aProject != EProject.PH_JAVACC_MAVEN_PLUGIN &&
+          !aProject.isDeprecated ())
+        _scanProject (aProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

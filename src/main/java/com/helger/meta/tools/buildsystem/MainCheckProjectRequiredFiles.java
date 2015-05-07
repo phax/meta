@@ -25,7 +25,6 @@ import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -87,7 +86,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType () != EProjectType.MAVEN_POM && aProject.isBuildInProject ())
+      if (aProject.getProjectType ().hasJavaCode () && aProject.isBuildInProject ())
       {
         _validateProject (aProject);
       }
