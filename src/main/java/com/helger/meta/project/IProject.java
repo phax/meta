@@ -31,18 +31,38 @@ public interface IProject
    */
   boolean isBuildInProject ();
 
+  @Nullable
+  IProject getParentProject ();
+
+  boolean isNestedProject ();
+
+  /**
+   * @return The project name. E.g. <code>ph-commons</code>
+   */
   @Nonnull
   @Nonempty
   String getProjectName ();
+
+  /**
+   * @return The complete project name with all parent projects included. E.g.
+   *         <code>ph-oton/ph-oton-basic</code>. If a project has no parent
+   *         project, the result is the same as from {@link #getProjectName()}.
+   */
+  @Nonnull
+  @Nonempty
+  String getFullProjectName ();
+
+  /**
+   * @return The project type.
+   */
+  @Nonnull
+  EProjectType getProjectType ();
 
   @Nonnull
   File getBaseDir ();
 
   @Nonnull
   File getPOMFile ();
-
-  @Nonnull
-  EProjectType getProjectType ();
 
   boolean isDeprecated ();
 

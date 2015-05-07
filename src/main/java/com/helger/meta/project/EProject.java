@@ -51,7 +51,6 @@ public enum EProject implements IProject
   PEPPOL_SMP_SERVER_LIBRARY ("peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.1.3"),
   PEPPOL_SMP_SERVER_LIGHTWEIGHT ("peppol-smp-server-lightweight", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.1.0"),
   PEPPOL_VALIDATION_ENGINE ("peppol-validation-engine", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
   PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.2"),
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
   PH_COMONS ("ph-commons", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "5.7.1"),
@@ -75,6 +74,16 @@ public enum EProject implements IProject
   PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
   PH_MASTERDATA ("ph-masterdata", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.7.2"),
   PH_MATH ("ph-math", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.2"),
+  PH_OTON_PARENT_POM ("ph-oton", EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_BOOTSTRAP3_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-uictrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_CONNECT (PH_OTON_PARENT_POM, "ph-oton-connect", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_CORE (PH_OTON_PARENT_POM, "ph-oton-core", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_PARENT_POM ("ph-parent-pom", EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
   PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.5"),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.4"),
@@ -86,7 +95,6 @@ public enum EProject implements IProject
   PH_SCHEMATRON_VALIDATOR ("ph-schematron-validator", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.1"),
   PH_SETTINGS ("ph-settings", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
   PH_SMTP ("ph-smtp", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.3"),
-  PH_TINYMCE4 ("ph-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "0.3.5"),
   PH_UBL ("ph-ubl", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
   PH_UBL_JAXB_PLUGIN ("ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
   PH_UBL20 ("ph-ubl20", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
@@ -95,9 +103,6 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS ("ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
   PH_VALIDATION ("ph-validation", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.5"),
   PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "6.4.3"),
-  PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
-  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8"),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.3"),
@@ -107,7 +112,12 @@ public enum EProject implements IProject
   CIPA_START_JMSRECEIVER ("cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   CIPA_START_JMSSENDER ("cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   JGATSP ("jgatsp", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_BOOTSTRAP3 ("ph-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
   PH_SCOPES ("ph-scopes", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "6.6.0"),
+  PH_TINYMCE4 ("ph-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "0.3.5"),
+  PH_WEBAPP_DEMO ("ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_WEBBASICS ("ph-webbasics", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
+  PH_WEBCTRLS ("ph-webctrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
   PH_WEBSCOPES ("ph-webscopes", EProjectType.JAVA_LIBRARY, EIsDeprecated.TRUE, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1");
 
   private final SimpleProject m_aProject;
@@ -119,9 +129,29 @@ public enum EProject implements IProject
                     @Nonnull final EHasWiki eHasWikiProject,
                     @Nullable final String sLastPublishedVersion)
   {
-    m_aProject = new SimpleProject (sProjectName,
+    this ((EProject) null,
+          sProjectName,
+          eProjectType,
+          eIsDeprecated,
+          eHasPagesProject,
+          eHasWikiProject,
+          sLastPublishedVersion);
+  }
+
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType,
+                    @Nonnull final EIsDeprecated eIsDeprecated,
+                    @Nonnull final EHasPages eHasPagesProject,
+                    @Nonnull final EHasWiki eHasWikiProject,
+                    @Nullable final String sLastPublishedVersion)
+  {
+    m_aProject = new SimpleProject (eParentProject,
+                                    sProjectName,
                                     eProjectType,
-                                    new File (CMeta.GIT_BASE_DIR, sProjectName),
+                                    new File (CMeta.GIT_BASE_DIR,
+                                              (eParentProject != null ? eParentProject.getProjectName () + "/" : "") +
+                                                  sProjectName),
                                     eIsDeprecated,
                                     eHasPagesProject,
                                     eHasWikiProject,
@@ -133,11 +163,35 @@ public enum EProject implements IProject
     return true;
   }
 
+  @Nullable
+  public IProject getParentProject ()
+  {
+    return m_aProject.getParentProject ();
+  }
+
+  public boolean isNestedProject ()
+  {
+    return m_aProject.isNestedProject ();
+  }
+
   @Nonnull
   @Nonempty
   public String getProjectName ()
   {
     return m_aProject.getProjectName ();
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getFullProjectName ()
+  {
+    return m_aProject.getFullProjectName ();
+  }
+
+  @Nonnull
+  public EProjectType getProjectType ()
+  {
+    return m_aProject.getProjectType ();
   }
 
   @Nonnull
@@ -150,12 +204,6 @@ public enum EProject implements IProject
   public File getPOMFile ()
   {
     return m_aProject.getPOMFile ();
-  }
-
-  @Nonnull
-  public EProjectType getProjectType ()
-  {
-    return m_aProject.getProjectType ();
   }
 
   public boolean isDeprecated ()

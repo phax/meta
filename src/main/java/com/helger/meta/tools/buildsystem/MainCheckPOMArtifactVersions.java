@@ -103,7 +103,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           // Check only if groupId matches
           final String sArtifactId = MicroUtils.getChildTextContent (eParent, "artifactId");
           if (!PARENT_POM_ARTIFACTID.equals (sArtifactId))
-            _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+          {
+            if (aProject.isNestedProject () && aProject.getParentProject ().getProjectName ().equals (sArtifactId))
+            {
+              // It's ok
+            }
+            else
+              _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+          }
           else
           {
             // Check version only if group and artifact match
@@ -133,7 +140,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.isBuildInProject ())
     {
       final String sURL = MicroUtils.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/phax/" + aProject.getProjectName ();
+      final String sExpectedURL = "https://github.com/phax/" + aProject.getFullProjectName ();
       if (!sExpectedURL.equals (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
@@ -160,7 +167,13 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     {
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)
-        _warn (aProject, "scm element is missing");
+      {
+        if (!aProject.isNestedProject ())
+        {
+          // Nested projects might not use it
+          _warn (aProject, "scm element is missing");
+        }
+      }
       else
       {
         final String sConnection = MicroUtils.getChildTextContent (eSCM, "connection");
@@ -219,7 +232,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               // Version is optional e.g. when dependencyManagement is used
               final String sVersion = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
                                                                              "version");
-              if (sVersion != null)
+
+              // Ignore versions with variables
+              if (sVersion != null && !sVersion.contains ("$"))
               {
                 final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT");
                 if (eReferencedProject.isPublished ())
@@ -266,7 +281,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   if (!bIsSnapshot)
                     _warn (aProject, "Referenced project " +
                                      eReferencedProject +
-                                     " is marked as not published, but a non-SNAPSHOT version is referenced!");
+                                     " is marked as not published, but the non-SNAPSHOT version '" +
+                                     sVersion +
+                                     "' is referenced!");
                 }
               }
             }

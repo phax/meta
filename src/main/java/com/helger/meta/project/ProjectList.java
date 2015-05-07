@@ -62,6 +62,8 @@ public final class ProjectList
     // Handle differences between directory name and project name
     if ("parent-pom".equals (sName))
       return EProject.PH_PARENT_POM;
+    if ("ph-oton-parent-pom".equals (sName))
+      return EProject.PH_OTON_PARENT_POM;
     if ("webservice-client".equals (sName))
       return EProject.ERECHNUNG_WS_CLIENT;
     return s_aProjects.get (sName);

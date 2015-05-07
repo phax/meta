@@ -30,9 +30,11 @@ public class SimpleProject implements IProject
   public static final String EXTENSION_PAGES_PROJECT = ".pages";
   public static final String EXTENSION_WIKI_PROJECT = ".wiki";
 
+  private final IProject m_aParentProject;
   private final String m_sProjectName;
-  private final File m_aBaseDir;
+  private final String m_sFullProjectName;
   private final EProjectType m_eProjectType;
+  private final File m_aBaseDir;
   private final boolean m_bIsDeprecated;
   private final boolean m_bHasPagesProject;
   private final boolean m_bHasWikiProject;
@@ -44,7 +46,8 @@ public class SimpleProject implements IProject
                         @Nonnull final File aBaseDir,
                         @Nullable final String sLastPublishedVersion)
   {
-    this (sProjectName,
+    this ((IProject) null,
+          sProjectName,
           eProjectType,
           aBaseDir,
           EIsDeprecated.FALSE,
@@ -53,7 +56,8 @@ public class SimpleProject implements IProject
           sLastPublishedVersion);
   }
 
-  public SimpleProject (@Nonnull @Nonempty final String sProjectName,
+  public SimpleProject (@Nullable final IProject aParentProject,
+                        @Nonnull @Nonempty final String sProjectName,
                         @Nonnull final EProjectType eProjectType,
                         @Nonnull final File aBaseDir,
                         @Nonnull final EIsDeprecated eIsDeprecated,
@@ -61,7 +65,9 @@ public class SimpleProject implements IProject
                         @Nonnull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion)
   {
+    m_aParentProject = aParentProject;
     m_sProjectName = ValueEnforcer.notEmpty (sProjectName, "ProjectName");
+    m_sFullProjectName = (aParentProject != null ? aParentProject.getFullProjectName () + "/" : "") + m_sProjectName;
     m_eProjectType = ValueEnforcer.notNull (eProjectType, "ProjectType");
     m_aBaseDir = ValueEnforcer.notNull (aBaseDir, "BaseDir");
     if (!m_aBaseDir.exists ())
@@ -78,11 +84,35 @@ public class SimpleProject implements IProject
     return false;
   }
 
+  @Nullable
+  public IProject getParentProject ()
+  {
+    return m_aParentProject;
+  }
+
+  public boolean isNestedProject ()
+  {
+    return m_aParentProject != null;
+  }
+
   @Nonnull
   @Nonempty
   public String getProjectName ()
   {
     return m_sProjectName;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getFullProjectName ()
+  {
+    return m_sFullProjectName;
+  }
+
+  @Nonnull
+  public EProjectType getProjectType ()
+  {
+    return m_eProjectType;
   }
 
   @Nonnull
@@ -95,12 +125,6 @@ public class SimpleProject implements IProject
   public File getPOMFile ()
   {
     return new File (m_aBaseDir, "pom.xml");
-  }
-
-  @Nonnull
-  public EProjectType getProjectType ()
-  {
-    return m_eProjectType;
   }
 
   public boolean isDeprecated ()

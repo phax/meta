@@ -71,7 +71,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
-    return new SimpleProject (sProjectName,
+    return new SimpleProject ((IProject) null,
+                              sProjectName,
                               eProjectType,
                               aBaseDir,
                               EIsDeprecated.value (bIsDeprecated),
