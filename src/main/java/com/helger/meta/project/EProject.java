@@ -39,7 +39,7 @@ public enum EProject implements IProject
   AS2_PEPPOL_SERVER (null, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   AS2_SERVER (null, "as2-server", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.1"),
   BOTANIK_MANAGER (null, "botanik-manager", EProjectType.JAVA_WEB_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  ERECHNUNG_WS_CLIENT (null, new ProjectName ("webservice-client", "erechnung.gv.at-webservice-client"), EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
+  ERECHNUNG_WS_CLIENT (null, "webservice-client", "erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
   JCODEMODEL (null, "jcodemodel", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.TRUE, EHasWiki.FALSE, "2.7.9"),
   META (null, "meta", EProjectType.JAVA_APPLICATION, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PEPPOL_COMMONS (null, "peppol-commons", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.1.3"),
@@ -74,7 +74,7 @@ public enum EProject implements IProject
   PH_JSON (null, "ph-json", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
   PH_MASTERDATA (null, "ph-masterdata", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.7.2"),
   PH_MATH (null, "ph-math", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.2"),
-  PH_OTON_PARENT_POM (null, new ProjectName ("ph-oton-parent-pom", "ph-oton"), EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
@@ -84,7 +84,7 @@ public enum EProject implements IProject
   PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_PARENT_POM (null, new ProjectName ("parent-pom", "ph-parent-pom"), EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
+  PH_PARENT_POM (null, "parent-pom", "ph-parent-pom", EProjectType.MAVEN_POM, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.3"),
   PH_PDF_LAYOUT (null, "ph-pdf-layout", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.3.5"),
   PH_POI (null, "ph-poi", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.9.4"),
   PH_SBDH (null, "ph-sbdh", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1"),
@@ -130,8 +130,10 @@ public enum EProject implements IProject
                     @Nonnull final EHasWiki eHasWikiProject,
                     @Nullable final String sLastPublishedVersion)
   {
+    // Project name equals project base directory name
     this (eParentProject,
-          new ProjectName (sProjectName),
+          sProjectName,
+          sProjectName,
           eProjectType,
           eIsDeprecated,
           eHasPagesProject,
@@ -140,7 +142,8 @@ public enum EProject implements IProject
   }
 
   private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull final ProjectName aProjectName,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull @Nonempty final String sProjectBaseDirName,
                     @Nonnull final EProjectType eProjectType,
                     @Nonnull final EIsDeprecated eIsDeprecated,
                     @Nonnull final EHasPages eHasPagesProject,
@@ -148,11 +151,10 @@ public enum EProject implements IProject
                     @Nullable final String sLastPublishedVersion)
   {
     m_aProject = new SimpleProject (eParentProject,
-                                    aProjectName.getProjectName (),
+                                    sProjectName,
                                     eProjectType,
                                     new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                    : CMeta.GIT_BASE_DIR,
-                                              aProjectName.getProjectBaseDirName ()),
+                                                                    : CMeta.GIT_BASE_DIR, sProjectBaseDirName),
                                     eIsDeprecated,
                                     eHasPagesProject,
                                     eHasWikiProject,
