@@ -32,29 +32,14 @@ public class SimpleProject implements IProject
 
   private final IProject m_aParentProject;
   private final String m_sProjectName;
-  private final String m_sFullProjectName;
   private final EProjectType m_eProjectType;
   private final File m_aBaseDir;
+  private final String m_sFullBaseDirName;
   private final boolean m_bIsDeprecated;
   private final boolean m_bHasPagesProject;
   private final boolean m_bHasWikiProject;
   private final String m_sLastPublishedVersion;
   private final Version m_aLastPublishedVersion;
-
-  public SimpleProject (@Nonnull @Nonempty final String sProjectName,
-                        @Nonnull final EProjectType eProjectType,
-                        @Nonnull final File aBaseDir,
-                        @Nullable final String sLastPublishedVersion)
-  {
-    this ((IProject) null,
-          sProjectName,
-          eProjectType,
-          aBaseDir,
-          EIsDeprecated.FALSE,
-          EHasPages.FALSE,
-          EHasWiki.FALSE,
-          sLastPublishedVersion);
-  }
 
   public SimpleProject (@Nullable final IProject aParentProject,
                         @Nonnull @Nonempty final String sProjectName,
@@ -67,11 +52,12 @@ public class SimpleProject implements IProject
   {
     m_aParentProject = aParentProject;
     m_sProjectName = ValueEnforcer.notEmpty (sProjectName, "ProjectName");
-    m_sFullProjectName = (aParentProject != null ? aParentProject.getFullProjectName () + "/" : "") + m_sProjectName;
     m_eProjectType = ValueEnforcer.notNull (eProjectType, "ProjectType");
     m_aBaseDir = ValueEnforcer.notNull (aBaseDir, "BaseDir");
     if (!m_aBaseDir.exists ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
+    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") +
+                         aBaseDir.getName ();
     m_bIsDeprecated = eIsDeprecated.isTrue ();
     m_bHasPagesProject = eHasPagesProject.isTrue ();
     m_bHasWikiProject = eHasWikiProject.isTrue ();
@@ -103,13 +89,6 @@ public class SimpleProject implements IProject
   }
 
   @Nonnull
-  @Nonempty
-  public String getFullProjectName ()
-  {
-    return m_sFullProjectName;
-  }
-
-  @Nonnull
   public EProjectType getProjectType ()
   {
     return m_eProjectType;
@@ -119,6 +98,13 @@ public class SimpleProject implements IProject
   public File getBaseDir ()
   {
     return m_aBaseDir;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getFullBaseDirName ()
+  {
+    return m_sFullBaseDirName;
   }
 
   @Nonnull

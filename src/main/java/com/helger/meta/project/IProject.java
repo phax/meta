@@ -44,15 +44,6 @@ public interface IProject
   String getProjectName ();
 
   /**
-   * @return The complete project name with all parent projects included. E.g.
-   *         <code>ph-oton/ph-oton-basic</code>. If a project has no parent
-   *         project, the result is the same as from {@link #getProjectName()}.
-   */
-  @Nonnull
-  @Nonempty
-  String getFullProjectName ();
-
-  /**
    * @return The project type.
    */
   @Nonnull
@@ -60,6 +51,16 @@ public interface IProject
 
   @Nonnull
   File getBaseDir ();
+
+  /**
+   * @return The complete base directory name with all parent projects included.
+   *         E.g. <code>ph-oton/ph-oton-basic</code>. If a project has no parent
+   *         project, the result is the same as from
+   *         <code>getBaseDir ().getName ()</code>.
+   */
+  @Nonnull
+  @Nonempty
+  String getFullBaseDirName ();
 
   @Nonnull
   File getPOMFile ();

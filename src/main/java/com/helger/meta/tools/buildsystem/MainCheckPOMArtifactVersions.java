@@ -140,7 +140,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.isBuildInProject ())
     {
       final String sURL = MicroUtils.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/phax/" + aProject.getFullProjectName ();
+      final String sExpectedURL = "https://github.com/phax/" + aProject.getFullBaseDirName ();
       if (!sExpectedURL.equals (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
@@ -177,7 +177,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       else
       {
         final String sConnection = MicroUtils.getChildTextContent (eSCM, "connection");
-        final String sExpectedConnection = "scm:git:git@github.com:phax/" + aProject.getProjectName () + ".git";
+        final String sExpectedConnection = "scm:git:git@github.com:phax/" + aProject.getFullBaseDirName () + ".git";
         // Alternatively:
         // "scm:git:https://github.com/phax/"+eProject.getProjectName ()
         if (!sExpectedConnection.equals (sConnection))
@@ -193,7 +193,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            "'");
 
         final String sURL = MicroUtils.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://github.com/phax/" + aProject.getProjectName ();
+        final String sExpectedURL = "http://github.com/phax/" + aProject.getFullBaseDirName ();
         if (!sExpectedURL.equals (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 
