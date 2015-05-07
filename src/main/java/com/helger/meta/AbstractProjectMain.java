@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.GlobalDebug;
+import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.charset.CCharset;
 import com.helger.meta.project.IProject;
 
@@ -54,9 +55,16 @@ public abstract class AbstractProjectMain
     GlobalDebug.setDebugModeDirect (false);
   }
 
-  protected static final void _warn (@Nonnull final IProject eProject, @Nonnull final String sMsg)
+  @Nonnull
+  @Nonempty
+  protected static final String _getLogPrefix (@Nonnull final IProject aProject)
   {
-    s_aLogger.warn ("[" + eProject.getProjectName () + "] " + sMsg);
+    return "[" + aProject.getProjectName () + "] ";
+  }
+
+  protected static final void _warn (@Nonnull final IProject aProject, @Nonnull final String sMsg)
+  {
+    s_aLogger.warn (_getLogPrefix (aProject) + sMsg);
     s_nWarnCount++;
   }
 
@@ -64,5 +72,10 @@ public abstract class AbstractProjectMain
   protected static int getWarnCount ()
   {
     return s_nWarnCount;
+  }
+
+  protected static final void _info (@Nonnull final IProject aProject, @Nonnull final String sMsg)
+  {
+    s_aLogger.info (_getLogPrefix (aProject) + sMsg);
   }
 }

@@ -32,21 +32,39 @@ public final class MainCreateREADMEList extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    final StringBuilder aSB = new StringBuilder ("Current list of all projects (as of " +
-                                                 new Date ().toString () +
-                                                 "):\n\n");
-    for (final IProject e : ProjectList.getAllProjects ())
-      if (e.isBuildInProject () && !e.isDeprecated ())
+    final StringBuilder aSB = new StringBuilder ();
+
+    // Show all
+    aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
+    for (final IProject aProject : ProjectList.getAllProjects ())
+      if (aProject.isBuildInProject () && !aProject.isNestedProject () && !aProject.isDeprecated ())
       {
         aSB.append (" * [")
-           .append (e.getProjectName ())
+           .append (aProject.getProjectName ())
            .append ("](https://github.com/phax/")
-           .append (e.getProjectName ())
+           .append (aProject.getFullBaseDirName ())
            .append (") - ");
-        if (e.isPublished ())
-          aSB.append ("Version ").append (e.getLastPublishedVersionString ());
+        if (aProject.isPublished ())
+          aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
         else
           aSB.append ("no release so far");
+        aSB.append ('\n');
+      }
+
+    // Add deprecated projects
+    aSB.append ("\nAll deprecated projects:\n\n");
+    for (final IProject aProject : ProjectList.getAllProjects ())
+      if (aProject.isBuildInProject () && !aProject.isNestedProject () && aProject.isDeprecated ())
+      {
+        aSB.append (" * [")
+           .append (aProject.getProjectName ())
+           .append ("](https://github.com/phax/")
+           .append (aProject.getFullBaseDirName ())
+           .append (") - ");
+        if (aProject.isPublished ())
+          aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
+        else
+          aSB.append ("never released");
         aSB.append ('\n');
       }
     System.out.println (aSB.toString ());
