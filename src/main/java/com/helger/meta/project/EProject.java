@@ -81,6 +81,7 @@ public enum EProject implements IProject
   PH_OTON_BOOTSTRAP3_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-uictrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_CONNECT (PH_OTON_PARENT_POM, "ph-oton-connect", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_CORE (PH_OTON_PARENT_POM, "ph-oton-core", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_OTON_EXCHANGE (PH_OTON_PARENT_POM, "ph-oton-exchange", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, null),
