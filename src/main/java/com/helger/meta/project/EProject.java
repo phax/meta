@@ -96,7 +96,7 @@ public enum EProject implements IProject
   PH_SCHEMATRON_TESTFILES (null, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
   PH_SCHEMATRON_VALIDATOR (null, "ph-schematron-validator", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "2.8.1"),
   PH_SETTINGS (null, "ph-settings", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.2"),
-  PH_SMTP (null, "ph-smtp", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.0.3"),
+  PH_SMTP (null, "ph-smtp", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_UBL (null, "ph-ubl", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
   PH_UBL_JAXB_PLUGIN (null, "ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
   PH_UBL20 (null, "ph-ubl20", EProjectType.JAVA_LIBRARY, EIsDeprecated.FALSE, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
