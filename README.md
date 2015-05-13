@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Thu May 07 18:28:57 CEST 2015):
+Current list of all projects (as of Wed May 13 09:42:55 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.0.8
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -11,7 +11,7 @@ Current list of all projects (as of Thu May 07 18:28:57 CEST 2015):
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
  * [as2-server](https://github.com/phax/as2-server) - Version 1.0.1
  * [botanik-manager](https://github.com/phax/botanik-manager) - no release so far
- * [webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 1.0.0
+ * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 1.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.9
  * [meta](https://github.com/phax/meta) - no release so far
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 3.1.3
@@ -37,17 +37,28 @@ Current list of all projects (as of Thu May 07 18:28:57 CEST 2015):
  * [ph-events](https://github.com/phax/ph-events) - Version 3.0.1
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 1.1.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 3.3.1
- * [ph-html](https://github.com/phax/ph-html) - Version 4.7.2
+ * [ph-html](https://github.com/phax/ph-html) - Version 4.7.3
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.4
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
  * [ph-jms](https://github.com/phax/ph-jms) - Version 1.2.0
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.0.0
  * [ph-json](https://github.com/phax/ph-json) - Version 1.3.3
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 3.7.2
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 3.8.0
  * [ph-math](https://github.com/phax/ph-math) - Version 1.2.2
- * [ph-oton-parent-pom](https://github.com/phax/ph-oton) - no release so far
- * [parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.3.3
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 5.0.0
+ * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton/ph-oton-basic) - Version 5.0.0
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton/ph-oton-bootstrap3) - Version 5.0.0
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton/ph-oton-bootstrap3-pages) - Version 5.0.0
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton/ph-oton-bootstrap3-stub) - Version 5.0.0
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton/ph-oton-bootstrap3-uictrls) - Version 5.0.0
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton/ph-oton-connect) - Version 5.0.0
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton/ph-oton-core) - Version 5.0.0
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton/ph-oton-exchange) - Version 5.0.0
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton/ph-oton-tinymce4) - Version 5.0.0
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton/ph-oton-uicore) - Version 5.0.0
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton/ph-oton-uictrls) - Version 5.0.0
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.3.3
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 1.3.5
  * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.4
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 1.1.1
@@ -57,7 +68,7 @@ Current list of all projects (as of Thu May 07 18:28:57 CEST 2015):
  * [ph-schematron-testfiles](https://github.com/phax/ph-schematron-testfiles) - Version 1.1.2
  * [ph-schematron-validator](https://github.com/phax/ph-schematron-validator) - Version 2.8.1
  * [ph-settings](https://github.com/phax/ph-settings) - Version 1.1.2
- * [ph-smtp](https://github.com/phax/ph-smtp) - Version 1.0.3
+ * [ph-smtp](https://github.com/phax/ph-smtp) - Version 1.1.0
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 3.3.1
  * [ph-ubl-jaxb-plugin](https://github.com/phax/ph-ubl-jaxb-plugin) - Version 1.2.1
  * [ph-ubl20](https://github.com/phax/ph-ubl20) - Version 3.3.0
@@ -84,7 +95,6 @@ All deprecated projects:
  * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.2
  * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.2
  * [ph-webscopes](https://github.com/phax/ph-webscopes) - Version 6.8.1
-
 ---
 
 On Twitter: <a href="https://twitter.com/philiphelger">Follow @philiphelger</a>
