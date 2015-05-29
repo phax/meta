@@ -28,6 +28,11 @@ public enum EIsDeprecated
     return this == TRUE;
   }
 
+  public boolean isFalse ()
+  {
+    return this == FALSE;
+  }
+
   @Nullable
   public static EIsDeprecated value (final boolean bTrue)
   {
