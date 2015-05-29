@@ -18,7 +18,6 @@ package com.helger.meta.project;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
@@ -42,9 +41,8 @@ public class EProjectTest
     for (final IProject e : EProject.values ())
     {
       assertTrue (StringHelper.hasText (e.getProjectName ()));
-      assertTrue (e.getPOMFile ().exists ());
+      assertTrue (e.getPOMFile ().getAbsoluteFile () + " does not exist!", e.getPOMFile ().exists ());
       assertNotNull (e.getProjectType ());
-      assertSame (e, EProject.getFromProjectNameOrNull (e.getProjectName ()));
       if (e.isPublished ())
       {
         assertNotNull (e.getLastPublishedVersionString ());
@@ -63,14 +61,15 @@ public class EProjectTest
   {
     for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR))
       if (aFile.isDirectory ())
-      {
-        // Ignore all Pages and Wiki directories
-        String sProjectName = aFile.getName ();
-        sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
-        sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
+        if (!"jaxb".equals (aFile.getName ()))
+        {
+          // Ignore all Pages and Wiki directories
+          String sProjectName = aFile.getName ();
+          sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
+          sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
 
-        assertNotNull (aFile.getName () + " is missing in the project list",
-                       EProject.getFromProjectNameOrNull (sProjectName));
-      }
+          assertNotNull (aFile.getName () + " is missing in the project list",
+                         ProjectList.getProjectOfDir (sProjectName));
+        }
   }
 }

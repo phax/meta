@@ -28,16 +28,19 @@ import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.convert.MicroTypeConverter;
 import com.helger.commons.microdom.serialize.MicroReader;
+import com.helger.commons.string.StringHelper;
 
 public final class ProjectList
 {
-  private static final Map <String, IProject> s_aProjects = new LinkedHashMap <String, IProject> ();
+  private static final Map <String, IProject> s_aName2Project = new LinkedHashMap <String, IProject> ();
 
   static
   {
     // Build in projects
     for (final IProject aProject : EProject.values ())
-      s_aProjects.put (aProject.getProjectName (), aProject);
+      s_aName2Project.put (aProject.getProjectName (), aProject);
+    for (final IProject aProject : EProjectDeprecated.values ())
+      s_aName2Project.put (aProject.getProjectName (), aProject);
 
     // Other projects
     final IReadableResource aRes = new ClassPathResource ("other-projects.xml");
@@ -48,7 +51,7 @@ public final class ProjectList
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
         {
           final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
-          s_aProjects.put (aProject.getProjectName (), aProject);
+          s_aName2Project.put (aProject.getProjectName (), aProject);
         }
     }
   }
@@ -59,18 +62,28 @@ public final class ProjectList
   @Nullable
   public static IProject getProjectOfName (@Nullable final String sName)
   {
-    return s_aProjects.get (sName);
+    return s_aName2Project.get (sName);
   }
 
   @Nullable
   public static Iterable <IProject> getAllProjects ()
   {
-    return s_aProjects.values ();
+    return s_aName2Project.values ();
   }
 
   @Nonnegative
   public static int size ()
   {
-    return s_aProjects.size ();
+    return s_aName2Project.size ();
+  }
+
+  @Nullable
+  public static IProject getProjectOfDir (@Nullable final String sDirName)
+  {
+    if (StringHelper.hasText (sDirName))
+      for (final IProject aProject : s_aName2Project.values ())
+        if (aProject.getBaseDir ().getName ().equals (sDirName))
+          return aProject;
+    return null;
   }
 }
