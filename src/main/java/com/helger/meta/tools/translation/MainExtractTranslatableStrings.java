@@ -39,7 +39,7 @@ import com.helger.commons.io.file.FileUtils;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
-import com.helger.commons.text.impl.TextProvider;
+import com.helger.commons.text.TextProvider;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMUtils;

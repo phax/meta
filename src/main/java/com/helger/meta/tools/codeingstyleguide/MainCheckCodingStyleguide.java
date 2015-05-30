@@ -301,6 +301,16 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sPackageName.equals ("org.w3._2000._09.xmldsig") || sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
       return EContinue.BREAK;
 
+    if (aProject == EProject.PH_XPATH2 &&
+        (sClassLocalName.equals ("CharStream") ||
+         sClassLocalName.equals ("ParseException") ||
+         sClassLocalName.startsWith ("ParserXP2") ||
+         sClassLocalName.equals ("Node") ||
+         sClassLocalName.equals ("Token") ||
+         sClassLocalName.equals ("TokenMgrError") ||
+         sClassLocalName.startsWith ("JJTParser") || sClassLocalName.equals ("SimpleNode")))
+      return EContinue.BREAK;
+
     return EContinue.CONTINUE;
   }
 
