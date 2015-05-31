@@ -84,7 +84,11 @@ public class ASMUtils
   public static boolean containsAnnotation (final MethodNode mn, final Class <? extends Annotation> aClass)
   {
     final String sDescriptor = Type.getDescriptor (aClass);
+    return containsAnnotation (mn, sDescriptor);
+  }
 
+  public static boolean containsAnnotation (final MethodNode mn, final String sDescriptor)
+  {
     // Invisible annotations (retention policy: class)
     if (mn.invisibleAnnotations != null)
       for (final Object o : mn.invisibleAnnotations)

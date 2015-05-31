@@ -102,7 +102,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       {
         if (bClassIsAbstract)
         {
-          if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.contains ("Singleton"))
+          if (!sInnerClassLocalName.startsWith ("Abstract") &&
+              !sInnerClassLocalName.contains ("Singleton") &&
+              !sInnerClassLocalName.equals ("NamespacePrefixMapper"))
             _warn (aProject, sPrefix + "Abstract classes should start with 'Abstract'");
         }
       }
@@ -343,7 +345,6 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   }
 
   private static void _checkTestClass (@Nonnull final IProject aProject,
-                                       @Nonnull final ClassNode cn,
                                        @Nullable final String sBaseName,
                                        @Nullable final String sTestClass)
   {
@@ -368,7 +369,25 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
         final String sName = aClassFile.getName ();
+
+        // Interpret byte code
+        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+        boolean bContainsTestMethod = false;
+        for (final Object oMethod : cn.methods)
+        {
+          final MethodNode mn = (MethodNode) oMethod;
+          if (ASMUtils.containsAnnotation (mn, "Lorg/junit/Test;"))
+          {
+            bContainsTestMethod = true;
+            break;
+          }
+        }
+
         final String sBaseName = FilenameHelper.getWithoutExtension (sName);
+
+        if (bContainsTestMethod && !sBaseName.endsWith ("Test"))
+          _warn (aProject, "Class '" + sName + "' contains @Test annotation but is label weird");
+
         if (sBaseName.contains ("$") ||
             sBaseName.equals ("SPITest") ||
             sBaseName.equals ("JettyMonitor") ||
@@ -381,14 +400,13 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             sBaseName.startsWith ("Issue") ||
             sBaseName.startsWith ("Main") ||
             sBaseName.endsWith ("TestRule"))
+        {
           continue;
-
-        // Interpret byte code
-        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+        }
 
         final String sTestClass = FilenameHelper.getWithoutExtension (FilenameHelper.getRelativeToParentDirectory (aClassFile,
                                                                                                                    aTestClasses));
-        _checkTestClass (aProject, cn, sBaseName, sTestClass);
+        _checkTestClass (aProject, sBaseName, sTestClass);
       }
   }
 
