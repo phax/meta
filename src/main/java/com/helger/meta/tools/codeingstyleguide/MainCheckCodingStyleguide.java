@@ -17,13 +17,13 @@
 package com.helger.meta.tools.codeingstyleguide;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
@@ -33,7 +33,7 @@ import org.objectweb.asm.tree.MethodNode;
 import com.helger.commons.annotations.CodingStyleguideUnaware;
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.annotations.OverrideOnDemand;
-import com.helger.commons.io.file.FileUtils;
+import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.state.EContinue;
@@ -50,7 +50,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
-  private static void _checkClass (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkMainClass (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
@@ -84,11 +84,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (sInnerClassLocalName.startsWith ("I"))
         {
           if (sInnerClassLocalName.length () > 1 && !Character.isUpperCase (sInnerClassLocalName.charAt (1)))
-            _warn (eProject, sPrefix + "Interface names should have an upper case second letter");
+            _warn (aProject, sPrefix + "Interface names should have an upper case second letter");
         }
         else
           if (!sInnerClassLocalName.startsWith ("I") && !sClassLocalName.endsWith ("MBean"))
-            _warn (eProject, sPrefix + "Interface names should start with an uppercase 'I'");
+            _warn (aProject, sPrefix + "Interface names should start with an uppercase 'I'");
       }
     }
     else
@@ -96,20 +96,20 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (bClassIsEnum)
       {
         if (!sInnerClassLocalName.startsWith ("E"))
-          _warn (eProject, sPrefix + "enum classes should start with 'E'");
+          _warn (aProject, sPrefix + "enum classes should start with 'E'");
       }
       else
       {
         if (bClassIsAbstract)
         {
           if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.contains ("Singleton"))
-            _warn (eProject, sPrefix + "Abstract classes should start with 'Abstract'");
+            _warn (aProject, sPrefix + "Abstract classes should start with 'Abstract'");
         }
       }
     }
   }
 
-  private static void _checkMethods (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = false;
@@ -146,21 +146,21 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             !mn.name.equals ("writeObject") &&
             !mn.name.equals ("readResolve") &&
             !mn.name.startsWith ("lambda$"))
-          _warn (eProject, sPrefix + "Privat methods should start with an underscore");
+          _warn (aProject, sPrefix + "Privat methods should start with an underscore");
       }
 
       if (bIsFinal)
       {
         if (bClassIsFinal)
-          _warn (eProject, sPrefix + "final method in final class");
+          _warn (aProject, sPrefix + "final method in final class");
 
         if (ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
-          _warn (eProject, sPrefix + "final method uses @OverrideOnDemand annotation");
+          _warn (aProject, sPrefix + "final method uses @OverrideOnDemand annotation");
       }
       else
       {
         if (bClassIsFinal && ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
-          _warn (eProject, sPrefix + "final class uses @OverrideOnDemand annotation");
+          _warn (aProject, sPrefix + "final class uses @OverrideOnDemand annotation");
       }
     }
 
@@ -174,14 +174,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           break;
         }
       if (!bAnyNonPrivateCtor)
-        _warn (eProject, "[" + sClassLocalName + "] The abstract class contains only private constructors!");
+        _warn (aProject, "[" + sClassLocalName + "] The abstract class contains only private constructors!");
     }
   }
 
-  private static void _checkVariables (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
+  private static void _checkMainVariables (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = (eProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
+    final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
 
@@ -212,15 +212,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           if (!fn.name.startsWith ("s_") &&
               !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
               !fn.name.equals ("serialVersionUID"))
-            _warn (eProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
+            _warn (aProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
         }
         else
         {
           if (!fn.name.startsWith ("s_"))
-            _warn (eProject, sPrefix + "Static member name '" + fn.name + "' does not match naming conventions");
+            _warn (aProject, sPrefix + "Static member name '" + fn.name + "' does not match naming conventions");
 
           if (!bIsPrivate)
-            _warn (eProject, sPrefix + "Static member '" + fn.name + "' is not private");
+            _warn (aProject, sPrefix + "Static member '" + fn.name + "' is not private");
         }
       }
       else
@@ -229,18 +229,18 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           continue;
 
         if (!fn.name.startsWith ("m_"))
-          _warn (eProject, sPrefix + "Instance member name '" + fn.name + "' does not match");
+          _warn (aProject, sPrefix + "Instance member name '" + fn.name + "' does not match");
 
         if (bClassIsFinal && !bIsPrivate)
-          _warn (eProject, sPrefix + "Instance member '" + fn.name + "' is not private");
+          _warn (aProject, sPrefix + "Instance member '" + fn.name + "' is not private");
       }
     }
   }
 
   @Nonnull
-  private static EContinue _doScanClass (@Nonnull final IProject aProject,
-                                         @Nonnull final String sPackageName,
-                                         @Nonnull @Nonempty final String sClassLocalName)
+  private static EContinue _doScanMainClass (@Nonnull final IProject aProject,
+                                             @Nonnull final String sPackageName,
+                                             @Nonnull @Nonempty final String sClassLocalName)
   {
     if (aProject == EProject.ERECHNUNG_WS_CLIENT &&
         (sPackageName.equals ("at.gv.brz.eproc.erb.ws.documentupload._20121205") ||
@@ -314,14 +314,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     return EContinue.CONTINUE;
   }
 
-  private static void _scanProject (@Nonnull final IProject aProject) throws IOException
+  private static void _scanMainCode (@Nonnull final IProject aProject)
   {
-    if (false)
-      s_aLogger.info ("  " + aProject.getProjectName ());
-    final File aTargetDir = FileUtils.getCanonicalFile (new File (aProject.getBaseDir (), "target/classes"));
-
-    // Find all class files
-    for (final File aClassFile : new FileSystemRecursiveIterator (aTargetDir))
+    // Find all main class files
+    final File aMainClasses = new File (aProject.getBaseDir (), "target/classes");
+    for (final File aClassFile : new FileSystemRecursiveIterator (aMainClasses))
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
         // Interpret byte code
@@ -336,16 +333,75 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         final String sClassLocalName = CGStringHelper.getClassLocalName (sClassName);
 
         // Special generated classes
-        if (_doScanClass (aProject, sPackageName, sClassLocalName).isBreak ())
+        if (_doScanMainClass (aProject, sPackageName, sClassLocalName).isBreak ())
           continue;
 
-        _checkClass (aProject, cn);
-        _checkVariables (aProject, cn);
-        _checkMethods (aProject, cn);
+        _checkMainClass (aProject, cn);
+        _checkMainVariables (aProject, cn);
+        _checkMainMethods (aProject, cn);
       }
   }
 
-  public static void main (final String [] args) throws IOException
+  private static void _checkTestClass (@Nonnull final IProject aProject,
+                                       @Nonnull final ClassNode cn,
+                                       @Nullable final String sBaseName,
+                                       @Nullable final String sTestClass)
+  {
+    if (sTestClass.endsWith ("Test") && !sTestClass.endsWith ("FuncTest"))
+    {
+      final String sMainClass = StringHelper.trimEnd (sTestClass, 4);
+      final File aMainClass = new File (aProject.getBaseDir (), "target/classes/" + sMainClass + ".class");
+      if (!aMainClass.exists ())
+        _warn (aProject, "Test class " + sTestClass + " has no matching main class");
+    }
+    else
+      if (sBaseName.startsWith ("FuncTest"))
+      {
+        _warn (aProject, "Test class " + sTestClass + " should end with FuncTest instead of starting with it");
+      }
+  }
+
+  private static void _scanTestCode (@Nonnull final IProject aProject)
+  {
+    final File aTestClasses = new File (aProject.getBaseDir (), "target/test-classes");
+    for (final File aClassFile : new FileSystemRecursiveIterator (aTestClasses))
+      if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
+      {
+        final String sName = aClassFile.getName ();
+        final String sBaseName = FilenameHelper.getWithoutExtension (sName);
+        if (sBaseName.contains ("$") ||
+            sBaseName.equals ("SPITest") ||
+            sBaseName.equals ("JettyMonitor") ||
+            sBaseName.startsWith ("JettyStop") ||
+            sBaseName.startsWith ("RunInJetty") ||
+            sBaseName.startsWith ("IMock") ||
+            sBaseName.startsWith ("Mock") ||
+            sBaseName.endsWith ("Mock") ||
+            sBaseName.startsWith ("Benchmark") ||
+            sBaseName.startsWith ("Issue") ||
+            sBaseName.startsWith ("Main") ||
+            sBaseName.endsWith ("TestRule"))
+          continue;
+
+        // Interpret byte code
+        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+
+        final String sTestClass = FilenameHelper.getWithoutExtension (FilenameHelper.getRelativeToParentDirectory (aClassFile,
+                                                                                                                   aTestClasses));
+        _checkTestClass (aProject, cn, sBaseName, sTestClass);
+      }
+  }
+
+  private static void _scanProject (@Nonnull final IProject aProject)
+  {
+    if (false)
+      s_aLogger.info ("  " + aProject.getProjectName ());
+
+    _scanMainCode (aProject);
+    _scanTestCode (aProject);
+  }
+
+  public static void main (final String [] args)
   {
     s_aLogger.info ("Start checking coding style guide in .class files!");
     for (final IProject aProject : ProjectList.getAllProjects ())
