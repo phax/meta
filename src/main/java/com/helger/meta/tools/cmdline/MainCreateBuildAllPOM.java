@@ -17,12 +17,10 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
@@ -35,8 +33,8 @@ import com.helger.commons.microdom.IMicroNode;
 import com.helger.commons.microdom.MicroDocument;
 import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.commons.microdom.serialize.MicroWriter;
+import com.helger.commons.microdom.utils.MicroHelper;
 import com.helger.commons.microdom.utils.MicroRecursiveIterator;
-import com.helger.commons.microdom.utils.MicroUtils;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
@@ -68,7 +66,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
-    final String sThisArtefactID = MicroUtils.getChildTextContentTrimmed (eRoot, "artifactId");
+    final String sThisArtefactID = MicroHelper.getChildTextContentTrimmed (eRoot, "artifactId");
     final IProject aThisProject = ProjectList.getProjectOfName (sThisArtefactID);
     if (aThisProject != aProject)
       throw new IllegalStateException (sThisArtefactID + " is weird: " + aThisProject + " vs. " + aProject);
@@ -82,8 +80,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
         if (aElement.getLocalName ().equals ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
-          final String sGroupID = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                         "groupId");
+          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                          "groupId");
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!
@@ -148,37 +146,33 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
     // Evaluate dependencies
     final List <Map.Entry <IProject, Set <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
-    CollectionHelper.getSortedInline (aEntries, new Comparator <Map.Entry <IProject, Set <IProject>>> ()
-    {
-      public int compare (final Entry <IProject, Set <IProject>> o1, final Entry <IProject, Set <IProject>> o2)
-      {
-        // Less dependencies before many dependencies, because transitivity was
-        // already handled
-        int ret = o1.getValue ().size () - o2.getValue ().size ();
-        if (ret == 0)
-        {
-          // Same dependency count
-          if (o1.getValue ().contains (o2.getKey ()))
-          {
-            // First depends on second
-            ret = +1;
-          }
-          else
-            if (o2.getValue ().contains (o1.getKey ()))
-            {
-              // Second depends on first
-              ret = -1;
-            }
-            else
-            {
-              // By name
-              ret = o1.getKey ().compareTo (o2.getKey ());
-            }
-        }
+    CollectionHelper.getSortedInline (aEntries, (o1, o2) -> {
+      // Less dependencies before many dependencies, because transitivity was
+      // already handled
+                                      int ret = o1.getValue ().size () - o2.getValue ().size ();
+                                      if (ret == 0)
+                                      {
+                                        // Same dependency count
+                                        if (o1.getValue ().contains (o2.getKey ()))
+                                        {
+                                          // First depends on second
+                                          ret = +1;
+                                        }
+                                        else
+                                          if (o2.getValue ().contains (o1.getKey ()))
+                                          {
+                                            // Second depends on first
+                                            ret = -1;
+                                          }
+                                          else
+                                          {
+                                            // By name
+                                            ret = o1.getKey ().compareTo (o2.getKey ());
+                                          }
+                                      }
 
-        return ret;
-      }
-    });
+                                      return ret;
+                                    });
 
     // Create builder POM
     final IMicroDocument aDoc = new MicroDocument ();

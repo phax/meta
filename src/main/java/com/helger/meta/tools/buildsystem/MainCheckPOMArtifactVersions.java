@@ -24,8 +24,8 @@ import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
 import com.helger.commons.microdom.serialize.MicroReader;
+import com.helger.commons.microdom.utils.MicroHelper;
 import com.helger.commons.microdom.utils.MicroRecursiveIterator;
-import com.helger.commons.microdom.utils.MicroUtils;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
@@ -92,7 +92,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       }
       else
       {
-        final String sGroupId = MicroUtils.getChildTextContent (eParent, "groupId");
+        final String sGroupId = MicroHelper.getChildTextContent (eParent, "groupId");
         if (!PARENT_POM_GROUPID.equals (sGroupId))
         {
           if (aProject.isBuildInProject ())
@@ -101,7 +101,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         else
         {
           // Check only if groupId matches
-          final String sArtifactId = MicroUtils.getChildTextContent (eParent, "artifactId");
+          final String sArtifactId = MicroHelper.getChildTextContent (eParent, "artifactId");
           if (!PARENT_POM_ARTIFACTID.equals (sArtifactId))
           {
             if (aProject.isNestedProject () && aProject.getParentProject ().getProjectName ().equals (sArtifactId))
@@ -114,7 +114,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           else
           {
             // Check version only if group and artifact match
-            final String sVersion = MicroUtils.getChildTextContent (eParent, "version");
+            final String sVersion = MicroHelper.getChildTextContent (eParent, "version");
             if (!PARENT_POM_VERSION.equals (sVersion))
               _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
           }
@@ -124,7 +124,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     // Check Packaging
     {
-      String sPackaging = MicroUtils.getChildTextContent (eRoot, "packaging");
+      String sPackaging = MicroHelper.getChildTextContent (eRoot, "packaging");
       if (sPackaging == null)
       {
         // This is the default
@@ -139,7 +139,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     // Check URL
     if (aProject.isBuildInProject ())
     {
-      final String sURL = MicroUtils.getChildTextContent (eRoot, "url");
+      final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
       final String sExpectedURL = "https://github.com/phax/" + aProject.getFullBaseDirName ();
       if (!sExpectedURL.equals (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
@@ -147,7 +147,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     // Check for inception year
     {
-      final String sInceptionYear = MicroUtils.getChildTextContent (eRoot, "inceptionYear");
+      final String sInceptionYear = MicroHelper.getChildTextContent (eRoot, "inceptionYear");
       if (StringHelper.hasNoText (sInceptionYear))
         _warn (aProject, "inceptionYear element is missing or empty");
       else
@@ -176,14 +176,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       }
       else
       {
-        final String sConnection = MicroUtils.getChildTextContent (eSCM, "connection");
+        final String sConnection = MicroHelper.getChildTextContent (eSCM, "connection");
         final String sExpectedConnection = "scm:git:git@github.com:phax/" + aProject.getFullBaseDirName () + ".git";
         // Alternatively:
         // "scm:git:https://github.com/phax/"+eProject.getProjectName ()
         if (!sExpectedConnection.equals (sConnection))
           _warn (aProject, "Unexpected SCM connection '" + sConnection + "'. Expected '" + sExpectedConnection + "'");
 
-        final String sDeveloperConnection = MicroUtils.getChildTextContent (eSCM, "developerConnection");
+        final String sDeveloperConnection = MicroHelper.getChildTextContent (eSCM, "developerConnection");
         final String sExpectedDeveloperConnection = sExpectedConnection;
         if (!sExpectedDeveloperConnection.equals (sDeveloperConnection))
           _warn (aProject, "Unexpected SCM developer connection '" +
@@ -192,12 +192,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            sExpectedDeveloperConnection +
                            "'");
 
-        final String sURL = MicroUtils.getChildTextContent (eSCM, "url");
+        final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
         final String sExpectedURL = "http://github.com/phax/" + aProject.getFullBaseDirName ();
         if (!sExpectedURL.equals (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 
-        final String sTag = MicroUtils.getChildTextContent (eSCM, "tag");
+        final String sTag = MicroHelper.getChildTextContent (eSCM, "tag");
         final String sExpectedTag = "HEAD";
         if (!sExpectedTag.equals (sTag))
           _warn (aProject, "Unexpected SCM tag '" + sTag + "'. Expected '" + sExpectedTag + "'");
@@ -213,8 +213,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         if (aElement.getLocalName ().equals ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
-          final String sGroupID = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                         "groupId");
+          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                          "groupId");
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!
@@ -230,8 +230,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 _warn (aProject, sArtifactID + ": is deprecated!");
 
               // Version is optional e.g. when dependencyManagement is used
-              final String sVersion = MicroUtils.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                             "version");
+              final String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                              "version");
 
               // Ignore versions with variables
               if (sVersion != null && !sVersion.contains ("$"))

@@ -40,7 +40,7 @@ import com.helger.commons.state.EContinue;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.meta.AbstractProjectMain;
-import com.helger.meta.asm.ASMUtils;
+import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
@@ -128,7 +128,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     {
       final MethodNode mn = (MethodNode) oMethod;
 
-      if (ASMUtils.containsAnnotation (mn, CodingStyleguideUnaware.class))
+      if (ASMHelper.containsAnnotation (mn, CodingStyleguideUnaware.class))
         continue;
 
       final String sPrefix = "[" + sClassLocalName + "::" + mn.name + "] ";
@@ -156,12 +156,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bClassIsFinal)
           _warn (aProject, sPrefix + "final method in final class");
 
-        if (ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
+        if (ASMHelper.containsAnnotation (mn, OverrideOnDemand.class))
           _warn (aProject, sPrefix + "final method uses @OverrideOnDemand annotation");
       }
       else
       {
-        if (bClassIsFinal && ASMUtils.containsAnnotation (mn, OverrideOnDemand.class))
+        if (bClassIsFinal && ASMHelper.containsAnnotation (mn, OverrideOnDemand.class))
           _warn (aProject, sPrefix + "final class uses @OverrideOnDemand annotation");
       }
     }
@@ -194,7 +194,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     {
       final FieldNode fn = (FieldNode) oField;
 
-      if (ASMUtils.containsAnnotation (fn, CodingStyleguideUnaware.class))
+      if (ASMHelper.containsAnnotation (fn, CodingStyleguideUnaware.class))
         continue;
 
       final boolean bIsStatic = Modifier.isStatic (fn.access);
@@ -324,10 +324,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
         // Interpret byte code
-        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+        final ClassNode cn = ASMHelper.readClassFile (aClassFile);
 
         // Ignore classes explicitly marked as unaware
-        if (ASMUtils.containsAnnotation (cn, CodingStyleguideUnaware.class))
+        if (ASMHelper.containsAnnotation (cn, CodingStyleguideUnaware.class))
           continue;
 
         final String sClassName = CGStringHelper.getClassFromPath (cn.name);
@@ -371,12 +371,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         final String sName = aClassFile.getName ();
 
         // Interpret byte code
-        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+        final ClassNode cn = ASMHelper.readClassFile (aClassFile);
         boolean bContainsTestMethod = false;
         for (final Object oMethod : cn.methods)
         {
           final MethodNode mn = (MethodNode) oMethod;
-          if (ASMUtils.containsAnnotation (mn, "Lorg/junit/Test;"))
+          if (ASMHelper.containsAnnotation (mn, "Lorg/junit/Test;"))
           {
             bContainsTestMethod = true;
             break;

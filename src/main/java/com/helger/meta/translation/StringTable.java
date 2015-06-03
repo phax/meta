@@ -37,7 +37,7 @@ import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotations.Nonempty;
 import com.helger.commons.annotations.ReturnsMutableCopy;
 import com.helger.commons.annotations.ReturnsMutableObject;
-import com.helger.commons.equals.EqualsUtils;
+import com.helger.commons.equals.EqualsHelper;
 import com.helger.commons.hash.HashCodeGenerator;
 import com.helger.commons.state.EChange;
 import com.helger.commons.string.ToStringGenerator;
@@ -157,7 +157,7 @@ public final class StringTable implements ICloneable <StringTable>
       aMap = new TreeMap <String, String> ();
       m_aMap.put (sID, aMap);
     }
-    return EChange.valueOf (!EqualsUtils.equals (aMap.put (sLocale, sText), sText));
+    return EChange.valueOf (!EqualsHelper.equals (aMap.put (sLocale, sText), sText));
   }
 
   public boolean containsID (@Nullable final String sID)

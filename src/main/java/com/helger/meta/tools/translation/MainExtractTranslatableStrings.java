@@ -35,14 +35,14 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
-import com.helger.commons.io.file.FileUtils;
+import com.helger.commons.io.file.FileHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
 import com.helger.commons.text.TextProvider;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
-import com.helger.meta.asm.ASMUtils;
+import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.meta.translation.StringTable;
@@ -101,12 +101,12 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
       _warn (eProject, cn.name + " is missing the standard m_aTP field");
 
     // Find the constructor
-    final MethodNode aCtor = ASMUtils.findMethod (cn, "<init>");
-    if (!ASMUtils.containsStaticCall (aCtor, TextProvider.class))
+    final MethodNode aCtor = ASMHelper.findMethod (cn, "<init>");
+    if (!ASMHelper.containsStaticCall (aCtor, TextProvider.class))
       _warn (eProject, cn.name + " should use the TextProvider static factory methods in the constructor");
 
     // Second find the initialization calls in the static ctor
-    final MethodNode aStaticInit = ASMUtils.findMethod (cn, "<clinit>");
+    final MethodNode aStaticInit = ASMHelper.findMethod (cn, "<clinit>");
     final List <String> aAllConstantStrings = new ArrayList <String> ();
     final String sIDPrefix = CGStringHelper.getClassFromPath (cn.name) + ".";
     // static initializer
@@ -147,7 +147,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   {
     if (false)
       s_aLogger.info ("  " + eProject.getProjectName ());
-    final File aTargetDir = FileUtils.getCanonicalFile (new File (eProject.getBaseDir (), "target/classes"));
+    final File aTargetDir = FileHelper.getCanonicalFile (new File (eProject.getBaseDir (), "target/classes"));
 
     final StringTable aSTProject = new StringTable ();
 
@@ -156,13 +156,13 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
         // Interpret byte code
-        final ClassNode cn = ASMUtils.readClassFile (aClassFile);
+        final ClassNode cn = ASMHelper.readClassFile (aClassFile);
         final boolean bIsEnum = CGStringHelper.getPathFromClass (Enum.class).equals (cn.superName);
         if (bIsEnum)
         {
           // Okay, it's an enumeration
-          final boolean bIsRelevant = ASMUtils.containsRequiresTranslationAnnotation (cn) &&
-                                      !ASMUtils.containsNoTranslationRequiredAnnotation (cn);
+          final boolean bIsRelevant = ASMHelper.containsRequiresTranslationAnnotation (cn) &&
+                                      !ASMHelper.containsNoTranslationRequiredAnnotation (cn);
           if (bIsRelevant)
           {
             // Enumeration and annotated

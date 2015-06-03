@@ -39,9 +39,9 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.lang.CGStringHelper;
 
 @Immutable
-public class ASMUtils
+public class ASMHelper
 {
-  private ASMUtils ()
+  private ASMHelper ()
   {}
 
   @Nullable
