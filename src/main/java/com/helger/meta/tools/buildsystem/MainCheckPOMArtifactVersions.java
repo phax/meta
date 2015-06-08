@@ -19,13 +19,13 @@ package com.helger.meta.tools.buildsystem;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.helger.commons.annotations.Nonempty;
+import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
 import com.helger.commons.microdom.serialize.MicroReader;
-import com.helger.commons.microdom.utils.MicroHelper;
-import com.helger.commons.microdom.utils.MicroRecursiveIterator;
+import com.helger.commons.microdom.util.MicroHelper;
+import com.helger.commons.microdom.util.MicroRecursiveIterator;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;

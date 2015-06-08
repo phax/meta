@@ -33,8 +33,8 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
-import com.helger.commons.annotations.NoTranslationRequired;
-import com.helger.commons.annotations.Translatable;
+import com.helger.commons.annotation.NoTranslationRequired;
+import com.helger.commons.annotation.Translatable;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.lang.CGStringHelper;
 
