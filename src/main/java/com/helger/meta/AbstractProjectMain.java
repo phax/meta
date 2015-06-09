@@ -24,9 +24,9 @@ import javax.annotation.Nonnull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.GlobalDebug;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.charset.CCharset;
+import com.helger.commons.debug.GlobalDebug;
 import com.helger.meta.project.IProject;
 
 /**
