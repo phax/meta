@@ -84,7 +84,6 @@ portecle
 pre
 preprocessing
 proxy
-readonly
 registrar
 reusability
 safari
@@ -132,3 +131,5 @@ choreographies
 callable
 codec
 licence
+fallbacks
+flushable

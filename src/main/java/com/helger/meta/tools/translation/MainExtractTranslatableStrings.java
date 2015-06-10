@@ -39,7 +39,8 @@ import com.helger.commons.io.file.FileHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.CGStringHelper;
-import com.helger.commons.text.TextProvider;
+import com.helger.commons.text.IMultilingualText;
+import com.helger.commons.text.util.TextHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMHelper;
@@ -68,7 +69,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         {
           m_bHasTP = true;
           // We have the right field
-          if (fn.desc.equals (Type.getDescriptor (TextProvider.class)))
+          if (fn.desc.equals (Type.getDescriptor (IMultilingualText.class)))
           {
             if (!Modifier.isFinal (fn.access))
               _warn (eProject, cn.name + " field m_aTP is not final");
@@ -78,7 +79,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
             _warn (eProject, cn.name +
                              " field m_aTP is of wrong type " +
                              Type.getType (fn.desc) +
-                             " and not of type TextProvider");
+                             " and not of type IMultilingualText");
           }
         }
         else
@@ -102,8 +103,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
     // Find the constructor
     final MethodNode aCtor = ASMHelper.findMethod (cn, "<init>");
-    if (!ASMHelper.containsStaticCall (aCtor, TextProvider.class))
-      _warn (eProject, cn.name + " should use the TextProvider static factory methods in the constructor");
+    if (!ASMHelper.containsStaticCall (aCtor, TextHelper.class))
+      _warn (eProject, cn.name + " should use the TextHelper static factory methods in the constructor");
 
     // Second find the initialization calls in the static ctor
     final MethodNode aStaticInit = ASMHelper.findMethod (cn, "<clinit>");
@@ -126,8 +127,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         {
           // We have ID, DE and EN texts
           final String sID = sIDPrefix + aAllConstantStrings.get (0);
-          ret.setText (sID, TextProvider.DE, aAllConstantStrings.get (1));
-          ret.setText (sID, TextProvider.EN, aAllConstantStrings.get (2));
+          ret.setText (sID, TextHelper.DE, aAllConstantStrings.get (1));
+          ret.setText (sID, TextHelper.EN, aAllConstantStrings.get (2));
           aAllConstantStrings.clear ();
         }
       }
