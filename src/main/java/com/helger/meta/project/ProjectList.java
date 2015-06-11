@@ -22,8 +22,8 @@ import java.util.Map;
 import javax.annotation.Nonnegative;
 import javax.annotation.Nullable;
 
-import com.helger.commons.io.IReadableResource;
 import com.helger.commons.io.resource.ClassPathResource;
+import com.helger.commons.io.resource.IReadableResource;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.convert.MicroTypeConverter;
