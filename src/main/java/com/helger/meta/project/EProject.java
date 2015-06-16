@@ -32,7 +32,7 @@ import com.helger.meta.CMeta;
  */
 public enum EProject implements IProject
 {
-  AS2_LIB (null, "as2-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.8"),
+  AS2_LIB (null, "as2-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   AS2_PEPPOL_CLIENT (null, "as2-peppol-client", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
   AS2_PEPPOL_SERVLET (null, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.1"),
   AS2_PEPPOL_SERVER (null, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
@@ -65,7 +65,7 @@ public enum EProject implements IProject
   PH_EVENTS (null, "ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
   PH_FONTS (null, "ph-fonts", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_GENERICODE (null, "ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
-  PH_HTML (null, "ph-html", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.7.3"),
+  PH_HTML (null, "ph-html", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.7.4"),
   PH_JAVACC_MAVEN_PLUGIN (null, "ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
   PH_JAXB22_PLUGIN (null, "ph-jaxb22-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.4"),
   PH_JDK5 (null, "ph-jdk5", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
