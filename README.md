@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Jun 16 09:34:14 CEST 2015):
+Current list of all projects (as of Thu Jun 18 16:44:16 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 1.1.0
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
@@ -47,19 +47,19 @@ Current list of all projects (as of Tue Jun 16 09:34:14 CEST 2015):
  * [ph-json](https://github.com/phax/ph-json) - Version 1.3.3
  * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 3.8.0
  * [ph-math](https://github.com/phax/ph-math) - Version 1.2.2
- * [ph-oton](https://github.com/phax/ph-oton) - Version 5.0.0
- * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton/ph-oton-basic) - Version 5.0.0
- * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton/ph-oton-bootstrap3) - Version 5.0.0
- * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton/ph-oton-bootstrap3-pages) - Version 5.0.0
- * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton/ph-oton-bootstrap3-stub) - Version 5.0.0
- * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton/ph-oton-bootstrap3-uictrls) - Version 5.0.0
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton/ph-oton-connect) - Version 5.0.0
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton/ph-oton-core) - Version 5.0.0
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton/ph-oton-exchange) - Version 5.0.0
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton/ph-oton-tinymce4) - Version 5.0.0
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton/ph-oton-uicore) - Version 5.0.0
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton/ph-oton-uictrls) - Version 5.0.0
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.3.4
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 5.1.0
+ * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton/ph-oton-basic) - Version 5.1.0
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton/ph-oton-bootstrap3) - Version 5.1.0
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton/ph-oton-bootstrap3-pages) - Version 5.1.0
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton/ph-oton-bootstrap3-stub) - Version 5.1.0
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton/ph-oton-bootstrap3-uictrls) - Version 5.1.0
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton/ph-oton-connect) - Version 5.1.0
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton/ph-oton-core) - Version 5.1.0
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton/ph-oton-exchange) - Version 5.1.0
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton/ph-oton-tinymce4) - Version 5.1.0
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton/ph-oton-uicore) - Version 5.1.0
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton/ph-oton-uictrls) - Version 5.1.0
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.0
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 1.3.5
  * [ph-poi](https://github.com/phax/ph-poi) - Version 2.9.4
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 1.1.1
