@@ -139,3 +139,5 @@ imploded
 implode
 ignorable
 serializer
+cachable
+instancable

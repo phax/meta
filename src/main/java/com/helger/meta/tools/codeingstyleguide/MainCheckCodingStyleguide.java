@@ -35,7 +35,7 @@ import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.annotation.OverrideOnDemand;
 import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
-import com.helger.commons.lang.CGStringHelper;
+import com.helger.commons.lang.ClassHelper;
 import com.helger.commons.state.EContinue;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
@@ -52,7 +52,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
   private static void _checkMainClass (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
-    final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
     if (bIsSpecialCase)
       return;
@@ -113,7 +113,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
   private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
-    final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = false;
     if (bIsSpecialCase)
       return;
@@ -182,7 +182,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
   private static void _checkMainVariables (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
-    final String sClassLocalName = CGStringHelper.getClassLocalName (CGStringHelper.getClassFromPath (cn.name));
+    final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
@@ -330,9 +330,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (ASMHelper.containsAnnotation (cn, CodingStyleguideUnaware.class))
           continue;
 
-        final String sClassName = CGStringHelper.getClassFromPath (cn.name);
-        final String sPackageName = CGStringHelper.getClassPackageName (sClassName);
-        final String sClassLocalName = CGStringHelper.getClassLocalName (sClassName);
+        final String sClassName = ClassHelper.getClassFromPath (cn.name);
+        final String sPackageName = ClassHelper.getClassPackageName (sClassName);
+        final String sClassLocalName = ClassHelper.getClassLocalName (sClassName);
 
         // Special generated classes
         if (_doScanMainClass (aProject, sPackageName, sClassLocalName).isBreak ())

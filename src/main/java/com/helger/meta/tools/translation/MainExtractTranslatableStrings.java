@@ -38,7 +38,7 @@ import org.objectweb.asm.tree.MethodNode;
 import com.helger.commons.io.file.FileHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
-import com.helger.commons.lang.CGStringHelper;
+import com.helger.commons.lang.ClassHelper;
 import com.helger.commons.text.IMultilingualText;
 import com.helger.commons.text.util.TextHelper;
 import com.helger.meta.AbstractProjectMain;
@@ -109,7 +109,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     // Second find the initialization calls in the static ctor
     final MethodNode aStaticInit = ASMHelper.findMethod (cn, "<clinit>");
     final List <String> aAllConstantStrings = new ArrayList <String> ();
-    final String sIDPrefix = CGStringHelper.getClassFromPath (cn.name) + ".";
+    final String sIDPrefix = ClassHelper.getClassFromPath (cn.name) + ".";
     // static initializer
     final Iterator <?> aInstructionIter = aStaticInit.instructions.iterator ();
     while (aInstructionIter.hasNext ())
@@ -158,7 +158,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
       {
         // Interpret byte code
         final ClassNode cn = ASMHelper.readClassFile (aClassFile);
-        final boolean bIsEnum = CGStringHelper.getPathFromClass (Enum.class).equals (cn.superName);
+        final boolean bIsEnum = ClassHelper.getPathFromClass (Enum.class).equals (cn.superName);
         if (bIsEnum)
         {
           // Okay, it's an enumeration

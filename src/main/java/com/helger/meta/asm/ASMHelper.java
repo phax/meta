@@ -36,7 +36,7 @@ import org.objectweb.asm.tree.MethodNode;
 import com.helger.commons.annotation.NoTranslationRequired;
 import com.helger.commons.annotation.Translatable;
 import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.lang.CGStringHelper;
+import com.helger.commons.lang.ClassHelper;
 
 @Immutable
 public class ASMHelper
@@ -159,7 +159,7 @@ public class ASMHelper
 
   public static boolean containsStaticCall (@Nonnull final MethodNode mn, @Nonnull final Class <?> aOwner)
   {
-    return containsStaticCall (mn, CGStringHelper.getPathFromClass (aOwner));
+    return containsStaticCall (mn, ClassHelper.getPathFromClass (aOwner));
   }
 
   /**
