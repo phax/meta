@@ -54,7 +54,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
                                           @Nonnull final String sExpectedContent)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
-    final String sContent = SimpleFileIO.readFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+    final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
     if (sContent == null || !sContent.contains (sExpectedContent))
       _warn (eProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
   }

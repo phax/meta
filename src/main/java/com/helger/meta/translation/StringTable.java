@@ -166,7 +166,7 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  @ReturnsMutableObject (reason = "Performance")
+  @ReturnsMutableObject ("Performance")
   public Set <String> getAllIDs ()
   {
     return m_aMap.keySet ();
@@ -184,7 +184,7 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  @ReturnsMutableObject (reason = "Performance")
+  @ReturnsMutableObject ("Performance")
   public Map <String, Map <String, String>> directGetMap ()
   {
     return m_aMap;

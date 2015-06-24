@@ -173,7 +173,7 @@ public class ASMHelper
   public static ClassNode readClassFile (@Nonnull final File aClassFile)
   {
     // Read and interpret the class file
-    return readClass (SimpleFileIO.readFileBytes (aClassFile));
+    return readClass (SimpleFileIO.getAllFileBytes (aClassFile));
   }
 
   /**

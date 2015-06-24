@@ -19,13 +19,29 @@ package com.helger.meta.tools.codeingstyleguide;
 import java.io.File;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.Vector;
+import java.util.WeakHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodNode;
@@ -33,6 +49,12 @@ import org.objectweb.asm.tree.MethodNode;
 import com.helger.commons.annotation.CodingStyleguideUnaware;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.annotation.OverrideOnDemand;
+import com.helger.commons.annotation.ReturnsImmutableObject;
+import com.helger.commons.annotation.ReturnsMutableCopy;
+import com.helger.commons.annotation.ReturnsMutableObject;
+import com.helger.commons.collection.impl.SafeArrayList;
+import com.helger.commons.collection.impl.SafeVector;
+import com.helger.commons.collection.impl.SoftHashMap;
 import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.ClassHelper;
@@ -111,6 +133,43 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
+  private static boolean _isArrayClass (@Nonnull final Type aType)
+  {
+    return aType.getSort () == Type.ARRAY;
+  }
+
+  private static boolean _isCollectionClass (@Nonnull final Type aType)
+  {
+    if (aType.getSort () != Type.OBJECT)
+      return false;
+
+    final String sClassName = aType.getClassName ();
+    return Collection.class.getName ().equals (sClassName) ||
+    // list
+           List.class.getName ().equals (sClassName) ||
+           ArrayList.class.getName ().equals (sClassName) ||
+           Vector.class.getName ().equals (sClassName) ||
+           LinkedList.class.getName ().equals (sClassName) ||
+           SafeArrayList.class.getName ().equals (sClassName) ||
+           SafeVector.class.getName ().equals (sClassName) ||
+           // set
+           Set.class.getName ().equals (sClassName) ||
+           SortedSet.class.getName ().equals (sClassName) ||
+           HashSet.class.getName ().equals (sClassName) ||
+           LinkedHashSet.class.getName ().equals (sClassName) ||
+           TreeSet.class.getName ().equals (sClassName) ||
+           HashSet.class.getName ().equals (sClassName) ||
+           // Map
+           Map.class.getName ().equals (sClassName) ||
+           SortedMap.class.getName ().equals (sClassName) ||
+           HashMap.class.getName ().equals (sClassName) ||
+           ConcurrentHashMap.class.getName ().equals (sClassName) ||
+           WeakHashMap.class.getName ().equals (sClassName) ||
+           LinkedHashMap.class.getName ().equals (sClassName) ||
+           TreeMap.class.getName ().equals (sClassName) ||
+           SoftHashMap.class.getName ().equals (sClassName);
+  }
+
   private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
@@ -131,8 +190,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (ASMHelper.containsAnnotation (mn, CodingStyleguideUnaware.class))
         continue;
 
+      if (mn.name.startsWith ("$SWITCH_TABLE$"))
+        continue;
+
       final String sPrefix = "[" + sClassLocalName + "::" + mn.name + "] ";
 
+      final Type aReturnType = Type.getReturnType (mn.desc);
+      final boolean bReturnsArray = _isArrayClass (aReturnType);
+      final boolean bReturnsCollection = _isCollectionClass (aReturnType);
       final boolean bIsConstructor = mn.name.equals ("<init>");
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
       final boolean bIsFinal = Modifier.isFinal (mn.access);
@@ -145,8 +210,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (!bIsConstructor &&
             !mn.name.startsWith ("_") &&
             !mn.name.equals ("readObject") &&
-            !mn.name.equals ("writeObject") &&
             !mn.name.equals ("readResolve") &&
+            !mn.name.equals ("writeObject") &&
+            !mn.name.equals ("writeReplace") &&
             !mn.name.startsWith ("lambda$"))
           _warn (aProject, sPrefix + "Privat methods should start with an underscore");
       }
@@ -164,6 +230,43 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bClassIsFinal && ASMHelper.containsAnnotation (mn, OverrideOnDemand.class))
           _warn (aProject, sPrefix + "final class uses @OverrideOnDemand annotation");
       }
+
+      // Too many variations
+      if (false)
+      {
+        if (bReturnsArray)
+        {
+          if (!mn.name.startsWith ("_") &&
+              !mn.name.startsWith ("getAll") &&
+              !mn.name.startsWith ("getAs") &&
+              !mn.name.startsWith ("internalGetAll") &&
+              !mn.name.equals ("values"))
+            _warn (aProject, sPrefix + "returns a array but uses a non-standard name");
+        }
+        else
+          if (bReturnsCollection)
+          {
+            if (!mn.name.startsWith ("new") &&
+                !mn.name.startsWith ("getAll") &&
+                !mn.name.startsWith ("internalGetAll") &&
+                !mn.name.startsWith ("readAll"))
+              _warn (aProject, sPrefix + "returns a collection but uses a non-standard name");
+          }
+      }
+
+      // Fails to often but may give a nice overview
+      if (false)
+        if (bReturnsArray || bReturnsCollection)
+        {
+          // Special name checks
+          if (!mn.name.equals ("values"))
+            if (!ASMHelper.containsAnnotation (mn, ReturnsMutableCopy.class) &&
+                !ASMHelper.containsAnnotation (mn, ReturnsMutableObject.class) &&
+                !ASMHelper.containsAnnotation (mn, ReturnsImmutableObject.class))
+              _warn (aProject,
+                     sPrefix +
+                         "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
+        }
     }
 
     if (bClassIsAbstract && !bClassIsInterface && !bClassIsEnum)
