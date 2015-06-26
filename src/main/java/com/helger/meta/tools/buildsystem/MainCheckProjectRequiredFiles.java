@@ -21,6 +21,7 @@ import java.io.File;
 import javax.annotation.Nonnull;
 
 import com.helger.commons.CGlobal;
+import com.helger.commons.changelog.CChangeLog;
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
@@ -82,12 +83,17 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
     // Check for file contents
     _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
+    if (new File (eProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
+      _checkFileContains (eProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
   }
 
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType ().hasJavaCode () && aProject.isBuildInProject () && aProject.getBaseDir ().exists ())
+      if (aProject.getProjectType ().hasJavaCode () &&
+          aProject.isBuildInProject () &&
+          aProject.getBaseDir ().exists () &&
+          !aProject.isDeprecated ())
       {
         _validateProject (aProject);
       }
