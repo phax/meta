@@ -141,3 +141,7 @@ ignorable
 serializer
 cachable
 instancable
+unspecific
+configurability
+prefetch
+subinterface
