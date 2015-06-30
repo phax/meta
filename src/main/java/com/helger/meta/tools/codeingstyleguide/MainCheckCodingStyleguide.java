@@ -145,7 +145,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
     final String sClassName = aType.getClassName ();
     return Collection.class.getName ().equals (sClassName) ||
-    // list
+           // list
            List.class.getName ().equals (sClassName) ||
            ArrayList.class.getName ().equals (sClassName) ||
            Vector.class.getName ().equals (sClassName) ||
@@ -265,7 +265,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                 !ASMHelper.containsAnnotation (mn, ReturnsImmutableObject.class))
               _warn (aProject,
                      sPrefix +
-                         "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
+                               "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
         }
     }
 
@@ -286,7 +286,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   private static void _checkMainVariables (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
+    final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
+                                    sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
 
@@ -350,7 +351,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (aProject == EProject.ERECHNUNG_WS_CLIENT &&
         (sPackageName.equals ("at.gv.brz.eproc.erb.ws.documentupload._20121205") ||
          sPackageName.equals ("at.gv.brz.eproc.erb.ws.invoicedelivery._201306") ||
-         sPackageName.equals ("at.gv.brz.eproc.erb.ws.invoicedeliverycallback._201305") || sPackageName.equals ("at.gv.brz.schema.eproc.invoice_uploadstatus_1_0")))
+         sPackageName.equals ("at.gv.brz.eproc.erb.ws.invoicedeliverycallback._201305") ||
+         sPackageName.equals ("at.gv.brz.schema.eproc.invoice_uploadstatus_1_0")))
       return EContinue.BREAK;
 
     if (aProject == EProject.JCODEMODEL)
@@ -369,24 +371,29 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("TokenMgrError") ||
          sClassLocalName.startsWith ("JJTParser") ||
          sClassLocalName.equals ("Node") ||
-         (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) || sClassLocalName.equals ("SimpleNode")))
+         (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) ||
+         sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_EBINTERFACE &&
         (sPackageName.startsWith ("com.helger.ebinterface.v30") ||
          sPackageName.startsWith ("com.helger.ebinterface.v40") ||
-         sPackageName.startsWith ("com.helger.ebinterface.v41") || sPackageName.equals ("com.helger.ebinterface.xmldsig")))
+         sPackageName.startsWith ("com.helger.ebinterface.v41") ||
+         sPackageName.equals ("com.helger.ebinterface.xmldsig")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_GENERICODE &&
-        (sPackageName.equals ("com.helger.cva.v10") || sPackageName.equals ("com.helger.genericode.v04") || sPackageName.equals ("com.helger.genericode.v10")))
+        (sPackageName.equals ("com.helger.cva.v10") ||
+         sPackageName.equals ("com.helger.genericode.v04") ||
+         sPackageName.equals ("com.helger.genericode.v10")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_JSON &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserJson") ||
-         sClassLocalName.equals ("Token") || sClassLocalName.equals ("TokenMgrError")))
+         sClassLocalName.equals ("Token") ||
+         sClassLocalName.equals ("TokenMgrError")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_SBDH && sPackageName.equals ("org.unece.cefact.namespaces.sbdh"))
@@ -397,13 +404,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
     if (aProject == EProject.PH_UBL20 &&
         (sPackageName.startsWith ("oasis.names.specification.ubl.schema.xsd.") ||
-         sPackageName.startsWith ("un.unece.uncefact.codelist.specification.") || sPackageName.startsWith ("un.unece.uncefact.data.specification.")))
+         sPackageName.startsWith ("un.unece.uncefact.codelist.specification.") ||
+         sPackageName.startsWith ("un.unece.uncefact.data.specification.")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_UBL21 &&
         (sPackageName.startsWith ("oasis.names.specification.ubl.schema.xsd.") ||
          sPackageName.startsWith ("org.etsi.uri.") ||
-         sPackageName.equals ("org.w3._2000._09.xmldsig") || sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
+         sPackageName.equals ("org.w3._2000._09.xmldsig") ||
+         sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_XPATH2 &&
@@ -413,7 +422,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("Node") ||
          sClassLocalName.equals ("Token") ||
          sClassLocalName.equals ("TokenMgrError") ||
-         sClassLocalName.startsWith ("JJTParser") || sClassLocalName.equals ("SimpleNode")))
+         sClassLocalName.startsWith ("JJTParser") ||
+         sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
     return EContinue.CONTINUE;
@@ -467,14 +477,17 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
   private static void _scanTestCode (@Nonnull final IProject aProject)
   {
-    final File aTestClasses = new File (aProject.getBaseDir (), "target/test-classes");
-    for (final File aClassFile : new FileSystemRecursiveIterator (aTestClasses))
+    final File aTestClassDir = new File (aProject.getBaseDir (), "target/test-classes");
+    for (final File aClassFile : new FileSystemRecursiveIterator (aTestClassDir))
       if (aClassFile.isFile () && aClassFile.getName ().endsWith (".class"))
       {
         final String sName = aClassFile.getName ();
 
         // Interpret byte code
         final ClassNode cn = ASMHelper.readClassFile (aClassFile);
+        final boolean bClassIsAbstract = Modifier.isAbstract (cn.access);
+        final boolean bClassIsFinal = Modifier.isFinal (cn.access);
+
         boolean bContainsTestMethod = false;
         for (final Object oMethod : cn.methods)
         {
@@ -507,8 +520,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           continue;
         }
 
+        if (!bClassIsFinal && !bClassIsAbstract)
+          _warn (aProject, "Test class '" + sName + "' is not final");
+
         final String sTestClass = FilenameHelper.getWithoutExtension (FilenameHelper.getRelativeToParentDirectory (aClassFile,
-                                                                                                                   aTestClasses));
+                                                                                                                   aTestClassDir));
         _checkTestClass (aProject, sBaseName, sTestClass);
       }
   }
