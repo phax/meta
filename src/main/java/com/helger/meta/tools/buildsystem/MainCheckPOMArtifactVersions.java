@@ -26,6 +26,7 @@ import com.helger.commons.microdom.IMicroNode;
 import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.commons.microdom.util.MicroHelper;
 import com.helger.commons.microdom.util.MicroRecursiveIterator;
+import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
@@ -186,7 +187,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final String sDeveloperConnection = MicroHelper.getChildTextContent (eSCM, "developerConnection");
         final String sExpectedDeveloperConnection = sExpectedConnection;
         if (!sExpectedDeveloperConnection.equals (sDeveloperConnection))
-          _warn (aProject, "Unexpected SCM developer connection '" +
+          _warn (aProject,
+                 "Unexpected SCM developer connection '" +
                            sDeveloperConnection +
                            "'. Expected '" +
                            sExpectedDeveloperConnection +
@@ -236,16 +238,18 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               // Ignore versions with variables
               if (sVersion != null && !sVersion.contains ("$"))
               {
-                final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT");
+                final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT") ||
+                                            RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", sVersion);
                 if (eReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
                   final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion, "-SNAPSHOT")
-                                                                         : sVersion);
+                                                                          : sVersion);
                   if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
-                    _warn (aProject, sArtifactID +
+                    _warn (aProject,
+                           sArtifactID +
                                      ":" +
                                      sVersion +
                                      " is out of date. The latest version is " +
@@ -256,7 +260,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                     {
                       // Version matches - check for SNAPSHOT differences
                       if (bIsSnapshot)
-                        _warn (aProject, sArtifactID +
+                        _warn (aProject,
+                               sArtifactID +
                                          ":" +
                                          sVersion +
                                          " is out of date. The latest version is " +
@@ -267,7 +272,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
-                          _warn (aProject, "Referenced version " +
+                          _warn (aProject,
+                                 "Referenced version " +
                                            sVersion +
                                            " of project '" +
                                            eReferencedProject +
@@ -279,7 +285,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 {
                   // Referenced project not yet published
                   if (!bIsSnapshot)
-                    _warn (aProject, "Referenced project " +
+                    _warn (aProject,
+                           "Referenced project " +
                                      eReferencedProject +
                                      " is marked as not published, but the non-SNAPSHOT version '" +
                                      sVersion +
