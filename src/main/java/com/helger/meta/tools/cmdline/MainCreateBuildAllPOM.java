@@ -114,7 +114,10 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     // Read all dependencies
     final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
     for (final IProject e : ProjectList.getAllProjects ())
-      if (e.getProjectType () != EProjectType.MAVEN_POM && e.isBuildInProject () && !e.isDeprecated ())
+      if (e.getProjectType () != EProjectType.MAVEN_POM &&
+          e.isBuildInProject () &&
+          !e.isDeprecated () &&
+          !e.isNestedProject ())
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
         if (aDoc == null)
@@ -149,30 +152,30 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     CollectionHelper.getSortedInline (aEntries, (o1, o2) -> {
       // Less dependencies before many dependencies, because transitivity was
       // already handled
-                                      int ret = o1.getValue ().size () - o2.getValue ().size ();
-                                      if (ret == 0)
-                                      {
-                                        // Same dependency count
-                                        if (o1.getValue ().contains (o2.getKey ()))
-                                        {
-                                          // First depends on second
-                                          ret = +1;
-                                        }
-                                        else
-                                          if (o2.getValue ().contains (o1.getKey ()))
-                                          {
-                                            // Second depends on first
-                                            ret = -1;
-                                          }
-                                          else
-                                          {
-                                            // By name
-                                            ret = o1.getKey ().compareTo (o2.getKey ());
-                                          }
-                                      }
+      int ret = o1.getValue ().size () - o2.getValue ().size ();
+      if (ret == 0)
+      {
+        // Same dependency count
+        if (o1.getValue ().contains (o2.getKey ()))
+        {
+          // First depends on second
+          ret = +1;
+        }
+        else
+          if (o2.getValue ().contains (o1.getKey ()))
+          {
+            // Second depends on first
+            ret = -1;
+          }
+          else
+          {
+            // By name
+            ret = o1.getKey ().compareTo (o2.getKey ());
+          }
+      }
 
-                                      return ret;
-                                    });
+      return ret;
+    });
 
     // Create builder POM
     final IMicroDocument aDoc = new MicroDocument ();
@@ -191,7 +194,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     {
       final IProject eCurProject = aEntry.getKey ();
       eModules.appendComment (eCurProject + " -> " + aEntry.getValue ());
-      eModules.appendElement (MAVEN_NS, "module").appendText (eCurProject.getProjectName ());
+      eModules.appendElement (MAVEN_NS, "module").appendText (eCurProject.getFullBaseDirName ());
     }
 
     MicroWriter.writeToFile (aDoc, new File (CMeta.GIT_BASE_DIR, "pom-all.xml"));

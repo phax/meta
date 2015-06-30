@@ -42,7 +42,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
     for (final IProject e : ProjectList.getAllProjects ())
-      if (e.isBuildInProject ())
+      if (e.isBuildInProject () && !e.isDeprecated () && !e.isNestedProject ())
       {
         aSB.append ("echo ")
            .append (e.getProjectName ())
@@ -51,7 +51,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
            .append ("/")
            .append (ProjectList.size ())
            .append ("]\ncd ")
-           .append (e.getProjectName ())
+           .append (e.getFullBaseDirName ())
            .append ("\n")
            .append (sCommand)
            .append ("\nif errorlevel 1 goto error\ncd ..\n");
