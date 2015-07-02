@@ -114,7 +114,7 @@ public enum EProject implements IProject
 
   private final SimpleProject m_aProject;
 
-  private EProject (@Nonnull final EProject eParentProject,
+  private EProject (@Nullable final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull final EProjectType eProjectType,
                     @Nonnull final EHasPages eHasPagesProject,
@@ -131,7 +131,7 @@ public enum EProject implements IProject
           sLastPublishedVersion);
   }
 
-  private EProject (@Nonnull final EProject eParentProject,
+  private EProject (@Nullable final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull @Nonempty final String sProjectBaseDirName,
                     @Nonnull final EProjectType eProjectType,
