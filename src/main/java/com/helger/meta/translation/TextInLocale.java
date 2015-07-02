@@ -55,7 +55,7 @@ public final class TextInLocale
   {
     if (o == this)
       return true;
-    if (!(o instanceof TextInLocale))
+    if (o == null || !getClass ().equals (o.getClass ()))
       return false;
     final TextInLocale rhs = (TextInLocale) o;
     return m_sLocale.equals (rhs.m_sLocale) && m_sText.equals (rhs.m_sText);

@@ -260,7 +260,7 @@ public final class StringTable implements ICloneable <StringTable>
   {
     if (o == this)
       return true;
-    if (!(o instanceof StringTable))
+    if (o == null || !getClass ().equals (o.getClass ()))
       return false;
     final StringTable rhs = (StringTable) o;
     return m_aMap.equals (rhs.m_aMap);
