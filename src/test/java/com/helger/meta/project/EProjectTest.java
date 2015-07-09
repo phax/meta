@@ -33,7 +33,7 @@ import com.helger.meta.CMeta;
  *
  * @author Philip Helger
  */
-public class EProjectTest
+public final class EProjectTest
 {
   @Test
   public void testBasic ()
@@ -68,7 +68,8 @@ public class EProjectTest
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
 
-          assertNotNull (aFile.getName () + " is missing in the project list",
+          assertNotNull (aFile.getName () +
+                         " is missing in the project list",
                          ProjectList.getProjectOfDir (sProjectName));
         }
   }
