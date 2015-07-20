@@ -47,7 +47,7 @@ public enum EProjectDeprecated implements IProject
 
   private final SimpleProject m_aProject;
 
-  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+  private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
                               @Nonnull @Nonempty final String sProjectName,
                               @Nonnull final EProjectType eProjectType,
                               @Nonnull final EHasPages eHasPagesProject,
@@ -64,7 +64,7 @@ public enum EProjectDeprecated implements IProject
           sLastPublishedVersion);
   }
 
-  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+  private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
                               @Nonnull @Nonempty final String sProjectName,
                               @Nonnull @Nonempty final String sProjectBaseDirName,
                               @Nonnull final EProjectType eProjectType,
