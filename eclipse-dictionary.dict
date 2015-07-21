@@ -158,3 +158,5 @@ chromosomes
 chromosome
 fittest
 pushback
+serializers
+json
