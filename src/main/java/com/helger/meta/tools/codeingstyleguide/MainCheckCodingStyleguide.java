@@ -470,12 +470,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                                        @Nullable final String sBaseName,
                                        @Nullable final String sTestClass)
   {
-    if (sTestClass.endsWith ("Test") && !sTestClass.endsWith ("FuncTest"))
+    if (sTestClass != null && sTestClass.endsWith ("Test") && !sTestClass.endsWith ("FuncTest"))
     {
       final String sMainClass = StringHelper.trimEnd (sTestClass, 4);
       final File aMainClass = new File (aProject.getBaseDir (), "target/classes/" + sMainClass + ".class");
       if (!aMainClass.exists ())
-        _warn (aProject, "Test class " + sTestClass + " has no matching main class");
+        _warn (aProject, "Test class " + sTestClass + " has no matching java/main class");
     }
     else
       if (sBaseName.startsWith ("FuncTest"))
@@ -532,9 +532,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (!bClassIsFinal && !bClassIsAbstract)
           _warn (aProject, "Test class '" + sName + "' is not final");
 
+        _checkClassNaming (aProject, cn);
+
         final String sTestClass = FilenameHelper.getWithoutExtension (FilenameHelper.getRelativeToParentDirectory (aClassFile,
                                                                                                                    aTestClassDir));
-        _checkClassNaming (aProject, cn);
         _checkTestClass (aProject, sBaseName, sTestClass);
       }
   }
