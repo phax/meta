@@ -140,6 +140,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       _warn (aProject, sPrefix + "'read-only' should be spelled 'ReadOnly'");
     if (sInnerClassLocalName.endsWith ("Utils"))
       _warn (aProject, sPrefix + "Please make the *Utils class a *Helper class");
+    if (sInnerClassLocalName.contains ("Masterdata"))
+      _warn (aProject, sPrefix + "'master data' should be spelled 'MasterData'");
+    if (sInnerClassLocalName.contains ("MultiLingual"))
+      _warn (aProject, sPrefix + "'multilingual' should be spelled 'Multilingual'");
   }
 
   private static boolean _isArrayClass (@Nonnull final Type aType)
