@@ -111,7 +111,7 @@ public enum EProject implements IProject
  PH_UBL21 (PH_UBL_PARENT_POM, "ph-ubl21", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.3.0"),
  PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.3.1"),
  PH_VALIDATION (null, "ph-validation", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
- PH_WEB (null, "ph-web", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.4.3"),
+ PH_WEB (null, "ph-web", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "7.0.0"),
  PH_WSDL_GEN (null, "ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
  PH_WSIMPORT_PLUGIN (null, "ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8.1"),
  PH_XMLDSIG (null, "ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
