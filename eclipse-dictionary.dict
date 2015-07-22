@@ -161,3 +161,7 @@ pushback
 serializers
 json
 unshift
+catalogue
+applet
+plottable
+recompose

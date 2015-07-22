@@ -72,7 +72,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
-  private static void _checkMainClass (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
+  private static void _checkClassNaming (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
@@ -94,6 +94,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final boolean bClassIsAnnotation = (cn.access & Opcodes.ACC_ANNOTATION) != 0;
     final boolean bClassIsEnum = (cn.access & Opcodes.ACC_ENUM) != 0;
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
+
+    if (!Character.isUpperCase (sClassLocalName.charAt (0)))
+      _warn (aProject,
+             sPrefix + "Class/interface/enum/annotation names should always start with an uppercase character");
 
     if (bClassIsInterface)
     {
@@ -131,6 +135,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         }
       }
     }
+
+    if (sInnerClassLocalName.contains ("Readonly"))
+      _warn (aProject, sPrefix + "'read-only' should be spelled 'ReadOnly'");
+    if (sInnerClassLocalName.endsWith ("Utils"))
+      _warn (aProject, sPrefix + "Please make the *Utils class a *Helper class");
   }
 
   private static boolean _isArrayClass (@Nonnull final Type aType)
@@ -335,7 +344,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           continue;
 
         if (!fn.name.startsWith ("m_"))
-          _warn (aProject, sPrefix + "Instance member name '" + fn.name + "' does not match");
+          _warn (aProject, sPrefix + "Instance member name '" + fn.name + "' does not match naming conventions");
 
         if (bClassIsFinal && !bIsPrivate)
           _warn (aProject, sPrefix + "Instance member '" + fn.name + "' is not private");
@@ -451,7 +460,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (_doScanMainClass (aProject, sPackageName, sClassLocalName).isBreak ())
           continue;
 
-        _checkMainClass (aProject, cn);
+        _checkClassNaming (aProject, cn);
         _checkMainVariables (aProject, cn);
         _checkMainMethods (aProject, cn);
       }
@@ -525,6 +534,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
         final String sTestClass = FilenameHelper.getWithoutExtension (FilenameHelper.getRelativeToParentDirectory (aClassFile,
                                                                                                                    aTestClassDir));
+        _checkClassNaming (aProject, cn);
         _checkTestClass (aProject, sBaseName, sTestClass);
       }
   }
