@@ -76,7 +76,7 @@ public enum EProject implements IProject
  PH_JMS (null, "ph-jms", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
  PH_JSCOMPRESS_MAVEN_PLUGIN (null, "ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
  PH_JSON (null, "ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
- PH_MASTERDATA (null, "ph-masterdata", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.8.0"),
+ PH_MASTERDATA (null, "ph-masterdata", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
  PH_MATH (null, "ph-math", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
  PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "5.2.0"),
  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
