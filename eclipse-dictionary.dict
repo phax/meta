@@ -178,3 +178,5 @@ auth
 checkboxes
 gzip
 deflate
+splitted
+unschedule
