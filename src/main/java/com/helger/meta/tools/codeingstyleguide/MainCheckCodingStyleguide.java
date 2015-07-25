@@ -128,13 +128,14 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       {
         if (bClassIsAbstract)
         {
-          if (!sInnerClassLocalName.startsWith ("Abstract") &&
-              !sInnerClassLocalName.contains ("Singleton") &&
-              !sInnerClassLocalName.equals ("NamespacePrefixMapper"))
+          if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.equals ("NamespacePrefixMapper"))
             _warn (aProject, sPrefix + "Abstract classes should start with 'Abstract'");
         }
       }
     }
+
+    if (sInnerClassLocalName.startsWith ("Abstract") && !bClassIsAbstract && !sInnerClassLocalName.endsWith ("Test"))
+      _warn (aProject, sPrefix + "Class name denotes an abstract class but the class is not abstract!");
 
     if (sInnerClassLocalName.contains ("Readonly"))
       _warn (aProject, sPrefix + "'read-only' should be spelled 'ReadOnly'");
