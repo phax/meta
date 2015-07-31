@@ -80,13 +80,16 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return;
 
     String sInnerClassLocalName = StringHelper.getFromLastExcl (sClassLocalName, '$');
+    boolean bIsAnonymousInnerClass = false;
     if (sInnerClassLocalName == null)
       sInnerClassLocalName = sClassLocalName;
     else
       if (StringParser.isUnsignedInt (sInnerClassLocalName))
       {
         // It's an anonymous inner class - use the full name
-        sInnerClassLocalName = sClassLocalName;
+        bIsAnonymousInnerClass = true;
+        if (false)
+          sInnerClassLocalName = sClassLocalName;
       }
 
     final String sPrefix = "[" + sClassLocalName + "] ";
@@ -99,37 +102,40 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       _warn (aProject,
              sPrefix + "Class/interface/enum/annotation names should always start with an uppercase character");
 
-    if (bClassIsInterface)
+    if (!bIsAnonymousInnerClass)
     {
-      if (bClassIsAnnotation)
+      if (bClassIsInterface)
       {
-        // TODO
-      }
-      else
-      {
-        if (sInnerClassLocalName.startsWith ("I"))
+        if (bClassIsAnnotation)
         {
-          if (sInnerClassLocalName.length () > 1 && !Character.isUpperCase (sInnerClassLocalName.charAt (1)))
-            _warn (aProject, sPrefix + "Interface names should have an upper case second letter");
+          // TODO
         }
         else
-          if (!sInnerClassLocalName.startsWith ("I") && !sClassLocalName.endsWith ("MBean"))
-            _warn (aProject, sPrefix + "Interface names should start with an uppercase 'I'");
-      }
-    }
-    else
-    {
-      if (bClassIsEnum)
-      {
-        if (!sInnerClassLocalName.startsWith ("E"))
-          _warn (aProject, sPrefix + "enum classes should start with 'E'");
+        {
+          if (sInnerClassLocalName.startsWith ("I"))
+          {
+            if (sInnerClassLocalName.length () > 1 && !Character.isUpperCase (sInnerClassLocalName.charAt (1)))
+              _warn (aProject, sPrefix + "Interface names should have an upper case second letter");
+          }
+          else
+            if (!sInnerClassLocalName.startsWith ("I") && !sClassLocalName.endsWith ("MBean"))
+              _warn (aProject, sPrefix + "Interface names should start with an uppercase 'I'");
+        }
       }
       else
       {
-        if (bClassIsAbstract)
+        if (bClassIsEnum)
         {
-          if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.equals ("NamespacePrefixMapper"))
-            _warn (aProject, sPrefix + "Abstract classes should start with 'Abstract'");
+          if (!sInnerClassLocalName.startsWith ("E"))
+            _warn (aProject, sPrefix + "enum classes should start with 'E'");
+        }
+        else
+        {
+          if (bClassIsAbstract)
+          {
+            if (!sInnerClassLocalName.startsWith ("Abstract") && !sInnerClassLocalName.equals ("NamespacePrefixMapper"))
+              _warn (aProject, sPrefix + "Abstract classes should start with 'Abstract'");
+          }
         }
       }
     }
@@ -227,8 +233,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             !mn.name.equals ("readResolve") &&
             !mn.name.equals ("writeObject") &&
             !mn.name.equals ("writeReplace") &&
-            !mn.name.startsWith ("lambda$"))
-          _warn (aProject, sPrefix + "Privat methods should start with an underscore");
+            !mn.name.startsWith ("lambda$") &&
+            !mn.name.endsWith ("$deserializeLambda$"))
+          _warn (aProject, sPrefix + "Private methods should start with an underscore");
       }
 
       if (bIsFinal)
