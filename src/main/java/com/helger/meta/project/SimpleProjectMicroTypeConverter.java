@@ -47,9 +47,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     ret.setAttribute (ATTR_PROJECT_NAME, aPrice.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aPrice.getProjectType ().getID ());
     ret.setAttribute (ATTR_BASE_DIR, aPrice.getBaseDir ().getAbsolutePath ());
-    ret.setAttribute (ATTR_IS_DEPRECATED, Boolean.toString (aPrice.isDeprecated ()));
-    ret.setAttribute (ATTR_HAS_PAGES, Boolean.toString (aPrice.hasPagesProject ()));
-    ret.setAttribute (ATTR_HAS_WIKI, Boolean.toString (aPrice.hasWikiProject ()));
+    ret.setAttribute (ATTR_IS_DEPRECATED, aPrice.isDeprecated ());
+    ret.setAttribute (ATTR_HAS_PAGES, aPrice.hasPagesProject ());
+    ret.setAttribute (ATTR_HAS_WIKI, aPrice.hasWikiProject ());
     ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aPrice.getLastPublishedVersionString ());
     return ret;
   }
