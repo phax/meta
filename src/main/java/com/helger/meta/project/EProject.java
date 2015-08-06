@@ -60,7 +60,7 @@ public enum EProject implements IProject
  PH_JAXB (PH_COMMONS_PARENT_POM, "ph-jaxb", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
  PH_CSS (null, "ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
  PH_CSSCOMPRESS_MAVEN_PLUGIN (null, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.4.0"),
- PH_DATETIME_PARENT_POM (null, "ph-datetime-parent-pom", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.2.0"),
+ PH_DATETIME_PARENT_POM (null, "ph-datetime-parent-pom", "ph-datetime", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.2.0"),
  PH_DATETIME (PH_DATETIME_PARENT_POM, "ph-datetime", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DATETIME_PARENT_POM.getLastPublishedVersionString ()),
  PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DATETIME_PARENT_POM.getLastPublishedVersionString ()),
  PH_DB_API (null, "ph-db-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
