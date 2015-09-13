@@ -102,7 +102,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.FALSE,
-                        "6.1.1"),
+                        "6.2.0"),
  PH_COMMONS (PH_COMMONS_PARENT_POM,
              "ph-commons",
              EProjectType.JAVA_LIBRARY,
