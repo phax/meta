@@ -215,3 +215,5 @@ wildcard
 winenet
 xml
 lucene
+specialization
+callables
