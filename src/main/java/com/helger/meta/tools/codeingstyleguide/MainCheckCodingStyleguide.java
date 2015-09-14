@@ -55,6 +55,7 @@ import com.helger.commons.annotation.ReturnsMutableObject;
 import com.helger.commons.collection.impl.SafeArrayList;
 import com.helger.commons.collection.impl.SafeVector;
 import com.helger.commons.collection.impl.SoftHashMap;
+import com.helger.commons.collection.impl.SoftLinkedHashMap;
 import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.ClassHelper;
@@ -187,13 +188,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            WeakHashMap.class.getName ().equals (sClassName) ||
            LinkedHashMap.class.getName ().equals (sClassName) ||
            TreeMap.class.getName ().equals (sClassName) ||
-           SoftHashMap.class.getName ().equals (sClassName);
+           SoftHashMap.class.getName ().equals (sClassName) ||
+           SoftLinkedHashMap.class.getName ().equals (sClassName);
   }
 
   private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = false;
+    final boolean bIsSpecialCase = aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
+                                   sClassLocalName.equals ("HelpMojo");
     if (bIsSpecialCase)
       return;
 

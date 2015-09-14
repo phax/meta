@@ -80,7 +80,7 @@ public enum EProject implements IProject
  PH_SETTINGS (null, "ph-settings", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
  PH_SMTP (null, "ph-smtp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
 
- PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "5.2.0"),
+ PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.0.0"),
  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
@@ -132,6 +132,11 @@ public enum EProject implements IProject
  PEPPOL_SMP_SERVER_LIBRARY (null, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.1.3"),
  PEPPOL_SMP_SERVER_LIGHTWEIGHT (null, "peppol-smp-server-lightweight", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "3.1.0"),
  PEPPOL_VALIDATION_ENGINE (null, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
+
+ PYP_PARENT_POM (null, "peppol-yellow-pages-parent-pom", "peppol-yellow-pages", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
+ PYP_API (PYP_PARENT_POM, "peppol-yellow-pages-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
+ PYP_INDEXER (PYP_PARENT_POM, "peppol-yellow-pages-indexer", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
+ PYP_PUBLISHER (PYP_PARENT_POM, "peppol-yellow-pages-publisher", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
 
  PH_AS4_PARENT_POM (null, "ph-as4-parent-pom", "ph-as4", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
