@@ -16,6 +16,9 @@
  */
 package com.helger.meta.tools.buildsystem;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -82,6 +85,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       s_aLogger.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
+
+    // Read all properties
+    final Map <String, String> aProperties = new HashMap <> ();
+    {
+      final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
+      if (eProperties != null)
+        for (final IMicroElement eProperty : eProperties.getAllChildElements ())
+          aProperties.put ("${" + eProperty.getTagName () + "}", eProperty.getTextContentTrimmed ());
+    }
 
     // Check parent POM
     {
@@ -232,11 +244,17 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 _warn (aProject, sArtifactID + ": is deprecated!");
 
               // Version is optional e.g. when dependencyManagement is used
-              final String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                              "version");
+              String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                        "version");
 
-              // Ignore versions with variables
-              if (sVersion != null && !sVersion.contains ("$"))
+              if (sVersion != null && sVersion.contains ("$"))
+              {
+                // Try to resolve through properties. May be null if properties
+                // are in the parent POM
+                sVersion = aProperties.get (sVersion);
+              }
+
+              if (sVersion != null)
               {
                 final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT") ||
                                             RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", sVersion);
