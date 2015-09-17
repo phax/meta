@@ -18,6 +18,8 @@ package com.helger.meta.tools.buildsystem;
 
 import java.util.Date;
 
+import javax.annotation.Nonnull;
+
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -30,6 +32,14 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCreateREADMEList extends AbstractProjectMain
 {
+  @Nonnull
+  private static String _getGitHubRepoName (@Nonnull final IProject aProject)
+  {
+    if (aProject.getParentProject () != null)
+      return _getGitHubRepoName (aProject.getParentProject ());
+    return aProject.getBaseDir ().getName ();
+  }
+
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ();
@@ -42,7 +52,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
-           .append (aProject.getFullBaseDirName ())
+           .append (_getGitHubRepoName (aProject))
            .append (") - ");
         if (aProject.isPublished ())
           aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
@@ -59,7 +69,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
-           .append (aProject.getFullBaseDirName ())
+           .append (_getGitHubRepoName (aProject))
            .append (") - ");
         if (aProject.isPublished ())
           aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
