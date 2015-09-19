@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Sat Sep 19 12:48:19 CEST 2015):
+Current list of all projects (as of Sat Sep 19 23:23:15 CEST 2015):
 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.10
@@ -80,8 +80,10 @@ Current list of all projects (as of Sat Sep 19 12:48:19 CEST 2015):
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
  * [as2-server](https://github.com/phax/as2-server) - Version 2.1.0
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.0.1
- * [peppol-sbdh](https://github.com/phax/peppol-sbdh) - Version 2.0.0
+ * [peppol-commons](https://github.com/phax/peppol-commons) - no release so far
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.0.1
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - no release so far
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 2.0.0
  * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.0.0
  * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.0.0
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 3.1.0
