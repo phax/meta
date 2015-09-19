@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Thu Sep 17 13:24:00 CEST 2015):
+Current list of all projects (as of Sat Sep 19 12:48:19 CEST 2015):
 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.10
@@ -29,7 +29,7 @@ Current list of all projects (as of Thu Sep 17 13:24:00 CEST 2015):
  * [ph-web](https://github.com/phax/ph-web) - Version 7.0.2
  * [ph-json](https://github.com/phax/ph-json) - Version 2.0.0
  * [ph-css](https://github.com/phax/ph-css) - Version 4.0.0
- * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.4.0
+ * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.5.0
  * [ph-html](https://github.com/phax/ph-html) - Version 5.0.1
  * [ph-html/ph-html](https://github.com/phax/ph-html) - Version 5.0.1
  * [ph-html/ph-html-jscode](https://github.com/phax/ph-html) - Version 5.0.1
@@ -72,7 +72,9 @@ Current list of all projects (as of Thu Sep 17 13:24:00 CEST 2015):
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 4.0.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 4.1.1
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 2.0.1
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.1.0
+ * [as2-lib](https://github.com/phax/as2-lib) - no release so far
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.1.0
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - no release so far
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
  * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.0.0
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
@@ -109,12 +111,11 @@ All deprecated projects:
  * [ph-jms](https://github.com/phax/ph-jms) - Version 2.0.0
  * [ph-scopes](https://github.com/phax/ph-scopes) - Version 6.6.0
  * [ph-tinymce4](https://github.com/phax/ph-tinymce4) - Version 0.3.5
- * [ph-ubl](https://github.com/phax/ph-ubl) - Version 3.3.1
  * [ph-webapp-demo](https://github.com/phax/ph-webapp-demo) - never released
  * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.2
  * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.2
  * [ph-webscopes](https://github.com/phax/ph-webscopes) - Version 6.8.1
-
+ 
 ---
 
 On Twitter: <a href="https://twitter.com/philiphelger">Follow @philiphelger</a>
