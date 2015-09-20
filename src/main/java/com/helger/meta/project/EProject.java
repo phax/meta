@@ -69,7 +69,7 @@ public enum EProject implements IProject
  PH_CSS (null, "ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
  PH_CSSCOMPRESS_MAVEN_PLUGIN (null, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
 
- PH_HTML_PARENT_POM (null, "ph-html-parent-pom", "ph-html", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "5.0.1"),
+ PH_HTML_PARENT_POM (null, "ph-html-parent-pom", "ph-html", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "5.0.2"),
  PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
  PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
