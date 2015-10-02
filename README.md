@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Sun Sep 27 21:27:50 CEST 2015):
+Current list of all projects (as of Fri Oct 02 11:13:53 CEST 2015):
 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.11
@@ -80,18 +80,19 @@ Current list of all projects (as of Sun Sep 27 21:27:50 CEST 2015):
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
  * [as2-server](https://github.com/phax/as2-server) - Version 2.2.0
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.0
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.0
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.1.0
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.1
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.1
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.1.1
  * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons) - no release so far
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.1.0
- * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.1.0
- * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.1.0
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.1.1
+ * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.1.1
+ * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.1.1
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - no release so far
  * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 3.1.3
- * [peppol-smp-server/peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 3.1.0
- * [peppol-smp-server/peppol-smp-server-lightweight](https://github.com/phax/peppol-smp-server) - Version 3.1.0
+ * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - no release so far
+ * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - no release so far
+ * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - no release so far
  * [peppol-lime](https://github.com/phax/peppol-lime) - no release so far
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - no release so far
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - no release so far
