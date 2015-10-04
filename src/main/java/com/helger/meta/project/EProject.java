@@ -80,7 +80,7 @@ public enum EProject implements IProject
  PH_SETTINGS (null, "ph-settings", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
  PH_SMTP (null, "ph-smtp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
 
- PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.0.0"),
+ PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.1.0"),
  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
@@ -138,8 +138,8 @@ public enum EProject implements IProject
  PEPPOL_SML_CLIENT (null, "peppol-sml-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
  PEPPOL_VALIDATION_ENGINE (null, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
- PEPPOL_SMP_SERVER_PARENT_POM (null, "peppol-smp-server-parent-pom", "peppol-smp-server", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
- PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.1.3"),
+ PEPPOL_SMP_SERVER_PARENT_POM (null, "peppol-smp-server-parent-pom", "peppol-smp-server", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
+ PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
  PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
  PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
  PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),

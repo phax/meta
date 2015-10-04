@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Oct 02 11:13:53 CEST 2015):
+Current list of all projects (as of Sun Oct 04 23:40:38 CEST 2015):
 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.11
@@ -39,18 +39,18 @@ Current list of all projects (as of Fri Oct 02 11:13:53 CEST 2015):
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 2.1.0
  * [ph-settings](https://github.com/phax/ph-settings) - Version 2.0.0
  * [ph-smtp](https://github.com/phax/ph-smtp) - Version 2.0.2
- * [ph-oton](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.0.0
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.0.0
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-events](https://github.com/phax/ph-events) - Version 4.0.0
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 2.0.0
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 2.0.0
@@ -88,11 +88,11 @@ Current list of all projects (as of Fri Oct 02 11:13:53 CEST 2015):
  * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.1.1
  * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.1.1
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
- * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - no release so far
- * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 3.1.3
- * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - no release so far
- * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - no release so far
- * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - no release so far
+ * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 4.0.0
+ * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 4.0.0
+ * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 4.0.0
+ * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - Version 4.0.0
+ * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - Version 4.0.0
  * [peppol-lime](https://github.com/phax/peppol-lime) - no release so far
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - no release so far
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - no release so far
