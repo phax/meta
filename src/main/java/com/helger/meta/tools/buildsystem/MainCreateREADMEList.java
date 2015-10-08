@@ -17,9 +17,12 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 
+import com.helger.commons.collection.CollectionHelper;
+import com.helger.commons.compare.AbstractComparator;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -44,9 +47,25 @@ public final class MainCreateREADMEList extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
+    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (),
+                                                                        new AbstractComparator <IProject> ()
+                                                                        {
+                                                                          @Override
+                                                                          protected int mainCompare (final IProject aElement1,
+                                                                                                     final IProject aElement2)
+                                                                          {
+                                                                            int ret = aElement1.getBaseDir ()
+                                                                                               .compareTo (aElement2.getBaseDir ());
+                                                                            if (ret == 0)
+                                                                              ret = aElement1.getProjectName ()
+                                                                                             .compareTo (aElement2.getProjectName ());
+                                                                            return ret;
+                                                                          }
+                                                                        });
+
     // Show all
     aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
-    for (final IProject aProject : ProjectList.getAllProjects ())
+    for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated ())
       {
         aSB.append (" * [")
@@ -63,7 +82,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
 
     // Add deprecated projects
     aSB.append ("\nAll deprecated projects:\n\n");
-    for (final IProject aProject : ProjectList.getAllProjects ())
+    for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && aProject.isDeprecated ())
       {
         aSB.append (" * [")
