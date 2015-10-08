@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Sun Oct 04 23:40:38 CEST 2015):
+Current list of all projects (as of Thu Oct 08 07:38:28 CEST 2015):
 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.7.11
@@ -72,13 +72,13 @@ Current list of all projects (as of Sun Oct 04 23:40:38 CEST 2015):
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 4.0.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 4.1.1
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 2.0.1
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.0
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.0
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.0
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.1
+ * [as2-server](https://github.com/phax/as2-server) - Version 2.2.1
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - no release so far
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.1.0
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.1.1
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
- * [as2-server](https://github.com/phax/as2-server) - Version 2.2.0
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.1
  * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.1.1
@@ -101,6 +101,7 @@ Current list of all projects (as of Sun Oct 04 23:40:38 CEST 2015):
  * [peppol-yellow-pages/peppol-yellow-pages-api](https://github.com/phax/peppol-yellow-pages) - no release so far
  * [peppol-yellow-pages/peppol-yellow-pages-indexer](https://github.com/phax/peppol-yellow-pages) - no release so far
  * [peppol-yellow-pages/peppol-yellow-pages-publisher](https://github.com/phax/peppol-yellow-pages) - no release so far
+ * [peppol-yellow-pages/peppol-yellow-pages-client](https://github.com/phax/peppol-yellow-pages) - no release so far
  * [ph-as4](https://github.com/phax/ph-as4) - no release so far
  * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - no release so far
  * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4) - no release so far

@@ -118,14 +118,15 @@ public enum EProject implements IProject
  PH_GENERICODE (null, "ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
  PH_SBDH (null, "ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
 
- AS2_LIB_PARENT_POM (null, "as2-lib-parent-pom", "as2-lib", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "2.2.0"),
+ AS2_LIB_PARENT_POM (null, "as2-lib-parent-pom", "as2-lib", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "2.2.1"),
  AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, AS2_LIB_PARENT_POM.getLastPublishedVersionString ()),
  AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, AS2_LIB_PARENT_POM.getLastPublishedVersionString ()),
 
+ AS2_SERVER (null, "as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.1"),
+
  AS2_PEPPOL_CLIENT (null, "as2-peppol-client", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
- AS2_PEPPOL_SERVLET (null, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0"),
+ AS2_PEPPOL_SERVLET (null, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.1"),
  AS2_PEPPOL_SERVER (null, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
- AS2_SERVER (null, "as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.0"),
  ERECHNUNG_WS_CLIENT (null, "webservice-client", "erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
 
  PEPPOL_COMMONS_PARENT_POM (null, "peppol-commons-parent-pom", "peppol-commons", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
@@ -153,6 +154,7 @@ public enum EProject implements IProject
  PYP_API (PYP_PARENT_POM, "peppol-yellow-pages-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
  PYP_INDEXER (PYP_PARENT_POM, "peppol-yellow-pages-indexer", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
  PYP_PUBLISHER (PYP_PARENT_POM, "peppol-yellow-pages-publisher", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
+ PYP_CLIENT (PYP_PARENT_POM, "peppol-yellow-pages-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PYP_PARENT_POM.getLastPublishedVersionString ()),
 
  PH_AS4_PARENT_POM (null, "ph-as4-parent-pom", "ph-as4", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
