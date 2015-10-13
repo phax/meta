@@ -33,7 +33,7 @@ import com.helger.meta.CMeta;
 public enum EProject implements IProject
 {
  PH_PARENT_POM (null, "parent-pom", "ph-parent-pom", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.4.1"),
- JCODEMODEL (null, "jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.7.11"),
+ JCODEMODEL (null, "jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.0"),
 
  PH_JAVACC_MAVEN_PLUGIN (null,
                          "ph-javacc-maven-plugin",
@@ -424,7 +424,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "4.0.0"),
+                               "4.0.1"),
  PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM,
                             "peppol-smp-server-library",
                             EProjectType.JAVA_LIBRARY,
@@ -456,7 +456,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         null),
+                         "3.0.0"),
  PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM,
                   "peppol-lime-api",
                   EProjectType.JAVA_LIBRARY,
