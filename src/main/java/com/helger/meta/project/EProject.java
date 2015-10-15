@@ -259,7 +259,7 @@ public enum EProject implements IProject
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "3.0.0"),
+                           "3.0.1"),
  PH_SCH2XSLT_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM,
                            "ph-sch2xslt-maven-plugin",
                            EProjectType.MAVEN_PLUGIN,

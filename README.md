@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Oct 13 11:19:55 CEST 2015):
+Current list of all projects (as of Thu Oct 15 18:57:15 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
  * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
@@ -88,11 +88,11 @@ Current list of all projects (as of Tue Oct 13 11:19:55 CEST 2015):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 3.0.0
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 2.0.1
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 2.1.0
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 3.0.0
- * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 3.0.0
- * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 3.0.0
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 3.0.0
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 3.0.0
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 3.0.1
+ * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 3.0.1
+ * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 3.0.1
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 3.0.1
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 3.0.1
  * [ph-settings](https://github.com/phax/ph-settings) - Version 2.0.0
  * [ph-smtp](https://github.com/phax/ph-smtp) - Version 2.0.2
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 4.0.0
