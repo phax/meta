@@ -47,37 +47,37 @@ public final class MainCreateREADMEList extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (),
-                                                                        new AbstractComparator <IProject> ()
-                                                                        {
-                                                                          @Override
-                                                                          protected int mainCompare (final IProject aElement1,
-                                                                                                     final IProject aElement2)
-                                                                          {
-                                                                            int ret = aElement1.getBaseDir ()
-                                                                                               .compareTo (aElement2.getBaseDir ());
-                                                                            if (ret == 0)
-                                                                              ret = aElement1.getProjectName ()
-                                                                                             .compareTo (aElement2.getProjectName ());
-                                                                            return ret;
-                                                                          }
-                                                                        });
+    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (), new AbstractComparator <IProject> ()
+    {
+      @Override
+      protected int mainCompare (final IProject aElement1, final IProject aElement2)
+      {
+        int ret = aElement1.getBaseDir ().compareTo (aElement2.getBaseDir ());
+        if (ret == 0)
+          ret = aElement1.getProjectName ().compareTo (aElement2.getProjectName ());
+        return ret;
+      }
+    });
 
     // Show all
     aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
-      if (aProject.isBuildInProject () && !aProject.isDeprecated ())
+      if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
            .append (_getGitHubRepoName (aProject))
-           .append (") - ");
-        if (aProject.isPublished ())
-          aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
-        else
-          aSB.append ("no release so far");
-        aSB.append ('\n');
+           .append (") - Version ")
+           .append (aProject.getLastPublishedVersionString ())
+           .append ('\n');
+      }
+
+    aSB.append ("\nCurrent list of all unreleased projects:\n\n");
+    for (final IProject aProject : aSortedProjects)
+      if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isPublished ())
+      {
+        aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (")\n");
       }
 
     // Add deprecated projects
@@ -85,11 +85,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && aProject.isDeprecated ())
       {
-        aSB.append (" * [")
-           .append (aProject.getFullBaseDirName ())
-           .append ("](https://github.com/phax/")
-           .append (_getGitHubRepoName (aProject))
-           .append (") - ");
+        aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (") - ");
         if (aProject.isPublished ())
           aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
         else

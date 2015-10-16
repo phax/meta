@@ -3,21 +3,17 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Oct 16 10:17:38 CEST 2015):
+Current list of all projects (as of Fri Oct 16 14:00:29 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
  * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
  * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.1
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.0
- * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - no release so far
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.1
  * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.2.0
  * [as2-server](https://github.com/phax/as2-server) - Version 2.2.1
- * [bozoo](https://github.com/phax/bozoo) - no release so far
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
- * [meta](https://github.com/phax/meta) - no release so far
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.0
- * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons) - no release so far
  * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.0
  * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.2.0
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.2.0
@@ -25,7 +21,6 @@ Current list of all projects (as of Fri Oct 16 10:17:38 CEST 2015):
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.0
- * [peppol-practical](https://github.com/phax/peppol-practical) - no release so far
  * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.2.0
  * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.2.0
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 4.0.1
@@ -33,15 +28,6 @@ Current list of all projects (as of Fri Oct 16 10:17:38 CEST 2015):
  * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - Version 4.0.1
- * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - no release so far
- * [peppol-yellow-pages](https://github.com/phax/peppol-yellow-pages) - no release so far
- * [peppol-yellow-pages/peppol-yellow-pages-api](https://github.com/phax/peppol-yellow-pages) - no release so far
- * [peppol-yellow-pages/peppol-yellow-pages-client](https://github.com/phax/peppol-yellow-pages) - no release so far
- * [peppol-yellow-pages/peppol-yellow-pages-indexer](https://github.com/phax/peppol-yellow-pages) - no release so far
- * [peppol-yellow-pages/peppol-yellow-pages-publisher](https://github.com/phax/peppol-yellow-pages) - no release so far
- * [ph-as4](https://github.com/phax/ph-as4) - no release so far
- * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - no release so far
- * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4) - no release so far
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.3.0
  * [ph-charset](https://github.com/phax/ph-charset) - Version 2.0.0
  * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.0
@@ -105,10 +91,27 @@ Current list of all projects (as of Fri Oct 16 10:17:38 CEST 2015):
  * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 4.0.0
  * [ph-validation](https://github.com/phax/ph-validation) - Version 4.0.0
  * [ph-web](https://github.com/phax/ph-web) - Version 7.0.2
- * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen) - no release so far
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8.1
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 2.0.1
- * [ph-xpath2](https://github.com/phax/ph-xpath2) - no release so far
+
+Current list of all unreleased projects:
+
+ * [as2-peppol-server](https://github.com/phax/as2-peppol-server)
+ * [bozoo](https://github.com/phax/bozoo)
+ * [meta](https://github.com/phax/meta)
+ * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons)
+ * [peppol-practical](https://github.com/phax/peppol-practical)
+ * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine)
+ * [peppol-yellow-pages](https://github.com/phax/peppol-yellow-pages)
+ * [peppol-yellow-pages/peppol-yellow-pages-api](https://github.com/phax/peppol-yellow-pages)
+ * [peppol-yellow-pages/peppol-yellow-pages-client](https://github.com/phax/peppol-yellow-pages)
+ * [peppol-yellow-pages/peppol-yellow-pages-indexer](https://github.com/phax/peppol-yellow-pages)
+ * [peppol-yellow-pages/peppol-yellow-pages-publisher](https://github.com/phax/peppol-yellow-pages)
+ * [ph-as4](https://github.com/phax/ph-as4)
+ * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4)
+ * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4)
+ * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen)
+ * [ph-xpath2](https://github.com/phax/ph-xpath2)
 
 All deprecated projects:
 
