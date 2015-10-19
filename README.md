@@ -3,26 +3,27 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Oct 16 14:00:29 CEST 2015):
+Current list of all projects (as of Mon Oct 19 12:39:56 CEST 2015):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.1
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.1
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.1
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.2.0
- * [as2-server](https://github.com/phax/as2-server) - Version 2.2.1
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.2
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.2
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.2.1
+ * [as2-server](https://github.com/phax/as2-server) - Version 2.2.2
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.0
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.0
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.2.0
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.2.0
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.2.1
  * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.0
- * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.2.0
- * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.2.0
+ * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.2.1
+ * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.2.1
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 4.0.1
@@ -43,7 +44,7 @@ Current list of all projects (as of Fri Oct 16 14:00:29 CEST 2015):
  * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 4.1.1
  * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 4.1.1
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 1.2.0
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 4.0.0
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 4.0.1
  * [ph-events](https://github.com/phax/ph-events) - Version 4.0.0
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 2.0.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 4.1.1
@@ -66,12 +67,13 @@ Current list of all projects (as of Fri Oct 16 14:00:29 CEST 2015):
  * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.4.1
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 2.0.0
- * [ph-poi](https://github.com/phax/ph-poi) - Version 3.0.0
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 3.0.1
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 2.0.1
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 2.1.0
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 3.0.1
@@ -92,14 +94,13 @@ Current list of all projects (as of Fri Oct 16 14:00:29 CEST 2015):
  * [ph-validation](https://github.com/phax/ph-validation) - Version 4.0.0
  * [ph-web](https://github.com/phax/ph-web) - Version 7.0.2
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8.1
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 2.0.1
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 2.0.2
 
 Current list of all unreleased projects:
 
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server)
  * [bozoo](https://github.com/phax/bozoo)
  * [meta](https://github.com/phax/meta)
- * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons)
  * [peppol-practical](https://github.com/phax/peppol-practical)
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine)
  * [peppol-yellow-pages](https://github.com/phax/peppol-yellow-pages)
