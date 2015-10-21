@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Mon Oct 19 12:39:56 CEST 2015):
+Current list of all projects (as of Wed Oct 21 17:43:00 CEST 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
  * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
@@ -17,13 +17,13 @@ Current list of all projects (as of Mon Oct 19 12:39:56 CEST 2015):
  * [peppol-commons/peppol-bdxr](https://github.com/phax/peppol-commons) - Version 4.2.1
  * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.1
  * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.2.1
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.2.1
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.2.1
  * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.0
- * [peppol-sml-client](https://github.com/phax/peppol-sml-client) - Version 4.2.1
- * [peppol-smp-client](https://github.com/phax/peppol-smp-client) - Version 4.2.1
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 4.0.1
@@ -67,7 +67,6 @@ Current list of all projects (as of Mon Oct 19 12:39:56 CEST 2015):
  * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.1.0
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
@@ -111,6 +110,7 @@ Current list of all unreleased projects:
  * [ph-as4](https://github.com/phax/ph-as4)
  * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4)
  * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4)
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton)
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen)
  * [ph-xpath2](https://github.com/phax/ph-xpath2)
 

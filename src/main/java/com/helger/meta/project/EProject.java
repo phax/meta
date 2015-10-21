@@ -89,7 +89,7 @@ public enum EProject implements IProject
  PH_OTON_CONNECT (PH_OTON_PARENT_POM, "ph-oton-connect", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_CORE (PH_OTON_PARENT_POM, "ph-oton-core", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_EXCHANGE (PH_OTON_PARENT_POM, "ph-oton-exchange", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
- PH_OTON_SECURITY (PH_OTON_PARENT_POM, "ph-oton-security", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
+ PH_OTON_SECURITY (PH_OTON_PARENT_POM, "ph-oton-security", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
  PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
  PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
@@ -135,16 +135,36 @@ public enum EProject implements IProject
  PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
  PEPPOL_BDXR (PEPPOL_COMMONS_PARENT_POM, "peppol-bdxr", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
  PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SML_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
 
- PEPPOL_SML_CLIENT (null, "peppol-sml-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.2.1"),
- PEPPOL_SMP_CLIENT (null, "peppol-smp-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.2.1"),
  PEPPOL_VALIDATION_ENGINE (null, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
- PEPPOL_SMP_SERVER_PARENT_POM (null, "peppol-smp-server-parent-pom", "peppol-smp-server", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.0.1"),
- PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
- PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
- PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
- PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SMP_SERVER_PARENT_POM (null, "peppol-smp-server-parent-pom", "peppol-smp-server", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.TRUE, "4.0.1"),
+ PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM,
+                            "peppol-smp-server-library",
+                            EProjectType.JAVA_LIBRARY,
+                            EHasPages.FALSE,
+                            EHasWiki.FALSE,
+                            PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM,
+                        "peppol-smp-server-sql",
+                        EProjectType.JAVA_LIBRARY,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM,
+                        "peppol-smp-server-xml",
+                        EProjectType.JAVA_LIBRARY,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
+ PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM,
+                           "peppol-smp-server-webapp",
+                           EProjectType.JAVA_WEB_APPLICATION,
+                           EHasPages.FALSE,
+                           EHasWiki.FALSE,
+                           PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
 
  PEPPOL_LIME_PARENT_POM (null, "peppol-lime-parent-pom", "peppol-lime", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0"),
  PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
@@ -177,13 +197,7 @@ public enum EProject implements IProject
                     @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
-    this (eParentProject,
-          sProjectName,
-          sProjectName,
-          eProjectType,
-          eHasPagesProject,
-          eHasWikiProject,
-          sLastPublishedVersion);
+    this (eParentProject, sProjectName, sProjectName, eProjectType, eHasPagesProject, eHasWikiProject, sLastPublishedVersion);
   }
 
   private EProject (@Nullable final EProject eParentProject,
@@ -197,9 +211,7 @@ public enum EProject implements IProject
     m_aProject = new SimpleProject (eParentProject,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR, sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
                                     eHasWikiProject,
