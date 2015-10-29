@@ -3,14 +3,15 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Oct 21 17:43:00 CEST 2015):
+Current list of all projects (as of Thu Oct 29 08:27:57 CET 2015):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.2
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.2
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.3
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 2.2.3
  * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.2
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 2.2.1
- * [as2-server](https://github.com/phax/as2-server) - Version 2.2.2
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 3.0.0
+ * [as2-server](https://github.com/phax/as2-server) - Version 2.2.3
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.2.1
