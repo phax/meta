@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Thu Oct 29 18:11:00 CET 2015):
+Current list of all projects (as of Fri Oct 30 16:42:49 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
  * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
@@ -14,12 +14,12 @@ Current list of all projects (as of Thu Oct 29 18:11:00 CET 2015):
  * [as2-server](https://github.com/phax/as2-server) - Version 2.2.3
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.0
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.0
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.0
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.0
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.0
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.0
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.1
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.1
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.1
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.1
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.1
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.1
  * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.0
  * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.0
