@@ -37,7 +37,7 @@ public enum EProject implements IProject
 
  PH_JAVACC_MAVEN_PLUGIN (null, "ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
 
- PH_COMMONS_PARENT_POM (null, "ph-commons-parent-pom", "ph-commons", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.2.0"),
+ PH_COMMONS_PARENT_POM (null, "ph-commons-parent-pom", "ph-commons", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.2.1"),
  PH_COMMONS (PH_COMMONS_PARENT_POM,
              "ph-commons",
              EProjectType.JAVA_LIBRARY,
