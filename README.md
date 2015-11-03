@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Oct 30 16:42:49 CET 2015):
+Current list of all projects (as of Tue Nov 03 19:49:58 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
  * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
@@ -56,7 +56,7 @@ Current list of all projects (as of Fri Oct 30 16:42:49 CET 2015):
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.6
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.1.0
  * [ph-json](https://github.com/phax/ph-json) - Version 2.0.0
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.0.1
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.0.2
  * [ph-math](https://github.com/phax/ph-math) - Version 2.0.0
  * [ph-oton](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.1.0
