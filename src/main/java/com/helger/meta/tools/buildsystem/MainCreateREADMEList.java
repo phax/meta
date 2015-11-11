@@ -64,21 +64,26 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {
+        final String sGroupID = aProject.getMavenGroupID ();
+        final String sArticfactID = aProject.getProjectName ();
+
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
            .append (_getGitHubRepoName (aProject))
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
-           .append (" [![Maven Central](https://maven-badges.herokuapp.com/maven-central/" +
-                    aProject.getMavenGroupID () +
+           .append ("\n")
+           .append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/" +
+                    sGroupID +
                     "/" +
-                    aProject.getProjectName () +
+                    sArticfactID +
                     "/badge.svg)](https://maven-badges.herokuapp.com/maven-central/" +
-                    aProject.getMavenGroupID () +
+                    sGroupID +
                     "/" +
-                    aProject.getProjectName () +
-                    ")")
+                    sArticfactID +
+                    ") ")
+           .append ("\n   [![Build Status](https://travis-ci.org/phax/" + sArticfactID + ".svg?branch=master)](https://travis-ci.org/phax/" + sArticfactID + ")")
            .append ('\n');
       }
 
