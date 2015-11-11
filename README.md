@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Nov 11 20:08:12 CET 2015):
+Current list of all projects (as of Wed Nov 11 20:19:42 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
 
@@ -373,21 +373,53 @@ Current list of all projects (as of Wed Nov 11 20:08:12 CET 2015):
 Current list of all unreleased projects:
 
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server)
+
+   [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)
  * [bozoo](https://github.com/phax/bozoo)
+
+   [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
  * [meta](https://github.com/phax/meta)
+
+   [![Build Status](https://travis-ci.org/phax/meta.svg?branch=master)](https://travis-ci.org/phax/meta)
  * [peppol-directory](https://github.com/phax/peppol-directory)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-directory/peppol-directory-api](https://github.com/phax/peppol-directory)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-directory/peppol-directory-client](https://github.com/phax/peppol-directory)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-directory/peppol-directory-indexer](https://github.com/phax/peppol-directory)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-directory/peppol-directory-publisher](https://github.com/phax/peppol-directory)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-practical](https://github.com/phax/peppol-practical)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-as4](https://github.com/phax/ph-as4)
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4)
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4)
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton)
+
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen)
+
+   [![Build Status](https://travis-ci.org/phax/ph-wsdl-gen.svg?branch=master)](https://travis-ci.org/phax/ph-wsdl-gen)
  * [ph-xpath2](https://github.com/phax/ph-xpath2)
+
+   [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
 
 All deprecated projects:
 

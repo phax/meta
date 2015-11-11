@@ -107,6 +107,8 @@ public final class MainCreateREADMEList extends AbstractProjectMain
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isPublished ())
       {
         aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (")\n");
+        _addBadgeTravis (aProject, aSB);
+        aSB.append ('\n');
       }
 
     // Add deprecated projects
