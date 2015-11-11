@@ -132,6 +132,13 @@ public enum EProjectDeprecated implements IProject
     return m_aProject.getMavenGroupID ();
   }
 
+  @Nonnull
+  @Nonempty
+  public String getMavenArtifactID ()
+  {
+    return m_aProject.getMavenArtifactID ();
+  }
+
   public boolean isDeprecated ()
   {
     return m_aProject.isDeprecated ();

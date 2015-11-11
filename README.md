@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Nov 11 19:59:46 CET 2015):
+Current list of all projects (as of Wed Nov 11 20:08:12 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
 
@@ -35,7 +35,7 @@ Current list of all projects (as of Wed Nov 11 19:59:46 CET 2015):
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/webservice-client) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
 

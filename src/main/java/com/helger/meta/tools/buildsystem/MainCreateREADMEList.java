@@ -49,7 +49,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
   private static void _addBadgeMavenCentral (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
   {
     final String sGroupID = aProject.getMavenGroupID ();
-    final String sArticfactID = aProject.getProjectName ();
+    final String sArticfactID = aProject.getMavenArtifactID ();
     aSB.append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/")
        .append (sGroupID)
        .append ("/")

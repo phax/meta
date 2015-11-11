@@ -23,6 +23,9 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.microdom.IMicroDocument;
+import com.helger.commons.microdom.IMicroElement;
+import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.commons.version.Version;
 
 public class SimpleProject implements IProject
@@ -40,6 +43,8 @@ public class SimpleProject implements IProject
   private final boolean m_bHasWikiProject;
   private final String m_sLastPublishedVersion;
   private final Version m_aLastPublishedVersion;
+  private final String m_sMavenGroupID;
+  private final String m_sMavenArtifactID;
 
   public SimpleProject (@Nullable final IProject aParentProject,
                         @Nonnull @Nonempty final String sProjectName,
@@ -62,6 +67,37 @@ public class SimpleProject implements IProject
     m_bHasWikiProject = eHasWikiProject.isTrue ();
     m_sLastPublishedVersion = sLastPublishedVersion;
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : new Version (sLastPublishedVersion);
+
+    String sGroupID = null;
+    String sArtifactID = null;
+    final IMicroDocument aDoc = MicroReader.readMicroXML (getPOMFile ());
+    if (aDoc != null)
+    {
+      final IMicroElement eParent = aDoc.getDocumentElement ().getFirstChildElement ("parent");
+      IMicroElement eGroupID = aDoc.getDocumentElement ().getFirstChildElement ("groupId");
+      if (eGroupID == null && eParent != null)
+        eGroupID = eParent.getFirstChildElement ("groupId");
+      if (eGroupID != null)
+        sGroupID = eGroupID.getTextContentTrimmed ();
+      if (sGroupID == null)
+        throw new IllegalStateException ("Failed to resolve Maven groupId in " + sProjectName);
+
+      IMicroElement eArtifactID = aDoc.getDocumentElement ().getFirstChildElement ("artifactId");
+      if (eArtifactID == null && eParent != null)
+        eArtifactID = eParent.getFirstChildElement ("artifactId");
+      if (eArtifactID != null)
+        sArtifactID = eArtifactID.getTextContentTrimmed ();
+      if (sArtifactID == null)
+        throw new IllegalStateException ("Failed to resolve Maven artifactId in " + sProjectName);
+      m_sMavenGroupID = sGroupID;
+      m_sMavenArtifactID = sArtifactID;
+    }
+    else
+    {
+      // For deprecated projects
+      m_sMavenGroupID = eProjectType == EProjectType.MAVEN_PLUGIN ? "com.helger.maven" : "com.helger";
+      m_sMavenArtifactID = m_sProjectName;
+    }
   }
 
   public boolean isBuildInProject ()
@@ -107,7 +143,7 @@ public class SimpleProject implements IProject
   }
 
   @Nonnull
-  public File getPOMFile ()
+  public final File getPOMFile ()
   {
     return new File (m_aBaseDir, "pom.xml");
   }
@@ -116,7 +152,14 @@ public class SimpleProject implements IProject
   @Nonempty
   public String getMavenGroupID ()
   {
-    return m_eProjectType == EProjectType.MAVEN_PLUGIN ? "com.helger.maven" : "com.helger";
+    return m_sMavenGroupID;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getMavenArtifactID ()
+  {
+    return m_sMavenArtifactID;
   }
 
   public boolean isDeprecated ()

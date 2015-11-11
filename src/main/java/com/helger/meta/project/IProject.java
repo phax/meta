@@ -69,6 +69,10 @@ public interface IProject
   @Nonempty
   String getMavenGroupID ();
 
+  @Nonnull
+  @Nonempty
+  String getMavenArtifactID ();
+
   boolean isDeprecated ();
 
   /**
