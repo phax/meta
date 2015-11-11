@@ -3,15 +3,15 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Nov 03 19:49:58 CET 2015):
+Current list of all projects (as of Wed Nov 11 11:34:38 CET 2015):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.3
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.3
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 2.2.3
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.2
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 2.2.4
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 2.2.4
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.3
  * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 3.0.0
- * [as2-server](https://github.com/phax/as2-server) - Version 2.2.3
+ * [as2-server](https://github.com/phax/as2-server) - Version 2.2.4
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.1
@@ -31,14 +31,14 @@ Current list of all projects (as of Tue Nov 03 19:49:58 CET 2015):
  * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - Version 4.0.1
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.3.0
  * [ph-charset](https://github.com/phax/ph-charset) - Version 2.0.0
- * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.0
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.0
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.0
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.1
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.1
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.1
  * [ph-css](https://github.com/phax/ph-css) - Version 4.0.0
  * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.5.0
- * [ph-datetime](https://github.com/phax/ph-datetime) - Version 4.2.0
- * [ph-datetime/ph-datetime](https://github.com/phax/ph-datetime) - Version 4.2.0
- * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 4.2.0
+ * [ph-datetime](https://github.com/phax/ph-datetime) - Version 4.2.1
+ * [ph-datetime/ph-datetime](https://github.com/phax/ph-datetime) - Version 4.2.1
+ * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 4.2.1
  * [ph-db](https://github.com/phax/ph-db) - Version 4.1.1
  * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 4.1.1
  * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 4.1.1
@@ -48,15 +48,18 @@ Current list of all projects (as of Tue Nov 03 19:49:58 CET 2015):
  * [ph-events](https://github.com/phax/ph-events) - Version 4.0.0
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 2.0.0
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 4.1.1
- * [ph-html](https://github.com/phax/ph-html) - Version 5.0.3
- * [ph-html/ph-html](https://github.com/phax/ph-html) - Version 5.0.3
- * [ph-html/ph-html-jquery](https://github.com/phax/ph-html) - Version 5.0.3
- * [ph-html/ph-html-jscode](https://github.com/phax/ph-html) - Version 5.0.3
+ * [ph-html](https://github.com/phax/ph-html) - Version 5.1.1
+ * [ph-html/ph-html](https://github.com/phax/ph-html) - Version 5.1.1
+ * [ph-html/ph-html-jquery](https://github.com/phax/ph-html) - Version 5.1.1
+ * [ph-html/ph-html-jscode](https://github.com/phax/ph-html) - Version 5.1.1
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 2.8.0
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.6
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.1.0
  * [ph-json](https://github.com/phax/ph-json) - Version 2.0.0
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.0.2
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.1.0
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.1.0
+ * [ph-masterdata/ph-masterdata-validation](https://github.com/phax/ph-masterdata) - Version 4.1.0
+ * [ph-masterdata/ph-validation](https://github.com/phax/ph-masterdata) - Version 4.1.0
  * [ph-math](https://github.com/phax/ph-math) - Version 2.0.0
  * [ph-oton](https://github.com/phax/ph-oton) - Version 6.1.0
  * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.1.0
@@ -90,7 +93,6 @@ Current list of all projects (as of Tue Nov 03 19:49:58 CET 2015):
  * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 4.0.0
  * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 4.0.0
  * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 4.0.0
- * [ph-validation](https://github.com/phax/ph-validation) - Version 4.0.0
  * [ph-web](https://github.com/phax/ph-web) - Version 7.0.2
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8.1
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 2.0.2
