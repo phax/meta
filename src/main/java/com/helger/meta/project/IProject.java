@@ -65,6 +65,10 @@ public interface IProject
   @Nonnull
   File getPOMFile ();
 
+  @Nonnull
+  @Nonempty
+  String getMavenGroupID ();
+
   boolean isDeprecated ();
 
   /**

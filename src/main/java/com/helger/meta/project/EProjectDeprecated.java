@@ -56,13 +56,7 @@ public enum EProjectDeprecated implements IProject
                               @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
-    this (eParentProject,
-          sProjectName,
-          sProjectName,
-          eProjectType,
-          eHasPagesProject,
-          eHasWikiProject,
-          sLastPublishedVersion);
+    this (eParentProject, sProjectName, sProjectName, eProjectType, eHasPagesProject, eHasWikiProject, sLastPublishedVersion);
   }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
@@ -76,9 +70,7 @@ public enum EProjectDeprecated implements IProject
     m_aProject = new SimpleProject (eParentProject,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR, sProjectBaseDirName),
                                     EIsDeprecated.TRUE,
                                     eHasPagesProject,
                                     eHasWikiProject,
@@ -131,6 +123,13 @@ public enum EProjectDeprecated implements IProject
   public File getPOMFile ()
   {
     return m_aProject.getPOMFile ();
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getMavenGroupID ()
+  {
+    return m_aProject.getMavenGroupID ();
   }
 
   public boolean isDeprecated ()

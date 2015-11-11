@@ -70,6 +70,15 @@ public final class MainCreateREADMEList extends AbstractProjectMain
            .append (_getGitHubRepoName (aProject))
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
+           .append (" [![Maven Central](https://maven-badges.herokuapp.com/maven-central/" +
+                    aProject.getMavenGroupID () +
+                    "/" +
+                    aProject.getProjectName () +
+                    "/badge.svg)](https://maven-badges.herokuapp.com/maven-central/" +
+                    aProject.getMavenGroupID () +
+                    "/" +
+                    aProject.getProjectName () +
+                    ")")
            .append ('\n');
       }
 

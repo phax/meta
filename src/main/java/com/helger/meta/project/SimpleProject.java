@@ -56,8 +56,7 @@ public class SimpleProject implements IProject
     m_aBaseDir = ValueEnforcer.notNull (aBaseDir, "BaseDir");
     if (!m_aBaseDir.exists () && eIsDeprecated.isFalse ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
-    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") +
-                         aBaseDir.getName ();
+    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") + aBaseDir.getName ();
     m_bIsDeprecated = eIsDeprecated.isTrue ();
     m_bHasPagesProject = eHasPagesProject.isTrue ();
     m_bHasWikiProject = eHasWikiProject.isTrue ();
@@ -111,6 +110,13 @@ public class SimpleProject implements IProject
   public File getPOMFile ()
   {
     return new File (m_aBaseDir, "pom.xml");
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getMavenGroupID ()
+  {
+    return m_eProjectType == EProjectType.MAVEN_PLUGIN ? "com.helger.maven" : "com.helger";
   }
 
   public boolean isDeprecated ()
