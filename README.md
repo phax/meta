@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Nov 11 19:55:45 CET 2015):
+Current list of all projects (as of Wed Nov 11 19:59:46 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
 
@@ -392,18 +392,40 @@ Current list of all unreleased projects:
 All deprecated projects:
 
  * [cipa-start-jms-api](https://github.com/phax/cipa-start-jms-api) - Version 1.5.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api) 
  * [cipa-start-jmsreceiver](https://github.com/phax/cipa-start-jmsreceiver) - Version 1.0.2
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmsreceiver/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmsreceiver) 
  * [cipa-start-jmssender](https://github.com/phax/cipa-start-jmssender) - Version 1.0.2
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
  * [jgatsp](https://github.com/phax/jgatsp) - never released
  * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 2.0.2
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3) 
  * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5) 
  * [ph-jms](https://github.com/phax/ph-jms) - Version 2.0.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms) 
  * [ph-scopes](https://github.com/phax/ph-scopes) - Version 6.6.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes) 
  * [ph-tinymce4](https://github.com/phax/ph-tinymce4) - Version 0.3.5
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4) 
  * [ph-webapp-demo](https://github.com/phax/ph-webapp-demo) - never released
  * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.2
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webbasics/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webbasics) 
  * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.2
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webctrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webctrls) 
  * [ph-webscopes](https://github.com/phax/ph-webscopes) - Version 6.8.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes) 
 
 ---
 

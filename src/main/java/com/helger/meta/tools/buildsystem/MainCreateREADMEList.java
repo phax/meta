@@ -46,6 +46,27 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     return aProject.getBaseDir ().getName ();
   }
 
+  private static void _addBadgeMavenCentral (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
+  {
+    final String sGroupID = aProject.getMavenGroupID ();
+    final String sArticfactID = aProject.getProjectName ();
+    aSB.append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/")
+       .append (sGroupID)
+       .append ("/")
+       .append (sArticfactID)
+       .append ("/badge.svg)](https://maven-badges.herokuapp.com/maven-central/")
+       .append (sGroupID)
+       .append ("/")
+       .append (sArticfactID)
+       .append (") ");
+  }
+
+  private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
+  {
+    final String sRepoName = _getGitHubRepoName (aProject);
+    aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/").append (sRepoName).append (".svg?branch=master)](https://travis-ci.org/phax/").append (sRepoName).append (")");
+  }
+
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ();
@@ -68,8 +89,6 @@ public final class MainCreateREADMEList extends AbstractProjectMain
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {
         final String sRepoName = _getGitHubRepoName (aProject);
-        final String sGroupID = aProject.getMavenGroupID ();
-        final String sArticfactID = aProject.getProjectName ();
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
@@ -78,16 +97,8 @@ public final class MainCreateREADMEList extends AbstractProjectMain
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
            .append ("\n");
-        aSB.append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/")
-           .append (sGroupID)
-           .append ("/")
-           .append (sArticfactID)
-           .append ("/badge.svg)](https://maven-badges.herokuapp.com/maven-central/")
-           .append (sGroupID)
-           .append ("/")
-           .append (sArticfactID)
-           .append (") ");
-        aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/").append (sRepoName).append (".svg?branch=master)](https://travis-ci.org/phax/").append (sRepoName).append (")");
+        _addBadgeMavenCentral (aProject, aSB);
+        _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
       }
 
@@ -105,7 +116,10 @@ public final class MainCreateREADMEList extends AbstractProjectMain
       {
         aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (") - ");
         if (aProject.isPublished ())
-          aSB.append ("Version ").append (aProject.getLastPublishedVersionString ());
+        {
+          aSB.append ("Version ").append (aProject.getLastPublishedVersionString ()).append ('\n');
+          _addBadgeMavenCentral (aProject, aSB);
+        }
         else
           aSB.append ("never released");
         aSB.append ('\n');
