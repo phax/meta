@@ -16,13 +16,16 @@
  */
 package com.helger.meta.tools.buildsystem;
 
+import java.io.File;
 import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
+import com.helger.commons.charset.CCharset;
 import com.helger.commons.collection.CollectionHelper;
 import com.helger.commons.compare.AbstractComparator;
+import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -64,27 +67,28 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {
+        final String sRepoName = _getGitHubRepoName (aProject);
         final String sGroupID = aProject.getMavenGroupID ();
         final String sArticfactID = aProject.getProjectName ();
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
-           .append (_getGitHubRepoName (aProject))
+           .append (sRepoName)
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
-           .append ("\n")
-           .append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/" +
-                    sGroupID +
-                    "/" +
-                    sArticfactID +
-                    "/badge.svg)](https://maven-badges.herokuapp.com/maven-central/" +
-                    sGroupID +
-                    "/" +
-                    sArticfactID +
-                    ") ")
-           .append ("\n   [![Build Status](https://travis-ci.org/phax/" + sArticfactID + ".svg?branch=master)](https://travis-ci.org/phax/" + sArticfactID + ")")
-           .append ('\n');
+           .append ("\n");
+        aSB.append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/")
+           .append (sGroupID)
+           .append ("/")
+           .append (sArticfactID)
+           .append ("/badge.svg)](https://maven-badges.herokuapp.com/maven-central/")
+           .append (sGroupID)
+           .append ("/")
+           .append (sArticfactID)
+           .append (") ");
+        aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/").append (sRepoName).append (".svg?branch=master)](https://travis-ci.org/phax/").append (sRepoName).append (")");
+        aSB.append ('\n');
       }
 
     aSB.append ("\nCurrent list of all unreleased projects:\n\n");
@@ -106,6 +110,14 @@ public final class MainCreateREADMEList extends AbstractProjectMain
           aSB.append ("never released");
         aSB.append ('\n');
       }
-    System.out.println (aSB.toString ());
+
+    // Header
+    aSB.insert (0, "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
+
+    // Footer
+    aSB.append ("\n---\n\nOn Twitter: <a href=\"https://twitter.com/philiphelger\">Follow @philiphelger</a>\n");
+
+    SimpleFileIO.writeFile (new File ("README.md"), aSB.toString (), CCharset.CHARSET_UTF_8_OBJ);
+    System.out.println ("Done");
   }
 }
