@@ -50,9 +50,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _warn (eProject, "File " + f.getAbsolutePath () + " should not exist!");
   }
 
-  private static void _checkFileContains (@Nonnull final IProject eProject,
-                                          @Nonnull final String sRelativeFilename,
-                                          @Nonnull final String sExpectedContent)
+  private static void _checkFileContains (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename, @Nonnull final String sExpectedContent)
   {
     final File f = new File (eProject.getBaseDir (), sRelativeFilename);
     final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
@@ -85,15 +83,20 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
     if (new File (eProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
       _checkFileContains (eProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
+
+    // Travis integration
+    if (!eProject.isNestedProject ())
+    {
+      _checkFileExisting (eProject, ".travis.yml");
+      if (false)
+        _checkFileExisting (eProject, "mvn-settings-add-snapshot.py");
+    }
   }
 
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType ().hasJavaCode () &&
-          aProject.isBuildInProject () &&
-          aProject.getBaseDir ().exists () &&
-          !aProject.isDeprecated ())
+      if (aProject.getProjectType ().hasJavaCode () && aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated ())
       {
         _validateProject (aProject);
       }
