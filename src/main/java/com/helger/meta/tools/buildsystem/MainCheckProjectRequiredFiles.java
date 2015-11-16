@@ -26,6 +26,7 @@ import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -36,69 +37,95 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static void _checkFileExisting (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename)
+  private static boolean _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
-    final File f = new File (eProject.getBaseDir (), sRelativeFilename);
-    if (!f.exists ())
-      _warn (eProject, "File " + f.getAbsolutePath () + " does not exist!");
-  }
-
-  private static void _checkFileNotExisting (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename)
-  {
-    final File f = new File (eProject.getBaseDir (), sRelativeFilename);
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (f.exists ())
-      _warn (eProject, "File " + f.getAbsolutePath () + " should not exist!");
+      return true;
+    _warn (aProject, "File " + f.getAbsolutePath () + " does not exist!");
+    return false;
   }
 
-  private static void _checkFileContains (@Nonnull final IProject eProject, @Nonnull final String sRelativeFilename, @Nonnull final String sExpectedContent)
+  private static boolean _checkFileNotExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
-    final File f = new File (eProject.getBaseDir (), sRelativeFilename);
-    final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
-    if (sContent == null || !sContent.contains (sExpectedContent))
-      _warn (eProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
+    if (!f.exists ())
+      return true;
+    _warn (aProject, "File " + f.getAbsolutePath () + " should not exist!");
+    return false;
   }
 
-  private static void _validateProject (@Nonnull final IProject eProject)
+  private static boolean _checkFileContains (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename, @Nonnull final String sExpectedContent)
+  {
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
+    final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+    if (sContent != null && sContent.contains (sExpectedContent))
+      return true;
+    _warn (aProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
+    return false;
+  }
+
+  private static void _validateProjectWithJavaCode (@Nonnull final IProject aProject)
   {
     // Check for file existence
-    _checkFileExisting (eProject, ".classpath");
-    _checkFileExisting (eProject, ".project");
-    _checkFileExisting (eProject, "pom.xml");
-    if (!eProject.isNestedProject ())
-      _checkFileExisting (eProject, "README.MD");
-    _checkFileExisting (eProject, "findbugs-exclude.xml");
-    _checkFileExisting (eProject, "src/etc/javadoc.css");
-    _checkFileExisting (eProject, "src/etc/license-template.txt");
+    _checkFileExisting (aProject, ".classpath");
+    _checkFileExisting (aProject, ".project");
+    _checkFileExisting (aProject, "pom.xml");
+    if (!aProject.isNestedProject ())
+      _checkFileExisting (aProject, "README.MD");
+    _checkFileExisting (aProject, "findbugs-exclude.xml");
+    _checkFileExisting (aProject, "src/etc/javadoc.css");
+    _checkFileExisting (aProject, "src/etc/license-template.txt");
     if (false)
-      _checkFileExisting (eProject, "src/main/resources/changelog.xml");
-    if (eProject != EProject.JCODEMODEL)
+      _checkFileExisting (aProject, "src/main/resources/changelog.xml");
+    if (aProject != EProject.JCODEMODEL)
     {
       // Not Apache2 license
-      _checkFileExisting (eProject, "src/main/resources/LICENSE");
-      _checkFileExisting (eProject, "src/main/resources/NOTICE");
+      _checkFileExisting (aProject, "src/main/resources/LICENSE");
+      _checkFileExisting (aProject, "src/main/resources/NOTICE");
     }
-    _checkFileNotExisting (eProject, "LICENSE");
+    _checkFileNotExisting (aProject, "LICENSE");
 
     // Check for file contents
-    _checkFileContains (eProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
-    if (new File (eProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
-      _checkFileContains (eProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
+    _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
+    if (new File (aProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
+      _checkFileContains (aProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
+  }
 
-    // Travis integration
-    if (!eProject.isNestedProject ())
+  private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
+  {
+    // Check for file existence
+    _checkFileExisting (aProject, ".project");
+    _checkFileExisting (aProject, "pom.xml");
+    _checkFileExisting (aProject, "README.MD");
+    _checkFileNotExisting (aProject, "LICENSE");
+  }
+
+  private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
+  {
+    if (!aProject.isNestedProject ())
     {
-      _checkFileExisting (eProject, ".travis.yml");
-      if (false)
-        _checkFileExisting (eProject, "mvn-settings-add-snapshot.py");
+      _checkFileExisting (aProject, ".travis.yml");
+
+      // No SNAPSHOT deployment for applications
+      if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION && aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
+      {
+        if (_checkFileExisting (aProject, "mvn-settings-add-snapshot.py"))
+          _checkFileContains (aProject, ".travis.yml", "mvn-settings-add-snapshot.py");
+      }
     }
   }
 
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType ().hasJavaCode () && aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated ())
+      if (aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated ())
       {
-        _validateProject (aProject);
+        if (aProject.getProjectType ().hasJavaCode ())
+          _validateProjectWithJavaCode (aProject);
+        else
+          _validateProjectWithoutJavaCode (aProject);
+        _validateProjectTravisConfig (aProject);
       }
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
