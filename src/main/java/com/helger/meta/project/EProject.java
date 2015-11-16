@@ -33,6 +33,11 @@ import com.helger.meta.CMeta;
 public enum EProject implements IProject
 {
  PH_PARENT_POM (null, "parent-pom", "ph-parent-pom", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.4.1"),
+
+ PH_LOCALES_PARENT_POM (null, "ph-locales-parent-pom", "ph-locales", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
+ PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_LOCALES_PARENT_POM.getLastPublishedVersionString ()),
+ PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_LOCALES_PARENT_POM.getLastPublishedVersionString ()),
+
  JCODEMODEL (null, "jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.0"),
 
  PH_JAVACC_MAVEN_PLUGIN (null, "ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),

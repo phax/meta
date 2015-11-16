@@ -61,16 +61,17 @@ public final class EProjectTest
   {
     for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR))
       if (aFile.isDirectory ())
-        if (!"jaxb".equals (aFile.getName ()))
+      {
+        // ebinterface-ubl-mapping: different GitHub entity
+        if (!"ebinterface-ubl-mapping".equals (aFile.getName ()))
         {
           // Ignore all Pages and Wiki directories
           String sProjectName = aFile.getName ();
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
 
-          assertNotNull (aFile.getName () +
-                         " is missing in the project list",
-                         ProjectList.getProjectOfDir (sProjectName));
+          assertNotNull (aFile.getName () + " is missing in the project list", ProjectList.getProjectOfDir (sProjectName));
         }
+      }
   }
 }

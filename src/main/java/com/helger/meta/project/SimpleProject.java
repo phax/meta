@@ -55,10 +55,17 @@ public class SimpleProject implements IProject
                         @Nonnull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion)
   {
+    ValueEnforcer.notEmpty (sProjectName, "ProjectName");
+    ValueEnforcer.notNull (eProjectType, "ProjectType");
+    ValueEnforcer.notNull (aBaseDir, "BaseDir");
+    ValueEnforcer.notNull (eIsDeprecated, "IsDeprecated");
+    ValueEnforcer.notNull (eHasPagesProject, "HasPagesProject");
+    ValueEnforcer.notNull (eHasWikiProject, "HasWikiProject");
+
     m_aParentProject = aParentProject;
-    m_sProjectName = ValueEnforcer.notEmpty (sProjectName, "ProjectName");
-    m_eProjectType = ValueEnforcer.notNull (eProjectType, "ProjectType");
-    m_aBaseDir = ValueEnforcer.notNull (aBaseDir, "BaseDir");
+    m_sProjectName = sProjectName;
+    m_eProjectType = eProjectType;
+    m_aBaseDir = aBaseDir;
     if (!m_aBaseDir.exists () && eIsDeprecated.isFalse ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
     m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") + aBaseDir.getName ();
