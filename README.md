@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Nov 11 20:19:42 CET 2015):
+Current list of all projects (as of Mon Nov 23 11:42:28 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
 
@@ -109,15 +109,15 @@ Current list of all projects (as of Wed Nov 11 20:19:42 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-charset.svg?branch=master)](https://travis-ci.org/phax/ph-charset)
- * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.1
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.1
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.1
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
@@ -411,6 +411,15 @@ Current list of all unreleased projects:
  * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4)
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-locales](https://github.com/phax/ph-locales)
+
+   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
+ * [ph-locales/ph-locales](https://github.com/phax/ph-locales)
+
+   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
+ * [ph-locales/ph-locales16](https://github.com/phax/ph-locales)
+
+   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
  * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton)
 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
