@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Mon Nov 23 11:42:28 CET 2015):
+Current list of all projects (as of Mon Nov 23 12:10:54 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.4
 
@@ -357,7 +357,7 @@ Current list of all projects (as of Mon Nov 23 11:42:28 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-web](https://github.com/phax/ph-web) - Version 7.0.2
+ * [ph-web](https://github.com/phax/ph-web) - Version 7.1.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
