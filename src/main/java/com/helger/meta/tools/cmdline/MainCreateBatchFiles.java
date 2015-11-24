@@ -17,6 +17,8 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 
@@ -35,34 +37,36 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
-  private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
-                                        @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createBatchFile (@Nonnull @Nonempty final String sCommand, @Nonnull @Nonempty final String sBatchFileName)
   {
+    final List <IProject> aProjects = new ArrayList <> ();
+    for (final IProject aProject : ProjectList.getAllProjects ())
+      if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isNestedProject ())
+        aProjects.add (aProject);
+
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
     int nIndex = 1;
-    for (final IProject e : ProjectList.getAllProjects ())
-      if (e.isBuildInProject () && !e.isDeprecated () && !e.isNestedProject ())
-      {
-        aSB.append ("echo ")
-           .append (e.getProjectName ())
-           .append (" [")
-           .append (nIndex)
-           .append ("/")
-           .append (ProjectList.size ())
-           .append ("]\ncd ")
-           .append (e.getFullBaseDirName ())
-           .append ("\n")
-           .append (sCommand)
-           .append ("\nif errorlevel 1 goto error\ncd ..\n");
-        ++nIndex;
-      }
+    for (final IProject aProject : aProjects)
+    {
+      aSB.append ("echo ")
+         .append (aProject.getProjectName ())
+         .append (" [")
+         .append (nIndex)
+         .append ("/")
+         .append (aProjects.size ())
+         .append ("]\ncd ")
+         .append (aProject.getFullBaseDirName ())
+         .append ("\n")
+         .append (sCommand)
+         .append ("\nif errorlevel 1 goto error\ncd ..\n");
+      ++nIndex;
+    }
     aSB.append (BATCH_FOOTER);
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }
 
-  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand,
-                                           @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand, @Nonnull @Nonempty final String sBatchFileName)
   {
     _createBatchFile ("call mvn " + sMavenCommand + " %*", sBatchFileName);
   }
