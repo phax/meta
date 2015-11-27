@@ -1,9 +1,0 @@
-2015-04-29:
-Releases:
-  peppol-smp*
-  ph-webbasics
-  ph-webctrls
-  ph-bootstrap3
-  ph-tinymce3
-  as2-peppol-servlet
-  
