@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Tue Dec 01 11:18:28 CET 2015):
+Current list of all projects (as of Thu Dec 03 11:35:27 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5
 
@@ -37,7 +37,7 @@ Current list of all projects (as of Tue Dec 01 11:18:28 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.0
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -229,7 +229,7 @@ Current list of all projects (as of Tue Dec 01 11:18:28 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
- * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.1.0
+ * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.1.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jscompress-maven-plugin)
@@ -257,51 +257,55 @@ Current list of all projects (as of Tue Dec 01 11:18:28 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
- * [ph-oton](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-basic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-basic) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 6.2.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security) 
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.1.0
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 6.2.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
@@ -448,9 +452,6 @@ Current list of all unreleased projects:
  * [ph-locales/ph-locales16](https://github.com/phax/ph-locales)
 
    [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton)
-
-   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen)
 
    [![Build Status](https://travis-ci.org/phax/ph-wsdl-gen.svg?branch=master)](https://travis-ci.org/phax/ph-wsdl-gen)
