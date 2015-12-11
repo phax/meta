@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Dec 09 15:26:00 CET 2015):
+Current list of all projects (as of Fri Dec 11 22:07:47 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5
 
@@ -41,27 +41,27 @@ Current list of all projects (as of Wed Dec 09 15:26:00 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.2
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
