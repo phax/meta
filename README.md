@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Fri Dec 11 22:07:47 CET 2015):
+Current list of all projects (as of Mon Dec 14 22:43:26 CET 2015):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5
 
@@ -103,7 +103,7 @@ Current list of all projects (as of Fri Dec 11 22:07:47 CET 2015):
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.0.0
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.3.0
 
@@ -125,11 +125,11 @@ Current list of all projects (as of Fri Dec 11 22:07:47 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 4.0.0
+ * [ph-css](https://github.com/phax/ph-css) - Version 4.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.5.0
+ * [ph-csscompress-maven-plugin](https://github.com/phax/ph-csscompress-maven-plugin) - Version 1.5.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-csscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-csscompress-maven-plugin)
@@ -237,7 +237,7 @@ Current list of all projects (as of Fri Dec 11 22:07:47 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jscompress-maven-plugin)
- * [ph-json](https://github.com/phax/ph-json) - Version 2.0.0
+ * [ph-json](https://github.com/phax/ph-json) - Version 2.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json) 
    [![Build Status](https://travis-ci.org/phax/ph-json.svg?branch=master)](https://travis-ci.org/phax/ph-json)
