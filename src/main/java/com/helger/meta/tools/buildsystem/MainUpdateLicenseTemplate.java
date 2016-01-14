@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2014-2015 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2016 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,8 +37,8 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
   public static void main (final String [] args)
   {
     final int nThisYear = Year.now ().getValue ();
-    final String sThisYear = Integer.toString (nThisYear);
     final String sPrevYear = Integer.toString (nThisYear - 1);
+    final String sThisYear = Integer.toString (nThisYear);
 
     final String sSearch1 = "-" + sPrevYear;
     final String sReplace1 = "-" + sThisYear;
@@ -53,7 +53,10 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
       {
         final File f = new File (aProject.getBaseDir (), "src/etc/license-template.txt");
         if (!f.exists ())
+        {
+          System.err.println (f.getAbsolutePath () + " does not exist!");
           continue;
+        }
 
         System.out.println (f.getAbsolutePath ());
         final String sCurrent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
@@ -66,7 +69,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
           bChange = true;
         }
         else
-          if (sNew.contains (sSearch2))
+          if (sNew.contains (sSearch2) && !sNew.contains (sReplace2))
           {
             sNew = StringHelper.replaceAll (sNew, sSearch2, sReplace2);
             bChange = true;
@@ -74,9 +77,8 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
 
         if (bChange)
         {
-          System.out.println ("Changed");
-          if (false)
-            SimpleFileIO.writeFile (f, sNew, CCharset.CHARSET_UTF_8_OBJ);
+          SimpleFileIO.writeFile (f, sNew, CCharset.CHARSET_UTF_8_OBJ);
+          System.out.println ("  changed");
         }
       }
     s_aLogger.info ("Done - run mvn license:format on all projects");
