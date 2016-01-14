@@ -24,6 +24,7 @@ import com.helger.commons.CGlobal;
 import com.helger.commons.changelog.CChangeLog;
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
+import com.helger.commons.state.ESuccess;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
@@ -37,25 +38,30 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static boolean _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
+  @Nonnull
+  private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (f.exists ())
-      return true;
+      return ESuccess.SUCCESS;
     _warn (aProject, "File " + f.getAbsolutePath () + " does not exist!");
-    return false;
+    return ESuccess.FAILURE;
   }
 
-  private static boolean _checkFileNotExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
+  @Nonnull
+  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject,
+                                                 @Nonnull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
-      return true;
+      return ESuccess.SUCCESS;
     _warn (aProject, "File " + f.getAbsolutePath () + " should not exist!");
-    return false;
+    return ESuccess.FAILURE;
   }
 
-  private static boolean _checkFileContains (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename, @Nonnull final String sExpectedContent)
+  private static boolean _checkFileContains (@Nonnull final IProject aProject,
+                                             @Nonnull final String sRelativeFilename,
+                                             @Nonnull final String sExpectedContent)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
@@ -98,20 +104,27 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (aProject, ".project");
     _checkFileExisting (aProject, "pom.xml");
     _checkFileExisting (aProject, "README.MD");
-    _checkFileNotExisting (aProject, "LICENSE");
+    if (aProject.getProjectType () != EProjectType.MAVEN_POM)
+      _checkFileNotExisting (aProject, "LICENSE");
   }
 
   private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
   {
     if (!aProject.isNestedProject ())
     {
-      _checkFileExisting (aProject, ".travis.yml");
-
-      // No SNAPSHOT deployment for applications
-      if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION && aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
+      if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
       {
-        if (_checkFileExisting (aProject, "mvn-settings-add-snapshot.py"))
-          _checkFileContains (aProject, ".travis.yml", "mvn-settings-add-snapshot.py");
+        _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
+
+        // No SNAPSHOT deployment for applications
+        if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
+            aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
+        {
+          if (_checkFileExisting (aProject, "travis-settings.xml").isSuccess ())
+            _checkFileContains (aProject,
+                                ".travis.yml",
+                                "mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy");
+        }
       }
     }
   }
