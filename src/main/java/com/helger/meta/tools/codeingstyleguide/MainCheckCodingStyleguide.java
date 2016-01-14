@@ -485,7 +485,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                                        @Nullable final String sBaseName,
                                        @Nullable final String sTestClass)
   {
-    if (sTestClass != null && sTestClass.endsWith ("Test") && !sTestClass.endsWith ("FuncTest"))
+    if (sTestClass != null &&
+        sTestClass.endsWith ("Test") &&
+        !sTestClass.endsWith ("FuncTest") &&
+        !sBaseName.startsWith ("Abstract"))
     {
       final String sMainClass = StringHelper.trimEnd (sTestClass, 4);
       final File aMainClass = new File (aProject.getBaseDir (), "target/classes/" + sMainClass + ".class");
@@ -526,7 +529,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         final String sBaseName = FilenameHelper.getWithoutExtension (sName);
 
         if (bContainsTestMethod && !sBaseName.endsWith ("Test"))
-          _warn (aProject, "Class '" + sName + "' contains @Test annotation but is label weird");
+          _warn (aProject, "Class '" + sName + "' contains @Test annotation but is named inconsistent");
 
         if (sBaseName.contains ("$") ||
             sBaseName.equals ("SPITest") ||
