@@ -488,7 +488,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (sTestClass != null &&
         sTestClass.endsWith ("Test") &&
         !sTestClass.endsWith ("FuncTest") &&
-        !sBaseName.startsWith ("Abstract"))
+        (sBaseName == null || !sBaseName.startsWith ("Abstract")))
     {
       final String sMainClass = StringHelper.trimEnd (sTestClass, 4);
       final File aMainClass = new File (aProject.getBaseDir (), "target/classes/" + sMainClass + ".class");
@@ -496,7 +496,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         _warn (aProject, "Test class " + sTestClass + " has no matching java/main class");
     }
     else
-      if (sBaseName.startsWith ("FuncTest"))
+      if (sBaseName != null && sBaseName.startsWith ("FuncTest"))
       {
         _warn (aProject, "Test class " + sTestClass + " should end with FuncTest instead of starting with it");
       }
