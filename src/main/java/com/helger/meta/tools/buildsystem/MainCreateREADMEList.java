@@ -31,8 +31,7 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Check whether the Maven pom.xml of a project is consistent to the
- * requirements
+ * Create the README.md file of this project.
  *
  * @author Philip Helger
  */
@@ -64,24 +63,32 @@ public final class MainCreateREADMEList extends AbstractProjectMain
   private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
   {
     final String sRepoName = _getGitHubRepoName (aProject);
-    aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/").append (sRepoName).append (".svg?branch=master)](https://travis-ci.org/phax/").append (sRepoName).append (")");
+    aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/")
+       .append (sRepoName)
+       .append (".svg?branch=master)](https://travis-ci.org/phax/")
+       .append (sRepoName)
+       .append (")");
   }
 
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (), new AbstractComparator <IProject> ()
-    {
-      @Override
-      protected int mainCompare (final IProject aElement1, final IProject aElement2)
-      {
-        int ret = aElement1.getBaseDir ().compareTo (aElement2.getBaseDir ());
-        if (ret == 0)
-          ret = aElement1.getProjectName ().compareTo (aElement2.getProjectName ());
-        return ret;
-      }
-    });
+    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (),
+                                                                        new AbstractComparator <IProject> ()
+                                                                        {
+                                                                          @Override
+                                                                          protected int mainCompare (final IProject aElement1,
+                                                                                                     final IProject aElement2)
+                                                                          {
+                                                                            int ret = aElement1.getBaseDir ()
+                                                                                               .compareTo (aElement2.getBaseDir ());
+                                                                            if (ret == 0)
+                                                                              ret = aElement1.getProjectName ()
+                                                                                             .compareTo (aElement2.getProjectName ());
+                                                                            return ret;
+                                                                          }
+                                                                        });
 
     // Show all
     aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
@@ -106,7 +113,11 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isPublished ())
       {
-        aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (")\n");
+        aSB.append (" * [")
+           .append (aProject.getFullBaseDirName ())
+           .append ("](https://github.com/phax/")
+           .append (_getGitHubRepoName (aProject))
+           .append (")\n");
         _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
       }
@@ -116,7 +127,11 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && aProject.isDeprecated ())
       {
-        aSB.append (" * [").append (aProject.getFullBaseDirName ()).append ("](https://github.com/phax/").append (_getGitHubRepoName (aProject)).append (") - ");
+        aSB.append (" * [")
+           .append (aProject.getFullBaseDirName ())
+           .append ("](https://github.com/phax/")
+           .append (_getGitHubRepoName (aProject))
+           .append (") - ");
         if (aProject.isPublished ())
         {
           aSB.append ("Version ").append (aProject.getLastPublishedVersionString ()).append ('\n');
@@ -128,7 +143,8 @@ public final class MainCreateREADMEList extends AbstractProjectMain
       }
 
     // Header
-    aSB.insert (0, "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
+    aSB.insert (0,
+                "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
 
     // Footer
     aSB.append ("\n---\n\nOn Twitter: <a href=\"https://twitter.com/philiphelger\">Follow @philiphelger</a>\n");

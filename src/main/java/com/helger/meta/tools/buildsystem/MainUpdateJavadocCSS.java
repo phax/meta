@@ -25,8 +25,9 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Ensure the src/etc/javadoc.css file is the same in all projects. Afterwards
- * <code>mvn license:format</code> must be run on all projects!
+ * Ensure the src/etc/javadoc.css file is the same in all projects, based on a
+ * template in this project. Afterwards <code>mvn license:format</code> must be
+ * run on all projects!
  *
  * @author Philip Helger
  */
@@ -34,10 +35,14 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/test/resources/source-javadoc.css"), CCharset.CHARSET_UTF_8_OBJ);
+    final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/test/resources/source-javadoc.css"),
+                                                         CCharset.CHARSET_UTF_8_OBJ);
 
     for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated () && aProject.getProjectType ().hasJavaCode ())
+      if (aProject.isBuildInProject () &&
+          aProject.getBaseDir ().exists () &&
+          !aProject.isDeprecated () &&
+          aProject.getProjectType ().hasJavaCode ())
       {
         final File f = new File (aProject.getBaseDir (), "src/etc/javadoc.css");
         assert f.exists ();

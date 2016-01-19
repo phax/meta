@@ -25,7 +25,7 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Check whether all project has all the required files
+ * Check which project has a non-empty <code>findbugs-exclude.xml</code> file.
  *
  * @author Philip Helger
  */

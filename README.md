@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Mon Dec 14 22:43:26 CET 2015):
+Current list of all projects (as of Tue Jan 19 09:09:33 CET 2016):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5
 
@@ -37,7 +37,7 @@ Current list of all projects (as of Mon Dec 14 22:43:26 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.1
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -101,9 +101,9 @@ Current list of all projects (as of Mon Dec 14 22:43:26 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.0.0
+ * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.0.0
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 1.3.0
 
@@ -161,7 +161,7 @@ Current list of all projects (as of Mon Dec 14 22:43:26 CET 2015):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
- * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 1.2.0
+ * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 1.2.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-dirindex-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-dirindex-maven-plugin)
@@ -435,6 +435,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical)
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-as4](https://github.com/phax/ph-as4)
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
@@ -444,6 +447,9 @@ Current list of all unreleased projects:
  * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4)
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons)
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-locales](https://github.com/phax/ph-locales)
 
    [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
