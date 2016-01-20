@@ -17,11 +17,15 @@
 package com.helger.meta.project;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
 
 import javax.annotation.Nonnegative;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.helger.commons.collection.CollectionHelper;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.commons.io.resource.IReadableResource;
 import com.helger.commons.microdom.IMicroDocument;
@@ -69,6 +73,12 @@ public final class ProjectList
   public static Iterable <IProject> getAllProjects ()
   {
     return s_aName2Project.values ();
+  }
+
+  @Nullable
+  public static List <IProject> getAllProjects (@Nonnull final Predicate <IProject> aFilter)
+  {
+    return CollectionHelper.getAll (s_aName2Project.values (), aFilter);
   }
 
   @Nonnegative

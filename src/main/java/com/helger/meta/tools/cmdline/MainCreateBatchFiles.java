@@ -17,7 +17,6 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Nonnull;
@@ -40,10 +39,9 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
   private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
                                         @Nonnull @Nonempty final String sBatchFileName)
   {
-    final List <IProject> aProjects = new ArrayList <> ();
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isNestedProject ())
-        aProjects.add (aProject);
+    final List <IProject> aProjects = ProjectList.getAllProjects (aProject -> aProject.isBuildInProject () &&
+                                                                              !aProject.isDeprecated () &&
+                                                                              !aProject.isNestedProject ());
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);
@@ -54,7 +52,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
          .append (aProject.getProjectName ())
          .append (" [")
          .append (nIndex)
-         .append ("/")
+         .append ('/')
          .append (aProjects.size ())
          .append ("]\ncd ")
          .append (aProject.getFullBaseDirName ())
@@ -66,13 +64,20 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
       ++nIndex;
     }
     aSB.append ("goto end\n");
+
+    nIndex = 1;
     for (final IProject aProject : aProjects)
     {
       aSB.append (':')
          .append (getBatchLabel ("error", aProject))
          .append ("\necho .\necho Error building ")
          .append (aProject.getProjectName ())
-         .append ("\ngoto error\n");
+         .append (" [")
+         .append (nIndex)
+         .append ('/')
+         .append (aProjects.size ())
+         .append ("]\ngoto error\n");
+      ++nIndex;
     }
     aSB.append (BATCH_FOOTER);
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
