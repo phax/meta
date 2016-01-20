@@ -37,14 +37,14 @@ import com.helger.meta.project.IProject;
 public abstract class AbstractProjectMain
 {
   public static final String BATCH_HEADER = "@echo off\n" + "rem This files is generated - DO NOT EDIT\n";
-  public static final String BATCH_FOOTER = "goto end\n"
-                                            + ":error\n"
-                                            + "echo An error occured!!!\n"
-                                            + "pause\n"
-                                            + "goto exit\n"
-                                            + ":end\n"
-                                            + "echo Successfully done\n"
-                                            + ":exit\n";
+  public static final String BATCH_FOOTER = "goto end\n" +
+                                            ":error\n" +
+                                            "echo An error occured!!!\n" +
+                                            "pause\n" +
+                                            "goto exit\n" +
+                                            ":end\n" +
+                                            "echo Successfully done\n" +
+                                            ":exit\n";
   public static final Charset BATCH_CHARSET = CCharset.CHARSET_ISO_8859_1_OBJ;
 
   protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
@@ -69,7 +69,7 @@ public abstract class AbstractProjectMain
   }
 
   @Nonnegative
-  protected static int getWarnCount ()
+  protected static final int getWarnCount ()
   {
     return s_nWarnCount;
   }
@@ -77,5 +77,12 @@ public abstract class AbstractProjectMain
   protected static final void _info (@Nonnull final IProject aProject, @Nonnull final String sMsg)
   {
     s_aLogger.info (_getLogPrefix (aProject) + sMsg);
+  }
+
+  @Nonnull
+  @Nonempty
+  protected static final String getBatchLabel (@Nonnull final String sPrefix, @Nonnull final IProject aProject)
+  {
+    return sPrefix + "-" + aProject.getProjectName ();
   }
 }

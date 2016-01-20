@@ -37,7 +37,8 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
-  private static void _createBatchFile (@Nonnull @Nonempty final String sCommand, @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
+                                        @Nonnull @Nonempty final String sBatchFileName)
   {
     final List <IProject> aProjects = new ArrayList <> ();
     for (final IProject aProject : ProjectList.getAllProjects ())
@@ -59,14 +60,26 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
          .append (aProject.getFullBaseDirName ())
          .append ("\n")
          .append (sCommand)
-         .append ("\nif errorlevel 1 goto error\ncd ..\n");
+         .append ("\nif errorlevel 1 goto ")
+         .append (getBatchLabel ("error", aProject))
+         .append ("\ncd ..\n");
       ++nIndex;
+    }
+    aSB.append ("goto end\n");
+    for (final IProject aProject : aProjects)
+    {
+      aSB.append (':')
+         .append (getBatchLabel ("error", aProject))
+         .append ("\necho .\necho Error building ")
+         .append (aProject.getProjectName ())
+         .append ("\ngoto error\n");
     }
     aSB.append (BATCH_FOOTER);
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }
 
-  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand, @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand,
+                                           @Nonnull @Nonempty final String sBatchFileName)
   {
     _createBatchFile ("call mvn " + sMavenCommand + " %*", sBatchFileName);
   }
