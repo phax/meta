@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of Wed Jan 20 10:23:16 CET 2016):
+Current list of all projects (as of Thu Jan 21 11:24:49 CET 2016):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5
 
@@ -65,19 +65,19 @@ Current list of all projects (as of Wed Jan 20 10:23:16 CET 2016):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.0
+ * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.0
+ * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api) 
    [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.0
+ * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.0
+ * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server) 
    [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
@@ -357,7 +357,7 @@ Current list of all projects (as of Wed Jan 20 10:23:16 CET 2016):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings) 
    [![Build Status](https://travis-ci.org/phax/ph-settings.svg?branch=master)](https://travis-ci.org/phax/ph-settings)
- * [ph-smtp](https://github.com/phax/ph-smtp) - Version 2.0.2
+ * [ph-smtp](https://github.com/phax/ph-smtp) - Version 2.0.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp) 
    [![Build Status](https://travis-ci.org/phax/ph-smtp.svg?branch=master)](https://travis-ci.org/phax/ph-smtp)
@@ -435,6 +435,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical)
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [peppol-smp-server/peppol-smp-server-webapp-sqlmin](https://github.com/phax/peppol-smp-server)
+
+   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine)
 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)

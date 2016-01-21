@@ -165,8 +165,9 @@ public enum EProject implements IProject
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
   PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
   PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
+  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
 
-  PEPPOL_LIME_PARENT_POM (null, "peppol-lime-parent-pom", "peppol-lime", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0"),
+  PEPPOL_LIME_PARENT_POM (null, "peppol-lime-parent-pom", "peppol-lime", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
   PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
