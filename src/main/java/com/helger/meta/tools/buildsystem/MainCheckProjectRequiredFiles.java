@@ -115,6 +115,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
       {
         _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
+        _checkFileContains (aProject, ".travis.yml", "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
 
         // No SNAPSHOT deployment for applications
         if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
