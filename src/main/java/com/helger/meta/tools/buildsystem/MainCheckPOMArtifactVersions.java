@@ -18,6 +18,7 @@ package com.helger.meta.tools.buildsystem;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -34,6 +35,7 @@ import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -50,6 +52,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
   private static final String PARENT_POM_VERSION = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
+  private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 
   @Nonnull
   @Nonempty
@@ -76,7 +79,13 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
-    return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
+    return PARENT_POM_GROUPID.equals (sGroupID) || "com.helger.maven".equals (sGroupID);
+  }
+
+  private static boolean _isSnapshot (final String sVersion)
+  {
+    return sVersion.endsWith (SUFFIX_SNAPSHOT) ||
+           RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", Pattern.CASE_INSENSITIVE, sVersion);
   }
 
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
@@ -229,10 +238,19 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           // Check if the current artefact is in the "com.helger" group
           final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
                                                                           "groupId");
+          final String sArtifactID = aElement.getTextContentTrimmed ();
+          // Version is optional e.g. when dependencyManagement is used
+          String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "version");
+          if (sVersion != null && sVersion.contains ("$"))
+          {
+            // Try to resolve through properties. May be null if properties
+            // are in the parent POM
+            sVersion = aProperties.get (sVersion);
+          }
+
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!
-            final String sArtifactID = aElement.getTextContentTrimmed ();
             final IProject eReferencedProject = ProjectList.getProjectOfName (sArtifactID);
             if (eReferencedProject == null)
             {
@@ -243,32 +261,21 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (eReferencedProject.isDeprecated ())
                 _warn (aProject, sArtifactID + ": is deprecated!");
 
-              // Version is optional e.g. when dependencyManagement is used
-              String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                        "version");
-
-              if (sVersion != null && sVersion.contains ("$"))
-              {
-                // Try to resolve through properties. May be null if properties
-                // are in the parent POM
-                sVersion = aProperties.get (sVersion);
-              }
-
               if (sVersion != null)
               {
-                final boolean bIsSnapshot = sVersion.endsWith ("-SNAPSHOT") ||
-                                            RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", sVersion);
+                final boolean bIsSnapshot = _isSnapshot (sVersion);
                 if (eReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
-                  final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion, "-SNAPSHOT")
+                  final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion,
+                                                                                                  SUFFIX_SNAPSHOT)
                                                                           : sVersion);
                   if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
                     _warn (aProject,
                            sArtifactID +
-                                     ":" +
+                                     ": " +
                                      sVersion +
                                      " is out of date. The latest version is " +
                                      eReferencedProject.getLastPublishedVersionString ());
@@ -280,7 +287,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                       if (bIsSnapshot)
                         _warn (aProject,
                                sArtifactID +
-                                         ":" +
+                                         ": " +
                                          sVersion +
                                          " is out of date. The latest version is " +
                                          eReferencedProject.getLastPublishedVersionString ());
@@ -314,10 +321,47 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
           }
           else
-          {
-            if (false)
-              _warn (aProject, "Unsuported group " + sGroupID);
-          }
+            if (sGroupID != null && sArtifactID != null && sVersion != null)
+            {
+              final EExternalDependency eExternalDep = EExternalDependency.find (sGroupID, sArtifactID);
+              if (eExternalDep != null)
+              {
+                // Referenced project published at least once
+                final Version aVersionInFile = new Version (sVersion);
+                if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
+                {
+                  // Version in file lower than known
+                  _warn (aProject,
+                         sArtifactID +
+                                   ": " +
+                                   sVersion +
+                                   " is out of date. The latest version is " +
+                                   eExternalDep.getLastPublishedVersionString ());
+                }
+                else
+                  if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
+                  {
+                    // Version in file greater than in referenced project
+                    _warn (aProject,
+                           "Referenced version " +
+                                     sVersion +
+                                     " of '" +
+                                     eExternalDep.getDisplayName () +
+                                     "' is newer than the latest known version " +
+                                     eExternalDep.getLastPublishedVersionString ());
+                  }
+              }
+              else
+              {
+                // Neither my project nor a known external
+                if (true &&
+                    !sGroupID.startsWith ("org.apache.maven") &&
+                    !sGroupID.startsWith ("org.codehaus.mojo") &&
+                    !sArtifactID.contains ("-maven-") &&
+                    !sArtifactID.startsWith ("maven-"))
+                  _warn (aProject, "Unsuported artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
+              }
+            }
         }
       }
   }

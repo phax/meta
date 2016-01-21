@@ -90,10 +90,9 @@ public final class ProjectList
   @Nullable
   public static IProject getProjectOfDir (@Nullable final String sDirName)
   {
-    if (StringHelper.hasText (sDirName))
-      for (final IProject aProject : s_aName2Project.values ())
-        if (aProject.getBaseDir ().getName ().equals (sDirName))
-          return aProject;
-    return null;
+    if (StringHelper.hasNoText (sDirName))
+      return null;
+
+    return CollectionHelper.findFirst (s_aName2Project.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
   }
 }
