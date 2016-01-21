@@ -32,169 +32,224 @@ import com.helger.meta.CMeta;
  */
 public enum EProject implements IProject
 {
-  PH_PARENT_POM (null, "parent-pom", "ph-parent-pom", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.4.1"),
+  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.4.1"),
 
-  PH_LOCALES_PARENT_POM (null, "ph-locales-parent-pom", "ph-locales", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_LOCALES_PARENT_POM.getLastPublishedVersionString ()),
-  PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_LOCALES_PARENT_POM.getLastPublishedVersionString ()),
+  PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
+  PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
 
-  JCODEMODEL (null, "jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.2"),
+  JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.2"),
 
-  PH_JAVACC_MAVEN_PLUGIN (null, "ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
+  PH_JAVACC_MAVEN_PLUGIN ("ph-javacc-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.8.0"),
 
-  PH_COMMONS_PARENT_POM (null, "ph-commons-parent-pom", "ph-commons", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.2.3"),
-  PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_JAXB (PH_COMMONS_PARENT_POM, "ph-jaxb", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "6.2.3"),
+  PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
+  PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_JAXB (PH_COMMONS_PARENT_POM, "ph-jaxb", EProjectType.JAVA_LIBRARY),
 
-  META (null, "meta", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  META ("meta", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
 
-  PH_CHARSET (null, "ph-charset", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
+  PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
 
-  PH_MATH (null, "ph-math", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
+  PH_MATH ("ph-math", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
 
-  PH_DATETIME_PARENT_POM (null, "ph-datetime-parent-pom", "ph-datetime", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.2.1"),
-  PH_DATETIME (PH_DATETIME_PARENT_POM, "ph-datetime", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DATETIME_PARENT_POM.getLastPublishedVersionString ()),
-  PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DATETIME_PARENT_POM.getLastPublishedVersionString ()),
+  PH_DATETIME_PARENT_POM ("ph-datetime-parent-pom", "ph-datetime", EHasPages.FALSE, EHasWiki.FALSE, "4.2.1"),
+  PH_DATETIME (PH_DATETIME_PARENT_POM, "ph-datetime", EProjectType.JAVA_LIBRARY),
+  PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY),
 
-  PH_BUILDINFO_MAVEN_PLUGIN (null, "ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.3.0"),
-  PH_DIRINDEX_MAVEN_PLUGIN (null, "ph-dirindex-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
-  PH_JAXB22_PLUGIN (null, "ph-jaxb22-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.6"),
-  PH_JSCOMPRESS_MAVEN_PLUGIN (null, "ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.1.1"),
-  PH_WSIMPORT_PLUGIN (null, "ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8.1"),
+  PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.3.0"),
+  PH_DIRINDEX_MAVEN_PLUGIN ("ph-dirindex-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1"),
+  PH_JAXB22_PLUGIN ("ph-jaxb22-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.6"),
+  PH_JSCOMPRESS_MAVEN_PLUGIN ("ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.1.1"),
+  PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8.1"),
 
-  PH_DB_PARENT_POM (null, "ph-db-parent-pom", "ph-db", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
-  PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DB_PARENT_POM.getLastPublishedVersionString ()),
-  PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DB_PARENT_POM.getLastPublishedVersionString ()),
-  PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_DB_PARENT_POM.getLastPublishedVersionString ()),
+  PH_DB_PARENT_POM ("ph-db-parent-pom", "ph-db", EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
+  PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY),
+  PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
+  PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY),
 
-  PH_WEB (null, "ph-web", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "7.1.0"),
+  PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "7.1.0"),
 
-  PH_JSON (null, "ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
+  PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
 
-  PH_CSS (null, "ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.1"),
-  PH_CSSCOMPRESS_MAVEN_PLUGIN (null, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.5.1"),
+  PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.1"),
+  PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.5.1"),
 
-  PH_HTML_PARENT_POM (null, "ph-html-parent-pom", "ph-html", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "5.1.1"),
-  PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
-  PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
-  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_HTML_PARENT_POM.getLastPublishedVersionString ()),
+  PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "5.1.1"),
+  PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),
+  PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY),
+  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY),
 
-  PH_MASTERDATA_PARENT_POM (null, "ph-masterdata-parent-pom", "ph-masterdata", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.1.0"),
-  PH_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-validation", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_MASTERDATA_PARENT_POM.getLastPublishedVersionString ()),
-  PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_MASTERDATA_PARENT_POM.getLastPublishedVersionString ()),
-  PH_MASTERDATA_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-masterdata-validation", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_MASTERDATA_PARENT_POM.getLastPublishedVersionString ()),
+  PH_MASTERDATA_PARENT_POM ("ph-masterdata-parent-pom", "ph-masterdata", EHasPages.FALSE, EHasWiki.FALSE, "4.1.0"),
+  PH_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-validation", EProjectType.JAVA_LIBRARY),
+  PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
+  PH_MASTERDATA_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-masterdata-validation", EProjectType.JAVA_LIBRARY),
 
-  PH_SCHEDULE (null, "ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0"),
-  PH_SETTINGS (null, "ph-settings", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
-  PH_SMTP (null, "ph-smtp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.3"),
+  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0"),
+  PH_SETTINGS ("ph-settings", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
+  PH_SMTP ("ph-smtp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.3"),
 
-  PH_OTON_PARENT_POM (null, "ph-oton-parent-pom", "ph-oton", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "6.2.0"),
-  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_BOOTSTRAP3_STUB (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-stub", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_BOOTSTRAP3_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-uictrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_CONNECT (PH_OTON_PARENT_POM, "ph-oton-connect", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_CORE (PH_OTON_PARENT_POM, "ph-oton-core", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_EXCHANGE (PH_OTON_PARENT_POM, "ph-oton-exchange", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_SECURITY (PH_OTON_PARENT_POM, "ph-oton-security", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_OTON_PARENT_POM.getLastPublishedVersionString ()),
+  PH_OTON_PARENT_POM ("ph-oton-parent-pom", "ph-oton", EHasPages.FALSE, EHasWiki.FALSE, "6.2.0"),
+  PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY),
+  PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY),
+  PH_OTON_BOOTSTRAP3_PAGES (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-pages", EProjectType.JAVA_LIBRARY),
+  PH_OTON_BOOTSTRAP3_STUB (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-stub", EProjectType.JAVA_LIBRARY),
+  PH_OTON_BOOTSTRAP3_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-bootstrap3-uictrls", EProjectType.JAVA_LIBRARY),
+  PH_OTON_CONNECT (PH_OTON_PARENT_POM, "ph-oton-connect", EProjectType.JAVA_LIBRARY),
+  PH_OTON_CORE (PH_OTON_PARENT_POM, "ph-oton-core", EProjectType.JAVA_LIBRARY),
+  PH_OTON_EXCHANGE (PH_OTON_PARENT_POM, "ph-oton-exchange", EProjectType.JAVA_LIBRARY),
+  PH_OTON_SECURITY (PH_OTON_PARENT_POM, "ph-oton-security", EProjectType.JAVA_LIBRARY),
+  PH_OTON_TINYMCE4 (PH_OTON_PARENT_POM, "ph-oton-tinymce4", EProjectType.JAVA_LIBRARY),
+  PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY),
+  PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY),
 
   // PH_FONTS (null, "ph-fonts", EProjectType.JAVA_LIBRARY, EHasPages.FALSE,
   // EHasWiki.FALSE, "2.0.0"),
-  PH_FONTS_PARENT_POM (null, "ph-fonts-parent-pom", "ph-fonts", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0"),
-  PH_FONTS_API (PH_FONTS_PARENT_POM, "ph-fonts-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_ALEGREYA_SANS (PH_FONTS_PARENT_POM, "ph-fonts-alegreya-sans", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_ANAHEIM (PH_FONTS_PARENT_POM, "ph-fonts-anaheim", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_EXO2 (PH_FONTS_PARENT_POM, "ph-fonts-exo2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_LATO2 (PH_FONTS_PARENT_POM, "ph-fonts-lato2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_OPEN_SANS (PH_FONTS_PARENT_POM, "ph-fonts-open-sans", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
-  PH_FONTS_ROBOTO (PH_FONTS_PARENT_POM, "ph-fonts-roboto", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_FONTS_PARENT_POM.getLastPublishedVersionString ()),
+  PH_FONTS_PARENT_POM ("ph-fonts-parent-pom", "ph-fonts", EHasPages.FALSE, EHasWiki.FALSE, "2.1.0"),
+  PH_FONTS_API (PH_FONTS_PARENT_POM, "ph-fonts-api", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_ALEGREYA_SANS (PH_FONTS_PARENT_POM, "ph-fonts-alegreya-sans", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_ANAHEIM (PH_FONTS_PARENT_POM, "ph-fonts-anaheim", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_EXO2 (PH_FONTS_PARENT_POM, "ph-fonts-exo2", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_LATO2 (PH_FONTS_PARENT_POM, "ph-fonts-lato2", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_OPEN_SANS (PH_FONTS_PARENT_POM, "ph-fonts-open-sans", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_ROBOTO (PH_FONTS_PARENT_POM, "ph-fonts-roboto", EProjectType.JAVA_LIBRARY),
 
-  PH_EVENTS (null, "ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
-  PH_PDF_LAYOUT (null, "ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.4"),
-  PH_POI (null, "ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
-  PH_XMLDSIG (null, "ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
+  PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0"),
+  PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.4"),
+  PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
+  PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
 
-  PH_SCHEMATRON_PARENT_POM (null, "ph-schematron-parent-pom", "ph-schematron", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
-  PH_SCH2XSLT_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, PH_SCHEMATRON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_SCHEMATRON (PH_SCHEMATRON_PARENT_POM, "ph-schematron", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, PH_SCHEMATRON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_SCHEMATRON_PARENT_POM.getLastPublishedVersionString ()),
-  PH_SCHEMATRON_VALIDATOR (PH_SCHEMATRON_PARENT_POM, "ph-schematron-validator", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_SCHEMATRON_PARENT_POM.getLastPublishedVersionString ()),
+  PH_SCHEMATRON_PARENT_POM ("ph-schematron-parent-pom", "ph-schematron", EHasPages.TRUE, EHasWiki.FALSE, "3.0.1"),
+  PH_SCH2XSLT_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN),
+  PH_SCHEMATRON (PH_SCHEMATRON_PARENT_POM, "ph-schematron", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_VALIDATOR (PH_SCHEMATRON_PARENT_POM, "ph-schematron-validator", EProjectType.JAVA_LIBRARY),
 
-  PH_UBL_PARENT_POM (null, "ph-ubl-parent-pom", "ph-ubl", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.5.0"),
-  PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL_JAXB_PLUGIN (PH_UBL_PARENT_POM, "ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL_TESTFILES (PH_UBL_PARENT_POM, "ph-ubl-testfiles", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL20 (PH_UBL_PARENT_POM, "ph-ubl20", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL20_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl20-codelists", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL21 (PH_UBL_PARENT_POM, "ph-ubl21", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
-  PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PH_UBL_PARENT_POM.getLastPublishedVersionString ()),
+  PH_UBL_PARENT_POM ("ph-ubl-parent-pom", "ph-ubl", EHasPages.FALSE, EHasWiki.FALSE, "4.5.0"),
+  PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
+  PH_UBL_JAXB_PLUGIN (PH_UBL_PARENT_POM, "ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN),
+  PH_UBL_TESTFILES (PH_UBL_PARENT_POM, "ph-ubl-testfiles", EProjectType.JAVA_LIBRARY),
+  PH_UBL20 (PH_UBL_PARENT_POM, "ph-ubl20", EProjectType.JAVA_LIBRARY),
+  PH_UBL20_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl20-codelists", EProjectType.JAVA_LIBRARY),
+  PH_UBL21 (PH_UBL_PARENT_POM, "ph-ubl21", EProjectType.JAVA_LIBRARY),
+  PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
 
-  PH_EBINTERFACE (null, "ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "4.0.2"),
-  PH_GENERICODE (null, "ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
-  PH_SBDH (null, "ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
+  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "4.0.2"),
+  PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1"),
+  PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1"),
 
-  AS2_LIB_PARENT_POM (null, "as2-lib-parent-pom", "as2-lib", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "2.2.5"),
-  AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, AS2_LIB_PARENT_POM.getLastPublishedVersionString ()),
-  AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, AS2_LIB_PARENT_POM.getLastPublishedVersionString ()),
-  AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, AS2_LIB_PARENT_POM.getLastPublishedVersionString ()),
+  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "2.2.5"),
+  AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
+  AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
+  AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
 
-  AS2_SERVER (null, "as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.5"),
+  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.5"),
 
-  AS2_PEPPOL_CLIENT (null, "as2-peppol-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.4"),
-  AS2_PEPPOL_SERVLET (null, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0"),
-  AS2_PEPPOL_SERVER (null, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  AS2_PEPPOL_CLIENT ("as2-peppol-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.4"),
+  AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0"),
+  AS2_PEPPOL_SERVER ("as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
   ERECHNUNG_WS_CLIENT (null, "webservice-client", "erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
 
-  PEPPOL_COMMONS_PARENT_POM (null, "peppol-commons-parent-pom", "peppol-commons", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "4.3.3"),
-  PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SML_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_COMMONS_PARENT_POM.getLastPublishedVersionString ()),
+  PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom", "peppol-commons", EHasPages.FALSE, EHasWiki.FALSE, "4.3.3"),
+  PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
+  PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SML_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY),
 
-  PEPPOL_VALIDATION_ENGINE_PARENT_POM (null, "peppol-validation-engine-parent-pom", "peppol-validation-engine", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0"),
+  PEPPOL_VALIDATION_ENGINE_PARENT_POM ("peppol-validation-engine-parent-pom", "peppol-validation-engine", EHasPages.FALSE, EHasWiki.FALSE, null),
+  PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, "1.0.0"),
 
-  PEPPOL_SMP_SERVER_PARENT_POM (null, "peppol-smp-server-parent-pom", "peppol-smp-server", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.TRUE, "4.1.0"),
-  PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_SMP_SERVER_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom", "peppol-smp-server", EHasPages.FALSE, EHasWiki.TRUE, "4.1.0"),
+  PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, null),
 
-  PEPPOL_LIME_PARENT_POM (null, "peppol-lime-parent-pom", "peppol-lime", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
-  PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_LIME_PARENT_POM.getLastPublishedVersionString ()),
+  PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
+  PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
+  PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY),
+  PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
 
-  PEPPOL_DIRECTORY_PARENT_POM (null, "peppol-directory-parent-pom", "peppol-directory", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PEPPOL_DIRECTORY_API (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_DIRECTORY_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_DIRECTORY_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_DIRECTORY_PARENT_POM.getLastPublishedVersionString ()),
-  PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, PEPPOL_DIRECTORY_PARENT_POM.getLastPublishedVersionString ()),
+  PEPPOL_DIRECTORY_PARENT_POM ("peppol-directory-parent-pom", "peppol-directory", EHasPages.FALSE, EHasWiki.FALSE, null),
+  PEPPOL_DIRECTORY_API (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-api", EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
 
-  PH_AS4_PARENT_POM (null, "ph-as4-parent-pom", "ph-as4", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY, null),
+  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION, null),
 
-  PH_WSDL_GEN (null, "ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_XPATH2 (null, "ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
-  BOZOO (null, "bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
-  PEPPOL_PRACTICAL (null, "peppol-practical", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null);
+  BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
+  PEPPOL_PRACTICAL ("peppol-practical", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null);
 
   private final SimpleProject m_aProject;
 
-  private EProject (@Nullable final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull final EProjectType eProjectType,
+  /**
+   * Constructor for parent poms
+   *
+   * @param eParentProject
+   * @param sProjectName
+   *        Project name as stated in the POM
+   * @param sProjectBaseDirName
+   *        Project base directory name
+   * @param eHasPagesProject
+   * @param eHasWikiProject
+   * @param sLastPublishedVersion
+   */
+  private EProject (@Nonnull @Nonempty final String sProjectName,
+                    @Nonnull @Nonempty final String sProjectBaseDirName,
                     @Nonnull final EHasPages eHasPagesProject,
                     @Nonnull final EHasWiki eHasWikiProject,
+                    @Nullable final String sLastPublishedVersion)
+  {
+    this (null,
+          sProjectName,
+          sProjectBaseDirName,
+          EProjectType.MAVEN_POM,
+          eHasPagesProject,
+          eHasWikiProject,
+          sLastPublishedVersion);
+  }
+
+  /**
+   * Constructor for child projects where project name equals directory name and
+   * the last published version is identical to the one of the parent project
+   *
+   * @param eParentProject
+   *        Parent project. May not be <code>null</code>.
+   * @param sProjectName
+   *        Project name
+   * @param eProjectType
+   *        Project type
+   */
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType)
+  {
+    this (eParentProject, sProjectName, eProjectType, eParentProject.getLastPublishedVersionString ());
+  }
+
+  /**
+   * Constructor for child projects where project name equals directory name
+   *
+   * @param eParentProject
+   *        Parent project. May not be <code>null</code>.
+   * @param sProjectName
+   *        Project name
+   * @param eProjectType
+   *        Project type
+   * @param sLastPublishedVersion
+   *        Last published version
+   */
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType,
                     @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
@@ -202,11 +257,54 @@ public enum EProject implements IProject
           sProjectName,
           sProjectName,
           eProjectType,
-          eHasPagesProject,
-          eHasWikiProject,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
           sLastPublishedVersion);
   }
 
+  /**
+   * Constructor for standalone projects (without a parent POM) where project
+   * name and directory name are identical.
+   *
+   * @param sProjectName
+   *        Project name and directory name
+   * @param eProjectType
+   *        Project type
+   * @param eHasPagesProject
+   *        pages project present?
+   * @param eHasWikiProject
+   *        wiki project present?
+   * @param sLastPublishedVersion
+   *        Last published version
+   */
+  private EProject (@Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType,
+                    @Nonnull final EHasPages eHasPagesProject,
+                    @Nonnull final EHasWiki eHasWikiProject,
+                    @Nullable final String sLastPublishedVersion)
+  {
+    // Project name equals project base directory name
+    this (null, sProjectName, sProjectName, eProjectType, eHasPagesProject, eHasWikiProject, sLastPublishedVersion);
+  }
+
+  /**
+   * Most generic constructor.
+   * 
+   * @param eParentProject
+   *        Parent project. May be <code>null</code>.
+   * @param sProjectName
+   *        Project name as stated in the POM.xml
+   * @param sProjectBaseDirName
+   *        Project base directory name
+   * @param eProjectType
+   *        Project type
+   * @param eHasPagesProject
+   *        Has pages?
+   * @param eHasWikiProject
+   *        Has wiki?
+   * @param sLastPublishedVersion
+   *        Last published version number
+   */
   private EProject (@Nullable final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull @Nonempty final String sProjectBaseDirName,
