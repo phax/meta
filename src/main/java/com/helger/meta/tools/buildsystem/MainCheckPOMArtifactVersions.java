@@ -352,13 +352,18 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   final Version aVersionInFile = new Version (sVersion);
                   if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
                   {
-                    // Version in file lower than known
-                    _warn (aProject,
-                           sArtifactID +
-                                     ": " +
-                                     sVersion +
-                                     " is out of date. The latest version is " +
-                                     eExternalDep.getLastPublishedVersionString ());
+                    // Avoid warnings for components that require a later JDK
+                    if (eExternalDep.getMinimumJDKVersion ()
+                                    .isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()))
+                    {
+                      // Version in file lower than known
+                      _warn (aProject,
+                             sArtifactID +
+                                       ": " +
+                                       sVersion +
+                                       " is out of date. The latest version is " +
+                                       eExternalDep.getLastPublishedVersionString ());
+                    }
                   }
                   else
                     if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
