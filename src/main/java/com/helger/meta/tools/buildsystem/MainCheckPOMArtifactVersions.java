@@ -236,9 +236,20 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         if (aElement.getLocalName ().equals ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
-          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                          "groupId");
-          final String sArtifactID = aElement.getTextContentTrimmed ();
+          String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "groupId");
+          if (sGroupID != null && sGroupID.contains ("$"))
+          {
+            // Try to resolve through properties. May be null if properties
+            // are in the parent POM
+            sGroupID = aProperties.get (sGroupID);
+          }
+          String sArtifactID = aElement.getTextContentTrimmed ();
+          if (sArtifactID != null && sArtifactID.contains ("$"))
+          {
+            // Try to resolve through properties. May be null if properties
+            // are in the parent POM
+            sArtifactID = aProperties.get (sArtifactID);
+          }
           // Version is optional e.g. when dependencyManagement is used
           String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "version");
           if (sVersion != null && sVersion.contains ("$"))
@@ -323,6 +334,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           else
             if (sGroupID != null && sArtifactID != null && sVersion != null)
             {
+              // Check for known external deps
               final EExternalDependency eExternalDep = EExternalDependency.find (sGroupID, sArtifactID);
               if (eExternalDep != null)
               {
@@ -354,7 +366,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               else
               {
                 // Neither my project nor a known external
-                if (true &&
+                if (false &&
                     !sGroupID.startsWith ("org.apache.maven") &&
                     !sGroupID.startsWith ("org.codehaus.mojo") &&
                     !sArtifactID.contains ("-maven-") &&
