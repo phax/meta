@@ -338,30 +338,41 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               final EExternalDependency eExternalDep = EExternalDependency.find (sGroupID, sArtifactID);
               if (eExternalDep != null)
               {
-                // Referenced project published at least once
-                final Version aVersionInFile = new Version (sVersion);
-                if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
+                if (eExternalDep.isDeprecated ())
                 {
-                  // Version in file lower than known
                   _warn (aProject,
                          sArtifactID +
-                                   ": " +
-                                   sVersion +
-                                   " is out of date. The latest version is " +
-                                   eExternalDep.getLastPublishedVersionString ());
+                                   " is deprecated - use " +
+                                   eExternalDep.getReplacement ().getDisplayNameWithVersion () +
+                                   " instead");
                 }
                 else
-                  if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
+                {
+                  // Referenced project published at least once
+                  final Version aVersionInFile = new Version (sVersion);
+                  if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
                   {
-                    // Version in file greater than in referenced project
+                    // Version in file lower than known
                     _warn (aProject,
-                           "Referenced version " +
+                           sArtifactID +
+                                     ": " +
                                      sVersion +
-                                     " of '" +
-                                     eExternalDep.getDisplayName () +
-                                     "' is newer than the latest known version " +
+                                     " is out of date. The latest version is " +
                                      eExternalDep.getLastPublishedVersionString ());
                   }
+                  else
+                    if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
+                    {
+                      // Version in file greater than in referenced project
+                      _warn (aProject,
+                             "Referenced version " +
+                                       sVersion +
+                                       " of '" +
+                                       eExternalDep.getDisplayName () +
+                                       "' is newer than the latest known version " +
+                                       eExternalDep.getLastPublishedVersionString ());
+                    }
+                }
               }
               else
               {

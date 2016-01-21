@@ -66,6 +66,9 @@ public interface IProject
   File getPOMFile ();
 
   @Nonnull
+  EJDK getMinimumJDKVersion ();
+
+  @Nonnull
   @Nonempty
   String getMavenGroupID ();
 

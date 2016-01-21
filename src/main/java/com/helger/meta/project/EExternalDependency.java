@@ -40,6 +40,8 @@ public enum EExternalDependency
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.1"),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.0"),
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", "2.2.10"),
+  JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248"),
+  JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1"),
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // 1.7 since 2.7
@@ -87,7 +89,7 @@ public enum EExternalDependency
   private final String m_sArticfactID;
   private final String m_sVersion;
   private final Version m_aVersion;
-  private EJDK m_eMinJDK;
+  private final EJDK m_eMinJDK;
 
   private EExternalDependency (@Nonnull @Nonempty final String sGroupID,
                                @Nonnull @Nonempty final String sArticfactID,
@@ -136,9 +138,32 @@ public enum EExternalDependency
   }
 
   @Nonnull
+  @Nonempty
+  public String getDisplayNameWithVersion ()
+  {
+    return getDisplayName () + "::" + m_sVersion;
+  }
+
+  @Nonnull
   public EJDK getMinimumJDKVersion ()
   {
     return m_eMinJDK;
+  }
+
+  @Nullable
+  public EExternalDependency getReplacement ()
+  {
+    switch (this)
+    {
+      case JAXWS_MAVEN_PLUGIN_OLD:
+        return JAXWS_MAVEN_PLUGIN;
+    }
+    return null;
+  }
+
+  public boolean isDeprecated ()
+  {
+    return getReplacement () != null;
   }
 
   @Nullable

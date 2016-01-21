@@ -43,6 +43,7 @@ public class SimpleProject implements IProject
   private final boolean m_bHasWikiProject;
   private final String m_sLastPublishedVersion;
   private final Version m_aLastPublishedVersion;
+  private final EJDK m_eMinJDK;
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
 
@@ -53,7 +54,8 @@ public class SimpleProject implements IProject
                         @Nonnull final EIsDeprecated eIsDeprecated,
                         @Nonnull final EHasPages eHasPagesProject,
                         @Nonnull final EHasWiki eHasWikiProject,
-                        @Nullable final String sLastPublishedVersion)
+                        @Nullable final String sLastPublishedVersion,
+                        @Nonnull final EJDK eMinJDK)
   {
     ValueEnforcer.notEmpty (sProjectName, "ProjectName");
     ValueEnforcer.notNull (eProjectType, "ProjectType");
@@ -61,6 +63,7 @@ public class SimpleProject implements IProject
     ValueEnforcer.notNull (eIsDeprecated, "IsDeprecated");
     ValueEnforcer.notNull (eHasPagesProject, "HasPagesProject");
     ValueEnforcer.notNull (eHasWikiProject, "HasWikiProject");
+    ValueEnforcer.notNull (eMinJDK, "MinJDK");
 
     m_aParentProject = aParentProject;
     m_sProjectName = sProjectName;
@@ -68,12 +71,14 @@ public class SimpleProject implements IProject
     m_aBaseDir = aBaseDir;
     if (!m_aBaseDir.exists () && eIsDeprecated.isFalse ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
-    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") + aBaseDir.getName ();
+    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") +
+                         aBaseDir.getName ();
     m_bIsDeprecated = eIsDeprecated.isTrue ();
     m_bHasPagesProject = eHasPagesProject.isTrue ();
     m_bHasWikiProject = eHasWikiProject.isTrue ();
     m_sLastPublishedVersion = sLastPublishedVersion;
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : new Version (sLastPublishedVersion);
+    m_eMinJDK = eMinJDK;
 
     String sGroupID = null;
     String sArtifactID = null;
@@ -156,6 +161,11 @@ public class SimpleProject implements IProject
   }
 
   @Nonnull
+  public EJDK getMinimumJDKVersion ()
+  {
+    return m_eMinJDK;
+  }
+
   @Nonempty
   public String getMavenGroupID ()
   {

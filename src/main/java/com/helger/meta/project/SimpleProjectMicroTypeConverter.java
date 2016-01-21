@@ -36,6 +36,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   private static final String ATTR_HAS_PAGES = "haspages";
   private static final String ATTR_HAS_WIKI = "haswiki";
   private static final String ATTR_LAST_PUBLISHED_VERSION = "lastpubversion";
+  private static final String ATTR_MIN_JDK_VERSION = "minjdk";
 
   @Nonnull
   public IMicroElement convertToMicroElement (@Nonnull final Object aObject,
@@ -51,6 +52,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     ret.setAttribute (ATTR_HAS_PAGES, aPrice.hasPagesProject ());
     ret.setAttribute (ATTR_HAS_WIKI, aPrice.hasWikiProject ());
     ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aPrice.getLastPublishedVersionString ());
+    ret.setAttribute (ATTR_MIN_JDK_VERSION, aPrice.getMinimumJDKVersion ().getMajor ());
     return ret;
   }
 
@@ -71,6 +73,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
+    final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION),
+                                                                         -1));
+
     return new SimpleProject ((IProject) null,
                               sProjectName,
                               eProjectType,
@@ -78,6 +83,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               EIsDeprecated.value (bIsDeprecated),
                               EHasPages.value (bHasPages),
                               EHasWiki.value (bHasWiki),
-                              sLastPublishedVersion);
+                              sLastPublishedVersion,
+                              eMinJDK);
   }
 }
