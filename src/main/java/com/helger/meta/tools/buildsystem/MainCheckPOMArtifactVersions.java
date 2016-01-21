@@ -17,6 +17,7 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -335,9 +336,19 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (sGroupID != null && sArtifactID != null && sVersion != null)
             {
               // Check for known external deps
-              final EExternalDependency eExternalDep = EExternalDependency.find (sGroupID, sArtifactID);
-              if (eExternalDep != null)
+              final List <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
+
+              final String sSuffix = aExternalDeps.size () <= 1 ? ""
+                                                                : " for " +
+                                                                  aProject.getMinimumJDKVersion ().getDisplayName ();
+
+              for (final EExternalDependency eExternalDep : aExternalDeps)
               {
+                // Avoid warnings for components that require a later JDK
+                if (!eExternalDep.getMinimumJDKVersion ()
+                                 .isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()))
+                  continue;
+
                 if (eExternalDep.isDeprecated ())
                 {
                   _warn (aProject,
@@ -352,18 +363,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   final Version aVersionInFile = new Version (sVersion);
                   if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
                   {
-                    // Avoid warnings for components that require a later JDK
-                    if (eExternalDep.getMinimumJDKVersion ()
-                                    .isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()))
-                    {
-                      // Version in file lower than known
-                      _warn (aProject,
-                             sArtifactID +
-                                       ": " +
-                                       sVersion +
-                                       " is out of date. The latest version is " +
-                                       eExternalDep.getLastPublishedVersionString ());
-                    }
+                    // Version in file lower than known
+                    _warn (aProject,
+                           sArtifactID +
+                                     ": " +
+                                     sVersion +
+                                     " is out of date. The latest version is " +
+                                     eExternalDep.getLastPublishedVersionString () +
+                                     sSuffix);
                   }
                   else
                     if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
@@ -375,11 +382,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                        " of '" +
                                        eExternalDep.getDisplayName () +
                                        "' is newer than the latest known version " +
-                                       eExternalDep.getLastPublishedVersionString ());
+                                       eExternalDep.getLastPublishedVersionString () +
+                                       sSuffix);
                     }
                 }
+
+                break;
               }
-              else
+
+              if (aExternalDeps.isEmpty ())
               {
                 // Neither my project nor a known external
                 if (false &&

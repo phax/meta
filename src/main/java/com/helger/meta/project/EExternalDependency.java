@@ -1,10 +1,12 @@
 package com.helger.meta.project;
 
+import java.util.List;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.string.StringHelper;
+import com.helger.commons.lang.EnumHelper;
 import com.helger.commons.version.Version;
 
 public enum EExternalDependency
@@ -23,7 +25,8 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "5.4.0"),
-  FINDBUGS_ANNOTATIONS ("com.google.code.findbugs", "annotations", "3.0.1u2"),
+  FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
+  FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.1"),
   H2 ("com.h2database", "h2", "1.4.190"),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.5.4"),
@@ -49,20 +52,23 @@ public enum EExternalDependency
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
-  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.3.7.v20160115", EJDK.JDK8),
-  JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_WEBAPP),
-  JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_WEBAPP),
-  JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_WEBAPP),
-  // New artifact in 9.3!
-  JETTY_JSP ("org.eclipse.jetty", "jetty-jsp", "9.2.14.v20151106", EJDK.JDK7),
+  JETTY_92_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.2.14.v20151106", EJDK.JDK7),
+  JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
+  JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
+  JETTY_93_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.3.7.v20160115", EJDK.JDK8),
+  JETTY_93_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_93_WEBAPP),
+  JETTY_93_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_93_WEBAPP),
+  JETTY_93_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_93_WEBAPP),
   JSCH ("com.jcraft", "jsch", "0.1.53"),
   JSP_API ("javax.servlet.jsp", "jsp-api", "2.2"),
   JUNIT ("junit", "junit", "4.12"),
-  // 1.7 since 2.4
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.5", EJDK.JDK7),
-  LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
-  LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "5.4.0"),
+  LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
+  LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
+  LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
+  LOG4J2_24_CORE ("org.apache.logging.log4j", "log4j-core", "2.5", EJDK.JDK7),
+  LOG4J2_24_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_24_CORE),
+  LOG4J2_24_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_24_CORE),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "5.4.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
@@ -73,7 +79,8 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   RHINO ("org.mozilla", "rhino", "1.7.7"),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-2"),
-  SERVLET_API ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
+  SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
+  SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.1-incubating"),
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.13"),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
@@ -167,12 +174,13 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static EExternalDependency find (@Nullable final String sGroupID, @Nullable final String sArtifactID)
+  public static List <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
-    if (StringHelper.hasText (sGroupID) && StringHelper.hasText (sArtifactID))
-      for (final EExternalDependency e : values ())
-        if (e.m_sGroupID.equals (sGroupID) && e.m_sArticfactID.equals (sArtifactID))
-          return e;
-    return null;
+    final List <EExternalDependency> ret = EnumHelper.findAll (EExternalDependency.class,
+                                                               e -> e.m_sGroupID.equals (sGroupID) &&
+                                                                    e.m_sArticfactID.equals (sArtifactID));
+    // Sort by JDK decsending
+    ret.sort ( (e1, e2) -> e2.getMinimumJDKVersion ().getMajor () - e1.getMinimumJDKVersion ().getMajor ());
+    return ret;
   }
 }

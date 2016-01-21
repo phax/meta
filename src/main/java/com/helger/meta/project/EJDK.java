@@ -23,19 +23,14 @@ public enum EJDK
     return m_nMajor;
   }
 
-  public boolean isEarlierThan (@Nonnull final EJDK eOther)
+  public String getDisplayName ()
   {
-    return m_nMajor < eOther.ordinal ();
-  }
-
-  public boolean isLaterThan (@Nonnull final EJDK eOther)
-  {
-    return m_nMajor > eOther.ordinal ();
+    return "JDK 1." + m_nMajor;
   }
 
   public boolean isCompatibleToRuntimeVersion (@Nonnull final EJDK eRTVersion)
   {
-    return m_nMajor <= eRTVersion.ordinal ();
+    return m_nMajor <= eRTVersion.m_nMajor;
   }
 
   @Nullable
