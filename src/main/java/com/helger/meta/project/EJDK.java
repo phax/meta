@@ -33,6 +33,11 @@ public enum EJDK
     return m_nMajor <= eRTVersion.m_nMajor;
   }
 
+  public boolean isAtLeast8 ()
+  {
+    return m_nMajor >= 8;
+  }
+
   @Nullable
   public static EJDK getFromMajorOrNull (final int nMajor)
   {

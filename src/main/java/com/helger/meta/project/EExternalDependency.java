@@ -59,6 +59,8 @@ public enum EExternalDependency
   JETTY_93_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_93_WEBAPP),
   JETTY_93_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_93_WEBAPP),
   JETTY_93_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_93_WEBAPP),
+  JODA_TIME ("joda-time", "joda-time", "2.9.1"),
+  JDK_TIME ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.53"),
   JSP_API ("javax.servlet.jsp", "jsp-api", "2.2"),
   JUNIT ("junit", "junit", "4.12"),
@@ -158,19 +160,23 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public EExternalDependency getReplacement ()
+  public EExternalDependency getReplacement (@Nonnull final EJDK eJDK)
   {
     switch (this)
     {
       case JAXWS_MAVEN_PLUGIN_OLD:
         return JAXWS_MAVEN_PLUGIN;
+      case JODA_TIME:
+        if (eJDK.isAtLeast8 ())
+          return JDK_TIME;
+        break;
     }
     return null;
   }
 
-  public boolean isDeprecated ()
+  public boolean isDeprecated (@Nonnull final EJDK eJDK)
   {
-    return getReplacement () != null;
+    return getReplacement (eJDK) != null;
   }
 
   @Nullable

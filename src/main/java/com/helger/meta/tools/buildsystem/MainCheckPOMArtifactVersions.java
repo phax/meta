@@ -37,6 +37,7 @@ import com.helger.commons.string.StringParser;
 import com.helger.commons.version.Version;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
+import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -338,23 +339,21 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               // Check for known external deps
               final List <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
 
-              final String sSuffix = aExternalDeps.size () <= 1 ? ""
-                                                                : " for " +
-                                                                  aProject.getMinimumJDKVersion ().getDisplayName ();
+              final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
+              final String sSuffix = aExternalDeps.size () <= 1 ? "" : " for " + eProjectJDK.getDisplayName ();
 
               for (final EExternalDependency eExternalDep : aExternalDeps)
               {
                 // Avoid warnings for components that require a later JDK
-                if (!eExternalDep.getMinimumJDKVersion ()
-                                 .isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()))
+                if (!eExternalDep.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
                   continue;
 
-                if (eExternalDep.isDeprecated ())
+                if (eExternalDep.isDeprecated (eProjectJDK))
                 {
                   _warn (aProject,
                          sArtifactID +
                                    " is deprecated - use " +
-                                   eExternalDep.getReplacement ().getDisplayNameWithVersion () +
+                                   eExternalDep.getReplacement (eProjectJDK).getDisplayNameWithVersion () +
                                    " instead");
                 }
                 else
