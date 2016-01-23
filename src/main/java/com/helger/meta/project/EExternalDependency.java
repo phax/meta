@@ -29,7 +29,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.1"),
   H2 ("com.h2database", "h2", "1.4.190"),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.5.4"),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.5.5"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.4"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.1"),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.7.0"),
