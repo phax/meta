@@ -167,6 +167,7 @@ public enum EExternalDependency
       case JAXWS_MAVEN_PLUGIN_OLD:
         return JAXWS_MAVEN_PLUGIN;
       case JODA_TIME:
+      case RHINO:
       case XERCES:
         if (eJDK.isAtLeast8 ())
           return JDK;
