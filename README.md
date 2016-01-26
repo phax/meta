@@ -468,42 +468,42 @@ Current list of all unreleased projects:
 
 All deprecated projects:
 
- * [cipa-start-jms-api](https://github.com/phax/cipa-start-jms-api) - Version 1.5.0
+ * cipa-start-jms-api - Version 1.5.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api) 
- * [cipa-start-jmsreceiver](https://github.com/phax/cipa-start-jmsreceiver) - Version 1.0.2
+ * cipa-start-jmsreceiver - Version 1.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmsreceiver/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmsreceiver) 
- * [cipa-start-jmssender](https://github.com/phax/cipa-start-jmssender) - Version 1.0.2
+ * cipa-start-jmssender - Version 1.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
- * [jgatsp](https://github.com/phax/jgatsp) - never released
- * [ph-as4](https://github.com/phax/ph-as4) - never released
- * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - never released
- * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4) - never released
- * [ph-bootstrap3](https://github.com/phax/ph-bootstrap3) - Version 2.0.2
+ * jgatsp - never released
+ * ph-as4 - never released
+ * ph-as4/ph-as4-lib - never released
+ * ph-as4/ph-as4-server - never released
+ * ph-bootstrap3 - Version 2.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3) 
- * [ph-jdk5](https://github.com/phax/ph-jdk5) - Version 1.1.0
+ * ph-jdk5 - Version 1.1.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5) 
- * [ph-jms](https://github.com/phax/ph-jms) - Version 2.0.0
+ * ph-jms - Version 2.0.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms) 
- * [ph-scopes](https://github.com/phax/ph-scopes) - Version 6.6.0
+ * ph-scopes - Version 6.6.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes) 
- * [ph-tinymce4](https://github.com/phax/ph-tinymce4) - Version 0.3.5
+ * ph-tinymce4 - Version 0.3.5
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4) 
- * [ph-webapp-demo](https://github.com/phax/ph-webapp-demo) - never released
- * [ph-webbasics](https://github.com/phax/ph-webbasics) - Version 4.0.2
+ * ph-webapp-demo - never released
+ * ph-webbasics - Version 4.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webbasics/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webbasics) 
- * [ph-webctrls](https://github.com/phax/ph-webctrls) - Version 4.0.2
+ * ph-webctrls - Version 4.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webctrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webctrls) 
- * [ph-webscopes](https://github.com/phax/ph-webscopes) - Version 6.8.1
+ * ph-webscopes - Version 6.8.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes) 
 

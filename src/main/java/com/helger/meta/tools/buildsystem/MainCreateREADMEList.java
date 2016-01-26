@@ -131,11 +131,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && aProject.isDeprecated ())
       {
-        aSB.append (" * [")
-           .append (aProject.getFullBaseDirName ())
-           .append ("](https://github.com/phax/")
-           .append (_getGitHubRepoName (aProject))
-           .append (") - ");
+        aSB.append (" * ").append (aProject.getFullBaseDirName ()).append (" - ");
         if (aProject.isPublished ())
         {
           aSB.append ("Version ").append (aProject.getLastPublishedVersionString ()).append ('\n');
