@@ -140,7 +140,7 @@ public enum EProject implements IProject
 
   AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "2.2.5", EJDK.JDK6),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
-  AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
+  AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY, EJDK.JDK8),
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
 
   AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.5", EJDK.JDK6),
@@ -150,7 +150,7 @@ public enum EProject implements IProject
   AS2_PEPPOL_SERVER ("as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK7),
   ERECHNUNG_WS_CLIENT (null, "webservice-client", "erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK6),
 
-  PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom", "peppol-commons", EHasPages.FALSE, EHasWiki.FALSE, "4.3.3", EJDK.JDK6),
+  PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom", "peppol-commons", EHasPages.FALSE, EHasWiki.FALSE, "4.3.4", EJDK.JDK6),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY),
@@ -158,6 +158,8 @@ public enum EProject implements IProject
   PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_VALIDATION_ENGINE_PARENT_POM ("peppol-validation-engine-parent-pom", "peppol-validation-engine", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
+  PEPPOL_VALIDATION_API (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-api", EProjectType.JAVA_LIBRARY, (String) null),
+  PEPPOL_VALIDATION_ARTEFACTS (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-artefacts", EProjectType.JAVA_LIBRARY, (String) null),
   PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, "1.0.0"),
 
   PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom", "peppol-smp-server", EHasPages.FALSE, EHasWiki.TRUE, "4.1.0", EJDK.JDK7),
@@ -165,7 +167,7 @@ public enum EProject implements IProject
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, null),
+  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, (String) null),
 
   PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK7),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
@@ -179,8 +181,8 @@ public enum EProject implements IProject
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
 
   PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK7),
-  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY, null),
-  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION, null),
+  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
+  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
 
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
   PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
@@ -239,7 +241,45 @@ public enum EProject implements IProject
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    // Project name equals project base directory name
+    this (eParentProject,
+          sProjectName,
+          sProjectName,
+          eProjectType,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
+          eParentProject.getLastPublishedVersionString (),
+          eParentProject.getMinimumJDKVersion ());
+  }
+
+  /**
+   * Constructor for child projects where project name equals directory name and
+   * the last published version is identical to the one of the parent project
+   * but the child project uses a different JDK version
+   *
+   * @param eParentProject
+   *        Parent project. May not be <code>null</code>.
+   * @param sProjectName
+   *        Project name
+   * @param eProjectType
+   *        Project type
+   * @param eMinJDK
+   *        Minimum JDK version to use
+   */
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType,
+                    @Nonnull final EJDK eMinJDK)
+  {
+    // Project name equals project base directory name
+    this (eParentProject,
+          sProjectName,
+          sProjectName,
+          eProjectType,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
+          eParentProject.getLastPublishedVersionString (),
+          eMinJDK);
   }
 
   /**
