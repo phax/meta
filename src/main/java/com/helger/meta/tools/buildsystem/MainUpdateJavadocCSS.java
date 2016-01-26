@@ -35,7 +35,7 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/test/resources/source-javadoc.css"),
+    final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/raw/source-javadoc.css"),
                                                          CCharset.CHARSET_UTF_8_OBJ);
 
     for (final IProject aProject : ProjectList.getAllProjects ())
