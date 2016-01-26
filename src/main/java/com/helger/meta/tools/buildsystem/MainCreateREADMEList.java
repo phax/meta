@@ -17,7 +17,7 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.annotation.Nonnull;
@@ -91,7 +91,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
                                                                         });
 
     // Show all
-    aSB.append ("Current list of all projects (as of ").append (new Date ().toString ()).append ("):\n\n");
+    aSB.append ("Current list of all projects (as of ").append (LocalDate.now ().toString ()).append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {
@@ -103,7 +103,9 @@ public final class MainCreateREADMEList extends AbstractProjectMain
            .append (sRepoName)
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
-           .append ("\n");
+           .append (" - ")
+           .append (aProject.getMinimumJDKVersion ().getDisplayName ())
+           .append ('\n');
         _addBadgeMavenCentral (aProject, aSB);
         _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
@@ -117,7 +119,9 @@ public final class MainCreateREADMEList extends AbstractProjectMain
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/phax/")
            .append (_getGitHubRepoName (aProject))
-           .append (")\n");
+           .append (") - ")
+           .append (aProject.getMinimumJDKVersion ().getDisplayName ())
+           .append ('\n');
         _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
       }

@@ -36,6 +36,11 @@ public enum EProjectDeprecated implements IProject
   CIPA_START_JMSRECEIVER (null, "cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   CIPA_START_JMSSENDER (null, "cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
+
+  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null),
+  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
+  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
+
   PH_BOOTSTRAP3 (null, "ph-bootstrap3", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2"),
   PH_JDK5 (null, "ph-jdk5", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.0"),
   PH_JMS (null, "ph-jms", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0"),
@@ -47,6 +52,61 @@ public enum EProjectDeprecated implements IProject
   PH_WEBSCOPES (null, "ph-webscopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1");
 
   private final SimpleProject m_aProject;
+
+  /**
+   * Constructor for parent poms
+   *
+   * @param eParentProject
+   * @param sProjectName
+   *        Project name as stated in the POM
+   * @param sProjectBaseDirName
+   *        Project base directory name
+   * @param eHasPagesProject
+   *        pages project present?
+   * @param eHasWikiProject
+   *        wiki project present?
+   * @param sLastPublishedVersion
+   *        Last published version or <code>null</code>
+   * @param eMinJDK
+   *        Minimum JDK version to use
+   */
+  private EProjectDeprecated (@Nonnull @Nonempty final String sProjectName,
+                              @Nonnull @Nonempty final String sProjectBaseDirName,
+                              @Nonnull final EHasPages eHasPagesProject,
+                              @Nonnull final EHasWiki eHasWikiProject,
+                              @Nullable final String sLastPublishedVersion)
+  {
+    this (null,
+          sProjectName,
+          sProjectBaseDirName,
+          EProjectType.MAVEN_POM,
+          eHasPagesProject,
+          eHasWikiProject,
+          sLastPublishedVersion);
+  }
+
+  /**
+   * Constructor for child projects where project name equals directory name and
+   * the last published version is identical to the one of the parent project
+   *
+   * @param eParentProject
+   *        Parent project. May not be <code>null</code>.
+   * @param sProjectName
+   *        Project name
+   * @param eProjectType
+   *        Project type
+   */
+  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+                              @Nonnull @Nonempty final String sProjectName,
+                              @Nonnull final EProjectType eProjectType)
+  {
+    this (eParentProject,
+          sProjectName,
+          eProjectType,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
+          eParentProject.getLastPublishedVersionString ());
+  }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
                               @Nonnull @Nonempty final String sProjectName,

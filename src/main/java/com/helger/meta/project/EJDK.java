@@ -1,8 +1,10 @@
 package com.helger.meta.project;
 
+import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.lang.EnumHelper;
 
 public enum EJDK
@@ -13,16 +15,19 @@ public enum EJDK
 
   private final int m_nMajor;
 
-  private EJDK (final int nMajor)
+  private EJDK (@Nonnegative final int nMajor)
   {
     m_nMajor = nMajor;
   }
 
+  @Nonnegative
   public int getMajor ()
   {
     return m_nMajor;
   }
 
+  @Nonnull
+  @Nonempty
   public String getDisplayName ()
   {
     return "JDK 1." + m_nMajor;
