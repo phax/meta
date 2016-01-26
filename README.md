@@ -101,7 +101,19 @@ Current list of all projects (as of 2016-01-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.0.0 - JDK 1.6
+ * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [peppol-validation-engine/peppol-validation-api](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api) 
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [peppol-validation-engine/peppol-validation-artefacts](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts) 
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
@@ -438,15 +450,6 @@ Current list of all unreleased projects:
  * [peppol-smp-server/peppol-smp-server-webapp-sqlmin](https://github.com/phax/peppol-smp-server) - JDK 1.7
 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - JDK 1.6
-
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-api](https://github.com/phax/peppol-validation-engine) - JDK 1.6
-
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-artefacts](https://github.com/phax/peppol-validation-engine) - JDK 1.6
-
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - JDK 1.6
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)

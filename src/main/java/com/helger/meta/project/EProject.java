@@ -157,10 +157,10 @@ public enum EProject implements IProject
   PEPPOL_SML_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY),
 
-  PEPPOL_VALIDATION_ENGINE_PARENT_POM ("peppol-validation-engine-parent-pom", "peppol-validation-engine", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
-  PEPPOL_VALIDATION_API (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-api", EProjectType.JAVA_LIBRARY, (String) null),
-  PEPPOL_VALIDATION_ARTEFACTS (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-artefacts", EProjectType.JAVA_LIBRARY, (String) null),
-  PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY, "1.0.0"),
+  PEPPOL_VALIDATION_ENGINE_PARENT_POM ("peppol-validation-engine-parent-pom", "peppol-validation-engine", EHasPages.FALSE, EHasWiki.FALSE, "1.1.0", EJDK.JDK6),
+  PEPPOL_VALIDATION_API (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-api", EProjectType.JAVA_LIBRARY),
+  PEPPOL_VALIDATION_ARTEFACTS (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-artefacts", EProjectType.JAVA_LIBRARY),
+  PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom", "peppol-smp-server", EHasPages.FALSE, EHasWiki.TRUE, "4.1.0", EJDK.JDK7),
   PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY),
