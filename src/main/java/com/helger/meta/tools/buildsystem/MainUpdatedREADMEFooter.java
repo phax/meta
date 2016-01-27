@@ -8,6 +8,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.CMeta;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -23,6 +24,8 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
+    final StringBuilder aSB = new StringBuilder ();
+
     for (final IProject aProject : ProjectList.getAllProjects ())
       if (aProject.isBuildInProject () &&
           aProject.getBaseDir ().exists () &&
@@ -73,6 +76,16 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
 
                 SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
                 _warn (aProject, f.getName () + " was updated");
+
+                aSB.append ("echo ")
+                   .append (aProject.getProjectName ())
+                   .append ("\ncd ")
+                   .append (aProject.getFullBaseDirName ())
+                   .append ("\n")
+                   .append ("git commit -m \"Updated README footer\" README.md\n")
+                   .append ("git push\n")
+                   .append ("\nif errorlevel 1 goto error")
+                   .append ("\ncd ..\n");
               }
             }
           }
@@ -80,6 +93,17 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
         else
           _warn (aProject, f.getName () + " is missing");
       }
+
+    if (aSB.length () > 0)
+    {
+      aSB.insert (0, BATCH_HEADER);
+      aSB.append (BATCH_FOOTER);
+      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, "git-commit-footer-change.cmd"),
+                              aSB.toString (),
+                              BATCH_CHARSET);
+      s_aLogger.info ("Batch file written");
+    }
+
     s_aLogger.info ("Done");
   }
 }
