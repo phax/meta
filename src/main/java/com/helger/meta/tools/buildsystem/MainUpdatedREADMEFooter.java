@@ -14,6 +14,7 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainUpdatedREADMEFooter extends AbstractProjectMain
 {
+  private static final String GIT_COMMIT_FOOTER_CHANGE_CMD = "git-commit-footer-change.cmd";
   private static final Charset README_CHARSET = CCharset.CHARSET_UTF_8_OBJ;
   private static final String SEPARATOR = "\n" + "---\n";
   // Length is approx. 180 chars
@@ -97,8 +98,12 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
     if (aSB.length () > 0)
     {
       aSB.insert (0, BATCH_HEADER);
+      // Delete yourself
+      // Source:
+      // http://stackoverflow.com/questions/20329355/how-to-make-a-batch-file-delete-itself
+      aSB.append ("(goto) 2>nul & del \"%~f0\"");
       aSB.append (BATCH_FOOTER);
-      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, "git-commit-footer-change.cmd"),
+      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
                               aSB.toString (),
                               BATCH_CHARSET);
       s_aLogger.info ("Batch file written");
