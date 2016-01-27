@@ -90,6 +90,7 @@ public enum EExternalDependency
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
+  M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0"),
   MYSQL ("mysql", "mysql-connector-java", "5.1.38"),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.0-RC3"),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),

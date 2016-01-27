@@ -346,7 +346,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               {
                 // Avoid warnings for components that require a later JDK
                 if (!eExternalDep.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
+                {
+                  if (false)
+                    _info (aProject, "Incompatible artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
                   continue;
+                }
 
                 if (eExternalDep.isDeprecated (eProjectJDK))
                 {
@@ -392,13 +396,18 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (aExternalDeps.isEmpty ())
               {
                 // Neither my project nor a known external
-                if (false &&
-                    !sGroupID.startsWith ("org.apache.maven") &&
-                    !sGroupID.startsWith ("org.codehaus.mojo") &&
-                    !sArtifactID.contains ("-maven-") &&
-                    !sArtifactID.startsWith ("maven-"))
-                  _warn (aProject, "Unsuported artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
+                if (false)
+                  if (!sGroupID.startsWith ("org.apache.maven") &&
+                      !sGroupID.startsWith ("org.codehaus.mojo") &&
+                      !sArtifactID.contains ("-maven-") &&
+                      !sArtifactID.startsWith ("maven-"))
+                    _warn (aProject, "Unsuported artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
               }
+            }
+            else
+            {
+              if (false)
+                _warn (aProject, "Unchecked artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
             }
         }
       }
