@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-01-26):
+Current list of all projects (as of 2016-01-27):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.5 - JDK 1.6
 
@@ -125,15 +125,15 @@ Current list of all projects (as of 2016-01-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-charset.svg?branch=master)](https://travis-ci.org/phax/ph-charset)
- * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.3 - JDK 1.6
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.3 - JDK 1.6
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.3 - JDK 1.6
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
