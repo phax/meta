@@ -35,7 +35,7 @@ import com.helger.meta.project.ProjectList;
  *
  * @author Philip Helger
  */
-public final class MainCreateREADMEList extends AbstractProjectMain
+public final class MainCreateMetaREADME extends AbstractProjectMain
 {
   @Nonnull
   private static String _getGitHubRepoName (@Nonnull final IProject aProject)
@@ -147,7 +147,7 @@ public final class MainCreateREADMEList extends AbstractProjectMain
                 "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
 
     // Footer
-    aSB.append ("\n---\n\nOn Twitter: <a href=\"https://twitter.com/philiphelger\">Follow @philiphelger</a>\n");
+    aSB.append (MainUpdatedREADMEFooter.COMMON_FOOTER);
 
     SimpleFileIO.writeFile (new File ("README.md"), aSB.toString (), CCharset.CHARSET_UTF_8_OBJ);
     System.out.println ("Done");
