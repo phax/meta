@@ -149,7 +149,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
     // Evaluate dependencies
     final List <Map.Entry <IProject, Set <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
-    CollectionHelper.getSortedInline (aEntries, (o1, o2) -> {
+    aEntries.sort ( (o1, o2) -> {
       // Less dependencies before many dependencies, because transitivity was
       // already handled
       int ret = o1.getValue ().size () - o2.getValue ().size ();

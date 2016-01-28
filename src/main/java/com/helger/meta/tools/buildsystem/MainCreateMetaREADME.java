@@ -18,13 +18,13 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.collection.CollectionHelper;
-import com.helger.commons.compare.AbstractComparator;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -75,20 +75,8 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     final StringBuilder aSB = new StringBuilder ();
 
     final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (),
-                                                                        new AbstractComparator <IProject> ()
-                                                                        {
-                                                                          @Override
-                                                                          protected int mainCompare (final IProject aElement1,
-                                                                                                     final IProject aElement2)
-                                                                          {
-                                                                            int ret = aElement1.getBaseDir ()
-                                                                                               .compareTo (aElement2.getBaseDir ());
-                                                                            if (ret == 0)
-                                                                              ret = aElement1.getProjectName ()
-                                                                                             .compareTo (aElement2.getProjectName ());
-                                                                            return ret;
-                                                                          }
-                                                                        });
+                                                                        Comparator.comparing (IProject::getBaseDir)
+                                                                                  .thenComparing (IProject::getProjectName));
 
     // Show all
     aSB.append ("Current list of all projects (as of ").append (LocalDate.now ().toString ()).append ("):\n\n");

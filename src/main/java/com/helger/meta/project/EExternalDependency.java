@@ -16,6 +16,7 @@
  */
 package com.helger.meta.project;
 
+import java.util.Comparator;
 import java.util.List;
 
 import javax.annotation.Nonnull;
@@ -205,7 +206,8 @@ public enum EExternalDependency
                                                                e -> e.m_sGroupID.equals (sGroupID) &&
                                                                     e.m_sArticfactID.equals (sArtifactID));
     // Sort by JDK decsending
-    ret.sort ( (e1, e2) -> e2.getMinimumJDKVersion ().getMajor () - e1.getMinimumJDKVersion ().getMajor ());
+    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
+                        .reversed ());
     return ret;
   }
 }
