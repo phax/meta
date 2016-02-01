@@ -32,7 +32,9 @@ import com.helger.meta.CMeta;
  */
 public enum EProject implements IProject
 {
-  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.4.1", EJDK.JDK6),
+  PH_PARENT_POM6 ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.4.1", EJDK.JDK6),
+  PH_PARENT_POM7 ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.4.2", EJDK.JDK7),
+  PH_PARENT_POM8 ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.8.0", EJDK.JDK8),
 
   PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
   PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),

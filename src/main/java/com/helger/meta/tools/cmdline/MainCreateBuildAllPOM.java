@@ -187,7 +187,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     eProject.appendElement (MAVEN_NS, "name").appendText ("all-builder");
     eProject.appendElement (MAVEN_NS, "version").appendText ("1");
     final IMicroElement eModules = eProject.appendElement (MAVEN_NS, "modules");
-    eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM.getProjectName ());
+    eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM6.getProjectName ());
 
     // Parent POM and Maven plugins always go first!
     for (final Map.Entry <IProject, Set <IProject>> aEntry : aEntries)

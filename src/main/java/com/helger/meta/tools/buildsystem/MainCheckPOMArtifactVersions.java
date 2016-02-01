@@ -53,7 +53,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   // Parent POM requirements
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
-  private static final String PARENT_POM_VERSION = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
   private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 
   @Nonnull
@@ -90,6 +89,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
            RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", Pattern.CASE_INSENSITIVE, sVersion);
   }
 
+  private static String _getParentPOMVersion (@Nonnull final IProject aProject)
+  {
+    if (aProject.getMinimumJDKVersion ().isAtLeast8 ())
+      return EProject.PH_PARENT_POM8.getLastPublishedVersionString ();
+    if (aProject.getMinimumJDKVersion ().isAtLeast7 ())
+      return EProject.PH_PARENT_POM7.getLastPublishedVersionString ();
+    return EProject.PH_PARENT_POM6.getLastPublishedVersionString ();
+  }
+
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
   {
     if (s_aLogger.isDebugEnabled ())
@@ -111,7 +119,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
       if (eParent == null)
       {
-        if (aProject != EProject.PH_PARENT_POM)
+        if (!aProject.isParentPOM ())
           _warn (aProject, "No parent element found");
       }
       else
@@ -139,7 +147,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           {
             // Check version only if group and artifact match
             final String sVersion = MicroHelper.getChildTextContent (eParent, "version");
-            if (!PARENT_POM_VERSION.equals (sVersion))
+            if (!_getParentPOMVersion (aProject).equals (sVersion))
               _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
           }
         }
@@ -264,26 +272,26 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!
-            final IProject eReferencedProject = ProjectList.getProjectOfName (sArtifactID);
-            if (eReferencedProject == null)
+            final IProject aReferencedProject = ProjectList.getProjectOfName (sArtifactID);
+            if (aReferencedProject == null)
             {
               _warn (aProject, "Referenced unknown project '" + sArtifactID + "'");
             }
             else
             {
-              if (eReferencedProject.isDeprecated ())
+              if (aReferencedProject.isDeprecated ())
                 _warn (aProject, sArtifactID + ": is deprecated!");
 
               if (sVersion != null)
               {
                 final boolean bIsSnapshot = _isSnapshot (sVersion);
-                if (eReferencedProject.isPublished ())
+                if (aReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
                   final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion,
                                                                                                   SUFFIX_SNAPSHOT)
                                                                           : sVersion);
-                  if (aVersionInFile.isLowerThan (eReferencedProject.getLastPublishedVersion ()))
+                  if (aVersionInFile.isLowerThan (aReferencedProject.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
                     _warn (aProject,
@@ -291,10 +299,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                      ": " +
                                      sVersion +
                                      " is out of date. The latest version is " +
-                                     eReferencedProject.getLastPublishedVersionString ());
+                                     aReferencedProject.getLastPublishedVersionString ());
                   }
                   else
-                    if (aVersionInFile.equals (eReferencedProject.getLastPublishedVersion ()))
+                    if (aVersionInFile.equals (aReferencedProject.getLastPublishedVersion ()))
                     {
                       // Version matches - check for SNAPSHOT differences
                       if (bIsSnapshot)
@@ -303,10 +311,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                          ": " +
                                          sVersion +
                                          " is out of date. The latest version is " +
-                                         eReferencedProject.getLastPublishedVersionString ());
+                                         aReferencedProject.getLastPublishedVersionString ());
                     }
                     else
-                      if (aVersionInFile.isGreaterThan (eReferencedProject.getLastPublishedVersion ()))
+                      if (aVersionInFile.isGreaterThan (aReferencedProject.getLastPublishedVersion ()))
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
@@ -314,10 +322,16 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                  "Referenced version " +
                                            sVersion +
                                            " of project '" +
-                                           eReferencedProject +
+                                           aReferencedProject +
                                            "' is newer than the latest known version " +
-                                           eReferencedProject.getLastPublishedVersionString ());
+                                           aReferencedProject.getLastPublishedVersionString ());
                       }
+                      else
+                        _warn (aProject,
+                               "Houston we have a problem: " +
+                                         aVersionInFile +
+                                         " vs. " +
+                                         aReferencedProject.getLastPublishedVersion ());
                 }
                 else
                 {
@@ -325,7 +339,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   if (!bIsSnapshot)
                     _warn (aProject,
                            "Referenced project " +
-                                     eReferencedProject +
+                                     aReferencedProject +
                                      " is marked as not published, but the non-SNAPSHOT version '" +
                                      sVersion +
                                      "' is referenced!");

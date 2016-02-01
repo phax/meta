@@ -54,6 +54,11 @@ public enum EJDK
     return m_nMajor <= eRTVersion.m_nMajor;
   }
 
+  public boolean isAtLeast7 ()
+  {
+    return m_nMajor >= 7;
+  }
+
   public boolean isAtLeast8 ()
   {
     return m_nMajor >= 8;
