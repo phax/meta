@@ -78,7 +78,7 @@ public interface IProject
 
   default boolean isParentPOM ()
   {
-    return getMavenArtifactID ().equals (EProject.PH_PARENT_POM6.getMavenArtifactID ());
+    return getMavenArtifactID ().equals (EProject.PH_PARENT_POM.getMavenArtifactID ());
   }
 
   boolean isDeprecated ();

@@ -65,14 +65,18 @@ public final class EProjectTest
       if (aFile.isDirectory ())
       {
         // ebinterface-ubl-mapping: different GitHub entity
-        if (!"ebinterface-ubl-mapping".equals (aFile.getName ()) && !"Holodeck-B2B".equals (aFile.getName ()) && !"junrar".equals (aFile.getName ()))
+        if (!"ebinterface-ubl-mapping".equals (aFile.getName ()) &&
+            !"Holodeck-B2B".equals (aFile.getName ()) &&
+            !"junrar".equals (aFile.getName ()))
         {
           // Ignore all Pages and Wiki directories
           String sProjectName = aFile.getName ();
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
           sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
 
-          assertNotNull (aFile.getName () + " is missing in the project list", ProjectList.getProjectOfDir (sProjectName));
+          assertTrue (aFile.getName () +
+                      " is missing in the project list",
+                      ProjectList.containsProjectOfDir (sProjectName));
         }
       }
   }

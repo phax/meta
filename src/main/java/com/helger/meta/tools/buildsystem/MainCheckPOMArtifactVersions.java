@@ -92,10 +92,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   private static String _getParentPOMVersion (@Nonnull final IProject aProject)
   {
     if (aProject.getMinimumJDKVersion ().isAtLeast8 ())
-      return EProject.PH_PARENT_POM8.getLastPublishedVersionString ();
+      return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
     if (aProject.getMinimumJDKVersion ().isAtLeast7 ())
-      return EProject.PH_PARENT_POM7.getLastPublishedVersionString ();
-    return EProject.PH_PARENT_POM6.getLastPublishedVersionString ();
+      return EExternalDependency.PH_PARENT_POM7.getLastPublishedVersionString ();
+    return EExternalDependency.PH_PARENT_POM6.getLastPublishedVersionString ();
   }
 
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
@@ -104,6 +104,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       s_aLogger.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
+    final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
     final Map <String, String> aProperties = new HashMap <> ();
@@ -282,6 +283,22 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (aReferencedProject.isDeprecated ())
                 _warn (aProject, sArtifactID + ": is deprecated!");
 
+              // Avoid warnings for components that require a later JDK
+              if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
+              {
+                if (false)
+                  _info (aProject,
+                         "Incompatible artifact " +
+                                   sGroupID +
+                                   "::" +
+                                   sArtifactID +
+                                   "::" +
+                                   sVersion +
+                                   " for " +
+                                   eProjectJDK.getDisplayName ());
+                continue;
+              }
+
               if (sVersion != null)
               {
                 final boolean bIsSnapshot = _isSnapshot (sVersion);
@@ -353,7 +370,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               // Check for known external deps
               final List <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
 
-              final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
               final String sSuffix = aExternalDeps.size () <= 1 ? "" : " for " + eProjectJDK.getDisplayName ();
 
               for (final EExternalDependency eExternalDep : aExternalDeps)
@@ -366,7 +382,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   continue;
                 }
 
-                if (eExternalDep.isDeprecated (eProjectJDK))
+                if (eExternalDep.isDeprecatedForJDK (eProjectJDK))
                 {
                   _warn (aProject,
                          sArtifactID +

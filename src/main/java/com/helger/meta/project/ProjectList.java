@@ -88,11 +88,11 @@ public final class ProjectList
   }
 
   @Nullable
-  public static IProject getProjectOfDir (@Nullable final String sDirName)
+  public static boolean containsProjectOfDir (@Nullable final String sDirName)
   {
     if (StringHelper.hasNoText (sDirName))
-      return null;
+      return false;
 
-    return CollectionHelper.findFirst (s_aName2Project.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
+    return CollectionHelper.containsAny (s_aName2Project.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
   }
 }

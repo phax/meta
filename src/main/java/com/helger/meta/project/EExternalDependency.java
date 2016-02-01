@@ -95,6 +95,8 @@ public enum EExternalDependency
   MYSQL ("mysql", "mysql-connector-java", "5.1.38"),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.0-RC3"),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
+  PH_PARENT_POM6 ("com.helger", "ph-parent-pom", "1.4.1", EJDK.JDK6),
+  PH_PARENT_POM7 ("com.helger", "ph-parent-pom", "1.4.2", EJDK.JDK7),
   POI ("org.apache.poi", "poi", "3.13"),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   RHINO ("org.mozilla", "rhino", "1.7.7"),
@@ -178,7 +180,7 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public EExternalDependency getReplacement (@Nonnull final EJDK eJDK)
+  public EExternalDependency getReplacement (@Nonnull final EJDK eForJDK)
   {
     switch (this)
     {
@@ -187,16 +189,16 @@ public enum EExternalDependency
       case JODA_TIME:
       case RHINO:
       case XERCES:
-        if (eJDK.isAtLeast8 ())
+        if (eForJDK.isAtLeast8 ())
           return JDK;
         break;
     }
     return null;
   }
 
-  public boolean isDeprecated (@Nonnull final EJDK eJDK)
+  public boolean isDeprecatedForJDK (@Nonnull final EJDK eForJDK)
   {
-    return getReplacement (eJDK) != null;
+    return getReplacement (eForJDK) != null;
   }
 
   @Nullable

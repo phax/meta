@@ -112,17 +112,17 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     // Read all dependencies
-    final Map <IProject, Set <IProject>> aTree = new HashMap <IProject, Set <IProject>> ();
-    for (final IProject e : ProjectList.getAllProjects ())
-      if (e.getProjectType () != EProjectType.MAVEN_POM &&
-          e.isBuildInProject () &&
-          !e.isDeprecated () &&
-          !e.isNestedProject ())
+    final Map <IProject, Set <IProject>> aTree = new HashMap <> ();
+    for (final IProject aProject : ProjectList.getAllProjects ())
+      if (aProject.getProjectType () != EProjectType.MAVEN_POM &&
+          aProject.isBuildInProject () &&
+          !aProject.isDeprecated () &&
+          !aProject.isNestedProject ())
       {
-        final IMicroDocument aDoc = MicroReader.readMicroXML (e.getPOMFile ());
+        final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)
-          throw new IllegalStateException ("Failed to read " + e.getPOMFile ());
-        _readPOM (e, aDoc, aTree);
+          throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
+        _readPOM (aProject, aDoc, aTree);
       }
 
     // Fill transitive dependencies
@@ -187,7 +187,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     eProject.appendElement (MAVEN_NS, "name").appendText ("all-builder");
     eProject.appendElement (MAVEN_NS, "version").appendText ("1");
     final IMicroElement eModules = eProject.appendElement (MAVEN_NS, "modules");
-    eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM6.getProjectName ());
+    eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM.getProjectName ());
 
     // Parent POM and Maven plugins always go first!
     for (final Map.Entry <IProject, Set <IProject>> aEntry : aEntries)
