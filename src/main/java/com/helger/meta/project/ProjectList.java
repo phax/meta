@@ -87,7 +87,6 @@ public final class ProjectList
     return s_aName2Project.size ();
   }
 
-  @Nullable
   public static boolean containsProjectOfDir (@Nullable final String sDirName)
   {
     if (StringHelper.hasNoText (sDirName))
