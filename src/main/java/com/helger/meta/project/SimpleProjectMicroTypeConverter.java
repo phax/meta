@@ -67,9 +67,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
     final File aBaseDir = new File (sBaseDir);
 
-    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED));
-    final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES));
-    final boolean bHasWiki = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_WIKI));
+    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
+    final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES), false);
+    final boolean bHasWiki = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_WIKI), false);
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
