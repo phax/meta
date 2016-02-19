@@ -16,16 +16,17 @@
  */
 package com.helger.meta.project;
 
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.function.Predicate;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.collection.CollectionHelper;
+import com.helger.commons.collection.ext.CommonsLinkedHashMap;
+import com.helger.commons.collection.ext.ICommonsList;
+import com.helger.commons.collection.ext.ICommonsOrderedMap;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.commons.io.resource.IReadableResource;
 import com.helger.commons.microdom.IMicroDocument;
@@ -36,7 +37,7 @@ import com.helger.commons.string.StringHelper;
 
 public final class ProjectList
 {
-  private static final Map <String, IProject> s_aName2Project = new LinkedHashMap <String, IProject> ();
+  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
 
   static
   {
@@ -69,16 +70,17 @@ public final class ProjectList
     return s_aName2Project.get (sName);
   }
 
-  @Nullable
+  @Nonnull
   public static Iterable <IProject> getAllProjects ()
   {
     return s_aName2Project.values ();
   }
 
-  @Nullable
-  public static List <IProject> getAllProjects (@Nonnull final Predicate <IProject> aFilter)
+  @Nonnull
+  @ReturnsMutableCopy
+  public static ICommonsList <IProject> getAllProjects (@Nonnull final Predicate <IProject> aFilter)
   {
-    return CollectionHelper.getAll (s_aName2Project.values (), aFilter);
+    return s_aName2Project.copyOfValues (aFilter);
   }
 
   @Nonnegative
