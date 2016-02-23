@@ -204,7 +204,7 @@ public enum EExternalDependency
   @Nullable
   public static List <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
-    final List <EExternalDependency> ret = EnumHelper.findAll (EExternalDependency.class,
+    final List <EExternalDependency> ret = EnumHelper.getAll (EExternalDependency.class,
                                                                e -> e.m_sGroupID.equals (sGroupID) &&
                                                                     e.m_sArticfactID.equals (sArtifactID));
     // Sort by JDK decsending
