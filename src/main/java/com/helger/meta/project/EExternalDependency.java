@@ -65,7 +65,7 @@ public enum EExternalDependency
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // 1.7 since 2.7
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.22.1", EJDK.JDK7),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.22.2", EJDK.JDK7),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   LOG4J2_24_CORE ("org.apache.logging.log4j", "log4j-core", "2.5", EJDK.JDK7),
   LOG4J2_24_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_24_CORE),
   LOG4J2_24_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_24_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "5.4.0", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "5.5.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
@@ -104,7 +104,7 @@ public enum EExternalDependency
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.1-incubating"),
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.14"),
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.16"),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
@@ -205,8 +205,8 @@ public enum EExternalDependency
   public static List <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
     final List <EExternalDependency> ret = EnumHelper.getAll (EExternalDependency.class,
-                                                               e -> e.m_sGroupID.equals (sGroupID) &&
-                                                                    e.m_sArticfactID.equals (sArtifactID));
+                                                              e -> e.m_sGroupID.equals (sGroupID) &&
+                                                                   e.m_sArticfactID.equals (sArtifactID));
     // Sort by JDK decsending
     ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
                         .reversed ());
