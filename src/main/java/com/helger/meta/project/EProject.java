@@ -177,7 +177,7 @@ public enum EProject implements IProject
   PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
 
-  PEPPOL_DIRECTORY_PARENT_POM ("peppol-directory-parent-pom", "peppol-directory", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PEPPOL_DIRECTORY_PARENT_POM ("peppol-directory-parent-pom", "peppol-directory", EHasPages.FALSE, EHasWiki.FALSE, "0.1.0", EJDK.JDK8),
   PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY, EJDK.JDK6),
   PEPPOL_DIRECTORY_API (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),

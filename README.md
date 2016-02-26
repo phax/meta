@@ -65,6 +65,30 @@ Current list of all projects (as of 2016-02-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
+ * [peppol-directory](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-api](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-api) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-businesscard](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.6
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-businesscard/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-businesscard) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-client](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-client) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-indexer](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-indexer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-indexer) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-publisher](https://github.com/phax/peppol-directory) - Version 0.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher) 
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.1 - JDK 1.7
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom) 
@@ -433,24 +457,6 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/meta.svg?branch=master)](https://travis-ci.org/phax/meta)
- * [peppol-directory](https://github.com/phax/peppol-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-directory/peppol-directory-api](https://github.com/phax/peppol-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-directory/peppol-directory-businesscard](https://github.com/phax/peppol-directory) - JDK 1.6
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-directory/peppol-directory-client](https://github.com/phax/peppol-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-directory/peppol-directory-indexer](https://github.com/phax/peppol-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-directory/peppol-directory-publisher](https://github.com/phax/peppol-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
