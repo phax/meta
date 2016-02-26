@@ -41,27 +41,27 @@ Current list of all projects (as of 2016-02-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.4 - JDK 1.6
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 4.3.5 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
@@ -245,6 +245,10 @@ Current list of all projects (as of 2016-02-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
+ * [ph-jaxws](https://github.com/phax/ph-jaxws) - Version 1.0.0 - JDK 1.6
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws) 
+   [![Build Status](https://travis-ci.org/phax/ph-jaxws.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws)
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.1.1 - JDK 1.7
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
@@ -435,6 +439,9 @@ Current list of all unreleased projects:
  * [peppol-directory/peppol-directory-api](https://github.com/phax/peppol-directory) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
+ * [peppol-directory/peppol-directory-businesscard](https://github.com/phax/peppol-directory) - JDK 1.6
+
+   [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
  * [peppol-directory/peppol-directory-client](https://github.com/phax/peppol-directory) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
@@ -453,9 +460,6 @@ Current list of all unreleased projects:
  * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-jaxws](https://github.com/phax/ph-jaxws) - JDK 1.6
-
-   [![Build Status](https://travis-ci.org/phax/ph-jaxws.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws)
  * [ph-locales](https://github.com/phax/ph-locales) - JDK 1.6
 
    [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
