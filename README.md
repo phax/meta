@@ -37,7 +37,7 @@ Current list of all projects (as of 2016-02-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.2 - JDK 1.6
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.3 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -453,6 +453,9 @@ Current list of all unreleased projects:
  * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-jaxws](https://github.com/phax/ph-jaxws) - JDK 1.6
+
+   [![Build Status](https://travis-ci.org/phax/ph-jaxws.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws)
  * [ph-locales](https://github.com/phax/ph-locales) - JDK 1.6
 
    [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
