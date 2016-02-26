@@ -70,9 +70,9 @@ public enum EProject implements IProject
 
   PH_WEB ("ph-web", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "7.1.0", EJDK.JDK8),
 
-  PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1", EJDK.JDK8),
+  PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.2", EJDK.JDK8),
 
-  PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.1", EJDK.JDK8),
+  PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.0", EJDK.JDK8),
   PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.5.1", EJDK.JDK8),
 
   PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "5.1.1", EJDK.JDK8),
