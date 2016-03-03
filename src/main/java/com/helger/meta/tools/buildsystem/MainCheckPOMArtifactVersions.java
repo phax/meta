@@ -94,8 +94,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.getMinimumJDKVersion ().isAtLeast8 ())
       return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
     if (aProject.getMinimumJDKVersion ().isAtLeast7 ())
-      return EExternalDependency.PH_PARENT_POM7.getLastPublishedVersionString ();
-    return EExternalDependency.PH_PARENT_POM6.getLastPublishedVersionString ();
+      return EExternalDependency._PH_PARENT_POM7.getLastPublishedVersionString ();
+    return EExternalDependency._PH_PARENT_POM6.getLastPublishedVersionString ();
   }
 
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
@@ -107,7 +107,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final Map <String, String> aProperties = new HashMap <> ();
+    final Map <String, String> aProperties = new HashMap<> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
