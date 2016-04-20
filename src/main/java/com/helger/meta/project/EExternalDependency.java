@@ -97,6 +97,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.14"),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
+  QUARTZ ("org.quartz-scheduler", "quartz", "2.2.3"),
   RHINO ("org.mozilla", "rhino", "1.7.7.1"),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-4"),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
