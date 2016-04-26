@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-03-03):
+Current list of all projects (as of 2016-04-26):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.6 - JDK 1.6
 
@@ -37,7 +37,7 @@ Current list of all projects (as of 2016-03-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.3 - JDK 1.6
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 2.8.4 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -161,7 +161,7 @@ Current list of all projects (as of 2016-03-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 4.1.0 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 4.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
