@@ -137,16 +137,16 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY, (String) null),
 
-  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "4.0.2", EJDK.JDK8),
+  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "4.0.3", EJDK.JDK8),
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.1", EJDK.JDK8),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.1", EJDK.JDK8),
 
-  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "2.2.6", EJDK.JDK6),
+  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "2.2.7", EJDK.JDK6),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY, EJDK.JDK8),
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
 
-  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.5", EJDK.JDK6),
+  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.7", EJDK.JDK6),
 
   AS2_PEPPOL_CLIENT ("as2-peppol-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.4", EJDK.JDK6),
   AS2_PEPPOL_SERVLET ("as2-peppol-servlet", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK6),
