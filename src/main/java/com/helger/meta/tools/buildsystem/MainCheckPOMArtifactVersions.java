@@ -89,6 +89,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
            RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", Pattern.CASE_INSENSITIVE, sVersion);
   }
 
+  @Nonnull
   private static String _getParentPOMVersion (@Nonnull final IProject aProject)
   {
     if (aProject.getMinimumJDKVersion ().isAtLeast8 ())
@@ -107,7 +108,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final Map <String, String> aProperties = new HashMap<> ();
+    final Map <String, String> aProperties = new HashMap <> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -436,6 +437,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
             else
             {
+              // Group ID, Artifact ID or Version is null
               if (false)
                 _warn (aProject, "Unchecked artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
             }
