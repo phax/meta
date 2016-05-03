@@ -24,7 +24,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -36,6 +35,7 @@ import java.util.TreeSet;
 import java.util.Vector;
 import java.util.WeakHashMap;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -159,7 +159,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     return aType.getSort () == Type.ARRAY;
   }
 
-  private static boolean _isCollectionClass (@Nonnull final Type aType)
+  private static boolean _isJDKCollectionClass (@Nonnull final Type aType)
   {
     if (aType.getSort () != Type.OBJECT)
       return false;
@@ -169,10 +169,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            // list
            List.class.getName ().equals (sClassName) ||
            ArrayList.class.getName ().equals (sClassName) ||
+           CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
            Vector.class.getName ().equals (sClassName) ||
-           LinkedList.class.getName ().equals (sClassName) ||
-           SafeArrayList.class.getName ().equals (sClassName) ||
-           SafeVector.class.getName ().equals (sClassName) ||
            // set
            Set.class.getName ().equals (sClassName) ||
            SortedSet.class.getName ().equals (sClassName) ||
@@ -187,7 +185,20 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            ConcurrentHashMap.class.getName ().equals (sClassName) ||
            WeakHashMap.class.getName ().equals (sClassName) ||
            LinkedHashMap.class.getName ().equals (sClassName) ||
-           TreeMap.class.getName ().equals (sClassName) ||
+           TreeMap.class.getName ().equals (sClassName);
+  }
+
+  private static boolean _isCollectionClass (@Nonnull final Type aType)
+  {
+    if (aType.getSort () != Type.OBJECT)
+      return false;
+
+    if (_isJDKCollectionClass (aType))
+      return true;
+
+    final String sClassName = aType.getClassName ();
+    return SafeArrayList.class.getName ().equals (sClassName) ||
+           SafeVector.class.getName ().equals (sClassName) ||
            SoftHashMap.class.getName ().equals (sClassName) ||
            SoftLinkedHashMap.class.getName ().equals (sClassName);
   }
@@ -205,7 +216,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
-    final List <MethodNode> aAllCtors = new ArrayList <> ();
+    final List <MethodNode> aAllCtors = new ArrayList<> ();
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
@@ -261,19 +272,28 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bReturnsArray)
         {
           if (!mn.name.startsWith ("_") &&
+              !mn.name.startsWith ("new") &&
               !mn.name.startsWith ("getAll") &&
               !mn.name.startsWith ("getAs") &&
               !mn.name.startsWith ("internalGetAll") &&
-              !mn.name.equals ("values"))
+              !mn.name.contains ("::lambda$") &&
+              !mn.name.equals ("values") &&
+              !mn.name.equals ("toArray"))
             _warn (aProject, sPrefix + "returns a array but uses a non-standard name");
         }
         else
           if (bReturnsCollection)
           {
-            if (!mn.name.startsWith ("new") &&
+            if (!mn.name.startsWith ("_") &&
+                !mn.name.startsWith ("new") &&
                 !mn.name.startsWith ("getAll") &&
+                !mn.name.startsWith ("directGetAll") &&
                 !mn.name.startsWith ("internalGetAll") &&
-                !mn.name.startsWith ("readAll"))
+                !mn.name.startsWith ("readAll") &&
+                !mn.name.contains ("::lambda$") &&
+                !mn.name.equals ("keySet") &&
+                !mn.name.equals ("values") &&
+                !mn.name.equals ("entrySet"))
               _warn (aProject, sPrefix + "returns a collection but uses a non-standard name");
           }
       }
@@ -287,8 +307,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             if (!ASMHelper.containsAnnotation (mn, ReturnsMutableCopy.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsMutableObject.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsImmutableObject.class))
-              _warn (aProject,
-                     sPrefix +
+              _warn (aProject, sPrefix +
                                "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
         }
     }
@@ -331,7 +350,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
       if (bIsStatic)
       {
-        // Internal variable names
+        // Internal generated variable names
         if (fn.name.startsWith ("$SWITCH_TABLE$") ||
             fn.name.equals ("$assertionsDisabled") ||
             fn.name.startsWith ("$SwitchMap$"))
@@ -355,6 +374,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
       else
       {
+        // Internal generated variable names
         if (fn.name.startsWith ("this$") || fn.name.startsWith ("val$"))
           continue;
 
