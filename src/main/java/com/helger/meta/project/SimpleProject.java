@@ -77,7 +77,7 @@ public class SimpleProject implements IProject
     m_bHasPagesProject = eHasPagesProject.isTrue ();
     m_bHasWikiProject = eHasWikiProject.isTrue ();
     m_sLastPublishedVersion = sLastPublishedVersion;
-    m_aLastPublishedVersion = sLastPublishedVersion == null ? null : new Version (sLastPublishedVersion);
+    m_aLastPublishedVersion = sLastPublishedVersion == null ? null : Version.parse (sLastPublishedVersion);
     m_eMinJDK = eMinJDK;
 
     String sGroupID = null;

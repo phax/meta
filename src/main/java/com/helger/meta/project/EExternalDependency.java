@@ -155,7 +155,7 @@ public enum EExternalDependency
     m_sGroupID = sGroupID;
     m_sArticfactID = sArticfactID;
     m_sVersion = sVersion;
-    m_aVersion = new Version (sVersion);
+    m_aVersion = Version.parse (sVersion);
     m_eMinJDK = eMinJDK;
   }
 

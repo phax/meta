@@ -108,7 +108,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final Map <String, String> aProperties = new HashMap <> ();
+    final Map <String, String> aProperties = new HashMap<> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -306,10 +306,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 if (aReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
-                  final Version aVersionInFile = new Version (bIsSnapshot ? StringHelper.trimEnd (sVersion,
-                                                                                                  SUFFIX_SNAPSHOT)
-                                                                          : sVersion);
-                  if (aVersionInFile.isLowerThan (aReferencedProject.getLastPublishedVersion ()))
+                  final boolean bPublishedIsSnapshot = _isSnapshot (aReferencedProject.getLastPublishedVersionString ());
+                  final Version aLastPublishedVersion = bPublishedIsSnapshot ? Version.parse (StringHelper.trimEnd (aReferencedProject.getLastPublishedVersionString (),
+                                                                                                                    SUFFIX_SNAPSHOT))
+                                                                             : aReferencedProject.getLastPublishedVersion ();
+
+                  final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion,
+                                                                                                    SUFFIX_SNAPSHOT)
+                                                                            : sVersion);
+                  if (aVersionInFile.isLowerThan (aLastPublishedVersion))
                   {
                     // Version in file lower than known
                     _warn (aProject,
@@ -320,10 +325,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                      aReferencedProject.getLastPublishedVersionString ());
                   }
                   else
-                    if (aVersionInFile.equals (aReferencedProject.getLastPublishedVersion ()))
+                    if (aVersionInFile.equals (aLastPublishedVersion))
                     {
                       // Version matches - check for SNAPSHOT differences
-                      if (bIsSnapshot)
+                      if (bIsSnapshot && !bPublishedIsSnapshot)
                         _warn (aProject,
                                sArtifactID +
                                          ": " +
@@ -332,7 +337,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                          aReferencedProject.getLastPublishedVersionString ());
                     }
                     else
-                      if (aVersionInFile.isGreaterThan (aReferencedProject.getLastPublishedVersion ()))
+                      if (aVersionInFile.isGreaterThan (aLastPublishedVersion))
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
@@ -346,10 +351,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                       }
                       else
                         _warn (aProject,
-                               "Houston we have a problem: " +
-                                         aVersionInFile +
-                                         " vs. " +
-                                         aReferencedProject.getLastPublishedVersion ());
+                               "Houston we have a problem: " + aVersionInFile + " vs. " + aLastPublishedVersion);
                 }
                 else
                 {
@@ -394,7 +396,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 else
                 {
                   // Referenced project published at least once
-                  final Version aVersionInFile = new Version (sVersion);
+                  final Version aVersionInFile = Version.parse (sVersion);
                   if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
