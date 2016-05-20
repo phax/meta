@@ -154,7 +154,7 @@ public enum EProject implements IProject
   AS2_PEPPOL_SERVER ("as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK7),
   ERECHNUNG_WS_CLIENT (null, "webservice-client", "erechnung.gv.at-webservice-client", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK8),
 
-  PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom", "peppol-commons", EHasPages.FALSE, EHasWiki.FALSE, "4.3.5", EJDK.JDK6),
+  PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom", "peppol-commons", EHasPages.FALSE, EHasWiki.FALSE, "4.3.5", EJDK.JDK8),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY),
@@ -171,7 +171,6 @@ public enum EProject implements IProject
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  PEPPOL_SMP_SERVER_WEBAPP_SQLMIN (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp-sqlmin", EProjectType.JAVA_WEB_APPLICATION, (String) null),
 
   PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK7),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
@@ -179,7 +178,7 @@ public enum EProject implements IProject
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
 
   PEPPOL_DIRECTORY_PARENT_POM ("peppol-directory-parent-pom", "peppol-directory", EHasPages.FALSE, EHasWiki.FALSE, "0.1.0", EJDK.JDK8),
-  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY, EJDK.JDK6),
+  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_API (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
