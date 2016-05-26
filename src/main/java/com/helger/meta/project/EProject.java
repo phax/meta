@@ -32,7 +32,7 @@ import com.helger.meta.CMeta;
  */
 public enum EProject implements IProject
 {
-  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.8.2", EJDK.JDK8),
+  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.8.3", EJDK.JDK8),
   PH_JAXWS ("ph-jaxws", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK6),
 
   PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
