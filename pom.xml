@@ -26,7 +26,6 @@
   </parent>
   <artifactId>meta</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
   <name>meta</name>
   <description>A meta project for easy management of my other projects :)</description>
   <url>https://github.com/phax/meta</url>
@@ -72,29 +71,9 @@
       <artifactId>asm-tree</artifactId>
       <version>5.1</version>
     </dependency>
-
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <configuration>
-          <instructions>
-            <Export-Package>
-              com.helger.meta.*
-            </Export-Package>
-            <Import-Package>
-              !javax.annotation.*,*
-            </Import-Package>
-          </instructions>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
