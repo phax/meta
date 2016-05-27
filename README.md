@@ -3,13 +3,13 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-05-23):
+Current list of all projects (as of 2016-05-27):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.6
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.6
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
@@ -17,19 +17,19 @@ Current list of all projects (as of 2016-05-23):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.6
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.4 - JDK 1.6
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 1.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 3.0.0 - JDK 1.6
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 3.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
- * [as2-server](https://github.com/phax/as2-server) - Version 2.2.7 - JDK 1.6
+ * [as2-server](https://github.com/phax/as2-server) - Version 2.2.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
@@ -125,19 +125,19 @@ Current list of all projects (as of 2016-05-23):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+ * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-api](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+ * [peppol-validation-engine/peppol-validation-api](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-artefacts](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+ * [peppol-validation-engine/peppol-validation-artefacts](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.6
+ * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 1.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
@@ -353,7 +353,7 @@ Current list of all projects (as of 2016-05-23):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.8.2 - JDK 1.8
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
@@ -452,7 +452,7 @@ Current list of all projects (as of 2016-05-23):
 
 Current list of all unreleased projects:
 
- * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.7
+ * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
@@ -488,6 +488,9 @@ Current list of all unreleased projects:
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
+ * [uvw](https://github.com/phax/uvw) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/uvw.svg?branch=master)](https://travis-ci.org/phax/uvw)
 
 All deprecated projects:
 
