@@ -18,6 +18,7 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Comparator;
 import java.util.List;
 
@@ -79,7 +80,9 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
                                                                                   .thenComparing (IProject::getProjectName));
 
     // Show all
-    aSB.append ("Current list of all projects (as of ").append (LocalDate.now ().toString ()).append ("):\n\n");
+    aSB.append ("Current list of all projects (as of ")
+       .append (LocalDate.now (ZoneId.systemDefault ()).toString ())
+       .append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
       {

@@ -17,8 +17,8 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
-import java.time.Year;
 
+import com.helger.commons.CGlobal;
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
@@ -36,7 +36,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    final int nThisYear = Year.now ().getValue ();
+    final int nThisYear = CGlobal.CURRENT_YEAR;
     final String sPrevYear = Integer.toString (nThisYear - 1);
     final String sThisYear = Integer.toString (nThisYear);
 
