@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.charset.CCharset;
 import com.helger.commons.debug.GlobalDebug;
+import com.helger.commons.string.StringHelper;
 import com.helger.meta.project.IProject;
 
 /**
@@ -83,6 +84,7 @@ public abstract class AbstractProjectMain
   @Nonempty
   protected static final String getBatchLabel (@Nonnull final String sPrefix, @Nonnull final IProject aProject)
   {
-    return sPrefix + "-" + aProject.getProjectName ();
+    final String ret = sPrefix + "-" + aProject.getProjectName ();
+    return StringHelper.removeAll (ret, '-');
   }
 }
