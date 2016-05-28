@@ -92,11 +92,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   @Nonnull
   private static String _getParentPOMVersion (@Nonnull final IProject aProject)
   {
-    if (aProject.getMinimumJDKVersion ().isAtLeast8 ())
-      return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
-    if (aProject.getMinimumJDKVersion ().isAtLeast7 ())
-      return EExternalDependency._PH_PARENT_POM7.getLastPublishedVersionString ();
-    return EExternalDependency._PH_PARENT_POM6.getLastPublishedVersionString ();
+    assert aProject != null;
+    return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
   }
 
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)

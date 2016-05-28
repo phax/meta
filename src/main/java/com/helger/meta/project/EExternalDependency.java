@@ -125,10 +125,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "1.3.22.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.0.6"),
-  // Special dependencies :)
-  _PH_PARENT_POM6 ("com.helger", "ph-parent-pom", "1.4.1", EJDK.JDK6),
-  _PH_PARENT_POM7 ("com.helger", "ph-parent-pom", "1.4.2", EJDK.JDK7);
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.0.6");
 
   private final String m_sGroupID;
   private final String m_sArticfactID;
