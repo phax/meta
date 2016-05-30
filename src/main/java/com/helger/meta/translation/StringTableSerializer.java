@@ -22,6 +22,7 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 
 import com.helger.commons.ValueEnforcer;
+import com.helger.commons.collection.ext.ICommonsSortedMap;
 import com.helger.commons.hashcode.HashCodeCalculator;
 import com.helger.commons.hashcode.HashCodeGenerator;
 import com.helger.commons.microdom.IMicroDocument;
@@ -46,7 +47,7 @@ public final class StringTableSerializer
 
     int nHashCode = HashCodeGenerator.INITIAL_HASHCODE;
 
-    for (final Map.Entry <String, Map <String, String>> aEntry : aST.directGetMap ().entrySet ())
+    for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : aST.directGetMap ().entrySet ())
     {
       final IMicroElement eItem = eRoot.appendElement ("item");
 

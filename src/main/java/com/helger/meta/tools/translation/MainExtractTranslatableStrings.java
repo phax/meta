@@ -19,11 +19,7 @@ package com.helger.meta.tools.translation;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -35,6 +31,10 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
+import com.helger.commons.collection.ext.CommonsArrayList;
+import com.helger.commons.collection.ext.CommonsLinkedHashSet;
+import com.helger.commons.collection.ext.ICommonsList;
+import com.helger.commons.collection.ext.ICommonsOrderedSet;
 import com.helger.commons.io.file.FileHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
@@ -51,7 +51,7 @@ import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
-  private static Set <String> s_aActions = new LinkedHashSet <String> ();
+  private static ICommonsOrderedSet <String> s_aActions = new CommonsLinkedHashSet<> ();
 
   @Nullable
   private static StringTable _extractSTFromFile (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
@@ -108,7 +108,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
     // Second find the initialization calls in the static ctor
     final MethodNode aStaticInit = ASMHelper.findMethod (cn, "<clinit>");
-    final List <String> aAllConstantStrings = new ArrayList <String> ();
+    final ICommonsList <String> aAllConstantStrings = new CommonsArrayList<> ();
     final String sIDPrefix = ClassHelper.getClassFromPath (cn.name) + ".";
     // static initializer
     final Iterator <?> aInstructionIter = aStaticInit.instructions.iterator ();

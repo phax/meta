@@ -17,12 +17,9 @@
 package com.helger.meta.translation;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -36,6 +33,12 @@ import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.annotation.ReturnsMutableObject;
+import com.helger.commons.collection.ext.CommonsHashMap;
+import com.helger.commons.collection.ext.CommonsHashSet;
+import com.helger.commons.collection.ext.CommonsTreeMap;
+import com.helger.commons.collection.ext.ICommonsMap;
+import com.helger.commons.collection.ext.ICommonsSet;
+import com.helger.commons.collection.ext.ICommonsSortedMap;
 import com.helger.commons.equals.EqualsHelper;
 import com.helger.commons.hashcode.HashCodeGenerator;
 import com.helger.commons.lang.ICloneable;
@@ -55,7 +58,7 @@ public final class StringTable implements ICloneable <StringTable>
   private static final Logger s_aLogger = LoggerFactory.getLogger (StringTable.class);
 
   // Map <StringID, Map <Locale-as-String, Text>>
-  private final Map <String, Map <String, String>> m_aMap = new TreeMap <String, Map <String, String>> ();
+  private final ICommonsSortedMap <String, ICommonsSortedMap <String, String>> m_aMap = new CommonsTreeMap<> ();
 
   // State-only
   private final boolean m_bWarnOnDuplicateIDs;
@@ -78,7 +81,7 @@ public final class StringTable implements ICloneable <StringTable>
 
   public void addAll (@Nonnull final StringTable aST)
   {
-    for (final Map.Entry <String, Map <String, String>> aEntry : aST.m_aMap.entrySet ())
+    for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : aST.m_aMap.entrySet ())
       setTexts (aEntry.getKey (), aEntry.getValue ());
   }
 
@@ -150,11 +153,11 @@ public final class StringTable implements ICloneable <StringTable>
     ValueEnforcer.notEmpty (sLocale, "Locale");
     ValueEnforcer.notNull (sText, "Text");
 
-    Map <String, String> aMap = m_aMap.get (sID);
+    ICommonsSortedMap <String, String> aMap = m_aMap.get (sID);
     if (aMap == null)
     {
       // Tree map for defined order
-      aMap = new TreeMap <String, String> ();
+      aMap = new CommonsTreeMap<> ();
       m_aMap.put (sID, aMap);
     }
     return EChange.valueOf (!EqualsHelper.equals (aMap.put (sLocale, sText), sText));
@@ -185,7 +188,7 @@ public final class StringTable implements ICloneable <StringTable>
 
   @Nonnull
   @ReturnsMutableObject ("Performance")
-  public Map <String, Map <String, String>> directGetMap ()
+  public ICommonsSortedMap <String, ICommonsSortedMap <String, String>> directGetMap ()
   {
     return m_aMap;
   }
@@ -193,7 +196,7 @@ public final class StringTable implements ICloneable <StringTable>
   public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText,
                                         @Nonnull final Collection <String> aIDCont)
   {
-    for (final Map.Entry <String, Map <String, String>> aEntry : m_aMap.entrySet ())
+    for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {
       // Get current text in the search languages
       final String sText = aEntry.getValue ().get (aSearchText.getLocale ());
@@ -204,18 +207,18 @@ public final class StringTable implements ICloneable <StringTable>
 
   @Nonnull
   @ReturnsMutableCopy
-  public Set <String> findAllIDsContainingText (@Nonnull final TextInLocale aSearchText)
+  public ICommonsSet <String> findAllIDsContainingText (@Nonnull final TextInLocale aSearchText)
   {
-    final Set <String> ret = new HashSet <String> ();
+    final ICommonsSet <String> ret = new CommonsHashSet<> ();
     findAllIDsContainingText (aSearchText, ret);
     return ret;
   }
 
   @Nonnull
   @ReturnsMutableCopy
-  public Set <String> getAllUsedLocales ()
+  public ICommonsSet <String> getAllUsedLocales ()
   {
-    final Set <String> ret = new HashSet <String> ();
+    final ICommonsSet <String> ret = new CommonsHashSet<> ();
     for (final Map <String, String> aPerIDMap : m_aMap.values ())
       ret.addAll (aPerIDMap.keySet ());
     return ret;
@@ -230,11 +233,11 @@ public final class StringTable implements ICloneable <StringTable>
    */
   @Nonnull
   @ReturnsMutableCopy
-  public Map <String, String> getAllTextsInLocale (final String sLocale)
+  public ICommonsMap <String, String> getAllTextsInLocale (final String sLocale)
   {
     // ID to text map
-    final Map <String, String> ret = new HashMap <String, String> ();
-    for (final Map.Entry <String, Map <String, String>> aEntry : m_aMap.entrySet ())
+    final ICommonsMap <String, String> ret = new CommonsHashMap<> ();
+    for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {
       final String sText = aEntry.getValue ().get (sLocale);
       if (sText != null)

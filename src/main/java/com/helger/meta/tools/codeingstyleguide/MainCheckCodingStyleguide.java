@@ -197,6 +197,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return true;
 
     final String sClassName = aType.getClassName ();
+    // com.helger.commons.collection.ext
+    // com.helger.commons.collection.impl
     return SafeArrayList.class.getName ().equals (sClassName) ||
            SafeVector.class.getName ().equals (sClassName) ||
            SoftHashMap.class.getName ().equals (sClassName) ||

@@ -17,9 +17,6 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -27,6 +24,11 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.collection.CollectionHelper;
+import com.helger.commons.collection.ext.CommonsHashMap;
+import com.helger.commons.collection.ext.CommonsHashSet;
+import com.helger.commons.collection.ext.ICommonsList;
+import com.helger.commons.collection.ext.ICommonsMap;
+import com.helger.commons.collection.ext.ICommonsSet;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
@@ -59,7 +61,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
   private static void _readPOM (@Nonnull final IProject aProject,
                                 @Nonnull final IMicroDocument aDoc,
-                                @Nonnull final Map <IProject, Set <IProject>> aTree)
+                                @Nonnull final ICommonsMap <IProject, ICommonsSet <IProject>> aTree)
   {
     if (s_aLogger.isDebugEnabled ())
       s_aLogger.debug (aProject.getProjectName ());
@@ -95,10 +97,10 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
             {
               if (!sArtifactID.equals (sThisArtefactID))
               {
-                Set <IProject> aRefProjects = aTree.get (aThisProject);
+                ICommonsSet <IProject> aRefProjects = aTree.get (aThisProject);
                 if (aRefProjects == null)
                 {
-                  aRefProjects = new HashSet <IProject> ();
+                  aRefProjects = new CommonsHashSet<> ();
                   aTree.put (aThisProject, aRefProjects);
                 }
                 aRefProjects.add (aReferencedProject);
@@ -112,7 +114,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     // Read all dependencies
-    final Map <IProject, Set <IProject>> aTree = new HashMap <> ();
+    final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap<> ();
     for (final IProject aProject : ProjectList.getAllProjects ())
       if (aProject.getProjectType () != EProjectType.MAVEN_POM &&
           aProject.isBuildInProject () &&
@@ -132,7 +134,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     {
       bChanged = false;
       ++nIterations;
-      for (final Map.Entry <IProject, Set <IProject>> aEntry : aTree.entrySet ())
+      for (final Map.Entry <IProject, ICommonsSet <IProject>> aEntry : aTree.entrySet ())
       {
         final int nOld = aEntry.getValue ().size ();
         for (final IProject eReferencedProject : CollectionHelper.newList (aEntry.getValue ()))
@@ -148,7 +150,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     s_aLogger.info ("Found all transitive dependencies after " + nIterations + " iterations");
 
     // Evaluate dependencies
-    final List <Map.Entry <IProject, Set <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
+    final ICommonsList <Map.Entry <IProject, ICommonsSet <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
     aEntries.sort ( (o1, o2) -> {
       // Less dependencies before many dependencies, because transitivity was
       // already handled
@@ -190,7 +192,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM.getProjectName ());
 
     // Parent POM and Maven plugins always go first!
-    for (final Map.Entry <IProject, Set <IProject>> aEntry : aEntries)
+    for (final Map.Entry <IProject, ICommonsSet <IProject>> aEntry : aEntries)
     {
       final IProject eCurProject = aEntry.getKey ();
       eModules.appendComment (eCurProject + " -> " + aEntry.getValue ());
