@@ -52,6 +52,8 @@ import com.helger.commons.annotation.OverrideOnDemand;
 import com.helger.commons.annotation.ReturnsImmutableObject;
 import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.annotation.ReturnsMutableObject;
+import com.helger.commons.collection.ext.CommonsArrayList;
+import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.collection.impl.SafeArrayList;
 import com.helger.commons.collection.impl.SafeVector;
 import com.helger.commons.collection.impl.SoftHashMap;
@@ -218,7 +220,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
-    final List <MethodNode> aAllCtors = new ArrayList<> ();
+    final ICommonsList <MethodNode> aAllCtors = new CommonsArrayList<> ();
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
