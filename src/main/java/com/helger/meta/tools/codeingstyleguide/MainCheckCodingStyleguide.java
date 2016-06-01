@@ -18,24 +18,7 @@ package com.helger.meta.tools.codeingstyleguide;
 
 import java.io.File;
 import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.TreeMap;
-import java.util.TreeSet;
-import java.util.Vector;
-import java.util.WeakHashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -167,27 +150,27 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return false;
 
     final String sClassName = aType.getClassName ();
-    return Collection.class.getName ().equals (sClassName) ||
+    return java.util.Collection.class.getName ().equals (sClassName) ||
            // list
-           List.class.getName ().equals (sClassName) ||
-           ArrayList.class.getName ().equals (sClassName) ||
-           CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
-           Vector.class.getName ().equals (sClassName) ||
+           java.util.List.class.getName ().equals (sClassName) ||
+           java.util.ArrayList.class.getName ().equals (sClassName) ||
+           java.util.concurrent.CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
+           java.util.Vector.class.getName ().equals (sClassName) ||
            // set
-           Set.class.getName ().equals (sClassName) ||
-           SortedSet.class.getName ().equals (sClassName) ||
-           HashSet.class.getName ().equals (sClassName) ||
-           LinkedHashSet.class.getName ().equals (sClassName) ||
-           TreeSet.class.getName ().equals (sClassName) ||
-           HashSet.class.getName ().equals (sClassName) ||
+           java.util.Set.class.getName ().equals (sClassName) ||
+           java.util.SortedSet.class.getName ().equals (sClassName) ||
+           java.util.HashSet.class.getName ().equals (sClassName) ||
+           java.util.LinkedHashSet.class.getName ().equals (sClassName) ||
+           java.util.TreeSet.class.getName ().equals (sClassName) ||
+           java.util.HashSet.class.getName ().equals (sClassName) ||
            // Map
-           Map.class.getName ().equals (sClassName) ||
-           SortedMap.class.getName ().equals (sClassName) ||
-           HashMap.class.getName ().equals (sClassName) ||
-           ConcurrentHashMap.class.getName ().equals (sClassName) ||
-           WeakHashMap.class.getName ().equals (sClassName) ||
-           LinkedHashMap.class.getName ().equals (sClassName) ||
-           TreeMap.class.getName ().equals (sClassName);
+           java.util.Map.class.getName ().equals (sClassName) ||
+           java.util.SortedMap.class.getName ().equals (sClassName) ||
+           java.util.HashMap.class.getName ().equals (sClassName) ||
+           java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName) ||
+           java.util.WeakHashMap.class.getName ().equals (sClassName) ||
+           java.util.LinkedHashMap.class.getName ().equals (sClassName) ||
+           java.util.TreeMap.class.getName ().equals (sClassName);
   }
 
   private static boolean _isCollectionClass (@Nonnull final Type aType)
