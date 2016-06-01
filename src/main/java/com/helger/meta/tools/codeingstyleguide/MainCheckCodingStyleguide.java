@@ -154,23 +154,23 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            // list
            java.util.List.class.getName ().equals (sClassName) ||
            java.util.ArrayList.class.getName ().equals (sClassName) ||
-           java.util.concurrent.CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
            java.util.Vector.class.getName ().equals (sClassName) ||
+           java.util.LinkedList.class.getName ().equals (sClassName) ||
+           java.util.concurrent.CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
            // set
            java.util.Set.class.getName ().equals (sClassName) ||
            java.util.SortedSet.class.getName ().equals (sClassName) ||
            java.util.HashSet.class.getName ().equals (sClassName) ||
            java.util.LinkedHashSet.class.getName ().equals (sClassName) ||
            java.util.TreeSet.class.getName ().equals (sClassName) ||
-           java.util.HashSet.class.getName ().equals (sClassName) ||
            // Map
            java.util.Map.class.getName ().equals (sClassName) ||
            java.util.SortedMap.class.getName ().equals (sClassName) ||
            java.util.HashMap.class.getName ().equals (sClassName) ||
-           java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName) ||
            java.util.WeakHashMap.class.getName ().equals (sClassName) ||
            java.util.LinkedHashMap.class.getName ().equals (sClassName) ||
-           java.util.TreeMap.class.getName ().equals (sClassName);
+           java.util.TreeMap.class.getName ().equals (sClassName) ||
+           java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName);
   }
 
   private static boolean _isCollectionClass (@Nonnull final Type aType)
