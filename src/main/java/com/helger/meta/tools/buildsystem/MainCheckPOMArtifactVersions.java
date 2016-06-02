@@ -279,7 +279,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               if (aReferencedProject.isDeprecated ())
-                _warn (aProject, sArtifactID + ": is deprecated!");
+                _warn (aProject, aReferencedProject.getMavenID () + " is deprecated!");
 
               // Avoid warnings for components that require a later JDK
               if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))

@@ -93,7 +93,7 @@ public enum EExternalDependency
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.53"),
   JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2"),
-  JSP_API ("javax.servlet.jsp", " javax.servlet.jsp-api", "2.3.1"),
+  JSP_API ("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.1"),
   JUNIT ("junit", "junit", "4.12"),
   LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
   LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),

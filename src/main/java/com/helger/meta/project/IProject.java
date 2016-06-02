@@ -76,6 +76,13 @@ public interface IProject
   @Nonempty
   String getMavenArtifactID ();
 
+  @Nonnull
+  @Nonempty
+  default String getMavenID ()
+  {
+    return getMavenGroupID () + "::" + getMavenArtifactID () + "::" + getLastPublishedVersionString ();
+  }
+
   default boolean isParentPOM ()
   {
     return getMavenArtifactID ().equals (EProject.PH_PARENT_POM.getMavenArtifactID ());
