@@ -173,13 +173,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName);
   }
 
-  private static boolean _isCollectionClass (@Nonnull final Type aType)
+  private static boolean _isPhCollectionClass (@Nonnull final Type aType)
   {
     if (aType.getSort () != Type.OBJECT)
       return false;
-
-    if (_isJDKCollectionClass (aType))
-      return true;
 
     final String sClassName = aType.getClassName ();
     // com.helger.commons.collection.ext
@@ -198,12 +195,13 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (bIsSpecialCase)
       return;
 
+    final boolean bIsJDK8 = aProject.getMinimumJDKVersion ().isAtLeast8 ();
     final boolean bClassIsAbstract = Modifier.isAbstract (cn.access);
     final boolean bClassIsEnum = (cn.access & Opcodes.ACC_ENUM) != 0;
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
-    final ICommonsList <MethodNode> aAllCtors = new CommonsArrayList<> ();
+    final ICommonsList <MethodNode> aAllCtors = new CommonsArrayList <> ();
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
@@ -218,7 +216,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
       final Type aReturnType = Type.getReturnType (mn.desc);
       final boolean bReturnsArray = _isArrayClass (aReturnType);
-      final boolean bReturnsCollection = _isCollectionClass (aReturnType);
+      final boolean bReturnsJdkCollection = _isJDKCollectionClass (aReturnType);
+      final boolean bReturnsCollection = bReturnsJdkCollection || _isPhCollectionClass (aReturnType);
       final boolean bIsConstructor = mn.name.equals ("<init>");
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
       final boolean bIsFinal = Modifier.isFinal (mn.access);
@@ -294,9 +293,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             if (!ASMHelper.containsAnnotation (mn, ReturnsMutableCopy.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsMutableObject.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsImmutableObject.class))
-              _warn (aProject, sPrefix +
+              _warn (aProject,
+                     sPrefix +
                                "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
         }
+
+      if (bIsJDK8 && bReturnsJdkCollection)
+        if (!mn.name.equals ("getAsUnmodifiable"))
+          _warn (aProject,
+                 sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
     }
 
     if (bClassIsAbstract && !bClassIsInterface && !bClassIsEnum)
@@ -320,6 +325,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                                     sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
+    final boolean bIsJDK8 = aProject.getMinimumJDKVersion ().isAtLeast8 ();
 
     final String sPrefix = "[" + sClassLocalName + "] ";
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
@@ -334,6 +340,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       final boolean bIsStatic = Modifier.isStatic (fn.access);
       final boolean bIsFinal = Modifier.isFinal (fn.access);
       final boolean bIsPrivate = Modifier.isPrivate (fn.access);
+      final boolean bIsJdkCollection = _isJDKCollectionClass (Type.getType (fn.desc));
 
       if (bIsStatic)
       {
@@ -371,6 +378,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bClassIsFinal && !bIsPrivate)
           _warn (aProject, sPrefix + "Instance member '" + fn.name + "' is not private");
       }
+
+      if (bIsJDK8 && bIsJdkCollection)
+        _warn (aProject,
+               sPrefix + "Member '" + fn.name + "' is a JDK Collection - consider using an ICommons* collection");
     }
   }
 
