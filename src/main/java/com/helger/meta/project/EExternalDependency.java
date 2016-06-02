@@ -32,7 +32,7 @@ public enum EExternalDependency
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.54"),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20160315"),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20160517"),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
   COMMONS_NET ("commons-net", "commons-net", "3.5"),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.4.2", EJDK.JDK7),
@@ -105,6 +105,7 @@ public enum EExternalDependency
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.4"),
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0"),
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1"),
   // 6.0.2 is out but not yet supported
