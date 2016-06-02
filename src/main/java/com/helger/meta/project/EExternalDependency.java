@@ -65,9 +65,9 @@ public enum EExternalDependency
   JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11"),
   JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
   JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
-  JAXB_IMPL_GLASSFISH ("org.glassfish.jaxb", "jaxb-impl", "2.2.11"),
-  JAXB_JXC_GLASSFISH ("org.glassfish.jaxb", "jaxb-jxc", JAXB_IMPL_GLASSFISH),
-  JAXB_XJC_GLASSFISH ("org.glassfish.jaxb", "jaxb-xjc", JAXB_IMPL_GLASSFISH),
+  JAXB_CORE_GLASSFISH ("org.glassfish.jaxb", "jaxb-core", "2.2.11"),
+  JAXB_JXC_GLASSFISH ("org.glassfish.jaxb", "jaxb-jxc", JAXB_CORE_GLASSFISH),
+  JAXB_XJC_GLASSFISH ("org.glassfish.jaxb", "jaxb-xjc", JAXB_CORE_GLASSFISH),
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.1"),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.0"),
   JAXWS_RI_COM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10"),
@@ -209,7 +209,7 @@ public enum EExternalDependency
           return JDK;
         break;
       case JAXB_IMPL_SUN:
-        return JAXB_IMPL_GLASSFISH;
+        return JAXB_CORE_GLASSFISH;
       case JAXB_JXC_SUN:
         return JAXB_JXC_GLASSFISH;
       case JAXB_XJC_SUN:
