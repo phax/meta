@@ -73,6 +73,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         return "pom";
       case OTHER_PLUGIN:
         return "jar";
+      case RESOURCES_ONLY:
+        return "jar";
       default:
         throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     }
