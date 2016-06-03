@@ -25,6 +25,7 @@ import java.io.File;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.helger.commons.io.file.filter.IFileFilter;
 import com.helger.commons.io.file.iterate.FileSystemIterator;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.CMeta;
@@ -61,23 +62,21 @@ public final class EProjectTest
   @Test
   public void testForMissingEProject ()
   {
-    for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR))
-      if (aFile.isDirectory ())
-      {
-        // ebinterface-ubl-mapping: different GitHub entity
-        if (!"ebinterface-ubl-mapping".equals (aFile.getName ()) &&
-            !"Holodeck-B2B".equals (aFile.getName ()) &&
-            !"junrar".equals (aFile.getName ()))
-        {
-          // Ignore all Pages and Wiki directories
-          String sProjectName = aFile.getName ();
-          sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_PAGES_PROJECT);
-          sProjectName = StringHelper.trimEnd (sProjectName, SimpleProject.EXTENSION_WIKI_PROJECT);
+    for (final File aFile : new FileSystemIterator (CMeta.GIT_BASE_DIR).withFilter (IFileFilter.directoryOnly ()))
+    {
+      String sProjectName = aFile.getName ();
 
-          assertTrue (aFile.getName () +
-                      " is missing in the project list",
-                      ProjectList.containsProjectOfDir (sProjectName));
-        }
+      // ebinterface-ubl-mapping: different GitHub entity
+      if (!"ebinterface-ubl-mapping".equals (sProjectName) &&
+          !"Holodeck-B2B".equals (sProjectName) &&
+          !"junrar".equals (sProjectName))
+      {
+        // Ignore all Pages and Wiki directories
+        sProjectName = StringHelper.trimEnd (sProjectName, IProject.EXTENSION_PAGES_PROJECT);
+        sProjectName = StringHelper.trimEnd (sProjectName, IProject.EXTENSION_WIKI_PROJECT);
+
+        assertTrue (sProjectName + " is missing in the project list", ProjectList.containsProjectOfDir (sProjectName));
       }
+    }
   }
 }

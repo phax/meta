@@ -22,10 +22,14 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.string.StringHelper;
 import com.helger.commons.version.Version;
 
 public interface IProject
 {
+  String EXTENSION_PAGES_PROJECT = ".pages";
+  String EXTENSION_WIKI_PROJECT = ".wiki";
+
   /**
    * @return <code>true</code> if this project is part of {@link EProject}.
    */
@@ -34,7 +38,10 @@ public interface IProject
   @Nullable
   IProject getParentProject ();
 
-  boolean isNestedProject ();
+  default boolean isNestedProject ()
+  {
+    return getParentProject () != null;
+  }
 
   /**
    * @return The project name. E.g. <code>ph-commons</code>
@@ -98,7 +105,10 @@ public interface IProject
 
   @Nonnull
   @Nonempty
-  String getPagesProjectName ();
+  default String getPagesProjectName ()
+  {
+    return getProjectName () + EXTENSION_PAGES_PROJECT;
+  }
 
   /**
    * @return <code>true</code> if this project has a special Wiki project.
@@ -107,13 +117,19 @@ public interface IProject
 
   @Nonnull
   @Nonempty
-  String getWikiProjectName ();
+  default String getWikiProjectName ()
+  {
+    return getProjectName () + EXTENSION_WIKI_PROJECT;
+  }
 
   /**
    * @return <code>true</code> if this project had at least one release,
    *         <code>false</code> if not.
    */
-  boolean isPublished ();
+  default boolean isPublished ()
+  {
+    return StringHelper.hasText (getLastPublishedVersionString ());
+  }
 
   @Nullable
   String getLastPublishedVersionString ();

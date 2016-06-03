@@ -38,16 +38,15 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
     final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/raw/source-javadoc.css"),
                                                          CCharset.CHARSET_UTF_8_OBJ);
 
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () &&
-          aProject.getBaseDir ().exists () &&
-          !aProject.isDeprecated () &&
-          aProject.getProjectType ().hasJavaCode ())
-      {
-        final File f = new File (aProject.getBaseDir (), "src/etc/javadoc.css");
-        assert f.exists ();
-        SimpleFileIO.writeFile (f, sSrcCSS, CCharset.CHARSET_UTF_8_OBJ);
-      }
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                    p.getBaseDir ().exists () &&
+                                                                    !p.isDeprecated () &&
+                                                                    p.getProjectType ().hasJavaCode ()))
+    {
+      final File f = new File (aProject.getBaseDir (), "src/etc/javadoc.css");
+      assert f.exists ();
+      SimpleFileIO.writeFile (f, sSrcCSS, CCharset.CHARSET_UTF_8_OBJ);
+    }
     s_aLogger.info ("Done - run mvn license:format on all projects");
   }
 }

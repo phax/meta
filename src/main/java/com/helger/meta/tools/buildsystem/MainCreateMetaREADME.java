@@ -25,7 +25,6 @@ import java.util.List;
 import javax.annotation.Nonnull;
 
 import com.helger.commons.charset.CCharset;
-import com.helger.commons.collection.CollectionHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -41,7 +40,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   @Nonnull
   private static String _getGitHubRepoName (@Nonnull final IProject aProject)
   {
-    if (aProject.getParentProject () != null)
+    if (aProject.isNestedProject ())
       return _getGitHubRepoName (aProject.getParentProject ());
     return aProject.getBaseDir ().getName ();
   }
@@ -75,16 +74,16 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final List <IProject> aSortedProjects = CollectionHelper.getSorted (ProjectList.getAllProjects (),
-                                                                        Comparator.comparing (IProject::getBaseDir)
-                                                                                  .thenComparing (IProject::getProjectName));
+    final List <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
+                                                       .getSorted (Comparator.comparing (IProject::getBaseDir)
+                                                                             .thenComparing (IProject::getProjectName));
 
     // Show all
     aSB.append ("Current list of all projects (as of ")
        .append (LocalDate.now (ZoneId.systemDefault ()).toString ())
        .append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
-      if (aProject.isBuildInProject () && !aProject.isDeprecated () && aProject.isPublished ())
+      if (!aProject.isDeprecated () && aProject.isPublished ())
       {
         final String sRepoName = _getGitHubRepoName (aProject);
 
@@ -104,7 +103,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
 
     aSB.append ("\nCurrent list of all unreleased projects:\n\n");
     for (final IProject aProject : aSortedProjects)
-      if (aProject.isBuildInProject () && !aProject.isDeprecated () && !aProject.isPublished ())
+      if (!aProject.isDeprecated () && !aProject.isPublished ())
       {
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
@@ -120,7 +119,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     // Add deprecated projects
     aSB.append ("\nAll deprecated projects:\n\n");
     for (final IProject aProject : aSortedProjects)
-      if (aProject.isBuildInProject () && aProject.isDeprecated ())
+      if (aProject.isDeprecated ())
       {
         aSB.append (" * ").append (aProject.getFullBaseDirName ()).append (" - ");
         if (aProject.isPublished ())

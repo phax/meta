@@ -45,39 +45,40 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
     final String sSearch2 = sPrevYear;
     final String sReplace2 = sPrevYear + "-" + sThisYear;
 
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated ())
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                    p.getBaseDir ().exists () &&
+                                                                    !p.isDeprecated ()))
+    {
+      final File f = new File (aProject.getBaseDir (), "src/etc/license-template.txt");
+      if (!f.exists ())
       {
-        final File f = new File (aProject.getBaseDir (), "src/etc/license-template.txt");
-        if (!f.exists ())
-        {
-          System.err.println (f.getAbsolutePath () + " does not exist!");
-          continue;
-        }
+        System.err.println (f.getAbsolutePath () + " does not exist!");
+        continue;
+      }
 
-        System.out.println (f.getAbsolutePath ());
-        final String sCurrent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+      System.out.println (f.getAbsolutePath ());
+      final String sCurrent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
 
-        boolean bChange = false;
-        String sNew = sCurrent;
-        if (sNew.contains (sSearch1))
+      boolean bChange = false;
+      String sNew = sCurrent;
+      if (sNew.contains (sSearch1))
+      {
+        sNew = StringHelper.replaceAll (sNew, sSearch1, sReplace1);
+        bChange = true;
+      }
+      else
+        if (sNew.contains (sSearch2) && !sNew.contains (sReplace2))
         {
-          sNew = StringHelper.replaceAll (sNew, sSearch1, sReplace1);
+          sNew = StringHelper.replaceAll (sNew, sSearch2, sReplace2);
           bChange = true;
         }
-        else
-          if (sNew.contains (sSearch2) && !sNew.contains (sReplace2))
-          {
-            sNew = StringHelper.replaceAll (sNew, sSearch2, sReplace2);
-            bChange = true;
-          }
 
-        if (bChange)
-        {
-          SimpleFileIO.writeFile (f, sNew, CCharset.CHARSET_UTF_8_OBJ);
-          System.out.println ("  changed");
-        }
+      if (bChange)
+      {
+        SimpleFileIO.writeFile (f, sNew, CCharset.CHARSET_UTF_8_OBJ);
+        System.out.println ("  changed");
       }
+    }
     s_aLogger.info ("Done - run mvn license:format on all projects");
   }
 }
