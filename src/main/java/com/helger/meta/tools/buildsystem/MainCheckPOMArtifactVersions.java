@@ -16,15 +16,15 @@
  */
 package com.helger.meta.tools.buildsystem;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Pattern;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.collection.ext.CommonsHashMap;
+import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
@@ -107,12 +107,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final Map <String, String> aProperties = new HashMap <> ();
+    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
-        for (final IMicroElement eProperty : eProperties.getAllChildElements ())
-          aProperties.put ("${" + eProperty.getTagName () + "}", eProperty.getTextContentTrimmed ());
+        eProperties.forAllChildElements (eProperty -> aProperties.put ("${" +
+                                                                       eProperty.getTagName () +
+                                                                       "}",
+                                                                       eProperty.getTextContentTrimmed ()));
     }
 
     // Check parent POM
