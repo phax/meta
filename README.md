@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-05-27):
+Current list of all projects (as of 2016-06-07):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
@@ -89,22 +89,6 @@ Current list of all projects (as of 2016-05-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher) 
    [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-lime](https://github.com/phax/peppol-lime) - Version 3.0.1 - JDK 1.7
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom) 
-   [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-api](https://github.com/phax/peppol-lime) - Version 3.0.1 - JDK 1.7
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api) 
-   [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-client](https://github.com/phax/peppol-lime) - Version 3.0.1 - JDK 1.7
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client) 
-   [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
- * [peppol-lime/peppol-lime-server](https://github.com/phax/peppol-lime) - Version 3.0.1 - JDK 1.7
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server) 
-   [![Build Status](https://travis-ci.org/phax/peppol-lime.svg?branch=master)](https://travis-ci.org/phax/peppol-lime)
  * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 4.1.0 - JDK 1.7
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-parent-pom) 
@@ -160,6 +144,14 @@ Current list of all projects (as of 2016-05-27):
  * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree) 
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 6.2.4 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-css](https://github.com/phax/ph-css) - Version 4.1.3 - JDK 1.8
 
@@ -467,6 +459,9 @@ Current list of all unreleased projects:
  * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
  * [ph-locales](https://github.com/phax/ph-locales) - JDK 1.6
 
    [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
@@ -504,6 +499,18 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
  * jgatsp - never released
+ * peppol-lime - Version 3.0.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom) 
+ * peppol-lime/peppol-lime-api - Version 3.0.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-api) 
+ * peppol-lime/peppol-lime-client - Version 3.0.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-client) 
+ * peppol-lime/peppol-lime-server - Version 3.0.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server) 
  * ph-as4 - never released
  * ph-as4/ph-as4-lib - never released
  * ph-as4/ph-as4-server - never released
