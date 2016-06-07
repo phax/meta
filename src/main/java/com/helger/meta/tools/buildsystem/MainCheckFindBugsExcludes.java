@@ -33,26 +33,25 @@ public final class MainCheckFindBugsExcludes extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType ().hasJavaCode ())
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode ()))
+    {
+      final File f = new File (aProject.getBaseDir (), "findbugs-exclude.xml");
+      if (f.exists ())
       {
-        final File f = new File (aProject.getBaseDir (), "findbugs-exclude.xml");
-        if (f.exists ())
-        {
-          final IMicroDocument aDoc = MicroReader.readMicroXML (f);
-          if (aDoc == null)
-            _warn (aProject, "Failed to read " + f.getAbsolutePath () + " as XML!");
+        final IMicroDocument aDoc = MicroReader.readMicroXML (f);
+        if (aDoc == null)
+          _warn (aProject, "Failed to read " + f.getAbsolutePath () + " as XML!");
+        else
+          if (aDoc.getDocumentElement () == null)
+            _warn (aProject, "File " + f.getAbsolutePath () + " seems to be empty!");
           else
-            if (aDoc.getDocumentElement () == null)
-              _warn (aProject, "File " + f.getAbsolutePath () + " seems to be empty!");
+            if (!"FindBugsFilter".equals (aDoc.getDocumentElement ().getTagName ()))
+              _warn (aProject, "File " + f.getAbsolutePath () + " contains an unknown root element!");
             else
-              if (!"FindBugsFilter".equals (aDoc.getDocumentElement ().getTagName ()))
-                _warn (aProject, "File " + f.getAbsolutePath () + " contains an unknown root element!");
-              else
-                if (aDoc.getDocumentElement ().getChildElementCount () > 0)
-                  _info (aProject, "Has FindBugs excludes defines!");
-        }
+              if (aDoc.getDocumentElement ().getChildElementCount () > 0)
+                _info (aProject, "Has FindBugs excludes defines!");
       }
+    }
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

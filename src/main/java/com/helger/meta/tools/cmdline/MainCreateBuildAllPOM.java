@@ -100,7 +100,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
                 ICommonsSet <IProject> aRefProjects = aTree.get (aThisProject);
                 if (aRefProjects == null)
                 {
-                  aRefProjects = new CommonsHashSet<> ();
+                  aRefProjects = new CommonsHashSet <> ();
                   aTree.put (aThisProject, aRefProjects);
                 }
                 aRefProjects.add (aReferencedProject);
@@ -114,18 +114,17 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     // Read all dependencies
-    final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap<> ();
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.getProjectType () != EProjectType.MAVEN_POM &&
-          aProject.isBuildInProject () &&
-          !aProject.isDeprecated () &&
-          !aProject.isNestedProject ())
-      {
-        final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
-        if (aDoc == null)
-          throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-        _readPOM (aProject, aDoc, aTree);
-      }
+    final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType () != EProjectType.MAVEN_POM &&
+                                                                    p.isBuildInProject () &&
+                                                                    !p.isDeprecated () &&
+                                                                    !p.isNestedProject ()))
+    {
+      final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
+      if (aDoc == null)
+        throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
+      _readPOM (aProject, aDoc, aTree);
+    }
 
     // Fill transitive dependencies
     boolean bChanged;

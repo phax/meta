@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import javax.annotation.Nullable;
+import javax.annotation.Nonnull;
 
 public enum EHasWiki
 {
@@ -28,8 +28,8 @@ public enum EHasWiki
     return this == TRUE;
   }
 
-  @Nullable
-  public static EHasWiki value (final boolean bTrue)
+  @Nonnull
+  public static EHasWiki valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;
   }

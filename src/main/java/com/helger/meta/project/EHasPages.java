@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import javax.annotation.Nullable;
+import javax.annotation.Nonnull;
 
 public enum EHasPages
 {
@@ -28,8 +28,8 @@ public enum EHasPages
     return this == TRUE;
   }
 
-  @Nullable
-  public static EHasPages value (final boolean bTrue)
+  @Nonnull
+  public static EHasPages valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;
   }

@@ -157,11 +157,6 @@ public enum EProjectDeprecated implements IProject
     return m_aProject.getParentProject ();
   }
 
-  public boolean isNestedProject ()
-  {
-    return m_aProject.isNestedProject ();
-  }
-
   @Nonnull
   @Nonempty
   public String getProjectName ()
@@ -224,28 +219,9 @@ public enum EProjectDeprecated implements IProject
     return m_aProject.hasPagesProject ();
   }
 
-  @Nonnull
-  @Nonempty
-  public String getPagesProjectName ()
-  {
-    return m_aProject.getPagesProjectName ();
-  }
-
   public boolean hasWikiProject ()
   {
     return m_aProject.hasWikiProject ();
-  }
-
-  @Nonnull
-  @Nonempty
-  public String getWikiProjectName ()
-  {
-    return m_aProject.getWikiProjectName ();
-  }
-
-  public boolean isPublished ()
-  {
-    return m_aProject.isPublished ();
   }
 
   public String getLastPublishedVersionString ()

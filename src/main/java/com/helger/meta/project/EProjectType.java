@@ -35,7 +35,8 @@ public enum EProjectType implements IHasID <String>
   JAVA_WEB_APPLICATION ("java-web-application"),
   MAVEN_PLUGIN ("maven-plugin"),
   MAVEN_POM ("maven-pom"),
-  OTHER_PLUGIN ("other-plugin");
+  OTHER_PLUGIN ("other-plugin"),
+  RESOURCES_ONLY ("resources-only");
 
   private final String m_sID;
 
@@ -53,7 +54,7 @@ public enum EProjectType implements IHasID <String>
 
   public boolean hasJavaCode ()
   {
-    return this != MAVEN_POM;
+    return this != MAVEN_POM && this != RESOURCES_ONLY;
   }
 
   @Nullable

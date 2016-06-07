@@ -43,73 +43,72 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () &&
-          aProject.getBaseDir ().exists () &&
-          !aProject.isDeprecated () &&
-          !aProject.isNestedProject ())
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                    p.getBaseDir ().exists () &&
+                                                                    !p.isDeprecated () &&
+                                                                    !p.isNestedProject ()))
+    {
+      final File f = new File (aProject.getBaseDir (), "README.md");
+      if (f.exists ())
       {
-        final File f = new File (aProject.getBaseDir (), "README.md");
-        if (f.exists ())
+        final long nFileSize = f.length ();
+        String sContent = SimpleFileIO.getFileAsString (f, README_CHARSET);
+
+        // Unify newlines to "\n"
+        sContent = StringHelper.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n");
+
+        // Action to do?
+        if (!sContent.contains (COMMON_FOOTER))
         {
-          final long nFileSize = f.length ();
-          String sContent = SimpleFileIO.getFileAsString (f, README_CHARSET);
-
-          // Unify newlines to "\n"
-          sContent = StringHelper.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n");
-
-          // Action to do?
-          if (!sContent.contains (COMMON_FOOTER))
+          // Search for separator
+          final int nIndex = sContent.lastIndexOf (SEPARATOR);
+          if (nIndex < 0)
           {
-            // Search for separator
-            final int nIndex = sContent.lastIndexOf (SEPARATOR);
-            if (nIndex < 0)
+            _warn (aProject, "footer is missing");
+          }
+          else
+          {
+            final double dPerc = nIndex * 100.0 / nFileSize;
+            final double dThreshold = (nFileSize - 180 * 1.25) * 100 / nFileSize;
+            if (dPerc < dThreshold)
             {
-              _warn (aProject, "footer is missing");
+              _warn (aProject,
+                     "footer too early at " +
+                               dPerc +
+                               "% (" +
+                               nIndex +
+                               " of " +
+                               nFileSize +
+                               "; threshold is " +
+                               dThreshold +
+                               "%). No action!");
             }
             else
             {
-              final double dPerc = nIndex * 100.0 / nFileSize;
-              final double dThreshold = (nFileSize - 180 * 1.25) * 100 / nFileSize;
-              if (dPerc < dThreshold)
-              {
-                _warn (aProject,
-                       "footer too early at " +
-                                 dPerc +
-                                 "% (" +
-                                 nIndex +
-                                 " of " +
-                                 nFileSize +
-                                 "; threshold is " +
-                                 dThreshold +
-                                 "%). No action!");
-              }
-              else
-              {
-                String sNewContent = sContent.substring (0, nIndex) + COMMON_FOOTER;
+              String sNewContent = sContent.substring (0, nIndex) + COMMON_FOOTER;
 
-                // Convert newline back to system default
-                sNewContent = StringHelper.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
+              // Convert newline back to system default
+              sNewContent = StringHelper.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
 
-                SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
-                _warn (aProject, f.getName () + " was updated");
+              SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
+              _warn (aProject, f.getName () + " was updated");
 
-                aSB.append ("echo ")
-                   .append (aProject.getProjectName ())
-                   .append ("\ncd ")
-                   .append (aProject.getFullBaseDirName ())
-                   .append ("\n")
-                   .append ("git commit -m \"Updated README footer\" README.md\n")
-                   .append ("git push\n")
-                   .append ("\nif errorlevel 1 goto error")
-                   .append ("\ncd ..\n");
-              }
+              aSB.append ("echo ")
+                 .append (aProject.getProjectName ())
+                 .append ("\ncd ")
+                 .append (aProject.getFullBaseDirName ())
+                 .append ("\n")
+                 .append ("git commit -m \"Updated README footer\" README.md\n")
+                 .append ("git push\n")
+                 .append ("\nif errorlevel 1 goto error")
+                 .append ("\ncd ..\n");
             }
           }
         }
-        else
-          _warn (aProject, f.getName () + " is missing");
       }
+      else
+        _warn (aProject, f.getName () + " is missing");
+    }
 
     if (aSB.length () > 0)
     {

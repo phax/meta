@@ -34,6 +34,7 @@ public enum EProject implements IProject
 {
   PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.8.4", EJDK.JDK8),
   PH_JAXWS ("ph-jaxws", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK6),
+  PH_FORBIDDEN_APIS ("ph-forbidden-apis", EProjectType.RESOURCES_ONLY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
   PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK6),
   PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
@@ -47,6 +48,7 @@ public enum EProject implements IProject
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY, (String) null),
   PH_JAXB (PH_COMMONS_PARENT_POM, "ph-jaxb", EProjectType.JAVA_LIBRARY),
+  PH_TREE (PH_COMMONS_PARENT_POM, "ph-tree", EProjectType.JAVA_LIBRARY),
 
   META ("meta", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
@@ -399,11 +401,6 @@ public enum EProject implements IProject
     return m_aProject.getParentProject ();
   }
 
-  public boolean isNestedProject ()
-  {
-    return m_aProject.isNestedProject ();
-  }
-
   @Nonnull
   @Nonempty
   public String getProjectName ()
@@ -466,28 +463,9 @@ public enum EProject implements IProject
     return m_aProject.hasPagesProject ();
   }
 
-  @Nonnull
-  @Nonempty
-  public String getPagesProjectName ()
-  {
-    return m_aProject.getPagesProjectName ();
-  }
-
   public boolean hasWikiProject ()
   {
     return m_aProject.hasWikiProject ();
-  }
-
-  @Nonnull
-  @Nonempty
-  public String getWikiProjectName ()
-  {
-    return m_aProject.getWikiProjectName ();
-  }
-
-  public boolean isPublished ()
-  {
-    return m_aProject.isPublished ();
   }
 
   public String getLastPublishedVersionString ()

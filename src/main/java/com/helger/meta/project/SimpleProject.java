@@ -30,9 +30,6 @@ import com.helger.commons.version.Version;
 
 public class SimpleProject implements IProject
 {
-  public static final String EXTENSION_PAGES_PROJECT = ".pages";
-  public static final String EXTENSION_WIKI_PROJECT = ".wiki";
-
   private final IProject m_aParentProject;
   private final String m_sProjectName;
   private final EProjectType m_eProjectType;
@@ -123,11 +120,6 @@ public class SimpleProject implements IProject
     return m_aParentProject;
   }
 
-  public boolean isNestedProject ()
-  {
-    return m_aParentProject != null;
-  }
-
   @Nonnull
   @Nonempty
   public String getProjectName ()
@@ -184,44 +176,14 @@ public class SimpleProject implements IProject
     return m_bIsDeprecated;
   }
 
-  /**
-   * @return <code>true</code> if this project has the auto-generated
-   *         <code>gh-pages</code> branch.
-   */
   public boolean hasPagesProject ()
   {
     return m_bHasPagesProject;
   }
 
-  @Nonnull
-  @Nonempty
-  public String getPagesProjectName ()
-  {
-    return m_sProjectName + EXTENSION_PAGES_PROJECT;
-  }
-
-  /**
-   * @return <code>true</code> if this project has a special Wiki project.
-   */
   public boolean hasWikiProject ()
   {
     return m_bHasWikiProject;
-  }
-
-  @Nonnull
-  @Nonempty
-  public String getWikiProjectName ()
-  {
-    return m_sProjectName + EXTENSION_WIKI_PROJECT;
-  }
-
-  /**
-   * @return <code>true</code> if this project had at least one release,
-   *         <code>false</code> if not.
-   */
-  public boolean isPublished ()
-  {
-    return m_sLastPublishedVersion != null;
   }
 
   @Nullable

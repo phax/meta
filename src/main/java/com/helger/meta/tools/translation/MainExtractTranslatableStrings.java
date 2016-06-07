@@ -51,7 +51,7 @@ import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
-  private static ICommonsOrderedSet <String> s_aActions = new CommonsLinkedHashSet<> ();
+  private static ICommonsOrderedSet <String> s_aActions = new CommonsLinkedHashSet <> ();
 
   @Nullable
   private static StringTable _extractSTFromFile (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
@@ -76,7 +76,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           }
           else
           {
-            _warn (eProject, cn.name +
+            _warn (eProject,
+                   cn.name +
                              " field m_aTP is of wrong type " +
                              Type.getType (fn.desc) +
                              " and not of type IMultilingualText");
@@ -86,7 +87,8 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         {
           // Translation enums may not have any other member, because
           // this indicates a potentially invalid translation table!
-          _warn (eProject, cn.name +
+          _warn (eProject,
+                 cn.name +
                            " field " +
                            fn.name +
                            " of type " +
@@ -108,7 +110,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
     // Second find the initialization calls in the static ctor
     final MethodNode aStaticInit = ASMHelper.findMethod (cn, "<clinit>");
-    final ICommonsList <String> aAllConstantStrings = new CommonsArrayList<> ();
+    final ICommonsList <String> aAllConstantStrings = new CommonsArrayList <> ();
     final String sIDPrefix = ClassHelper.getClassFromPath (cn.name) + ".";
     // static initializer
     final Iterator <?> aInstructionIter = aStaticInit.instructions.iterator ();
@@ -188,9 +190,9 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     s_aLogger.info ("Start extracting text from .class files!");
-    for (final IProject eProject : ProjectList.getAllProjects ())
-      if (eProject.getProjectType ().hasJavaCode ())
-        _scanProject (eProject);
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
+                                                                    !p.isDeprecated ()))
+      _scanProject (aProject);
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
     if (!s_aActions.isEmpty ())
     {

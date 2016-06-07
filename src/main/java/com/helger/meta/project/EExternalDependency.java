@@ -17,12 +17,12 @@
 package com.helger.meta.project;
 
 import java.util.Comparator;
-import java.util.List;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.lang.EnumHelper;
 import com.helger.commons.version.Version;
 
@@ -32,9 +32,9 @@ public enum EExternalDependency
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.54"),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20160315"),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20160517"),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
-  COMMONS_NET ("commons-net", "commons-net", "3.4"),
+  COMMONS_NET ("commons-net", "commons-net", "3.5"),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.4.2", EJDK.JDK7),
   DNSJAVA ("dnsjava", "dnsjava", "2.1.7"),
   DOCLET ("org.umlgraph", "doclet", "5.1"),
@@ -48,8 +48,8 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.2"),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.1"),
-  H2 ("com.h2database", "h2", "1.4.191"),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.6.2"),
+  H2 ("com.h2database", "h2", "1.4.192"),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.6.3"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.4"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2"),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.7.4"),
@@ -61,18 +61,18 @@ public enum EExternalDependency
   JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.1.1", EJDK.JDK7),
   JAXB_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.2.11"),
   JAXB_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB_BOM),
+  JAXB_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB_BOM),
+  JAXB_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB_BOM),
   JAXB_TXW2 ("org.glassfish.jaxb", "txw2", JAXB_BOM),
+  JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
   JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11"),
   JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
   JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
-  JAXB_IMPL_GLASSFISH ("org.glassfish.jaxb", "jaxb-impl", "2.2.11"),
-  JAXB_JXC_GLASSFISH ("org.glassfish.jaxb", "jaxb-jxc", JAXB_IMPL_GLASSFISH),
-  JAXB_XJC_GLASSFISH ("org.glassfish.jaxb", "jaxb-xjc", JAXB_IMPL_GLASSFISH),
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.1"),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.0"),
-  JAXWS_RI_COM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10"),
-  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_COM),
-  JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_COM),
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10"),
+  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
+  JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
   JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248"),
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1"),
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.1"),
@@ -89,23 +89,25 @@ public enum EExternalDependency
   JETTY_93_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_93_WEBAPP),
   JETTY_93_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_93_WEBAPP),
   JETTY_93_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_93_WEBAPP),
-  JODA_TIME ("joda-time", "joda-time", "2.9.3"),
+  JODA_TIME ("joda-time", "joda-time", "2.9.4"),
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.53"),
-  JSP_API ("javax.servlet.jsp", "jsp-api", "2.2.1"),
+  JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2"),
+  JSP_API ("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.1"),
   JUNIT ("junit", "junit", "4.12"),
   LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
   LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
   LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
-  LOG4J2_24_CORE ("org.apache.logging.log4j", "log4j-core", "2.5", EJDK.JDK7),
+  LOG4J2_24_CORE ("org.apache.logging.log4j", "log4j-core", "2.6", EJDK.JDK7),
   LOG4J2_24_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_24_CORE),
   LOG4J2_24_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_24_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.0.0", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.0.1", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.4"),
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0"),
-  METRO ("org.glassfish.metro", "webservices-rt", "2.2.1-1"),
+  METRO ("org.glassfish.metro", "webservices-rt", "2.3.1"),
   // 6.0.2 is out but not yet supported
   MYSQL ("mysql", "mysql-connector-java", "5.1.39"),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.1"),
@@ -114,7 +116,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.2.3"),
   RHINO ("org.mozilla", "rhino", "1.7.7.1"),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-4"),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-5"),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "2.53.0"),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
@@ -160,6 +162,20 @@ public enum EExternalDependency
     m_sVersion = sVersion;
     m_aVersion = Version.parse (sVersion);
     m_eMinJDK = eMinJDK;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getGroupID ()
+  {
+    return m_sGroupID;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getArtifactID ()
+  {
+    return m_sArticfactID;
   }
 
   @Nonnull
@@ -209,11 +225,13 @@ public enum EExternalDependency
           return JDK;
         break;
       case JAXB_IMPL_SUN:
-        return JAXB_IMPL_GLASSFISH;
+        return JAXB_CORE;
       case JAXB_JXC_SUN:
-        return JAXB_JXC_GLASSFISH;
+        return JAXB_JXC;
       case JAXB_XJC_SUN:
-        return JAXB_XJC_GLASSFISH;
+        return JAXB_XJC;
+      case JSP_API_OLD:
+        return JSP_API;
     }
     return null;
   }
@@ -224,11 +242,12 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static List <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
+  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
+                                                            @Nullable final String sArtifactID)
   {
-    final List <EExternalDependency> ret = EnumHelper.getAll (EExternalDependency.class,
-                                                              e -> e.m_sGroupID.equals (sGroupID) &&
-                                                                   e.m_sArticfactID.equals (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = EnumHelper.getAll (EExternalDependency.class,
+                                                                      e -> e.m_sGroupID.equals (sGroupID) &&
+                                                                           e.m_sArticfactID.equals (sArtifactID));
     // Sort by JDK decsending
     ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
                         .reversed ());

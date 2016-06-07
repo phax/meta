@@ -144,15 +144,16 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (aProject.isBuildInProject () && aProject.getBaseDir ().exists () && !aProject.isDeprecated ())
-      {
-        if (aProject.getProjectType ().hasJavaCode ())
-          _validateProjectWithJavaCode (aProject);
-        else
-          _validateProjectWithoutJavaCode (aProject);
-        _validateProjectTravisConfig (aProject);
-      }
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                    p.getBaseDir ().exists () &&
+                                                                    !p.isDeprecated ()))
+    {
+      if (aProject.getProjectType ().hasJavaCode ())
+        _validateProjectWithJavaCode (aProject);
+      else
+        _validateProjectWithoutJavaCode (aProject);
+      _validateProjectTravisConfig (aProject);
+    }
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

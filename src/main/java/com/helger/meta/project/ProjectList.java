@@ -71,9 +71,10 @@ public final class ProjectList
   }
 
   @Nonnull
-  public static Iterable <IProject> getAllProjects ()
+  @ReturnsMutableCopy
+  public static ICommonsList <IProject> getAllProjects ()
   {
-    return s_aName2Project.values ();
+    return s_aName2Project.copyOfValues ();
   }
 
   @Nonnull

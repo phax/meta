@@ -16,15 +16,15 @@
  */
 package com.helger.meta.tools.buildsystem;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Pattern;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.collection.ext.CommonsHashMap;
+import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.commons.microdom.IMicroDocument;
 import com.helger.commons.microdom.IMicroElement;
 import com.helger.commons.microdom.IMicroNode;
@@ -73,6 +73,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         return "pom";
       case OTHER_PLUGIN:
         return "jar";
+      case RESOURCES_ONLY:
+        return "jar";
       default:
         throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     }
@@ -105,12 +107,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final Map <String, String> aProperties = new HashMap<> ();
+    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
-        for (final IMicroElement eProperty : eProperties.getAllChildElements ())
-          aProperties.put ("${" + eProperty.getTagName () + "}", eProperty.getTextContentTrimmed ());
+        eProperties.forAllChildElements (eProperty -> aProperties.put ("${" +
+                                                                       eProperty.getTagName () +
+                                                                       "}",
+                                                                       eProperty.getTextContentTrimmed ()));
     }
 
     // Check parent POM
@@ -279,7 +283,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               if (aReferencedProject.isDeprecated ())
-                _warn (aProject, sArtifactID + ": is deprecated!");
+                _warn (aProject, aReferencedProject.getMavenID () + " is deprecated!");
 
               // Avoid warnings for components that require a later JDK
               if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
@@ -446,14 +450,13 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject aProject : ProjectList.getAllProjects ())
-      if (!aProject.isDeprecated ())
-      {
-        final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
-        if (aDoc == null)
-          throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-        _validatePOM (aProject, aDoc);
-      }
+    for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
+    {
+      final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
+      if (aDoc == null)
+        throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
+      _validatePOM (aProject, aDoc);
+    }
     s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

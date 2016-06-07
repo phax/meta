@@ -80,9 +80,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               sProjectName,
                               eProjectType,
                               aBaseDir,
-                              EIsDeprecated.value (bIsDeprecated),
-                              EHasPages.value (bHasPages),
-                              EHasWiki.value (bHasWiki),
+                              EIsDeprecated.valueOf (bIsDeprecated),
+                              EHasPages.valueOf (bHasPages),
+                              EHasWiki.valueOf (bHasWiki),
                               sLastPublishedVersion,
                               eMinJDK);
   }

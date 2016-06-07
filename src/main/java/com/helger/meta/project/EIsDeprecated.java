@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import javax.annotation.Nullable;
+import javax.annotation.Nonnull;
 
 public enum EIsDeprecated
 {
@@ -33,8 +33,8 @@ public enum EIsDeprecated
     return this == FALSE;
   }
 
-  @Nullable
-  public static EIsDeprecated value (final boolean bTrue)
+  @Nonnull
+  public static EIsDeprecated valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;
   }
