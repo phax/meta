@@ -29,20 +29,20 @@ import com.helger.commons.collection.ext.CommonsHashSet;
 import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.commons.collection.ext.ICommonsSet;
-import com.helger.commons.microdom.IMicroDocument;
-import com.helger.commons.microdom.IMicroElement;
-import com.helger.commons.microdom.IMicroNode;
-import com.helger.commons.microdom.MicroDocument;
-import com.helger.commons.microdom.serialize.MicroReader;
-import com.helger.commons.microdom.serialize.MicroWriter;
-import com.helger.commons.microdom.util.MicroHelper;
-import com.helger.commons.microdom.util.MicroRecursiveIterator;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+import com.helger.xml.microdom.IMicroDocument;
+import com.helger.xml.microdom.IMicroElement;
+import com.helger.xml.microdom.IMicroNode;
+import com.helger.xml.microdom.MicroDocument;
+import com.helger.xml.microdom.serialize.MicroReader;
+import com.helger.xml.microdom.serialize.MicroWriter;
+import com.helger.xml.microdom.util.MicroHelper;
+import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the

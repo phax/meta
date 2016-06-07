@@ -5,12 +5,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.function.Predicate;
 
 import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.microdom.IMicroDocument;
-import com.helger.commons.microdom.IMicroElement;
-import com.helger.commons.microdom.MicroDocument;
-import com.helger.commons.microdom.serialize.MicroWriter;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
+import com.helger.xml.microdom.IMicroDocument;
+import com.helger.xml.microdom.IMicroElement;
+import com.helger.xml.microdom.MicroDocument;
+import com.helger.xml.microdom.serialize.MicroWriter;
 
 /**
  * Create a POM that contains all external dependencies defined in

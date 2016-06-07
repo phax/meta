@@ -20,10 +20,10 @@ import javax.annotation.Nonnull;
 import javax.annotation.concurrent.Immutable;
 
 import com.helger.commons.annotation.IsSPIImplementation;
-import com.helger.commons.microdom.convert.IMicroTypeConverterRegistrarSPI;
-import com.helger.commons.microdom.convert.IMicroTypeConverterRegistry;
 import com.helger.meta.project.SimpleProject;
 import com.helger.meta.project.SimpleProjectMicroTypeConverter;
+import com.helger.xml.microdom.convert.IMicroTypeConverterRegistrarSPI;
+import com.helger.xml.microdom.convert.IMicroTypeConverterRegistry;
 
 @Immutable
 @IsSPIImplementation

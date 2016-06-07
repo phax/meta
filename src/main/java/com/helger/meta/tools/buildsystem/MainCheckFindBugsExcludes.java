@@ -18,11 +18,11 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
-import com.helger.commons.microdom.IMicroDocument;
-import com.helger.commons.microdom.serialize.MicroReader;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+import com.helger.xml.microdom.IMicroDocument;
+import com.helger.xml.microdom.serialize.MicroReader;
 
 /**
  * Check which project has a non-empty <code>findbugs-exclude.xml</code> file.

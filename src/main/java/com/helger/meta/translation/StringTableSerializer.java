@@ -25,13 +25,13 @@ import com.helger.commons.ValueEnforcer;
 import com.helger.commons.collection.ext.ICommonsSortedMap;
 import com.helger.commons.hashcode.HashCodeCalculator;
 import com.helger.commons.hashcode.HashCodeGenerator;
-import com.helger.commons.microdom.IMicroDocument;
-import com.helger.commons.microdom.IMicroElement;
-import com.helger.commons.microdom.MicroDocument;
-import com.helger.commons.microdom.MicroElement;
-import com.helger.commons.microdom.serialize.MicroWriter;
 import com.helger.commons.state.ESuccess;
 import com.helger.commons.string.StringHelper;
+import com.helger.xml.microdom.IMicroDocument;
+import com.helger.xml.microdom.IMicroElement;
+import com.helger.xml.microdom.MicroDocument;
+import com.helger.xml.microdom.MicroElement;
+import com.helger.xml.microdom.serialize.MicroWriter;
 
 public final class StringTableSerializer
 {
