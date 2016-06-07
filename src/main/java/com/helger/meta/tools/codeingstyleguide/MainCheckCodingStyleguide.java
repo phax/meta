@@ -37,10 +37,6 @@ import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.annotation.ReturnsMutableObject;
 import com.helger.commons.collection.ext.CommonsArrayList;
 import com.helger.commons.collection.ext.ICommonsList;
-import com.helger.commons.collection.impl.SafeArrayList;
-import com.helger.commons.collection.impl.SafeVector;
-import com.helger.commons.collection.impl.SoftHashMap;
-import com.helger.commons.collection.impl.SoftLinkedHashMap;
 import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
 import com.helger.commons.lang.ClassHelper;
@@ -156,21 +152,36 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            java.util.ArrayList.class.getName ().equals (sClassName) ||
            java.util.Vector.class.getName ().equals (sClassName) ||
            java.util.LinkedList.class.getName ().equals (sClassName) ||
+           java.util.Stack.class.getName ().equals (sClassName) ||
            java.util.concurrent.CopyOnWriteArrayList.class.getName ().equals (sClassName) ||
            // set
            java.util.Set.class.getName ().equals (sClassName) ||
+           java.util.NavigableSet.class.getName ().equals (sClassName) ||
            java.util.SortedSet.class.getName ().equals (sClassName) ||
+           java.util.EnumSet.class.getName ().equals (sClassName) ||
            java.util.HashSet.class.getName ().equals (sClassName) ||
            java.util.LinkedHashSet.class.getName ().equals (sClassName) ||
            java.util.TreeSet.class.getName ().equals (sClassName) ||
            // Map
            java.util.Map.class.getName ().equals (sClassName) ||
+           java.util.NavigableMap.class.getName ().equals (sClassName) ||
            java.util.SortedMap.class.getName ().equals (sClassName) ||
            java.util.HashMap.class.getName ().equals (sClassName) ||
+           java.util.IdentityHashMap.class.getName ().equals (sClassName) ||
            java.util.WeakHashMap.class.getName ().equals (sClassName) ||
            java.util.LinkedHashMap.class.getName ().equals (sClassName) ||
            java.util.TreeMap.class.getName ().equals (sClassName) ||
-           java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName);
+           java.util.Hashtable.class.getName ().equals (sClassName) ||
+           java.util.EnumMap.class.getName ().equals (sClassName) ||
+           java.util.Properties.class.getName ().equals (sClassName) ||
+           java.util.concurrent.ConcurrentHashMap.class.getName ().equals (sClassName) ||
+           // Queue
+           java.util.Queue.class.getName ().equals (sClassName) ||
+           java.util.Deque.class.getName ().equals (sClassName) ||
+           java.util.PriorityQueue.class.getName ().equals (sClassName) ||
+           java.util.concurrent.LinkedBlockingDeque.class.getName ().equals (sClassName) ||
+           java.util.concurrent.LinkedBlockingQueue.class.getName ().equals (sClassName) ||
+           java.util.concurrent.LinkedTransferQueue.class.getName ().equals (sClassName);
   }
 
   private static boolean _isCollectionClass (@Nonnull final Type aType)
@@ -182,12 +193,9 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       return true;
 
     final String sClassName = aType.getClassName ();
-    // com.helger.commons.collection.ext
-    // com.helger.commons.collection.impl
-    return SafeArrayList.class.getName ().equals (sClassName) ||
-           SafeVector.class.getName ().equals (sClassName) ||
-           SoftHashMap.class.getName ().equals (sClassName) ||
-           SoftLinkedHashMap.class.getName ().equals (sClassName);
+    final String sPackageName = ClassHelper.getClassPackageName (sClassName);
+    return "com.helger.commons.collection.ext".equals (sPackageName) ||
+           "com.helger.commons.collection.impl".equals (sPackageName);
   }
 
   private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
@@ -218,6 +226,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
       final Type aReturnType = Type.getReturnType (mn.desc);
       final boolean bReturnsArray = _isArrayClass (aReturnType);
+      final boolean bReturnsJDKCollection = _isJDKCollectionClass (aReturnType);
       final boolean bReturnsCollection = _isCollectionClass (aReturnType);
       final boolean bIsConstructor = mn.name.equals ("<init>");
       final boolean bIsPrivate = Modifier.isPrivate (mn.access);
