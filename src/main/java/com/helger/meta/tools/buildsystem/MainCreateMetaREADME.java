@@ -17,14 +17,13 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Comparator;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
 import com.helger.commons.charset.CCharset;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -80,7 +79,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
 
     // Show all
     aSB.append ("Current list of all projects (as of ")
-       .append (LocalDate.now (ZoneId.systemDefault ()).toString ())
+       .append (PDTFactory.getCurrentLocalDate ().toString ())
        .append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
