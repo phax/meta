@@ -73,11 +73,12 @@ public enum EProject implements IProject
   PH_FONTS_OPEN_SANS (PH_FONTS_PARENT_POM, "ph-fonts-open-sans", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ROBOTO (PH_FONTS_PARENT_POM, "ph-fonts-roboto", EProjectType.JAVA_LIBRARY),
 
+  PH_JAXB22_PLUGIN ("ph-jaxb22-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.7", EJDK.JDK8),
+  PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8.1", EJDK.JDK6),
+
   PH_BUILDINFO_MAVEN_PLUGIN ("ph-buildinfo-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.3.0", EJDK.JDK6),
   PH_DIRINDEX_MAVEN_PLUGIN ("ph-dirindex-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "1.2.1", EJDK.JDK6),
-  PH_JAXB22_PLUGIN ("ph-jaxb22-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.11.6", EJDK.JDK8),
   PH_JSCOMPRESS_MAVEN_PLUGIN ("ph-jscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.1.1", EJDK.JDK7),
-  PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin", EProjectType.OTHER_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.2.8.1", EJDK.JDK6),
 
   PH_DATETIME_PARENT_POM ("ph-datetime-parent-pom", "ph-datetime", EHasPages.FALSE, EHasWiki.FALSE, "4.2.1", EJDK.JDK8),
   PH_DATETIME (PH_DATETIME_PARENT_POM, "ph-datetime", EProjectType.JAVA_LIBRARY),

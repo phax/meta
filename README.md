@@ -257,7 +257,7 @@ Current list of all projects (as of 2016-06-10):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
- * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.6 - JDK 1.8
+ * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
@@ -293,9 +293,17 @@ Current list of all projects (as of 2016-06-10):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
+ * [ph-math/ph-graph](https://github.com/phax/ph-math) - Version 3.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-graph/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-graph) 
+   [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
  * [ph-math/ph-math](https://github.com/phax/ph-math) - Version 3.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math) 
+   [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
+ * [ph-math/ph-matrix](https://github.com/phax/ph-math) - Version 3.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-matrix/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-matrix) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
  * [ph-oton](https://github.com/phax/ph-oton) - Version 6.2.0 - JDK 1.8
 
