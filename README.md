@@ -145,6 +145,10 @@ Current list of all projects (as of 2016-06-12):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons) 
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree) 
@@ -476,9 +480,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
