@@ -50,7 +50,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.1"),
   H2 ("com.h2database", "h2", "1.4.192"),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.6.3"),
-  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.4"),
+  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.5"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2"),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.7.4"),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
