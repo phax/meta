@@ -126,7 +126,7 @@ public enum EExternalDependency
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "0.9", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.0", EJDK.JDK8),
   UNDERTOW ("io.undertow", "undertow-servlet", "1.3.22.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
