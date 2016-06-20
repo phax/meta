@@ -47,7 +47,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.2"),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.1"),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.2"),
   H2 ("com.h2database", "h2", "1.4.192"),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.6.3"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.5"),
@@ -101,7 +101,7 @@ public enum EExternalDependency
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.6.1", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.0.1", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.1.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
@@ -130,7 +130,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "1.3.22.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.0.6");
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.0.7");
 
   private final String m_sGroupID;
   private final String m_sArticfactID;
