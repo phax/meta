@@ -173,6 +173,7 @@ public enum EProject implements IProject
   PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.4", EJDK.JDK8),
 
+  PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_SCHEMATRON_PARENT_POM ("ph-schematron-parent-pom",
                             "ph-schematron",
                             EHasPages.TRUE,
