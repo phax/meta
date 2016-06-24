@@ -5,6 +5,7 @@ import java.io.File;
 import com.helger.commons.collection.ext.CommonsHashMap;
 import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.project.EExternalDependency;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.IMicroNode;
@@ -55,15 +56,20 @@ public class MainExtractParentPOMDeps extends AbstractProjectMain
           }
 
           if (sGroupID != null && sArtifactID != null && sVersion != null)
-            aSB.append ("PARENT_POM_" +
-                        (i++) +
-                        " (\"" +
-                        sGroupID +
-                        "\",\"" +
-                        sArtifactID +
-                        "\",\"" +
-                        sVersion +
-                        "\"),\n");
+          {
+            // Avoid SNAPSHOT references
+            // Avoid including external dependencies already present
+            if (!sVersion.endsWith ("-SNAPSHOT") && EExternalDependency.findAll (sGroupID, sArtifactID).isEmpty ())
+              aSB.append ("PARENT_POM_" +
+                          (i++) +
+                          " (\"" +
+                          sGroupID +
+                          "\",\"" +
+                          sArtifactID +
+                          "\",\"" +
+                          sVersion +
+                          "\"),\n");
+          }
         }
       }
     s_aLogger.info (aSB.toString ());
