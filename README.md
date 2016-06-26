@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-06-24):
+Current list of all projects (as of 2016-06-26):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
@@ -133,27 +133,27 @@ Current list of all projects (as of 2016-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-charset.svg?branch=master)](https://travis-ci.org/phax/ph-charset)
- * [ph-commons](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 8.0.0 - JDK 1.8
+ * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 8.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
@@ -365,7 +365,7 @@ Current list of all projects (as of 2016-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.8.4 - JDK 1.8
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
@@ -449,6 +449,10 @@ Current list of all projects (as of 2016-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient) 
+   [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
  * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail) 
@@ -484,6 +488,15 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-dee](https://github.com/phax/ph-dee) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
+ * [ph-dee/ph-dee-api](https://github.com/phax/ph-dee) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
+ * [ph-dee/ph-dee-engine](https://github.com/phax/ph-dee) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)

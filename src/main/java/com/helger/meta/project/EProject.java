@@ -94,6 +94,7 @@ public enum EProject implements IProject
   PH_MAIL (PH_WEB_PARENT_POM, "ph-mail", EProjectType.JAVA_LIBRARY),
   PH_WEB (PH_WEB_PARENT_POM, "ph-web", EProjectType.JAVA_LIBRARY),
   PH_SMTP (PH_WEB_PARENT_POM, "ph-smtp", EProjectType.JAVA_LIBRARY),
+  PH_HTTPCLIENT (PH_WEB_PARENT_POM, "ph-httpclient", EProjectType.JAVA_LIBRARY),
 
   PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
   PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK8),
@@ -188,6 +189,10 @@ public enum EProject implements IProject
 
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+
+  PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_DEE_API (PH_DEE_PARENT_POM, "ph-dee-api", EProjectType.JAVA_LIBRARY),
+  PH_DEE_ENGINE (PH_DEE_PARENT_POM, "ph-dee-engine", EProjectType.JAVA_LIBRARY),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
