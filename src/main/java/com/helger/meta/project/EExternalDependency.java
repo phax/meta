@@ -108,7 +108,7 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.4"),
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0"),
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1"),
-  MYSQL ("mysql", "mysql-connector-java", "6.0.2"),
+  MYSQL ("mysql", "mysql-connector-java", "6.0.3"),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.2"),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.14"),
