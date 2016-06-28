@@ -136,7 +136,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
                 "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
 
     // Footer
-    aSB.append (MainUpdatedREADMEFooter.COMMON_FOOTER);
+    aSB.append (MainUpdateREADMEFooter.COMMON_FOOTER);
 
     SimpleFileIO.writeFile (new File ("README.md"), aSB.toString (), CCharset.CHARSET_UTF_8_OBJ);
     System.out.println ("Done");

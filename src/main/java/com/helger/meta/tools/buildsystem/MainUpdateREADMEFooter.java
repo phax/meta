@@ -28,7 +28,7 @@ import com.helger.meta.CMeta;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
-public final class MainUpdatedREADMEFooter extends AbstractProjectMain
+public final class MainUpdateREADMEFooter extends AbstractProjectMain
 {
   private static final String GIT_COMMIT_FOOTER_CHANGE_CMD = "git-commit-footer-change.cmd";
   private static final Charset README_CHARSET = CCharset.CHARSET_UTF_8_OBJ;
@@ -121,7 +121,7 @@ public final class MainUpdatedREADMEFooter extends AbstractProjectMain
       SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
                               aSB.toString (),
                               BATCH_CHARSET);
-      s_aLogger.info ("Batch file written");
+      s_aLogger.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
     }
 
     s_aLogger.info ("Done");
