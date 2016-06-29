@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-06-26):
+Current list of all projects (as of 2016-06-29):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 2.2.8 - JDK 1.8
 
@@ -205,35 +205,35 @@ Current list of all projects (as of 2016-06-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-events/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-events) 
    [![Build Status](https://travis-ci.org/phax/ph-events.svg?branch=master)](https://travis-ci.org/phax/ph-events)
- * [ph-fonts](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-alegreya-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-alegreya-sans) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-anaheim/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-anaheim) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-api) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-exo2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-exo2) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-lato2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-lato2) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-open-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-open-sans) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 3.0.0 - JDK 1.8
+ * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 3.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
@@ -405,7 +405,7 @@ Current list of all projects (as of 2016-06-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-settings](https://github.com/phax/ph-settings) - Version 3.0.0 - JDK 1.8
+ * [ph-settings](https://github.com/phax/ph-settings) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings) 
    [![Build Status](https://travis-ci.org/phax/ph-settings.svg?branch=master)](https://travis-ci.org/phax/ph-settings)
@@ -445,23 +445,23 @@ Current list of all projects (as of 2016-06-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-web](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+ * [ph-web](https://github.com/phax/ph-web) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 8.0.0-SNAPSHOT - JDK 1.8
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 8.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
