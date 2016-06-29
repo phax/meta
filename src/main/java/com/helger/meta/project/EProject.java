@@ -152,7 +152,7 @@ public enum EProject implements IProject
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
   PH_MASTERDATA_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-masterdata-validation", EProjectType.JAVA_LIBRARY),
 
-  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0", EJDK.JDK8),
+  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
 
   PH_OTON_PARENT_POM ("ph-oton-parent-pom", "ph-oton", EHasPages.FALSE, EHasWiki.FALSE, "6.2.0", EJDK.JDK8),
   PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY),
