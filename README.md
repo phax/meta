@@ -281,19 +281,19 @@ Current list of all projects (as of 2016-06-29):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json) 
    [![Build Status](https://travis-ci.org/phax/ph-json.svg?branch=master)](https://travis-ci.org/phax/ph-json)
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.1.0 - JDK 1.8
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 4.1.0 - JDK 1.8
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-masterdata-validation](https://github.com/phax/ph-masterdata) - Version 4.1.0 - JDK 1.8
+ * [ph-masterdata/ph-masterdata-validation](https://github.com/phax/ph-masterdata) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-validation/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-validation) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-validation](https://github.com/phax/ph-masterdata) - Version 4.1.0 - JDK 1.8
+ * [ph-masterdata/ph-validation](https://github.com/phax/ph-masterdata) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-validation/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-validation) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)

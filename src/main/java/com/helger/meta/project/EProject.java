@@ -146,7 +146,7 @@ public enum EProject implements IProject
                             "ph-masterdata",
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "4.1.0",
+                            "5.0.0",
                             EJDK.JDK8),
   PH_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-validation", EProjectType.JAVA_LIBRARY),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
