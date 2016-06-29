@@ -107,7 +107,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
 
     // Read all properties
-    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
+    final ICommonsMap <String, String> aProperties = new CommonsHashMap<> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -434,7 +434,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   if (!sGroupID.startsWith ("org.apache.maven") &&
                       !sGroupID.startsWith ("org.codehaus.mojo") &&
                       !sArtifactID.contains ("-maven-") &&
-                      !sArtifactID.startsWith ("maven-"))
+                      !sArtifactID.startsWith ("maven-") &&
+                      !sArtifactID.startsWith ("plexus-") &&
+                      !sArtifactID.startsWith ("aether-"))
                     _warn (aProject, "Unsuported artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
               }
             }
