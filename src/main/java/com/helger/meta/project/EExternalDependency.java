@@ -75,6 +75,7 @@ public enum EExternalDependency
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
   JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248"),
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1"),
+  JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "1.6.5"),
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.1"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7

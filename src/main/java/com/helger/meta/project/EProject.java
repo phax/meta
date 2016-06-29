@@ -63,9 +63,7 @@ public enum EProject implements IProject
   PH_GRAPH (PH_MATH_PARENT_POM, "ph-graph", EProjectType.JAVA_LIBRARY),
   PH_MATH (PH_MATH_PARENT_POM, "ph-math", EProjectType.JAVA_LIBRARY),
 
-  // PH_FONTS (null, "ph-fonts", EProjectType.JAVA_LIBRARY, EHasPages.FALSE,
-  // EHasWiki.FALSE, "2.0.0"),
-  PH_FONTS_PARENT_POM ("ph-fonts-parent-pom", "ph-fonts", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  PH_FONTS_PARENT_POM ("ph-fonts-parent-pom", "ph-fonts", EHasPages.FALSE, EHasWiki.FALSE, "3.1.0", EJDK.JDK8),
   PH_FONTS_API (PH_FONTS_PARENT_POM, "ph-fonts-api", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ALEGREYA_SANS (PH_FONTS_PARENT_POM, "ph-fonts-alegreya-sans", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ANAHEIM (PH_FONTS_PARENT_POM, "ph-fonts-anaheim", EProjectType.JAVA_LIBRARY),
