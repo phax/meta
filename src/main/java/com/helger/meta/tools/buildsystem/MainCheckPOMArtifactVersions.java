@@ -33,6 +33,7 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
@@ -286,18 +287,18 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 _warn (aProject, aReferencedProject.getMavenID () + " is deprecated!");
 
               // Avoid warnings for components that require a later JDK
-              if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
+              if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK) &&
+                  aReferencedProject.getProjectType () != EProjectType.MAVEN_POM)
               {
-                if (false)
-                  _info (aProject,
-                         "Incompatible artifact " +
-                                   sGroupID +
-                                   "::" +
-                                   sArtifactID +
-                                   "::" +
-                                   sVersion +
-                                   " for " +
-                                   eProjectJDK.getDisplayName ());
+                _info (aProject,
+                       "Incompatible artifact " +
+                                 sGroupID +
+                                 "::" +
+                                 sArtifactID +
+                                 "::" +
+                                 sVersion +
+                                 " for " +
+                                 eProjectJDK.getDisplayName ());
                 continue;
               }
 
