@@ -77,6 +77,7 @@ public class SimpleProject implements IProject
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : Version.parse (sLastPublishedVersion);
     m_eMinJDK = eMinJDK;
 
+    // Determine group and artifact from POM
     String sGroupID = null;
     String sArtifactID = null;
     final IMicroDocument aDoc = MicroReader.readMicroXML (getPOMFile ());

@@ -137,5 +137,12 @@ public interface IProject
   @Nullable
   Version getLastPublishedVersion ();
 
+  @Nonnull
+  @Nonempty
+  default String getGitHubOrganization ()
+  {
+    return "phax";
+  }
+
   int compareTo (@Nonnull IProject aProject);
 }

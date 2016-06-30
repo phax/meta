@@ -52,8 +52,8 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
 public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
   // Parent POM requirements
-  private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String PARENT_POM_GROUPID = "com.helger";
+  private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 
   @Nonnull
@@ -106,6 +106,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
+    final String sGitHubOrganization = aProject.getGitHubOrganization ();
 
     // Read all properties
     final ICommonsMap <String, String> aProperties = new CommonsHashMap<> ();
@@ -119,6 +120,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     }
 
     // Check parent POM
+    String sParentPOMVersion = null;
     {
       final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
       if (eParent == null)
@@ -153,6 +155,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             final String sVersion = MicroHelper.getChildTextContent (eParent, "version");
             if (!_getParentPOMVersion (aProject).equals (sVersion))
               _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
+            sParentPOMVersion = sVersion;
           }
         }
       }
@@ -172,11 +175,19 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         _warn (aProject, "Unexpected packaging '" + sPackaging + "' used. Expected '" + sExpectedPackaging + "'");
     }
 
+    // Check version
+    {
+      String sVersion = MicroHelper.getChildTextContent (eRoot, "version");
+      if (sVersion == null)
+        sVersion = sParentPOMVersion;
+      aProperties.put ("${project.version}", sVersion);
+    }
+
     // Check URL
     if (aProject.isBuildInProject ())
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/phax/" + aProject.getFullBaseDirName ();
+      final String sExpectedURL = "https://github.com/" + sGitHubOrganization + "/" + aProject.getFullBaseDirName ();
       if (!sExpectedURL.equals (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
@@ -213,7 +224,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       else
       {
         final String sConnection = MicroHelper.getChildTextContent (eSCM, "connection");
-        final String sExpectedConnection = "scm:git:git@github.com:phax/" + aProject.getFullBaseDirName () + ".git";
+        final String sExpectedConnection = "scm:git:git@github.com:" +
+                                           sGitHubOrganization +
+                                           "/" +
+                                           aProject.getFullBaseDirName () +
+                                           ".git";
         // Alternatively:
         // "scm:git:https://github.com/phax/"+eProject.getProjectName ()
         if (!sExpectedConnection.equals (sConnection))
@@ -230,7 +245,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://github.com/phax/" + aProject.getFullBaseDirName ();
+        final String sExpectedURL = "http://github.com/" + sGitHubOrganization + "/" + aProject.getFullBaseDirName ();
         if (!sExpectedURL.equals (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 

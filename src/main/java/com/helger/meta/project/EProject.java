@@ -100,13 +100,13 @@ public enum EProject implements IProject
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
                              "1.3.0",
-                             EJDK.JDK6),
+                             EJDK.JDK8),
   PH_DIRINDEX_MAVEN_PLUGIN ("ph-dirindex-maven-plugin",
                             EProjectType.MAVEN_PLUGIN,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
                             "1.2.1",
-                            EJDK.JDK6),
+                            EJDK.JDK8),
   PH_JSCOMPRESS_MAVEN_PLUGIN ("ph-jscompress-maven-plugin",
                               EProjectType.MAVEN_PLUGIN,
                               EHasPages.FALSE,
@@ -284,6 +284,13 @@ public enum EProject implements IProject
                               "peppol-directory-publisher",
                               EProjectType.JAVA_WEB_APPLICATION),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
+
+  EBINTERFACE_UBL_MAPPING ("ebinterface-ubl-mapping",
+                           EProjectType.JAVA_LIBRARY,
+                           EHasPages.FALSE,
+                           EHasWiki.FALSE,
+                           null,
+                           EJDK.JDK8),
 
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
@@ -585,6 +592,15 @@ public enum EProject implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aProject.getLastPublishedVersion ();
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getGitHubOrganization ()
+  {
+    if (this == EProject.EBINTERFACE_UBL_MAPPING)
+      return "austriapro";
+    return "phax";
   }
 
   public int compareTo (@Nonnull final IProject aProject)
