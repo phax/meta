@@ -17,6 +17,7 @@
 package com.helger.meta.project;
 
 import java.util.Comparator;
+import java.util.function.Predicate;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -182,11 +183,7 @@ public enum EExternalDependency
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7"),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.3"),
   PARENT_POM_37 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0"),
-  PARENT_POM_38 ("org.codehaus.mojo", "taglist-maven-plugin", "2.4"),
-  PARENT_POM_39 ("com.helger.maven", "ph-buildinfo-maven-plugin", "1.3.0"),
-  PARENT_POM_40 ("com.helger.maven", "ph-dirindex-maven-plugin", "1.2.1"),
-  PARENT_POM_41 ("com.helger.maven", "ph-jscompress-maven-plugin", "2.1.1"),
-  PARENT_POM_42 ("com.helger.maven", "ph-csscompress-maven-plugin", "2.0.0");
+  PARENT_POM_38 ("org.codehaus.mojo", "taglist-maven-plugin", "2.4");
 
   private final String m_sGroupID;
   private final String m_sArticfactID;
@@ -227,11 +224,21 @@ public enum EExternalDependency
     return m_sGroupID;
   }
 
+  public boolean hasGroupID (@Nullable final String sGroupID)
+  {
+    return getGroupID ().equals (sGroupID);
+  }
+
   @Nonnull
   @Nonempty
   public String getArtifactID ()
   {
     return m_sArticfactID;
+  }
+
+  public boolean hasArtifactID (@Nullable final String sGroupID)
+  {
+    return getArtifactID ().equals (sGroupID);
   }
 
   @Nonnull
@@ -301,12 +308,17 @@ public enum EExternalDependency
   public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
                                                             @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = EnumHelper.getAll (EExternalDependency.class,
-                                                                      e -> e.m_sGroupID.equals (sGroupID) &&
-                                                                           e.m_sArticfactID.equals (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
+                                                                 x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
     ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
                         .reversed ());
     return ret;
+  }
+
+  @Nullable
+  public static ICommonsList <EExternalDependency> findAll (@Nonnull final Predicate <EExternalDependency> aFilter)
+  {
+    return EnumHelper.getAll (EExternalDependency.class, aFilter);
   }
 }

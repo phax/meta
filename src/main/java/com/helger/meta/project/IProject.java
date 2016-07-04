@@ -79,9 +79,19 @@ public interface IProject
   @Nonempty
   String getMavenGroupID ();
 
+  default boolean hasMavenGroupID (@Nullable final String sGroupID)
+  {
+    return getMavenGroupID ().equals (sGroupID);
+  }
+
   @Nonnull
   @Nonempty
   String getMavenArtifactID ();
+
+  default boolean hasMavenArtifactID (@Nullable final String sGroupID)
+  {
+    return getMavenArtifactID ().equals (sGroupID);
+  }
 
   @Nonnull
   @Nonempty

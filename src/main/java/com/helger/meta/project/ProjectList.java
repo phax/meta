@@ -37,7 +37,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
 
 public final class ProjectList
 {
-  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
+  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap<> ();
 
   static
   {

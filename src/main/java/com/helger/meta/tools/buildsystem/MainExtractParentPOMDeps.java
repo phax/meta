@@ -6,6 +6,7 @@ import com.helger.commons.collection.ext.CommonsHashMap;
 import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
+import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.IMicroNode;
@@ -59,7 +60,17 @@ public class MainExtractParentPOMDeps extends AbstractProjectMain
           {
             // Avoid SNAPSHOT references
             // Avoid including external dependencies already present
-            if (!sVersion.endsWith ("-SNAPSHOT") && EExternalDependency.findAll (sGroupID, sArtifactID).isEmpty ())
+            final String sFinalGroupID = sGroupID;
+            final String sFinalArtifactID = sArtifactID;
+            if (!sVersion.endsWith ("-SNAPSHOT") &&
+                EExternalDependency.findAll (x -> !x.name ().startsWith ("PARENT_POM_") &&
+                                                  x.hasGroupID (sFinalGroupID) &&
+                                                  x.hasArtifactID (sFinalArtifactID))
+                                   .isEmpty () &&
+                ProjectList.getAllProjects (x -> x.hasMavenGroupID (sFinalGroupID) &&
+                                                 x.hasMavenArtifactID (sFinalArtifactID))
+                           .isEmpty ())
+            {
               aSB.append ("PARENT_POM_" +
                           (i++) +
                           " (\"" +
@@ -69,6 +80,7 @@ public class MainExtractParentPOMDeps extends AbstractProjectMain
                           "\",\"" +
                           sVersion +
                           "\"),\n");
+            }
           }
         }
       }
