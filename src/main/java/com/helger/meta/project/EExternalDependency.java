@@ -57,7 +57,7 @@ public enum EExternalDependency
   HAZELCAST ("com.hazelcast", "hazelcast", "3.6.3"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.5"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2"),
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.7.4"),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.8.0"),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.7.201606060606"),
   JAVA_PARSER ("com.github.javaparser", "javaparser-core", "2.4.0"),
