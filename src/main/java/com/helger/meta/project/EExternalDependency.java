@@ -107,7 +107,7 @@ public enum EExternalDependency
   LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
   LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
   LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.6.1", EJDK.JDK7),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.6.2", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.1.0", EJDK.JDK7),
@@ -181,7 +181,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "2.6"),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.7"),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7"),
-  PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.3"),
+  PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.4"),
   PARENT_POM_37 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0"),
   PARENT_POM_38 ("org.codehaus.mojo", "taglist-maven-plugin", "2.4");
 
