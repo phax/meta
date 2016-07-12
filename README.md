@@ -508,6 +508,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-bde](https://github.com/phax/ph-bde) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-bde.svg?branch=master)](https://travis-ci.org/phax/ph-bde)
  * [ph-dee](https://github.com/phax/ph-dee) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
