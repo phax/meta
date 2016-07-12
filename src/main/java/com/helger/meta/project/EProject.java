@@ -237,7 +237,7 @@ public enum EProject implements IProject
                              "peppol-commons",
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "4.3.5",
+                             "5.0.0",
                              EJDK.JDK8),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
@@ -299,6 +299,10 @@ public enum EProject implements IProject
   PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_DEE_API (PH_DEE_PARENT_POM, "ph-dee-api", EProjectType.JAVA_LIBRARY),
   PH_DEE_ENGINE (PH_DEE_PARENT_POM, "ph-dee-engine", EProjectType.JAVA_LIBRARY),
+
+  PH_STX_PARENT_POM ("ph-stx-parent-pom", "ph-stx", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_STX_PARSER (PH_STX_PARENT_POM, "ph-stx-parser", EProjectType.JAVA_LIBRARY),
+  PH_STX_ENGINE (PH_STX_PARENT_POM, "ph-stx-engine", EProjectType.JAVA_LIBRARY),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical",
