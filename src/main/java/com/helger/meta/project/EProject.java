@@ -290,7 +290,7 @@ public enum EProject implements IProject
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           null,
+                           "2.0.0",
                            EJDK.JDK8),
 
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
