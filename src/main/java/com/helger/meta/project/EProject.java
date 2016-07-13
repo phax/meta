@@ -59,7 +59,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_PLUGIN,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "2.8.0",
+                          "2.8.1",
                           EJDK.JDK6),
 
   PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.2.0", EJDK.JDK8),
