@@ -46,7 +46,7 @@ public enum EProject implements IProject
   PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
   PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
 
-  PH_XSDS_PARENT_POM ("ph-xsds-parent-pom", "ph-xsds", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_XSDS_PARENT_POM ("ph-xsds-parent-pom", "ph-xsds", EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
   PH_XSDS_XMLDSIG (PH_XSDS_PARENT_POM, "ph-xsds-xmldsig", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XMLDSIG11 (PH_XSDS_PARENT_POM, "ph-xsds-xmldsig11", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XADES132 (PH_XSDS_PARENT_POM, "ph-xsds-xades132", EProjectType.JAVA_LIBRARY),
