@@ -62,7 +62,7 @@ public enum EProject implements IProject
                           "2.8.1",
                           EJDK.JDK6),
 
-  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.2.0", EJDK.JDK8),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.2.1", EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_SECURITY (PH_COMMONS_PARENT_POM, "ph-security", EProjectType.JAVA_LIBRARY),
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),
@@ -70,11 +70,19 @@ public enum EProject implements IProject
   PH_TREE (PH_COMMONS_PARENT_POM, "ph-tree", EProjectType.JAVA_LIBRARY),
   PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY),
 
+  PH_BDE ("ph-bde", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
   PH_CHARSET ("ph-charset", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
-  PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "5.0.1", EJDK.JDK8),
+  PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
+  PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
+  PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1", EJDK.JDK8),
   PH_JSON ("ph-json", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.4", EJDK.JDK8),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
+  PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
   PH_SETTINGS ("ph-settings", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.2", EJDK.JDK8),
+  PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
 
   PH_MATH_PARENT_POM ("ph-math-parent-pom", "ph-math", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
   PH_MATRIX (PH_MATH_PARENT_POM, "ph-matrix", EProjectType.JAVA_LIBRARY),
@@ -160,8 +168,6 @@ public enum EProject implements IProject
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
   PH_MASTERDATA_VALIDATION (PH_MASTERDATA_PARENT_POM, "ph-masterdata-validation", EProjectType.JAVA_LIBRARY),
 
-  PH_SCHEDULE ("ph-schedule", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
-
   PH_OTON_PARENT_POM ("ph-oton-parent-pom", "ph-oton", EHasPages.FALSE, EHasWiki.FALSE, "6.2.0", EJDK.JDK8),
   PH_OTON_BASIC (PH_OTON_PARENT_POM, "ph-oton-basic", EProjectType.JAVA_LIBRARY),
   PH_OTON_BOOTSTRAP3 (PH_OTON_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY),
@@ -177,10 +183,6 @@ public enum EProject implements IProject
   PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY),
   PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY),
 
-  PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
-  PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.2.4", EJDK.JDK8),
-
-  PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1", EJDK.JDK8),
   PH_SCHEMATRON_PARENT_POM ("ph-schematron-parent-pom",
                             "ph-schematron",
                             EHasPages.TRUE,
@@ -201,11 +203,6 @@ public enum EProject implements IProject
   PH_UBL21 (PH_UBL_PARENT_POM, "ph-ubl21", EProjectType.JAVA_LIBRARY),
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
-
-  PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "5.0.0", EJDK.JDK8),
-  PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
-  PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
-  PH_BDE ("ph-bde", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
   AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "2.2.8", EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
