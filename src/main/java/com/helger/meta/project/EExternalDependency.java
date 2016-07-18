@@ -126,7 +126,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.2.3"),
   RHINO ("org.mozilla", "rhino", "1.7.7.1"),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-6"),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-7"),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "2.53.1"),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
