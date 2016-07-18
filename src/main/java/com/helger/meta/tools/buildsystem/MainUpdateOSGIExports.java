@@ -120,7 +120,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               // Check all classes of this project for SPI interfaces
               {
                 boolean bFirst = true;
-                final File aClassDir = new File (aProject.getBaseDir (), "target");
+                final File aClassDir = new File (aProject.getBaseDir (), "target/classes");
                 for (final File aClassFile : new FileSystemRecursiveIterator (aClassDir))
                   if (aClassFile.isFile () && aClassFile.getName ().endsWith ("SPI.class"))
                   {
