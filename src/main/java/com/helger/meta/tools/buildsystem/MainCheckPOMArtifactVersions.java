@@ -16,6 +16,7 @@
  */
 package com.helger.meta.tools.buildsystem;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -23,6 +24,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.ext.CommonsHashMap;
 import com.helger.commons.collection.ext.ICommonsMap;
 import com.helger.commons.regex.RegExHelper;
@@ -58,24 +60,24 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   @Nonnull
   @Nonempty
-  private static String _getDesiredPackaging (@Nonnull final IProject eProject)
+  private static String [] _getDesiredPackagings (@Nonnull final IProject eProject)
   {
     switch (eProject.getProjectType ())
     {
       case JAVA_LIBRARY:
-        return "bundle";
+        return new String [] { "bundle", "jar" };
       case JAVA_APPLICATION:
-        return "jar";
+        return new String [] { "jar" };
       case JAVA_WEB_APPLICATION:
-        return "war";
+        return new String [] { "war" };
       case MAVEN_PLUGIN:
-        return "maven-plugin";
+        return new String [] { "maven-plugin" };
       case MAVEN_POM:
-        return "pom";
+        return new String [] { "pom" };
       case OTHER_PLUGIN:
-        return "jar";
+        return new String [] { "jar" };
       case RESOURCES_ONLY:
-        return "jar";
+        return new String [] { "jar" };
       default:
         throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     }
@@ -170,9 +172,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         sPackaging = "jar";
       }
 
-      final String sExpectedPackaging = _getDesiredPackaging (aProject);
-      if (!sPackaging.equals (sExpectedPackaging) && !aProject.isBuildInProject ())
-        _warn (aProject, "Unexpected packaging '" + sPackaging + "' used. Expected '" + sExpectedPackaging + "'");
+      final String [] aExpectedPackagings = _getDesiredPackagings (aProject);
+      if (!ArrayHelper.contains (aExpectedPackagings, sPackaging))
+        _warn (aProject,
+               "Unexpected packaging '" +
+                         sPackaging +
+                         "' used. Expected one of " +
+                         Arrays.toString (aExpectedPackagings) +
+                         ".");
     }
 
     // Check version

@@ -14,7 +14,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
-public class MainExtractParentPOMDeps extends AbstractProjectMain
+public final class MainExtractParentPOMDeps extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
@@ -30,7 +30,7 @@ public class MainExtractParentPOMDeps extends AbstractProjectMain
       {
         final IMicroElement aElement = (IMicroElement) aNode;
         // groupId is optional e.g. for the defined artefact
-        if (aElement.getLocalName ().equals ("artifactId"))
+        if (aElement.hasLocalName ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
           String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "groupId");

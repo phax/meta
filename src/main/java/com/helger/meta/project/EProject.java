@@ -259,7 +259,7 @@ public enum EProject implements IProject
   PEPPOL_VALIDATION_API (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_VALIDATION_ARTEFACTS (PEPPOL_VALIDATION_ENGINE_PARENT_POM,
                                "peppol-validation-artefacts",
-                               EProjectType.JAVA_LIBRARY),
+                               EProjectType.RESOURCES_ONLY),
   PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom",
@@ -298,7 +298,7 @@ public enum EProject implements IProject
                            "2.0.0",
                            EJDK.JDK8),
 
-  PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
   PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
