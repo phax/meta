@@ -53,7 +53,7 @@ public enum EProject implements IProject
   PH_XSDS_XADES141 (PH_XSDS_PARENT_POM, "ph-xsds-xades141", EProjectType.JAVA_LIBRARY),
   PH_XSDS_CCTS_CCT_SCHEMAMODULE (PH_XSDS_PARENT_POM, "ph-xsds-ccts-cct-schemamodule", EProjectType.JAVA_LIBRARY),
 
-  JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.5", EJDK.JDK6),
+  JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.6", EJDK.JDK6),
 
   PH_JAVACC_MAVEN_PLUGIN ("ph-javacc-maven-plugin",
                           EProjectType.MAVEN_PLUGIN,
