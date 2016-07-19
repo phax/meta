@@ -60,6 +60,7 @@ public enum EExternalDependency
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.8.0"),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.7.201606060606"),
+  JAVA_PARSER_OLD ("com.github.javaparser", "javaparser-core", "2.4.0", EJDK.JDK6),
   JAVA_PARSER ("com.github.javaparser", "javaparser-core", "2.5.0"),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0"),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.5.5"),
