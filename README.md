@@ -405,7 +405,15 @@ Current list of all projects (as of 2016-07-22):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
    [![Build Status](https://travis-ci.org/phax/ph-sbdh.svg?branch=master)](https://travis-ci.org/phax/ph-sbdh)
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 3.0.0 - JDK 1.8
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz) 
+   [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
@@ -551,12 +559,6 @@ Current list of all unreleased projects:
  * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-schedule](https://github.com/phax/ph-schedule) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
