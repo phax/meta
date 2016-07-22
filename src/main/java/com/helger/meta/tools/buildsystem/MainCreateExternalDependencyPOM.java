@@ -31,7 +31,7 @@ import com.helger.xml.microdom.serialize.MicroWriter;
 /**
  * Create a POM that contains all external dependencies defined in
  * {@link EExternalDependency} so that default maven checks can be performed.
- * 
+ *
  * @author Philip Helger
  */
 public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
@@ -51,6 +51,7 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
     final Predicate <EExternalDependency> aFilter = (e) -> e != EExternalDependency.M2E &&
                                                            e != EExternalDependency.JDK &&
                                                            e != EExternalDependency.FINDBUGS_ANNOTATIONS_2 &&
+                                                           e != EExternalDependency.JAVA_PARSER_24 &&
                                                            e != EExternalDependency.LOG4J2_23_CORE &&
                                                            e != EExternalDependency.LOG4J2_23_SLF4J &&
                                                            e != EExternalDependency.LOG4J2_23_WEB &&
