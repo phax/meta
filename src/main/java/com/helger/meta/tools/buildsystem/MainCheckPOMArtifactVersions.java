@@ -312,15 +312,28 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK) &&
                   aReferencedProject.getProjectType () != EProjectType.MAVEN_POM)
               {
-                _info (aProject,
-                       "Incompatible artifact " +
-                                 sGroupID +
-                                 "::" +
-                                 sArtifactID +
-                                 "::" +
-                                 sVersion +
-                                 " for " +
-                                 eProjectJDK.getDisplayName ());
+                final boolean bIsSpecialCase1 = aReferencedProject == EProject.PH_COMMONS &&
+                                                "6.2.4".equals (sVersion) &&
+                                                eProjectJDK == EJDK.JDK6;
+                final boolean bIsSpecialCase2 = aReferencedProject == EProject.PH_DATETIME &&
+                                                "4.2.1".equals (sVersion) &&
+                                                eProjectJDK == EJDK.JDK6;
+                final boolean bIsSpecialCase3 = aReferencedProject == EProject.PEPPOL_COMMONS &&
+                                                "4.3.5".equals (sVersion) &&
+                                                eProjectJDK == EJDK.JDK6;
+
+                if (!bIsSpecialCase1 && !bIsSpecialCase2 && !bIsSpecialCase3)
+                  _info (aProject,
+                         "Incompatible artifact " +
+                                   sGroupID +
+                                   "::" +
+                                   sArtifactID +
+                                   "::" +
+                                   sVersion +
+                                   " (" +
+                                   aReferencedProject.getMinimumJDKVersion ().getDisplayName () +
+                                   ") for this project requiring " +
+                                   eProjectJDK.getDisplayName ());
                 continue;
               }
 
