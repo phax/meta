@@ -140,7 +140,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111"),
-  UNDERTOW ("io.undertow", "undertow-servlet", "1.3.22.Final"),
+  UNDERTOW ("io.undertow", "undertow-servlet", "1.3.23.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.0.7"),
