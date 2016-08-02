@@ -148,13 +148,9 @@ public enum EProject implements IProject
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
-  PH_CSS ("ph-css", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
-  PH_CSSCOMPRESS_MAVEN_PLUGIN ("ph-csscompress-maven-plugin",
-                               EProjectType.MAVEN_PLUGIN,
-                               EHasPages.FALSE,
-                               EHasWiki.FALSE,
-                               "2.0.0",
-                               EJDK.JDK8),
+  PH_CSS_PARENT_POM ("ph-css-parent-pom", "ph-css", EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
+  PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
+  PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN, "2.0.0"),
 
   PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),

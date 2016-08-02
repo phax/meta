@@ -38,6 +38,8 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
+  private static final boolean CHECK_TRAVIS = false;
+
   @Nonnull
   private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
@@ -110,7 +112,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
   {
-    if (!aProject.isNestedProject ())
+    if (!aProject.isNestedProject () && CHECK_TRAVIS)
     {
       if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
       {
