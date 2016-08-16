@@ -40,5 +40,6 @@ public final class MainEclipseCompilerErrorsRestoreBackup extends AbstractProjec
         _info (aProject, "Done restoring backup");
       }
     }
+    s_aLogger.info ("Done");
   }
 }
