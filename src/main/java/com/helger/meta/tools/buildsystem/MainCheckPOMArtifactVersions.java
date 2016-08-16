@@ -91,6 +91,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   private static boolean _isSnapshot (final String sVersion)
   {
     return sVersion.endsWith (SUFFIX_SNAPSHOT) ||
+           RegExHelper.stringMatchesPattern (".+\\-b[0-9]", Pattern.CASE_INSENSITIVE, sVersion) ||
            RegExHelper.stringMatchesPattern (".+\\-beta[0-9]+", Pattern.CASE_INSENSITIVE, sVersion);
   }
 
