@@ -18,6 +18,11 @@ public class LambdaExceptionDeductionFuncTest
     String get () throws Exception;
   }
 
+  public static interface IBaseGetterManual extends IBaseGetter
+  {
+    String get () throws IOException;
+  }
+
   public static interface IThrowingGetter <EX extends Exception> extends IBaseGetter
   {
     String get () throws EX;
@@ -32,8 +37,13 @@ public class LambdaExceptionDeductionFuncTest
   {
     final InputStream aIS = new ByteArrayInputStream ("abc".getBytes (StandardCharsets.UTF_8));
     // This fails when compiling on the commandline!
-    final IThrowingGetter <IOException> aGetter = () -> Character.toString ((char) aIS.read ());
-    aGetter.get ();
+    if (false)
+    {
+      final IThrowingGetter <IOException> aGetter = () -> Character.toString ((char) aIS.read ());
+      aGetter.get ();
+    }
+    final IBaseGetterManual aGetterManual = () -> Character.toString ((char) aIS.read ());
+    aGetterManual.get ();
     final IThrowingGetterWorking <IOException> aGetterWorking = () -> Character.toString ((char) aIS.read ());
     aGetterWorking.get ();
   }
