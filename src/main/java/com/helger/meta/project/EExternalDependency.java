@@ -146,7 +146,7 @@ public enum EExternalDependency
   XMLSEC ("org.apache.santuario", "xmlsec", "2.0.7"),
   XSOM ("com.sun.xsom", "xsom", "20140925"),
   // parent POM dependencies
-  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "2.11"),
+  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0"),
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "3.2.0"),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.0.0"),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "1.8"),
