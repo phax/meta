@@ -7,7 +7,8 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * This is a dummy class to test for generic exceptions in combinations with
- * Lambdas
+ * Lambdas<br>
+ * Wait for http://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8164613
  *
  * @author Philip Helger
  */
