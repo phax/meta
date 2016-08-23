@@ -54,7 +54,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.5"),
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.7"),
   H2 ("com.h2database", "h2", "1.4.192"),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.6.4"),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.6.5"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.5"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2"),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.8.1"),
