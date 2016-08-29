@@ -30,10 +30,10 @@ import com.helger.commons.version.Version;
 public enum EExternalDependency
 {
   ASM_TREE ("org.ow2.asm", "asm-tree", "5.1"),
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.54"),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.55"),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20160713"),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20160822"),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3"),
   COMMONS_NET ("commons-net", "commons-net", "3.5"),
@@ -84,7 +84,7 @@ public enum EExternalDependency
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1"),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "1.6.5"),
   JEROMQ ("org.zeromq", "jeromq", "0.3.5"),
-  JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.1"),
+  JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.2"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7
   JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.23.2", EJDK.JDK7),
@@ -111,7 +111,7 @@ public enum EExternalDependency
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.6.2", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.1.0", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.2.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
