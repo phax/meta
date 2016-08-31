@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-08-22):
+Current list of all projects (as of 2016-08-31):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.0 - JDK 1.8
 
@@ -33,7 +33,7 @@ Current list of all projects (as of 2016-08-22):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
- * [ebinterface-ubl-mapping](https://github.com/phax/ebinterface-ubl-mapping) - Version 2.0.1 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/phax/ebinterface-ubl-mapping) - Version 2.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/phax/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/phax/ebinterface-ubl-mapping)
