@@ -486,12 +486,16 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
+    if (aProject == EProject.PH_STX_ENGINE)
+      return EContinue.BREAK;
+
     if (aProject == EProject.PH_STX_PARSER &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserSTX") ||
          sClassLocalName.equals ("Token") ||
          sClassLocalName.equals ("TokenMgrError") ||
+         sClassLocalName.startsWith ("JJTParser") ||
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
@@ -547,6 +551,20 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
   }
 
+  @Nonnull
+  private static EContinue _doScanTestClass (@Nonnull final IProject aProject,
+                                             @Nonnull final String sPackageName,
+                                             @Nonnull @Nonempty final String sClassLocalName)
+  {
+    if (aProject == EProject.PH_MINI_QUARTZ)
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_STX_ENGINE)
+      return EContinue.BREAK;
+
+    return EContinue.CONTINUE;
+  }
+
   private static void _scanTestCode (@Nonnull final IProject aProject)
   {
     final File aTestClassDir = new File (aProject.getBaseDir (), "target/test-classes");
@@ -571,8 +589,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           }
         }
 
-        final String sBaseName = FilenameHelper.getWithoutExtension (sName);
+        final String sClassName = ClassHelper.getClassFromPath (cn.name);
+        final String sPackageName = ClassHelper.getClassPackageName (sClassName);
+        final String sClassLocalName = ClassHelper.getClassLocalName (sClassName);
 
+        // Special generated classes
+        if (_doScanTestClass (aProject, sPackageName, sClassLocalName).isBreak ())
+          continue;
+
+        final String sBaseName = FilenameHelper.getWithoutExtension (sName);
         if (bContainsTestMethod && !sBaseName.endsWith ("Test"))
           _warn (aProject, "Class '" + sName + "' contains @Test annotation but is named inconsistent");
 
