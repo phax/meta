@@ -48,21 +48,17 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
     eProject.appendElement (NS, "version")
             .appendText ("1.0.0-" + DateTimeFormatter.BASIC_ISO_DATE.format (PDTFactory.getCurrentLocalDateTime ()));
 
-    final Predicate <EExternalDependency> aFilter = (e) -> e != EExternalDependency.M2E &&
-                                                           e != EExternalDependency.JDK &&
-                                                           e != EExternalDependency.FINDBUGS_ANNOTATIONS_2 &&
-                                                           e != EExternalDependency.JAVA_PARSER_24 &&
-                                                           e != EExternalDependency.LOG4J2_23_CORE &&
-                                                           e != EExternalDependency.LOG4J2_23_SLF4J &&
-                                                           e != EExternalDependency.LOG4J2_23_WEB &&
-                                                           e != EExternalDependency.SERVLET_API_301 &&
-                                                           e != EExternalDependency.JETTY_92_ANNOTATIONS &&
-                                                           e != EExternalDependency.JETTY_92_JSP &&
-                                                           e != EExternalDependency.JETTY_92_WEBAPP;
-
-    final Predicate <EExternalDependency> aIsBOM = e -> e == EExternalDependency.JAXB_BOM ||
-                                                        e == EExternalDependency.JERSEY2_BOM ||
-                                                        e == EExternalDependency.JAXWS_RI_BOM;
+    final Predicate <EExternalDependency> aFilter = x -> x != EExternalDependency.M2E &&
+                                                         x != EExternalDependency.JDK &&
+                                                         x != EExternalDependency.FINDBUGS_ANNOTATIONS_2 &&
+                                                         x != EExternalDependency.JAVA_PARSER_24 &&
+                                                         x != EExternalDependency.LOG4J2_23_CORE &&
+                                                         x != EExternalDependency.LOG4J2_23_SLF4J &&
+                                                         x != EExternalDependency.LOG4J2_23_WEB &&
+                                                         x != EExternalDependency.SERVLET_API_301 &&
+                                                         x != EExternalDependency.JETTY_92_ANNOTATIONS &&
+                                                         x != EExternalDependency.JETTY_92_JSP &&
+                                                         x != EExternalDependency.JETTY_92_WEBAPP;
 
     final IMicroElement eDeps = eProject.appendElement (NS, "dependencies");
     for (final EExternalDependency e : EExternalDependency.values ())
@@ -72,7 +68,7 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
         eDep.appendElement (NS, "groupId").appendText (e.getGroupID ());
         eDep.appendElement (NS, "artifactId").appendText (e.getArtifactID ());
         eDep.appendElement (NS, "version").appendText (e.getLastPublishedVersionString ());
-        if (aIsBOM.test (e))
+        if (e.isBOM ())
         {
           eDep.appendElement (NS, "type").appendText ("pom");
         }
@@ -84,9 +80,10 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
       final IMicroElement ePlugin = ePlugins.appendElement (NS, "plugin");
       ePlugin.appendElement (NS, "groupId").appendText ("org.codehaus.mojo");
       ePlugin.appendElement (NS, "artifactId").appendText ("versions-maven-plugin");
-      ePlugin.appendElement (NS, "version").appendText ("2.2");
+      ePlugin.appendElement (NS, "version").appendText ("2.3");
       final IMicroElement eConfig = ePlugin.appendElement (NS, "configuration");
       eConfig.appendElement (NS, "allowSnapshots").appendText ("false");
+      eConfig.appendElement (NS, "rulesUri").appendText ("file:versions-maven-plugin-rules.xml");
     }
 
     final File f = new File ("deps/pom.xml");
