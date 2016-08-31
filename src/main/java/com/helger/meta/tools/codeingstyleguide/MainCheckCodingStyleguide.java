@@ -158,7 +158,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            java.util.Set.class.getName ().equals (sClassName) ||
            java.util.NavigableSet.class.getName ().equals (sClassName) ||
            java.util.SortedSet.class.getName ().equals (sClassName) ||
-           java.util.EnumSet.class.getName ().equals (sClassName) ||
+           // java.util.EnumSet.class.getName ().equals (sClassName) ||
            java.util.HashSet.class.getName ().equals (sClassName) ||
            java.util.LinkedHashSet.class.getName ().equals (sClassName) ||
            java.util.TreeSet.class.getName ().equals (sClassName) ||
@@ -305,10 +305,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                                "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
         }
 
-      if (bIsJDK8 && bReturnsJdkCollection)
-        if (!mn.name.equals ("getAsUnmodifiable"))
-          _warn (aProject,
-                 sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
+      if (false)
+        if (bIsJDK8 && bReturnsJdkCollection)
+          if (!mn.name.equals ("getAsUnmodifiable"))
+            _warn (aProject,
+                   sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
     }
 
     if (bClassIsAbstract && !bClassIsInterface && !bClassIsEnum)
@@ -418,8 +419,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.startsWith ("ParserCSSCharsetDetector") ||
          sClassLocalName.equals ("Token") ||
          sClassLocalName.equals ("TokenMgrError") ||
+         sClassLocalName.equals ("TokenMgrException") ||
          sClassLocalName.startsWith ("JJTParser") ||
          sClassLocalName.equals ("Node") ||
+         sClassLocalName.equals ("Provider") ||
+         sClassLocalName.equals ("StreamProvider") ||
          (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) ||
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
@@ -437,12 +441,19 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sPackageName.equals ("com.helger.genericode.v10")))
       return EContinue.BREAK;
 
+    if (aProject == EProject.PH_ISORELAX &&
+        (sPackageName.startsWith ("jp.gr.xml.relax.") || sPackageName.startsWith ("org.iso_relax.")))
+      return EContinue.BREAK;
+
     if (aProject == EProject.PH_JSON &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserJson") ||
          sClassLocalName.equals ("Token") ||
          sClassLocalName.equals ("TokenMgrError")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_MINI_QUARTZ)
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_SBDH && sPackageName.equals ("org.unece.cefact.namespaces.sbdh"))
@@ -472,6 +483,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("Token") ||
          sClassLocalName.equals ("TokenMgrError") ||
          sClassLocalName.startsWith ("JJTParser") ||
+         sClassLocalName.equals ("SimpleNode")))
+      return EContinue.BREAK;
+
+    if (aProject == EProject.PH_STX_PARSER &&
+        (sClassLocalName.equals ("CharStream") ||
+         sClassLocalName.equals ("ParseException") ||
+         sClassLocalName.startsWith ("ParserSTX") ||
+         sClassLocalName.equals ("Token") ||
+         sClassLocalName.equals ("TokenMgrError") ||
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
@@ -558,6 +578,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
         if (sBaseName.contains ("$") ||
             sBaseName.equals ("SPITest") ||
+            sBaseName.equals ("SunJaxWSTest") ||
             sBaseName.equals ("JettyMonitor") ||
             sBaseName.startsWith ("JettyStop") ||
             sBaseName.startsWith ("RunInJetty") ||
