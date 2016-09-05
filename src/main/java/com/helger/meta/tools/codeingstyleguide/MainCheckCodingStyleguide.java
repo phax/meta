@@ -551,6 +551,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
   }
 
+  /**
+   * @param aProject
+   *        Base project
+   * @param sPackageName
+   *        Package name
+   * @param sClassLocalName
+   *        Class name without package
+   * @return {@link EContinue}
+   */
   @Nonnull
   private static EContinue _doScanTestClass (@Nonnull final IProject aProject,
                                              @Nonnull final String sPackageName,
