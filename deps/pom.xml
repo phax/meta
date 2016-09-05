@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20160831</version>
+  <version>1.0.0-20160905</version>
   <dependencies>
     <dependency>
       <groupId>org.ow2.asm</groupId>
@@ -128,7 +128,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>3.7</version>
+      <version>3.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -336,7 +336,7 @@
     <dependency>
       <groupId>com.jcraft</groupId>
       <artifactId>jsch</artifactId>
-      <version>0.1.53</version>
+      <version>0.1.54</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
@@ -446,7 +446,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.7.0-7</version>
+      <version>9.7.0-8</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
