@@ -1,115 +1,45 @@
-import java.util.BitSet;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Solution
 {
-  public static void main (final String [] args)
+  public static void main (final String [] args) throws IOException
   {
-    final Scanner in = new Scanner ("4\r\n" +
-                                    "5 3\r\n" +
-                                    "0 0 0 0 0\r\n" +
-                                    "6 5\r\n" +
-                                    "0 0 0 1 1 1\r\n" +
-                                    "6 3\r\n" +
-                                    "0 0 1 1 1 0\r\n" +
-                                    "3 1\r\n" +
-                                    "0 1 0");
-
-    final int T = Integer.parseInt (in.nextLine ());
-    for (int tc = 0; tc < T; ++tc)
+    String sFile = " /*This is a program to calculate area of a circle after getting the radius as input from the user*/\r\n" +
+                   "#include<stdio.h>\r\n" +
+                   "int main()\r\n" +
+                   "{\r\n" +
+                   "   double radius,area;//variables for storing radius and area\r\n" +
+                   "   printf(\"Enter the radius of the circle whose area is to be calculated\\n\");\r\n" +
+                   "   scanf(\"%lf\",&radius);//entering the value for radius of the circle as float data type\r\n" +
+                   "   area=(22.0/7.0)*pow(radius,2);//Mathematical function pow is used to calculate square of radius\r\n" +
+                   "   printf(\"The area of the circle is %lf\",area);//displaying the results\r\n" +
+                   "   getch();\r\n" +
+                   "}\r\n" +
+                   "/*A test run for the program was carried out and following output was observed\r\n" +
+                   "If 50 is the radius of the circle whose area is to be calculated\r\n" +
+                   "The area of the circle is 7857.1429*/";
+    if (sFile == null)
     {
-      final int n = in.nextInt ();
-      final int m = in.nextInt ();
-      final boolean [] free = new boolean [n];
-      for (int i = 0; i < n; ++i)
-        free[i] = in.nextInt () == 0;
+      final StringBuilder aSB = new StringBuilder ();
+      final BufferedReader aBR = new BufferedReader (new InputStreamReader (System.in));
+      String s;
+      while ((s = aBR.readLine ()) != null)
+        aSB.append (s).append ('\n');
 
-      final Board b = new Board (free, m);
-      System.out.println (b.canWin () ? "YES" : "NO");
-    }
-  }
-
-  static final class Board
-  {
-    private final int m_entries;
-    private final boolean [] m_free;
-    private final int m_jump;
-
-    public Board (final boolean [] free, final int m)
-    {
-      m_entries = free.length;
-      m_free = free;
-      m_jump = m;
-      assert m_free[0];
+      sFile = aSB.toString ();
     }
 
-    private boolean _isFree (final int pos, final BitSet visited)
+    final Pattern p = Pattern.compile ("(/\\*(?:[^*]|(?:\\*+[^*/]))*\\*/|//.*)");
+    final Matcher m = p.matcher (sFile);
+    if (m.find ())
     {
-      return pos >= 0 && (pos >= m_entries || (m_free[pos] && !visited.get (pos)));
-    }
-
-    private boolean _isWin (final int pos)
-    {
-      return pos >= m_entries;
-    }
-
-    private boolean _canWin (final int startPos, final BitSet visited, final int level)
-    {
-      String prefix = "";
-      for (int i = 0; i < level; ++i)
-        prefix += "  ";
-
-      int nextPos = startPos + m_jump;
-      if (_isFree (nextPos, visited))
-      {
-        if (_isWin (nextPos))
-          return true;
-
-        if (false)
-          System.out.println (prefix + "Jumping from " + startPos + " to " + nextPos);
-        final BitSet visited2 = (BitSet) visited.clone ();
-        visited2.set (nextPos, true);
-        if (_canWin (nextPos, visited2, level + 1))
-          return true;
-        // else continue
-      }
-
-      nextPos = startPos + 1;
-      if (_isFree (nextPos, visited))
-      {
-        if (_isWin (nextPos))
-          return true;
-
-        if (false)
-          System.out.println (prefix + "Jumping from " + startPos + " to " + nextPos);
-        final BitSet visited2 = (BitSet) visited.clone ();
-        visited2.set (nextPos, true);
-        if (_canWin (nextPos, visited2, level + 1))
-          return true;
-        // else continue
-      }
-
-      nextPos = startPos - 1;
-      if (_isFree (nextPos, visited))
-      {
-        if (false)
-          System.out.println (prefix + "Jumping from " + startPos + " to " + nextPos);
-
-        final BitSet visited2 = (BitSet) visited.clone ();
-        visited2.set (nextPos, true);
-        if (_canWin (nextPos, visited2, level + 1))
-          return true;
-        // else continue
-      }
-      return false;
-    }
-
-    public boolean canWin ()
-    {
-      final BitSet visited = new BitSet (m_entries);
-      final int pos = 0;
-      visited.set (pos, true);
-      return _canWin (pos, visited, 0);
+      final int gc = m.groupCount ();
+      for (int i = 0; i < gc; ++i)
+        System.out.println (m.group (i + 1));
     }
   }
 }
