@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20160905</version>
+  <version>1.0.0-20160912</version>
   <dependencies>
     <dependency>
       <groupId>org.ow2.asm</groupId>
