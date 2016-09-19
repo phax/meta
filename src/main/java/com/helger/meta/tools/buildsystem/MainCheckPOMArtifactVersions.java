@@ -470,6 +470,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 if (false)
                   if (!sGroupID.startsWith ("org.apache.maven") &&
                       !sGroupID.startsWith ("org.codehaus.mojo") &&
+                      !sArtifactID.equals ("rt") &&
                       !sArtifactID.contains ("-maven-") &&
                       !sArtifactID.startsWith ("maven-") &&
                       !sArtifactID.startsWith ("plexus-") &&
