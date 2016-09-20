@@ -73,7 +73,7 @@ public enum EProject implements IProject
   PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
   PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1", EJDK.JDK8),
-  PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.2", EJDK.JDK8),
+  PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.3", EJDK.JDK8),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
@@ -152,7 +152,7 @@ public enum EProject implements IProject
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
-  PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.1", EJDK.JDK8),
+  PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.2", EJDK.JDK8),
   PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),
   PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY),
   PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY),
@@ -315,7 +315,7 @@ public enum EProject implements IProject
 
   PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
-  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_LIBRARY),
+  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical",

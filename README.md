@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-09-19):
+Current list of all projects (as of 2016-09-20):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.0 - JDK 1.8
 
@@ -277,19 +277,19 @@ Current list of all projects (as of 2016-09-19):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode) 
    [![Build Status](https://travis-ci.org/phax/ph-genericode.svg?branch=master)](https://travis-ci.org/phax/ph-genericode)
- * [ph-html](https://github.com/phax/ph-html) - Version 6.0.1 - JDK 1.8
+ * [ph-html](https://github.com/phax/ph-html) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-html.svg?branch=master)](https://travis-ci.org/phax/ph-html)
- * [ph-html/ph-html](https://github.com/phax/ph-html) - Version 6.0.1 - JDK 1.8
+ * [ph-html/ph-html](https://github.com/phax/ph-html) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html) 
    [![Build Status](https://travis-ci.org/phax/ph-html.svg?branch=master)](https://travis-ci.org/phax/ph-html)
- * [ph-html/ph-html-jquery](https://github.com/phax/ph-html) - Version 6.0.1 - JDK 1.8
+ * [ph-html/ph-html-jquery](https://github.com/phax/ph-html) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jquery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jquery) 
    [![Build Status](https://travis-ci.org/phax/ph-html.svg?branch=master)](https://travis-ci.org/phax/ph-html)
- * [ph-html/ph-html-jscode](https://github.com/phax/ph-html) - Version 6.0.1 - JDK 1.8
+ * [ph-html/ph-html-jscode](https://github.com/phax/ph-html) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jscode) 
    [![Build Status](https://travis-ci.org/phax/ph-html.svg?branch=master)](https://travis-ci.org/phax/ph-html)
@@ -409,7 +409,7 @@ Current list of all projects (as of 2016-09-19):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 3.0.2 - JDK 1.8
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 3.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
@@ -564,6 +564,15 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-as4](https://github.com/phax/ph-as4) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-dee](https://github.com/phax/ph-dee) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
@@ -622,9 +631,6 @@ All deprecated projects:
  * peppol-lime/peppol-lime-server - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-server) 
- * ph-as4 - never released
- * ph-as4/ph-as4-lib - never released
- * ph-as4/ph-as4-server - never released
  * ph-bootstrap3 - Version 2.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3) 
