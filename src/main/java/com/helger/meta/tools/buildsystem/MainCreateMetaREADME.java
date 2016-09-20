@@ -74,8 +74,8 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     final StringBuilder aSB = new StringBuilder ();
 
     final List <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
-                                                       .getSorted (Comparator.comparing (IProject::getBaseDir)
-                                                                             .thenComparing (IProject::getProjectName));
+                                                       .getSortedInline (Comparator.comparing (IProject::getBaseDir)
+                                                                                   .thenComparing (IProject::getProjectName));
 
     // Show all
     aSB.append ("Current list of all projects (as of ")
