@@ -48,6 +48,8 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
                                                                     !p.isDeprecated () &&
                                                                     !p.isNestedProject ()))
     {
+      if (false)
+        _info (aProject, "Checking");
       final File f = new File (aProject.getBaseDir (), "README.md");
       if (f.exists ())
       {
@@ -62,9 +64,11 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
         {
           // Search for separator
           final int nIndex = sContent.lastIndexOf (SEPARATOR);
+          String sNewContent = null;
           if (nIndex < 0)
           {
             _warn (aProject, "footer is missing");
+            sNewContent = sContent + COMMON_FOOTER;
           }
           else
           {
@@ -85,24 +89,27 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
             }
             else
             {
-              String sNewContent = sContent.substring (0, nIndex) + COMMON_FOOTER;
-
-              // Convert newline back to system default
-              sNewContent = StringHelper.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
-
-              SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
-              _warn (aProject, f.getName () + " was updated");
-
-              aSB.append ("echo ")
-                 .append (aProject.getProjectName ())
-                 .append ("\ncd ")
-                 .append (aProject.getFullBaseDirName ())
-                 .append ("\n")
-                 .append ("git commit -m \"Updated README footer\" README.md\n")
-                 .append ("git push\n")
-                 .append ("\nif errorlevel 1 goto error")
-                 .append ("\ncd ..\n");
+              sNewContent = sContent.substring (0, nIndex) + COMMON_FOOTER;
             }
+          }
+
+          if (sNewContent != null)
+          {
+            // Convert newline back to system default
+            sNewContent = StringHelper.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
+
+            SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
+            _warn (aProject, f.getName () + " was updated");
+
+            aSB.append ("echo ")
+               .append (aProject.getProjectName ())
+               .append ("\ncd ")
+               .append (aProject.getFullBaseDirName ())
+               .append ("\n")
+               .append ("git commit -m \"Updated README footer\" README.md\n")
+               .append ("git push\n")
+               .append ("\nif errorlevel 1 goto error")
+               .append ("\ncd ..\n");
           }
         }
       }
@@ -111,12 +118,13 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
     }
 
     if (aSB.length () > 0)
+
     {
       aSB.insert (0, BATCH_HEADER);
       // Delete yourself
       // Source:
       // http://stackoverflow.com/questions/20329355/how-to-make-a-batch-file-delete-itself
-      aSB.append ("(goto) 2>nul & del \"%~f0\"");
+      aSB.append ("(goto) 2>nul & del \"%~f0\"\n");
       aSB.append (BATCH_FOOTER);
       SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
                               aSB.toString (),

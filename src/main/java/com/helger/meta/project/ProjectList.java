@@ -39,13 +39,21 @@ public final class ProjectList
 {
   private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap<> ();
 
+  private static void _add (@Nonnull final IProject aProject)
+  {
+    final String sKey = aProject.getProjectName ();
+    if (s_aName2Project.containsKey (sKey))
+      throw new IllegalArgumentException ("Another project with name '" + sKey + "' is already contained!");
+    s_aName2Project.put (sKey, aProject);
+  }
+
   static
   {
     // Build in projects
     for (final IProject aProject : EProject.values ())
-      s_aName2Project.put (aProject.getProjectName (), aProject);
+      _add (aProject);
     for (final IProject aProject : EProjectDeprecated.values ())
-      s_aName2Project.put (aProject.getProjectName (), aProject);
+      _add (aProject);
 
     // Other projects
     final IReadableResource aRes = new ClassPathResource ("other-projects.xml");
@@ -56,7 +64,7 @@ public final class ProjectList
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
         {
           final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
-          s_aName2Project.put (aProject.getProjectName (), aProject);
+          _add (aProject);
         }
     }
   }

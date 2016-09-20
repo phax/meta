@@ -33,13 +33,19 @@ import com.helger.meta.CMeta;
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
-  CIPA_START_JMSRECEIVER (null, "cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
-  CIPA_START_JMSSENDER (null, "cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
+  CIPA_START_JMSRECEIVER (null,
+                          "cipa-start-jmsreceiver",
+                          EProjectType.JAVA_LIBRARY,
+                          EHasPages.FALSE,
+                          EHasWiki.FALSE,
+                          "1.0.2"),
+  CIPA_START_JMSSENDER (null,
+                        "cipa-start-jmssender",
+                        EProjectType.JAVA_WEB_APPLICATION,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
-
-  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null),
-  PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
-  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
 
   PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),

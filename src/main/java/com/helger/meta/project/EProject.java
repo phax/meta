@@ -525,6 +525,11 @@ public enum EProject implements IProject
 
   public boolean isBuildInProject ()
   {
+    if (this == EProject.PH_AS4_PARENT_POM)
+    {
+      String s = "";
+      s += getFullBaseDirName ();
+    }
     return true;
   }
 
