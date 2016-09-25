@@ -54,7 +54,7 @@ public enum EProject implements IProject
   PH_XSDS_XADES141 (PH_XSDS_PARENT_POM, "ph-xsds-xades141", EProjectType.JAVA_LIBRARY),
   PH_XSDS_CCTS_CCT_SCHEMAMODULE (PH_XSDS_PARENT_POM, "ph-xsds-ccts-cct-schemamodule", EProjectType.JAVA_LIBRARY),
 
-  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.5.1", EJDK.JDK8),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.5.2", EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_SECURITY (PH_COMMONS_PARENT_POM, "ph-security", EProjectType.JAVA_LIBRARY),
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),
@@ -136,7 +136,7 @@ public enum EProject implements IProject
   PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
   PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY),
 
-  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.6.1", EJDK.JDK8),
+  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.6.2", EJDK.JDK8),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_MAIL (PH_WEB_PARENT_POM, "ph-mail", EProjectType.JAVA_LIBRARY),
   PH_SMTP (PH_WEB_PARENT_POM, "ph-smtp", EProjectType.JAVA_LIBRARY),
