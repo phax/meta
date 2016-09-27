@@ -204,12 +204,12 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
 
-  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
 
-  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  AS2_SERVER ("as2-server", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
 
   PEPPOL_COMMONS_PARENT_POM ("peppol-commons-parent-pom",
                              "peppol-commons",
