@@ -23,6 +23,8 @@ import java.util.function.Predicate;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
+import com.helger.meta.project.IProject;
+import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroDocument;
@@ -34,7 +36,7 @@ import com.helger.xml.microdom.serialize.MicroWriter;
  *
  * @author Philip Helger
  */
-public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
+public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
 {
   private static final String NS = "http://maven.apache.org/POM/4.0.0";
 
@@ -61,6 +63,7 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
                                                          x != EExternalDependency.JETTY_92_WEBAPP;
 
     final IMicroElement eDeps = eProject.appendElement (NS, "dependencies");
+    eDeps.appendComment ("External dependencies:");
     for (final EExternalDependency e : EExternalDependency.values ())
       if (aFilter.test (e))
       {
@@ -69,10 +72,28 @@ public final class MainCreateExternalDependencyPOM extends AbstractProjectMain
         eDep.appendElement (NS, "artifactId").appendText (e.getArtifactID ());
         eDep.appendElement (NS, "version").appendText (e.getLastPublishedVersionString ());
         if (e.isBOM ())
-        {
           eDep.appendElement (NS, "type").appendText ("pom");
-        }
       }
+
+    eDeps.appendComment ("Internal projects:");
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+                                                                    x.isPublished () &&
+                                                                    !x.isDeprecated ()))
+    {
+      final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
+      eDep.appendElement (NS, "groupId").appendText (aProject.getMavenGroupID ());
+      eDep.appendElement (NS, "artifactId").appendText (aProject.getMavenArtifactID ());
+      eDep.appendElement (NS, "version").appendText (aProject.getLastPublishedVersionString ());
+      switch (aProject.getProjectType ())
+      {
+        case MAVEN_POM:
+          eDep.appendElement (NS, "type").appendText ("pom");
+          break;
+        case JAVA_WEB_APPLICATION:
+          eDep.appendElement (NS, "type").appendText ("war");
+          break;
+      }
+    }
 
     {
       final IMicroElement eBuild = eProject.appendElement (NS, "build");
