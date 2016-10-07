@@ -933,7 +933,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>3.5.0</version>
+      <version>3.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1135,23 +1135,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-parent-pom</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-jscode</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-jquery</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
