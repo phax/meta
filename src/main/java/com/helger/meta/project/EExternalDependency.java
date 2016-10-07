@@ -29,7 +29,7 @@ import com.helger.commons.version.Version;
 
 public enum EExternalDependency
 {
-  ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.4"),
+  ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.5"),
   ASM ("org.ow2.asm", "asm", "5.1"),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.55"),
@@ -58,7 +58,7 @@ public enum EExternalDependency
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.7"),
   H2 ("com.h2database", "h2", "1.4.192"),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3"),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.7.1"),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.7.2"),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.5"),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2"),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.6"),
@@ -116,7 +116,7 @@ public enum EExternalDependency
   LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
   LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
   LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.6.2", EJDK.JDK7),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.7", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.2.1", EJDK.JDK7),
@@ -135,7 +135,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.2.3"),
   RHINO ("org.mozilla", "rhino", "1.7.7.1"),
-  RXJAVA ("io.reactivex", "rxjava", "1.2.0"),
+  RXJAVA ("io.reactivex", "rxjava", "1.2.1"),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-8"),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "2.53.1"),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
