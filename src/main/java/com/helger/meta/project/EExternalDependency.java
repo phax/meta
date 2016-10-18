@@ -178,7 +178,7 @@ public enum EExternalDependency
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "2.10.4"),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.0.0"),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "2.5"),
-  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.6"),
+  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.7"),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "2.9"),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4"),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3"),
