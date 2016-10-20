@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161018</version>
+  <version>1.0.0-20161020</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -337,22 +337,22 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.3.12.v20160915</version>
+      <version>9.3.13.v20161014</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.3.12.v20160915</version>
+      <version>9.3.13.v20161014</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.3.12.v20160915</version>
+      <version>9.3.13.v20161014</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.3.12.v20160915</version>
+      <version>9.3.13.v20161014</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -452,7 +452,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.4</version>
+      <version>6.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -497,7 +497,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
