@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161020</version>
+  <version>1.0.0-20161021</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1119,60 +1119,60 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-parent-pom</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-jscode</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-html-jquery</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-validation</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-validation</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1389,6 +1389,11 @@
       <artifactId>peppol-validation-engine-parent-pom</artifactId>
       <version>2.0.1</version>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-bdve</artifactId>
+      <version>2.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
