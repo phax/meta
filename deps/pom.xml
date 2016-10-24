@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161021</version>
+  <version>1.0.0-20161024</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -475,6 +475,11 @@
       <version>3.15</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-scratchpad</artifactId>
+      <version>3.15</version>
+    </dependency>
+    <dependency>
       <groupId>org.quartz-scheduler</groupId>
       <artifactId>quartz</artifactId>
       <version>2.2.3</version>
@@ -492,7 +497,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.7.0-8</version>
+      <version>9.7.0-10</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
