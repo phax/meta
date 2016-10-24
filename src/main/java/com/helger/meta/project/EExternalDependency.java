@@ -53,6 +53,8 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "1.50.5"),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.2"),
+  FOP ("org.apache.xmlgraphics", "fop", "2.1"),
+  FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0"),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.2"),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.5"),
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.7"),
