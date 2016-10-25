@@ -48,7 +48,7 @@ public enum EExternalDependency
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.0"),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.1"),
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "1.50.5"),
