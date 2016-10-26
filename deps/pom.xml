@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161025</version>
+  <version>1.0.0-20161026</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -427,6 +427,11 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
+      <version>6.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-backward-codecs</artifactId>
       <version>6.2.1</version>
     </dependency>
     <dependency>
