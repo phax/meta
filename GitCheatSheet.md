@@ -6,6 +6,12 @@ Store credentials when using commandline git:
 git config --global credential.helper wincred
 ```
 
+Proxy settings
+```
+set HTTP_PROXY=http://proxy.mycompany:80
+git config --global http.proxy %HTTP_PROXY%
+```
+
 ## Release a branch with maven-release-plugin
 
 Set the `<scm><tag>` element to e.g. `origin/1.2` where *1.2* is the name of the branch at origin.
