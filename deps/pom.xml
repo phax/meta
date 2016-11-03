@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161102</version>
+  <version>1.0.0-20161103</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -507,7 +507,7 @@
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava</artifactId>
-      <version>1.2.1</version>
+      <version>1.2.2</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>
@@ -798,7 +798,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>1.9.1</version>
+      <version>1.9.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
