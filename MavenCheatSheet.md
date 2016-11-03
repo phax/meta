@@ -57,3 +57,37 @@
   </pluginGroups>
 </settings>
 ```
+
+## Build a release for a Git project
+
+Create a batch file `mvnrelease_github.cmd` with the following content:
+
+```
+@echo off
+call mvn release:prepare %*
+if errorlevel 1 goto err
+call mvn release:perform %*
+if errorlevel 1 goto err
+goto end
+:err
+echo Oops....
+pause
+:end
+```
+
+## Build a release for an SVN project
+
+SVN username and password must be passed on the commandline. Replace "x" and "y" below.
+
+```
+@echo off
+call mvn release:prepare -Dusername=x -Dpassword=x %*
+if errorlevel 1 goto err
+call mvn release:perform -Dusername=x -Dpassword=y %*
+if errorlevel 1 goto err
+goto end
+:err
+echo Oops....
+pause
+:end
+```

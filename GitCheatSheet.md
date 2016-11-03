@@ -1,12 +1,19 @@
 #My personal Git cheat sheet
 
 ## Global settings
+
+Basic user info:
+```
+git config --global user.email "philip@helger.com"
+git config --global user.name "Philip Helger"
+```
+
 Store credentials when using commandline git:
 ```
 git config --global credential.helper wincred
 ```
 
-Proxy settings
+Proxy settings:
 ```
 set HTTP_PROXY=http://proxy.mycompany:80
 git config --global http.proxy %HTTP_PROXY%
