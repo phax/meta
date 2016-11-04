@@ -107,7 +107,7 @@ public enum EExternalDependency
   JETTY_93_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_93_WEBAPP),
   JETTY_93_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_93_WEBAPP),
   JING ("com.thaiopensource", "jing", "20091111"),
-  JODA_TIME ("joda-time", "joda-time", "2.9.4"),
+  JODA_TIME ("joda-time", "joda-time", "2.9.5"),
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54"),
   JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2"),
