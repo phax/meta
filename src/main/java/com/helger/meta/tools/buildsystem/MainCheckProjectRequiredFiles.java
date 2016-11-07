@@ -111,7 +111,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     // Check for file existence
     _checkFileExisting (aProject, ".project");
     _checkFileExisting (aProject, "pom.xml");
-    _checkFileExisting (aProject, "README.MD");
+
+    if (!aProject.isNestedProject ())
+      _checkFileExisting (aProject, "README.MD");
 
     // So that GitHub displays the license
     if (aProject.isBuildInProject () && !aProject.isNestedProject ())
