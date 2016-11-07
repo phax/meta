@@ -310,6 +310,7 @@ public enum EProject implements IProject
 
   PH_WSDL_GEN ("ph-wsdl-gen", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_XPATH2 ("ph-xpath2", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_ZEROMQ ("ph-zeromq", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
   PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_DEE_API (PH_DEE_PARENT_POM, "ph-dee-api", EProjectType.JAVA_LIBRARY),
@@ -531,11 +532,6 @@ public enum EProject implements IProject
 
   public boolean isBuildInProject ()
   {
-    if (this == EProject.PH_AS4_PARENT_POM)
-    {
-      String s = "";
-      s += getFullBaseDirName ();
-    }
     return true;
   }
 
@@ -569,12 +565,6 @@ public enum EProject implements IProject
   public String getFullBaseDirName ()
   {
     return m_aProject.getFullBaseDirName ();
-  }
-
-  @Nonnull
-  public File getPOMFile ()
-  {
-    return m_aProject.getPOMFile ();
   }
 
   @Nonnull

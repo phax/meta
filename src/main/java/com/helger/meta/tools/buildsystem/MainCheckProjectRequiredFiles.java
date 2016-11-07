@@ -93,7 +93,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
       _checkFileExisting (aProject, "src/main/resources/NOTICE");
     }
-    _checkFileNotExisting (aProject, "LICENSE");
+
+    // So that GitHub displays the license
+    if (aProject.isBuildInProject () && !aProject.isNestedProject ())
+      _checkFileExisting (aProject, "LICENSE");
+    else
+      _checkFileNotExisting (aProject, "LICENSE");
 
     // Check for file contents
     _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
@@ -107,7 +112,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (aProject, ".project");
     _checkFileExisting (aProject, "pom.xml");
     _checkFileExisting (aProject, "README.MD");
-    if (aProject.getProjectType () != EProjectType.MAVEN_POM)
+
+    // So that GitHub displays the license
+    if (aProject.isBuildInProject () && !aProject.isNestedProject ())
+      _checkFileExisting (aProject, "LICENSE");
+    else
       _checkFileNotExisting (aProject, "LICENSE");
   }
 

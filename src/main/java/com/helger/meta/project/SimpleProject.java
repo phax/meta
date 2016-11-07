@@ -148,12 +148,6 @@ public class SimpleProject implements IProject
   }
 
   @Nonnull
-  public final File getPOMFile ()
-  {
-    return new File (m_aBaseDir, "pom.xml");
-  }
-
-  @Nonnull
   public EJDK getMinimumJDKVersion ()
   {
     return m_eMinJDK;

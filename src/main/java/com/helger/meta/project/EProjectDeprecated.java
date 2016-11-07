@@ -195,12 +195,6 @@ public enum EProjectDeprecated implements IProject
   }
 
   @Nonnull
-  public File getPOMFile ()
-  {
-    return m_aProject.getPOMFile ();
-  }
-
-  @Nonnull
   public EJDK getMinimumJDKVersion ()
   {
     return m_aProject.getMinimumJDKVersion ();

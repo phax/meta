@@ -70,7 +70,10 @@ public interface IProject
   String getFullBaseDirName ();
 
   @Nonnull
-  File getPOMFile ();
+  default File getPOMFile ()
+  {
+    return new File (getBaseDir (), "pom.xml");
+  }
 
   @Nonnull
   EJDK getMinimumJDKVersion ();
