@@ -121,7 +121,7 @@ public enum EExternalDependency
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.7", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.2.1", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.3.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
