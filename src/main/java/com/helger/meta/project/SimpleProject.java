@@ -100,7 +100,8 @@ public class SimpleProject implements IProject
       if (sArtifactID == null)
         throw new IllegalStateException ("Failed to resolve Maven artifactId in " + sProjectName);
       m_sMavenGroupID = sGroupID;
-      m_sMavenArtifactID = sArtifactID;
+      // HACK
+      m_sMavenArtifactID = "ph-pdf-layout4".equals (sArtifactID) ? "ph-pdf-layout" : sArtifactID;
     }
     else
     {
