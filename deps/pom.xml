@@ -1197,73 +1197,73 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-basic</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>7.0.0</version>
+      <version>7.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
