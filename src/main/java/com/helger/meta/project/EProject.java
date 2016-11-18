@@ -264,7 +264,7 @@ public enum EProject implements IProject
                                 "peppol-smp-server",
                                 EHasPages.FALSE,
                                 EHasWiki.TRUE,
-                                "5.0.0-rc2",
+                                "5.0.0",
                                 EJDK.JDK8),
   PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
