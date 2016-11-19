@@ -74,6 +74,7 @@ public enum EProject implements IProject
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
   PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1", EJDK.JDK8),
   PH_PDF_LAYOUT ("ph-pdf-layout", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.5.1", EJDK.JDK8),
+  PH_PDF_LAYOUT4 ("ph-pdf-layout4", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.0", EJDK.JDK8),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
@@ -522,7 +523,8 @@ public enum EProject implements IProject
                                     eProjectType,
                                     new File (eParentProject != null ? eParentProject.getBaseDir ()
                                                                      : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName),
+                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout"
+                                                                                            : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
                                     eHasWikiProject,
