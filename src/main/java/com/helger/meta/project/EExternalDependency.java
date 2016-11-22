@@ -95,7 +95,7 @@ public enum EExternalDependency
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.3"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.24", EJDK.JDK7),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.24.1", EJDK.JDK7),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -153,7 +153,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111"),
-  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.4.Final"),
+  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.6.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.3"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
