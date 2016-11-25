@@ -564,10 +564,19 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [peppol-smp-server/peppol-smp-server-webapp-sql](https://github.com/phax/peppol-smp-server) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
+ * [peppol-smp-server/peppol-smp-server-webapp-xml](https://github.com/phax/peppol-smp-server) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
  * [peppol-validation-engine/ph-bdve](https://github.com/phax/peppol-validation-engine) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-as4](https://github.com/phax/ph-as4) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - JDK 1.8

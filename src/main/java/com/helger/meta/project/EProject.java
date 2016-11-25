@@ -270,9 +270,15 @@ public enum EProject implements IProject
   PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_XML (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-xml", EProjectType.JAVA_LIBRARY),
-  PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM,
-                            "peppol-smp-server-webapp",
-                            EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_SMP_SERVER_WEBAPP (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-webapp", EProjectType.JAVA_LIBRARY),
+  PEPPOL_SMP_SERVER_WEBAPP_SQL (PEPPOL_SMP_SERVER_PARENT_POM,
+                                "peppol-smp-server-webapp-sql",
+                                EProjectType.JAVA_WEB_APPLICATION,
+                                (String) null),
+  PEPPOL_SMP_SERVER_WEBAPP_XML (PEPPOL_SMP_SERVER_PARENT_POM,
+                                "peppol-smp-server-webapp-xml",
+                                EProjectType.JAVA_WEB_APPLICATION,
+                                (String) null),
 
   PEPPOL_DIRECTORY_PARENT_POM ("peppol-directory-parent-pom",
                                "peppol-directory",
@@ -323,6 +329,7 @@ public enum EProject implements IProject
 
   PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
+  PH_AS4_ESENS (PH_AS4_PARENT_POM, "ph-as4-esens", EProjectType.JAVA_LIBRARY),
   PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
