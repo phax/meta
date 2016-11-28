@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2016-11-25):
+Current list of all projects (as of 2016-11-28):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.1 - JDK 1.8
 
@@ -97,23 +97,31 @@ Current list of all projects (as of 2016-11-25):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-publisher) 
    [![Build Status](https://travis-ci.org/phax/peppol-directory.svg?branch=master)](https://travis-ci.org/phax/peppol-directory)
- * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 5.0.0 - JDK 1.8
+ * [peppol-smp-server](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 5.0.0 - JDK 1.8
+ * [peppol-smp-server/peppol-smp-server-library](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-library) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 5.0.0 - JDK 1.8
+ * [peppol-smp-server/peppol-smp-server-sql](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-sql) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - Version 5.0.0 - JDK 1.8
+ * [peppol-smp-server/peppol-smp-server-webapp](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - Version 5.0.0 - JDK 1.8
+ * [peppol-smp-server/peppol-smp-server-webapp-sql](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp-sql) 
+   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
+ * [peppol-smp-server/peppol-smp-server-webapp-xml](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-webapp-xml) 
+   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
+ * [peppol-smp-server/peppol-smp-server-xml](https://github.com/phax/peppol-smp-server) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
@@ -564,12 +572,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [peppol-smp-server/peppol-smp-server-webapp-sql](https://github.com/phax/peppol-smp-server) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-smp-server/peppol-smp-server-webapp-xml](https://github.com/phax/peppol-smp-server) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
  * [peppol-validation-engine/ph-bdve](https://github.com/phax/peppol-validation-engine) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
