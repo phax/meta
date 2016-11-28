@@ -210,7 +210,7 @@ public enum EProject implements IProject
   PH_CII_D16A1 (PH_CII_PARENT_POM, "ph-cii-d16a-1", EProjectType.JAVA_LIBRARY),
   PH_CII_D16B (PH_CII_PARENT_POM, "ph-cii-d16b", EProjectType.JAVA_LIBRARY),
 
-  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
+  AS2_LIB_PARENT_POM ("as2-lib-parent-pom", "as2-lib", EHasPages.FALSE, EHasWiki.FALSE, "3.0.2", EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),

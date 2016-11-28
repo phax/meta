@@ -5,19 +5,19 @@ This project is not meant to be released but only helps me internally to get all
 
 Current list of all projects (as of 2016-11-28):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.1 - JDK 1.8
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 3.0.1 - JDK 1.8
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 3.0.1 - JDK 1.8
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 3.0.1 - JDK 1.8
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)

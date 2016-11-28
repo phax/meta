@@ -1340,23 +1340,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
