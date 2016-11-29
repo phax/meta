@@ -140,7 +140,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.2.3"),
   RHINO ("org.mozilla", "rhino", "1.7.7.1"),
   RXJAVA ("io.reactivex", "rxjava", "1.2.3"),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-11"),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-12"),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.0.1"),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
