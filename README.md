@@ -29,7 +29,7 @@ Current list of all projects (as of 2016-12-12):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
- * [as2-server](https://github.com/phax/as2-server) - Version 3.0.1 - JDK 1.8
+ * [as2-server](https://github.com/phax/as2-server) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
@@ -429,15 +429,15 @@ Current list of all projects (as of 2016-12-12):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
    [![Build Status](https://travis-ci.org/phax/ph-sbdh.svg?branch=master)](https://travis-ci.org/phax/ph-sbdh)
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 3.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 3.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 3.5.0 - JDK 1.8
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 3.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
@@ -617,6 +617,9 @@ Current list of all unreleased projects:
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
@@ -626,6 +629,9 @@ Current list of all unreleased projects:
  * [ph-stx/ph-stx-parser](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
  * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-wsdl-gen.svg?branch=master)](https://travis-ci.org/phax/ph-wsdl-gen)

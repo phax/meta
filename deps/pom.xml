@@ -1086,6 +1086,22 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>ph-schedule-parent-pom</artifactId>
+      <version>3.6.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-mini-quartz</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-schedule</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
       <version>8.6.3</version>
       <type>pom</type>
@@ -1119,22 +1135,6 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
       <version>8.6.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>3.5.0</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-mini-quartz</artifactId>
-      <version>3.5.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-schedule</artifactId>
-      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1361,7 +1361,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
