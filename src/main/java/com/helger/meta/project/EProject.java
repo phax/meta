@@ -77,7 +77,7 @@ public enum EProject implements IProject
   PH_PDF_LAYOUT4 ("ph-pdf-layout4", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.1.0", EJDK.JDK8),
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
-  PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
+  PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.2", EJDK.JDK8),
 
   PH_MATH_PARENT_POM ("ph-math-parent-pom", "ph-math", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
   PH_MATH (PH_MATH_PARENT_POM, "ph-math", EProjectType.JAVA_LIBRARY),
@@ -141,10 +141,11 @@ public enum EProject implements IProject
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
-  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.6.3", EJDK.JDK8),
+  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.7.0", EJDK.JDK8),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_HTTP (PH_WEB_PARENT_POM, "ph-http", EProjectType.JAVA_LIBRARY),
-  PH_SERVLET (PH_WEB_PARENT_POM, "ph-servlet", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_USERAGENT (PH_WEB_PARENT_POM, "ph-useragent", EProjectType.JAVA_LIBRARY),
+  PH_SERVLET (PH_WEB_PARENT_POM, "ph-servlet", EProjectType.JAVA_LIBRARY),
   PH_MAIL (PH_WEB_PARENT_POM, "ph-mail", EProjectType.JAVA_LIBRARY),
   PH_SMTP (PH_WEB_PARENT_POM, "ph-smtp", EProjectType.JAVA_LIBRARY),
   PH_HTTPCLIENT (PH_WEB_PARENT_POM, "ph-httpclient", EProjectType.JAVA_LIBRARY),

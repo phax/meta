@@ -968,7 +968,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1103,38 +1103,48 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>8.6.3</version>
+      <version>8.7.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>8.6.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-mail</artifactId>
-      <version>8.6.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-smtp</artifactId>
-      <version>8.6.3</version>
+      <version>8.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>8.6.3</version>
+      <version>8.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-useragent</artifactId>
+      <version>8.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-servlet</artifactId>
+      <version>8.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-mail</artifactId>
+      <version>8.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-smtp</artifactId>
+      <version>8.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>8.6.3</version>
+      <version>8.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>8.6.3</version>
+      <version>8.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1272,11 +1282,6 @@
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-      <version>4.1.1</version>
-    </dependency>
-    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
       <version>4.1.1</version>
@@ -1289,6 +1294,11 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
+      <version>4.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>ph-sch2xslt-maven-plugin</artifactId>
       <version>4.1.1</version>
     </dependency>
     <dependency>
