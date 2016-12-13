@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161212</version>
+  <version>1.0.0-20161213</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -532,17 +532,17 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.21</version>
+      <version>1.7.22</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>1.7.21</version>
+      <version>1.7.22</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.21</version>
+      <version>1.7.22</version>
     </dependency>
     <dependency>
       <groupId>org.spockframework</groupId>
@@ -552,12 +552,12 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.21</version>
+      <version>1.7.22</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.21</version>
+      <version>1.7.22</version>
     </dependency>
     <dependency>
       <groupId>org.threeten</groupId>
@@ -933,7 +933,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
-      <version>5.0.1</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

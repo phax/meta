@@ -145,7 +145,7 @@ public enum EExternalDependency
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.1-incubating"),
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.21"),
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.22"),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   SPOCK_CORE ("org.spockframework", "spock-core", "1.0-groovy-2.4"),
