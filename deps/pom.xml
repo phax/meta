@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161214</version>
+  <version>1.0.0-20161215</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1263,6 +1263,11 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
+      <version>7.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-oton-datatables</artifactId>
       <version>7.0.1</version>
     </dependency>
     <dependency>
