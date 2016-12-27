@@ -30,9 +30,9 @@ import com.helger.commons.version.Version;
 public enum EExternalDependency
 {
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.5"),
-  ASM ("org.ow2.asm", "asm", "5.1"),
+  ASM ("org.ow2.asm", "asm", "5.2"),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.55"),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.56"),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
   CLOSURE ("com.google.javascript", "closure-compiler", "v20161201"),
@@ -153,7 +153,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111"),
-  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.7.Final"),
+  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.8.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.3"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
