@@ -156,6 +156,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "1.4.8.Final"),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final"),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.3"),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.1.8"),
   XERCES ("xerces", "xercesImpl", "2.11.0"),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.0.8"),
   XSOM ("com.sun.xsom", "xsom", "20140925"),
