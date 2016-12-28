@@ -228,7 +228,7 @@ public enum EProject implements IProject
                              "peppol-commons",
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "5.2.2",
+                             "5.2.3",
                              EJDK.JDK8),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
