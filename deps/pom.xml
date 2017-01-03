@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20161228</version>
+  <version>1.0.0-20170103</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -968,7 +968,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-sbdh</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
