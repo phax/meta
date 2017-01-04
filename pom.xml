@@ -128,6 +128,7 @@
             <exclude>src/main/resources/*.xsd</exclude>
             <exclude>**/NOTICE</exclude>
             <exclude>**/LICENSE</exclude>
+            <exclude>deps/pom.xml</exclude>
           </excludes>
         </configuration>
       </plugin>
