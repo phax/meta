@@ -47,7 +47,7 @@ public enum EProjectDeprecated implements IProject
                         "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
-  PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1"),
+  PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK6),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
@@ -60,7 +60,12 @@ public enum EProjectDeprecated implements IProject
   PH_WEBAPP_DEMO (null, "ph-webapp-demo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null),
   PH_WEBBASICS (null, "ph-webbasics", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
   PH_WEBCTRLS (null, "ph-webctrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
-  PH_WEBSCOPES (null, "ph-webscopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1");
+  PH_WEBSCOPES (null, "ph-webscopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1"),
+
+  PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.4", EJDK.JDK8),
+  PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),
+  PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY),
+  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY);
 
   private final SimpleProject m_aProject;
 
@@ -85,7 +90,8 @@ public enum EProjectDeprecated implements IProject
                               @Nonnull @Nonempty final String sProjectBaseDirName,
                               @Nonnull final EHasPages eHasPagesProject,
                               @Nonnull final EHasWiki eHasWikiProject,
-                              @Nullable final String sLastPublishedVersion)
+                              @Nullable final String sLastPublishedVersion,
+                              @Nonnull final EJDK eMinJDK)
   {
     this (null,
           sProjectName,
@@ -93,7 +99,8 @@ public enum EProjectDeprecated implements IProject
           EProjectType.MAVEN_POM,
           eHasPagesProject,
           eHasWikiProject,
-          sLastPublishedVersion);
+          sLastPublishedVersion,
+          eMinJDK);
   }
 
   /**
@@ -111,12 +118,15 @@ public enum EProjectDeprecated implements IProject
                               @Nonnull @Nonempty final String sProjectName,
                               @Nonnull final EProjectType eProjectType)
   {
+    // Project name equals project base directory name
     this (eParentProject,
+          sProjectName,
           sProjectName,
           eProjectType,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          eParentProject.getLastPublishedVersionString ());
+          eParentProject.getLastPublishedVersionString (),
+          EJDK.JDK6);
   }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
@@ -133,7 +143,8 @@ public enum EProjectDeprecated implements IProject
           eProjectType,
           eHasPagesProject,
           eHasWikiProject,
-          sLastPublishedVersion);
+          sLastPublishedVersion,
+          EJDK.JDK6);
   }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
@@ -142,7 +153,8 @@ public enum EProjectDeprecated implements IProject
                               @Nonnull final EProjectType eProjectType,
                               @Nonnull final EHasPages eHasPagesProject,
                               @Nonnull final EHasWiki eHasWikiProject,
-                              @Nullable final String sLastPublishedVersion)
+                              @Nullable final String sLastPublishedVersion,
+                              @Nonnull final EJDK eMinJDK)
   {
     m_aProject = new SimpleProject (eParentProject,
                                     sProjectName,
@@ -154,7 +166,7 @@ public enum EProjectDeprecated implements IProject
                                     eHasPagesProject,
                                     eHasWikiProject,
                                     sLastPublishedVersion,
-                                    EJDK.JDK6);
+                                    eMinJDK);
   }
 
   public boolean isBuildInProject ()

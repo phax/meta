@@ -1169,27 +1169,6 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-html-parent-pom</artifactId>
-      <version>6.0.4</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-html</artifactId>
-      <version>6.0.4</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-html-jscode</artifactId>
-      <version>6.0.4</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-html-jquery</artifactId>
-      <version>6.0.4</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
       <version>5.0.3</version>
       <type>pom</type>
