@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-01-03):
+Current list of all projects (as of 2017-01-05):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
@@ -368,6 +368,10 @@ Current list of all projects (as of 2017-01-03):
  * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 7.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3) 
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
+ * [ph-oton/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton) - Version 7.0.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 7.0.2 - JDK 1.8
 
