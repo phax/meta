@@ -30,6 +30,7 @@ import com.helger.commons.annotation.PresentForCodeCoverage;
 @Immutable
 public final class CMeta
 {
+  /** The base directory of all Git projects */
   public static final File GIT_BASE_DIR = new File ("").getAbsoluteFile ().getParentFile ();
 
   @PresentForCodeCoverage

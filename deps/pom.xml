@@ -957,8 +957,13 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-pdf-layout</artifactId>
+      <artifactId>ph-pdf-layout4</artifactId>
       <version>3.5.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-pdf-layout4</artifactId>
+      <version>4.0.0-b2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -968,7 +973,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-sbdh</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
