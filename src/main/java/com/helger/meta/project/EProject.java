@@ -151,7 +151,7 @@ public enum EProject implements IProject
   PH_HTTPCLIENT (PH_WEB_PARENT_POM, "ph-httpclient", EProjectType.JAVA_LIBRARY),
   PH_WEB (PH_WEB_PARENT_POM, "ph-web", EProjectType.JAVA_LIBRARY),
 
-  PH_CSS_PARENT_POM ("ph-css-parent-pom", "ph-css", EHasPages.FALSE, EHasWiki.FALSE, "5.0.2", EJDK.JDK8),
+  PH_CSS_PARENT_POM ("ph-css-parent-pom", "ph-css", EHasPages.FALSE, EHasWiki.FALSE, "5.0.3", EJDK.JDK8),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
@@ -191,16 +191,13 @@ public enum EProject implements IProject
                             "ph-schematron",
                             EHasPages.TRUE,
                             EHasWiki.FALSE,
-                            "4.1.1",
+                            "4.2.0",
                             EJDK.JDK8),
   PH_SCHEMATRON (PH_SCHEMATRON_PARENT_POM, "ph-schematron", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_VALIDATOR (PH_SCHEMATRON_PARENT_POM, "ph-schematron-validator", EProjectType.JAVA_LIBRARY),
   PH_SCH2XSLT_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-sch2xslt-maven-plugin", EProjectType.MAVEN_PLUGIN),
-  PH_SCHEMATRON_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM,
-                              "ph-schematron-maven-plugin",
-                              EProjectType.MAVEN_PLUGIN,
-                              (String) null),
+  PH_SCHEMATRON_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-schematron-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
   PH_UBL_PARENT_POM ("ph-ubl-parent-pom", "ph-ubl", EHasPages.FALSE, EHasWiki.FALSE, "5.1.0", EJDK.JDK8),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
@@ -228,7 +225,7 @@ public enum EProject implements IProject
                              "peppol-commons",
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "5.2.3",
+                             "5.2.4",
                              EJDK.JDK8),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
@@ -535,8 +532,7 @@ public enum EProject implements IProject
                                     eProjectType,
                                     new File (eParentProject != null ? eParentProject.getBaseDir ()
                                                                      : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout"
-                                                                                            : sProjectBaseDirName),
+                                              sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
                                     eHasWikiProject,

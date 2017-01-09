@@ -45,27 +45,27 @@ Current list of all projects (as of 2017-01-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 5.2.3 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
@@ -201,15 +201,15 @@ Current list of all projects (as of 2017-01-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 5.0.2 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 5.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 5.0.2 - JDK 1.8
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 5.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 5.0.2 - JDK 1.8
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 5.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
@@ -417,10 +417,10 @@ Current list of all projects (as of 2017-01-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 4.0.0-b2 - JDK 1.8
+ * [ph-pdf-layout4](https://github.com/phax/ph-pdf-layout4) - Version 4.0.0-b2 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
-   [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
+   [![Build Status](https://travis-ci.org/phax/ph-pdf-layout4.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout4)
  * [ph-poi](https://github.com/phax/ph-poi) - Version 4.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
@@ -441,23 +441,27 @@ Current list of all projects (as of 2017-01-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 4.1.1 - JDK 1.8
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.1.1 - JDK 1.8
+ * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-sch2xslt-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-sch2xslt-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 4.1.1 - JDK 1.8
+ * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 4.1.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
+   [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 4.1.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
@@ -631,9 +635,6 @@ Current list of all unreleased projects:
  * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
