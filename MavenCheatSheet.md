@@ -91,3 +91,12 @@ echo Oops....
 pause
 :end
 ```
+
+## License headers
+
+License headers in source files are automatically added using the Maven license plugin. Simply call the following on the commandline:
+```
+mvn license:format
+```
+
+The license source file must be located in the path `src/etc/license-template.txt` - the path is specified in my parent POM file.
