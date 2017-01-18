@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170116</version>
+  <version>1.0.0-20170118</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1108,48 +1108,48 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>8.7.1</version>
+      <version>8.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1544,6 +1544,22 @@
       <groupId>com.helger.erechnung.gv.at</groupId>
       <artifactId>webservice-client</artifactId>
       <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-as4-parent-pom</artifactId>
+      <version>0.5.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-as4-lib</artifactId>
+      <version>0.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-as4-esens</artifactId>
+      <version>0.5.0</version>
     </dependency>
   </dependencies>
   <build>

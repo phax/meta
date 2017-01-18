@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-01-16):
+Current list of all projects (as of 2017-01-18):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
@@ -141,6 +141,18 @@ Current list of all projects (as of 2017-01-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [ph-as4](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens) 
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib) 
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-bde](https://github.com/phax/ph-bde) - Version 1.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde) 
@@ -513,39 +525,39 @@ Current list of all projects (as of 2017-01-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-web](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-http](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-http](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-http) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-network/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-network) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-servlet) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-useragent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-useragent) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 8.7.1 - JDK 1.8
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 8.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
@@ -599,16 +611,10 @@ Current list of all unreleased projects:
  * [peppol-validation-engine/ph-bdve](https://github.com/phax/peppol-validation-engine) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [ph-as4](https://github.com/phax/ph-as4) - JDK 1.8
+ * [ph-as4/ph-as4-server-webapp-demo](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-server](https://github.com/phax/ph-as4) - JDK 1.8
+ * [ph-as4/ph-as4-servlet](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-cii](https://github.com/phax/ph-cii) - JDK 1.8

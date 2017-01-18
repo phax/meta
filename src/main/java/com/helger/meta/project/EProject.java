@@ -140,7 +140,7 @@ public enum EProject implements IProject
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
-  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.7.1", EJDK.JDK8),
+  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.7.2", EJDK.JDK8),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_HTTP (PH_WEB_PARENT_POM, "ph-http", EProjectType.JAVA_LIBRARY),
   PH_USERAGENT (PH_WEB_PARENT_POM, "ph-useragent", EProjectType.JAVA_LIBRARY),
@@ -328,10 +328,14 @@ public enum EProject implements IProject
   PH_STX_PARSER (PH_STX_PARENT_POM, "ph-stx-parser", EProjectType.JAVA_LIBRARY),
   PH_STX_ENGINE (PH_STX_PARENT_POM, "ph-stx-engine", EProjectType.JAVA_LIBRARY),
 
-  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, "0.5.0", EJDK.JDK8),
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
   PH_AS4_ESENS (PH_AS4_PARENT_POM, "ph-as4-esens", EProjectType.JAVA_LIBRARY),
-  PH_AS4_SERVER (PH_AS4_PARENT_POM, "ph-as4-server", EProjectType.JAVA_WEB_APPLICATION),
+  PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_AS4_SERVER_WEBAPP_DEMO (PH_AS4_PARENT_POM,
+                             "ph-as4-server-webapp-demo",
+                             EProjectType.JAVA_WEB_APPLICATION,
+                             (String) null),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical",
