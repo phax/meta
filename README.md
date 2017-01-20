@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-01-19):
+Current list of all projects (as of 2017-01-20):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.2 - JDK 1.8
 
@@ -128,14 +128,6 @@ Current list of all projects (as of 2017-01-19):
  * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-api](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-api) 
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-artefacts](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-artefacts) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
 
@@ -293,7 +285,7 @@ Current list of all projects (as of 2017-01-19):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-genericode](https://github.com/phax/ph-genericode) - Version 5.0.0 - JDK 1.8
+ * [ph-genericode](https://github.com/phax/ph-genericode) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode) 
    [![Build Status](https://travis-ci.org/phax/ph-genericode.svg?branch=master)](https://travis-ci.org/phax/ph-genericode)
@@ -465,27 +457,27 @@ Current list of all projects (as of 2017-01-19):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron/ph-sch2xslt-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-sch2xslt-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-sch2xslt-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron/ph-schematron](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 4.2.0 - JDK 1.8
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 4.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
