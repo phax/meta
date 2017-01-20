@@ -95,7 +95,7 @@ public enum EExternalDependency
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.3"),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.25", EJDK.JDK7),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.25.1", EJDK.JDK7),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),

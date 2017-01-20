@@ -258,10 +258,6 @@ public enum EProject implements IProject
                                        "2.0.1",
                                        EJDK.JDK8),
   PH_BDVE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY, (String) null),
-  PEPPOL_VALIDATION_API (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-api", EProjectType.JAVA_LIBRARY),
-  PEPPOL_VALIDATION_ARTEFACTS (PEPPOL_VALIDATION_ENGINE_PARENT_POM,
-                               "peppol-validation-artefacts",
-                               EProjectType.RESOURCES_ONLY),
   PEPPOL_VALIDATION_ENGINE (PEPPOL_VALIDATION_ENGINE_PARENT_POM, "peppol-validation-engine", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom",
