@@ -13,9 +13,15 @@ Store credentials when using commandline git:
 git config --global credential.helper wincred
 ```
 
+Newline settings for Windows users:
+```
+git config --global core.autocrlf true
+git config --global core.eol lf
+```
+
 Proxy settings:
 ```
-set HTTP_PROXY=http://proxy.mycompany:80
+set HTTP_PROXY=http://proxy.mycompany.org:80
 git config --global http.proxy %HTTP_PROXY%
 ```
 
