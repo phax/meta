@@ -60,7 +60,7 @@ public enum EExternalDependency
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.8", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.193", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.7.4", EJDK.JDK6),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.7.5", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.6", EJDK.JDK6),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.2", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.9", EJDK.JDK6),
