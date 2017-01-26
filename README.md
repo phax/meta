@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-01-24):
+Current list of all projects (as of 2017-01-26):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.3 - JDK 1.8
 
@@ -125,13 +125,21 @@ Current list of all projects (as of 2017-01-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
+ * [peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 3.0.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [peppol-validation-engine/peppol-validation-engine](https://github.com/phax/peppol-validation-engine) - Version 2.0.1 - JDK 1.8
+ * [peppol-validation-engine/ph-bdve](https://github.com/phax/peppol-validation-engine) - Version 3.0.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-validation-engine) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve) 
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [peppol-validation-engine/ph-bdve-peppol](https://github.com/phax/peppol-validation-engine) - Version 3.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-peppol) 
+   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
+ * [peppol-validation-engine/ph-bdve-simplerinvoicing](https://github.com/phax/peppol-validation-engine) - Version 3.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-as4](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
 
@@ -600,9 +608,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [peppol-validation-engine/ph-bdve](https://github.com/phax/peppol-validation-engine) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
  * [ph-as4/ph-as4-server-webapp-demo](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
