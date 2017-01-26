@@ -325,14 +325,11 @@ public enum EProject implements IProject
   PH_STX_PARSER (PH_STX_PARENT_POM, "ph-stx-parser", EProjectType.JAVA_LIBRARY),
   PH_STX_ENGINE (PH_STX_PARENT_POM, "ph-stx-engine", EProjectType.JAVA_LIBRARY),
 
-  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, "0.5.0", EJDK.JDK8),
+  PH_AS4_PARENT_POM ("ph-as4-parent-pom", "ph-as4", EHasPages.FALSE, EHasWiki.FALSE, "0.6.0", EJDK.JDK8),
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
   PH_AS4_ESENS (PH_AS4_PARENT_POM, "ph-as4-esens", EProjectType.JAVA_LIBRARY),
-  PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY, (String) null),
-  PH_AS4_SERVER_WEBAPP_DEMO (PH_AS4_PARENT_POM,
-                             "ph-as4-server-webapp-demo",
-                             EProjectType.JAVA_WEB_APPLICATION,
-                             (String) null),
+  PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY),
+  PH_AS4_SERVER_WEBAPP_DEMO (PH_AS4_PARENT_POM, "ph-as4-server-webapp-demo", EProjectType.JAVA_WEB_APPLICATION),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical",

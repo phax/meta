@@ -141,17 +141,25 @@ Current list of all projects (as of 2017-01-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing) 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [ph-as4](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+ * [ph-as4](https://github.com/phax/ph-as4) - Version 0.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+ * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - Version 0.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - Version 0.5.0 - JDK 1.8
+ * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - Version 0.6.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib) 
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-server-webapp-demo](https://github.com/phax/ph-as4) - Version 0.6.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp-demo) 
+   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-as4/ph-as4-servlet](https://github.com/phax/ph-as4) - Version 0.6.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-bde](https://github.com/phax/ph-bde) - Version 1.0.0 - JDK 1.8
 
@@ -608,12 +616,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [ph-as4/ph-as4-server-webapp-demo](https://github.com/phax/ph-as4) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-servlet](https://github.com/phax/ph-as4) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
  * [ph-cii](https://github.com/phax/ph-cii) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
