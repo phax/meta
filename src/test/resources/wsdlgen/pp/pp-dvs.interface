@@ -1,0 +1,147 @@
+{
+  $name: "WSDVS",
+  $namespace: "http://peppol.helger.com/ws/documentvalidationservice/201701/",
+  $endpoint: "http://peppol.helger.com/wsdvs",
+  $doc: "DVS - Document Validation Service
+         Defines the WS interface for the generic Business Document Validation Engine (BDVE)
+    Author: Philip Helger
+    Version: 1.0.0
+    Last Update: 2017-01-30
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #ErrorLevelType: {
+      $restriction: "token",
+      $doc: "Error level",
+      $enum: ["SUCCESS", "WARN", "ERROR"]
+    },
+    #TriStateType: {
+      $restriction: "token",
+      $doc: "Tri state: true, false, undefined",
+      $enum: ["true", "false", "undefined"]
+    },
+    // Request types
+    RequestType: {
+      $doc: "The main request type",
+      XML: {
+        $type: "string",
+        $doc: "The XML content to be validated. 
+               Must use the same character set as the surrounding SOAP envelope." 
+      },
+      @VESID: {
+        $type: "string",
+        $doc: "The ID of the 'validation executor set' to be used for validation.
+               Defines the validation rules to be applied."
+      },
+      @displayLocale: {
+        $type: "string",
+        $doc: "The locale to be used for the response messages. Optional and more or less a 
+               placeholder for future use.",
+        $default: "en"       
+      }
+    },
+    // Response types
+    ItemType: {
+      $doc: "A single error or warning as part of a validation execution",
+      @errorLevel: {
+        $type: "ErrorLevelType",
+        $doc: "Error level of this item"
+      },
+      @errorID: {
+        $type: "string",
+        $doc: "The ID of the error.",
+        $optional: true
+      },
+      @errorFieldName: {
+        $type: "string",
+        $doc: "The name of the field where the error occurred.",
+        $optional: true
+      },
+      @errorLocation: {
+        $type: "string",
+        $doc: "The location where the error occurred.",
+        $optional: true
+      },
+      @errorText: {
+        $type: "string",
+        $doc: "The error text."
+      },
+      @test: {
+        $type: "string",
+        $doc: "The test that was executed and lead to this error (e.g. Schematron 'test' attribute).",
+        $optional: true
+      },
+      Exception: {
+        $type: "string",
+        $doc: "The internal exception that occurred.",
+        $optional: true
+      }
+    },
+    ValidationResultType: {
+      $doc: "The validation result of a single validation executor",
+      @success: {
+        $type: "TriStateType",
+        $doc: "The overall success or error indicator.
+               If `true` validation was successful (no errors occurred).
+               If `false` at least one error was found upon document validation.
+               If `undefined` this validation layer was not executed"
+      },
+      @artifactType: {
+        $type: "string",
+        $doc: "The type of validation artefact (e.g. XSD or Schematron) that was used to perform the validation."
+      },
+      @artifactPath: {
+        $type: "string",
+        $doc: "The path to the validation artefact that was used to perform the validation."
+      },
+      Item: {
+        $type: "ItemType",
+        $doc: "List of error items.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ResponseType: {
+      $doc: "The global delivery response type.",
+      @success: {
+        $type: "boolean",
+        $doc: "The overall success or error indicator.
+               If `true` validation was successful (no errors occurred)
+               If `false` at least one error was found upon document validation."
+      },
+      @interrupted: {
+        $type: "boolean",
+        $doc: "true if the validation was interrupted and not all validation layers were
+               executed (e.g. when XSD validation fails, Schematron validation is not performed)
+               or false if validation was executed for all layers"
+      },
+      @mostSevereErrorLevel: {
+        $type: "ErrorLevelType",
+        $doc: "The most severe error level of all validation results contained in here",
+        $optional: true
+      },
+      Result: {
+        $type: "ValidationResultType",
+        $doc: "The results of a single validation exeuction",
+        $min: 0,
+        $max: "unbounded"
+      }
+    }
+  },
+  // Methods
+  validate: {
+    $input: {
+      Request: "RequestType"
+    },
+    $output: {
+      Response: "ResponseType"
+    },
+    $fault: {
+      Error: "string"
+    }  
+  }
+}
+    

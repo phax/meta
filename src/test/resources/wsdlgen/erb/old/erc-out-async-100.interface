@@ -1,0 +1,276 @@
+{
+  $name: "WSInvoiceClearingAsync",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/erc/async/201602/",
+  $doc: "Defines the asynchronous operations for forwarding an invoice that was received by ER>B
+    and is handled by an external clearing partner.
+    
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.0.0
+    Last Update: 2016-02-03
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    // CA = Clearing Asynchronous
+    #CAPropertyType: {
+      $extension: "string",
+      $doc: "This type is a generic key-value pair",
+      @name: {
+        $type: "string",
+        $doc: "The name of this property.
+               Must be unique within all properties."
+      }      
+    },
+    // Request types
+    CAMetadataType: {
+      $doc: "This contains a set of metadata elements to be returned in the 
+             callback to ER>B.",
+      Item: {
+        $type: "CAPropertyType",
+        $doc: "A single metadata item",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    #CAInvoiceType: {
+      $extension: "base64Binary",
+      $doc: "This contains an invoice document.
+             As ER>B supports multiple formats, and we can't tell whether it 
+             will always be XML, the content must be base64Binary encoded. 
+             It also helps decoupling from a specific XML schema version of
+             an invoice. 
+             If it is an XML document, the XML declaration
+             <?xml version='...' encoding='...'?>
+             is always contained in the binary encoded data!",
+      @format: {
+        $type: "string",
+        $doc: "The ER>B internal type of the invoice document.
+                E.g. 'ebInterface 4.0' or 'AustroFIX 5'."
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document before it was Base64 
+               encoded. E.g. UTF-8."
+      },
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the invoice document.
+               Usually this is 'application/xml' for all XML data types"
+      }
+    },
+    #CARequestAttachmentType: {
+      $extension: "base64Binary",
+      $doc: "This type represents an attachment delivered together with the invoice.
+             All attachments are Base64 encoded as they are usually binary files.", 
+      @name: {
+        $type: "string",
+        $doc: "The (file)name of this attachment.
+               It should not contain any path element!" 
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document before it was Base64 
+               encoded. This is only relevant for text attachments.",
+        $optional: true
+      },
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of this attachment",
+        $optional: true
+      }
+    },
+    #CARequestPrintableInvoiceType: {
+      $extension: "base64Binary",
+      $doc: "This type contains a printable invoice - usually a PDF -
+             that is generated automatically by ER>B.
+             The transmission is always Base64 encoded.",
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the printable invoice. 
+               For PDF this is e.g. 'application/pdf'."
+      }
+    },
+    CARequestSettingsType: {
+      $doc: "This type contains settings relevant for exactly this
+             invoice transmission.",
+      Extension: {
+        $type: "CAPropertyType",
+        $doc: "Optional request extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      @test: {
+        $type: "boolean",
+        $doc: "If this flag is set to 'true', the delivery is considered a
+               test-delivery and should not be processed productively!
+               For production invoices, this flag is set to 'false'."
+      },
+      @language: {
+        $type: "string",
+        $doc: "If ID of the language in which the returned messages should be 
+               printed. Currently supported are:
+               'de' - German
+               'en' - English"
+      }
+    },
+    CARequestType: {
+      $doc: "The request type filled in ER>B.",
+      RecipientType: {
+        $type: "string",
+        $doc: "The type of the recipient ID as bilaterally agreed.
+               For GLN numbers this may e.g. be 'GLN'. For the
+               ER>B 'Auftragsreferenz' the value is 'ERB'."
+      },
+      RecipientID: {
+        $type: "string",
+        $doc: "The ID of the recipient as bilaterally agreed.
+               This may e.g. be a GLN number or the ER>B 'Auftragsreferenz'.
+               The syntax of this field differs from case to case."
+      },
+      DocumentID: {
+        $type: "string",
+        $doc: "The ER>B internal ID that is the key for asynchronous response matching."
+      },
+      Metadata: {
+        $type: "CAMetadataType",
+        $doc: "Contains the metadata for the passed invoice.
+               This information is mainly present because it must be send back
+                 in the asynchronous callback so that ER>B can build the status
+                 message for the original supplier."
+      },
+      GenericInvoice: {
+        $type: "CAInvoiceType",
+        $doc: "Contains the AustroFIX invoice XML document."
+      },
+      OriginalInvoice: {
+        $type: "CAInvoiceType",
+        $doc: "Contains the original invoice document as delivered to ER>B.
+               It is optional, if the original document was AustroFIX (e.g. 
+               by filling out the web form).",
+        $min: 0
+      },
+      Attachment: {
+        $type: "CARequestAttachmentType",
+        $doc: "All attachments delivered together with the original invoice.
+               Only certain file types are allowed: PDF, PNG, XLS, XLSX and XML.
+               The maximum size of all attachments together is currently limited
+                 to 50 MB (before Base64 encoding). The total amount of 
+                 attachments is currently limited to 200.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      PrintableInvoice: {
+        $type: "CARequestPrintableInvoiceType",
+        $doc: "The printable version of the invoice, without any attachments
+               (if present) as they are passed separately."
+      },
+      Settings: {
+        $type: "CARequestSettingsType",
+        $doc: "Settings that apply only to this single invoice transmission!"
+      },
+      Extension: {
+        $type: "CAPropertyType",
+        $doc: "Optional extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    // Response types
+    CAResponseSuccessType: {
+      $doc: "The success type - empty by default as nothing is required.",
+      Extension: {
+        $type: "CAPropertyType",
+        $doc: "Optional success response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    CAErrorDetailType: {
+      ErrorCode: {
+        $type: "string",
+        $doc: "The internal error code for machine-processing.
+               A list should be provided.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Field: {
+        $type: "string",
+        $doc: "The field containing the error.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Message: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text.
+               This text is forwarded to the invoice deliverer.
+               The text should be in the language defined by the request
+                 attribute Settings/@language."
+      }
+    },
+    CAResponseErrorType: {
+      $doc: "The response error type. It contains a list of error details.",
+      ErrorDetail: {
+        $type: "CAErrorDetailType",
+        $doc: "All error details.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "CAPropertyType",
+        $doc: "Optional error response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    CAResponseType: {
+      $doc: "The global response choice. Either success or error.
+             If the 'Success' element is present the invoice is considered
+               to be accepted. Further invoice checking by humans may occur.
+               In that case the error handling must be bilateral between
+               the original supplier and the final invoice recipient.
+             If the 'Error' element is present the invoice is considered 
+               to be rejected.",
+      $type: "choice",
+      Success: {
+        $type: "CAResponseSuccessType",
+        $doc: "In case of success this elements is present"
+      },  
+      Error: {
+        $type: "CAResponseErrorType",
+        $doc: "In case of error this element is present"
+      }        
+    },
+    CAExceptionType: {
+      $doc: "The generic exception type in case something goes wrong on the
+             receiver side.
+             In an exception is thrown the invoice will be rejected.
+             The invoice deliverer will get a generic error message without
+             the exception details.",
+      Message: {
+        $type: "string",
+        $doc: "The human understandable exception message.",
+        $max: "unbounded"
+      }
+    }
+  },
+  // Methods
+  passInvoice: {
+    $input: {
+      Part: "CARequestType"
+    },
+    $output: {
+      Part: "CAResponseType"
+    },
+    $fault: {
+      Part: "CAExceptionType"
+    }  
+  }
+}
+    

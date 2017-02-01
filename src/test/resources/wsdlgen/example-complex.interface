@@ -1,0 +1,36 @@
+{
+  $name: "ExampleComplex",
+  $namespace: "http://www.helger.com/wsdlgen/example/complex",
+  $types: {
+    conversionResult: {
+      sub1: "string",
+      sub2: "string",
+      sub3: "decimal"
+    },
+    conversionResultNested: {
+      part1: "conversionResult",
+      part2: "conversionResult"
+    }
+  },
+  inputAndOutput: {
+    $input: {
+      in1: "decimal",
+      in2: "string"
+    },
+    $output: {
+      out1: "conversionResult",
+      out2: "conversionResult"
+    }  
+  },
+  inputOnly: {
+    $input: {
+      in1: "string"
+    }
+  },
+  outputOnly: {
+    $output: {
+      out1: "string"
+    }
+  }
+}
+    

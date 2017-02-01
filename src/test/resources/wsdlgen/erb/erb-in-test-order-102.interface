@@ -1,0 +1,120 @@
+{
+  $name: "WSTestUtil",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/testutil/201308/",
+  $endpoint: "https://test.erechnung.gv.at/tester/wstest100",
+  $doc: "Defines the operations that support testing ER>B
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.0.2
+    Last Update: 2016-01-28
+    
+    History: 
+      1.0.2: Default endpoint added
+      1.0.1: DescriptionType has maxLength of 40 instead of 100
+      1.0.0: Initial version
+  ",       
+  $types: {
+    #DescriptionType: {
+      $restriction: 'string',
+      $maxlength: 40
+    },
+    #CurrencyType: {
+      $restriction: "string",
+      $doc: "All available SAP currencies (TCURC)",
+      $enum: [["ADP", "Andorianische Peseta"], ["AED", "Vereinigte Arabische Emirate Dirham"], ["AFA", "Afghani"], ["AFN", "Neuer Afghani"], ["ALL", "Albanische Lek"], ["AMD", "Armenische Dram"], ["ANG", "Antilianische Gulden"], ["AOA", "Angolische Kwanza"], ["AON", "Angolanische neue Kwanza"], ["AOR", "Angolanische Kwanza Reajustado"], ["ARS", "Argentinische Peso"], ["ATS", "Österreichische Schilling"], ["AUD", "Australien Dollar"], ["AWG", "Arubanische Gulden"], ["AZM", "Aserbaidschanische Manat"], ["AZN", "Neuer Aserbaidschanischer Manat"], ["BAM", "Bosnia and Herzegovina Convertible Mark"], ["BBD", "Barbados-Dollar"], ["BDT", "Bangladesch Taka"], ["BEF", "Belgische Franken"], ["BGL", "Bulgarische Lew"], ["BGN", "Bulgarische Lew"], ["BHD", "Bahrein-Dinar"], ["BIF", "Burundi Frank"], ["BMD", "Bermuda Dollar"], ["BND", "Brunei Dollar"], ["BOB", "Boliviano"], ["BRL", "Brasilianische Real"], ["BSD", "Bahama Dollar"], ["BTN", "Bhutan Ngultrum"], ["BWP", "Botswanische Pula"], ["BYB", "Weissrussische Rubel"], ["BZD", "Belize-Dollar"], ["CAD", "Kanadische Dollar"], ["CDF", "Kongo Franc"], ["CFP", "Französischer Franc (Pazifik Inseln)"], ["CHF", "Schweizer Franken"], ["CLP", "Chilenische Pesos"], ["CNY", "Chinesischer Renminbi"], ["COP", "Kolumbianische Peso"], ["CRC", "Costa-Rica-Colon"], ["CSD", "Serbischer Dinar"], ["CUP", "Kubanische Peso"], ["CVE", "Kap-Verde-Escudo"], ["CYP", "Zypern Pfund"], ["CZK", "Tschechische Krone"], ["DEM", "Deutsche Mark"], ["DEM3", "(Intern) Deutsche Mark (3 Nachk.)"], ["DJF", "Dschibuti Frank"], ["DKK", "Dänische Kronen"], ["DOP", "Dominikanische Peso"], ["DZD", "Algerische Dinar"], ["ECS", "Ecuadorianische Sucre"], ["EEK", "Estnische Krone"], ["EGP", "Ägyptisches Pfund"], ["ERN", "Eritreische Nakfa"], ["ESP", "Spanische Peseten"], ["ETB", "Äthiopische Birr"], ["EUR", "Europäischer Euro"], ["EUW", "Europäische Währungsunion"], ["FIM", "Finnische Mark"], ["FJD", "Fidschi-Dollar"], ["FKP", "Falkland Pfund"], ["FRF", "Französische Franken"], ["GBP", "Britische Pfund"], ["GEL", "Georgisches Lari"], ["GHC", "Ghanesische Cedi"], ["GHS", "Ghana Cedi"], ["GIP", "Gibralter Pfund"], ["GMD", "Gambanesische Dalasi"], ["GNF", "Guinea Franc"], ["GRD", "Griechische Drachme"], ["GTQ", "Guatemalische Quetzal"], ["GWP", "Guinea-Peso"], ["GYD", "Guyana-Dollar"], ["HKD", "Hong Kong Dollar"], ["HNL", "Honduranische Lempira"], ["HRK", "Kroatische Kuna"], ["HTG", "Haitianische Gourde"], ["HUF", "Ungarischer Forint"], ["IDR", "Indonesische Rupiah"], ["IEP", "Irisches Pfund"], ["ILS", "Israelische Schekel"], ["INR", "Indian Rupee"], ["IQD", "Irakische-Dinar"], ["IRR", "Iranische Rial"], ["ISK", "Isländische Krone"], ["ITL", "Italienische Lire"], ["JMD", "Jamaika-Dollar"], ["JOD", "Jordan-Dinar"], ["JPY", "Japanische Yen"], ["KES", "Kenianische Schilling"], ["KGS", "Kirgisische Som"], ["KHR", "Kambodschanische Riel"], ["KMF", "Komoren-Frank"], ["KPW", "Nordkoreanische Won"], ["KRW", "Südkoreanische Won"], ["KWD", "Kuwaitische Dinar"], ["KYD", "Kaiman-Dollar"], ["KZT", "Kazachische Tenge"], ["LAK", "Laotische Kip"], ["LBP", "Libanesisches Pfund"], ["LKR", "Sri-Lanka-Rupie"], ["LRD", "Liberianischer Dollar"], ["LSL", "Lesotische Loti"], ["LTL", "Litauische Lita"], ["LUF", "Luxembourgische Franken"], ["LVL", "Lettländische Lat"], ["LYD", "Libyscher Dinar"], ["MAD", "Marokkanische Dirham"], ["MDL", "Moldavische Lei"], ["MGA", "Malagasy Ariary"], ["MGF", "Madagasker Frank"], ["MKD", "Mazedonische Denar"], ["MMK", "Myanmar Kyat"], ["MNT", "Mongolianische Tugrik"], ["MOP", "Macauanische Pataca"], ["MRO", "Mauretanische Ouguiya"], ["MTL", "Maltesische Lira"], ["MUR", "Mauritius Rupie"], ["MVR", "Maledivische Rufiyaa"], ["MWK", "Malawi-Kwacha"], ["MXN", "Mexikanische Pesos"], ["MYR", "Malaysischer Ringgit"], ["MZM", "Mosambikanische Metical"], ["NAD", "Namibia Dollar"], ["NGN", "Nigerianische Naira"], ["NIO", "Nicaraguanische Cordoba Oro"], ["NLG", "Niederländische Gulden"], ["NOK", "Norwegische Kronen"], ["NPR", "Nepalesische Rupie"], ["NZD", "Neuseeland-Dollar"], ["OMR", "Rial Omani"], ["PAB", "Panamaische Balboa"], ["PEN", "Peruanischer neuer Sol"], ["PGK", "Papua-Neuguineische Kina"], ["PHP", "Philippinische Peso"], ["PKR", "Pakistanische Rupie"], ["PLN", "Polnische Zloty (neu)"], ["PTE", "Portugiesische Escudos"], ["PYG", "Paraguayische Guarani"], ["QAR", "Katar-Riyal"], ["RMB", "Chinesische RenMinBi Yuan"], ["ROL", "Rumänische Lei"], ["RON", "Neuer Rumänischer Leu"], ["RSD", "Serbische Dinar"], ["RUB", "Russische Rubel"], ["RWF", "Ruanda Franc"], ["SAR", "Saudi Riyal"], ["SBD", "Salomonen Dollar"], ["SCR", "Seychellen Rupie"], ["SDD", "Sudanesischer Dinar"], ["SDG", "Sudanesische Pfund"], ["SDP", "Sudanesisches Pfund"], ["SEK", "Schwedische Kronen"], ["SGD", "Singapur Dollar"], ["SHP", "St. Helena Pfund"], ["SIT", "Slowenische Tolar"], ["SKK", "Slowakische Krone"], ["SLL", "Sierra Leone Leone"], ["SOS", "Somalia Schilling"], ["SRD", "Suriname Dollar"], ["SRG", "Surinamische Gulden"], ["STD", "Santomeische Dobra"], ["SVC", "El Salvador-Colon"], ["SYP", "Syrisches Pfund"], ["SZL", "Swasiländische Lilangeni"], ["THB", "Thailand Baht"], ["TJR", "Tadschikische Rubel"], ["TJS", "Tadschikistanische Somoni"], ["TMM", "Turkmenische Manat"], ["TND", "Tunesischer Dinar"], ["TOP", "Tongaische Pa'anga"], ["TPE", "Timor Escudo"], ["TRL", "Türkische Lira (Alte Währung vor 1.1.05)"], ["TRY", "Türkische Lira"], ["TTD", "Trinidad-u. Tobago-Dollar"], ["TWD", "Neuer Taiwan-Dollar"], ["TZS", "Tansania-Shilling"], ["UAH", "Ukrainische Hryvnia"], ["UGX", "Uganda Schilling"], ["USD", "US Amerikanische Dollar"], ["USDN", "(Intern) Amerikanische Dollar (5 Nachk.)"], ["UYU", "Uruguy Peso (neu)"], ["UZS", "Uzbekistan Sum"], ["VEB", "Venezolanische Bolivar"], ["VND", "Vietnamesische Dong"], ["VUV", "Vanuatische Vatu"], ["WST", "Samoanische Tala"], ["XAF", "CFA Franc  BEAC"], ["XCD", "Ostkaribischer Dollar"], ["XDS", "St. Christopher Dollar"], ["XEU", "Europäische Währungs Einheit (E.C.U.)"], ["XOF", "CFA Franc  BCEAO"], ["XPF", "CFP Franc"], ["YER", "Jemen-Rial"], ["YUM", "Jugoslawische neue Dinar"], ["ZAR", "Südafrikanische Rand"], ["ZMK", "Zambianische Kwacha"], ["ZRN", "Zaire"], ["ZWD", "Simbabwe Dollar"]]
+    },
+    #UnitType: {
+      $restriction: "string",
+      $doc: "All available SAP units (T006)",
+      $enum: [["%", "Prozent"], ["%O", "Promille"], ["ONE", "Eins"], ["T", "Tage"], ["AUS", "Ausstattung"], ["22S", "Quadratmillimeter/Sekunde"], ["CMS", "Zentimeter/Sekunde"], ["000", "Meter/Minute"], ["µL", "Mikroliter"], ["µF", "Mikrofarad"], ["PF", "Pikofarad"], ["A", "Ampere"], ["GOH", "Gigaohm"], ["GM3", "Gramm/Kubikmeter"], ["ACR", "Acre"], ["MOT", "Montage"], ["KD3", "Kilogramm/Kubikdezimeter"], ["KML", "Kilomol"], ["KN", "Kilonewton"], ["MN", "Meganewton"], ["MGO", "Megaohm"], ["MAV", "Megavolt"], ["µA", "Mikroampere"], ["TTE", "Tüte"], ["BAR", "bar"], ["BUN", "Bund"], ["BLA", "Blatt"], ["SC", "Schachtel"], ["BOG", "Bogen"], ["FL", "Flasche"], ["BQK", "Becquerel/Kilogramm"], ["BS", "Bausatz"], ["MF", "Millifarad"], ["M/M", "Mol pro Kubikmeter"], ["M/L", "Mol pro Liter"], ["NA", "Nanoampere"], ["C3S", "Kubikzentimeter/Sekunde"], ["NF", "Nanofarad"], ["NMM", "Newton/Quadratmillimeter"], ["CM3", "Kubikzentimeter"], ["CD", "Candela"], ["CD3", "Kubikdezimeter"], ["CK", "Verbindungsstück"], ["SPU", "Spule"], ["CM", "Zentimeter"], ["CM2", "Quadratzentimeter"], ["CMH", "Zentimeter/Stunde"], ["KS", "Kasten"], ["CL", "Zentiliter"], ["A/V", "Siemens pro Meter"], ["TOM", "Tonne/Kubikmeter"], ["VA", "Voltampere"], ["DEG", "Grad"], ["DM", "Dezimeter"], ["TR", "Trommel"], ["DZ", "Dutzend"], ["EA", "each"], ["EE", "Einheiten Enzyme"], ["EML", "Einheiten Enzyme / Milliliter"], ["F", "Farad"], ["°F", "Fahrenheit"], ["FT", "Fuß"], ["FT2", "Quadratfuß"], ["FT3", "Kubikfuß"], ["G", "Gramm"], ["G/L", "Gramm Wirkstoff / Liter"], ["GAU", "Gramm Gold"], ["°C", "Grad Celsius"], ["GHG", "Gramm/Hektogramm"], ["GJ", "Gigajoule"], ["GKG", "Gramm/Kilogramm"], ["GLI", "Gramm/Liter"], ["GAL", "US-Gallone"], ["GPM", "Gallonen pro Meile (US)"], ["GM", "Gramm/Mol"], ["GM2", "Gramm/Quadratmeter"], ["GPH", "Gallonen pro Stunde (US)"], ["µGQ", "Mikrogramm/Kubikmeter"], ["GRO", "Gross"], ["GW", "Gramm Wirkstoff"], ["H", "Stunde"], ["HA", "Hektar"], ["HBX", "100 Behälter"], ["HL", "Hektoliter"], ["HPA", "Hektopascal"], ["HZ", "Hertz (1/Sekunde)"], ["\"", "Zoll (inch)"], ["\"2", "Quadratzoll"], ["\"3", "Kubikzoll"], ["J", "Joule"], ["JHR", "Jahre (annum)"], ["JKG", "Joule/Kilogramm"], ["JMO", "Joule/Mol"], ["K", "Kelvin"], ["KA", "Kiloampere"], ["KAN", "Kanister"], ["KAR", "Karton"], ["KBK", "Kilobecquerel/Kilogramm"], ["KG", "Kilogramm"], ["KGF", "Kilogramm/Quadratmeter"], ["KGK", "Kilogramm/Kilogramm"], ["KGM", "Kilogramm/Mol"], ["KGS", "Kilogramm/Sekunde"], ["KGV", "Kilogramm/Kubikmeter"], ["KGW", "Kilogramm Wirkstoff"], ["KHZ", "Kilohertz"], ["KI", "Kiste"], ["KJ", "Kilojoule"], ["KJK", "Kilojoule/Kilogramm"], ["KJM", "Kilojoule/Mol"], ["KM", "Kilometer"], ["KM2", "Quadratkilometer"], ["KMH", "Kilometer/Stunde"], ["KMK", "Kubikmeter/Kubikmeter"], ["KMN", "Kelvin/Minute"], ["KMS", "Kelvin/Sekunde"], ["KNM", "Kilonewton pro Quadratmeter"], ["KOH", "Kiloohm"], ["KPA", "Kilopascal"], ["KT", "Kilotonne"], ["KV", "Kilovolt"], ["KVA", "Kilovoltampere"], ["KW", "Kilowatt"], ["KWH", "Kilowattstunde"], ["KWK", "kg Wirkstoff / kg"], ["L", "Liter"], ["LMI", "Liter/Minute"], ["LB", "Pfund (Pound)"], ["LE", "Leistungseinheit"], ["LHK", "Liter pro 100 km"], ["LM", "Linearmeter"], ["LMS", "Liter/Molsekunde"], ["LPH", "Liter pro Stunde"], ["M", "Meter"], ["M%", "Massenprozent"], ["M%O", "Massenpromille"], ["M/S", "Meter/Sekunde"], ["M2", "Quadratmeter"], ["M-2", "1 / Quadratmeter"], ["M2S", "Quadratmeter/Sekunde"], ["M3", "Kubikmeter"], ["M3S", "Kubikmeter/Sekunde"], ["MA", "Milliampere"], ["MBA", "Millibar"], ["MBZ", "Meterbar/Sekunde"], ["MEJ", "Megajoule"], ["MG", "Milligramm"], ["MGF", "Milligramm/Quadratzentimeter"], ["MGG", "Milligramm/Gramm"], ["MGK", "Milligramm/Kilogramm"], ["MGL", "Milligramm/Liter"], ["MGQ", "Milligramm/Kubikmeter"], ["MGW", "Megawatt"], ["MHZ", "Megahertz"], ["MI", "Meile"], ["MI2", "Quadratmeile"], ["µM", "Mikrometer"], ["MIN", "Minute"], ["MIS", "Mikrosekunde"], ["MIJ", "Millijoule"], ["ML", "Milliliter"], ["MLK", "Milliliter/Kubikmeter"], ["MLW", "Milliliter Wirkstoff"], ["MM", "Millimeter"], ["MM2", "Quadratmillimeter"], ["MMA", "Millimeter/Jahr"], ["MMG", "Millimol/Gramm"], ["MMH", "Millimeter/Stunde"], ["MMK", "Millimol/Kilogramm"], ["MMO", "Millimol"], ["MM3", "Kubikmillimeter"], ["MMS", "Millimeter/Sekunde"], ["MNM", "Millinewton/Meter"], ["MOK", "Mol/Kilogramm"], ["MOL", "Mol"], ["MON", "Monate"], ["MPA", "Megapascal"], ["MPB", "Massen-parts per billion"], ["MPG", "Meilen pro Gallone (US)"], ["MPM", "Massen-parts per million"], ["MPS", "Millipascalsekunde"], ["MPT", "Massen-parts per trillion"], ["MPZ", "Meterpascal/Sekunde"], ["M3H", "Kubikmeter/Stunde"], ["MS", "Millisekunde"], ["MS2", "Meter/Quadratsekunde"], ["MTE", "Millitesla"], ["M/H", "Meter/Stunde"], ["MV", "Millivolt"], ["MVA", "Megavoltampere"], ["MW", "Milliwatt"], ["MWH", "Megawattstunde"], ["N", "Newton"], ["NAM", "Nanometer"], ["NM", "Newton/Meter"], ["NS", "Nanosekunde"], ["OHM", "Ohm"], ["OZ", "Unze"], ["FOZ", "Fluid Ounce US"], ["P", "Punkte"], ["PA", "Pascal"], ["PAA", "Paar"], ["PAK", "Pack"], ["PAL", "Palette"], ["PAS", "Pascalsekunde"], ["PKT", "Paket"], ["PMI", "1/Minute"], ["PPB", "Parts per billion"], ["PPM", "Parts per million"], ["PPT", "Parts per trillion"], ["PRS", "Anzahl Personen"], ["PS", "Pikosekunde"], ["PT", "Pint, U.S. liquid"], ["QT", "Quart, U.S. liquid"], ["STA", "Stange"], ["RIN", "Ring"], ["RHO", "Gramm/Kubikzentimeter"], ["HAS", "Haspel"], ["ROL", "Rolle"], ["S", "Sekunde"], ["SAK", "Sack"], ["SA", "Satz"], ["ST", "Stück"], ["STD", "Stunden"], ["TAG", "Tage"], ["TC3", "1/Kubikzentimeter"], ["TES", "Tesla"], ["TS", "Tausend"], ["TM3", "1/Kubikmeter"], ["DOS", "Dose"], ["TO", "Tonne"], ["TON", "US-Tonne"], ["ZP", "Zehnerpack"], ["TU", "Tube"], ["µGL", "Mikrogramm/Liter"], ["V", "Volt"], ["V%", "Volumenprozent"], ["V%O", "Volumenpromille"], ["MSC", "Microsiemens pro Zentimeter"], ["MPL", "Millimol pro Liter"], ["VAL", "Wertartikel"], ["VPB", "Volumen-parts per billion"], ["VPM", "Volumen-parts per million"], ["VPT", "Volumen-parts per trillion"], ["W", "Watt"], ["WCH", "Wochen"], ["YD", "Yard"], ["YD2", "Quadrat Yard"], ["YD3", "Kubik Yard"], ["KMT", "Kilometer"], ["PER", "Person"], ["QM", "Quadratmeter"], ["STK", "Stück"], ["TGE", "Tage"]]
+    },
+    #TaxRateType: {
+      $restriction: "int",
+      $enum: [0, 10, 20]
+    },
+    TestOrderLineType: {
+      $doc: "Represents a single order line",
+      Description: {
+        $type: "DescriptionType",
+        $doc: "The name of the item."
+      },
+      UnitNetPrice: {
+        $type: "decimal",
+        $doc: "The unit net price of this order line"
+      },
+      Unit: {
+        $type: "UnitType",
+        $doc: "The unit to be used. Default is 'ST' which means single piece (Stück)",
+        $default: "ST"
+      },
+      Quantity: {
+        $type: "positiveInteger",
+        $doc: "The quantity to be used (number of ordered items of this position)",
+        $default: 1
+      },
+      TaxRate: {
+        $type: "TaxRateType",
+        $doc: "The tax rate to be used. Must be one of the predefined values",
+        $default: 20
+      }
+    },
+    TestOrderType: {
+      APIKey: {
+        $type: "string",
+        $doc: "The API key to access this service. Must be queried in advanced."
+      },
+      Currency: {
+        $type: "CurrencyType",
+        $doc: "The currency ID to be used for all articles",
+        $default: "EUR"
+      },
+      OrderLine: {
+        $type: "TestOrderLineType",
+        $doc: "All the order lines to be created",
+        $min: 1,
+        $max: "unbounded"
+      }
+    },
+    // Response types
+    TestOrderResponseType: {
+      $doc: "The global response.",
+      CreditorID: {
+        $type: "string",
+        $doc: "The creditor ID (Lieferantennummer) to be used"
+      },
+      OrderID: {
+        $type: "string",
+        $doc: "The ID of the created order to be referenced from the invoice"
+      },  
+      BuyerGroup: {
+        $type: "string",
+        $doc: "The ID of the buyer group to which the created order belongs"
+      },
+      OrderPositionNumber: {
+        $type: "string",
+        $doc: "Contains the created order line numbers",
+        $min: 1,
+        $max: "unbounded"
+      }        
+    },
+    TestOrderExceptionType: {
+      $doc: "The exception type.",
+      Message: {
+        $type: "string",
+        $doc: "The human readable error message."
+      }  
+    }
+  },
+  // Methods
+  createTestOrder: {
+    $input: {
+      Order: "TestOrderType"
+    },
+    $output: {
+      Order: "TestOrderResponseType"
+    },
+    $fault: {
+      Order: "TestOrderExceptionType"
+    }  
+  }
+}
+    

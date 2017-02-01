@@ -1,0 +1,165 @@
+{
+  $name: "WSInvoiceClearingAsyncStatus",
+  // SHOULD use the same namespace as in erc-out-async-100.interface
+  $namespace: "http://erb.eproc.brz.gv.at/ws/erc/async/201602/",
+  $doc: "Defines the asynchronous status message from an e-rechnung.gv.at clearing partner
+         to ER>B. This message will than be forwarded to the original supplier using the 
+         default ER>B rules.
+    
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.0.0
+    Last Update: 2016-02-03
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    // CAS = Clearing Asynchronous
+    #CASPropertyType: {
+      $extension: "string",
+      $doc: "This type is a generic key-value pair",
+      @name: {
+        $type: "string",
+        $doc: "The name of this property.
+               Must be unique within all properties."
+      }      
+    },
+    // Request types
+    #CASStatusType: {
+      $restriction: "string",
+      $doc: "Indicator whom to notify upon this message",
+      $enum: [["SUCCESS", "Success, notify supplier"], 
+              ["EXT_ERR", "External error, notify supplier"], 
+              ["INT_ERR", "Internal error, notify operations"]]
+    },
+    CASMetadataType: {
+      $doc: "This contains a set of metadata elements to be returned to ER>B.",
+      Item: {
+        $type: "CASPropertyType",
+        $doc: "A single metadata item",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    CASErrorDetailType: {
+      $doc: "This type contains a single error as identified by the invoice
+             recipient.",
+      SystemID: {
+        $type: "string",
+        $doc: "The system that generated the error. In case the workflow
+               process on the receiver side has multiple steps and machines
+               involved this helps to differentiate the source of the error."
+      },
+      ErrorCode: {
+        $type: "string",
+        $doc: "The machine created error code."
+      },
+      ErrorMessage: {
+        $type: "string",
+        $doc: "The human readable error message in the language of the respective
+               request message."
+      }
+    },
+    CASRequestType: {
+      $doc: "The request type to be filled by the ER>B clearing partner.",
+      APIKey: {
+        $type: "string",
+        $doc: "The API key that you have retrieved from ER>B for the usage of this
+               WS interface. It is always the same and is used to quickly identify
+                 if the user of the service is allowed to use it."
+      },
+      DocumentID: {
+        $type: "string",
+        $doc: "The ER>B internal ID that was provided in the asynchronous request.
+               It must be identical to the field Request/DocumentID.
+               This field must always be provided."
+      },
+      StatusType: {
+        $type: "CASStatusType",
+        $doc: "The status indicates the overall success or error of the incoming invoice.
+               SUCCESS and EXT_ERR are communicated to the supplier whereas INT_ERR
+               triggers an internal operations issue."
+      },
+      ReceiverSystemID: {
+        $type: "string",
+        $doc: "The ID of the machine (or system) on the receiver side that was handling
+                 the incoming document. This field can be used to easily indicate whether
+                 the invoice was handled by a production or test system.
+               For ER>B this is e.g. used to differentiate between production ('P2HCLNT100')
+                 and test ('X2HCLNT100').   
+               This field must only be filled upon success.",
+        $min: 0
+      },
+      ReceiverDocumentID: {
+        $type: "string",
+        $doc: "The unique ID created by the invoice receiver for the incoming document.
+               This field must only be filled upon success.",
+        $min: 0
+      },
+      Metadata: {
+        $type: "CASMetadataType",
+        $doc: "Contains the metadata for the passed invoice.
+               The content of this element must be a 1:1 copy of the request metadata!"
+      },
+      ErrorDetail: {
+        $type: "CASErrorDetailType",
+        $doc: "In case of an error status (EXT_ERR or INT_ERR) these elements provide
+                 the details of the rejection.",
+        $min: 0,
+        $max: "unbounded"         
+      },
+      GenericInvoice: {
+        $type: "base64Binary",
+        $doc: "Contains the AustroFIX invoice XML document in UTF-8 encoding.
+               The content of this element must be a 1:1 copy of the request metadata!
+               This field must be set in all cases."
+      },
+      Extension: {
+        $type: "CASPropertyType",
+        $doc: "Optional extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    // Response types
+    CASResponseType: {
+      $doc: "The global response. If you retrieve this the message was accepted.
+             No details are provided, as acceptance is implicit.",
+      $type: "choice",
+      Extension: {
+        $type: "CASPropertyType",
+        $doc: "Optional response extension point.
+               Only filled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    CASExceptionType: {
+      $doc: "The generic exception type in case something goes wrong on the
+               ER>B side.
+             In an exception is thrown the status message must be re-transmitted 
+               to ER>B at a later time. Alternatively you may also contact ER>B
+               support for more information.",
+      Message: {
+        $type: "string",
+        $doc: "The human understandable exception message.",
+        $max: "unbounded"
+      }
+    }
+  },
+  // Methods
+  passInvoiceStatus: {
+    $input: {
+      Part: "CASRequestType"
+    },
+    $output: {
+      Part: "CASResponseType"
+    },
+    $fault: {
+      Part: "CASExceptionType"
+    }  
+  }
+}
+    

@@ -1,0 +1,253 @@
+{
+  $name: "WSInvoiceGatewaySync",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/invoicegateway/sync/201405/",
+  $doc: "Defines the synchronous operations for forwarding an invoice that was received by ER>B
+    and is handled by a clearing partner
+    
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.1.0
+    Last Update: 2014-05-26
+    
+    History: 
+      1.1.0: Minor bugfixing - marker [CHANGE110]
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #GatewayPropertyType: {
+      $extension: "string",
+      @name: {
+        $type: "string",
+        $doc: "The name of this property.
+               Must be unique within all properties."
+      }      
+    },
+    // Request types
+    #GatewayInvoiceType: {
+      $extension: "base64Binary",
+      $doc: "This contains an invoice document.
+             As ER>B supports multiple formats, and we can't tell whether it 
+             will always be XML, the content must be base64Binary encoded. 
+             It also helps decoupling from a specific XML schema version of
+             an invoice. 
+             If it is an XML document, the XML declaration
+             <?xml version='...' encoding='...'?>
+             is always contained in the binary encoded data!",
+      @typename: {
+        $type: "string",
+        $doc: "The ER>B internal type of the invoice document.
+                E.g. 'ebInterface 3.0.2' or 'ebInterface 4.0'."
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document before it was Base64 
+               encoded. E.g. UTF-8."
+      },
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the invoice document.
+               Usually this is 'application/xml' for all XML data types",
+        $optional: true
+      }
+    },
+    #GatewayAttachmentType: {
+      $doc: "This type represents an attachment delivered with the invoice.", 
+      $extension: "base64Binary",
+      @name: {
+        $type: "string",
+        $doc: "The (file)name of this attachment.
+               It should not contain any path element!" 
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document before it was Base64 
+               encoded. This is only relevant for text attachments.",
+        $optional: true
+      },
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of this attachment",
+        $optional: true
+      },
+      @sourceuri: {
+        $type: "anyURI",
+        $doc: "The original URI where the attachment was downloaded from if the
+               attachment was provided externally to ER>B.
+               If this attribute is not present, than the attachment was
+               delivered together with the invoice.
+               This attribute has purely informational character.",
+        $optional: true       
+      }
+    },
+    #GatewayPrintableInvoiceType: {
+      $extension: "base64Binary",
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the printable invoice. 
+               For PDF this is e.g. 'application/pdf'"
+      }
+    },
+    GatewaySettingsType: {
+      Extension: {
+        $type: "GatewayPropertyType",
+        $doc: "Optional request extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      @test: {
+        $type: "boolean",
+        $doc: "If this flag is set to true, the delivery is considered a
+               test-delivery and should not be processed productively!"
+      },
+      @language: {
+        $type: "string",
+        $doc: "If ID of the language in which the returned messages should be 
+               printed. Currently supported are:
+               'de' - German
+               'en' - English"
+      }
+    },
+    GatewayType: {
+      $doc: "The request type filled in ER>B.",
+      RecipientType: {
+        $type: "string",
+        $doc: "The type of the recipient ID as bilaterally agreed.
+               For GLN numbers this may e.g. be 'GLN'. For the
+               ER>B 'Auftragsreferenz' the value is 'ERB'."
+      },
+      RecipientID: {
+        $type: "string",
+        $doc: "The ID of the recipient as bilaterally agreed.
+               This may e.g. be a GLN number or the ER>B 'Auftragsreferenz'.
+               The syntax of this field differs from case to case."
+      },
+      GenericInvoice: {
+        $type: "GatewayInvoiceType",
+        $doc: "Contains the AustroFIX invoice XML document."
+      },
+      OriginalInvoice: {
+        $type: "GatewayInvoiceType",
+        $doc: "Contains the original invoice document as delivered to ER>B.
+               It is optional, if the original document was AustroFIX.",
+        $min: 0
+      },
+      Attachment: {
+        $type: "GatewayAttachmentType",
+        $doc: "All attachments delivered together with the invoice.
+               Only certain file types are allowed: PDF, PNG, XLS, XLSX and XML",
+        $min: 0,
+        $max: "unbounded"
+      },
+      PrintableInvoice: {
+        $type: "GatewayPrintableInvoiceType",
+        $doc: "The printable version of the invoice, without any attachments
+               (if present) as they are passed separately."
+      },
+      Settings: {
+        $type: "GatewaySettingsType",
+        $doc: "Optional settings that apply only to this single service call!",
+        $min: 0
+      },
+      Extension: {
+        $type: "GatewayPropertyType",
+        $doc: "Optional extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    // Response types
+    GatewaySuccessType: {
+      $doc: "The success type - empty by default as nothing is required.",
+      // [CHANGE110] added
+      ReferenceNumber: {
+        $type: "string",
+        $doc: "The receiver specific number that is send to the supplier
+               for easy retrieval of the document in case of an error.",
+        $min: 0
+      },
+      Extension: {
+        $type: "GatewayPropertyType",
+        $doc: "Optional success response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    GatewayErrorDetailType: {
+      ErrorCode: {
+        $type: "string",
+        $doc: "The internal error code for machine-processing.
+               A list should be provided.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Field: {
+        $type: "string",
+        $doc: "The field containing the error.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Message: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text.
+               This text is forwarded to the invoice deliverer."
+      }
+    },
+    GatewayErrorType: {
+      $doc: "The response error type",
+      ErrorDetail: {
+        $type: "GatewayErrorDetailType",
+        $doc: "All error details.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "GatewayPropertyType",
+        $doc: "Optional error response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    GatewayResponseType: {
+      $doc: "The global response choice. Either success or error.",
+      $type: "choice",
+      Success: {
+        $type: "GatewaySuccessType",
+        $doc: "In case of success this elements is present"
+      },  
+      Error: {
+        $type: "GatewayErrorType",
+        $doc: "In case of error this element is present"
+      }        
+    },
+    GatewayExceptionType: {
+      $doc: "The generic exception type in case something goes wrong on the
+             receiver side.
+             In an exception is thrown the invoice will be rejected.
+             The invoice deliverer will get a generic error message without
+             the exception details.",
+      Message: {
+        $type: "string",
+        $doc: "The human understandable exception message.",
+        $max: "unbounded"
+      }
+    }
+  },
+  // Methods
+  passInvoice: {
+    $input: {
+      Invoice: "GatewayType"
+    },
+    $output: {
+      Invoice: "GatewayResponseType"
+    },
+    $fault: {
+      Invoice: "GatewayExceptionType"
+    }  
+  }
+}
+    

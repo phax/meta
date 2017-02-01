@@ -1,0 +1,145 @@
+{
+  $name: "WSInvoiceStatus",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/invoicestatus/201411/",
+  $doc: "Defines the operations to internally handle status update messages within E-RECHNUNG.GV.AT
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.0.0
+    Last Update: 2014-11-27
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #ExtensionType: {
+      $extension: "string",
+      @name: {
+        $type: "string",
+        $doc: "The name of this extension property.
+               Must be unique within all extension properties."
+      }      
+    },
+    // Request types
+    UserRequestType: {
+      $doc: "Die Daten des auslösenden Sachbearbeiters.",
+      FullName: {
+        $type: "string",
+        $doc: "Name der Person",
+        $min: 0
+      },
+      EmailAddress: {
+        $type: "string",
+        $doc: "E-Mail-Adresse der Person",
+        $min: 0
+      },
+      Telephone: {
+        $type: "string",
+        $doc: "Telefonnummer der Person",
+        $min: 0
+      },
+      Department: {
+        $type: "string",
+        $doc: "Ressort der Person",
+        $min: 0
+      },
+      Division: {
+        $type: "string",
+        $doc: "Abteilung/Bereich der Person",
+        $min: 0
+      }
+    },  
+    StatusUpdateRequestType: {
+      $doc: "Die an den Benutzer zu sendende Statusmeldung.",
+      APIKey: {
+        $type: "string",
+        $doc: "API Key"
+      },
+      ProcessID: {
+        $type: "string",
+        $doc: "Vorgangsnummer (RM-Fall-ID)"
+      },
+      ActionID: {
+        $type: "string",
+        $doc: "Aktionsschlüssel"
+      },
+      ActionDescription: {
+        $type: "string",
+        $doc: "Wird als Fallback Beschreibung herangezogen, falls kein Text in 
+               E-RECHNUNG.GV.AT für den übermittelten Aktionsschlüssel zur Verfügung steht."
+      },
+      ActionComment: {
+        $type: "string",
+        $doc: "Der Kommentar zu der Statusänderung an den Lieferanten."
+      },
+      ActionDateTime: {
+        $type: "dateTime",
+        $doc: "Datum und Uhrzeit der Aktion beim auslösenden Benutzer/System (UTC)"
+      },
+      ActionUser: {
+        $type: "UserRequestType",
+        $doc: "Auslösender Benutzer/System"
+      },
+      MetaData: {
+        $type: "base64Binary",
+        $doc: "Das Quell-Metadaten-Element"
+      },
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    
+    // Response types
+    ResponseSuccessType: {
+      $doc: "The success type - empty by default as nothing is required.",
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional success response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ResponseErrorType: {
+      $doc: "The response error type",
+      ErrorMessage: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text.
+               This text is forwarded to the invoice deliverer."
+      },
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional error response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ResponseType: {
+      $doc: "The global response choice. Either success or error.",
+      $type: "choice",
+      Success: {
+        $type: "ResponseSuccessType",
+        $doc: "In case of success this elements is present"
+      },  
+      Error: {
+        $type: "ResponseErrorType",
+        $doc: "In case of error this element is present"
+      }        
+    }
+  },
+  // Methods
+  statusUpdate: {
+    $input: {
+      Status: "StatusUpdateRequestType"
+    },
+    $output: {
+      Response: "ResponseType"
+    }
+  }
+}
+    

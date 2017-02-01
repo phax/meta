@@ -1,0 +1,156 @@
+{
+  $name: "WSInvoiceGatewayToErechnung",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/invoicegateway/toerechnung/201411/",
+  $doc: "Defines the operations for existing gateways to feed information into E-RECHNUNG.GV.AT
+    This contains currently the following operations:
+      * submit all participants for early access check
+  
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 1.0.0
+    Last Update: 2015-09-22
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #ExtensionType: {
+      $extension: "string",
+      @name: {
+        $type: "string",
+        $doc: "The name of this extension property.
+               Must be unique within all extension properties."
+      }      
+    },
+    // Request types
+    RecipientReceiverType: {
+      RecipientID: {
+        $type: "string",
+        $doc: "The ID of the potential receiver on the clearing endpoint side.
+               This ID may not contain the agreed prefix (as e.g. 'L4/') and can there be empty!"
+      },
+      RecipientName: {
+        $type: "string",
+        $doc: "The optional human readable name of the potential receiver on the clearing endpoint side.",
+        $min: 0
+      },
+      ValidFrom: {
+        $type: "date",
+        $doc: "The optional date from which on this receiver is valid (inclusive). 
+               If this date is not specified, the receiver is valid since the start of time",
+        $min: 0
+      },
+      ValidTo: {
+        $type: "date",
+        $doc: "The optional date until which this receiver is valid (inclusive). 
+               If this date is not specified, the receiver is valid until the end of time",
+        $min: 0
+      },
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional request extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ListReceiverRequestType: {
+      $doc: "The list of all available receivers available at a recipient",
+      APIKey: {
+        $type: "string",
+        $doc: "An internal ID to uniquely identify the caller to avoid somebody 
+               unauthorized to modify the data."
+      },
+      RecipientID: {
+        $type: "string",
+        $doc: "The ID of the recipient as bilaterally agreed.
+               This may e.g. be the E-RECHNUNG.GV.AT 'Auftragsreferenz' (e.g. 'L4/')."
+      },
+      Receiver: {
+        $type: "RecipientReceiverType",
+        $doc: "All receivers available for this recipient.
+               At least one entry must be present, otherwise the recipient would invalidate itself.",
+        $min: 1,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    
+    // Response types
+    ResponseSuccessType: {
+      $doc: "The success type - empty by default as nothing is required.",
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional success response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ResponseErrorDetailType: {
+      ErrorCode: {
+        $type: "string",
+        $doc: "The internal error code for machine-processing.
+               A list should be provided.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Field: {
+        $type: "string",
+        $doc: "The field containing the error.
+               This text is forwarded to the invoice deliverer.",
+        $min: 0
+      },
+      Message: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text.
+               This text is forwarded to the invoice deliverer."
+      }
+    },
+    ResponseErrorType: {
+      $doc: "The response error type",
+      ErrorDetail: {
+        $type: "ResponseErrorDetailType",
+        $doc: "All error details.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "ExtensionType",
+        $doc: "Optional error response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    ResponseType: {
+      $doc: "The global response choice. Either success or error.",
+      $type: "choice",
+      Success: {
+        $type: "ResponseSuccessType",
+        $doc: "In case of success this elements is present"
+      },  
+      Error: {
+        $type: "ResponseErrorType",
+        $doc: "In case of error this element is present"
+      }        
+    }
+  },
+  // Methods
+  listReceivers: {
+    $input: {
+      List: "ListReceiverRequestType"
+    },
+    $output: {
+      Response: "ResponseType"
+    }
+  }
+}
+    

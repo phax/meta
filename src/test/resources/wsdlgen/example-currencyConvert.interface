@@ -1,0 +1,28 @@
+{
+  $name: "ExampleCurrencyConvert",
+  $namespace: "http://www.helger.com/wsdlgen/example/currencyConvert",
+  $types: {
+    conversionResult: {
+      currency: "string",
+      currencyName: "string",
+      foreignAmount: {
+        $type: "decimal"
+      }  
+    }
+  },
+  convertFromEUR: {
+    $input: {
+      amountEUR: "decimal",
+      currency: "string"
+    },
+    $output: {
+      conversionResult: "conversionResult"
+    }  
+  },
+  getAuthorName: {
+    $output: {
+      authorName: "string"
+    }
+  }
+}
+    

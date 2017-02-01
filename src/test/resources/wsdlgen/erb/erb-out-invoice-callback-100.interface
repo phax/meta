@@ -1,0 +1,149 @@
+{
+  $name: "WSInvoiceDeliveryCallback",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/invoicedeliverycallback/201305/",
+  $doc: "Defines the operations for the callback after uploading an invoice to ER>B via WebService
+    Author: Philip Helger
+    Version: 1.0.0 - the String to be passed in the optional @version attribute in the main invoice delivery. 
+    Last Update: 2013-05-15
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // General types
+    #CallbackHashAlgorithmType: {
+      $doc: "Defines the possible hash algorithm types",
+      $enum: ["MD5", "SHA-1", "SHA-256", "SHA-384", "SHA-512"]
+    },
+    #CallbackPropertyType: {
+      $extension: "string",
+      @name: {
+        $type: "string",
+        $doc: "The name of this property.
+               Must be unique within all properties."
+      }      
+    },
+    // Request types
+    #CallbackPrintableInvoiceType: {
+      $extension: "base64Binary",
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the printable invoice.
+               For PDF this is 'application/pdf'"
+      },  
+      @originalsize: {
+        $type: "unsignedInt",
+        $doc: "The size of the document in bytes before it was Base64 encoded"
+      },
+      @hashalgo: {
+        $type: "CallbackHashAlgorithmType",
+        $doc: "The algorithm used to calculate the hash value."
+      },
+      @hashvalue: {
+        $type: "string",
+        $doc: "The hash value of the document calculated with the algorithm
+               specified in the hashalgo attribute before it was Base64 encoded.
+               The hash value must be contains as a hex-encoded string."
+      },
+      @creation: {
+        $type: "dateTime",
+        $doc: "The date and time when the printable invoice was generated.
+               The timezone is always UTC.",
+        $optional: true
+      }
+    },
+    CallbackErrorDetailType: {
+      ErrorCode: {
+        $type: "string",
+        $doc: "The ER>B internal error code for machine-processing.
+               See a separate list for details.",
+        $min: 0
+      },
+      Phase: {
+        $type: "string",
+        $doc: "The ER>B internal phase in which the error occurred.
+               E.g. global, transformation or validation.",
+        $min: 0
+      },
+      Field: {
+        $type: "string",
+        $doc: "The field containing the error.",
+        $min: 0
+      },
+      Message: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text."
+      }
+    },
+    CallbackType: {
+      $doc: "The main callback type.",
+      DocumentID: {
+        $type: "string",
+        $doc: "The ER>B internal document ID to which this is the response to.
+               The same as stated in the synchronous invoice delivery response."
+      },
+      SupplierInvoiceNumber: {
+        $type: "string",
+        $doc: "The invoice number (Rechnungsnummer) as specified in the invoice."
+      },  
+      GovernmentDocumentNumber: {
+        $type: "string",
+        $doc: "The internal document number of the government (Belegnummer).",
+        $min: 0
+      },  
+      InvoiceDate: {
+        $type: "date",
+        $doc: "The official invoice date. This is the date of the original invoice acknowledgement.",
+        $min: 0
+      },  
+      PrintableInvoice: {
+        $type: "CallbackPrintableInvoiceType",
+        $doc: "Contains the printable version of the invoice delivery acknowledgment.
+               Only present in case of success.",
+        $min: 0
+      },
+      PassThrough: {
+        $type: "CallbackPropertyType",
+        $doc: "Contains all callback properties as specified in the request.
+               They are contained in success and in error case.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      ErrorDetail: {
+        $type: "CallbackErrorDetailType",
+        $doc: "Contains the error details.
+               Only present in case of an error.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "CallbackPropertyType",
+        $doc: "Optional request extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      @overallsuccess: {
+        $type: "boolean",
+        $doc: "true if the invoice was correctly handled by ER>B,
+               false if something went wrong.
+               This field is contained purely for an easy success/failure check."
+      },        
+      @version: {
+        $type: "string",
+        $doc: "The version number of the callback interface that is invoked.
+               This is constantly set in ER>B.
+               This may depend on the requested callback version in the
+               original delivery."
+      }        
+    }
+  },
+  // Start methods
+  deliverInvoiceCallback: {
+    $input: {
+      Invoice: "CallbackType"
+    }
+  }
+}
+    
