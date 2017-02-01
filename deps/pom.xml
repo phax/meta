@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170130</version>
+  <version>1.0.0-20170201</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -572,7 +572,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.8.Final</version>
+      <version>1.4.9.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -814,22 +814,6 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-locales-parent-pom</artifactId>
-      <version>2.0.0</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-locales</artifactId>
-      <version>2.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-locales16</artifactId>
-      <version>2.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
       <artifactId>jcodemodel</artifactId>
       <version>2.8.6</version>
     </dependency>
@@ -943,7 +927,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-events</artifactId>
-      <version>4.0.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

@@ -73,7 +73,32 @@ public enum EProjectDeprecated implements IProject
   PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.4", EJDK.JDK8),
   PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),
   PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY),
-  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY);
+  PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY),
+
+  PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK6),
+  PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
+  PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
+
+  PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_DEE_API (PH_DEE_PARENT_POM, "ph-dee-api", EProjectType.JAVA_LIBRARY),
+  PH_DEE_ENGINE (PH_DEE_PARENT_POM, "ph-dee-engine", EProjectType.JAVA_LIBRARY),
+
+  PH_WSDL_GEN (null,
+               "ph-wsdl-gen",
+               "ph-wsdl-gen",
+               EProjectType.JAVA_LIBRARY,
+               EHasPages.FALSE,
+               EHasWiki.FALSE,
+               null,
+               EJDK.JDK8),
+  PH_ZEROMQ (null,
+             "ph-zeromq",
+             "ph-zeromq",
+             EProjectType.JAVA_LIBRARY,
+             EHasPages.FALSE,
+             EHasWiki.FALSE,
+             null,
+             EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 

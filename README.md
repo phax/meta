@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-01-26):
+Current list of all projects (as of 2017-02-01):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.3 - JDK 1.8
 
@@ -265,7 +265,7 @@ Current list of all projects (as of 2017-01-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-ebinterface.svg?branch=master)](https://travis-ci.org/phax/ph-ebinterface)
- * [ph-events](https://github.com/phax/ph-events) - Version 4.0.0 - JDK 1.8
+ * [ph-events](https://github.com/phax/ph-events) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-events/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-events) 
    [![Build Status](https://travis-ci.org/phax/ph-events.svg?branch=master)](https://travis-ci.org/phax/ph-events)
@@ -325,18 +325,6 @@ Current list of all projects (as of 2017-01-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jscompress-maven-plugin)
- * [ph-locales](https://github.com/phax/ph-locales) - Version 2.0.0 - JDK 1.6
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales-parent-pom) 
-   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
- * [ph-locales/ph-locales](https://github.com/phax/ph-locales) - Version 2.0.0 - JDK 1.6
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales) 
-   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
- * [ph-locales/ph-locales16](https://github.com/phax/ph-locales) - Version 2.0.0 - JDK 1.6
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16) 
-   [![Build Status](https://travis-ci.org/phax/ph-locales.svg?branch=master)](https://travis-ci.org/phax/ph-locales)
  * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom) 
@@ -628,15 +616,6 @@ Current list of all unreleased projects:
  * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-dee](https://github.com/phax/ph-dee) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
- * [ph-dee/ph-dee-api](https://github.com/phax/ph-dee) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
- * [ph-dee/ph-dee-engine](https://github.com/phax/ph-dee) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-dee.svg?branch=master)](https://travis-ci.org/phax/ph-dee)
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
@@ -649,15 +628,9 @@ Current list of all unreleased projects:
  * [ph-stx/ph-stx-parser](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
- * [ph-wsdl-gen](https://github.com/phax/ph-wsdl-gen) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-wsdl-gen.svg?branch=master)](https://travis-ci.org/phax/ph-wsdl-gen)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
- * [ph-zeromq](https://github.com/phax/ph-zeromq) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-zeromq.svg?branch=master)](https://travis-ci.org/phax/ph-zeromq)
  * [uvw](https://github.com/phax/uvw) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/uvw.svg?branch=master)](https://travis-ci.org/phax/uvw)
@@ -689,6 +662,9 @@ All deprecated projects:
  * ph-bootstrap3 - Version 2.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bootstrap3) 
+ * ph-dee - never released
+ * ph-dee/ph-dee-api - never released
+ * ph-dee/ph-dee-engine - never released
  * ph-html - Version 6.0.4
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-parent-pom) 
@@ -707,6 +683,15 @@ All deprecated projects:
  * ph-jms - Version 2.0.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms) 
+ * ph-locales - Version 2.0.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales-parent-pom) 
+ * ph-locales/ph-locales - Version 2.0.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales) 
+ * ph-locales/ph-locales16 - Version 2.0.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16) 
  * ph-pdf-layout - Version 3.5.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
@@ -726,6 +711,8 @@ All deprecated projects:
  * ph-webscopes - Version 6.8.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes) 
+ * ph-wsdl-gen - never released
+ * ph-zeromq - never released
 
 ---
 
