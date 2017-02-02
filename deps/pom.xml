@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170201</version>
+  <version>1.0.0-20170202</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -572,7 +572,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.9.Final</version>
+      <version>1.4.10.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
