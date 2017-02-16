@@ -154,6 +154,6 @@ public class WGSimpleType extends AbstractWGAssembledType
                             .append ("restriction", m_aRestriction)
                             .appendIfNotNull ("enumEntries", m_aEnumEntries)
                             .append ("maxLength", m_nMaxLength)
-                            .toString ();
+                            .getToString ();
   }
 }

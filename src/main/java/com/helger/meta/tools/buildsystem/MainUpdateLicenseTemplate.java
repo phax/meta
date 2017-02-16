@@ -17,9 +17,9 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
 import com.helger.commons.CGlobal;
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
@@ -57,7 +57,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
       }
 
       System.out.println (f.getAbsolutePath ());
-      final String sCurrent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+      final String sCurrent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
 
       boolean bChange = false;
       String sNew = sCurrent;
@@ -75,7 +75,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
 
       if (bChange)
       {
-        SimpleFileIO.writeFile (f, sNew, CCharset.CHARSET_UTF_8_OBJ);
+        SimpleFileIO.writeFile (f, sNew, StandardCharsets.UTF_8);
         System.out.println ("  changed");
       }
     }

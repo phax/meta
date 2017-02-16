@@ -79,6 +79,6 @@ public abstract class AbstractWGAssembledType implements IWGType
     return new ToStringGenerator (this).append ("namespace", m_sNamespace)
                                        .append ("name", m_sName)
                                        .append ("attributes", m_aAttributes)
-                                       .toString ();
+                                       .getToString ();
   }
 }

@@ -74,6 +74,6 @@ public class WGPredefinedType implements IWGType
     return new ToStringGenerator (this).append ("namespace", m_sNamespace)
                                        .append ("name", m_sName)
                                        .append ("simple", m_bSimple)
-                                       .toString ();
+                                       .getToString ();
   }
 }

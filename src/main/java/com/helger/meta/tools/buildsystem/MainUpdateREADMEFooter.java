@@ -18,8 +18,8 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
@@ -31,7 +31,7 @@ import com.helger.meta.project.ProjectList;
 public final class MainUpdateREADMEFooter extends AbstractProjectMain
 {
   private static final String GIT_COMMIT_FOOTER_CHANGE_CMD = "git-commit-footer-change.cmd";
-  private static final Charset README_CHARSET = CCharset.CHARSET_UTF_8_OBJ;
+  private static final Charset README_CHARSET = StandardCharsets.UTF_8;
   private static final String SEPARATOR = "\n" + "---\n";
   // Length is approx. 180 chars
   public static final String COMMON_FOOTER = SEPARATOR +

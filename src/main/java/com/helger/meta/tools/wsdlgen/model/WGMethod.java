@@ -146,6 +146,6 @@ public class WGMethod
                                        .append ("input", m_aInput)
                                        .append ("output", m_aOutput)
                                        .append ("fault", m_aFault)
-                                       .toString ();
+                                       .getToString ();
   }
 }

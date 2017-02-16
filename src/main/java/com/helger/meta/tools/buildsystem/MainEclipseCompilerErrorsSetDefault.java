@@ -17,8 +17,8 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -48,7 +48,7 @@ public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMa
       {
         fCur.renameTo (fBackup);
       }
-      SimpleFileIO.writeFile (fCur, sContent.getBytes (CCharset.CHARSET_ISO_8859_1_OBJ));
+      SimpleFileIO.writeFile (fCur, sContent.getBytes (StandardCharsets.UTF_8));
       _info (aProject, "Done restoring default");
     }
     s_aLogger.info ("Done");

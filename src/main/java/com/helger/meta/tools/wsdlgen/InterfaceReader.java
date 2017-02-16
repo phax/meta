@@ -16,6 +16,7 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 import javax.annotation.Nonnull;
@@ -25,7 +26,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.ValueEnforcer;
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.collection.ext.CommonsArrayList;
 import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.io.resource.IReadableResource;
@@ -73,7 +73,7 @@ public class InterfaceReader
   private static IJsonObject _readAsJSON (@Nonnull final IReadableResource aRes)
   {
     // Read line by line
-    final ICommonsList <String> aContent = StreamHelper.readStreamLines (aRes, CCharset.CHARSET_UTF_8_OBJ);
+    final ICommonsList <String> aContent = StreamHelper.readStreamLines (aRes, StandardCharsets.UTF_8);
     // Preprocess content
     final String sPreprocessedContent = _preprocess (aContent);
     // Convert to JSON
@@ -302,7 +302,7 @@ public class InterfaceReader
               else
                 if (sTypeChildName.equals ("$type"))
                   aComplexType.setType (EComplexTypeType.getFromTagNameOrThrow (aTypeChildNode.getAsValue ()
-                                                                                          .getAsString ()));
+                                                                                              .getAsString ()));
                 else
                   if (!sTypeChildName.startsWith ("$"))
                   {

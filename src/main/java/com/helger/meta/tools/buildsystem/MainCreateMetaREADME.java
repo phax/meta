@@ -17,12 +17,12 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
@@ -138,7 +138,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     // Footer
     aSB.append (MainUpdateREADMEFooter.COMMON_FOOTER);
 
-    SimpleFileIO.writeFile (new File ("README.md"), aSB.toString (), CCharset.CHARSET_UTF_8_OBJ);
+    SimpleFileIO.writeFile (new File ("README.md"), aSB.toString (), StandardCharsets.UTF_8);
     System.out.println ("Done");
   }
 }

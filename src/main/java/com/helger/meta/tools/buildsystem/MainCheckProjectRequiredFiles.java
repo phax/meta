@@ -17,12 +17,12 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnull;
 
 import com.helger.commons.CGlobal;
 import com.helger.commons.changelog.CChangeLog;
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.state.ESuccess;
 import com.helger.meta.AbstractProjectMain;
@@ -66,7 +66,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
                                              @Nonnull final String sExpectedContent)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
-    final String sContent = SimpleFileIO.getFileAsString (f, CCharset.CHARSET_UTF_8_OBJ);
+    final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
     if (sContent != null && sContent.contains (sExpectedContent))
       return true;
     _warn (aProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");

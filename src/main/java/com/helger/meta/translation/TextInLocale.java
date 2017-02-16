@@ -70,6 +70,6 @@ public final class TextInLocale
   @Override
   public String toString ()
   {
-    return new ToStringGenerator (this).append ("locale", m_sLocale).append ("text", m_sText).toString ();
+    return new ToStringGenerator (this).append ("locale", m_sLocale).append ("text", m_sText).getToString ();
   }
 }

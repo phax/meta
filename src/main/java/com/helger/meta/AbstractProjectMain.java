@@ -17,6 +17,7 @@
 package com.helger.meta;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -25,7 +26,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.debug.GlobalDebug;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.project.IProject;
@@ -46,7 +46,7 @@ public abstract class AbstractProjectMain
                                             ":end\n" +
                                             "echo Successfully done\n" +
                                             ":exit\n";
-  public static final Charset BATCH_CHARSET = CCharset.CHARSET_ISO_8859_1_OBJ;
+  public static final Charset BATCH_CHARSET = StandardCharsets.ISO_8859_1;
 
   protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;

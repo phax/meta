@@ -165,6 +165,6 @@ public class WGInterface
                                        .append ("endpoint", m_sEndpoint)
                                        .append ("types", m_aTypes)
                                        .append ("methods", m_aMethods)
-                                       .toString ();
+                                       .getToString ();
   }
 }

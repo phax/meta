@@ -85,6 +85,6 @@ public class WGComplexType extends AbstractWGAssembledType
     return ToStringGenerator.getDerived (super.toString ())
                             .append ("type", m_eType)
                             .append ("elements", m_aElements)
-                            .toString ();
+                            .getToString ();
   }
 }

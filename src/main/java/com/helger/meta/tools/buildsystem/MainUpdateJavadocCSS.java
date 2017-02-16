@@ -17,8 +17,8 @@
 package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
-import com.helger.commons.charset.CCharset;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -36,7 +36,7 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
   public static void main (final String [] args)
   {
     final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/raw/source-javadoc.css"),
-                                                         CCharset.CHARSET_UTF_8_OBJ);
+                                                         StandardCharsets.UTF_8);
 
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
                                                                     p.getBaseDir ().exists () &&
@@ -45,7 +45,7 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
     {
       final File f = new File (aProject.getBaseDir (), "src/etc/javadoc.css");
       assert f.exists ();
-      SimpleFileIO.writeFile (f, sSrcCSS, CCharset.CHARSET_UTF_8_OBJ);
+      SimpleFileIO.writeFile (f, sSrcCSS, StandardCharsets.UTF_8);
     }
     s_aLogger.info ("Done - run mvn license:format on all projects");
   }
