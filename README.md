@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-02-16):
+Current list of all projects (as of 2017-02-17):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.3 - JDK 1.8
 
@@ -313,7 +313,7 @@ Current list of all projects (as of 2017-02-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
- * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.8 - JDK 1.8
+ * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.9 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)

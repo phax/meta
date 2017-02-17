@@ -91,7 +91,7 @@ public enum EProject implements IProject
                     EProjectType.OTHER_PLUGIN,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "2.2.11.8",
+                    "2.2.11.9",
                     EJDK.JDK8),
   PH_WSIMPORT_PLUGIN ("ph-wsimport-plugin",
                       EProjectType.OTHER_PLUGIN,
