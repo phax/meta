@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170221</version>
+  <version>1.0.0-20170222</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -942,7 +942,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout4</artifactId>
-      <version>4.0.0-b5</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
