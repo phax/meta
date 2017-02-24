@@ -58,7 +58,7 @@ public enum EProject implements IProject
   PH_CHARSET (PH_COMMONS_PARENT_POM, "ph-charset", EProjectType.JAVA_LIBRARY),
   PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY),
 
-  PH_XSDS_PARENT_POM ("ph-xsds-parent-pom", "ph-xsds", EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
+  PH_XSDS_PARENT_POM ("ph-xsds-parent-pom", "ph-xsds", EHasPages.FALSE, EHasWiki.FALSE, "1.0.1", EJDK.JDK8),
   PH_XSDS_XMLDSIG (PH_XSDS_PARENT_POM, "ph-xsds-xmldsig", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XMLDSIG11 (PH_XSDS_PARENT_POM, "ph-xsds-xmldsig11", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XADES132 (PH_XSDS_PARENT_POM, "ph-xsds-xades132", EProjectType.JAVA_LIBRARY),

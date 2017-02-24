@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170222</version>
+  <version>1.0.0-20170224</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -39,7 +39,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20170124</version>
+      <version>v20170218</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -347,22 +347,22 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.1.v20170120</version>
+      <version>9.4.2.v20170220</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.1.v20170120</version>
+      <version>9.4.2.v20170220</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.1.v20170120</version>
+      <version>9.4.2.v20170220</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.1.v20170120</version>
+      <version>9.4.2.v20170220</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -507,7 +507,7 @@
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava</artifactId>
-      <version>1.2.6</version>
+      <version>1.2.7</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>
@@ -517,7 +517,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.1.0</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -532,17 +532,17 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.23</version>
+      <version>1.7.24</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>1.7.23</version>
+      <version>1.7.24</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.23</version>
+      <version>1.7.24</version>
     </dependency>
     <dependency>
       <groupId>org.spockframework</groupId>
@@ -552,12 +552,12 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.23</version>
+      <version>1.7.24</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.23</version>
+      <version>1.7.24</version>
     </dependency>
     <dependency>
       <groupId>org.threeten</groupId>
@@ -572,7 +572,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.10.Final</version>
+      <version>1.4.11.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -886,33 +886,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-parent-pom</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xmldsig</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xmldsig11</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xades132</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xades141</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-ccts-cct-schemamodule</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
