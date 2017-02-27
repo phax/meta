@@ -205,7 +205,7 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
 
-  PH_CII_PARENT_POM ("ph-cii-parent-pom", "ph-cii", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_CII_PARENT_POM ("ph-cii-parent-pom", "ph-cii", EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
   PH_CII_TESTFILES (PH_CII_PARENT_POM, "ph-cii-testfiles", EProjectType.JAVA_LIBRARY),
   PH_CII_D16A1 (PH_CII_PARENT_POM, "ph-cii-d16a-1", EProjectType.JAVA_LIBRARY),
   PH_CII_D16B (PH_CII_PARENT_POM, "ph-cii-d16b", EProjectType.JAVA_LIBRARY),
@@ -257,6 +257,7 @@ public enum EProject implements IProject
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_PEPPOL (PH_BDVE_PARENT_POM, "ph-bdve-peppol", EProjectType.JAVA_LIBRARY),
   PH_BDVE_SIMPLERINVOICING (PH_BDVE_PARENT_POM, "ph-bdve-simplerinvoicing", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_EN16931 (PH_BDVE_PARENT_POM, "ph-bdve-en16931", EProjectType.JAVA_LIBRARY, (String) null),
 
   PEPPOL_SMP_SERVER_PARENT_POM ("peppol-smp-server-parent-pom",
                                 "peppol-smp-server",
