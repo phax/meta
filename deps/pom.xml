@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170306</version>
+  <version>1.0.0-20170307</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -270,7 +270,7 @@
     <dependency>
       <groupId>org.jvnet.jaxb2.maven2</groupId>
       <artifactId>maven-jaxb2-plugin</artifactId>
-      <version>0.13.1</version>
+      <version>0.13.2</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.jaxb2_commons</groupId>
@@ -422,32 +422,32 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
