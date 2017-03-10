@@ -141,7 +141,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.7.1", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.2.7", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.7.0-15", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.3.0", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.3.1", EJDK.JDK6),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.1-incubating", EJDK.JDK6),
