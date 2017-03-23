@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170320</version>
+  <version>1.0.0-20170323</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -311,7 +311,7 @@
     <dependency>
       <groupId>org.zeromq</groupId>
       <artifactId>jeromq</artifactId>
-      <version>0.3.6</version>
+      <version>0.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.jersey</groupId>
@@ -347,22 +347,22 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.2.v20170220</version>
+      <version>9.4.3.v20170317</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.2.v20170220</version>
+      <version>9.4.3.v20170317</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.2.v20170220</version>
+      <version>9.4.3.v20170317</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.2.v20170220</version>
+      <version>9.4.3.v20170317</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -372,7 +372,7 @@
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
-      <version>2.9.7</version>
+      <version>2.9.8</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -1437,7 +1437,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
