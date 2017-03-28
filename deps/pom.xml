@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170323</version>
+  <version>1.0.0-20170328</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -199,7 +199,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.1.3</version>
+      <version>3.1.4</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
@@ -422,32 +422,32 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>6.4.2</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -507,7 +507,7 @@
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava</artifactId>
-      <version>1.2.7</version>
+      <version>1.2.9</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>
@@ -820,68 +820,68 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>8.6.2</version>
+      <version>8.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
