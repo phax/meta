@@ -133,7 +133,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
 
     // Header
     aSB.insert (0,
-                "#meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
+                "# meta\n\nA meta project for easy management of my other projects :)\nThis project is not meant to be released but only helps me internally to get all of them aligned.\n\n");
 
     // Footer
     aSB.append (MainUpdateREADMEFooter.COMMON_FOOTER);
