@@ -133,7 +133,7 @@ public enum EProject implements IProject
   PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
   PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY),
 
-  PH_SCHEDULE_PARENT_POM ("ph-schedule-parent-pom", "ph-schedule", EHasPages.FALSE, EHasWiki.FALSE, "3.6.0", EJDK.JDK8),
+  PH_SCHEDULE_PARENT_POM ("ph-schedule-parent-pom", "ph-schedule", EHasPages.FALSE, EHasWiki.FALSE, "3.6.1", EJDK.JDK8),
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 

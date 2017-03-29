@@ -1081,18 +1081,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>3.6.0</version>
+      <version>3.6.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>3.6.0</version>
+      <version>3.6.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>3.6.0</version>
+      <version>3.6.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
