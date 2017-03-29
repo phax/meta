@@ -317,6 +317,10 @@ Current list of all projects (as of 2017-03-29):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
+ * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis) 
+   [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
  * [ph-genericode](https://github.com/phax/ph-genericode) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode) 
@@ -623,9 +627,6 @@ Current list of all unreleased projects:
  * [peppol-validation-engine/ph-bdve-en16931](https://github.com/phax/peppol-validation-engine) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-validation-engine.svg?branch=master)](https://travis-ci.org/phax/peppol-validation-engine)
- * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)

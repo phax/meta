@@ -38,7 +38,7 @@ public enum EProject implements IProject
                      EProjectType.RESOURCES_ONLY,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     null,
+                     "1.0.0",
                      EJDK.JDK8),
   META ("meta", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
 
