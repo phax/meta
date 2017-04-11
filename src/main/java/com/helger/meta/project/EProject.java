@@ -110,7 +110,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_PLUGIN,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "2.0.0",
+                             "2.1.0",
                              EJDK.JDK8),
   PH_DIRINDEX_MAVEN_PLUGIN ("ph-dirindex-maven-plugin",
                             EProjectType.MAVEN_PLUGIN,

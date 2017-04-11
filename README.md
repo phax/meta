@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-04-06):
+Current list of all projects (as of 2017-04-11):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.3 - JDK 1.8
 
@@ -165,7 +165,7 @@ Current list of all projects (as of 2017-04-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde) 
    [![Build Status](https://travis-ci.org/phax/ph-bde.svg?branch=master)](https://travis-ci.org/phax/ph-bde)
- * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 2.0.0 - JDK 1.8
+ * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 2.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-buildinfo-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-buildinfo-maven-plugin)
