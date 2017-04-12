@@ -35,7 +35,7 @@ public enum EExternalDependency
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.56", EJDK.JDK6),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20170218", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20170409", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK6),
