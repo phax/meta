@@ -32,7 +32,7 @@ import com.helger.meta.CMeta;
  */
 public enum EProject implements IProject
 {
-  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.9.2", EJDK.JDK8),
+  PH_PARENT_POM ("parent-pom", "ph-parent-pom", EHasPages.FALSE, EHasWiki.FALSE, "1.9.3", EJDK.JDK8),
   PH_JAXWS ("ph-jaxws", EProjectType.MAVEN_POM, EHasPages.FALSE, EHasWiki.FALSE, "1.0.1", EJDK.JDK6),
   PH_FORBIDDEN_APIS ("ph-forbidden-apis",
                      EProjectType.RESOURCES_ONLY,
@@ -44,7 +44,7 @@ public enum EProject implements IProject
 
   JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.6", EJDK.JDK8),
 
-  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.3", EJDK.JDK8),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.4", EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_SECURITY (PH_COMMONS_PARENT_POM, "ph-security", EProjectType.JAVA_LIBRARY),
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),
