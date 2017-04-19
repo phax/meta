@@ -115,6 +115,7 @@ public enum EExternalDependency
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK7),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK6),
   JUNIT ("junit", "junit", "4.12", EJDK.JDK6),
+  LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
   LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
   LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
   LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
