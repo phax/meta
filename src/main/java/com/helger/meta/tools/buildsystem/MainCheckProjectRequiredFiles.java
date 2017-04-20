@@ -73,6 +73,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return false;
   }
 
+  private static boolean _isApache2Project (@Nonnull final IProject aProject)
+  {
+    return aProject != EProject.JCODEMODEL;
+  }
+
   private static void _validateProjectWithJavaCode (@Nonnull final IProject aProject)
   {
     // Check for file existence
@@ -87,18 +92,18 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
     if (false)
       _checkFileExisting (aProject, "src/main/resources/changelog.xml");
-    if (aProject != EProject.JCODEMODEL)
+    if (_isApache2Project (aProject))
     {
-      // Not Apache2 license
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
       _checkFileExisting (aProject, "src/main/resources/NOTICE");
     }
 
     // So that GitHub displays the license
     if (aProject.isBuildInProject () && !aProject.isNestedProject ())
-      _checkFileExisting (aProject, "LICENSE");
+      _checkFileExisting (aProject, "LICENSE.txt");
     else
-      _checkFileNotExisting (aProject, "LICENSE");
+      _checkFileNotExisting (aProject, "LICENSE.txt");
+    _checkFileNotExisting (aProject, "LICENSE");
 
     // Check for file contents
     _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
@@ -117,9 +122,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
     // So that GitHub displays the license
     if (aProject.isBuildInProject () && !aProject.isNestedProject ())
-      _checkFileExisting (aProject, "LICENSE");
+      _checkFileExisting (aProject, "LICENSE.txt");
     else
-      _checkFileNotExisting (aProject, "LICENSE");
+      _checkFileNotExisting (aProject, "LICENSE.txt");
+    _checkFileNotExisting (aProject, "LICENSE");
   }
 
   private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)

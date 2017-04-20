@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170419</version>
+  <version>1.0.0-20170420</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -957,7 +957,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-poi</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
