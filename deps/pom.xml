@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170420</version>
+  <version>1.0.0-20170424</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -149,7 +149,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>1.4.194</version>
+      <version>1.4.195</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -199,7 +199,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.2.1</version>
+      <version>3.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
@@ -502,7 +502,7 @@
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
       <artifactId>quartz</artifactId>
-      <version>2.2.3</version>
+      <version>2.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.mozilla</groupId>
@@ -522,7 +522,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.3.1</version>
+      <version>3.4.0</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -577,7 +577,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.12.Final</version>
+      <version>1.4.13.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1164,23 +1164,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-validation</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-validation</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

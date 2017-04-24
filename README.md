@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-04-20):
+Current list of all projects (as of 2017-04-24):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.3 - JDK 1.8
 
@@ -345,19 +345,19 @@ Current list of all projects (as of 2017-04-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jscompress-maven-plugin)
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.3 - JDK 1.8
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.3 - JDK 1.8
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 5.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-masterdata-validation](https://github.com/phax/ph-masterdata) - Version 5.0.3 - JDK 1.8
+ * [ph-masterdata/ph-masterdata-validation](https://github.com/phax/ph-masterdata) - Version 5.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-validation/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata-validation) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-masterdata/ph-validation](https://github.com/phax/ph-masterdata) - Version 5.0.3 - JDK 1.8
+ * [ph-masterdata/ph-validation](https://github.com/phax/ph-masterdata) - Version 5.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-validation/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-validation) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
