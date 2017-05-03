@@ -1,4 +1,4 @@
-#My Coding Styleguide
+# My Coding Styleguide
 
 The following list gives a short overview of special programming techniques that are used inside all of my projects.
 
@@ -19,12 +19,12 @@ The following list gives a short overview of special programming techniques that
   * The scope of a field is indicated by either the prefix `m_` for instance (member) fields, and `s_` for static fields. A special case are "static final" fields which may omit this prefix and use only upper case character (e.g. `DEFAULT_VALUE` as in `public static final boolean DEFAULT_VALUE = true;`)
   * Private methods (no matter if static or not) always start with a single underscore (`_`) and are not declared `final` as they are implicitly final.
   
-##Special annotations
+## Special annotations
   * All methods returning collections (lists, sets, maps etc.) and arrays are usually returning copies of the content. This helps ensuring thread-safety (where applicable) but also means that modifying returned collections has no impact on the content of the "owning" object. In more or less all cases, there are "add", "remove" and "clear" methods available to modify the content of an object directly. All the methods returning copies of collections and arrays should be annotated with `@ReturnsMutableCopy`. In contrast if the inner collection or array is returned directly (for whatever reason) it should be annotated with `@ReturnsMutableObject` in which case a special description is provided in the annotation. If an unmodifiable collection is returned, the corresponding annotation is `@ReturnsImmutableObject` (e.g. for `Collections.unmodifiableList` etc.) (this is not applicable for arrays).
   * For all non primitive parameter the annotations `@Nonnull` or `@Nullable` are used, indicating whether a parameter can be `null` or not. Additionally for Strings, collections and arrays the annotation `@Nonempty` may be present, indicating that empty values are also not allowed. All these annotations have no impact on the runtime of an application. They are just meant as hints for the developers.
   * Domain model classes are annotated with the FindBugs annotations `@Immutable`, `@ThreadSafe` or `@NotThreadSafe` to indicate their thread-safety level.
   
-##General conventions
+## General conventions
   * All projects include Eclipse project files (`.project`, `.classpath` and `.settings`)
   * All projects use Apache Maven 3.x for building (`pom.xml`)
   * Most projects contain a FindBugs configuration. Therefore the file `findbugs-exclude.xml` must be present in each projects root directory. 
@@ -34,7 +34,7 @@ The following list gives a short overview of special programming techniques that
   * Interface methods never contain the visibility specifier as it is implied.
   * No class defines a `serialVersionUID` as this is automatically done by the Java runtime upon execution.
 
-##JDK 8 specialties
+## JDK 8 specialties
   * Starting with ph-commons 8 synchronization is done using `com.helger.commons.concurrent.SimpleReadWriteLock` which is a special `ReeentrantReadWriteLock` implementation with better support for the usage with Lambdas.
   * I'm not using the stream API since there are performance considerations and the regular iteration usually works pretty efficient and helper methods with Lambdas are available.
   * Starting with ph-commons 8 a set of collection interfaces and classes starting with `ICommons` (e.g. `ICommonsList`) resp. `Commons` (like `CommonsArrayList`) are used because they offer tons of default sanity methods.
