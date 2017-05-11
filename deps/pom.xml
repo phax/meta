@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170508</version>
+  <version>1.0.0-20170511</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1102,48 +1102,48 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>8.7.4</version>
+      <version>8.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
