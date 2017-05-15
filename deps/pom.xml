@@ -1292,33 +1292,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>4.2.2</version>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
