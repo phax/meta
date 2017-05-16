@@ -501,6 +501,10 @@ Current list of all projects (as of 2017-05-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 4.3.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-ant-task) 
+   [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
  * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 4.3.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
