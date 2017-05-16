@@ -209,7 +209,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
-    final ICommonsList <MethodNode> aAllCtors = new CommonsArrayList<> ();
+    final ICommonsList <MethodNode> aAllCtors = new CommonsArrayList <> ();
     for (final Object oMethod : cn.methods)
     {
       final MethodNode mn = (MethodNode) oMethod;
@@ -368,10 +368,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         else
         {
           if (!fn.name.startsWith ("s_"))
-            _warn (aProject, sPrefix + "Static member name '" + fn.name + "' does not match naming conventions");
+            _warn (aProject,
+                   sPrefix + "Static non-final member name '" + fn.name + "' does not match naming conventions");
 
           if (!bIsPrivate)
-            _warn (aProject, sPrefix + "Static member '" + fn.name + "' is not private");
+            _warn (aProject, sPrefix + "Static non-final member '" + fn.name + "' is not private");
         }
       }
       else
@@ -424,6 +425,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("Node") ||
          sClassLocalName.equals ("Provider") ||
          sClassLocalName.equals ("StreamProvider") ||
+         sClassLocalName.equals ("StringProvider") ||
          (sClassLocalName.startsWith ("Parser") && sClassLocalName.endsWith ("Constants")) ||
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
