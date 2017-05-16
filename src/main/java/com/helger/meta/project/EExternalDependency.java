@@ -171,7 +171,7 @@ public enum EExternalDependency
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "2.17", EJDK.JDK6),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.6.1", EJDK.JDK6),
-  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.0.0", EJDK.JDK6),
+  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.0.1", EJDK.JDK6),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK6),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "2.10.1", EJDK.JDK6),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "2.5.1", EJDK.JDK6),
