@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170516</version>
+  <version>1.0.0-20170518</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -159,7 +159,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>3.8.1</version>
+      <version>3.8.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -174,12 +174,12 @@
     <dependency>
       <groupId>com.netflix.hystrix</groupId>
       <artifactId>hystrix-core</artifactId>
-      <version>1.5.11</version>
+      <version>1.5.12</version>
     </dependency>
     <dependency>
       <groupId>com.netflix.hystrix</groupId>
       <artifactId>hystrix-metrics-event-stream</artifactId>
-      <version>1.5.11</version>
+      <version>1.5.12</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
