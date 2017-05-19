@@ -44,7 +44,7 @@ public enum EProject implements IProject
 
   JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.6", EJDK.JDK8),
 
-  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.4", EJDK.JDK8),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.5", EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_SECURITY (PH_COMMONS_PARENT_POM, "ph-security", EProjectType.JAVA_LIBRARY),
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),

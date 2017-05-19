@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170518</version>
+  <version>1.0.0-20170519</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -577,7 +577,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.14.Final</version>
+      <version>1.4.15.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -830,68 +830,68 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>8.6.4</version>
+      <version>8.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

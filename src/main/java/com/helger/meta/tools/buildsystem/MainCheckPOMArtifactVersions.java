@@ -113,7 +113,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final String sGitHubOrganization = aProject.getGitHubOrganization ();
 
     // Read all properties
-    final ICommonsMap <String, String> aProperties = new CommonsHashMap<> ();
+    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -353,7 +353,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                   final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion,
                                                                                                     SUFFIX_SNAPSHOT)
                                                                             : sVersion);
-                  if (aVersionInFile.isLowerThan (aLastPublishedVersion))
+                  if (aVersionInFile.isLT (aLastPublishedVersion))
                   {
                     // Version in file lower than known
                     _warn (aProject,
@@ -376,7 +376,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                          aReferencedProject.getLastPublishedVersionString ());
                     }
                     else
-                      if (aVersionInFile.isGreaterThan (aLastPublishedVersion))
+                      if (aVersionInFile.isGT (aLastPublishedVersion))
                       {
                         // Version in file greater than in referenced project
                         if (!bIsSnapshot)
@@ -436,7 +436,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 {
                   // Referenced project published at least once
                   final Version aVersionInFile = Version.parse (sVersion);
-                  if (aVersionInFile.isLowerThan (eExternalDep.getLastPublishedVersion ()))
+                  if (aVersionInFile.isLT (eExternalDep.getLastPublishedVersion ()))
                   {
                     // Version in file lower than known
                     _warn (aProject,
@@ -448,7 +448,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                      sSuffix);
                   }
                   else
-                    if (aVersionInFile.isGreaterThan (eExternalDep.getLastPublishedVersion ()))
+                    if (aVersionInFile.isGT (eExternalDep.getLastPublishedVersion ()))
                     {
                       // Version in file greater than in referenced project
                       _warn (aProject,
