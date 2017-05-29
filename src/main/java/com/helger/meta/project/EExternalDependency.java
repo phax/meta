@@ -48,7 +48,7 @@ public enum EExternalDependency
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.2", EJDK.JDK6),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.4", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.0.0", EJDK.JDK6),
@@ -92,7 +92,7 @@ public enum EExternalDependency
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "1.6.5", EJDK.JDK6),
   JEROMQ ("org.zeromq", "jeromq", "0.4.0", EJDK.JDK6),
-  JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.3", EJDK.JDK6),
+  JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK6),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7
   JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.25.1", EJDK.JDK7),
