@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170529</version>
+  <version>1.0.0-20170530</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1164,23 +1164,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-validation</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-masterdata-validation</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
