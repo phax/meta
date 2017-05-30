@@ -1,0 +1,436 @@
+{
+  $name: "WSInvoiceDelivery",
+  $namespace: "http://erb.eproc.brz.gv.at/ws/invoicedelivery/201306/",
+  $endpoint: "https://txm.portal.at/at.gv.bmf.erb/V2",
+  $doc: "Defines the operations for uploading an invoice to erechnung.gv.at
+    Author: Philip Helger, Bundesrechenzentrum GmbH
+    Version: 2.0.1
+    Last Update: 2017-05-30
+    
+    History:
+      2.0.1: Documentation update 
+      2.0.0: Complete rewrite
+      1.2.0: All changes compared to 1.1.0 are marked with [CHANGE120]
+      1.1.0: All changes compared to 1.0.0 are marked with [CHANGE110]
+             Global changes:
+               using elementFormDefault=qualified
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #DeliveryHashAlgorithmType: {
+      $doc: "Defines the possible hash algorithm types",
+      $enum: ["MD5", "SHA-1", "SHA-256", "SHA-384", "SHA-512"]
+    },
+    #DeliveryPropertyType: {
+      $extension: "string",
+      @name: {
+        $type: "string",
+        $doc: "The name of this property.
+               Must be unique within all properties."
+      }      
+    },
+    // Request types
+    #DeliveryInvoiceType: {
+      $doc: "This contains the main invoice XML to be delivered.
+             As erechnung.gv.at supports multiple formats, and we can't tell whether it 
+             will always be XML, the content must be base64Binary encoded.
+             It is important that the XML document declaration
+             <?xml version=\"...\" encoding=\"...\"?>
+             is contained in the binary encoded data!
+             Also the content MUST NOT contain a BOM!",
+      $extension: "base64Binary",
+      @encoding: {
+        $type: "string",
+        $doc: "The encoding of the Base64 String. Should be identical to the content encoding.
+               Default is UTF-8.
+               If an unknown encoding is provided, the invoice delivery is rejected.",
+        $default: "UTF-8"
+      }
+    },
+    #DeliveryEmbeddedAttachmentType: {
+      $doc: "An attachment that is directly delivered with the invoice.", 
+      $extension: "base64Binary",
+      @name: {
+        $type: "string",
+        $doc: "The filename of this attachment.
+               It should not contain any path element!
+               It must have a supported file extension (like '.pdf')." 
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document before it was Base64 
+               encoded.
+               This is only relevant for text attachments (like XML).
+               If an unknown encoding is provided, the invoice delivery is rejected.
+               If a text attachment is provided (by the determined content type) and
+               no encoding is present, the invoice delivery is rejected.",
+        $optional: true
+      }
+    },
+    DeliveryExternalAttachmentType: {
+      $doc: "!!!This is NOT supported!!!
+An attachment that is available externally.", 
+      @uri: {
+        $type: "anyURI",
+        $doc: "The URI/URL where the attachment resides.
+               This URL must be publicly accessible.
+               No username or password must be required to access it.
+               Only http and https URLs are allowed.
+               It must have a supported file extension (like '.pdf').
+               The filename part of the URL is used as the attachment 
+               name so please provide usable filenames."
+      },
+      @musthave: {
+        $type: "boolean",
+        $doc: "As there are many ways how the download of an external document
+               can fail, this flags specifies whether the download of the
+               document is mandatory or not.
+               If this flag is set to 'true' and the content could not be
+               retrieved, than the invoice delivery will fail."
+      },
+      @encoding: {
+        $type: "string",
+        $doc: "The original encoding of the document.
+               This is only relevant for text attachments (like XML).
+               If an unknown encoding is provided, the invoice delivery is rejected.
+               If a text attachment is provided (by the determined content type) and
+               no encoding is present, the invoice delivery is rejected.",
+        $optional: true
+      },
+      @size: {
+        $type: "unsignedInt",
+        $doc: "The size of the document in bytes.
+               This value is only used to verify that the retrieval of the content
+               succeeded.
+               If this attribute is present, and the results differ, the
+               invoice is rejected.",
+        $optional: true
+      },
+      @hashalgo: {
+        $type: "DeliveryHashAlgorithmType",
+        $doc: "The algorithm used to calculate the hash value.
+               Must be present if a hash value is set.
+               This value is only used to verify that the retrieval of the content
+               succeeded.",
+        $optional: true 
+      },
+      @hashvalue: {
+        $type: "string",
+        $doc: "The hash value of the document byte stream calculated with 
+               the algorithm specified in the 'hashalgo' attribute.
+               This value is only used to verify that the retrieval of the content
+               succeeded.
+               If this attribute is present, and the results differ, the
+               invoice is rejected.
+               The hash value must be present as a hex-encoded string.
+               Example: byte 1 encoded as '01', byte 255 encoded as 'ff' etc.",
+        $optional: true
+      }
+    },
+    DeliveryCallbackType: {
+      PassThrough: {
+        $type: "DeliveryPropertyType",
+        $doc: "Optional properties to be passed back in the asynchronous
+               callback Webservice.
+               This may contain some unique keys or identification
+               properties for the invoice deliverer to match the callback
+               invocation to the original request.
+               These properties are passed in success and in error case.
+               Property names must be unique! If not later definitions
+               overwrite previous definitions without further notice.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      @url: {
+        $type: "anyURI",
+        $doc: "URL of the Webservice endpoint that should be invoked 
+               to send the invoice delivery status to. 
+               If this value is not present, or if the Webservice at the URL
+               is not reachable, an email containing the invoice delivery
+               status is sent instead.
+               The WSDL service description that the this URL must implement
+               is located in the file 'erb-out-invoice-callback-*.wsdl'."
+      },       
+      @version: {
+        $type: "string",
+        $doc: "Represents the version of the callback service that should be
+               invoked.
+               The initial version of the callback has version '100'."
+      },
+      @soapaction: {
+        $type: "string",
+        $doc: "If a SOAPAction is required in the invoice delivery status
+               it must be specified here. If this attribute is missing or
+               empty, no SOAPAction will be specified in the call.",
+        $optional: true
+      }
+    },
+    DeliveryEmailSettingsType: {
+      $doc: "Email settings to be used for the response to this service call.
+             These settings are only used if no Callback is provided or if the
+             invocation of the Callback fails.",
+      AlternateResponseEmail: {
+        $type: "string",
+        $doc: "Overwrite the response email addresses specified in the invoice.
+               Only one email address may be provided per element!
+               If this field is present and does not contain a valid email
+               address (by means of a regular expression) the invoice delivery
+               is rejected!",
+        $min: 0,
+        $max: "unbounded"
+      },
+      AdditionalResponseEmail: {
+        $type: "string",
+        $doc: "Add response email addresses to the ones specified in the invoice.
+               Only one email address may be provided per element!
+               If AlternateResponseEmail elements are present, they have precedence
+               over the additional response email addresses. 
+               If this field is present and does not contain a valid email
+               address (by means of a regular expression) the invoice delivery
+               is rejected!",
+        $min: 0,
+        $max: "unbounded"
+      },
+      ResponseEmailCC: {
+        $type: "string",
+        $doc: "Add response CC email addresses.
+               Only one email address may be provided per element!
+               Email addresses specified here are used independent if 
+               AlternateResponseEmail or AdditionalResponseEmail elements are present.
+               If this field is present and does not contain a valid email
+               address (by means of a regular expression) the invoice delivery
+               is rejected!",
+        $min: 0,
+        $max: "unbounded"
+      },
+      ResponseEmailBCC: {
+        $type: "string",
+        $doc: "Add response BCC email addresses.
+               Only one email address may be provided per element!
+               Email addresses specified here are used independent if 
+               AlternateResponseEmail or AdditionalResponseEmail elements are present.
+               If this field is present and does not contain a valid email
+               address (by means of a regular expression) the invoice delivery
+               is rejected!",
+        $min: 0,
+        $max: "unbounded"
+      },
+      SubjectPrefix: {
+        $type: "string",
+        $doc: "A special prefix to be used for the email subject.
+               This should allow for easy filtering of email messages from erechnung.gv.at.
+               This prefix is added AFTER the default '[ERB] ' prefix which has
+               higher precedence.",
+        $min: 0
+      }
+    },
+    DeliverySettingsType: {
+      Callback: {
+        $type: "DeliveryCallbackType",
+        $doc: "Contains the Webservice settings for a single invocation",
+        $min: 0        
+      },
+      EmailSettings: {
+        $type: "DeliveryEmailSettingsType",
+        $doc: "Contains email response settings",
+        $min: 0        
+      },
+      TechnicalContact: {
+        $type: "string",
+        $doc: "You may provide an email address of the technical stuff 
+               responsible for this Webservice in case there are specific
+               error (like invocation of the callback service fails)",
+        $min: 0
+      },
+      Extension: {
+        $type: "DeliveryPropertyType",
+        $doc: "Optional request extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      @test: {
+        $type: "boolean",
+        $doc: "If this flag is set to true, the transmission is considered a
+               test-transmission and will not be forwarded to the invoice recipient!
+               If this flag is set to 'true' only the technical checks are performed and the result is returned.",
+        $default: false
+      },
+      @language: {
+        $type: "string",
+        $doc: "If ID of the language in which the returned messages should be 
+               printed. Currently supported are:
+               'de' - German
+               'en' - English",
+        $default: "de"
+      }
+    },
+    DeliveryType: {
+      Invoice: {
+        $type: "DeliveryInvoiceType",
+        $doc: "Contains the main invoice to be uploaded."
+      },
+      EmbeddedAttachment: {
+        $type: "DeliveryEmbeddedAttachmentType",
+        $doc: "Optional attachments to be delivered together with the invoice.
+               Only certain file types are allowed: PDF, PNG, XLS, XLSX and XML",
+        $min: 0,
+        $max: "unbounded"
+      },
+      ExternalAttachment: {
+        $type: "DeliveryExternalAttachmentType",
+        $doc: "!!!This is NOT supported!!!
+               Optional attachments to be downloaded by erechnung.gv.at together with the invoice.
+               Only certain file types are allowed: PDF, PNG, XLS, XLSX and XML",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Settings: {
+        $type: "DeliverySettingsType",
+        $doc: "Optional settings that apply only to a single service call!",
+        $min: 0
+      }
+    },
+    // Response types
+    #DeliveryPrintableInvoiceType: {
+      $doc: "!!!This is NOT supported!!!",
+      $extension: "base64Binary",
+      @mimetype: {
+        $type: "string",
+        $doc: "The MIME type of the printable invoice.
+               For PDF this is 'application/pdf'"
+      },  
+      @originalsize: {
+        $type: "unsignedInt",
+        $doc: "The size of the document in bytes before it was Base64 encoded"
+      },
+      @hashalgo: {
+        $type: "DeliveryHashAlgorithmType",
+        $doc: "The algorithm used to calculate the hash value."
+      },
+      @hashvalue: {
+        $type: "string",
+        $doc: "The hash value of the document calculated with the algorithm
+               specified in the 'hashalgo' attribute before it was Base64 encoded.
+               The hash value must be present as a hex-encoded string."
+      },
+      @creation: {
+        $type: "dateTime",
+        $doc: "The date and time when the printable invoice was generated.
+               The time zone is always UTC.",
+        $optional: true
+      }
+    },
+    DeliverySuccessType: {
+      $doc: "The delivery response success type.",
+      DocumentID: {
+        $type: "string",
+        $doc: "The erechnung.gv.at internal document ID."
+      },  
+      SupplierID: {
+        $type: "string",
+        $doc: "The supplier ID (Lieferantennummer) as specified in the invoice.",
+        $min: 0
+      },  
+      SupplierEmail: {
+        $type: "string",
+        $doc: "The email address(es) as specified in the invoice.
+               Each element contains a single email address.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      SupplierInvoiceNumber: {
+        $type: "string",
+        $doc: "The invoice number (Rechnungsnummer) as specified in the invoice.",
+        $min: 0
+      },  
+      OrderID: {
+        $type: "string",
+        $doc: "The complete order ID (Auftragsreferenz) as specified in the invoice.",
+        $min: 0
+      },
+      PrintableInvoice: {
+        $type: "DeliveryPrintableInvoiceType",
+        $doc: "!!!This is NOT supported!!!
+               This element is never present!
+               Contains the printable version of the invoice delivery acknowledgement.",
+        $min: 0
+      },
+      Extension: {
+        $type: "DeliveryPropertyType",
+        $doc: "Optional success response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    DeliveryErrorDetailType: {
+      ErrorCode: {
+        $type: "string",
+        $doc: "The erechnung.gv.at internal error code for machine-processing.
+               See a separate list for details.",
+        $min: 0
+      },
+      Field: {
+        $type: "string",
+        $doc: "The field containing the error.",
+        $min: 0
+      },
+      Message: {
+        $type: "string",
+        $doc: "The main error message for the specified field.
+               This should contain a human readable text."
+      }
+    },
+    DeliveryErrorType: {
+      $doc: "The delivery response error type.",
+      ErrorDetail: {
+        $type: "DeliveryErrorDetailType",
+        $doc: "Contains all the single error messages.",
+        $min: 0,
+        $max: "unbounded"
+      },
+      Extension: {
+        $type: "DeliveryPropertyType",
+        $doc: "Optional error response extension point.
+               Only handled upon bilateral agreement.",
+        $min: 0,
+        $max: "unbounded"
+      }
+    },
+    DeliveryResponseType: {
+      $type: "choice",
+      $doc: "The global delivery response type.",
+      Success: {
+        $type: "DeliverySuccessType",
+        $doc: "In case of success this elements is present"
+      },  
+      Error: {
+        $type: "DeliveryErrorType",
+        $doc: "In case of error this element is present"
+      }        
+    },
+    DeliveryExceptionType: {
+      $doc: "The generic exception type in case something goes wrong in erechnung.gv.at.",
+      Message: {
+        $type: "string",
+        $doc: "The human understandable exception message.",
+        $max: "unbounded"
+      }
+    }
+  },
+  // Methods
+  deliverInvoice: {
+    $input: {
+      Invoice: "DeliveryType"
+    },
+    $output: {
+      Invoice: "DeliveryResponseType"
+    },
+    $fault: {
+      Invoice: "DeliveryExceptionType"
+    }  
+  }
+}
+    

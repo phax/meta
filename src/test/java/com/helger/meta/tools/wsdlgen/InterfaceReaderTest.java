@@ -33,7 +33,7 @@ public final class InterfaceReaderTest
 
   public static final String [] FILENAMES = new String [] { "wsdlgen/example-complex.interface",
                                                             "wsdlgen/example-currencyConvert.interface",
-                                                            "wsdlgen/erb/erb-in-invoice-200.interface",
+                                                            "wsdlgen/erb/erb-in-invoice-201.interface",
                                                             "wsdlgen/erb/erb-in-test-order-102.interface",
                                                             "wsdlgen/erb/erb-out-invoice-callback-100.interface",
                                                             "wsdlgen/erb/erc-in-async-status-110.interface",
