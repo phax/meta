@@ -45,9 +45,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
     final String sSearch2 = sPrevYear;
     final String sReplace2 = sPrevYear + "-" + sThisYear;
 
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
-                                                                    p.getBaseDir ().exists () &&
-                                                                    !p.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getBaseDir ().exists () && !p.isDeprecated ()))
     {
       final File f = new File (aProject.getBaseDir (), "src/etc/license-template.txt");
       if (!f.exists ())
