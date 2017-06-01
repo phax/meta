@@ -256,7 +256,7 @@ public enum EProject implements IProject
                       "peppol-validation-engine",
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "3.1.0",
+                      "3.1.1",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_PEPPOL (PH_BDVE_PARENT_POM, "ph-bdve-peppol", EProjectType.JAVA_LIBRARY),
