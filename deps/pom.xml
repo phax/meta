@@ -567,7 +567,7 @@
     <dependency>
       <groupId>org.threeten</groupId>
       <artifactId>threeten-extra</artifactId>
-      <version>1.1</version>
+      <version>1.2</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -1467,28 +1467,28 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-parent-pom</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-peppol</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-simplerinvoicing</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-en16931</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

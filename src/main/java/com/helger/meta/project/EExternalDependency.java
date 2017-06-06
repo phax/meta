@@ -152,7 +152,7 @@ public enum EExternalDependency
   SPOCK_CORE ("org.spockframework", "spock-core", "1.1-groovy-2.4", EJDK.JDK6),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.1", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.2", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK6),
   UNDERTOW ("io.undertow", "undertow-servlet", "1.4.16.Final", EJDK.JDK6),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final", EJDK.JDK6),
