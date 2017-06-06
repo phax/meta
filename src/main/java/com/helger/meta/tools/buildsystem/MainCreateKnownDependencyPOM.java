@@ -101,7 +101,8 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       final IMicroElement ePlugin = ePlugins.appendElement (NS, "plugin");
       ePlugin.appendElement (NS, "groupId").appendText ("org.codehaus.mojo");
       ePlugin.appendElement (NS, "artifactId").appendText ("versions-maven-plugin");
-      ePlugin.appendElement (NS, "version").appendText ("2.3");
+      ePlugin.appendElement (NS, "version")
+             .appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
       final IMicroElement eConfig = ePlugin.appendElement (NS, "configuration");
       eConfig.appendElement (NS, "allowSnapshots").appendText ("false");
       eConfig.appendElement (NS, "rulesUri").appendText ("file:versions-maven-plugin-rules.xml");
