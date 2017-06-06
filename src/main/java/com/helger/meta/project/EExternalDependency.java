@@ -102,7 +102,7 @@ public enum EExternalDependency
   JETTY_92_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.2.21.v20170120", EJDK.JDK7),
   JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
   JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
-  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.5.v20170502", EJDK.JDK8),
+  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.6.v20170531", EJDK.JDK8),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_WEBAPP),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_WEBAPP),
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_WEBAPP),
