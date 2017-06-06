@@ -39,7 +39,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.lang.ClassHelper;
 
 @Immutable
-public class ASMHelper
+public final class ASMHelper
 {
   private ASMHelper ()
   {}
