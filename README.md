@@ -25,7 +25,7 @@ Current list of all projects (as of 2017-06-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 4.0.1 - JDK 1.8
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 4.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)

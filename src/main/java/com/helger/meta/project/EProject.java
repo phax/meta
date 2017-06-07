@@ -243,7 +243,7 @@ public enum EProject implements IProject
                       EProjectType.JAVA_LIBRARY,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.0.1",
+                      "4.0.2",
                       EJDK.JDK8),
   AS2_PEPPOL_SERVER ("as2-peppol-server",
                      EProjectType.JAVA_WEB_APPLICATION,
