@@ -91,7 +91,7 @@ public enum EExternalDependency
   JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248", EJDK.JDK6),
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.4.1", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
-  JEROMQ ("org.zeromq", "jeromq", "0.4.1", EJDK.JDK6),
+  JEROMQ ("org.zeromq", "jeromq", "0.4.2", EJDK.JDK6),
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK6),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
   // JDK 1.7 since 2.7
@@ -154,7 +154,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.2", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK6),
-  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.17.Final", EJDK.JDK6),
+  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.18u.Final", EJDK.JDK6),
   VALIDATION_API ("javax.validation", "validation-api", "1.1.0.Final", EJDK.JDK6),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.4", EJDK.JDK6),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.1.10", EJDK.JDK6),
