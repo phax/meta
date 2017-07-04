@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170629</version>
+  <version>1.0.0-20170704</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -39,7 +39,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20170521</version>
+      <version>v20170626</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -159,7 +159,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>3.8.2</version>
+      <version>3.8.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -577,7 +577,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.18u.Final</version>
+      <version>1.4.18.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1102,48 +1102,48 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>8.8.1</version>
+      <version>8.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
