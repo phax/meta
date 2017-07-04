@@ -654,9 +654,9 @@ Current list of all unreleased projects:
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
- * [uvw](https://github.com/phax/uvw) - JDK 1.8
+ * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/phax/uvw.svg?branch=master)](https://travis-ci.org/phax/uvw)
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
 
 All deprecated projects:
 
