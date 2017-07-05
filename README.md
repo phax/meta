@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-07-04):
+Current list of all projects (as of 2017-07-05):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.0.4 - JDK 1.8
 
@@ -377,87 +377,87 @@ Current list of all projects (as of 2017-07-04):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
- * [ph-oton](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-basic](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-basic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-basic) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-datatables/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-datatables) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-html/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-html) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-icon/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-icon) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jetty) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jquery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jquery) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jscode) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 7.0.5 - JDK 1.8
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 7.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
