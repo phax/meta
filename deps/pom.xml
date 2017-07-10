@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170705</version>
+  <version>1.0.0-20170710</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -472,7 +472,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.6</version>
+      <version>8.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -517,7 +517,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-2</version>
+      <version>9.8.0-3</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
