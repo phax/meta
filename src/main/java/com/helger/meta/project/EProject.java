@@ -44,7 +44,7 @@ public enum EProject implements IProject
 
   JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "2.8.6", EJDK.JDK8),
 
-  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.5", EJDK.JDK8),
+  PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "8.6.6", EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_SECURITY (PH_COMMONS_PARENT_POM, "ph-security", EProjectType.JAVA_LIBRARY),
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),
@@ -325,7 +325,11 @@ public enum EProject implements IProject
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
   PH_AS4_ESENS (PH_AS4_PARENT_POM, "ph-as4-esens", EProjectType.JAVA_LIBRARY),
   PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY),
-  PH_AS4_SERVER_WEBAPP_DEMO (PH_AS4_PARENT_POM, "ph-as4-server-webapp-demo", EProjectType.JAVA_WEB_APPLICATION),
+  PH_AS4_SERVER_WEBAPP (PH_AS4_PARENT_POM, "ph-as4-server-webapp", EProjectType.JAVA_WEB_APPLICATION, (String) null),
+  PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM,
+                             "ph-as4-server-webapp-test",
+                             EProjectType.JAVA_WEB_APPLICATION,
+                             (String) null),
 
   BOZOO ("bozoo", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
   PEPPOL_PRACTICAL ("peppol-practical",
