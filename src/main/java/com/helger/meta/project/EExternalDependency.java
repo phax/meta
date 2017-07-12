@@ -132,7 +132,7 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK6),
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.4.2", EJDK.JDK6),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.7", EJDK.JDK6),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.7-dmr", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.6", EJDK.JDK6),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.16", EJDK.JDK6),
