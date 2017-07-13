@@ -338,12 +338,7 @@ public enum EProject implements IProject
                     EHasWiki.FALSE,
                     null,
                     EJDK.JDK8),
-  PHOSS_VALIDATOR ("phoss-validator",
-                   EProjectType.JAVA_WEB_APPLICATION,
-                   EHasPages.FALSE,
-                   EHasWiki.FALSE,
-                   null,
-                   EJDK.JDK8);
+  PHOSS_VALIDATOR ("phoss-validator", EProjectType.JAVA_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
