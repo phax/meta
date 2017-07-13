@@ -267,7 +267,7 @@ public enum EProject implements IProject
                                "peppol-directory",
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "0.4.0",
+                               "0.5.0",
                                EJDK.JDK8),
   PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM,
                                  "peppol-directory-businesscard",

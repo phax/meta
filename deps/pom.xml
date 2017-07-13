@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170712</version>
+  <version>1.0.0-20170713</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1493,39 +1493,39 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-parent-pom</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-api</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-indexer</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-publisher</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-client</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-client-jdk6</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
