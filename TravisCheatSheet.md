@@ -21,11 +21,10 @@ travis encrypt
 Ensure the repository is correct.
 When asked for the text type:
 ```
-SONATYPE_PASSWORD=xxx<F6>
-<ENTER>
+SONATYPE_PASSWORD=xxx<F6><ENTER>
 <ENTER>
 ```
-<F6> being the replacement for <Strg>+<D> on Windows...
+&lt;F6> being the replacement for &lt;Strg>+&lt;D> on Windows...
 
 Copy the text starting with `secure:` in your `.travis.yml` file.
 
