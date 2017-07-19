@@ -638,6 +638,9 @@ Current list of all unreleased projects:
  * [ph-as4/ph-as4-server-webapp-test](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
+ * [ph-cli](https://github.com/phax/ph-cli) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-cli.svg?branch=master)](https://travis-ci.org/phax/ph-cli)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
