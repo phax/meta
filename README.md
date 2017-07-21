@@ -341,7 +341,7 @@ Current list of all projects (as of 2017-07-21):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
- * [ph-jaxws](https://github.com/phax/ph-jaxws) - Version 1.0.1 - JDK 1.6
+ * [ph-jaxws](https://github.com/phax/ph-jaxws) - Version 1.0.2 - JDK 1.6
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxws.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws)
@@ -585,7 +585,7 @@ Current list of all projects (as of 2017-07-21):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.8.2 - JDK 1.8
+ * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.2.10 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
