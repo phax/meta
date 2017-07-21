@@ -189,6 +189,10 @@ Current list of all projects (as of 2017-07-21):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
+ * [ph-cli](https://github.com/phax/ph-cli) - Version 2.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli) 
+   [![Build Status](https://travis-ci.org/phax/ph-cli.svg?branch=master)](https://travis-ci.org/phax/ph-cli)
  * [ph-commons](https://github.com/phax/ph-commons) - Version 8.6.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom) 
@@ -638,9 +642,6 @@ Current list of all unreleased projects:
  * [ph-as4/ph-as4-server-webapp-test](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-cli](https://github.com/phax/ph-cli) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-cli.svg?branch=master)](https://travis-ci.org/phax/ph-cli)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)

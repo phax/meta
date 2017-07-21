@@ -931,6 +931,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>ph-cli</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
       <version>5.1.2</version>
     </dependency>
