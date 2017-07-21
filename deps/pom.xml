@@ -1530,39 +1530,39 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-parent-pom</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-library</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-sql</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-xml</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-sql</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-xml</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
       <type>war</type>
     </dependency>
     <dependency>
