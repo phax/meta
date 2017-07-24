@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170721</version>
+  <version>1.0.0-20170724</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1578,23 +1578,35 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-parent-pom</artifactId>
-      <version>0.6.0</version>
+      <version>0.7.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-lib</artifactId>
-      <version>0.6.0</version>
+      <version>0.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-esens</artifactId>
-      <version>0.6.0</version>
+      <version>0.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-servlet</artifactId>
-      <version>0.6.0</version>
+      <version>0.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-as4-server-webapp</artifactId>
+      <version>0.7.0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-as4-server-webapp-test</artifactId>
+      <version>0.7.0</version>
+      <type>war</type>
     </dependency>
   </dependencies>
   <build>
