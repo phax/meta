@@ -66,7 +66,6 @@ public enum EProject implements IProject
   PH_XSDS_CCTS_CCT_SCHEMAMODULE (PH_XSDS_PARENT_POM, "ph-xsds-ccts-cct-schemamodule", EProjectType.JAVA_LIBRARY),
 
   PH_BDE ("ph-bde", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
-  PH_CLI ("ph-cli", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.1.0", EJDK.JDK8),
   PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "5.1.2", EJDK.JDK8),
   PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.1", EJDK.JDK8),
@@ -188,7 +187,7 @@ public enum EProject implements IProject
                             "ph-schematron",
                             EHasPages.TRUE,
                             EHasWiki.FALSE,
-                            "4.3.1",
+                            "4.3.2",
                             EJDK.JDK8),
   PH_SCHEMATRON (PH_SCHEMATRON_PARENT_POM, "ph-schematron", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
