@@ -201,6 +201,10 @@ Current list of all projects (as of 2017-07-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 2.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli) 
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 8.6.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons) 
@@ -636,6 +640,12 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
@@ -718,9 +728,6 @@ All deprecated projects:
  * ph-pdf-layout - Version 3.5.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
- * ph-scopes - Version 6.6.0
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes) 
  * ph-tinymce4 - Version 0.3.5
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4) 
