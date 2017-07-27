@@ -1400,28 +1400,28 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>3.0.4</version>
+      <version>3.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>3.0.4</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>3.0.4</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>3.0.4</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>3.0.4</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1462,7 +1462,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>2.0.6</version>
+      <version>2.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1472,28 +1472,28 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-parent-pom</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-peppol</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-simplerinvoicing</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-en16931</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
