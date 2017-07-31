@@ -25,8 +25,8 @@ import java.io.File;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.helger.commons.io.file.filter.IFileFilter;
-import com.helger.commons.io.file.iterate.FileSystemIterator;
+import com.helger.commons.io.file.FileSystemIterator;
+import com.helger.commons.io.file.IFileFilter;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.CMeta;
 

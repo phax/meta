@@ -21,12 +21,13 @@ import java.io.File;
 import org.objectweb.asm.tree.ClassNode;
 
 import com.helger.commons.annotation.IsSPIInterface;
-import com.helger.commons.collection.ext.CommonsArrayList;
-import com.helger.commons.collection.ext.CommonsLinkedHashMap;
-import com.helger.commons.collection.ext.ICommonsList;
-import com.helger.commons.collection.ext.ICommonsOrderedMap;
-import com.helger.commons.collection.multimap.MultiTreeMapTreeSetBased;
-import com.helger.commons.io.file.iterate.FileSystemRecursiveIterator;
+import com.helger.commons.collection.impl.CommonsArrayList;
+import com.helger.commons.collection.impl.CommonsLinkedHashMap;
+import com.helger.commons.collection.impl.ICommonsList;
+import com.helger.commons.collection.impl.ICommonsOrderedMap;
+import com.helger.commons.collection.impl.ICommonsSortedMap;
+import com.helger.commons.collection.impl.ICommonsSortedSet;
+import com.helger.commons.io.file.FileSystemRecursiveIterator;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.commons.lang.ClassHelper;
 import com.helger.commons.mock.SPITestHelper;
@@ -106,7 +107,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               if (false)
                 _info (aProject, "Found Bundle instructions");
               bFoundInstructions = true;
-              final ICommonsOrderedMap <String, String> aInstructionMap = new CommonsLinkedHashMap<> ();
+              final ICommonsOrderedMap <String, String> aInstructionMap = new CommonsLinkedHashMap <> ();
               eInstructions.forAllChildElements (x -> aInstructionMap.put (x.getLocalName (),
                                                                            x.getTextContentTrimmed ()));
 
@@ -120,17 +121,19 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                   _warn (aProject, "Import-Package is weird: " + sImportPackage);
 
               boolean bChanged = false;
-              final ICommonsList <String> aRequireC = new CommonsArrayList<> ();
-              final ICommonsList <String> aProvideC = new CommonsArrayList<> ();
+              final ICommonsList <String> aRequireC = new CommonsArrayList <> ();
+              final ICommonsList <String> aProvideC = new CommonsArrayList <> ();
 
               // ServiceLoader provider
-              final MultiTreeMapTreeSetBased <String, String> aImpls = SPITestHelper.testIfAllSPIImplementationsAreValid (new File (aProject.getBaseDir (),
-                                                                                                                                    SPITestHelper.MAIN_SERVICES).getAbsolutePath (),
-                                                                                                                          SPITestHelper.EMode.NO_RESOLVE);
+              final ICommonsSortedMap <String, ICommonsSortedSet <String>> aImpls = SPITestHelper.testIfAllSPIImplementationsAreValid (new File (aProject.getBaseDir (),
+                                                                                                                                                 SPITestHelper.MAIN_SERVICES).getAbsolutePath (),
+                                                                                                                                       SPITestHelper.EMode.NO_RESOLVE);
               if (aImpls.isNotEmpty ())
               {
                 aRequireC.add ("osgi.extender; filter:=\"(osgi.extender=osgi.serviceloader.registrar)\"");
-                aImpls.forEachSingleValue (x -> aProvideC.add ("osgi.serviceloader; osgi.serviceloader=" + x));
+                for (final ICommonsSortedSet <String> aSet : aImpls.values ())
+                  for (final String x : aSet)
+                    aProvideC.add ("osgi.serviceloader; osgi.serviceloader=" + x);
               }
 
               // Check all classes of this project for SPI interfaces

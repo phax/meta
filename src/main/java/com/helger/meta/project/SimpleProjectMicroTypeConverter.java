@@ -27,7 +27,7 @@ import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroElement;
 import com.helger.xml.microdom.convert.IMicroTypeConverter;
 
-public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter
+public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter <SimpleProject>
 {
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
@@ -39,20 +39,19 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   private static final String ATTR_MIN_JDK_VERSION = "minjdk";
 
   @Nonnull
-  public IMicroElement convertToMicroElement (@Nonnull final Object aObject,
+  public IMicroElement convertToMicroElement (@Nonnull final SimpleProject aValue,
                                               @Nullable final String sNamespaceURI,
                                               @Nonnull @Nonempty final String sTagName)
   {
-    final SimpleProject aPrice = (SimpleProject) aObject;
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
-    ret.setAttribute (ATTR_PROJECT_NAME, aPrice.getProjectName ());
-    ret.setAttribute (ATTR_PROJECT_TYPE, aPrice.getProjectType ().getID ());
-    ret.setAttribute (ATTR_BASE_DIR, aPrice.getBaseDir ().getAbsolutePath ());
-    ret.setAttribute (ATTR_IS_DEPRECATED, aPrice.isDeprecated ());
-    ret.setAttribute (ATTR_HAS_PAGES, aPrice.hasPagesProject ());
-    ret.setAttribute (ATTR_HAS_WIKI, aPrice.hasWikiProject ());
-    ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aPrice.getLastPublishedVersionString ());
-    ret.setAttribute (ATTR_MIN_JDK_VERSION, aPrice.getMinimumJDKVersion ().getMajor ());
+    ret.setAttribute (ATTR_PROJECT_NAME, aValue.getProjectName ());
+    ret.setAttribute (ATTR_PROJECT_TYPE, aValue.getProjectType ().getID ());
+    ret.setAttribute (ATTR_BASE_DIR, aValue.getBaseDir ().getAbsolutePath ());
+    ret.setAttribute (ATTR_IS_DEPRECATED, aValue.isDeprecated ());
+    ret.setAttribute (ATTR_HAS_PAGES, aValue.hasPagesProject ());
+    ret.setAttribute (ATTR_HAS_WIKI, aValue.hasWikiProject ());
+    ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aValue.getLastPublishedVersionString ());
+    ret.setAttribute (ATTR_MIN_JDK_VERSION, aValue.getMinimumJDKVersion ().getMajor ());
     return ret;
   }
 

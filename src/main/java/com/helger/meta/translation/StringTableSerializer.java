@@ -22,7 +22,7 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 
 import com.helger.commons.ValueEnforcer;
-import com.helger.commons.collection.ext.ICommonsSortedMap;
+import com.helger.commons.collection.impl.ICommonsSortedMap;
 import com.helger.commons.hashcode.HashCodeCalculator;
 import com.helger.commons.hashcode.HashCodeGenerator;
 import com.helger.commons.state.ESuccess;

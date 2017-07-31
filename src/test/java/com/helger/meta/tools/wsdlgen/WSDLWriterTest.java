@@ -28,10 +28,6 @@ import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.resource.FileSystemResource;
 import com.helger.commons.io.stream.NonBlockingByteArrayOutputStream;
-import com.helger.meta.tools.wsdlgen.EStyle;
-import com.helger.meta.tools.wsdlgen.EUse;
-import com.helger.meta.tools.wsdlgen.InterfaceReader;
-import com.helger.meta.tools.wsdlgen.WSDLWriter;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
 public final class WSDLWriterTest
