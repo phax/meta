@@ -5,6 +5,7 @@ Requires Ruby.
 ```
 gem install travis
 ```
+See https://github.com/travis-ci/travis.rb#installation for details
 
 ## Create secret key per project
 
