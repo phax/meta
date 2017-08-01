@@ -17,15 +17,15 @@
 package com.helger.meta.tools.wsdlgen.model.type;
 
 import javax.annotation.Nonnull;
+import javax.xml.XMLConstants;
 
 import com.helger.commons.annotation.Nonempty;
-import com.helger.xml.CXML;
 
 public class WGXSDType extends WGPredefinedType
 {
   public WGXSDType (@Nonnull @Nonempty final String sName)
   {
     // All XSD types are simple types
-    super (CXML.XML_NS_XSD, sName, true);
+    super (XMLConstants.W3C_XML_SCHEMA_NS_URI, sName, true);
   }
 }

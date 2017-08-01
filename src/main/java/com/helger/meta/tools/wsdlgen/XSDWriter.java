@@ -21,6 +21,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import javax.annotation.Nonnull;
+import javax.xml.XMLConstants;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +35,6 @@ import com.helger.meta.tools.wsdlgen.model.type.WGComplexType;
 import com.helger.meta.tools.wsdlgen.model.type.WGEnumEntry;
 import com.helger.meta.tools.wsdlgen.model.type.WGSimpleType;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeDef;
-import com.helger.xml.CXML;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroDocument;
@@ -51,7 +51,7 @@ import com.helger.xml.serialize.write.XMLWriterSettings;
  */
 public class XSDWriter
 {
-  public static final String XSD_NS = CXML.XML_NS_XSD;
+  public static final String XSD_NS = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 
   public static final String PREFIX_XSD = "xs";
   public static final String PREFIX_TNS = "tns";

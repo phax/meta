@@ -18,6 +18,8 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
+import javax.xml.XMLConstants;
+
 import org.objectweb.asm.tree.ClassNode;
 
 import com.helger.commons.annotation.IsSPIInterface;
@@ -37,7 +39,6 @@ import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
-import com.helger.xml.CXML;
 import com.helger.xml.EXMLParserFeature;
 import com.helger.xml.EXMLParserProperty;
 import com.helger.xml.microdom.IMicroDocument;
@@ -79,7 +80,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
       aSRS.setFeatureValue (EXMLParserFeature.VALIDATION, true);
       aSRS.setFeatureValue (EXMLParserFeature.SCHEMA, true);
       aSRS.setFeatureValue (EXMLParserFeature.NAMESPACES, true);
-      aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, CXML.XML_NS_XSD);
+      aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, XMLConstants.W3C_XML_SCHEMA_NS_URI);
       aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SORUCE, aXSD.getAsFile ());
       aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
         if (sSystemId != null && sSystemId.endsWith ("/maven-v4_0_0.xsd"))
