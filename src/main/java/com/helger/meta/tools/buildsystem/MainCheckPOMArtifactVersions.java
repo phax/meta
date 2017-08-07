@@ -117,9 +117,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
-        eProperties.forAllChildElements (eProperty -> aProperties.put ("${" +
-                                                                       eProperty.getTagName () +
-                                                                       "}",
+        eProperties.forAllChildElements (eProperty -> aProperties.put ("${" + eProperty.getTagName () + "}",
                                                                        eProperty.getTextContentTrimmed ()));
     }
 
@@ -468,7 +466,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (aExternalDeps.isEmpty ())
               {
                 // Neither my project nor a known external
-                if (false)
+                if (true)
                   if (!sGroupID.startsWith ("org.apache.maven") &&
                       !sGroupID.startsWith ("org.codehaus.mojo") &&
                       !sArtifactID.equals ("rt") &&
