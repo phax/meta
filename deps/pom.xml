@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170807</version>
+  <version>1.0.0-20170808</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>com.netflix.archaius</groupId>

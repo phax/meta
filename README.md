@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-08-07):
+Current list of all projects (as of 2017-08-08):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -643,6 +643,9 @@ Current list of all unreleased projects:
  * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
+ * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
@@ -661,6 +664,12 @@ Current list of all unreleased projects:
  * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
+ * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
+ * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
