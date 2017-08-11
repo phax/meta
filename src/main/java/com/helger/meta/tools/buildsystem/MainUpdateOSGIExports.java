@@ -164,7 +164,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               if (aRequireC.isNotEmpty ())
               {
                 final StringBuilder aSB = new StringBuilder ();
-                aRequireC.forEach ( (x, idx) -> {
+                aRequireC.forEachByIndex ( (x, idx) -> {
                   if (idx > 0)
                     aSB.append (",\n");
                   aSB.append (x);
@@ -179,7 +179,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               if (aProvideC.isNotEmpty ())
               {
                 final StringBuilder aSB = new StringBuilder ();
-                aProvideC.forEach ( (x, idx) -> {
+                aProvideC.forEachByIndex ( (x, idx) -> {
                   if (idx > 0)
                     aSB.append (",\n");
                   aSB.append (x);
