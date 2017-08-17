@@ -53,7 +53,6 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
     final Predicate <EExternalDependency> aFilter = x -> x != EExternalDependency.M2E &&
                                                          x != EExternalDependency.JDK &&
                                                          x != EExternalDependency.FINDBUGS_ANNOTATIONS_2 &&
-                                                         x != EExternalDependency.JAVA_PARSER_24 &&
                                                          x != EExternalDependency.LOG4J2_23_CORE &&
                                                          x != EExternalDependency.LOG4J2_23_SLF4J &&
                                                          x != EExternalDependency.LOG4J2_23_WEB &&
