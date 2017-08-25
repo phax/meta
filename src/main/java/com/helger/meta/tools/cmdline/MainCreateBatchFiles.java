@@ -17,11 +17,11 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
-import java.util.List;
 
 import javax.annotation.Nonnull;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
@@ -40,9 +40,9 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
                                         @Nonnull @Nonempty final String sBatchFileName,
                                         final boolean bWithErrorCheck)
   {
-    final List <IProject> aProjects = ProjectList.getAllProjects (aProject -> aProject.isBuildInProject () &&
-                                                                              !aProject.isDeprecated () &&
-                                                                              !aProject.isNestedProject ());
+    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (aProject -> aProject.isBuildInProject () &&
+                                                                                      !aProject.isDeprecated () &&
+                                                                                      !aProject.isNestedProject ());
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);

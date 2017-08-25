@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170822</version>
+  <version>1.0.0-20170825</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>com.netflix.archaius</groupId>
@@ -1247,17 +1247,7 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-validation</artifactId>
-      <version>5.0.5</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>5.0.5</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-masterdata-validation</artifactId>
       <version>5.0.5</version>
     </dependency>
     <dependency>

@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.debug.GlobalDebug;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.project.IProject;
@@ -37,7 +38,10 @@ import com.helger.meta.project.IProject;
  */
 public abstract class AbstractProjectMain
 {
-  public static final String BATCH_HEADER = "@echo off\n" + "rem This files is generated - DO NOT EDIT\n";
+  public static final String BATCH_HEADER = "@echo off\n" +
+                                            "rem This files is generated - DO NOT EDIT - " +
+                                            PDTFactory.getCurrentLocalDateTime ().toString () +
+                                            "\n";
   public static final String BATCH_FOOTER = "goto end\n" +
                                             ":error\n" +
                                             "echo An error occured!!!\n" +
