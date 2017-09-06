@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-08-25):
+Current list of all projects (as of 2017-09-06):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -60,10 +60,6 @@ Current list of all projects (as of 2017-08-25):
  * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 5.2.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
-   [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client-swing](https://github.com/phax/peppol-commons) - Version 5.2.7 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client-swing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client-swing) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
  * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 5.2.7 - JDK 1.8
 

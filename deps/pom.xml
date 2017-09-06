@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170831</version>
+  <version>1.0.0-20170906</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>com.netflix.archaius</groupId>
@@ -1510,11 +1510,6 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>5.2.7</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-sml-client-swing</artifactId>
       <version>5.2.7</version>
     </dependency>
     <dependency>

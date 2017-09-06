@@ -234,7 +234,6 @@ public enum EProject implements IProject
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_SBDH (PEPPOL_COMMONS_PARENT_POM, "peppol-sbdh", EProjectType.JAVA_LIBRARY),
   PEPPOL_SML_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client", EProjectType.JAVA_LIBRARY),
-  PEPPOL_SML_CLIENT_SWING (PEPPOL_COMMONS_PARENT_POM, "peppol-sml-client-swing", EProjectType.JAVA_APPLICATION),
   PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY),
 
   AS2_PEPPOL_CLIENT ("as2-peppol-client",
