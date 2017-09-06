@@ -293,6 +293,11 @@
     </dependency>
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <version>2.2.11</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
       <artifactId>txw2</artifactId>
       <version>2.2.11</version>
     </dependency>
@@ -353,26 +358,6 @@
       <version>2.2.11</version>
     </dependency>
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
-      <version>2.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-jxc</artifactId>
-      <version>2.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-xjc</artifactId>
-      <version>2.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind.external</groupId>
-      <artifactId>rngom</artifactId>
-      <version>2.3.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.jvnet.jaxb2.maven2</groupId>
       <artifactId>maven-jaxb2-plugin</artifactId>
       <version>0.13.2</version>
@@ -381,6 +366,22 @@
       <groupId>org.jvnet.jaxb2_commons</groupId>
       <artifactId>jaxb2-basics</artifactId>
       <version>0.11.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-ri-bom</artifactId>
+      <version>2.2.10</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+      <version>2.2.10</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-tools</artifactId>
+      <version>2.2.10</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>

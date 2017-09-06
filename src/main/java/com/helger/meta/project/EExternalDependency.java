@@ -95,6 +95,7 @@ public enum EExternalDependency
   JAXB_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB_BOM),
   JAXB_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB_BOM),
   JAXB_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB_BOM),
+  JAXB_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB_BOM),
   JAXB_TXW2 ("org.glassfish.jaxb", "txw2", JAXB_BOM),
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
 
@@ -110,16 +111,22 @@ public enum EExternalDependency
   JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
   JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB_IMPL_SUN),
 
-  JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
-  JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
-  JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
-  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB9_IMPL_SUN),
+  // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
+  // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
+  // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
+  // JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB9_IMPL_SUN),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.2", EJDK.JDK6),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
-  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0", EJDK.JDK6),
+
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10", EJDK.JDK6),
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
+
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0", EJDK.JDK9),
+  JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
+  JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
+
   JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248", EJDK.JDK6),
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
@@ -353,7 +360,11 @@ public enum EExternalDependency
 
   public boolean isBOM ()
   {
-    return this == JAXB_BOM || this == JAXB9_BOM || this == JERSEY2_BOM || this == JAXWS_RI_BOM;
+    return this == JAXB_BOM ||
+           this == JAXB9_BOM ||
+           this == JERSEY2_BOM ||
+           this == JAXWS_RI_BOM ||
+           this == JAXWS9_RI_BOM;
   }
 
   @Nullable
