@@ -27,7 +27,8 @@ public enum EJDK
 {
   JDK6 (6),
   JDK7 (7),
-  JDK8 (8);
+  JDK8 (8),
+  JDK9 (9);
 
   private final int m_nMajor;
 

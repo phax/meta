@@ -33,13 +33,16 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.1", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
+
   ASM ("org.ow2.asm", "asm", "5.2", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
+
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.58", EJDK.JDK6),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
+
   CLOSURE ("com.google.javascript", "closure-compiler", "v20170806", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
@@ -50,10 +53,12 @@ public enum EExternalDependency
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK6),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK6),
   EASYMOCK ("org.easymock", "easymock", "3.4", EJDK.JDK6),
+
   ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.0", EJDK.JDK7),
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
+
   FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.8", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
@@ -72,30 +77,47 @@ public enum EExternalDependency
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.3", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
+
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.0", EJDK.JDK6),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
+
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.3.3", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.3.4", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.2", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
   JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.0", EJDK.JDK7),
+
   JAXB_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.2.11", EJDK.JDK6),
   JAXB_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB_BOM),
   JAXB_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB_BOM),
   JAXB_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB_BOM),
   JAXB_TXW2 ("org.glassfish.jaxb", "txw2", JAXB_BOM),
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
+
+  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.0", EJDK.JDK9),
+  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
+  JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB9_BOM),
+  JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
+  JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
+  JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
+
   JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK6),
   JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
   JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
   JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB_IMPL_SUN),
+
+  JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
+  JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
+  JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
+  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB9_IMPL_SUN),
+
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.2", EJDK.JDK6),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
-  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10", EJDK.JDK6),
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0", EJDK.JDK6),
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
   JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248", EJDK.JDK6),
@@ -141,6 +163,7 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.5", EJDK.JDK6),
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK6),
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
+  METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.5.0", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.7-dmr", EJDK.JDK6),
@@ -171,7 +194,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "1.4.20.Final", EJDK.JDK6),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.0.Final", EJDK.JDK6),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.4", EJDK.JDK6),
-  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.1.10", EJDK.JDK6),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.0", EJDK.JDK6),
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.0", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
@@ -184,7 +207,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK6),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "2.17", EJDK.JDK6),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.0.0", EJDK.JDK6),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.6.2", EJDK.JDK6),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.7.0", EJDK.JDK6),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.0.1", EJDK.JDK6),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK6),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "2.10.1", EJDK.JDK6),
@@ -196,7 +219,7 @@ public enum EExternalDependency
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.0.2", EJDK.JDK6),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "1.4", EJDK.JDK6),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "2.10.4", EJDK.JDK6),
-  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.0.0", EJDK.JDK6),
+  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.0", EJDK.JDK6),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "2.5", EJDK.JDK6),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.8", EJDK.JDK6),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "2.9", EJDK.JDK6),
@@ -330,7 +353,7 @@ public enum EExternalDependency
 
   public boolean isBOM ()
   {
-    return this == JAXB_BOM || this == JERSEY2_BOM || this == JAXWS_RI_BOM;
+    return this == JAXB_BOM || this == JAXB9_BOM || this == JERSEY2_BOM || this == JAXWS_RI_BOM;
   }
 
   @Nullable
