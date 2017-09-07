@@ -106,10 +106,10 @@ public enum EExternalDependency
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
   JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
 
-  JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK6),
-  JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
-  JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
-  JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB_IMPL_SUN),
+  // JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK6),
+  // JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
+  // JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
+  // JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB_IMPL_SUN),
 
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
   // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
@@ -131,20 +131,34 @@ public enum EExternalDependency
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
   JEROMQ ("org.zeromq", "jeromq", "0.4.2", EJDK.JDK6),
+
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK6),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
+
   // JDK 1.7 since 2.7
   JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.25.1", EJDK.JDK7),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
+  JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
+
+  // JDK 1.8 since 2.26
+  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "2.26", EJDK.JDK8),
+  JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
+  JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
+  JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
+  JERSEY3_HK2 ("org.glassfish.jersey.inject", "jersey-hk2", JERSEY3_BOM),
+  JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
+
   JETTY_92_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.2.21.v20170120", EJDK.JDK7),
   JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
   JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
+
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.6.v20170531", EJDK.JDK8),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_WEBAPP),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_WEBAPP),
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_WEBAPP),
+
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
   JODA_TIME ("joda-time", "joda-time", "2.9.9", EJDK.JDK6),
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
@@ -341,12 +355,12 @@ public enum EExternalDependency
         if (eForJDK.isAtLeast8 ())
           return JDK;
         break;
-      case JAXB_IMPL_SUN:
-        return JAXB_CORE;
-      case JAXB_JXC_SUN:
-        return JAXB_JXC;
-      case JAXB_XJC_SUN:
-        return JAXB_XJC;
+      // case JAXB_IMPL_SUN:
+      // return JAXB_CORE;
+      // case JAXB_JXC_SUN:
+      // return JAXB_JXC;
+      // case JAXB_XJC_SUN:
+      // return JAXB_XJC;
       case JSP_API_OLD:
         return JSP_API;
     }
@@ -363,6 +377,7 @@ public enum EExternalDependency
     return this == JAXB_BOM ||
            this == JAXB9_BOM ||
            this == JERSEY2_BOM ||
+           this == JERSEY3_BOM ||
            this == JAXWS_RI_BOM ||
            this == JAXWS9_RI_BOM;
   }
