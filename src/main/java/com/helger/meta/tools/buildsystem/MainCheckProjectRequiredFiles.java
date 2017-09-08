@@ -21,8 +21,8 @@ import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnull;
 
-import com.helger.commons.CGlobal;
 import com.helger.commons.changelog.CChangeLog;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.state.ESuccess;
 import com.helger.meta.AbstractProjectMain;
@@ -106,7 +106,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileNotExisting (aProject, "LICENSE");
 
     // Check for file contents
-    _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (CGlobal.CURRENT_YEAR));
+    _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
     if (new File (aProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
       _checkFileContains (aProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
   }

@@ -19,7 +19,7 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
-import com.helger.commons.CGlobal;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
@@ -36,7 +36,7 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
 {
   public static void main (final String [] args)
   {
-    final int nThisYear = CGlobal.CURRENT_YEAR;
+    final int nThisYear = PDTFactory.getCurrentYear ();
     final String sPrevYear = Integer.toString (nThisYear - 1);
     final String sThisYear = Integer.toString (nThisYear);
 
