@@ -164,6 +164,7 @@ public enum EProject implements IProject
                             "5.0.5",
                             EJDK.JDK8),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
+  PH_TENANCY (PH_MASTERDATA_PARENT_POM, "ph-tenancy", EProjectType.JAVA_LIBRARY, (String) null),
 
   PH_OTON_PARENT_POM ("ph-oton-parent-pom", "ph-oton", EHasPages.FALSE, EHasWiki.FALSE, "7.1.2", EJDK.JDK8),
   PH_OTON_HTML (PH_OTON_PARENT_POM, "ph-oton-html", EProjectType.JAVA_LIBRARY),

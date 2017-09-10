@@ -78,7 +78,7 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.0", EJDK.JDK6),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.1", EJDK.JDK6),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -103,6 +103,7 @@ public enum EExternalDependency
   JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
   JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB9_BOM),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
+  JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
   JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
 
@@ -196,7 +197,7 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
-  RXJAVA ("io.reactivex", "rxjava", "1.3.0", EJDK.JDK6),
+  RXJAVA ("io.reactivex", "rxjava", "1.3.1", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-4", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.5.3", EJDK.JDK6),
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
