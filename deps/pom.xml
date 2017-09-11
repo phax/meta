@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20170910</version>
+  <version>1.0.0-20170911</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>com.netflix.archaius</groupId>
@@ -248,7 +248,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.3.4</version>
+      <version>3.3.5</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
