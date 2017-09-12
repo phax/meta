@@ -110,7 +110,7 @@ public enum EExternalDependency
   // JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK6),
   // JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
   // JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
-  // JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB_IMPL_SUN),
+  JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.2.11", EJDK.JDK6),
 
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
   // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
