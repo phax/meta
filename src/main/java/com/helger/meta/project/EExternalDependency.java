@@ -68,7 +68,7 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.2", EJDK.JDK6),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.3", EJDK.JDK6),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.5", EJDK.JDK6),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.12", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.196", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
