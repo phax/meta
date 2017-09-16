@@ -70,11 +70,13 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     if (!aBaseDir.exists ())
     {
       sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR2);
-      aBaseDir = new File (sBaseDir);
+      if (sBaseDir != null)
+        aBaseDir = new File (sBaseDir);
       if (!aBaseDir.exists ())
       {
         sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR3);
-        aBaseDir = new File (sBaseDir);
+        if (sBaseDir != null)
+          aBaseDir = new File (sBaseDir);
       }
     }
 

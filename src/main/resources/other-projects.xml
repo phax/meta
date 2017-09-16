@@ -19,7 +19,7 @@
 -->
 <root>
   <!-- KB -->
-  <project projectname="kb-parent-pom" projecttype="maven-pom" basedir="P:\git\kellerbuch" minjdk="8">
+  <project projectname="kb-parent-pom" projecttype="maven-pom" basedir="P:\git\kellerbuch" basedir2="c:\dev\git\kellerbuch" minjdk="8">
     <project projectname="kb-app" />
     <project projectname="kb-core" />
     <project projectname="kb-domain" />
@@ -35,9 +35,9 @@
     <project projectname="wm-webapp"   projecttype="java-web-application" />
   </project>
   <!-- Ecoware etc. -->
-  <project projectname="ecoware-parent" projecttype="maven-pom" basedir="F:\svn-philip\dev\ecoware" minjdk="8">
+  <project projectname="ecoware-parent" projecttype="maven-pom" basedir="F:\svn-philip\dev\ecoware" basedir2="c:\dev\svn-philip\dev\ecoware" minjdk="8">
     <project projectname="ecoware-domain" />
     <project projectname="ecoware-ui" projecttype="java-web-application" />
   </project>
-  <project projectname="peppol-ap-lister" projecttype="java-application" basedir="F:\svn-philip\dev\peppol-ap-lister" minjdk="8" />
+  <project projectname="peppol-ap-lister" projecttype="java-application" basedir="F:\svn-philip\dev\peppol-ap-lister" basedir="c:\dev\svn-philip\dev\peppol-ap-lister" minjdk="8" />
 </root>
