@@ -62,4 +62,10 @@ public enum EProjectType implements IHasID <String>
   {
     return EnumHelper.getFromIDOrNull (EProjectType.class, sID);
   }
+
+  @Nullable
+  public static EProjectType getFromIDOrDefault (@Nullable final String sID, @Nullable final EProjectType eDefault)
+  {
+    return EnumHelper.getFromIDOrDefault (EProjectType.class, sID, eDefault);
+  }
 }

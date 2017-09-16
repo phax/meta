@@ -37,7 +37,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
 
 public final class ProjectList
 {
-  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap<> ();
+  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
 
   private static void _add (@Nonnull final IProject aProject)
   {
@@ -61,11 +61,20 @@ public final class ProjectList
     {
       final IMicroDocument aOthers = MicroReader.readMicroXML (aRes);
       if (aOthers != null)
+      {
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
         {
           final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
           _add (aProject);
+
+          for (final IMicroElement eSubProject : eProject.getAllChildElements ("project"))
+          {
+            final SimpleProject aSubProject = SimpleProjectMicroTypeConverter.convertToNativeWithParent (aProject,
+                                                                                                         eSubProject);
+            _add (aSubProject);
+          }
         }
+      }
     }
   }
 

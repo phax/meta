@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Copyright (C) 2014-2017 Philip Helger (www.helger.com)
+    philip[at]helger[dot]com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<root>
+  <!-- KB -->
+  <project projectname="kb-parent-pom" projecttype="maven-pom" basedir="P:\git\kellerbuch" minjdk="8">
+    <project projectname="kb-app" />
+    <project projectname="kb-core" />
+    <project projectname="kb-domain" />
+    <project projectname="kb-fon" />
+    <project projectname="kb-plugin-freefinance" />
+    <project projectname="kb-plugin-postingtransfer" />
+    <project projectname="kb-plugin-r2o"  />
+    <project projectname="kb-printprofile" />
+    <project projectname="kb-selenium" projecttype="java-application" />
+    <project projectname="kb-uicore" />
+    <project projectname="kb-webapp"   projecttype="java-web-application" />
+    <project projectname="vt-webapp"   projecttype="java-web-application" />
+    <project projectname="wm-webapp"   projecttype="java-web-application" />
+  </project>
+  <!-- Ecoware etc. -->
+  <project projectname="ecoware-parent" projecttype="maven-pom" basedir="F:\svn-philip\dev\ecoware" minjdk="8">
+    <project projectname="ecoware-domain" />
+    <project projectname="ecoware-ui" projecttype="java-web-application" />
+  </project>
+  <project projectname="peppol-ap-lister" projecttype="java-application" basedir="F:\svn-philip\dev\peppol-ap-lister" minjdk="8" />
+</root>

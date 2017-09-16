@@ -85,4 +85,33 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               sLastPublishedVersion,
                               eMinJDK);
   }
+
+  @Nonnull
+  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
+                                                         @Nonnull final IMicroElement aElement)
+  {
+    final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
+
+    final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
+    final EProjectType eProjectType = EProjectType.getFromIDOrDefault (sProjectTypeID, EProjectType.JAVA_LIBRARY);
+
+    final String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
+    final File aBaseDir = new File (aParentProject.getBaseDir (), sBaseDir != null ? sBaseDir : sProjectName);
+
+    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
+
+    String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
+    if (sLastPublishedVersion == null)
+      sLastPublishedVersion = aParentProject.getLastPublishedVersionString ();
+
+    return new SimpleProject (aParentProject,
+                              sProjectName,
+                              eProjectType,
+                              aBaseDir,
+                              EIsDeprecated.valueOf (bIsDeprecated),
+                              EHasPages.valueOf (aParentProject.hasPagesProject ()),
+                              EHasWiki.valueOf (aParentProject.hasWikiProject ()),
+                              sLastPublishedVersion,
+                              aParentProject.getMinimumJDKVersion ());
+  }
 }
