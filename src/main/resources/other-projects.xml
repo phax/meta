@@ -39,5 +39,5 @@
     <project projectname="ecoware-domain" />
     <project projectname="ecoware-ui" projecttype="java-web-application" />
   </project>
-  <project projectname="peppol-ap-lister" projecttype="java-application" basedir="F:\svn-philip\dev\peppol-ap-lister" basedir="c:\dev\svn-philip\dev\peppol-ap-lister" minjdk="8" />
+  <project projectname="peppol-ap-lister" projecttype="java-application" basedir="F:\svn-philip\dev\peppol-ap-lister" basedir2="c:\dev\svn-philip\dev\peppol-ap-lister" minjdk="8" />
 </root>
