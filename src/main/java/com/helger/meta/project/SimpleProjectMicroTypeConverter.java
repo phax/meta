@@ -32,6 +32,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
   private static final String ATTR_BASE_DIR = "basedir";
+  private static final String ATTR_BASE_DIR2 = "basedir2";
+  private static final String ATTR_BASE_DIR3 = "basedir3";
   private static final String ATTR_IS_DEPRECATED = "isdeprecated";
   private static final String ATTR_HAS_PAGES = "haspages";
   private static final String ATTR_HAS_WIKI = "haswiki";
@@ -63,8 +65,18 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
     final EProjectType eProjectType = EProjectType.getFromIDOrNull (sProjectTypeID);
 
-    final String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
-    final File aBaseDir = new File (sBaseDir);
+    String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
+    File aBaseDir = new File (sBaseDir);
+    if (!aBaseDir.exists ())
+    {
+      sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR2);
+      aBaseDir = new File (sBaseDir);
+      if (!aBaseDir.exists ())
+      {
+        sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR3);
+        aBaseDir = new File (sBaseDir);
+      }
+    }
 
     final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
     final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES), false);
