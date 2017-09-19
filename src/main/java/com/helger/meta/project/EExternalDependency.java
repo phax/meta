@@ -85,7 +85,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.3.5", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.4.0", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.2", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
@@ -155,7 +155,7 @@ public enum EExternalDependency
   JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
   JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
 
-  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.6.v20170531", EJDK.JDK8),
+  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.7.v20170914", EJDK.JDK8),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_WEBAPP),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_WEBAPP),
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_WEBAPP),
@@ -176,7 +176,7 @@ public enum EExternalDependency
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.9.0", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "6.6.1", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.0.0", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
