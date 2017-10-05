@@ -16,17 +16,25 @@
  */
 package com.helger.meta.project;
 
+import java.io.File;
 import java.util.function.Predicate;
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.helger.commons.ValueEnforcer;
+import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.collection.CollectionHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
+import com.helger.commons.collection.impl.CommonsLinkedHashSet;
 import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.collection.impl.ICommonsOrderedMap;
+import com.helger.commons.collection.impl.ICommonsOrderedSet;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.commons.io.resource.IReadableResource;
 import com.helger.commons.string.StringHelper;
@@ -35,8 +43,20 @@ import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.convert.MicroTypeConverter;
 import com.helger.xml.microdom.serialize.MicroReader;
 
+/**
+ * Overall project list. Contains:
+ * <ul>
+ * <li>{@link EProject}</li>
+ * <li>{@link EProjectDeprecated}</li>
+ * <li>and all custom projects</li>
+ * </ul>
+ *
+ * @author Philip Helger
+ */
 public final class ProjectList
 {
+  private static final Logger s_aLogger = LoggerFactory.getLogger (ProjectList.class);
+  private static final ICommonsOrderedSet <File> s_aBaseDirs = new CommonsLinkedHashSet <> ();
   private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
 
   private static void _add (@Nonnull final IProject aProject)
@@ -62,6 +82,21 @@ public final class ProjectList
       final IMicroDocument aOthers = MicroReader.readMicroXML (aRes);
       if (aOthers != null)
       {
+        for (final IMicroElement eBaseDir : aOthers.getDocumentElement ().getAllChildElements ("basedir"))
+        {
+          final String sBaseDir = eBaseDir.getTextContentTrimmed ();
+          final File aBaseDir = new File (sBaseDir);
+          if (aBaseDir.exists ())
+            if (!s_aBaseDirs.add (aBaseDir))
+              s_aLogger.warn ("Duplicate base dir present: " + aBaseDir);
+            else
+              if (s_aLogger.isDebugEnabled ())
+                s_aLogger.debug ("Added base dir " + aBaseDir.getAbsolutePath ());
+        }
+
+        if (s_aBaseDirs.isEmpty ())
+          s_aLogger.error ("No base directory is present - resolution of other projects will fail!");
+
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
         {
           final SimpleProject aProject = MicroTypeConverter.convertToNative (eProject, SimpleProject.class);
@@ -113,5 +148,22 @@ public final class ProjectList
       return false;
 
     return CollectionHelper.containsAny (s_aName2Project.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
+  }
+
+  @Nonnull
+  public static File findBaseDirectory (@Nonnull @Nonempty final String sDir)
+  {
+    ValueEnforcer.notEmpty (sDir, "Dir");
+    for (final File aBaseDir : s_aBaseDirs)
+    {
+      final File ret = new File (aBaseDir, sDir);
+      if (ret.exists ())
+      {
+        if (s_aLogger.isDebugEnabled ())
+          s_aLogger.debug ("Resolved '" + sDir + "' to " + ret.getAbsolutePath ());
+        return ret;
+      }
+    }
+    throw new IllegalStateException ("Failed to resolve directory '" + sDir + "' in " + s_aBaseDirs.toString ());
   }
 }

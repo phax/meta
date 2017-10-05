@@ -38,7 +38,7 @@ public enum EExternalDependency
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   ASM9 ("org.ow2.asm", "asm", "6.0", EJDK.JDK9),
-  ASM9_TREE ("org.ow2.asm", "asm-tree", ASM),
+  ASM9_TREE ("org.ow2.asm", "asm-tree", ASM9),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.58", EJDK.JDK6),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
@@ -70,7 +70,7 @@ public enum EExternalDependency
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK6),
   FOP ("org.apache.xmlgraphics", "fop", "2.2", EJDK.JDK6),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.3", EJDK.JDK6),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.4.1", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.12", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.196", EJDK.JDK6),
@@ -88,7 +88,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.4.1", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.4.2", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.2", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
@@ -158,12 +158,14 @@ public enum EExternalDependency
   JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
   JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
 
-  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.4.7.v20170914", EJDK.JDK8),
-  JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_WEBAPP),
-  JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_WEBAPP),
-  JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_WEBAPP),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.7.v20170914", EJDK.JDK8),
+  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
+  JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
+  JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
+  JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
+  JJWT ("io.jsonwebtoken", "jjwt", "0.8.0", EJDK.JDK8),
   JODA_TIME ("joda-time", "joda-time", "2.9.9", EJDK.JDK6),
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK6),
@@ -191,7 +193,7 @@ public enum EExternalDependency
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.5.0", EJDK.JDK6),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.7-dmr", EJDK.JDK6),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.7", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
@@ -223,6 +225,8 @@ public enum EExternalDependency
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.0", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
+  ZXING_CORE ("com.google.zxing", "core", "3.3.0", EJDK.JDK8),
+  ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0", EJDK.JDK6),
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "3.3.0", EJDK.JDK6),
@@ -382,6 +386,7 @@ public enum EExternalDependency
            this == JAXB9_BOM ||
            this == JERSEY2_BOM ||
            this == JERSEY3_BOM ||
+           this == JETTY_BOM ||
            this == JAXWS_RI_BOM ||
            this == JAXWS9_RI_BOM;
   }

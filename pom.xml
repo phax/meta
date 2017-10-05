@@ -130,6 +130,7 @@
         <configuration>
           <excludes>
             <exclude>src/main/resources/*.xsd</exclude>
+            <exclude>src/test/resources/wsdlgen/**/*</exclude>
             <exclude>**/NOTICE</exclude>
             <exclude>**/LICENSE</exclude>
             <exclude>deps/pom.xml</exclude>

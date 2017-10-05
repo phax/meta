@@ -31,9 +31,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 {
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
-  private static final String ATTR_BASE_DIR = "basedir";
-  private static final String ATTR_BASE_DIR2 = "basedir2";
-  private static final String ATTR_BASE_DIR3 = "basedir3";
+  private static final String ATTR_DIR = "dir";
   private static final String ATTR_IS_DEPRECATED = "isdeprecated";
   private static final String ATTR_HAS_PAGES = "haspages";
   private static final String ATTR_HAS_WIKI = "haswiki";
@@ -48,7 +46,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
     ret.setAttribute (ATTR_PROJECT_NAME, aValue.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aValue.getProjectType ().getID ());
-    ret.setAttribute (ATTR_BASE_DIR, aValue.getBaseDir ().getAbsolutePath ());
+    ret.setAttribute (ATTR_DIR, aValue.getBaseDir ().getName ());
     ret.setAttribute (ATTR_IS_DEPRECATED, aValue.isDeprecated ());
     ret.setAttribute (ATTR_HAS_PAGES, aValue.hasPagesProject ());
     ret.setAttribute (ATTR_HAS_WIKI, aValue.hasWikiProject ());
@@ -65,20 +63,11 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
     final EProjectType eProjectType = EProjectType.getFromIDOrNull (sProjectTypeID);
 
-    String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
-    File aBaseDir = new File (sBaseDir);
-    if (!aBaseDir.exists ())
-    {
-      sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR2);
-      if (sBaseDir != null)
-        aBaseDir = new File (sBaseDir);
-      if (!aBaseDir.exists ())
-      {
-        sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR3);
-        if (sBaseDir != null)
-          aBaseDir = new File (sBaseDir);
-      }
-    }
+    String sDir = aElement.getAttributeValue (ATTR_DIR);
+    if (sDir == null)
+      sDir = sProjectName;
+
+    final File aBaseDir = ProjectList.findBaseDirectory (sDir);
 
     final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
     final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES), false);
@@ -109,8 +98,10 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
     final EProjectType eProjectType = EProjectType.getFromIDOrDefault (sProjectTypeID, EProjectType.JAVA_LIBRARY);
 
-    final String sBaseDir = aElement.getAttributeValue (ATTR_BASE_DIR);
-    final File aBaseDir = new File (aParentProject.getBaseDir (), sBaseDir != null ? sBaseDir : sProjectName);
+    String sDir = aElement.getAttributeValue (ATTR_DIR);
+    if (sDir == null)
+      sDir = sProjectName;
+    final File aBaseDir = new File (aParentProject.getBaseDir (), sDir);
 
     final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
 

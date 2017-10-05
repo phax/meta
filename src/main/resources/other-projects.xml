@@ -18,11 +18,14 @@
 
 -->
 <root>
+  <basedir>p:\git</basedir>
+  <basedir>F:\svn-philip\dev</basedir>
+  <basedir>c:\dev\git</basedir>
+  <basedir>c:\dev\svn-philip\dev</basedir>
+  <basedir>d:\Entwicklung\git</basedir>
+  <basedir>d:\Entwicklung\svn\svn-philip\dev</basedir>
   <!-- KB -->
-  <project projectname="kb-parent-pom" projecttype="maven-pom" minjdk="8" 
-           basedir="P:\git\kellerbuch" 
-           basedir2="c:\dev\git\kellerbuch"
-           basedir3="d:\Entwicklung\git\kellerbuch">
+  <project projectname="kb-parent-pom" projecttype="maven-pom" minjdk="8" dir="kellerbuch">
     <project projectname="kb-app" />
     <project projectname="kb-core" />
     <project projectname="kb-domain" />
@@ -38,15 +41,9 @@
     <project projectname="wm-webapp"   projecttype="java-web-application" />
   </project>
   <!-- Ecoware etc. -->
-  <project projectname="ecoware-parent" projecttype="maven-pom" minjdk="8"
-           basedir="F:\svn-philip\dev\ecoware"
-           basedir2="c:\dev\svn-philip\dev\ecoware"
-           basedir3="d:\Entwicklung\svn\svn-philip\dev\ecoware">
+  <project projectname="ecoware-parent-pom" projecttype="maven-pom" minjdk="8" dir="ecoware">
     <project projectname="ecoware-domain" />
     <project projectname="ecoware-ui" projecttype="java-web-application" />
   </project>
-  <project projectname="peppol-ap-lister" projecttype="java-application" minjdk="8" 
-           basedir="F:\svn-philip\dev\peppol-ap-lister"
-           basedir2="c:\dev\svn-philip\dev\peppol-ap-lister"
-           basedir3="d:\Entwicklung\svn\svn-philip\dev\peppol-ap-lister" />
+  <project projectname="peppol-ap-lister" projecttype="java-application" minjdk="8" />
 </root>
