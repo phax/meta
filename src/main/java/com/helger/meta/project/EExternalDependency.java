@@ -16,6 +16,7 @@
  */
 package com.helger.meta.project;
 
+import java.lang.reflect.Field;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
@@ -34,7 +35,9 @@ public enum EExternalDependency
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
 
+  @IsLegacy
   ASM ("org.ow2.asm", "asm", "5.2", EJDK.JDK6),
+  @IsLegacy
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   ASM9 ("org.ow2.asm", "asm", "6.0", EJDK.JDK9),
@@ -63,6 +66,7 @@ public enum EExternalDependency
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
   FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.8", EJDK.JDK6),
+  @IsLegacy
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.0.0", EJDK.JDK6),
@@ -94,14 +98,23 @@ public enum EExternalDependency
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
   JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.0", EJDK.JDK7),
 
+  @IsBOM
+  @IsLegacy
   JAXB_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.2.11", EJDK.JDK6),
+  @IsLegacy
   JAXB_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB_BOM),
+  @IsLegacy
   JAXB_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB_BOM),
+  @IsLegacy
   JAXB_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB_BOM),
+  @IsLegacy
   JAXB_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB_BOM),
+  @IsLegacy
   JAXB_TXW2 ("org.glassfish.jaxb", "txw2", JAXB_BOM),
+  @IsLegacy
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
 
+  @IsBOM
   JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.0", EJDK.JDK9),
   JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
   JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB9_BOM),
@@ -113,6 +126,7 @@ public enum EExternalDependency
   // JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK6),
   // JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
   // JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
+  @IsLegacy
   JAXB_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.2.11", EJDK.JDK6),
 
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
@@ -123,10 +137,15 @@ public enum EExternalDependency
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.2", EJDK.JDK6),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
 
+  @IsBOM
+  @IsLegacy
   JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10", EJDK.JDK6),
+  @IsLegacy
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
+  @IsLegacy
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
+  @IsBOM
   JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
@@ -140,24 +159,16 @@ public enum EExternalDependency
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
 
   // JDK 1.7 since 2.7
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.25.1", EJDK.JDK7),
+  // JDK 1.8 since 2.26
+  @IsBOM
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.26", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
+  JERSEY2_HK2 ("org.glassfish.jersey.inject", "jersey-hk2", JERSEY2_BOM),
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
-  // JDK 1.8 since 2.26
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "2.26", EJDK.JDK8),
-  JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
-  JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
-  JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
-  JERSEY3_HK2 ("org.glassfish.jersey.inject", "jersey-hk2", JERSEY3_BOM),
-  JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
-
-  JETTY_92_WEBAPP ("org.eclipse.jetty", "jetty-webapp", "9.2.21.v20170120", EJDK.JDK7),
-  JETTY_92_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_92_WEBAPP),
-  JETTY_92_JSP ("org.eclipse.jetty", "jetty-jsp", JETTY_92_WEBAPP),
-
+  @IsBOM
   JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.7.v20170914", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
@@ -167,6 +178,7 @@ public enum EExternalDependency
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
   JJWT ("io.jsonwebtoken", "jjwt", "0.8.0", EJDK.JDK8),
   JODA_TIME ("joda-time", "joda-time", "2.9.9", EJDK.JDK6),
+  @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK6),
   JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2", EJDK.JDK6),
@@ -174,21 +186,26 @@ public enum EExternalDependency
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK7),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK6),
   JUNIT ("junit", "junit", "4.12", EJDK.JDK6),
+
+  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.0.1", EJDK.JDK8),
+  JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", JUNIT5_JUPITER_API),
+  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "4.12.1", EJDK.JDK8),
+
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
-  LOG4J2_23_CORE ("org.apache.logging.log4j", "log4j-core", "2.3", EJDK.JDK6),
-  LOG4J2_23_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_23_CORE),
-  LOG4J2_23_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_23_CORE),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.9.1", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.0.0", EJDK.JDK7),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.0.1", EJDK.JDK7),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.5", EJDK.JDK6),
+  @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK6),
+  @IsLegacy
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
@@ -203,9 +220,11 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.2", EJDK.JDK6),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-4", EJDK.JDK6),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-5", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.6.0", EJDK.JDK6),
+  @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
+  @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.0", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK6),
@@ -273,6 +292,8 @@ public enum EExternalDependency
   private final String m_sVersion;
   private final Version m_aVersion;
   private final EJDK m_eMinJDK;
+  private final boolean m_bIsBOM;
+  private final boolean m_bIsLegacy;
 
   private EExternalDependency (@Nonnull @Nonempty final String sGroupID,
                                @Nonnull @Nonempty final String sArticfactID,
@@ -291,6 +312,16 @@ public enum EExternalDependency
     m_sVersion = sVersion;
     m_aVersion = Version.parse (sVersion);
     m_eMinJDK = eMinJDK;
+    try
+    {
+      final Field aField = EExternalDependency.class.getField (name ());
+      m_bIsBOM = aField.isAnnotationPresent (IsBOM.class);
+      m_bIsLegacy = aField.isAnnotationPresent (IsLegacy.class);
+    }
+    catch (final Exception ex)
+    {
+      throw new IllegalStateException (ex);
+    }
   }
 
   @Nonnull
@@ -382,13 +413,12 @@ public enum EExternalDependency
 
   public boolean isBOM ()
   {
-    return this == JAXB_BOM ||
-           this == JAXB9_BOM ||
-           this == JERSEY2_BOM ||
-           this == JERSEY3_BOM ||
-           this == JETTY_BOM ||
-           this == JAXWS_RI_BOM ||
-           this == JAXWS9_RI_BOM;
+    return m_bIsBOM;
+  }
+
+  public boolean isLegacy ()
+  {
+    return m_bIsLegacy;
   }
 
   @Nullable

@@ -18,7 +18,6 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.time.format.DateTimeFormatter;
-import java.util.function.Predicate;
 
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
@@ -50,21 +49,10 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
     eProject.appendElement (NS, "version")
             .appendText ("1.0.0-" + DateTimeFormatter.BASIC_ISO_DATE.format (PDTFactory.getCurrentLocalDateTime ()));
 
-    final Predicate <EExternalDependency> aFilter = x -> x != EExternalDependency.M2E &&
-                                                         x != EExternalDependency.JDK &&
-                                                         x != EExternalDependency.FINDBUGS_ANNOTATIONS_2 &&
-                                                         x != EExternalDependency.LOG4J2_23_CORE &&
-                                                         x != EExternalDependency.LOG4J2_23_SLF4J &&
-                                                         x != EExternalDependency.LOG4J2_23_WEB &&
-                                                         x != EExternalDependency.SERVLET_API_301 &&
-                                                         x != EExternalDependency.JETTY_92_ANNOTATIONS &&
-                                                         x != EExternalDependency.JETTY_92_JSP &&
-                                                         x != EExternalDependency.JETTY_92_WEBAPP;
-
     final IMicroElement eDeps = eProject.appendElement (NS, "dependencies");
     eDeps.appendComment ("External dependencies:");
     for (final EExternalDependency e : EExternalDependency.values ())
-      if (aFilter.test (e))
+      if (!e.isLegacy ())
       {
         final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
         eDep.appendElement (NS, "groupId").appendText (e.getGroupID ());
