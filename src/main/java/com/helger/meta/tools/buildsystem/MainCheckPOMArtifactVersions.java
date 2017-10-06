@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.ArrayHelper;
-import com.helger.commons.collection.impl.CommonsHashMap;
+import com.helger.commons.collection.impl.CommonsLinkedHashMap;
 import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
@@ -103,6 +103,35 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
   }
 
+  @Nonnull
+  private static String _getResolvedVar (@Nonnull final String sText,
+                                         @Nonnull final ICommonsMap <String, String> aProps)
+  {
+    String ret = sText;
+    while (true)
+    {
+      final int nIndex = ret.indexOf ("${");
+      if (nIndex < 0)
+        break;
+
+      final int nIndex2 = ret.indexOf ("}");
+      if (nIndex2 < 0)
+        break;
+
+      // Variable name
+      final String sVar = ret.substring (nIndex, nIndex2 + 1);
+
+      // Resolved value
+      final String sNewValue = aProps.get (sVar);
+      if (sNewValue == null)
+        throw new IllegalStateException ("Failed to resolve variable " + sVar + " in " + aProps);
+
+      // Replace
+      ret = ret.substring (0, nIndex) + sNewValue + ret.substring (nIndex2 + 1);
+    }
+    return ret;
+  }
+
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
   {
     if (s_aLogger.isDebugEnabled ())
@@ -113,15 +142,20 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final String sGitHubOrganization = aProject.getGitHubOrganization ();
 
     // Read all properties
-    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
+    final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
-        eProperties.forAllChildElements (eProperty -> aProperties.put ("${" + eProperty.getTagName () + "}",
-                                                                       eProperty.getTextContentTrimmed ()));
+        eProperties.forAllChildElements (eProperty -> {
+          String sValue = eProperty.getTextContentTrimmed ();
+          sValue = _getResolvedVar (sValue, aProperties);
+          aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
+        });
     }
 
     // Check parent POM
+    String sParentPOMGroupId = null;
+    String sParentPOMArtifactId = null;
     String sParentPOMVersion = null;
     {
       final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
@@ -133,6 +167,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       else
       {
         final String sGroupId = MicroHelper.getChildTextContent (eParent, "groupId");
+        sParentPOMGroupId = sGroupId;
         if (!PARENT_POM_GROUPID.equals (sGroupId))
         {
           if (aProject.isBuildInProject ())
@@ -142,20 +177,25 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         {
           // Check only if groupId matches
           final String sArtifactId = MicroHelper.getChildTextContent (eParent, "artifactId");
+          sParentPOMArtifactId = sArtifactId;
+          boolean bCheckVersion = true;
           if (!PARENT_POM_ARTIFACTID.equals (sArtifactId))
           {
+            bCheckVersion = false;
             if (aProject.isNestedProject () && aProject.getParentProject ().getProjectName ().equals (sArtifactId))
             {
               // It's ok
             }
             else
+            {
               _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+            }
           }
-          else
+
           {
             // Check version only if group and artifact match
             final String sVersion = MicroHelper.getChildTextContent (eParent, "version");
-            if (!_getParentPOMVersion (aProject).equals (sVersion))
+            if (bCheckVersion && !_getParentPOMVersion (aProject).equals (sVersion))
               _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
             sParentPOMVersion = sVersion;
           }
@@ -182,12 +222,31 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                          ".");
     }
 
-    // Check version
+    // Group ID for properties
+    {
+      String sGroupId = MicroHelper.getChildTextContent (eRoot, "groupId");
+      if (sGroupId == null)
+        sGroupId = sParentPOMGroupId;
+      if (sGroupId != null)
+        aProperties.put ("${project.groupId}", sGroupId);
+    }
+
+    // Artifact ID for properties
+    {
+      String sArtifactId = MicroHelper.getChildTextContent (eRoot, "artifactId");
+      if (sArtifactId == null)
+        sArtifactId = sParentPOMArtifactId;
+      if (sArtifactId != null)
+        aProperties.put ("${project.artifactId}", sArtifactId);
+    }
+
+    // Version for properties
     {
       String sVersion = MicroHelper.getChildTextContent (eRoot, "version");
       if (sVersion == null)
         sVersion = sParentPOMVersion;
-      aProperties.put ("${project.version}", sVersion);
+      if (sVersion != null)
+        aProperties.put ("${project.version}", sVersion);
     }
 
     // Check URL
@@ -277,14 +336,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           {
             // Try to resolve through properties. May be null if properties
             // are in the parent POM
-            sGroupID = aProperties.get (sGroupID);
+            sGroupID = _getResolvedVar (sGroupID, aProperties);
           }
           String sArtifactID = aElement.getTextContentTrimmed ();
           if (sArtifactID != null && sArtifactID.contains ("$"))
           {
             // Try to resolve through properties. May be null if properties
             // are in the parent POM
-            sArtifactID = aProperties.get (sArtifactID);
+            sArtifactID = _getResolvedVar (sArtifactID, aProperties);
           }
           // Version is optional e.g. when dependencyManagement is used
           String sVersion = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "version");
@@ -292,7 +351,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           {
             // Try to resolve through properties. May be null if properties
             // are in the parent POM
-            sVersion = aProperties.get (sVersion);
+            sVersion = _getResolvedVar (sVersion, aProperties);
           }
 
           if (_isSupportedGroupID (sGroupID))
@@ -323,6 +382,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                                 eProjectJDK == EJDK.JDK6;
 
                 if (!bIsSpecialCase1 && !bIsSpecialCase2 && !bIsSpecialCase3)
+                {
                   _info (aProject,
                          "Incompatible artifact " +
                                    sGroupID +
@@ -334,6 +394,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                    aReferencedProject.getMinimumJDKVersion ().getDisplayName () +
                                    ") for this project requiring " +
                                    eProjectJDK.getDisplayName ());
+                }
                 continue;
               }
 

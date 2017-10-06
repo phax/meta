@@ -30,18 +30,17 @@ import com.helger.commons.version.Version;
 
 public enum EExternalDependency
 {
+  API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.0.0", EJDK.JDK8),
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.5", EJDK.JDK6),
   ANT ("org.apache.ant", "ant", "1.10.1", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-
   @IsLegacy
   ASM ("org.ow2.asm", "asm", "5.2", EJDK.JDK6),
   @IsLegacy
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
-
-  ASM9 ("org.ow2.asm", "asm", "6.0", EJDK.JDK9),
-  ASM9_TREE ("org.ow2.asm", "asm-tree", ASM9),
+  ASM6 ("org.ow2.asm", "asm", "6.0", EJDK.JDK9),
+  ASM6_TREE ("org.ow2.asm", "asm-tree", ASM6),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.58", EJDK.JDK6),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
@@ -150,7 +149,6 @@ public enum EExternalDependency
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
 
-  JAXWS_MAVEN_PLUGIN_OLD ("org.jvnet.jax-ws-commons", "jaxws-maven-plugin", "2.3.1-b20150201.1248", EJDK.JDK6),
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
   JEROMQ ("org.zeromq", "jeromq", "0.4.2", EJDK.JDK6),
@@ -190,6 +188,9 @@ public enum EExternalDependency
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.0.1", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.0.1", EJDK.JDK8),
+  JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform",
+                                     "junit-platform-surefire-provider",
+                                     JUNIT5_PLATFORM_LAUNCHER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "4.12.1", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
@@ -386,8 +387,6 @@ public enum EExternalDependency
   {
     switch (this)
     {
-      case JAXWS_MAVEN_PLUGIN_OLD:
-        return JAXWS_MAVEN_PLUGIN;
       case JODA_TIME:
       case RHINO:
       case XERCES:
