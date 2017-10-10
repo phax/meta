@@ -119,6 +119,9 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               final String sExportPackage = aInstructionMap.get (EXPORT_PACKAGE);
               if (StringHelper.hasNoText (sExportPackage))
                 _warn (aProject, "No " + EXPORT_PACKAGE + " present!");
+              else
+                if (StringHelper.hasText (sAutomaticModuleName) && !sExportPackage.equals (sAutomaticModuleName + ".*"))
+                  _warn (aProject, "Weird " + EXPORT_PACKAGE + " present: " + sExportPackage);
 
               final String sImportPackage = aInstructionMap.get (IMPORT_PACKAGE);
               if (!"!javax.annotation.*,*".equals (sImportPackage))
