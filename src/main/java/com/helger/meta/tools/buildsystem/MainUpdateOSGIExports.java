@@ -36,7 +36,6 @@ import com.helger.commons.mock.SPITestHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
-import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.xml.EXMLParserFeature;
@@ -56,6 +55,7 @@ import com.helger.xml.serialize.write.XMLWriterSettings;
 public final class MainUpdateOSGIExports extends AbstractProjectMain
 {
   private static final String NS_MAVEN = "http://maven.apache.org/POM/4.0.0";
+  private static final String AUTOMATIC_MODULE_NAME = "Automatic-Module-Name";
   private static final String EXPORT_PACKAGE = "Export-Package";
   private static final String IMPORT_PACKAGE = "Import-Package";
   private static final String REQUIRE_CAPABILITY = "Require-Capability";
@@ -112,14 +112,17 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               eInstructions.forAllChildElements (x -> aInstructionMap.put (x.getLocalName (),
                                                                            x.getTextContentTrimmed ()));
 
+              final String sAutomaticModuleName = aInstructionMap.get (AUTOMATIC_MODULE_NAME);
+              if (StringHelper.hasNoText (sAutomaticModuleName))
+                _warn (aProject, "No " + AUTOMATIC_MODULE_NAME + " present!");
+
               final String sExportPackage = aInstructionMap.get (EXPORT_PACKAGE);
               if (StringHelper.hasNoText (sExportPackage))
-                _warn (aProject, "No Export-Package present!");
+                _warn (aProject, "No " + EXPORT_PACKAGE + " present!");
 
               final String sImportPackage = aInstructionMap.get (IMPORT_PACKAGE);
               if (!"!javax.annotation.*,*".equals (sImportPackage))
-                if (aProject != EProject.PH_JAXB)
-                  _warn (aProject, "Import-Package is weird: " + sImportPackage);
+                _warn (aProject, IMPORT_PACKAGE + " is weird: " + sImportPackage);
 
               boolean bChanged = false;
               final ICommonsList <String> aRequireC = new CommonsArrayList <> ();
