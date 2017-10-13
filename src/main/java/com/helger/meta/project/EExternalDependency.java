@@ -174,7 +174,7 @@ public enum EExternalDependency
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
-  JJWT ("io.jsonwebtoken", "jjwt", "0.8.0", EJDK.JDK8),
+  JJWT ("io.jsonwebtoken", "jjwt", "0.9.0", EJDK.JDK8),
   JODA_TIME ("joda-time", "joda-time", "2.9.9", EJDK.JDK6),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),

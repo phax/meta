@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-10-10):
+Current list of all projects (as of 2017-10-13):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -459,7 +459,7 @@ Current list of all projects (as of 2017-10-10):
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 4.0.1 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
  * [ph-poi](https://github.com/phax/ph-poi) - Version 4.1.1 - JDK 1.8
 
@@ -640,6 +640,9 @@ Current list of all unreleased projects:
  * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
+ * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-oton/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
@@ -730,7 +733,7 @@ All deprecated projects:
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16) 
  * ph-pdf-layout - Version 3.5.2
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
  * ph-tinymce4 - Version 0.3.5
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4) 
