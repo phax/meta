@@ -85,7 +85,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileExisting (aProject, ".project");
     _checkFileExisting (aProject, "pom.xml");
     if (!aProject.isNestedProject ())
-      _checkFileExisting (aProject, "README.MD");
+    {
+      _checkFileExisting (aProject, "README.md");
+      _checkFileExisting (aProject, "CODE_OF_CONDUCT.md");
+    }
     _checkFileExisting (aProject, "findbugs-exclude.xml");
     _checkFileExisting (aProject, "src/etc/javadoc.css");
     _checkFileExisting (aProject, "src/etc/license-template.txt");
