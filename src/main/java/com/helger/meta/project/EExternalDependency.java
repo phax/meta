@@ -48,12 +48,12 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20170910", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20171023", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK6),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.4.2", EJDK.JDK7),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.4.3", EJDK.JDK7),
   DNSJAVA ("dnsjava", "dnsjava", "2.1.8", EJDK.JDK6),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK6),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK6),
@@ -245,7 +245,7 @@ public enum EExternalDependency
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.0", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
-  ZXING_CORE ("com.google.zxing", "core", "3.3.0", EJDK.JDK8),
+  ZXING_CORE ("com.google.zxing", "core", "3.3.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0", EJDK.JDK6),
