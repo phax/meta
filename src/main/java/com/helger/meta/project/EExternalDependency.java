@@ -91,7 +91,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.0", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.1", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.2", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
