@@ -46,6 +46,7 @@ import com.helger.commons.string.StringParser;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectDeprecated;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -301,7 +302,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             if (!ASMHelper.containsAnnotation (mn, ReturnsMutableCopy.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsMutableObject.class) &&
                 !ASMHelper.containsAnnotation (mn, ReturnsImmutableObject.class))
-              _warn (aProject, sPrefix +
+              _warn (aProject,
+                     sPrefix +
                                "returns a collection/array and therefore should be annotated with @ReturnsMutableCopy/@ReturnsMutableObject/@ReturnsImmutableObject");
         }
 
@@ -488,10 +490,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_STX_ENGINE)
+    if (aProject == EProjectDeprecated.PH_STX_ENGINE)
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_STX_PARSER &&
+    if (aProject == EProjectDeprecated.PH_STX_PARSER &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserSTX") ||
@@ -570,7 +572,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (aProject == EProject.PH_MINI_QUARTZ)
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_STX_ENGINE)
+    if (aProject == EProjectDeprecated.PH_STX_ENGINE)
       return EContinue.BREAK;
 
     return EContinue.CONTINUE;

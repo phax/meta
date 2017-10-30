@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-10-29):
+Current list of all projects (as of 2017-10-30):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -646,15 +646,6 @@ Current list of all unreleased projects:
  * [ph-oton/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-stx](https://github.com/phax/ph-stx) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
- * [ph-stx/ph-stx-engine](https://github.com/phax/ph-stx) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
- * [ph-stx/ph-stx-parser](https://github.com/phax/ph-stx) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-stx.svg?branch=master)](https://travis-ci.org/phax/ph-stx)
  * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
@@ -734,6 +725,9 @@ All deprecated projects:
  * ph-pdf-layout - Version 3.5.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
+ * ph-stx - never released
+ * ph-stx/ph-stx-engine - never released
+ * ph-stx/ph-stx-parser - never released
  * ph-tinymce4 - Version 0.3.5
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tinymce4) 
