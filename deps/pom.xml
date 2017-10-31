@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20171030</version>
+  <version>1.0.0-20171031</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -253,7 +253,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.5.0</version>
+      <version>3.5.1</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -617,7 +617,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-5</version>
+      <version>9.8.0-6</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -682,7 +682,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>1.4.20.Final</version>
+      <version>1.4.21.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
