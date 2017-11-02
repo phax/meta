@@ -35,12 +35,8 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.1", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  @IsLegacy
-  ASM ("org.ow2.asm", "asm", "5.2", EJDK.JDK6),
-  @IsLegacy
+  ASM ("org.ow2.asm", "asm", "6.0", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
-  ASM6 ("org.ow2.asm", "asm", "6.0", EJDK.JDK9),
-  ASM6_TREE ("org.ow2.asm", "asm-tree", ASM6),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.58", EJDK.JDK6),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
