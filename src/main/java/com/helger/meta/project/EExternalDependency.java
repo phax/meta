@@ -208,7 +208,7 @@ public enum EExternalDependency
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.5.0", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.7", EJDK.JDK6),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.8", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.17", EJDK.JDK6),
@@ -218,7 +218,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.3", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-6", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.6.0", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.7.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
