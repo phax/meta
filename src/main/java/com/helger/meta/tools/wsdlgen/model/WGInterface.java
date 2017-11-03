@@ -18,6 +18,7 @@ package com.helger.meta.tools.wsdlgen.model;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import javax.annotation.concurrent.NotThreadSafe;
 
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
@@ -32,6 +33,7 @@ import com.helger.meta.tools.wsdlgen.model.type.IWGType;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeDef;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeRegistry;
 
+@NotThreadSafe
 public class WGInterface
 {
   private final String m_sName;

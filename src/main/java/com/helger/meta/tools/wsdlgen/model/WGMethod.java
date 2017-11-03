@@ -17,6 +17,7 @@
 package com.helger.meta.tools.wsdlgen.model;
 
 import javax.annotation.Nonnull;
+import javax.annotation.concurrent.NotThreadSafe;
 
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
@@ -26,6 +27,7 @@ import com.helger.commons.collection.impl.ICommonsOrderedMap;
 import com.helger.commons.string.ToStringGenerator;
 import com.helger.meta.tools.wsdlgen.model.type.IWGType;
 
+@NotThreadSafe
 public class WGMethod
 {
   private final String m_sName;
