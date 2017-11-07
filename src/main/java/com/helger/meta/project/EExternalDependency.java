@@ -87,8 +87,8 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.1", EJDK.JDK8),
-  JAVACC ("net.java.dev.javacc", "javacc", "7.0.2", EJDK.JDK6),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.2", EJDK.JDK8),
+  JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
   JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.0", EJDK.JDK7),
@@ -218,7 +218,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.3", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-6", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.7.0", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.7.1", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
