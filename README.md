@@ -341,7 +341,7 @@ Current list of all projects (as of 2017-11-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis) 
    [![Build Status](https://travis-ci.org/phax/ph-forbidden-apis.svg?branch=master)](https://travis-ci.org/phax/ph-forbidden-apis)
- * [ph-genericode](https://github.com/phax/ph-genericode) - Version 5.0.1 - JDK 1.8
+ * [ph-genericode](https://github.com/phax/ph-genericode) - Version 6.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode) 
    [![Build Status](https://travis-ci.org/phax/ph-genericode.svg?branch=master)](https://travis-ci.org/phax/ph-genericode)
@@ -597,7 +597,7 @@ Current list of all projects (as of 2017-11-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 3.0.2 - JDK 1.8
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xmldsig.svg?branch=master)](https://travis-ci.org/phax/ph-xmldsig)
