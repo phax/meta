@@ -13,38 +13,38 @@ public class VotingServer
   /**
    * number of candidates on voting cards
    */
-  private final int candidates;
+  private final int m_nCandidates;
 
   /**
    * numbers of cards - the higher amount - the safer and slower voting is.
    */
-  private final int cardamount;
+  private final int m_nCardamount;
 
   /**
    * private key decriptor used to sign an decrypt votes
    */
-  private final BigInteger d;
+  private final BigInteger m_aD;
 
   /**
    * public key encriptor. everybody who wants use it to encrypt message
    */
-  public BigInteger e;
+  public BigInteger m_aE;
 
   /**
    * modulus used in encryption/decryption. everybody who wants use it
    */
-  public BigInteger mod;
+  public BigInteger m_aMod;
 
   /**
    * number of voting card which is typed to not be checked and if everything
    * will be ok with others to be signed
    */
-  public Integer norequest;
+  public Integer m_aNorequest;
 
   /**
    * all coded cards sended from client
    */
-  private BigInteger [] [] codedcards;
+  private BigInteger [] [] m_aCodedcards;
 
   /**
    * Voting Server constructor
@@ -55,13 +55,13 @@ public class VotingServer
                 final BigInteger e,
                 final BigInteger mod)
   {
-    this.candidates = candidates;
-    this.cardamount = cardamount;
-    this.d = d;
-    this.e = e;
-    this.mod = mod;
-    this.norequest = null;
-    this.codedcards = null;
+    this.m_nCandidates = candidates;
+    this.m_nCardamount = cardamount;
+    this.m_aD = d;
+    this.m_aE = e;
+    this.m_aMod = mod;
+    this.m_aNorequest = null;
+    this.m_aCodedcards = null;
   }
 
   /**
@@ -69,8 +69,8 @@ public class VotingServer
    */
   public void setCodedCards (final BigInteger [] [] codedcards)
   {
-    if (this.codedcards == null)
-      this.codedcards = codedcards;
+    if (this.m_aCodedcards == null)
+      this.m_aCodedcards = codedcards;
   }
 
   /**
@@ -78,14 +78,14 @@ public class VotingServer
    */
   public int drawNoRequest ()
   {
-    if (norequest == null)
-      norequest = (int) (Math.random () * (cardamount));
-    return norequest;
+    if (m_aNorequest == null)
+      m_aNorequest = Integer.valueOf ((int) (Math.random () * m_nCardamount));
+    return m_aNorequest.intValue ();
   }
 
   /**
    * The method check if format of cards are correct - if all without random one
-   * are correct - it means that one left in very high probablility is also
+   * are correct - it means that one left in very high propablility is also
    * correct
    *
    * @param rprim
@@ -93,20 +93,19 @@ public class VotingServer
    */
   public boolean checkCards (final BigInteger [] rprim)
   {
-
     String cardpattern = "";
 
-    for (Integer i = 1; i <= cardamount; ++i)
+    for (int i = 1; i <= m_nCardamount; ++i)
     {
-      if (!i.equals (norequest + 1))
+      if (i != m_aNorequest.intValue () + 1)
       {
-        for (int j = 1; j <= candidates; ++j)
+        for (int j = 1; j <= m_nCandidates; ++j)
         {
-          codedcards[i - 1][j - 1] = codedcards[i - 1][j - 1].modPow (d, mod)
-                                                             .multiply (rprim[i - 1])
-                                                             .mod (mod)
-                                                             .modPow (e, mod);// multiply(rprimd).mod(mod);
-          final String cleancard = codedcards[i - 1][j - 1].toString ();
+          m_aCodedcards[i - 1][j - 1] = m_aCodedcards[i - 1][j - 1].modPow (m_aD, m_aMod)
+                                                                   .multiply (rprim[i - 1])
+                                                                   .mod (m_aMod)
+                                                                   .modPow (m_aE, m_aMod);// multiply(rprimd).mod(mod);
+          final String cleancard = m_aCodedcards[i - 1][j - 1].toString ();
 
           // check if votes have correct length
           if (cleancard.length () != 10)
@@ -147,12 +146,11 @@ public class VotingServer
    */
   public BigInteger [] signCard ()
   {
-
-    if (norequest != null)
+    if (m_aNorequest != null)
     {
-      final BigInteger [] signedCard = new BigInteger [candidates];
-      for (int j = 1; j <= candidates; ++j)
-        signedCard[j - 1] = codedcards[norequest][j - 1].modPow (d, mod);
+      final BigInteger [] signedCard = new BigInteger [m_nCandidates];
+      for (int j = 1; j <= m_nCandidates; ++j)
+        signedCard[j - 1] = m_aCodedcards[m_aNorequest.intValue ()][j - 1].modPow (m_aD, m_aMod);
       return signedCard;
     }
     return null;
@@ -162,22 +160,18 @@ public class VotingServer
    * check if vote after encrypt is formated correctly (if it is it means that
    * vote was decrypted by private key of VotingServer)
    */
-  public boolean checkVote (BigInteger vote)
+  public boolean checkVote (final BigInteger aOrigVote)
   {
-
-    vote = vote.modPow (e, mod);
-    final int candidate = Integer.parseInt (Character.toString (vote.toString ().charAt (0)));
+    final BigInteger aVote = aOrigVote.modPow (m_aE, m_aMod);
+    final int candidate = Integer.parseInt (Character.toString (aVote.toString ().charAt (0)));
     // check here if vote is unique (in database)
-    if (vote.toString ().length () == 10 && candidate <= candidates && candidate >= 0)
+    if (aVote.toString ().length () == 10 && candidate <= m_nCandidates && candidate >= 0)
     {
-
-      collectVote (vote);
+      collectVote (aVote);
       return true;
-
     }
-    System.out.println ("VOTE INCORRECT!:" + vote.toString ());
+    System.out.println ("VOTE INCORRECT!:" + aVote.toString ());
     return false;
-
   }
 
   /**
@@ -185,7 +179,6 @@ public class VotingServer
    */
   private void collectVote (final BigInteger vote)
   {
-
     // add here function to add vote to database
     System.out.println ("VOTE:" + vote + " ADDED TO DATABASE.");
   }

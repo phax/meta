@@ -1,9 +1,6 @@
 package blindsignature;
 
 import java.math.BigInteger;
-import java.security.InvalidKeyException;
-import java.security.NoSuchProviderException;
-import java.security.SignatureException;
 
 /**
  * Blind Signature is a class which presents how to use VotingClient and
@@ -40,7 +37,7 @@ public class BlindSignature
    * @param args
    *        the command line arguments
    */
-  public static void main (final String [] args) throws NoSuchProviderException, InvalidKeyException, SignatureException
+  public static void main (final String [] args)
   {
     // TODO
     final BigInteger d = BigInteger.ZERO;
