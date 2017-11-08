@@ -82,14 +82,14 @@ public enum EProject implements IProject
   PH_XSDS_XADES141 (PH_XSDS_PARENT_POM, "ph-xsds-xades141", EProjectType.JAVA_LIBRARY),
   PH_XSDS_CCTS_CCT_SCHEMAMODULE (PH_XSDS_PARENT_POM, "ph-xsds-ccts-cct-schemamodule", EProjectType.JAVA_LIBRARY),
 
-  PH_BDE ("ph-bde", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.0", EJDK.JDK8),
+  PH_BDE ("ph-bde", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK8),
   PH_EBINTERFACE ("ph-ebinterface", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.TRUE, "5.1.2", EJDK.JDK8),
   PH_EVENTS ("ph-events", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
   PH_GENERICODE ("ph-genericode", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_ISORELAX ("ph-isorelax", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.1.1", EJDK.JDK8),
   PH_PDF_LAYOUT4 ("ph-pdf-layout4", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.1", EJDK.JDK8),
   PH_POI ("ph-poi", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "5.0.0", EJDK.JDK8),
-  PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "3.0.2", EJDK.JDK8),
+  PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
 
   PH_MATH_PARENT_POM ("ph-math-parent-pom", "ph-math", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
