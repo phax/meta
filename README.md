@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-11-08):
+Current list of all projects (as of 2017-11-09):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -173,19 +173,19 @@ Current list of all projects (as of 2017-11-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-buildinfo-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-buildinfo-maven-plugin)
- * [ph-cii](https://github.com/phax/ph-cii) - Version 1.0.0 - JDK 1.8
+ * [ph-cii](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 1.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 1.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 1.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
@@ -373,11 +373,11 @@ Current list of all projects (as of 2017-11-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-masterdata) 
    [![Build Status](https://travis-ci.org/phax/ph-masterdata.svg?branch=master)](https://travis-ci.org/phax/ph-masterdata)
- * [ph-math](https://github.com/phax/ph-math) - Version 3.0.0 - JDK 1.8
+ * [ph-math](https://github.com/phax/ph-math) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
- * [ph-math/ph-math](https://github.com/phax/ph-math) - Version 3.0.0 - JDK 1.8
+ * [ph-math/ph-math](https://github.com/phax/ph-math) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
@@ -469,7 +469,7 @@ Current list of all projects (as of 2017-11-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 4.0.1 - JDK 1.8
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
@@ -725,7 +725,7 @@ All deprecated projects:
  * ph-locales/ph-locales16 - Version 2.0.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-locales16) 
- * ph-pdf-layout - Version 3.5.2
+ * ph-pdf-layout - Version 3.5.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
  * ph-stx - never released

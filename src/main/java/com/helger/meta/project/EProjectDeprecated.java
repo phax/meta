@@ -66,7 +66,7 @@ public enum EProjectDeprecated implements IProject
                  EProjectType.JAVA_LIBRARY,
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
-                 "3.5.2",
+                 "3.5.3",
                  EJDK.JDK8),
 
   PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.4", EJDK.JDK8),
