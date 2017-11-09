@@ -92,7 +92,7 @@ public enum EProject implements IProject
   PH_SBDH ("ph-sbdh", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_XMLDSIG ("ph-xmldsig", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
 
-  PH_MATH_PARENT_POM ("ph-math-parent-pom", "ph-math", EHasPages.FALSE, EHasWiki.FALSE, "3.0.0", EJDK.JDK8),
+  PH_MATH_PARENT_POM ("ph-math-parent-pom", "ph-math", EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
   PH_MATH (PH_MATH_PARENT_POM, "ph-math", EProjectType.JAVA_LIBRARY),
 
   PH_FONTS_PARENT_POM ("ph-fonts-parent-pom", "ph-fonts", EHasPages.FALSE, EHasWiki.FALSE, "4.0.0", EJDK.JDK8),
