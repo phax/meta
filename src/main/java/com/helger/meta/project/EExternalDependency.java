@@ -31,7 +31,7 @@ import com.helger.commons.version.Version;
 public enum EExternalDependency
 {
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.0.0", EJDK.JDK8),
-  ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.5", EJDK.JDK6),
+  ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.6", EJDK.JDK6),
   ANT ("org.apache.ant", "ant", "1.10.1", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
