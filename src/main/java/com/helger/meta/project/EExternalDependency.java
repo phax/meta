@@ -60,7 +60,7 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.8", EJDK.JDK6),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.10", EJDK.JDK6),
   @IsLegacy
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
@@ -129,7 +129,7 @@ public enum EExternalDependency
   // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
   JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.0", EJDK.JDK9),
 
-  JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.2", EJDK.JDK6),
+  JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.3", EJDK.JDK6),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
 
   @IsBOM
