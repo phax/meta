@@ -44,7 +44,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20171023", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20171112", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.1.1", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
@@ -53,7 +53,7 @@ public enum EExternalDependency
   DNSJAVA ("dnsjava", "dnsjava", "2.1.8", EJDK.JDK6),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK6),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK6),
-  EASYMOCK ("org.easymock", "easymock", "3.5", EJDK.JDK6),
+  EASYMOCK ("org.easymock", "easymock", "3.5.1", EJDK.JDK6),
 
   ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.0", EJDK.JDK7),
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.3", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.4", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
@@ -147,7 +147,7 @@ public enum EExternalDependency
 
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
-  JEROMQ ("org.zeromq", "jeromq", "0.4.2", EJDK.JDK6),
+  JEROMQ ("org.zeromq", "jeromq", "0.4.3", EJDK.JDK6),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK6),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -216,7 +216,7 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
-  RXJAVA ("io.reactivex", "rxjava", "1.3.3", EJDK.JDK6),
+  RXJAVA ("io.reactivex", "rxjava", "1.3.4", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-6", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.7.1", EJDK.JDK6),
   @IsLegacy
