@@ -71,7 +71,7 @@ public enum EExternalDependency
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.4.1", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
-  GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.12", EJDK.JDK6),
+  GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.13", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.196", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.9", EJDK.JDK6),
@@ -190,7 +190,7 @@ public enum EExternalDependency
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "4.12.2", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.9.1", EJDK.JDK7),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.10.0", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.1.0", EJDK.JDK7),
