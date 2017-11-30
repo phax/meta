@@ -65,7 +65,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.0.0", EJDK.JDK6),
-  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.3", EJDK.JDK6),
+  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.4", EJDK.JDK6),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK6),
   FOP ("org.apache.xmlgraphics", "fop", "2.2", EJDK.JDK6),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
@@ -74,9 +74,9 @@ public enum EExternalDependency
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.13", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.196", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.9", EJDK.JDK6),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.9.1", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.8", EJDK.JDK6),
-  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.3", EJDK.JDK6),
+  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.4", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
@@ -163,7 +163,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.7.v20170914", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.8.v20171121", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -218,7 +218,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.7.2", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.4", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-6", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.7.1", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.8.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
