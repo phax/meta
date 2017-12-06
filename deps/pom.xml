@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20171130</version>
+  <version>1.0.0-20171206</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20171112</version>
+      <version>v20171203</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -253,7 +253,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.5.4</version>
+      <version>3.5.5</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -562,7 +562,7 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver</artifactId>
-      <version>3.5.0</version>
+      <version>3.6.0</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -622,7 +622,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.8.0</version>
+      <version>3.8.1</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -1220,18 +1220,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>3.6.1</version>
+      <version>4.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>3.6.1</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>3.6.1</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

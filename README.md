@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2017-11-30):
+Current list of all projects (as of 2017-12-06):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 3.1.0 - JDK 1.8
 
@@ -481,15 +481,15 @@ Current list of all projects (as of 2017-11-30):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
    [![Build Status](https://travis-ci.org/phax/ph-sbdh.svg?branch=master)](https://travis-ci.org/phax/ph-sbdh)
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 3.6.1 - JDK 1.8
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 3.6.1 - JDK 1.8
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mini-quartz) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 3.6.1 - JDK 1.8
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
