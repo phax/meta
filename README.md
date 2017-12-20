@@ -257,15 +257,15 @@ Current list of all projects (as of 2017-12-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 5.0.4 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 6.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 5.0.4 - JDK 1.8
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 5.0.4 - JDK 1.8
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
