@@ -1236,48 +1236,58 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-sitemap</artifactId>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>8.8.2</version>
+      <version>9.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-xservlet</artifactId>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

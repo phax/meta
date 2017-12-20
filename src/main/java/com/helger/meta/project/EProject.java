@@ -141,7 +141,7 @@ public enum EProject implements IProject
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
-  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "8.8.2", EJDK.JDK8),
+  PH_WEB_PARENT_POM ("ph-web-parent-pom", "ph-web", EHasPages.FALSE, EHasWiki.FALSE, "9.0.0", EJDK.JDK8),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_HTTP (PH_WEB_PARENT_POM, "ph-http", EProjectType.JAVA_LIBRARY),
   PH_USERAGENT (PH_WEB_PARENT_POM, "ph-useragent", EProjectType.JAVA_LIBRARY),
@@ -149,9 +149,9 @@ public enum EProject implements IProject
   PH_MAIL (PH_WEB_PARENT_POM, "ph-mail", EProjectType.JAVA_LIBRARY),
   PH_SMTP (PH_WEB_PARENT_POM, "ph-smtp", EProjectType.JAVA_LIBRARY),
   PH_HTTPCLIENT (PH_WEB_PARENT_POM, "ph-httpclient", EProjectType.JAVA_LIBRARY),
-  PH_SITEMAP (PH_WEB_PARENT_POM, "ph-sitemap", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_SITEMAP (PH_WEB_PARENT_POM, "ph-sitemap", EProjectType.JAVA_LIBRARY),
   PH_WEB (PH_WEB_PARENT_POM, "ph-web", EProjectType.JAVA_LIBRARY),
-  PH_XSERVLET (PH_WEB_PARENT_POM, "ph-xservlet", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_XSERVLET (PH_WEB_PARENT_POM, "ph-xservlet", EProjectType.JAVA_LIBRARY),
 
   PH_CSS_PARENT_POM ("ph-css-parent-pom", "ph-css", EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
