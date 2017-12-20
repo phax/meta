@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20171218</version>
+  <version>1.0.0-20171220</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -93,7 +93,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
-      <version>2.4.3</version>
+      <version>2.5.0</version>
     </dependency>
     <dependency>
       <groupId>dnsjava</groupId>
@@ -517,32 +517,32 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>7.1.0</version>
+      <version>7.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -617,7 +617,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-6</version>
+      <version>9.8.0-7</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -687,7 +687,7 @@
     <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
-      <version>2.0.0.Final</version>
+      <version>2.0.1.Final</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -732,7 +732,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>maven-bundle-plugin</artifactId>
-      <version>3.3.0</version>
+      <version>3.4.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
