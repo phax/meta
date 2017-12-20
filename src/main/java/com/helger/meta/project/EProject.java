@@ -129,10 +129,10 @@ public enum EProject implements IProject
                               "2.1.1",
                               EJDK.JDK7),
 
-  PH_DATETIME_PARENT_POM ("ph-datetime-parent-pom", "ph-datetime", EHasPages.FALSE, EHasWiki.FALSE, "5.0.1", EJDK.JDK8),
+  PH_DATETIME_PARENT_POM ("ph-datetime-parent-pom", "ph-datetime", EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY),
 
-  PH_DB_PARENT_POM ("ph-db-parent-pom", "ph-db", EHasPages.FALSE, EHasWiki.FALSE, "5.0.1", EJDK.JDK8),
+  PH_DB_PARENT_POM ("ph-db-parent-pom", "ph-db", EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY),
   PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
   PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY),
