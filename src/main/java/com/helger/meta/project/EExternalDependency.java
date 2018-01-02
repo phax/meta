@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.7.9", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.7", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.8", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
@@ -275,7 +275,7 @@ public enum EExternalDependency
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK6),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.0.2", EJDK.JDK6),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.1.0", EJDK.JDK6),
-  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.6", EJDK.JDK6),
+  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.7", EJDK.JDK6),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.0.1", EJDK.JDK6),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.20.1", EJDK.JDK6),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.20.1", EJDK.JDK6),

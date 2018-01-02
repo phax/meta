@@ -34,6 +34,14 @@
         <ignoreVersion>20040902.021138</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="commons-collections" artifactId="commons-collections" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion>20030418.083655</ignoreVersion>
+        <ignoreVersion>20031027.000000</ignoreVersion>
+        <ignoreVersion>20040102.233541</ignoreVersion>
+        <ignoreVersion>20040616</ignoreVersion>
+      </ignoreVersions>
+    </rule>
     <rule groupId="org.jvnet.jaxb2_commons" artifactId="jaxb2-basics" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion>1.11.1</ignoreVersion>
