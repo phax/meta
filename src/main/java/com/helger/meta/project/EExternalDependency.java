@@ -46,6 +46,9 @@ public enum EExternalDependency
 
   CLOSURE ("com.google.javascript", "closure-compiler", "v20171203", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
+  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK6),
+  COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK6),
+  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.1", EJDK.JDK6),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.2.0", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK6),
