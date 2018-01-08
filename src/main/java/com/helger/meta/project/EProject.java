@@ -49,7 +49,7 @@ public enum EProject implements IProject
         EProjectType.JAVA_LIBRARY,
         EHasPages.FALSE,
         EHasWiki.FALSE,
-        "1.0.1",
+        "1.0.2",
         EJDK.JDK8),
 
   PH_COMMONS_PARENT_POM ("ph-commons-parent-pom", "ph-commons", EHasPages.FALSE, EHasWiki.FALSE, "9.0.0", EJDK.JDK8),
@@ -134,8 +134,8 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_PLUGIN,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "2.1.1",
-                              EJDK.JDK7),
+                              "2.2.0",
+                              EJDK.JDK8),
 
   PH_DATETIME_PARENT_POM ("ph-datetime-parent-pom", "ph-datetime", EHasPages.FALSE, EHasWiki.FALSE, "6.0.0", EJDK.JDK8),
   PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY),
