@@ -55,7 +55,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
   // Parent POM requirements
   private static final String PARENT_POM_GROUPID = "com.helger";
-  private static final String PARENT_POM_GROUPID_ALT1 = "com.helger.en16931";
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 
@@ -86,7 +85,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
-    return PARENT_POM_GROUPID.equals (sGroupID) || "com.helger.maven".equals (sGroupID);
+    return PARENT_POM_GROUPID.equals (sGroupID) ||
+           "com.helger.maven".equals (sGroupID) ||
+           "com.helger.erechnung.gv.at".equals (sGroupID) ||
+           "com.helger.en16931".equals (sGroupID);
   }
 
   private static boolean _isSnapshot (final String sVersion)
@@ -169,7 +171,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       {
         final String sGroupId = MicroHelper.getChildTextContent (eParent, "groupId");
         sParentPOMGroupId = sGroupId;
-        if (!PARENT_POM_GROUPID.equals (sGroupId) && !PARENT_POM_GROUPID_ALT1.equals (sGroupId))
+        if (!_isSupportedGroupID (sGroupId))
         {
           if (aProject.isBuildInProject ())
             _warn (aProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
