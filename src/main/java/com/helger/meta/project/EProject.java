@@ -524,7 +524,7 @@ public enum EProject implements IProject
 
   EN16931_PARENT_POM (null,
                       "CenPc434",
-                      "java-tools",
+                      "en16931-parent-pom",
                       "java-tools",
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
