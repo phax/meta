@@ -44,6 +44,7 @@ public enum EProject implements IProject
 
   JCODEMODEL ("jcodemodel", EProjectType.JAVA_LIBRARY, EHasPages.TRUE, EHasWiki.FALSE, "3.0.1", EJDK.JDK8),
   PGCC (null,
+        IProject.DEFAULT_PROJECT_OWNER,
         "parser-generator-cc",
         "ParserGeneratorCC",
         EProjectType.JAVA_LIBRARY,
@@ -310,13 +311,17 @@ public enum EProject implements IProject
                                 "peppol-smp-server-webapp-xml",
                                 EProjectType.JAVA_WEB_APPLICATION),
 
-  EBINTERFACE_UBL_MAPPING ("ebinterface-ubl-mapping",
+  EBINTERFACE_UBL_MAPPING (null,
+                           "austriapro",
+                           "ebinterface-ubl-mapping",
+                           "ebinterface-ubl-mapping",
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
                            "2.2.0",
                            EJDK.JDK8),
   ERECHNUNG_WS_CLIENT (null,
+                       IProject.DEFAULT_PROJECT_OWNER,
                        "webservice-client",
                        "erechnung.gv.at-webservice-client",
                        EProjectType.JAVA_LIBRARY,
@@ -370,6 +375,7 @@ public enum EProject implements IProject
                     @Nonnull final EJDK eMinJDK)
   {
     this (null,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectBaseDirName,
           EProjectType.MAVEN_POM,
@@ -396,6 +402,7 @@ public enum EProject implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -403,36 +410,6 @@ public enum EProject implements IProject
           EHasWiki.FALSE,
           eParentProject.getLastPublishedVersionString (),
           eParentProject.getMinimumJDKVersion ());
-  }
-
-  /**
-   * Constructor for child projects where project name equals directory name and
-   * the last published version is identical to the one of the parent project
-   * but the child project uses a different JDK version
-   *
-   * @param eParentProject
-   *        Parent project. May not be <code>null</code>.
-   * @param sProjectName
-   *        Project name
-   * @param eProjectType
-   *        Project type
-   * @param eMinJDK
-   *        Minimum JDK version to use
-   */
-  private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull final EProjectType eProjectType,
-                    @Nonnull final EJDK eMinJDK)
-  {
-    // Project name equals project base directory name
-    this (eParentProject,
-          sProjectName,
-          sProjectName,
-          eProjectType,
-          EHasPages.FALSE,
-          EHasWiki.FALSE,
-          eParentProject.getLastPublishedVersionString (),
-          eMinJDK);
   }
 
   /**
@@ -454,6 +431,7 @@ public enum EProject implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -489,6 +467,7 @@ public enum EProject implements IProject
   {
     // Project name equals project base directory name
     this (null,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -519,6 +498,7 @@ public enum EProject implements IProject
    *        Minimum JDK version to use
    */
   private EProject (@Nullable final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectOwner,
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull @Nonempty final String sProjectBaseDirName,
                     @Nonnull final EProjectType eProjectType,
@@ -528,6 +508,7 @@ public enum EProject implements IProject
                     @Nonnull final EJDK eMinJDK)
   {
     m_aProject = new SimpleProject (eParentProject,
+                                    sProjectOwner,
                                     sProjectName,
                                     eProjectType,
                                     new File (eParentProject != null ? eParentProject.getBaseDir ()
@@ -550,6 +531,13 @@ public enum EProject implements IProject
   public IProject getParentProject ()
   {
     return m_aProject.getParentProject ();
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getProjectOwner ()
+  {
+    return m_aProject.getProjectOwner ();
   }
 
   @Nonnull
@@ -622,15 +610,6 @@ public enum EProject implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aProject.getLastPublishedVersion ();
-  }
-
-  @Nonnull
-  @Nonempty
-  public String getGitHubOrganization ()
-  {
-    if (this == EProject.EBINTERFACE_UBL_MAPPING)
-      return "austriapro";
-    return "phax";
   }
 
   public int compareTo (@Nonnull final IProject aProject)

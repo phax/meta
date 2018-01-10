@@ -31,6 +31,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
 public class SimpleProject implements IProject
 {
   private final IProject m_aParentProject;
+  private final String m_sProjectOwner;
   private final String m_sProjectName;
   private final EProjectType m_eProjectType;
   private final File m_aBaseDir;
@@ -45,6 +46,7 @@ public class SimpleProject implements IProject
   private final String m_sMavenArtifactID;
 
   public SimpleProject (@Nullable final IProject aParentProject,
+                        @Nonnull @Nonempty final String sProjectOwner,
                         @Nonnull @Nonempty final String sProjectName,
                         @Nonnull final EProjectType eProjectType,
                         @Nonnull final File aBaseDir,
@@ -54,6 +56,7 @@ public class SimpleProject implements IProject
                         @Nullable final String sLastPublishedVersion,
                         @Nonnull final EJDK eMinJDK)
   {
+    ValueEnforcer.notEmpty (sProjectOwner, "ProjectOwner");
     ValueEnforcer.notEmpty (sProjectName, "ProjectName");
     ValueEnforcer.notNull (eProjectType, "ProjectType");
     ValueEnforcer.notNull (aBaseDir, "BaseDir");
@@ -63,6 +66,7 @@ public class SimpleProject implements IProject
     ValueEnforcer.notNull (eMinJDK, "MinJDK");
 
     m_aParentProject = aParentProject;
+    m_sProjectOwner = sProjectOwner;
     m_sProjectName = sProjectName;
     m_eProjectType = eProjectType;
     m_aBaseDir = aBaseDir;
@@ -119,6 +123,13 @@ public class SimpleProject implements IProject
   public IProject getParentProject ()
   {
     return m_aParentProject;
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getProjectOwner ()
+  {
+    return m_sProjectOwner;
   }
 
   @Nonnull
@@ -195,6 +206,9 @@ public class SimpleProject implements IProject
 
   public int compareTo (@Nonnull final IProject aProject)
   {
-    return m_sProjectName.compareTo (aProject.getProjectName ());
+    int ret = m_sProjectOwner.compareTo (aProject.getProjectOwner ());
+    if (ret == 0)
+      ret = m_sProjectName.compareTo (aProject.getProjectName ());
+    return ret;
   }
 }

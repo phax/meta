@@ -47,7 +47,15 @@ public enum EProjectDeprecated implements IProject
                         "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
-  PEPPOL_LIME_PARENT_POM ("peppol-lime-parent-pom", "peppol-lime", EHasPages.FALSE, EHasWiki.FALSE, "3.0.1", EJDK.JDK6),
+  PEPPOL_LIME_PARENT_POM (null,
+                          IProject.DEFAULT_PROJECT_OWNER,
+                          "peppol-lime-parent-pom",
+                          "peppol-lime",
+                          EProjectType.MAVEN_POM,
+                          EHasPages.FALSE,
+                          EHasWiki.FALSE,
+                          "3.0.1",
+                          EJDK.JDK6),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
@@ -61,6 +69,7 @@ public enum EProjectDeprecated implements IProject
   PH_WEBCTRLS (null, "ph-webctrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
   PH_WEBSCOPES (null, "ph-webscopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1"),
   PH_PDF_LAYOUT (null,
+                 IProject.DEFAULT_PROJECT_OWNER,
                  "ph-pdf-layout",
                  "ph-pdf-layout",
                  EProjectType.JAVA_LIBRARY,
@@ -69,24 +78,57 @@ public enum EProjectDeprecated implements IProject
                  "3.5.3",
                  EJDK.JDK8),
 
-  PH_HTML_PARENT_POM ("ph-html-parent-pom", "ph-html", EHasPages.FALSE, EHasWiki.FALSE, "6.0.4", EJDK.JDK8),
+  PH_HTML_PARENT_POM (null,
+                      IProject.DEFAULT_PROJECT_OWNER,
+                      "ph-html-parent-pom",
+                      "ph-html",
+                      EProjectType.MAVEN_POM,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      "6.0.4",
+                      EJDK.JDK8),
   PH_HTML (PH_HTML_PARENT_POM, "ph-html", EProjectType.JAVA_LIBRARY),
   PH_HTML_JSCODE (PH_HTML_PARENT_POM, "ph-html-jscode", EProjectType.JAVA_LIBRARY),
   PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY),
 
-  PH_LOCALES_PARENT_POM ("ph-locales-parent-pom", "ph-locales", EHasPages.FALSE, EHasWiki.FALSE, "2.0.0", EJDK.JDK6),
+  PH_LOCALES_PARENT_POM (null,
+                         IProject.DEFAULT_PROJECT_OWNER,
+                         "ph-locales-parent-pom",
+                         "ph-locales",
+                         EProjectType.MAVEN_POM,
+                         EHasPages.FALSE,
+                         EHasWiki.FALSE,
+                         "2.0.0",
+                         EJDK.JDK6),
   PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
   PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
 
-  PH_STX_PARENT_POM ("ph-stx-parent-pom", "ph-stx", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_STX_PARENT_POM (null,
+                     IProject.DEFAULT_PROJECT_OWNER,
+                     "ph-stx-parent-pom",
+                     "ph-stx",
+                     EProjectType.MAVEN_POM,
+                     EHasPages.FALSE,
+                     EHasWiki.FALSE,
+                     null,
+                     EJDK.JDK8),
   PH_STX_PARSER (PH_STX_PARENT_POM, "ph-stx-parser", EProjectType.JAVA_LIBRARY),
   PH_STX_ENGINE (PH_STX_PARENT_POM, "ph-stx-engine", EProjectType.JAVA_LIBRARY),
 
-  PH_DEE_PARENT_POM ("ph-dee-parent-pom", "ph-dee", EHasPages.FALSE, EHasWiki.FALSE, null, EJDK.JDK8),
+  PH_DEE_PARENT_POM (null,
+                     IProject.DEFAULT_PROJECT_OWNER,
+                     "ph-dee-parent-pom",
+                     "ph-dee",
+                     EProjectType.MAVEN_POM,
+                     EHasPages.FALSE,
+                     EHasWiki.FALSE,
+                     null,
+                     EJDK.JDK8),
   PH_DEE_API (PH_DEE_PARENT_POM, "ph-dee-api", EProjectType.JAVA_LIBRARY),
   PH_DEE_ENGINE (PH_DEE_PARENT_POM, "ph-dee-engine", EProjectType.JAVA_LIBRARY),
 
   PH_WSDL_GEN (null,
+               IProject.DEFAULT_PROJECT_OWNER,
                "ph-wsdl-gen",
                "ph-wsdl-gen",
                EProjectType.JAVA_LIBRARY,
@@ -95,6 +137,7 @@ public enum EProjectDeprecated implements IProject
                null,
                EJDK.JDK8),
   PH_ZEROMQ (null,
+             IProject.DEFAULT_PROJECT_OWNER,
              "ph-zeromq",
              "ph-zeromq",
              EProjectType.JAVA_LIBRARY,
@@ -104,40 +147,6 @@ public enum EProjectDeprecated implements IProject
              EJDK.JDK8);
 
   private final SimpleProject m_aProject;
-
-  /**
-   * Constructor for parent poms
-   *
-   * @param eParentProject
-   * @param sProjectName
-   *        Project name as stated in the POM
-   * @param sProjectBaseDirName
-   *        Project base directory name
-   * @param eHasPagesProject
-   *        pages project present?
-   * @param eHasWikiProject
-   *        wiki project present?
-   * @param sLastPublishedVersion
-   *        Last published version or <code>null</code>
-   * @param eMinJDK
-   *        Minimum JDK version to use
-   */
-  private EProjectDeprecated (@Nonnull @Nonempty final String sProjectName,
-                              @Nonnull @Nonempty final String sProjectBaseDirName,
-                              @Nonnull final EHasPages eHasPagesProject,
-                              @Nonnull final EHasWiki eHasWikiProject,
-                              @Nullable final String sLastPublishedVersion,
-                              @Nonnull final EJDK eMinJDK)
-  {
-    this (null,
-          sProjectName,
-          sProjectBaseDirName,
-          EProjectType.MAVEN_POM,
-          eHasPagesProject,
-          eHasWikiProject,
-          sLastPublishedVersion,
-          eMinJDK);
-  }
 
   /**
    * Constructor for child projects where project name equals directory name and
@@ -156,6 +165,7 @@ public enum EProjectDeprecated implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -174,6 +184,7 @@ public enum EProjectDeprecated implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
+          IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -184,6 +195,7 @@ public enum EProjectDeprecated implements IProject
   }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
+                              @Nonnull @Nonempty final String sProjectOwner,
                               @Nonnull @Nonempty final String sProjectName,
                               @Nonnull @Nonempty final String sProjectBaseDirName,
                               @Nonnull final EProjectType eProjectType,
@@ -193,6 +205,7 @@ public enum EProjectDeprecated implements IProject
                               @Nonnull final EJDK eMinJDK)
   {
     m_aProject = new SimpleProject (eParentProject,
+                                    sProjectOwner,
                                     sProjectName,
                                     eProjectType,
                                     new File (eParentProject != null ? eParentProject.getBaseDir ()
@@ -214,6 +227,13 @@ public enum EProjectDeprecated implements IProject
   public IProject getParentProject ()
   {
     return m_aProject.getParentProject ();
+  }
+
+  @Nonnull
+  @Nonempty
+  public String getProjectOwner ()
+  {
+    return m_aProject.getProjectOwner ();
   }
 
   @Nonnull

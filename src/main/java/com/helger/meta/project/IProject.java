@@ -27,6 +27,7 @@ import com.helger.commons.version.Version;
 
 public interface IProject
 {
+  String DEFAULT_PROJECT_OWNER = "phax";
   String EXTENSION_PAGES_PROJECT = ".pages";
   String EXTENSION_WIKI_PROJECT = ".wiki";
 
@@ -42,6 +43,13 @@ public interface IProject
   {
     return getParentProject () != null;
   }
+
+  /**
+   * @return The project owner. E.g. <code>phax</code>
+   */
+  @Nonnull
+  @Nonempty
+  String getProjectOwner ();
 
   /**
    * @return The project name. E.g. <code>ph-commons</code>
@@ -149,13 +157,6 @@ public interface IProject
 
   @Nullable
   Version getLastPublishedVersion ();
-
-  @Nonnull
-  @Nonempty
-  default String getGitHubOrganization ()
-  {
-    return "phax";
-  }
 
   int compareTo (@Nonnull IProject aProject);
 }

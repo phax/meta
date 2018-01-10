@@ -61,10 +61,15 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
 
   private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
   {
+    final String sProjectOwner = aProject.getProjectOwner ();
     final String sRepoName = _getGitHubRepoName (aProject);
-    aSB.append ("\n   [![Build Status](https://travis-ci.org/phax/")
+    aSB.append ("\n   [![Build Status](https://travis-ci.org/")
+       .append (sProjectOwner)
+       .append ('/')
        .append (sRepoName)
-       .append (".svg?branch=master)](https://travis-ci.org/phax/")
+       .append (".svg?branch=master)](https://travis-ci.org/")
+       .append (sProjectOwner)
+       .append ('/')
        .append (sRepoName)
        .append (")");
   }
@@ -84,11 +89,14 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
       {
+        final String sProjectOwner = aProject.getProjectOwner ();
         final String sRepoName = _getGitHubRepoName (aProject);
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
-           .append ("](https://github.com/phax/")
+           .append ("](https://github.com/")
+           .append (sProjectOwner)
+           .append ('/')
            .append (sRepoName)
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
@@ -104,9 +112,13 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && !aProject.isPublished ())
       {
+        final String sProjectOwner = aProject.getProjectOwner ();
+
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
-           .append ("](https://github.com/phax/")
+           .append ("](https://github.com/")
+           .append (sProjectOwner)
+           .append ('/')
            .append (_getGitHubRepoName (aProject))
            .append (") - ")
            .append (aProject.getMinimumJDKVersion ().getDisplayName ())

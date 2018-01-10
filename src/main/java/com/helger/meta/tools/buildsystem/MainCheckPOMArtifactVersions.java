@@ -139,7 +139,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
-    final String sGitHubOrganization = aProject.getGitHubOrganization ();
+    final String sProjectOwner = aProject.getProjectOwner ();
 
     // Read all properties
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
@@ -253,7 +253,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.isBuildInProject ())
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/" + sGitHubOrganization + "/" + aProject.getFullBaseDirName ();
+      final String sExpectedURL = "https://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
       if (!sExpectedURL.equals (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
@@ -291,12 +291,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       {
         final String sConnection = MicroHelper.getChildTextContent (eSCM, "connection");
         final String sExpectedConnection = "scm:git:git@github.com:" +
-                                           sGitHubOrganization +
+                                           sProjectOwner +
                                            "/" +
                                            aProject.getFullBaseDirName () +
                                            ".git";
         // Alternatively:
-        // "scm:git:https://github.com/phax/"+eProject.getProjectName ()
+        // "scm:git:https://github.com/"+org+"/"+eProject.getProjectName ()
         if (!sExpectedConnection.equals (sConnection))
           _warn (aProject, "Unexpected SCM connection '" + sConnection + "'. Expected '" + sExpectedConnection + "'");
 
@@ -311,7 +311,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://github.com/" + sGitHubOrganization + "/" + aProject.getFullBaseDirName ();
+        final String sExpectedURL = "http://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
         if (!sExpectedURL.equals (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 

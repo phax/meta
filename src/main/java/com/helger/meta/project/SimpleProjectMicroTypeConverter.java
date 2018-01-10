@@ -29,6 +29,7 @@ import com.helger.xml.microdom.convert.IMicroTypeConverter;
 
 public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter <SimpleProject>
 {
+  private static final String ATTR_PROJECT_OWNER = "projectowner";
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
   private static final String ATTR_DIR = "dir";
@@ -44,6 +45,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                                               @Nonnull @Nonempty final String sTagName)
   {
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
+    ret.setAttribute (ATTR_PROJECT_OWNER, aValue.getProjectOwner ());
     ret.setAttribute (ATTR_PROJECT_NAME, aValue.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aValue.getProjectType ().getID ());
     ret.setAttribute (ATTR_DIR, aValue.getBaseDir ().getName ());
@@ -58,6 +60,11 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   @Nonnull
   public SimpleProject convertToNative (@Nonnull final IMicroElement aElement)
   {
+    // Added later
+    String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
+    if (sProjectOwner == null)
+      sProjectOwner = IProject.DEFAULT_PROJECT_OWNER;
+
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
 
     final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
@@ -79,6 +86,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                                                                          -1));
 
     return new SimpleProject ((IProject) null,
+                              sProjectOwner,
                               sProjectName,
                               eProjectType,
                               aBaseDir,
@@ -93,6 +101,11 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
                                                          @Nonnull final IMicroElement aElement)
   {
+    // Added later
+    String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
+    if (sProjectOwner == null)
+      sProjectOwner = IProject.DEFAULT_PROJECT_OWNER;
+
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
 
     final String sProjectTypeID = aElement.getAttributeValue (ATTR_PROJECT_TYPE);
@@ -110,6 +123,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
       sLastPublishedVersion = aParentProject.getLastPublishedVersionString ();
 
     return new SimpleProject (aParentProject,
+                              sProjectOwner,
                               sProjectName,
                               eProjectType,
                               aBaseDir,
