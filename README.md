@@ -33,10 +33,10 @@ Current list of all projects (as of 2018-01-10):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
- * [ebinterface-ubl-mapping](https://github.com/phax/ebinterface-ubl-mapping) - Version 2.2.0 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 2.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping) 
-   [![Build Status](https://travis-ci.org/phax/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/phax/ebinterface-ubl-mapping)
+   [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 2.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
