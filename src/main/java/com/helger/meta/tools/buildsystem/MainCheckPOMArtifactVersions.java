@@ -88,7 +88,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     return PARENT_POM_GROUPID.equals (sGroupID) ||
            "com.helger.maven".equals (sGroupID) ||
            "com.helger.erechnung.gv.at".equals (sGroupID) ||
-           "com.helger.en16931".equals (sGroupID);
+           "com.helger.en16931".equals (sGroupID) ||
+           "at.winenet".equals (sGroupID);
   }
 
   private static boolean _isSnapshot (final String sVersion)
