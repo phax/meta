@@ -267,6 +267,19 @@ public enum EProject implements IProject
                      null,
                      EJDK.JDK8),
 
+  EN16931_PARENT_POM (null,
+                      "CenPc434",
+                      "java-tools",
+                      "java-tools",
+                      EProjectType.MAVEN_POM,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      "2.0.0",
+                      EJDK.JDK8),
+  EN16931_XML_VALIDATOR (EN16931_PARENT_POM, "en16931-xml-validator", EProjectType.JAVA_LIBRARY),
+  EN16931_EDIFACT_TO_XML (EN16931_PARENT_POM, "en16931-edifact-to-xml", EProjectType.JAVA_LIBRARY),
+  EN16931_EDIFACT_XML (EN16931_PARENT_POM, "en16931-edifact-xml", EProjectType.JAVA_LIBRARY),
+
   PH_BDVE_PARENT_POM ("ph-bdve-parent-pom",
                       "peppol-validation-engine",
                       EHasPages.FALSE,
@@ -402,7 +415,7 @@ public enum EProject implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
-          IProject.DEFAULT_PROJECT_OWNER,
+          eParentProject.getProjectOwner (),
           sProjectName,
           sProjectName,
           eProjectType,
@@ -431,7 +444,7 @@ public enum EProject implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
-          IProject.DEFAULT_PROJECT_OWNER,
+          eParentProject.getProjectOwner (),
           sProjectName,
           sProjectName,
           eProjectType,
