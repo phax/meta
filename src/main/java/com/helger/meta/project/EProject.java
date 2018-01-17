@@ -542,7 +542,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "3.2.0",
+                      "4.0.0",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_PEPPOL (PH_BDVE_PARENT_POM, "ph-bdve-peppol", EProjectType.JAVA_LIBRARY),
