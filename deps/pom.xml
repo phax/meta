@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180110</version>
+  <version>1.0.0-20180123</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1639,30 +1639,66 @@
       <version>4.0.2</version>
     </dependency>
     <dependency>
+      <groupId>com.helger.en16931</groupId>
+      <artifactId>en16931-parent-pom</artifactId>
+      <version>2.0.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.en16931</groupId>
+      <artifactId>en16931-xml-validator</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.en16931</groupId>
+      <artifactId>en16931-edifact-to-xml</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.en16931</groupId>
+      <artifactId>en16931-edifact-xml</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-parent-pom</artifactId>
-      <version>3.2.0</version>
+      <version>4.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve</artifactId>
-      <version>3.2.0</version>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-bdve-ubl</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-bdve-cii</artifactId>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-peppol</artifactId>
-      <version>3.2.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-simplerinvoicing</artifactId>
-      <version>3.2.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-en16931</artifactId>
-      <version>3.2.0</version>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-bdve-ehf</artifactId>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
