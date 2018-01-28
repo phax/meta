@@ -83,7 +83,7 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.3", EJDK.JDK6),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.4", EJDK.JDK6),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -219,7 +219,7 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.8", EJDK.JDK6),
-  RXJAVA ("io.reactivex", "rxjava", "1.3.4", EJDK.JDK6),
+  RXJAVA ("io.reactivex", "rxjava", "1.3.5", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-7", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.8.1", EJDK.JDK6),
   @IsLegacy
@@ -242,7 +242,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.5", EJDK.JDK6),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.0", EJDK.JDK6),
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.0", EJDK.JDK6),
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.1", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
   ZXING_CORE ("com.google.zxing", "core", "3.3.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
