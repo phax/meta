@@ -39,7 +39,7 @@ public enum EProject implements IProject
                  EProjectType.MAVEN_POM,
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
-                 "1.9.3",
+                 "1.10.0",
                  EJDK.JDK8),
   PH_JAXWS (null,
             IProject.DEFAULT_PROJECT_OWNER,
