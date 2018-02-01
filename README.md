@@ -205,19 +205,19 @@ Current list of all projects (as of 2018-02-01):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-buildinfo-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-buildinfo-maven-plugin)
- * [ph-cii](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
+ * [ph-cii](https://github.com/phax/ph-cii) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 2.0.0 - JDK 1.8
+ * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
