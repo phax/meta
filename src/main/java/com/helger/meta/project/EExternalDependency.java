@@ -210,7 +210,7 @@ public enum EExternalDependency
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.6.1", EJDK.JDK6),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.9", EJDK.JDK6),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.8", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
