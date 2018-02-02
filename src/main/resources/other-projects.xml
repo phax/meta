@@ -22,8 +22,8 @@
   <basedir>F:\svn-philip\dev</basedir>
   <basedir>c:\dev\git</basedir>
   <basedir>c:\dev\svn-philip\dev</basedir>
-  <basedir>d:\Entwicklung\git</basedir>
-  <basedir>d:\Entwicklung\svn\svn-philip\dev</basedir>
+  <basedir>c:\Entwicklung\git</basedir>
+  <basedir>c:\Entwicklung\svn\svn-philip\dev</basedir>
   <!-- KB -->
   <project projectname="kb-parent-pom" projecttype="maven-pom" minjdk="8" dir="kellerbuch">
     <project projectname="kb-app" />
@@ -33,6 +33,7 @@
     <project projectname="kb-plugin-freefinance" />
     <project projectname="kb-plugin-postingtransfer" />
     <project projectname="kb-plugin-r2o"  />
+    <project projectname="kb-plugin-dpd"  />
     <project projectname="kb-printprofile" />
     <project projectname="kb-selenium" projecttype="java-application" />
     <project projectname="kb-uicore" />
