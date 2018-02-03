@@ -542,7 +542,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.0.1",
+                      "4.0.2",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_UBL (PH_BDVE_PARENT_POM, "ph-bdve-ubl", EProjectType.JAVA_LIBRARY),
@@ -551,6 +551,7 @@ public enum EProject implements IProject
   PH_BDVE_SIMPLERINVOICING (PH_BDVE_PARENT_POM, "ph-bdve-simplerinvoicing", EProjectType.JAVA_LIBRARY),
   PH_BDVE_EN16931 (PH_BDVE_PARENT_POM, "ph-bdve-en16931", EProjectType.JAVA_LIBRARY),
   PH_BDVE_EHF (PH_BDVE_PARENT_POM, "ph-bdve-ehf", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_ENERGIEEFACTUUR (PH_BDVE_PARENT_POM, "ph-bdve-energieefactuur", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_DIRECTORY_PARENT_POM (null,
                                IProject.DEFAULT_PROJECT_OWNER,
