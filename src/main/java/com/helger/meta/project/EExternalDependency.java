@@ -192,6 +192,7 @@ public enum EExternalDependency
                                      JUNIT5_PLATFORM_LAUNCHER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "4.12.3", EJDK.JDK8),
 
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "1.0.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.10.0", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),

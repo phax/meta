@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-02-07):
+Current list of all projects (as of 2018-02-08):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.0 - JDK 1.8
 
@@ -714,6 +714,33 @@ Current list of all unreleased projects:
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [toop-commons](https://github.com/toop4eu/toop-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-commons.svg?branch=master)](https://travis-ci.org/toop4eu/toop-commons)
+ * [toop-commons/toop-commons](https://github.com/toop4eu/toop-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-commons.svg?branch=master)](https://travis-ci.org/toop4eu/toop-commons)
+ * [toop-commons/toop-kafka-client](https://github.com/toop4eu/toop-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-commons.svg?branch=master)](https://travis-ci.org/toop4eu/toop-commons)
+ * [toop-message-processor](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+ * [toop-message-processor/toop-dc-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+ * [toop-message-processor/toop-dp-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+ * [toop-message-processor/toop-mp-webapp](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+ * [toop-message-processor/toop-r2d2-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+ * [toop-message-processor/toop-smm-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
 
 All deprecated projects:
 

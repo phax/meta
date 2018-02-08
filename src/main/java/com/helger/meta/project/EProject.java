@@ -663,7 +663,35 @@ public enum EProject implements IProject
                    EHasPages.FALSE,
                    EHasWiki.FALSE,
                    null,
-                   EJDK.JDK8);
+                   EJDK.JDK8),
+
+  // TOOP stuff
+  TOOP_COMMONS_PARENT_POM (null,
+                           "toop4eu",
+                           "toop-commons-parent-pom",
+                           "toop-commons",
+                           EProjectType.MAVEN_POM,
+                           EHasPages.FALSE,
+                           EHasWiki.FALSE,
+                           null,
+                           EJDK.JDK8),
+  TOOP_COMMONS (TOOP_COMMONS_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
+  TOOP_KAFKA_CLIENT (TOOP_COMMONS_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
+
+  TOOP_MP_PARENT_POM (null,
+                      "toop4eu",
+                      "toop-mp-parent-pom",
+                      "toop-message-processor",
+                      EProjectType.MAVEN_POM,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      null,
+                      EJDK.JDK8),
+  TOOP_R2D2_CLIENT (TOOP_MP_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
+  TOOP_SMM_CLIENT (TOOP_MP_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
+  TOOP_DC_CLIENT (TOOP_MP_PARENT_POM, "toop-dc-client", EProjectType.JAVA_LIBRARY),
+  TOOP_DP_CLIENT (TOOP_MP_PARENT_POM, "toop-dp-client", EProjectType.JAVA_LIBRARY),
+  TOOP_MP_WEBAPP (TOOP_MP_PARENT_POM, "toop-mp-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
 
