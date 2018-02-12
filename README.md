@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-02-08):
+Current list of all projects (as of 2018-02-12):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.0 - JDK 1.8
 
@@ -21,11 +21,11 @@ Current list of all projects (as of 2018-02-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 2.0.7 - JDK 1.8
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 4.0.2 - JDK 1.8
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 5.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
@@ -521,7 +521,7 @@ Current list of all projects (as of 2018-02-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 5.0.0 - JDK 1.8
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
@@ -726,10 +726,10 @@ Current list of all unreleased projects:
  * [toop-message-processor](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-dc-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+ * [toop-message-processor/toop-dc-adapter](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-dp-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+ * [toop-message-processor/toop-dp-adapter](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
  * [toop-message-processor/toop-mp-webapp](https://github.com/toop4eu/toop-message-processor) - JDK 1.8

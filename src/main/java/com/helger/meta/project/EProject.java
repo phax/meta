@@ -200,7 +200,7 @@ public enum EProject implements IProject
                   EProjectType.JAVA_LIBRARY,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "5.0.0",
+                  "5.0.1",
                   EJDK.JDK8),
   PH_POI (null,
           IProject.DEFAULT_PROJECT_OWNER,
@@ -501,7 +501,7 @@ public enum EProject implements IProject
                      EProjectType.JAVA_LIBRARY,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "2.0.7",
+                     "3.0.0",
                      EJDK.JDK8),
   AS2_PEPPOL_SERVLET (null,
                       IProject.DEFAULT_PROJECT_OWNER,
@@ -510,7 +510,7 @@ public enum EProject implements IProject
                       EProjectType.JAVA_LIBRARY,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.0.2",
+                      "5.0.0",
                       EJDK.JDK8),
   AS2_PEPPOL_SERVER (null,
                      IProject.DEFAULT_PROJECT_OWNER,
@@ -689,8 +689,8 @@ public enum EProject implements IProject
                       EJDK.JDK8),
   TOOP_R2D2_CLIENT (TOOP_MP_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
   TOOP_SMM_CLIENT (TOOP_MP_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
-  TOOP_DC_CLIENT (TOOP_MP_PARENT_POM, "toop-dc-client", EProjectType.JAVA_LIBRARY),
-  TOOP_DP_CLIENT (TOOP_MP_PARENT_POM, "toop-dp-client", EProjectType.JAVA_LIBRARY),
+  TOOP_DC_ADAPTER (TOOP_MP_PARENT_POM, "toop-dc-adapter", EProjectType.JAVA_LIBRARY),
+  TOOP_DP_ADAPTER (TOOP_MP_PARENT_POM, "toop-dp-adapter", EProjectType.JAVA_LIBRARY),
   TOOP_MP_WEBAPP (TOOP_MP_PARENT_POM, "toop-mp-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
