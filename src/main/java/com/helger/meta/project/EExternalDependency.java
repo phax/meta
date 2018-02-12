@@ -32,7 +32,7 @@ public enum EExternalDependency
 {
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.0.0", EJDK.JDK8),
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.6", EJDK.JDK6),
-  ANT ("org.apache.ant", "ant", "1.10.1", EJDK.JDK6),
+  ANT ("org.apache.ant", "ant", "1.10.2", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
   ASM ("org.ow2.asm", "asm", "6.0", EJDK.JDK6),
@@ -44,7 +44,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20180101", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20180204", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK6),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK6),
@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.12", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.14", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.0", EJDK.JDK6),
@@ -210,7 +210,7 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
-  MONGO_DB ("org.mongodb", "mongodb-driver", "3.6.1", EJDK.JDK6),
+  MONGO_DB ("org.mongodb", "mongodb-driver", "3.6.2", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.8", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -221,8 +221,8 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.8", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.5", EJDK.JDK6),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-7", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.8.1", EJDK.JDK6),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-8", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.9.1", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy

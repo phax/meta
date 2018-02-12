@@ -691,6 +691,7 @@ public enum EProject implements IProject
   TOOP_SMM_CLIENT (TOOP_MP_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
   TOOP_DC_ADAPTER (TOOP_MP_PARENT_POM, "toop-dc-adapter", EProjectType.JAVA_LIBRARY),
   TOOP_DP_ADAPTER (TOOP_MP_PARENT_POM, "toop-dp-adapter", EProjectType.JAVA_LIBRARY),
+  TOOP_MESSAGE_EXCHANGE (TOOP_MP_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
   TOOP_MP_WEBAPP (TOOP_MP_PARENT_POM, "toop-mp-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
