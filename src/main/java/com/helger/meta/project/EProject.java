@@ -495,7 +495,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "6.0.0",
+                             "6.0.1",
                              EJDK.JDK8),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
   PEPPOL_TESTFILES (PEPPOL_COMMONS_PARENT_POM, "peppol-testfiles", EProjectType.JAVA_LIBRARY),
@@ -603,7 +603,7 @@ public enum EProject implements IProject
                                 EProjectType.JAVA_WEB_APPLICATION),
 
   EBINTERFACE_UBL_MAPPING (null,
-                           "austriapro",
+                           IProject.PROJECT_OWNER_AUSTRIAPRO,
                            "ebinterface-ubl-mapping",
                            "ebinterface-ubl-mapping",
                            EProjectType.JAVA_LIBRARY,
@@ -676,7 +676,7 @@ public enum EProject implements IProject
 
   // TOOP stuff
   TOOP_COMMONS_PARENT_POM (null,
-                           "toop4eu",
+                           IProject.PROJECT_OWNER_TOOP,
                            "toop-commons-parent-pom",
                            "toop-commons",
                            EProjectType.MAVEN_POM,
@@ -688,7 +688,7 @@ public enum EProject implements IProject
   TOOP_KAFKA_CLIENT (TOOP_COMMONS_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
 
   TOOP_MP_PARENT_POM (null,
-                      "toop4eu",
+                      IProject.PROJECT_OWNER_TOOP,
                       "toop-mp-parent-pom",
                       "toop-message-processor",
                       EProjectType.MAVEN_POM,

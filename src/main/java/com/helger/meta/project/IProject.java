@@ -28,6 +28,8 @@ import com.helger.commons.version.Version;
 public interface IProject
 {
   String DEFAULT_PROJECT_OWNER = "phax";
+  String PROJECT_OWNER_AUSTRIAPRO = "austriapro";
+  String PROJECT_OWNER_TOOP = "toop4eu";
   String EXTENSION_PAGES_PROJECT = ".pages";
   String EXTENSION_WIKI_PROJECT = ".wiki";
 
