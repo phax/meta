@@ -92,6 +92,7 @@ public enum EExternalDependency
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
   JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.14", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
+  JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.1", EJDK.JDK6),
   JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.0", EJDK.JDK7),
