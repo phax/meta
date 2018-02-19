@@ -36,7 +36,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
   // Length is approx. 180 chars
   public static final String COMMON_FOOTER = SEPARATOR +
                                              "\n" +
-                                             "My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodeingStyleguide.md) |\n" +
+                                             "My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |\n" +
                                              "On Twitter: <a href=\"https://twitter.com/philiphelger\">@philiphelger</a>\n";
 
   public static void main (final String [] args)
