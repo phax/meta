@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.14", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.15", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -239,7 +239,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.3.2", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK6),
-  UNDERTOW ("io.undertow", "undertow-servlet", "1.4.22.Final", EJDK.JDK6),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.0.Final", EJDK.JDK6),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK6),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.5", EJDK.JDK6),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.1", EJDK.JDK6),
