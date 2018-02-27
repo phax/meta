@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180226</version>
+  <version>1.0.0-20180227</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -947,7 +947,7 @@
     <!--Internal projects:-->    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>1.10.0</version>
+      <version>1.10.1</version>
       <type>pom</type>
     </dependency>
     <dependency>

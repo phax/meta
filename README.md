@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-02-26):
+Current list of all projects (as of 2018-02-27):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.0 - JDK 1.8
 
@@ -521,7 +521,7 @@ Current list of all projects (as of 2018-02-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.10.0 - JDK 1.8
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
