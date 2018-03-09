@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180307</version>
+  <version>1.0.0-20180309</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1203,7 +1203,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-javacc-maven-plugin</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
