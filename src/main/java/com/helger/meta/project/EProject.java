@@ -697,20 +697,20 @@ public enum EProject implements IProject
   TOOP_COMMONS (TOOP_COMMONS_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
   TOOP_KAFKA_CLIENT (TOOP_COMMONS_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
 
-  TOOP_MP_PARENT_POM (null,
-                      IProject.PROJECT_OWNER_TOOP,
-                      "toop-mp-parent-pom",
-                      "toop-message-processor",
-                      EProjectType.MAVEN_POM,
-                      EHasPages.FALSE,
-                      EHasWiki.FALSE,
-                      null,
-                      EJDK.JDK8),
-  TOOP_MP_API (TOOP_MP_PARENT_POM, "toop-mp-api", EProjectType.JAVA_LIBRARY),
-  TOOP_R2D2_CLIENT (TOOP_MP_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
-  TOOP_SMM_CLIENT (TOOP_MP_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
-  TOOP_MESSAGE_EXCHANGE (TOOP_MP_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
-  TOOP_MP_WEBAPP (TOOP_MP_PARENT_POM, "toop-mp-webapp", EProjectType.JAVA_WEB_APPLICATION);
+  TOOP_CONNECTOR_PARENT_POM (null,
+                             IProject.PROJECT_OWNER_TOOP,
+                             "toop-connector-parent-pom",
+                             "toop-connector",
+                             EProjectType.MAVEN_POM,
+                             EHasPages.FALSE,
+                             EHasWiki.FALSE,
+                             null,
+                             EJDK.JDK8),
+  TOOP_CONNECTOR_API (TOOP_CONNECTOR_PARENT_POM, "toop-connector-api", EProjectType.JAVA_LIBRARY),
+  TOOP_R2D2_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
+  TOOP_SMM_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
+  TOOP_MESSAGE_EXCHANGE (TOOP_CONNECTOR_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
+  TOOP_CONNECTOR_WEBAPP (TOOP_CONNECTOR_PARENT_POM, "toop-connector-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
 
