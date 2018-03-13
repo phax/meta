@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-03-09):
+Current list of all projects (as of 2018-03-13):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.0 - JDK 1.8
 
@@ -397,7 +397,7 @@ Current list of all projects (as of 2018-03-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
- * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.10 - JDK 1.8
+ * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.11 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
@@ -727,24 +727,24 @@ Current list of all unreleased projects:
  * [toop-commons/toop-kafka-client](https://github.com/toop4eu/toop-commons) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/toop4eu/toop-commons.svg?branch=master)](https://travis-ci.org/toop4eu/toop-commons)
- * [toop-message-processor](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+ * [toop-connector](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-message-exchange](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
+ * [toop-connector/toop-connector-api](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-mp-api](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
+ * [toop-connector/toop-connector-webapp](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-mp-webapp](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
+ * [toop-connector/toop-message-exchange](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-r2d2-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
+ * [toop-connector/toop-r2d2-client](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
- * [toop-message-processor/toop-smm-client](https://github.com/toop4eu/toop-message-processor) - JDK 1.8
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
+ * [toop-connector/toop-smm-client](https://github.com/toop4eu/toop-connector) - JDK 1.8
 
-   [![Build Status](https://travis-ci.org/toop4eu/toop-message-processor.svg?branch=master)](https://travis-ci.org/toop4eu/toop-message-processor)
+   [![Build Status](https://travis-ci.org/toop4eu/toop-connector.svg?branch=master)](https://travis-ci.org/toop4eu/toop-connector)
 
 All deprecated projects:
 
