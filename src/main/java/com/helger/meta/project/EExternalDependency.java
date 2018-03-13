@@ -35,7 +35,7 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.2", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "6.0", EJDK.JDK6),
+  ASM ("org.ow2.asm", "asm", "6.1", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.59", EJDK.JDK6),
@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.16", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.17", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -223,7 +223,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.8", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.6", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-8", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.10.0", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
@@ -260,7 +260,7 @@ public enum EExternalDependency
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.7.0", EJDK.JDK6),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.0.2", EJDK.JDK6),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK6),
-  PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "2.10.1", EJDK.JDK6),
+  PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "1.4.1", EJDK.JDK6),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "1.6", EJDK.JDK6),
