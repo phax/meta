@@ -38,7 +38,6 @@
     <project projectname="kb-selenium" projecttype="java-application" />
     <project projectname="kb-uicore" />
     <project projectname="kb-webapp"   projecttype="java-web-application" />
-    <project projectname="vt-webapp"   projecttype="java-web-application" />
     <project projectname="wm-webapp"   projecttype="java-web-application" />
   </project>
   <!-- Ecoware etc. -->

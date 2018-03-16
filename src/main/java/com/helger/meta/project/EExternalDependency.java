@@ -195,7 +195,7 @@ public enum EExternalDependency
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "1.0.1", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.10.0", EJDK.JDK7),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.0", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.2.1", EJDK.JDK7),
@@ -220,7 +220,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
-  RHINO ("org.mozilla", "rhino", "1.7.8", EJDK.JDK6),
+  RHINO ("org.mozilla", "rhino", "1.7.9", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.6", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-8", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
