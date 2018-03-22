@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180321</version>
+  <version>1.0.0-20180322</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -263,7 +263,7 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>com.github.javaparser</groupId>
@@ -637,7 +637,7 @@
     <dependency>
       <groupId>io.reactivex</groupId>
       <artifactId>rxjava</artifactId>
-      <version>1.3.6</version>
+      <version>1.3.7</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>

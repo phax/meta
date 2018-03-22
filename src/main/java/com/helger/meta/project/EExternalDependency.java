@@ -89,7 +89,7 @@ public enum EExternalDependency
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
   JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.18", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
@@ -221,7 +221,7 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.9", EJDK.JDK6),
-  RXJAVA ("io.reactivex", "rxjava", "1.3.6", EJDK.JDK6),
+  RXJAVA ("io.reactivex", "rxjava", "1.3.7", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-10", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
   @IsLegacy
