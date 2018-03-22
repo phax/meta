@@ -75,7 +75,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.4.1", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.14", EJDK.JDK6),
-  H2 ("com.h2database", "h2", "1.4.196", EJDK.JDK6),
+  H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.9.3", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.9", EJDK.JDK6),
@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.0", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.17", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.5.18", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -167,7 +167,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.8.v20171121", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.9.v20180320", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -210,7 +210,7 @@ public enum EExternalDependency
   @IsLegacy
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
-  MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.0", EJDK.JDK6),
+  MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.6.3", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.8", EJDK.JDK6),
@@ -222,7 +222,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.9", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.6", EJDK.JDK6),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-8", EJDK.JDK6),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-10", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
@@ -239,7 +239,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.3.2", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK6),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.1.Final", EJDK.JDK6),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.3.Final", EJDK.JDK6),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK6),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.5", EJDK.JDK6),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.1", EJDK.JDK6),
