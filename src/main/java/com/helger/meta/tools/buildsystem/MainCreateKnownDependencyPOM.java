@@ -19,6 +19,8 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.time.format.DateTimeFormatter;
 
+import javax.xml.XMLConstants;
+
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
@@ -28,6 +30,8 @@ import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroDocument;
 import com.helger.xml.microdom.serialize.MicroWriter;
+import com.helger.xml.namespace.MapBasedNamespaceContext;
+import com.helger.xml.serialize.write.XMLWriterSettings;
 
 /**
  * Create a POM that contains all external dependencies defined in
@@ -43,6 +47,9 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
   {
     final IMicroDocument aDoc = new MicroDocument ();
     final IMicroElement eProject = aDoc.appendElement (NS, "project");
+    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI,
+                           "schemaLocation",
+                           "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd");
     eProject.appendElement (NS, "modelVersion").appendText ("4.0.0");
     eProject.appendElement (NS, "groupId").appendText ("com.helger");
     eProject.appendElement (NS, "artifactId").appendText ("external-dependencies");
@@ -96,7 +103,10 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
     }
 
     final File f = new File ("deps/pom.xml");
-    MicroWriter.writeToFile (aDoc, f);
+    final MapBasedNamespaceContext aNSCtx = new MapBasedNamespaceContext ();
+    aNSCtx.setDefaultNamespaceURI (NS);
+    aNSCtx.addMapping ("xsi", XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI);
+    MicroWriter.writeToFile (aDoc, f, new XMLWriterSettings ().setNamespaceContext (aNSCtx));
     s_aLogger.info ("Done");
     s_aLogger.info ("Run the following now on " + f.toString () + ": mvn versions:display-dependency-updates");
   }
