@@ -57,7 +57,7 @@ public enum EProject implements IProject
                      EProjectType.RESOURCES_ONLY,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "1.1.0",
+                     "1.1.1",
                      EJDK.JDK8),
   META (null,
         IProject.DEFAULT_PROJECT_OWNER,

@@ -35,7 +35,7 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.2", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "6.1", EJDK.JDK6),
+  ASM ("org.ow2.asm", "asm", "6.1.1", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.59", EJDK.JDK6),
@@ -213,7 +213,7 @@ public enum EExternalDependency
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.6.3", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.8-dmr", EJDK.JDK6),
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.8", EJDK.JDK6),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.9", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.17", EJDK.JDK6),
