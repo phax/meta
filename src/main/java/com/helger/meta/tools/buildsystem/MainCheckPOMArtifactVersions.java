@@ -193,7 +193,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
             else
             {
-              _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+              if (aProject.getProjectOwner ().equals (IProject.DEFAULT_PROJECT_OWNER))
+                _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }
           }
 
