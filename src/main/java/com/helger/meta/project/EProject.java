@@ -173,7 +173,7 @@ public enum EProject implements IProject
                   EProjectType.JAVA_LIBRARY,
                   EHasPages.FALSE,
                   EHasWiki.TRUE,
-                  "6.0.0",
+                  "6.0.1",
                   EJDK.JDK8),
   PH_EVENTS (null,
              IProject.DEFAULT_PROJECT_OWNER,
