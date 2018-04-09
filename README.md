@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-04-06):
+Current list of all projects (as of 2018-04-09):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.2 - JDK 1.8
 
@@ -33,7 +33,7 @@ Current list of all projects (as of 2018-04-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
- * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 3.0.0 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 3.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
@@ -716,6 +716,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)

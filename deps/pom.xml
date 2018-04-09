@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180406</version>
+  <version>1.0.0-20180409</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20180319</version>
+      <version>v20180402</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -128,7 +128,7 @@
     <dependency>
       <groupId>org.easymock</groupId>
       <artifactId>easymock</artifactId>
-      <version>3.5.1</version>
+      <version>3.6</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.5.20</version>
+      <version>3.6.0</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -492,27 +492,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-surefire-provider</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -707,7 +707,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.0.3.Final</version>
+      <version>2.0.4.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -797,7 +797,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-dependency-plugin</artifactId>
-      <version>3.0.2</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -887,7 +887,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-shade-plugin</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1798,7 +1798,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
