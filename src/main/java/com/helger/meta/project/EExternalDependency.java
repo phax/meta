@@ -159,7 +159,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.26", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.27", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -220,9 +220,9 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
-  RHINO ("org.mozilla", "rhino", "1.7.9", EJDK.JDK6),
+  RHINO ("org.mozilla", "rhino", "1.7.10", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK6),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-10", EJDK.JDK6),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-11", EJDK.JDK6),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
@@ -266,7 +266,7 @@ public enum EExternalDependency
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "1.6", EJDK.JDK6),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK6),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "2.5.2", EJDK.JDK6),
-  PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.0.2", EJDK.JDK6),
+  PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.1.0", EJDK.JDK6),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "1.4", EJDK.JDK6),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK6),
