@@ -90,7 +90,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.0", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.1", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -256,7 +256,7 @@ public enum EExternalDependency
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.1.0", EJDK.JDK6),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK6),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.0.0", EJDK.JDK6),
-  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.0.0", EJDK.JDK6),
+  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.1.0", EJDK.JDK6),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.7.0", EJDK.JDK6),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.1.0", EJDK.JDK6),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK6),
