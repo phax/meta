@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180413</version>
+  <version>1.0.0-20180417</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.0</version>
+      <version>3.6.1</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -787,7 +787,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-clean-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1131,7 +1131,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout4</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1760,39 +1760,39 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-parent-pom</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-library</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-sql</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-xml</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-sql</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-xml</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
       <type>war</type>
     </dependency>
     <dependency>
