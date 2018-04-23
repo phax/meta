@@ -77,7 +77,7 @@ public enum EExternalDependency
   GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.9.3", EJDK.JDK6),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.9.4", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.9", EJDK.JDK6),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.5", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
@@ -228,7 +228,7 @@ public enum EExternalDependency
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK7),
-  SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.0", EJDK.JDK8),
+  SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK6),
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.25", EJDK.JDK6),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
