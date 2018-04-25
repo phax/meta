@@ -28,6 +28,11 @@ import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.lang.EnumHelper;
 import com.helger.commons.version.Version;
 
+/**
+ * Externally used dependencies in the latest applicable version per JDK.
+ *
+ * @author Philip Helger
+ */
 public enum EExternalDependency
 {
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.0.0", EJDK.JDK8),
