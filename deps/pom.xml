@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180425</version>
+  <version>1.0.0-20180502</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.2</version>
+      <version>3.6.3</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -492,27 +492,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.1.1</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.1.1</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-surefire-provider</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.1.1</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -587,7 +587,7 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver</artifactId>
-      <version>3.6.3</version>
+      <version>3.7.0</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -882,7 +882,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-resources-plugin</artifactId>
-      <version>3.0.2</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -892,7 +892,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-site-plugin</artifactId>
-      <version>3.7</version>
+      <version>3.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
