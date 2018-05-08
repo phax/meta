@@ -142,15 +142,15 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               final ICommonsList <String> aProvideC = new CommonsArrayList <> ();
 
               // ServiceLoader provider
+              // Map from interface to Set of implementations
               final ICommonsSortedMap <String, ICommonsSortedSet <String>> aImpls = SPITestHelper.testIfAllSPIImplementationsAreValid (new File (aProject.getBaseDir (),
                                                                                                                                                  SPITestHelper.MAIN_SERVICES).getAbsolutePath (),
                                                                                                                                        SPITestHelper.EMode.NO_RESOLVE);
               if (aImpls.isNotEmpty ())
               {
                 aRequireC.add ("osgi.extender; filter:=\"(osgi.extender=osgi.serviceloader.registrar)\"");
-                for (final ICommonsSortedSet <String> aSet : aImpls.values ())
-                  for (final String x : aSet)
-                    aProvideC.add ("osgi.serviceloader; osgi.serviceloader=" + x);
+                for (final String sInterfaceSPI : aImpls.keySet ())
+                  aProvideC.add ("osgi.serviceloader; osgi.serviceloader=" + sInterfaceSPI);
               }
 
               // Check all classes of this project for SPI interfaces
