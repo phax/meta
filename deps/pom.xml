@@ -421,28 +421,28 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.10.v201800503</version>
+      <version>9.4.10.v20180503</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.10.v201800503</version>
+      <version>9.4.10.v20180503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.10.v201800503</version>
+      <version>9.4.10.v20180503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.10.v201800503</version>
+      <version>9.4.10.v20180503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.10.v201800503</version>
+      <version>9.4.10.v20180503</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
