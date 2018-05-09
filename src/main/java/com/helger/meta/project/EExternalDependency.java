@@ -95,7 +95,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.3", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.4", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -172,7 +172,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.9.v20180320", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.10.v201800503", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -228,7 +228,7 @@ public enum EExternalDependency
   RHINO ("org.mozilla", "rhino", "1.7.10", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK6),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-11", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.11.0", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.12.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy

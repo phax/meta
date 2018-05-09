@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180504</version>
+  <version>1.0.0-20180509</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.3</version>
+      <version>3.6.4</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -421,28 +421,28 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.9.v20180320</version>
+      <version>9.4.10.v201800503</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.9.v20180320</version>
+      <version>9.4.10.v201800503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.9.v20180320</version>
+      <version>9.4.10.v201800503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.9.v20180320</version>
+      <version>9.4.10.v201800503</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.9.v20180320</version>
+      <version>9.4.10.v201800503</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -647,7 +647,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.11.0</version>
+      <version>3.12.0</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -974,88 +974,93 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-wsclient</artifactId>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>9.0.2</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
