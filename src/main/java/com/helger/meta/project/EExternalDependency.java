@@ -156,6 +156,7 @@ public enum EExternalDependency
 
   JAXWS_MAVEN_PLUGIN ("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK6),
   JBIG2 ("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK6),
+  JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.0", EJDK.JDK6),
   JEROMQ ("org.zeromq", "jeromq", "0.4.3", EJDK.JDK6),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK6),
