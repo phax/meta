@@ -171,7 +171,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                       }
                       aRequireC.add ("osgi.serviceloader; filter:=\"(osgi.serviceloader=" +
                                      sClassName +
-                                     ")\"; cardinality:=multiple");
+                                     ")\"; cardinality:=multiple; resolution:=optional");
                     }
                   }
               }
