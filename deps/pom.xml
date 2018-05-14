@@ -547,32 +547,32 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>7.3.0</version>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -979,93 +979,93 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-wsclient</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1486,38 +1486,38 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.0.3</version>
+      <version>5.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
