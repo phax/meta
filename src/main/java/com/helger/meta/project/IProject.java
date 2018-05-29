@@ -29,7 +29,7 @@ public interface IProject
 {
   String DEFAULT_PROJECT_OWNER = "phax";
   String PROJECT_OWNER_AUSTRIAPRO = "austriapro";
-  String PROJECT_OWNER_TOOP = "toop4eu";
+  String PROJECT_OWNER_TOOP = "TOOP4EU";
   String EXTENSION_PAGES_PROJECT = ".pages";
   String EXTENSION_WIKI_PROJECT = ".wiki";
 
