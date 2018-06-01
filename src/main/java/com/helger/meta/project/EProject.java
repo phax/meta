@@ -564,6 +564,8 @@ public enum EProject implements IProject
   PH_BDVE_EHF (PH_BDVE_PARENT_POM, "ph-bdve-ehf", EProjectType.JAVA_LIBRARY),
   PH_BDVE_ENERGIEEFACTUUR (PH_BDVE_PARENT_POM, "ph-bdve-energieefactuur", EProjectType.JAVA_LIBRARY),
   PH_BDVE_OIOUBL (PH_BDVE_PARENT_POM, "ph-bdve-oioubl", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_EBINTERFACE (PH_BDVE_PARENT_POM, "ph-bdve-ebinterface", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_TEAPPS (PH_BDVE_PARENT_POM, "ph-bdve-teapps", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_DIRECTORY_PARENT_POM (null,
                                IProject.DEFAULT_PROJECT_OWNER,
