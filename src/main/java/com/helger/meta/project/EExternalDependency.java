@@ -79,7 +79,9 @@ public enum EExternalDependency
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
-  GROOVY ("org.codehaus.groovy", "groovy-all", "2.5.0", EJDK.JDK6),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
+  @IsBOM
+  GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.0", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.10.1", EJDK.JDK6),
@@ -182,7 +184,7 @@ public enum EExternalDependency
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
   JJWT ("io.jsonwebtoken", "jjwt", "0.9.0", EJDK.JDK8),
-  JODA_TIME ("joda-time", "joda-time", "2.10.0", EJDK.JDK6),
+  JODA_TIME ("joda-time", "joda-time", "2.10", EJDK.JDK6),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK6),
