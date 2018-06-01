@@ -79,7 +79,7 @@ public enum EExternalDependency
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
-  GROOVY ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
+  GROOVY ("org.codehaus.groovy", "groovy-all", "2.5.0", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.10.1", EJDK.JDK6),
@@ -138,7 +138,7 @@ public enum EExternalDependency
   // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
   JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.0", EJDK.JDK9),
 
-  JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.13.3", EJDK.JDK6),
+  JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK6),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
 
   @IsBOM
@@ -182,7 +182,7 @@ public enum EExternalDependency
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
   JJWT ("io.jsonwebtoken", "jjwt", "0.9.0", EJDK.JDK8),
-  JODA_TIME ("joda-time", "joda-time", "2.9.9", EJDK.JDK6),
+  JODA_TIME ("joda-time", "joda-time", "2.10.0", EJDK.JDK6),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK6),
@@ -218,7 +218,7 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
-  MONGO_DB ("org.mongodb", "mongodb-driver", "3.7.0", EJDK.JDK6),
+  MONGO_DB ("org.mongodb", "mongodb-driver", "3.7.1", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.11", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.9", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -253,7 +253,7 @@ public enum EExternalDependency
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.1", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
-  ZXING_CORE ("com.google.zxing", "core", "3.3.2", EJDK.JDK8),
+  ZXING_CORE ("com.google.zxing", "core", "3.3.3", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0", EJDK.JDK6),
