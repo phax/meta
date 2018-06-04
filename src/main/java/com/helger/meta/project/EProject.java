@@ -593,7 +593,7 @@ public enum EProject implements IProject
                                 EProjectType.MAVEN_POM,
                                 EHasPages.FALSE,
                                 EHasWiki.TRUE,
-                                "5.0.5",
+                                "5.0.6",
                                 EJDK.JDK8),
   PEPPOL_SMP_SERVER_LIBRARY (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-library", EProjectType.JAVA_LIBRARY),
   PEPPOL_SMP_SERVER_SQL (PEPPOL_SMP_SERVER_PARENT_POM, "peppol-smp-server-sql", EProjectType.JAVA_LIBRARY),
