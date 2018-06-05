@@ -260,7 +260,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
       final String sExpectedURL = "https://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
-      if (!sExpectedURL.equals (sURL))
+      if (!sExpectedURL.equalsIgnoreCase (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
 
@@ -303,12 +303,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                            ".git";
         // Alternatively:
         // "scm:git:https://github.com/"+org+"/"+eProject.getProjectName ()
-        if (!sExpectedConnection.equals (sConnection))
+        if (!sExpectedConnection.equalsIgnoreCase (sConnection))
           _warn (aProject, "Unexpected SCM connection '" + sConnection + "'. Expected '" + sExpectedConnection + "'");
 
         final String sDeveloperConnection = MicroHelper.getChildTextContent (eSCM, "developerConnection");
         final String sExpectedDeveloperConnection = sExpectedConnection;
-        if (!sExpectedDeveloperConnection.equals (sDeveloperConnection))
+        if (!sExpectedDeveloperConnection.equalsIgnoreCase (sDeveloperConnection))
           _warn (aProject,
                  "Unexpected SCM developer connection '" +
                            sDeveloperConnection +
@@ -318,7 +318,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
         final String sExpectedURL = "http://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
-        if (!sExpectedURL.equals (sURL))
+        if (!sExpectedURL.equalsIgnoreCase (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 
         final String sTag = MicroHelper.getChildTextContent (eSCM, "tag");
