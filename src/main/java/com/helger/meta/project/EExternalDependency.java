@@ -79,12 +79,13 @@ public enum EExternalDependency
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK6),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
+  @IsLegacy
   GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
   @IsBOM
   GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.0", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.10.1", EJDK.JDK6),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.10.2", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.9", EJDK.JDK6),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.5", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
@@ -97,7 +98,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.7", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.8", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -121,7 +122,7 @@ public enum EExternalDependency
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
 
   @IsBOM
-  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.0", EJDK.JDK9),
+  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.0.1", EJDK.JDK9),
   JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
   JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB9_BOM),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
@@ -138,10 +139,10 @@ public enum EExternalDependency
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
   // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
   // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
-  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.0", EJDK.JDK9),
+  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.0.1", EJDK.JDK9),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK6),
-  JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.11.1", EJDK.JDK6),
+  JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK6),
 
   @IsBOM
   @IsLegacy
@@ -152,7 +153,7 @@ public enum EExternalDependency
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
   @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0", EJDK.JDK9),
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0.1", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
 
@@ -218,7 +219,7 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK6),
   @IsLegacy
   METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK6),
-  METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.0", EJDK.JDK8),
+  METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.1", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.7.1", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.11", EJDK.JDK6),
