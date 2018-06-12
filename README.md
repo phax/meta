@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-06-06):
+Current list of all projects (as of 2018-06-12):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.2 - JDK 1.8
 
@@ -709,6 +709,22 @@ Current list of all projects (as of 2018-06-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.9.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom) 
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
+ * [toop-commons/toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.9.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons) 
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
+ * [toop-commons/toop-kafka-client](https://github.com/TOOP4EU/toop-commons) - Version 0.9.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client) 
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
+ * [toop-interface](https://github.com/TOOP4EU/toop-interface) - Version 0.9.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface) 
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-interface.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-interface)
  * [toop-parent-pom](https://github.com/TOOP4EU/toop-parent-pom) - Version 1.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
@@ -734,15 +750,6 @@ Current list of all unreleased projects:
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
- * [toop-commons](https://github.com/TOOP4EU/toop-commons) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-commons](https://github.com/TOOP4EU/toop-commons) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-kafka-client](https://github.com/TOOP4EU/toop-commons) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
  * [toop-connector](https://github.com/TOOP4EU/toop-connector) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)

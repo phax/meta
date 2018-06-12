@@ -78,7 +78,7 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK6),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK6),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK6),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6", EJDK.JDK6),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.1", EJDK.JDK6),
   @IsLegacy
   GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
   @IsBOM
@@ -91,14 +91,14 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.5", EJDK.JDK6),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.6", EJDK.JDK6),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.8", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.9", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -177,7 +177,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.10.v20180503", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.11.v20180605", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -281,7 +281,7 @@ public enum EExternalDependency
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.0.1", EJDK.JDK6),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK6),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "2.5", EJDK.JDK6),
-  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.9.0", EJDK.JDK6),
+  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.10.0", EJDK.JDK6),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "2.9", EJDK.JDK6),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK6),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK6),
@@ -292,7 +292,7 @@ public enum EExternalDependency
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.21.0", EJDK.JDK6),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.21.0", EJDK.JDK6),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.21.0", EJDK.JDK6),
-  PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.2.1", EJDK.JDK6),
+  PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.2.2", EJDK.JDK6),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK6),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK6),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK6),
