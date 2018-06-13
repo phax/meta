@@ -49,7 +49,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20180506", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20180610", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK6),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK6),
@@ -254,7 +254,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.5", EJDK.JDK6),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.1", EJDK.JDK6),
   XERCES ("xerces", "xercesImpl", "2.11.0", EJDK.JDK6),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.1", EJDK.JDK6),
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.2", EJDK.JDK6),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK6),
   ZXING_CORE ("com.google.zxing", "core", "3.3.3", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
