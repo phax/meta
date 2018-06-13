@@ -165,7 +165,7 @@ Current list of all projects (as of 2018-06-13):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-asic](https://github.com/phax/ph-asic) - Version 1.0.1 - JDK 1.8
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 1.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
    [![Build Status](https://travis-ci.org/phax/ph-asic.svg?branch=master)](https://travis-ci.org/phax/ph-asic)
