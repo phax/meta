@@ -452,6 +452,7 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBL22 (PH_UBL_PARENT_POM, "ph-ubl22", EProjectType.JAVA_LIBRARY),
   PH_UBL22_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl22-codelists", EProjectType.JAVA_LIBRARY),
+  PH_UBLPE (PH_UBL_PARENT_POM, "ph-ublpe", EProjectType.JAVA_LIBRARY, (String) null),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
 
   PH_CII_PARENT_POM (null,
