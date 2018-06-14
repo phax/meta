@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-06-13):
+Current list of all projects (as of 2018-06-14):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.0.2 - JDK 1.8
 
@@ -744,6 +744,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
