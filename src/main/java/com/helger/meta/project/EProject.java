@@ -25,6 +25,8 @@ import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
 import com.helger.meta.CMeta;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 /**
  * Defines all the active projects.
  *
@@ -760,6 +762,7 @@ public enum EProject implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
+  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   private EProject (@Nonnull final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull final EProjectType eProjectType,
@@ -797,6 +800,7 @@ public enum EProject implements IProject
    * @param eMinJDK
    *        Minimum JDK version to use
    */
+  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   private EProject (@Nullable final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectOwner,
                     @Nonnull @Nonempty final String sProjectName,
