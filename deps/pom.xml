@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180619</version>
+  <version>1.0.0-20180621</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -163,7 +163,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>2.0.3</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -1112,7 +1112,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-asic</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1142,7 +1142,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout4</artifactId>
-      <version>5.0.5</version>
+      <version>5.0.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1157,7 +1157,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
-      <version>4.0.0</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1600,28 +1600,28 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.0.2</version>
+      <version>4.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.0.2</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.0.2</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.0.2</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.0.2</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1819,7 +1819,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
@@ -1829,34 +1829,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-parent-pom</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-lib</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-esens</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-servlet</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-server-webapp</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-server-webapp-test</artifactId>
-      <version>0.7.0</version>
+      <version>0.8.0</version>
       <type>war</type>
     </dependency>
     <dependency>

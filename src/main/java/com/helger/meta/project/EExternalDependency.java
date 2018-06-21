@@ -72,7 +72,7 @@ public enum EExternalDependency
   @IsLegacy
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.0.3", EJDK.JDK6),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.1.1", EJDK.JDK6),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.5", EJDK.JDK6),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK6),
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK6),
