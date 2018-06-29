@@ -16,3 +16,6 @@ target/
 /wsdl/
 /xsd/
 **/*.iml
+/.settings/ 
+/.project 
+/.classpath 
