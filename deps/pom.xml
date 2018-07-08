@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180629</version>
+  <version>1.0.0-20180708</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -43,27 +43,27 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk15on</artifactId>
-      <version>1.59</version>
+      <version>1.60</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk15on</artifactId>
-      <version>1.59</version>
+      <version>1.60</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.59</version>
+      <version>1.60</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
-      <version>1.59</version>
+      <version>1.60</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
-      <version>1.59</version>
+      <version>1.60</version>
     </dependency>
     <dependency>
       <groupId>com.google.javascript</groupId>
@@ -108,7 +108,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
-      <version>2.5.0</version>
+      <version>2.6.0</version>
     </dependency>
     <dependency>
       <groupId>dnsjava</groupId>
@@ -153,7 +153,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.framework</artifactId>
-      <version>5.6.10</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
@@ -219,7 +219,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpcore</artifactId>
-      <version>4.4.9</version>
+      <version>4.4.10</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -269,7 +269,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.11</version>
+      <version>3.6.12</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -350,18 +350,18 @@
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-ri-bom</artifactId>
-      <version>2.3.0.1</version>
+      <version>2.3.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-rt</artifactId>
-      <version>2.3.0.1</version>
+      <version>2.3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-tools</artifactId>
-      <version>2.3.0.1</version>
+      <version>2.3.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -453,7 +453,7 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>joda-time</groupId>
@@ -598,17 +598,17 @@
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
-      <version>2.0.10</version>
+      <version>2.0.11</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-app</artifactId>
-      <version>2.0.10</version>
+      <version>2.0.11</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
-      <version>2.0.10</version>
+      <version>2.0.11</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -868,7 +868,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-project-info-reports-plugin</artifactId>
-      <version>2.9</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>

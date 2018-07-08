@@ -43,7 +43,7 @@ public enum EExternalDependency
   ASM ("org.ow2.asm", "asm", "6.2", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.59", EJDK.JDK6),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.60", EJDK.JDK6),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
@@ -57,7 +57,7 @@ public enum EExternalDependency
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.4.0", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK6),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.5.0", EJDK.JDK7),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.6.0", EJDK.JDK7),
   DNSJAVA ("dnsjava", "dnsjava", "2.1.8", EJDK.JDK6),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK6),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK6),
@@ -68,7 +68,7 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "5.6.10", EJDK.JDK6),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.0", EJDK.JDK6),
   @IsLegacy
   FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK6),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK7),
@@ -86,7 +86,7 @@ public enum EExternalDependency
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.10.2", EJDK.JDK6),
-  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.9", EJDK.JDK6),
+  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.10", EJDK.JDK6),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.5", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
@@ -98,7 +98,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.11", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.12", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
@@ -153,7 +153,7 @@ public enum EExternalDependency
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
   @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0.1", EJDK.JDK9),
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0.2", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
 
@@ -184,7 +184,7 @@ public enum EExternalDependency
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK6),
-  JJWT ("io.jsonwebtoken", "jjwt", "0.9.0", EJDK.JDK8),
+  JJWT ("io.jsonwebtoken", "jjwt", "0.9.1", EJDK.JDK8),
   JODA_TIME ("joda-time", "joda-time", "2.10", EJDK.JDK6),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
@@ -223,7 +223,7 @@ public enum EExternalDependency
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.8.0", EJDK.JDK6),
   MYSQL ("mysql", "mysql-connector-java", "8.0.11", EJDK.JDK6),
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.10", EJDK.JDK6),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.11", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   POI ("org.apache.poi", "poi", "3.17", EJDK.JDK6),
@@ -282,7 +282,7 @@ public enum EExternalDependency
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK6),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "2.5", EJDK.JDK6),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.10.0", EJDK.JDK6),
-  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "2.9", EJDK.JDK6),
+  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK6),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK6),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.1.0", EJDK.JDK6),
