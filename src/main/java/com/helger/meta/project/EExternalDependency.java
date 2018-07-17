@@ -37,7 +37,7 @@ public enum EExternalDependency
 {
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.0.0", EJDK.JDK8),
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.6", EJDK.JDK6),
-  ANT ("org.apache.ant", "ant", "1.10.4", EJDK.JDK6),
+  ANT ("org.apache.ant", "ant", "1.10.5", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
   ASM ("org.ow2.asm", "asm", "6.2", EJDK.JDK6),
@@ -53,8 +53,8 @@ public enum EExternalDependency
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK6),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK6),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK6),
-  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.1", EJDK.JDK6),
-  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.4.0", EJDK.JDK7),
+  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.2", EJDK.JDK6),
+  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.5.0", EJDK.JDK7),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK6),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK6),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.6.0", EJDK.JDK7),
@@ -82,7 +82,7 @@ public enum EExternalDependency
   @IsLegacy
   GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK6),
   @IsBOM
-  GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.0", EJDK.JDK6),
+  GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.1", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.10.2", EJDK.JDK6),
@@ -98,7 +98,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.13", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.14", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
