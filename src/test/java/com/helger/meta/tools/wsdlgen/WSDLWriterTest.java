@@ -32,7 +32,7 @@ import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
 public final class WSDLWriterTest
 {
-  private static final Logger s_aLogger = LoggerFactory.getLogger (WSDLWriterTest.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (WSDLWriterTest.class);
   private static final boolean [] BOOLS = new boolean [] { true, false };
 
   @Test
@@ -40,7 +40,7 @@ public final class WSDLWriterTest
   {
     for (final String sFilename : InterfaceReaderTest.FILENAMES)
     {
-      s_aLogger.info (sFilename);
+      LOGGER.info (sFilename);
       final File aFile = new File ("src/test/resources", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);

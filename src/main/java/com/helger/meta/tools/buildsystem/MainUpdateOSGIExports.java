@@ -224,6 +224,6 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
           _warn (aProject, "OSGI bundle is missing plugin instructions!");
       }
     }
-    s_aLogger.info ("done");
+    LOGGER.info ("done");
   }
 }

@@ -54,7 +54,7 @@ import com.helger.commons.string.ToStringGenerator;
 public final class StringTable implements ICloneable <StringTable>
 {
   public static final boolean DEFAULT_WARN_ON_DUPLICATED_IDS = false;
-  private static final Logger s_aLogger = LoggerFactory.getLogger (StringTable.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (StringTable.class);
 
   // Map <StringID, Map <Locale-as-String, Text>>
   private final ICommonsSortedMap <String, ICommonsSortedMap <String, String>> m_aMap = new CommonsTreeMap <> ();
@@ -137,7 +137,7 @@ public final class StringTable implements ICloneable <StringTable>
                                             "' new: '" +
                                             sNewText +
                                             "'");
-      s_aLogger.warn ("A text for ID '" + sID + "' in locale '" + sLocale + "' is already present!");
+      LOGGER.warn ("A text for ID '" + sID + "' in locale '" + sLocale + "' is already present!");
     }
 
     return overwriteText (sID, sLocale, sNewText);

@@ -29,7 +29,7 @@ import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
 public final class InterfaceReaderTest
 {
-  private static final Logger s_aLogger = LoggerFactory.getLogger (InterfaceReaderTest.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (InterfaceReaderTest.class);
 
   public static final String [] FILENAMES = new String [] { "wsdlgen/example-complex.interface",
                                                             "wsdlgen/example-currencyConvert.interface",
@@ -50,7 +50,7 @@ public final class InterfaceReaderTest
   {
     for (final String sFilename : FILENAMES)
     {
-      s_aLogger.info (sFilename);
+      LOGGER.info (sFilename);
       final File aFile = new File ("src/test/resources", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);

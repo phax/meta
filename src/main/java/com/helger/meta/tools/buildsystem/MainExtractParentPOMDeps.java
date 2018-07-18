@@ -100,6 +100,6 @@ public final class MainExtractParentPOMDeps extends AbstractProjectMain
           }
         }
       }
-    s_aLogger.info (aSB.toString ());
+    LOGGER.info (aSB.toString ());
   }
 }

@@ -139,8 +139,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
   {
-    if (s_aLogger.isDebugEnabled ())
-      s_aLogger.debug (aProject.getProjectName ());
+    if (LOGGER.isDebugEnabled ())
+      LOGGER.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
@@ -563,6 +563,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
       _validatePOM (aProject, aDoc);
     }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

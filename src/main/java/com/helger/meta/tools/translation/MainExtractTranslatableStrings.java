@@ -149,7 +149,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   private static void _scanProject (@Nonnull final IProject eProject) throws IOException
   {
     if (false)
-      s_aLogger.info ("  " + eProject.getProjectName ());
+      LOGGER.info ("  " + eProject.getProjectName ());
     final File aTargetDir = FileHelper.getCanonicalFile (new File (eProject.getBaseDir (), "target/classes"));
 
     final StringTable aSTProject = new StringTable ();
@@ -189,11 +189,11 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
   public static void main (final String [] args) throws IOException
   {
-    s_aLogger.info ("Start extracting text from .class files!");
+    LOGGER.info ("Start extracting text from .class files!");
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated ()))
       _scanProject (aProject);
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s)");
     if (!s_aActions.isEmpty ())
     {
       final StringBuilder aSB = new StringBuilder (BATCH_HEADER);
@@ -202,7 +202,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
       aSB.append (BATCH_FOOTER);
       final File aDestFile = new File (CMeta.GIT_BASE_DIR, "translation-actions.cmd");
       SimpleFileIO.writeFile (aDestFile, aSB.toString (), BATCH_CHARSET);
-      s_aLogger.info ("Execute " + aDestFile.getAbsolutePath ());
+      LOGGER.info ("Execute " + aDestFile.getAbsolutePath ());
     }
   }
 }

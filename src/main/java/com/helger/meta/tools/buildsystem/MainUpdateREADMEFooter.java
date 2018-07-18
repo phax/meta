@@ -134,9 +134,9 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
       SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
                               aSB.toString (),
                               BATCH_CHARSET);
-      s_aLogger.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
+      LOGGER.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
     }
 
-    s_aLogger.info ("Done");
+    LOGGER.info ("Done");
   }
 }

@@ -177,6 +177,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
         _validateProjectWithoutJavaCode (aProject);
       _validateProjectTravisConfig (aProject);
     }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

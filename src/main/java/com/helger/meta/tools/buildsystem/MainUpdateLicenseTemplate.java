@@ -77,6 +77,6 @@ public final class MainUpdateLicenseTemplate extends AbstractProjectMain
         System.out.println ("  changed");
       }
     }
-    s_aLogger.info ("Done - run mvn license:format on all projects");
+    LOGGER.info ("Done - run mvn license:format on all projects");
   }
 }

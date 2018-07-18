@@ -107,7 +107,7 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
     aNSCtx.setDefaultNamespaceURI (NS);
     aNSCtx.addMapping ("xsi", XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI);
     MicroWriter.writeToFile (aDoc, f, new XMLWriterSettings ().setNamespaceContext (aNSCtx));
-    s_aLogger.info ("Done");
-    s_aLogger.info ("Run the following now on " + f.toString () + ": mvn versions:display-dependency-updates");
+    LOGGER.info ("Done");
+    LOGGER.info ("Run the following now on " + f.toString () + ": mvn versions:display-dependency-updates");
   }
 }

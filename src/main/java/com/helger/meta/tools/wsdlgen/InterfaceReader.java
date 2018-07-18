@@ -57,7 +57,7 @@ import com.helger.meta.tools.wsdlgen.model.type.WGTypeRegistry;
  */
 public class InterfaceReader
 {
-  private static final Logger s_aLogger = LoggerFactory.getLogger (InterfaceReader.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (InterfaceReader.class);
 
   @Nonnull
   private static String _preprocess (@Nonnull final ICommonsList <String> aContent)
@@ -83,14 +83,14 @@ public class InterfaceReader
                               x -> x.setTrackPosition (true)
                                     .setRequireStringQuotes (false)
                                     .setAllowSpecialCharsInStrings (true),
-                              ex -> s_aLogger.error ("Failed to parse JSON", ex))
+                              ex -> LOGGER.error ("Failed to parse JSON", ex))
                   .isSuccess ())
     {
       final IJson aJson = aHandler.getJson ();
       if (aJson.isObject ())
         return aJson.getAsObject ();
 
-      s_aLogger.error ("Parsed JSON is not an object!");
+      LOGGER.error ("Parsed JSON is not an object!");
     }
     return null;
   }

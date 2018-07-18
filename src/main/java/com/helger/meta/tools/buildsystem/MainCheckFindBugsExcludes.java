@@ -52,6 +52,6 @@ public final class MainCheckFindBugsExcludes extends AbstractProjectMain
                 _info (aProject, "Has FindBugs excludes defines!");
       }
     }
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

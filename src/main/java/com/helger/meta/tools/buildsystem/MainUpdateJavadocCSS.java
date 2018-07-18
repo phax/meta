@@ -47,6 +47,6 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
       assert f.exists ();
       SimpleFileIO.writeFile (f, sSrcCSS, StandardCharsets.UTF_8);
     }
-    s_aLogger.info ("Done - run mvn license:format on all projects");
+    LOGGER.info ("Done - run mvn license:format on all projects");
   }
 }

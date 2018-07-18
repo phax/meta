@@ -55,7 +55,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
  */
 public final class ProjectList
 {
-  private static final Logger s_aLogger = LoggerFactory.getLogger (ProjectList.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (ProjectList.class);
   private static final ICommonsOrderedSet <File> s_aBaseDirs = new CommonsLinkedHashSet <> ();
   private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
 
@@ -88,14 +88,14 @@ public final class ProjectList
           final File aBaseDir = new File (sBaseDir);
           if (aBaseDir.exists ())
             if (!s_aBaseDirs.add (aBaseDir))
-              s_aLogger.warn ("Duplicate base dir present: " + aBaseDir);
+              LOGGER.warn ("Duplicate base dir present: " + aBaseDir);
             else
-              if (s_aLogger.isDebugEnabled ())
-                s_aLogger.debug ("Added base dir " + aBaseDir.getAbsolutePath ());
+              if (LOGGER.isDebugEnabled ())
+                LOGGER.debug ("Added base dir " + aBaseDir.getAbsolutePath ());
         }
 
         if (s_aBaseDirs.isEmpty ())
-          s_aLogger.error ("No base directory is present - resolution of other projects will fail!");
+          LOGGER.error ("No base directory is present - resolution of other projects will fail!");
 
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
         {
@@ -159,8 +159,8 @@ public final class ProjectList
       final File ret = new File (aBaseDir, sDir);
       if (ret.exists ())
       {
-        if (s_aLogger.isDebugEnabled ())
-          s_aLogger.debug ("Resolved '" + sDir + "' to " + ret.getAbsolutePath ());
+        if (LOGGER.isDebugEnabled ())
+          LOGGER.debug ("Resolved '" + sDir + "' to " + ret.getAbsolutePath ());
         return ret;
       }
     }

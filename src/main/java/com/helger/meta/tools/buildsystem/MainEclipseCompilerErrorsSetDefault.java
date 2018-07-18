@@ -51,6 +51,6 @@ public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMa
       SimpleFileIO.writeFile (fCur, sContent.getBytes (StandardCharsets.UTF_8));
       _info (aProject, "Done restoring default");
     }
-    s_aLogger.info ("Done");
+    LOGGER.info ("Done");
   }
 }

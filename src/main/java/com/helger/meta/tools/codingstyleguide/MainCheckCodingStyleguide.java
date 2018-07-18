@@ -363,8 +363,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bIsFinal)
         {
           if (!fn.name.startsWith ("s_") &&
-              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
-              !fn.name.equals ("serialVersionUID"))
+              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) && !fn.name.equals ("serialVersionUID"))
             _warn (aProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
         }
         else
@@ -645,7 +644,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   private static void _scanProject (@Nonnull final IProject aProject)
   {
     if (false)
-      s_aLogger.info ("  " + aProject.getProjectName ());
+      LOGGER.info ("  " + aProject.getProjectName ());
 
     _scanMainCode (aProject);
     _scanTestCode (aProject);
@@ -653,11 +652,11 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    s_aLogger.info ("Start checking coding style guide in .class files!");
+    LOGGER.info ("Start checking coding style guide in .class files!");
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     p != EProject.PH_JAVACC_MAVEN_PLUGIN &&
                                                                     !p.isDeprecated ()))
       _scanProject (aProject);
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

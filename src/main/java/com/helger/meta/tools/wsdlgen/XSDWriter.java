@@ -56,7 +56,7 @@ public class XSDWriter
   public static final String PREFIX_XSD = "xs";
   public static final String PREFIX_TNS = "tns";
 
-  private static final Logger s_aLogger = LoggerFactory.getLogger (XSDWriter.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (XSDWriter.class);
 
   private final WGInterface m_aInterface;
   private boolean m_bCreateDocumentation = true;
@@ -264,7 +264,7 @@ public class XSDWriter
                 if (aChildTypeDef.getType ().isSimple ())
                   eElement.setAttribute ("default", aChildTypeDef.getDefault ());
                 else
-                  s_aLogger.warn ("Element " +
+                  LOGGER.warn ("Element " +
                                   sChildName +
                                   " of complex type " +
                                   aChildTypeDef.getType ().getName () +

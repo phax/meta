@@ -52,7 +52,7 @@ public abstract class AbstractProjectMain
                                             ":exit\n";
   public static final Charset BATCH_CHARSET = StandardCharsets.ISO_8859_1;
 
-  protected static final Logger s_aLogger = LoggerFactory.getLogger (AbstractProjectMain.class);
+  protected static final Logger LOGGER = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 
   static
@@ -69,7 +69,7 @@ public abstract class AbstractProjectMain
 
   protected static final void _warn (@Nonnull final IProject aProject, @Nonnull final String sMsg)
   {
-    s_aLogger.warn (_getLogPrefix (aProject) + sMsg);
+    LOGGER.warn (_getLogPrefix (aProject) + sMsg);
     s_nWarnCount++;
   }
 
@@ -81,7 +81,7 @@ public abstract class AbstractProjectMain
 
   protected static final void _info (@Nonnull final IProject aProject, @Nonnull final String sMsg)
   {
-    s_aLogger.info (_getLogPrefix (aProject) + sMsg);
+    LOGGER.info (_getLogPrefix (aProject) + sMsg);
   }
 
   @Nonnull

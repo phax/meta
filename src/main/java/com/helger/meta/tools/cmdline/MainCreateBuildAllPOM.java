@@ -63,8 +63,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
                                 @Nonnull final IMicroDocument aDoc,
                                 @Nonnull final ICommonsMap <IProject, ICommonsSet <IProject>> aTree)
   {
-    if (s_aLogger.isDebugEnabled ())
-      s_aLogger.debug (aProject.getProjectName ());
+    if (LOGGER.isDebugEnabled ())
+      LOGGER.debug (aProject.getProjectName ());
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
@@ -146,7 +146,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
           bChanged = true;
       }
     } while (bChanged);
-    s_aLogger.info ("Found all transitive dependencies after " + nIterations + " iterations");
+    LOGGER.info ("Found all transitive dependencies after " + nIterations + " iterations");
 
     // Evaluate dependencies
     final ICommonsList <Map.Entry <IProject, ICommonsSet <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
@@ -199,6 +199,6 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     }
 
     MicroWriter.writeToFile (aDoc, new File (CMeta.GIT_BASE_DIR, "pom-all.xml"));
-    s_aLogger.info ("Done - " + getWarnCount () + " warning(s)");
+    LOGGER.info ("Done - " + getWarnCount () + " warning(s)");
   }
 }
