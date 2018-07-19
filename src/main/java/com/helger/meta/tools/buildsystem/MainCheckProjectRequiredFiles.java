@@ -21,7 +21,6 @@ import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnull;
 
-import com.helger.commons.changelog.CChangeLog;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.state.ESuccess;
@@ -110,8 +109,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
     // Check for file contents
     _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
-    if (new File (aProject.getBaseDir (), "src/main/resources/changelog.xml").isFile ())
-      _checkFileContains (aProject, "src/main/resources/changelog.xml", CChangeLog.CHANGELOG_NAMESPACE_10);
   }
 
   private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
