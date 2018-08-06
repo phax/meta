@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180724</version>
+  <version>1.0.0-20180806</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -33,12 +33,12 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>6.2</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>6.2</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
@@ -214,7 +214,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>3.10.3</version>
+      <version>3.10.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -269,7 +269,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.14</version>
+      <version>3.6.16</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -294,7 +294,7 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>javax.persistence</artifactId>
-      <version>2.2.0</version>
+      <version>2.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
@@ -473,7 +473,7 @@
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>javax.servlet.jsp-api</artifactId>
-      <version>2.3.1</version>
+      <version>2.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
@@ -518,7 +518,7 @@
     <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka-clients</artifactId>
-      <version>1.1.1</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.littleshoot</groupId>
@@ -528,17 +528,17 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.11.0</version>
+      <version>2.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.11.0</version>
+      <version>2.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.11.0</version>
+      <version>2.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -593,7 +593,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.11</version>
+      <version>8.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -643,12 +643,12 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-12</version>
+      <version>9.8.0-14</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.13.0</version>
+      <version>3.14.0</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -793,7 +793,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.7.0</version>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1122,7 +1122,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1157,7 +1157,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1370,119 +1370,119 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-basic</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-demo</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1605,28 +1605,28 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

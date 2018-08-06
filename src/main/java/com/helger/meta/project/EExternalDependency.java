@@ -40,7 +40,7 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.5", EJDK.JDK6),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "6.2", EJDK.JDK6),
+  ASM ("org.ow2.asm", "asm", "6.2.1", EJDK.JDK6),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.60", EJDK.JDK6),
@@ -85,7 +85,7 @@ public enum EExternalDependency
   GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.1", EJDK.JDK6),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK6),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK6),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.10.3", EJDK.JDK6),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.10.4", EJDK.JDK6),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.10", EJDK.JDK6),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.6", EJDK.JDK6),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK6),
@@ -98,12 +98,12 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.1", EJDK.JDK6),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.14", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.16", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.3", EJDK.JDK6),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK6),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK6),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.1", EJDK.JDK6),
-  JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.0", EJDK.JDK7),
+  JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK7),
 
   @IsBOM
   @IsLegacy
@@ -190,7 +190,7 @@ public enum EExternalDependency
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK6),
   JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2", EJDK.JDK6),
-  JSP_API ("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.1", EJDK.JDK6),
+  JSP_API ("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK6),
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK7),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK6),
   JUNIT ("junit", "junit", "4.12", EJDK.JDK6),
@@ -203,9 +203,9 @@ public enum EExternalDependency
                                      JUNIT5_PLATFORM_LAUNCHER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER_API),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "1.1.1", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.0.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK7),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.0", EJDK.JDK7),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.1", EJDK.JDK7),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.4.0", EJDK.JDK7),
@@ -222,7 +222,7 @@ public enum EExternalDependency
   METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.1", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK6),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.8.0", EJDK.JDK6),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.11", EJDK.JDK6),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.12", EJDK.JDK6),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.11", EJDK.JDK6),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
@@ -232,8 +232,8 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK6),
   RHINO ("org.mozilla", "rhino", "1.7.10", EJDK.JDK6),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK6),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-12", EJDK.JDK6),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.13.0", EJDK.JDK6),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-14", EJDK.JDK6),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.14.0", EJDK.JDK6),
   @IsLegacy
   SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK6),
   @IsLegacy
@@ -267,7 +267,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK6),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.0.0", EJDK.JDK6),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.1.0", EJDK.JDK6),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.7.0", EJDK.JDK6),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.8.0", EJDK.JDK6),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.1.1", EJDK.JDK6),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK6),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.0.1", EJDK.JDK6),
