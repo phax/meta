@@ -729,7 +729,7 @@ Current list of all projects (as of 2018-08-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-interface.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-interface)
- * [toop-parent-pom](https://github.com/TOOP4EU/toop-parent-pom) - Version 1.0.3 - JDK 1.8
+ * [toop-parent-pom](https://github.com/TOOP4EU/toop-parent-pom) - Version 1.0.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-parent-pom.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-parent-pom)
