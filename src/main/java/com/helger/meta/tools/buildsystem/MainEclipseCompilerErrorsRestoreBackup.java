@@ -28,8 +28,7 @@ public final class MainEclipseCompilerErrorsRestoreBackup extends AbstractProjec
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated () &&
-                                                                    p.getBaseDir ().exists () &&
-                                                                    p.getMinimumJDKVersion ().isAtLeast8 ()))
+                                                                    p.getBaseDir ().exists ()))
     {
       final File fCur = new File (aProject.getBaseDir (), ".settings/org.eclipse.jdt.core.prefs");
       final File fBackup = new File (aProject.getBaseDir (), ".settings/org.eclipse.jdt.core.prefs.bup");

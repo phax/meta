@@ -204,7 +204,6 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (bIsSpecialCase)
       return;
 
-    final boolean bIsJDK8 = aProject.getMinimumJDKVersion ().isAtLeast8 ();
     final boolean bClassIsAbstract = Modifier.isAbstract (cn.access);
     final boolean bClassIsEnum = (cn.access & Opcodes.ACC_ENUM) != 0;
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
@@ -308,7 +307,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         }
 
       if (false)
-        if (bIsJDK8 && bReturnsJdkCollection)
+        if (bReturnsJdkCollection)
           if (!mn.name.equals ("getAsUnmodifiable"))
             _warn (aProject,
                    sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
@@ -335,7 +334,6 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
                                     sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
-    final boolean bIsJDK8 = aProject.getMinimumJDKVersion ().isAtLeast8 ();
 
     final String sPrefix = "[" + sClassLocalName + "] ";
     final boolean bClassIsFinal = Modifier.isFinal (cn.access);
@@ -363,7 +361,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         if (bIsFinal)
         {
           if (!fn.name.startsWith ("s_") &&
-              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) && !fn.name.equals ("serialVersionUID"))
+              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
+              !fn.name.equals ("serialVersionUID"))
             _warn (aProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
         }
         else
@@ -389,7 +388,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
           _warn (aProject, sPrefix + "Instance member '" + fn.name + "' is not private");
       }
 
-      if (bIsJDK8 && bIsJdkCollection)
+      if (bIsJdkCollection)
         _warn (aProject,
                sPrefix + "Member '" + fn.name + "' is a JDK Collection - consider using an ICommons* collection");
     }

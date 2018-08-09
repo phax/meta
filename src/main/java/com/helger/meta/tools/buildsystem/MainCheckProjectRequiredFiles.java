@@ -135,7 +135,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
       {
         _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
-        if (aProject.getProjectType ().hasJavaCode () && aProject.getMinimumJDKVersion ().isAtLeast8 ())
+        if (aProject.getProjectType ().hasJavaCode ())
         {
           // jdeps only with JDK8+
           _checkFileContains (aProject,

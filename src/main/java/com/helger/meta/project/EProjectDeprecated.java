@@ -58,7 +58,7 @@ public enum EProjectDeprecated implements IProject
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
                           "3.0.1",
-                          EJDK.JDK6),
+                          EJDK.JDK8),
   PEPPOL_LIME_API (PEPPOL_LIME_PARENT_POM, "peppol-lime-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_CLIENT (PEPPOL_LIME_PARENT_POM, "peppol-lime-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_LIME_SERVER (PEPPOL_LIME_PARENT_POM, "peppol-lime-server", EProjectType.JAVA_WEB_APPLICATION),
@@ -102,7 +102,7 @@ public enum EProjectDeprecated implements IProject
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
                          "2.0.0",
-                         EJDK.JDK6),
+                         EJDK.JDK8),
   PH_LOCALES (PH_LOCALES_PARENT_POM, "ph-locales", EProjectType.JAVA_LIBRARY),
   PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
 
@@ -156,7 +156,7 @@ public enum EProjectDeprecated implements IProject
             EHasPages.FALSE,
             EHasWiki.FALSE,
             "1.0.4",
-            EJDK.JDK6);
+            EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
@@ -184,7 +184,7 @@ public enum EProjectDeprecated implements IProject
           EHasPages.FALSE,
           EHasWiki.FALSE,
           eParentProject.getLastPublishedVersionString (),
-          EJDK.JDK6);
+          EJDK.JDK8);
   }
 
   private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
@@ -203,7 +203,7 @@ public enum EProjectDeprecated implements IProject
           eHasPagesProject,
           eHasWikiProject,
           sLastPublishedVersion,
-          EJDK.JDK6);
+          EJDK.JDK8);
   }
 
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
