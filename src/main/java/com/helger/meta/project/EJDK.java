@@ -25,6 +25,7 @@ import com.helger.commons.lang.EnumHelper;
 
 public enum EJDK
 {
+  LEGACY (7),
   JDK8 (8),
   JDK9 (9),
   JDK10 (10),

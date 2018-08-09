@@ -70,8 +70,6 @@ public enum EExternalDependency
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.0", EJDK.JDK8),
-  @IsLegacy
-  FINDBUGS_ANNOTATIONS_2 ("com.google.code.findbugs", "annotations", "2.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.1.1", EJDK.JDK8),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.6", EJDK.JDK8),
@@ -81,7 +79,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.1", EJDK.JDK8),
   @IsLegacy
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
   GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.1", EJDK.JDK8),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK8),
@@ -217,9 +215,7 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.5.2", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  @IsLegacy
-  METRO ("org.glassfish.metro", "webservices-rt", "2.3.1", EJDK.JDK8),
-  METRO8 ("org.glassfish.metro", "webservices-rt", "2.4.1", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "2.4.1", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.1", EJDK.JDK8),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.8.0", EJDK.JDK8),
   MYSQL ("mysql", "mysql-connector-java", "8.0.12", EJDK.JDK8),
@@ -234,9 +230,7 @@ public enum EExternalDependency
   SAXON ("net.sf.saxon", "Saxon-HE", "9.8.0-14", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.14.0", EJDK.JDK8),
   @IsLegacy
-  SERVLET_API_301 ("javax.servlet", "javax.servlet-api", "3.0.1", EJDK.JDK8),
-  @IsLegacy
-  SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
+  SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.25", EJDK.JDK8),
