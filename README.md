@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all projects (as of 2018-08-07):
+Current list of all projects (as of 2018-08-09):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
 
@@ -541,7 +541,7 @@ Current list of all projects (as of 2018-08-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
- * [ph-poi](https://github.com/phax/ph-poi) - Version 5.0.0 - JDK 1.8
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 5.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
    [![Build Status](https://travis-ci.org/phax/ph-poi.svg?branch=master)](https://travis-ci.org/phax/ph-poi)
@@ -748,6 +748,15 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-oton/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
+ * [ph-oton/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
+ * [ph-oton/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
