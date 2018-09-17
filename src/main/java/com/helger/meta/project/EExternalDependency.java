@@ -79,9 +79,10 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.5", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.1", EJDK.JDK8),
   @IsLegacy
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
+  GROOVY_ALL_24 ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL_250 ("org.codehaus.groovy", "groovy-all", "2.5.2", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.2", EJDK.JDK8),
+  GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.10.5", EJDK.JDK8),
