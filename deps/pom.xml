@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180914</version>
+  <version>1.0.0-20180917</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1271,58 +1271,58 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>9.0.3</version>
+      <version>9.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
