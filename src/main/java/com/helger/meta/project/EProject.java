@@ -703,6 +703,7 @@ public enum EProject implements IProject
                            "0.9.1",
                            EJDK.JDK8),
   TOOP_COMMONS (TOOP_COMMONS_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
+  TOOP_SCHEMATRON (TOOP_COMMONS_PARENT_POM, "toop-schematron", EProjectType.JAVA_LIBRARY, (String) null),
   TOOP_KAFKA_CLIENT (TOOP_COMMONS_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
 
   TOOP_INTERFACE (null,

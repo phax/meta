@@ -767,6 +767,9 @@ Current list of all unreleased projects:
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [toop-commons/toop-schematron](https://github.com/TOOP4EU/toop-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
  * [toop-connector](https://github.com/TOOP4EU/toop-connector) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
