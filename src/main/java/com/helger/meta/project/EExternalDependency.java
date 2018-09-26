@@ -274,7 +274,7 @@ public enum EExternalDependency
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "1.4", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.0.1", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK8),
-  PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.0", EJDK.JDK8),
+  PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.10.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK8),
