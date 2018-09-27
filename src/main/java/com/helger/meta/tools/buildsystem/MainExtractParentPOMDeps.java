@@ -35,7 +35,7 @@ public final class MainExtractParentPOMDeps extends AbstractProjectMain
   public static void main (final String [] args)
   {
     final IMicroDocument eRoot = MicroReader.readMicroXML (new File ("../ph-parent-pom/pom.xml"));
-    final ICommonsMap <String, String> aProperties = new CommonsHashMap<> ();
+    final ICommonsMap <String, String> aProperties = new CommonsHashMap <> ();
 
     int i = 0;
     final StringBuilder aSB = new StringBuilder ();
@@ -87,15 +87,15 @@ public final class MainExtractParentPOMDeps extends AbstractProjectMain
                                                  x.hasMavenArtifactID (sFinalArtifactID))
                            .isEmpty ())
             {
-              aSB.append ("PARENT_POM_" +
-                          (i++) +
-                          " (\"" +
-                          sGroupID +
-                          "\",\"" +
-                          sArtifactID +
-                          "\",\"" +
-                          sVersion +
-                          "\"),\n");
+              aSB.append ("PARENT_POM_")
+                 .append (i++)
+                 .append (" (\"")
+                 .append (sGroupID)
+                 .append ("\",\"")
+                 .append (sArtifactID)
+                 .append ("\",\"")
+                 .append (sVersion)
+                 .append ("\", EJDK.JDK8),\n");
             }
           }
         }
