@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20180926</version>
+  <version>1.0.0-20181001</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -274,7 +274,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.6.23</version>
+      <version>3.6.24</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -638,7 +638,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-14</version>
+      <version>9.9.0-1</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
