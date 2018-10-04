@@ -27,8 +27,9 @@ import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.CommonsHashSet;
+import com.helger.commons.collection.impl.CommonsTreeSet;
 import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.commons.collection.impl.ICommonsSet;
@@ -39,6 +40,7 @@ import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.io.stream.NonBlockingBufferedReader;
 import com.helger.commons.locale.LocaleFormatter;
+import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
 import com.helger.commons.timing.StopWatch;
 import com.helger.meta.AbstractProjectMain;
@@ -54,22 +56,23 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 {
   private static enum EFileType
   {
-    BATCH (true, new CommonsHashSet <> ("bat", "cmd")),
-    CODEGEN (true, new CommonsHashSet <> ("jj", "jjt")),
-    CSS (true, new CommonsHashSet <> ("css", "scss")),
-    CSV (true, new CommonsHashSet <> ("csv")),
-    GIT (true, new CommonsHashSet <> ("gitignore")),
-    GROOVY (true, new CommonsHashSet <> ("groovy")),
-    HTML (true, new CommonsHashSet <> ("html", "htm", "xhtml")),
-    JAVA (true, new CommonsHashSet <> ("java", "jsp")),
-    JS (true, new CommonsHashSet <> ("js")),
-    JSON (true, new CommonsHashSet <> ("json")),
-    PROPERTIES (true, new CommonsHashSet <> ("properties")),
-    RELAX_NG (true, new CommonsHashSet <> ("rng", "rnc")),
-    SQL (true, new CommonsHashSet <> ("sql")),
-    TEXT (true, new CommonsHashSet <> ("txt", "md", "text")),
-    XML (true,
-         new CommonsHashSet <> ("xml",
+    BATCH ("Batch", true, new CommonsTreeSet <> ("bat", "cmd")),
+    CODEGEN ("Code generation", true, new CommonsTreeSet <> ("jj", "jjt")),
+    CSS ("CSS", true, new CommonsTreeSet <> ("css", "scss")),
+    CSV ("CSV", true, new CommonsTreeSet <> ("csv")),
+    GIT ("git", true, new CommonsTreeSet <> ("gitignore")),
+    GROOVY ("Groovy", true, new CommonsTreeSet <> ("groovy")),
+    HTML ("HTML", true, new CommonsTreeSet <> ("html", "htm", "xhtml")),
+    JAVA ("Java", true, new CommonsTreeSet <> ("java", "jsp")),
+    JS ("JavaScript", true, new CommonsTreeSet <> ("js")),
+    JSON ("JSON", true, new CommonsTreeSet <> ("json")),
+    PROPERTIES ("Properties", true, new CommonsTreeSet <> ("properties")),
+    RELAX_NG ("RelaxNG", true, new CommonsTreeSet <> ("rng", "rnc")),
+    SQL ("SQL", true, new CommonsTreeSet <> ("sql")),
+    TEXT ("Text", true, new CommonsTreeSet <> ("txt", "md", "text")),
+    XML ("XML",
+         true,
+         new CommonsTreeSet <> ("xml",
                                 "xsd",
                                 "dtd",
                                 "wsdl",
@@ -84,17 +87,18 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                 "xsl",
                                 "xslt")),
     // Binary stuff
-    EXCEL (false, new CommonsHashSet <> ("xls", "xlsx", "ods")),
-    FLASH (false, new CommonsHashSet <> ("swf")),
-    FONT (false, new CommonsHashSet <> ("ttf", "eot")),
-    IMAGE (false, new CommonsHashSet <> ("png", "ico", "jpg", "bmp", "gif", "svg", "woff", "woff2", "otf")),
-    KEYSTORE (false, new CommonsHashSet <> ("pfx", "cer", "p12", "jks", "der", "crt")),
-    PDF (false, new CommonsHashSet <> ("pdf")),
-    WORD (false, new CommonsHashSet <> ("doc", "docx", "odt")),
-    ZIP (false, new CommonsHashSet <> ("gz", "asice", "zip")),
+    EXCEL ("Excel", false, new CommonsTreeSet <> ("xls", "xlsx", "ods")),
+    FLASH ("Flash", false, new CommonsTreeSet <> ("swf")),
+    FONT ("Font", false, new CommonsTreeSet <> ("ttf", "eot")),
+    IMAGE ("Image", false, new CommonsTreeSet <> ("png", "ico", "jpg", "bmp", "gif", "svg", "woff", "woff2", "otf")),
+    KEYSTORE ("Keystore", false, new CommonsTreeSet <> ("pfx", "cer", "p12", "jks", "der", "crt")),
+    PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
+    WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
+    ZIP ("ZIP", false, new CommonsTreeSet <> ("gz", "asice", "zip")),
     // known rest
-    KNOWN_REST (false,
-                new CommonsHashSet <> ("",
+    KNOWN_REST ("Known other",
+                false,
+                new CommonsTreeSet <> ("",
                                        "95",
                                        "attachment",
                                        "bak",
@@ -116,25 +120,35 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                        "rxm",
                                        "sha256",
                                        "template",
-                                       "types"));
+                                       "types")),
+    UNKNOWN_OTHER ("Unknown other", false, new CommonsTreeSet <> ());
 
+    private final String m_sName;
+    private final String m_sExtensions;
     private final boolean m_bIsText;
     private final ICommonsSet <String> m_aExts;
 
-    private EFileType (final boolean bIsText, @Nonnull final ICommonsSet <String> aExts)
+    private EFileType (@Nonnull @Nonempty final String sName,
+                       final boolean bIsText,
+                       @Nonnull final ICommonsSet <String> aExts)
     {
+      m_sName = sName + " files";
+      m_sExtensions = StringHelper.getImplodedMapped (", ", aExts, x -> "." + x);
       m_bIsText = bIsText;
       m_aExts = aExts;
     }
 
     @Nonnull
-    public static EFileType getFromFilename (final String sFilename)
+    @Nonempty
+    public String getName ()
     {
-      final String sExtension = FilenameHelper.getExtension (sFilename).toLowerCase (Locale.ROOT);
-      for (final EFileType e : values ())
-        if (e.m_aExts.contains (sExtension))
-          return e;
-      throw new IllegalStateException ("Unknown '" + sFilename + "'");
+      return m_sName;
+    }
+
+    @Nonnull
+    public String getExtensions ()
+    {
+      return m_sExtensions;
     }
 
     public boolean isCountLines ()
@@ -148,6 +162,16 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       if (this == BATCH)
         return StandardCharsets.ISO_8859_1;
       return StandardCharsets.UTF_8;
+    }
+
+    @Nonnull
+    public static EFileType getFromFilename (final String sFilename)
+    {
+      final String sExtension = FilenameHelper.getExtension (sFilename).toLowerCase (Locale.ROOT);
+      for (final EFileType e : values ())
+        if (e.m_aExts.contains (sExtension))
+          return e;
+      throw new IllegalStateException ("Unknown '" + sFilename + "'");
     }
   }
 
@@ -370,9 +394,9 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 
       if (eFileType.isCountLines () && aCountSum.getFileCount () > 0)
       {
-        _addTableRow (aSB2, eFileType, eFileType.name (), "main", aCountMain);
-        _addTableRow (aSB2, eFileType, eFileType.name (), "test", aCountTest);
-        _addTableRow (aSB2, eFileType, eFileType.name (), "sum", aCountSum);
+        _addTableRow (aSB2, eFileType, eFileType.getName (), "main", aCountMain);
+        _addTableRow (aSB2, eFileType, eFileType.getName (), "test", aCountTest);
+        _addTableRow (aSB2, eFileType, eFileType.getName (), "sum", aCountSum);
         ++nRows;
       }
     }
@@ -387,7 +411,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       _addTableRow (aSB2, null, "Total sum", "main", aSumMain);
       _addTableRow (aSB2, null, "Total sum", "test", aSumTest);
       _addTableRow (aSB2, null, "Total sum", "sum", aSum);
-      aSB2.append ("</tfoot></table>");
+      aSB2.append ("</tfoot></table>\n");
       aSB.append ("    * ").append (aSB2);
     }
     else
@@ -472,9 +496,9 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
           aSumTest.incrementFrom (aCountTest);
           aSumSum.incrementFrom (aCountSum);
 
-          _addTableRow (aSB2, eFileType, eFileType.name (), "main", aCountMain);
-          _addTableRow (aSB2, eFileType, eFileType.name (), "test", aCountTest);
-          _addTableRow (aSB2, eFileType, eFileType.name (), "sum", aCountSum);
+          _addTableRow (aSB2, eFileType, eFileType.getName (), "main", aCountMain);
+          _addTableRow (aSB2, eFileType, eFileType.getName (), "test", aCountTest);
+          _addTableRow (aSB2, eFileType, eFileType.getName (), "sum", aCountSum);
 
           ++nRows;
         }
@@ -486,7 +510,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
         _addTableRow (aSB2, null, "Total sum", "main", aSumMain);
         _addTableRow (aSB2, null, "Total sum", "test", aSumTest);
         _addTableRow (aSB2, null, "Total sum", "sum", aSumSum);
-        aSB2.append ("</tfoot></table>");
+        aSB2.append ("</tfoot></table>\n");
         aSB.append ("* Overall sum\n").append ("    * ").append (aSB2);
       }
     }
@@ -495,6 +519,16 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     aSB.insert (0, "# Lines of Code\nNote: This file was automatically generated.\n\n");
 
     // Footer
+    aSB.append ("\n## Legend\n\n");
+    for (final EFileType e : EFileType.values ())
+    {
+      aSB.append ("* ").append (e.getName ()).append (": ");
+      if (e == EFileType.UNKNOWN_OTHER)
+        aSB.append ("*anything else*\n");
+      else
+        aSB.append ("`").append (e.getExtensions ()).append ("`\n");
+    }
+
     aSB.append (MainUpdateREADMEFooter.COMMON_FOOTER);
 
     SimpleFileIO.writeFile (new File ("LinesOfCode.md"), aSB.toString (), StandardCharsets.UTF_8);
