@@ -266,6 +266,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     public void incrementFrom (@Nonnull final FileTypeCount rhs)
     {
       m_nFilesTotal += rhs.m_nFilesTotal;
+      m_nFilesBytes += rhs.m_nFilesBytes;
       m_nCharsTotal += rhs.m_nCharsTotal;
       m_nCharsWhitepaces += rhs.m_nCharsWhitepaces;
       m_nLinesTotal += rhs.m_nLinesTotal;
