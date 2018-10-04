@@ -3050,15 +3050,15 @@ Current list of all unreleased projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>60</td><td>10107</td><td>1064</td><td>10.53%</td><td>385425</td><td>90620</td><td>23.51%</td></tr>
+<tr><td>Java files</td><td>main</td><td>60</td><td>10109</td><td>1064</td><td>10.53%</td><td>385563</td><td>90649</td><td>23.51%</td></tr>
 <tr><td>Java files</td><td>test</td><td>7</td><td>428</td><td>43</td><td>10.05%</td><td>15871</td><td>3128</td><td>19.71%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>67</td><td>10535</td><td>1107</td><td>10.51%</td><td>401296</td><td>93748</td><td>23.36%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>67</td><td>10537</td><td>1107</td><td>10.51%</td><td>401434</td><td>93777</td><td>23.36%</td></tr>
 <tr><td>XML files</td><td>main</td><td>2</td><td>2533</td><td>170</td><td>6.71%</td><td>127737</td><td>27654</td><td>21.65%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>2</td><td>2533</td><td>170</td><td>6.71%</td><td>127737</td><td>27654</td><td>21.65%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>64</td><td>12640</td><td>1234</td><td>9.76%</td><td>513162</td><td>118274</td><td>23.05%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>64</td><td>12642</td><td>1234</td><td>9.76%</td><td>513300</td><td>118303</td><td>23.05%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>25</td><td>428</td><td>43</td><td>10.05%</td><td>15871</td><td>3128</td><td>19.71%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>89</td><td>13068</td><td>1277</td><td>9.77%</td><td>529033</td><td>121402</td><td>22.95%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>89</td><td>13070</td><td>1277</td><td>9.77%</td><td>529171</td><td>121431</td><td>22.95%</td></tr>
 </tfoot></table>
 
 
@@ -3351,9 +3351,9 @@ Current list of all unreleased projects:
 <tr><td>HTML files</td><td>main</td><td>35</td><td>11396</td><td>191</td><td>1.68%</td><td>416873</td><td>63518</td><td>15.24%</td></tr>
 <tr><td>HTML files</td><td>test</td><td>26</td><td>11705</td><td>2711</td><td>23.16%</td><td>346450</td><td>78460</td><td>22.65%</td></tr>
 <tr><td>HTML files</td><td>sum</td><td>61</td><td>23101</td><td>2902</td><td>12.56%</td><td>763323</td><td>141978</td><td>18.60%</td></tr>
-<tr><td>Java files</td><td>main</td><td>6289</td><td>1421310</td><td>100023</td><td>7.04%</td><td>53332183</td><td>12876652</td><td>24.14%</td></tr>
+<tr><td>Java files</td><td>main</td><td>6289</td><td>1421312</td><td>100023</td><td>7.04%</td><td>53332321</td><td>12876681</td><td>24.14%</td></tr>
 <tr><td>Java files</td><td>test</td><td>1986</td><td>246862</td><td>26225</td><td>10.62%</td><td>10029520</td><td>2151355</td><td>21.45%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>8275</td><td>1668172</td><td>126248</td><td>7.57%</td><td>63361703</td><td>15028007</td><td>23.72%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>8275</td><td>1668174</td><td>126248</td><td>7.57%</td><td>63361841</td><td>15028036</td><td>23.72%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>768</td><td>289874</td><td>22853</td><td>7.88%</td><td>14907617</td><td>2324627</td><td>15.59%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>40</td><td>16250</td><td>2102</td><td>12.94%</td><td>564408</td><td>157023</td><td>27.82%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>808</td><td>306124</td><td>24955</td><td>8.15%</td><td>15472025</td><td>2481650</td><td>16.04%</td></tr>
@@ -3402,9 +3402,9 @@ Current list of all unreleased projects:
 <tr><td>Known other files</td><td>main</td><td>486</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Known other files</td><td>test</td><td>123</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Known other files</td><td>sum</td><td>609</td><td colspan="6">No lines counted</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10508</td><td>9528415</td><td>237114</td><td>2.49%</td><td>500273574</td><td>54877553</td><td>10.97%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10508</td><td>9528417</td><td>237114</td><td>2.49%</td><td>500273712</td><td>54877582</td><td>10.97%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>4908</td><td>953602</td><td>42128</td><td>4.42%</td><td>48322149</td><td>7007389</td><td>14.50%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>15416</td><td>10482017</td><td>279242</td><td>2.66%</td><td>548595723</td><td>61884942</td><td>11.28%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>15416</td><td>10482019</td><td>279242</td><td>2.66%</td><td>548595861</td><td>61884971</td><td>11.28%</td></tr>
 </tfoot></table>
 
 ## Legend
@@ -3419,31 +3419,81 @@ Current list of all unreleased projects:
 
 ### File types
 
-* Batch files: `.bat, .cmd`
-* Code generation files: `.jj, .jjt`
-* CSS files: `.css, .scss`
-* CSV files: `.csv`
-* git files: `.gitignore`
-* Groovy files: `.groovy`
-* HTML files: `.htm, .html, .xhtml`
-* Java files: `.java, .jsp`
-* JavaScript files: `.js`
-* JSON files: `.json`
-* Properties files: `.properties`
-* RelaxNG files: `.rnc, .rng`
-* SQL files: `.sql`
-* Text files: `.md, .text, .txt`
-* XML files: `.cva, .dita, .dtd, .gc, .gc_, .sch, .svrl, .wsdl, .xjb, .xml, .xq, .xsd, .xsl, .xslt`
-* Excel files: `.ods, .xls, .xlsx`
-* Flash files: `.swf`
-* Font files: `.eot, .ttf`
-* Image files: `.bmp, .gif, .ico, .jpg, .otf, .png, .svg, .woff, .woff2`
-* Keystore files: `.cer, .crt, .der, .jks, .p12, .pfx`
-* PDF files: `.pdf`
-* Word files: `.doc, .docx, .odt`
-* ZIP files: `.asice, .gz, .zip`
-* Known other files: `, .95, .attachment, .bak, .cat, .dat, .ent, .episode, .ijmap, .incl, .interface, .map, .mapping, .md5, .mime, .mmd, .mod, .pac, .rxg, .rxm, .sha256, .template, .types`
-* Unknown other files: *anything else*
+* Batch files
+    * Extensions: `.bat, .cmd`
+    * Charset: `ISO-8859-1`
+* Code generation files
+    * Extensions: `.jj, .jjt`
+    * Charset: `UTF-8`
+* CSS files
+    * Extensions: `.css, .scss`
+    * Charset: `UTF-8`
+* CSV files
+    * Extensions: `.csv`
+    * Charset: `UTF-8`
+* git files
+    * Extensions: `.gitignore`
+    * Charset: `UTF-8`
+* Groovy files
+    * Extensions: `.groovy`
+    * Charset: `UTF-8`
+* HTML files
+    * Extensions: `.htm, .html, .xhtml`
+    * Charset: `UTF-8`
+* Java files
+    * Extensions: `.java, .jsp`
+    * Charset: `UTF-8`
+* JavaScript files
+    * Extensions: `.js`
+    * Charset: `UTF-8`
+* JSON files
+    * Extensions: `.json`
+    * Charset: `UTF-8`
+* Properties files
+    * Extensions: `.properties`
+    * Charset: `UTF-8`
+* RelaxNG files
+    * Extensions: `.rnc, .rng`
+    * Charset: `UTF-8`
+* SQL files
+    * Extensions: `.sql`
+    * Charset: `UTF-8`
+* Text files
+    * Extensions: `.md, .text, .txt`
+    * Charset: `UTF-8`
+* XML files
+    * Extensions: `.cva, .dita, .dtd, .gc, .gc_, .sch, .svrl, .wsdl, .xjb, .xml, .xq, .xsd, .xsl, .xslt`
+    * Charset: `UTF-8`
+* Excel files
+    * Extensions: `.ods, .xls, .xlsx`
+    * Charset: `UTF-8`
+* Flash files
+    * Extensions: `.swf`
+    * Charset: `UTF-8`
+* Font files
+    * Extensions: `.eot, .ttf`
+    * Charset: `UTF-8`
+* Image files
+    * Extensions: `.bmp, .gif, .ico, .jpg, .otf, .png, .svg, .woff, .woff2`
+    * Charset: `UTF-8`
+* Keystore files
+    * Extensions: `.cer, .crt, .der, .jks, .p12, .pfx`
+    * Charset: `UTF-8`
+* PDF files
+    * Extensions: `.pdf`
+    * Charset: `UTF-8`
+* Word files
+    * Extensions: `.doc, .docx, .odt`
+    * Charset: `UTF-8`
+* ZIP files
+    * Extensions: `.asice, .gz, .zip`
+    * Charset: `UTF-8`
+* Known other files
+    * Extensions: `.95, .attachment, .bak, .cat, .dat, .ent, .episode, .ijmap, .incl, .interface, .map, .mapping, .md5, .mime, .mmd, .mod, .pac, .rxg, .rxm, .sha256, .template, .types`
+    * Charset: `UTF-8`
+* Unknown other files
+    * Extensions: *anything else*
+    * Charset: `UTF-8`
 
 ---
 

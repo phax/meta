@@ -133,7 +133,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                        @Nonnull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
-      m_sExtensions = StringHelper.getImplodedMapped (", ", aExts, x -> x.length () == 0 ? x : "." + x);
+      m_sExtensions = StringHelper.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
       m_bIsText = bIsText;
       m_aExts = aExts;
     }
@@ -537,11 +537,13 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     aSB.append ("\n### File types\n\n");
     for (final EFileType e : EFileType.values ())
     {
-      aSB.append ("* ").append (e.getName ()).append (": ");
+      aSB.append ("* ").append (e.getName ()).append ("\n");
+      aSB.append ("    * Extensions: ");
       if (e == EFileType.UNKNOWN_OTHER)
         aSB.append ("*anything else*\n");
       else
-        aSB.append ("`").append (e.getExtensions ()).append ("`\n");
+        aSB.append ('`').append (e.getExtensions ()).append ("`\n");
+      aSB.append ("    * Charset: `").append (e.getCharset ().name ()).append ("`\n");
     }
 
     aSB.append (MainUpdateREADMEFooter.COMMON_FOOTER);
