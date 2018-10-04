@@ -21,7 +21,6 @@ Current list of all released projects:
 </tfoot></table>
 
 
-
 * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.1.1
     * <table><thead><tr><th>Filetype</th><th>Context</th><th>Files</th><th>Lines</th><th>Lines WS</th><th>Lines WS %</th><th>Chars</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
