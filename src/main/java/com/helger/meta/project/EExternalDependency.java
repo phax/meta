@@ -122,13 +122,15 @@ public enum EExternalDependency
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
 
   @IsBOM
-  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.0.1", EJDK.JDK9),
+  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.1", EJDK.JDK9),
   JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
-  JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB9_BOM),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
   JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
   JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
+
+  // Not in 2.3.1...
+  JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", "2.3.0.1", EJDK.JDK9),
 
   // JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK8),
   // JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
@@ -139,7 +141,7 @@ public enum EExternalDependency
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
   // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
   // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
-  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.0.1", EJDK.JDK9),
+  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.1", EJDK.JDK9),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
@@ -153,7 +155,7 @@ public enum EExternalDependency
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
   @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.0.2", EJDK.JDK9),
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.1", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
 
@@ -216,7 +218,7 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.5.2", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "2.4.1", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "2.4.2", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.8.2", EJDK.JDK8),
   MYSQL ("mysql", "mysql-connector-java", "8.0.12", EJDK.JDK8),
