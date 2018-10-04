@@ -178,14 +178,16 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
   private static final class FileTypeCount
   {
     private long m_nFilesTotal = 0;
+    private long m_nFilesBytes = 0;
     private long m_nCharsTotal = 0;
     private long m_nCharsWhitepaces = 0;
     private long m_nLinesTotal = 0;
     private long m_nLinesWhitespaceOnly = 0;
 
-    public void addFile ()
+    public void addFile (@Nonnull final File aFile)
     {
       m_nFilesTotal++;
+      m_nFilesBytes += aFile.length ();
     }
 
     public void addLine (@Nonnull final String sLine)
@@ -213,6 +215,12 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     public long getFileCount ()
     {
       return m_nFilesTotal;
+    }
+
+    @Nonnegative
+    public long getFileBytes ()
+    {
+      return m_nFilesBytes;
     }
 
     @Nonnegative
@@ -280,7 +288,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
           final FileTypeCount aFTCount = aMap.get (eFileType);
 
           // Always add file
-          aFTCount.addFile ();
+          aFTCount.addFile (aFile);
 
           if (eFileType.isCountLines ())
           {
@@ -304,7 +312,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     aSB.append ("<tr>")
        .append ("<th>File type</th>")
        .append ("<th>Context</th>")
-       .append ("<th>Files</th>")
+       .append ("<th>File count</th>")
+       .append ("<th>File bytes</th>")
        .append ("<th>Lines total</th>")
        .append ("<th>Lines empty</th>")
        .append ("<th>Lines empty %</th>")
@@ -324,20 +333,29 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     aSB.append ("<tr>");
     aSB.append ("<td>").append (sType).append ("</td>");
     aSB.append ("<td>").append (sContext).append ("</td>");
-    aSB.append ("<td>").append (aCount.getFileCount ()).append ("</td>");
+    aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getFileCount (), aDisplayLocale)).append ("</td>");
+    aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getFileBytes (), aDisplayLocale)).append ("</td>");
     if (eFileType != null && !eFileType.isCountLines ())
     {
       aSB.append ("<td colspan=\"6\">No lines counted</td>");
     }
     else
     {
-      aSB.append ("<td>").append (aCount.getLinesTotal ()).append ("</td>");
-      aSB.append ("<td>").append (aCount.getLinesWhitespaceOnly ()).append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getLinesTotal (), aDisplayLocale))
+         .append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getLinesWhitespaceOnly (), aDisplayLocale))
+         .append ("</td>");
       aSB.append ("<td>")
          .append (LocaleFormatter.getFormattedPercent (aCount.getLinesWhitespaceOnlyPerc (), 2, aDisplayLocale))
          .append ("</td>");
-      aSB.append ("<td>").append (aCount.getCharsTotal ()).append ("</td>");
-      aSB.append ("<td>").append (aCount.getCharsWhitepaces ()).append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getCharsTotal (), aDisplayLocale))
+         .append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getCharsWhitepaces (), aDisplayLocale))
+         .append ("</td>");
       aSB.append ("<td>")
          .append (LocaleFormatter.getFormattedPercent (aCount.getCharsWhitepacesPerc (), 2, aDisplayLocale))
          .append ("</td>");
@@ -527,6 +545,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     aSB.append ("\n## Legend\n\n");
 
     aSB.append ("* Context: either `main` for the Maven `src/maìn` folder or `test` for `src/test`\n");
+    aSB.append ("* File count: affected files\n");
+    aSB.append ("* File bytes: the total number of bytes of the affected files\n");
     aSB.append ("* Lines total: the total number of lines read\n");
     aSB.append ("* Lines empty: the number of lines containing no characters or only whitespace characters\n");
     aSB.append ("* Lines empty %: the percentage of empty lines on the total lines\n");
