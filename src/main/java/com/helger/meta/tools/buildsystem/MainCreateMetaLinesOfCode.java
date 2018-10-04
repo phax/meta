@@ -446,7 +446,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     final StringBuilder aSB = new StringBuilder ();
-    aSB.append ("Line count as of ").append (PDTFactory.getCurrentLocalDate ().toString ()).append (":\n\n");
+    aSB.append ("Line count as of ").append (PDTFactory.getCurrentLocalDateTime ().toString ()).append (":\n\n");
 
     final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
@@ -470,7 +470,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
            .append (sProjectOwner)
            .append ('/')
            .append (sRepoName)
-           .append (") - Version ")
+           .append (") - last release ")
            .append (aProject.getLastPublishedVersionString ())
            .append ("\n\n");
         _addLineCount (aProject, aSB, aOverallMain, aOverallTest);
