@@ -133,7 +133,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                        @Nonnull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
-      m_sExtensions = StringHelper.getImplodedMapped (", ", aExts, x -> "." + x);
+      m_sExtensions = StringHelper.getImplodedMapped (", ", aExts, x -> x.length () == 0 ? x : "." + x);
       m_bIsText = bIsText;
       m_aExts = aExts;
     }
@@ -202,6 +202,11 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       }
       if (nNonWhitespaces == 0)
         m_nLinesWhitespaceOnly++;
+    }
+
+    public void addEndOfLine (@Nonnull final String sEOL)
+    {
+      m_nCharsTotal += sEOL.length ();
     }
 
     @Nonnegative
@@ -285,7 +290,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
               while ((sLine = aReader.readLine ()) != null)
               {
                 aFTCount.addLine (sLine);
-                aFTCount.addLine (sEOL);
+                aFTCount.addEndOfLine (sEOL);
               }
             }
           }
@@ -297,13 +302,13 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
   private static void _addTableHead (@Nonnull final StringBuilder aSB)
   {
     aSB.append ("<tr>")
-       .append ("<th>Filetype</th>")
+       .append ("<th>File type</th>")
        .append ("<th>Context</th>")
        .append ("<th>Files</th>")
-       .append ("<th>Lines</th>")
-       .append ("<th>Lines WS</th>")
-       .append ("<th>Lines WS %</th>")
-       .append ("<th>Chars</th>")
+       .append ("<th>Lines total</th>")
+       .append ("<th>Lines empty</th>")
+       .append ("<th>Lines empty %</th>")
+       .append ("<th>Chars total</th>")
        .append ("<th>Chars WS</th>")
        .append ("<th>Chars WS %</th>")
        .append ("</tr>\n");
@@ -520,6 +525,16 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 
     // Footer
     aSB.append ("\n## Legend\n\n");
+
+    aSB.append ("* Context: either `main` for the Maven `src/maìn` folder or `test` for `src/test`\n");
+    aSB.append ("* Lines total: the total number of lines read\n");
+    aSB.append ("* Lines empty: the number of lines containing no characters or only whitespace characters\n");
+    aSB.append ("* Lines empty %: the percentage of empty lines on the total lines\n");
+    aSB.append ("* Chars total: the total number of characters read (assuming Windows line ending)\n");
+    aSB.append ("* Chars WS: the number of whitespace characters read (excluding line ending)\n");
+    aSB.append ("* Chars WS %: the percentage of whitespace characters on the total characters\n");
+
+    aSB.append ("\n### File types\n\n");
     for (final EFileType e : EFileType.values ())
     {
       aSB.append ("* ").append (e.getName ()).append (": ");
