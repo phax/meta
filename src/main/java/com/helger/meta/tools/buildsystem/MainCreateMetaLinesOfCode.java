@@ -412,11 +412,11 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       _addTableRow (aSB2, null, "Total sum", "test", aSumTest);
       _addTableRow (aSB2, null, "Total sum", "sum", aSum);
       aSB2.append ("</tfoot></table>\n");
-      aSB.append ("    * ").append (aSB2);
+      aSB.append (aSB2);
     }
     else
-      aSB.append ("    * no source files");
-    aSB.append ("\n\n");
+      aSB.append ("no source files\n");
+    aSB.append ("\n");
   }
 
   public static void main (final String [] args) throws IOException
@@ -440,7 +440,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
         final String sProjectOwner = aProject.getProjectOwner ();
         final String sRepoName = MainCreateMetaREADME.getGitHubRepoName (aProject);
 
-        aSB.append ("* [")
+        aSB.append ("### [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
            .append (sProjectOwner)
@@ -448,7 +448,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
            .append (sRepoName)
            .append (") - Version ")
            .append (aProject.getLastPublishedVersionString ())
-           .append ('\n');
+           .append ("\n\n");
         _addLineCount (aProject, aSB, aOverallMain, aOverallTest);
         aSB.append ('\n');
       }
@@ -459,13 +459,13 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       {
         final String sProjectOwner = aProject.getProjectOwner ();
 
-        aSB.append ("* [")
+        aSB.append ("### [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
            .append (sProjectOwner)
            .append ('/')
            .append (MainCreateMetaREADME.getGitHubRepoName (aProject))
-           .append (")\n");
+           .append (")\n\n");
         _addLineCount (aProject, aSB, aOverallMain, aOverallTest);
         aSB.append ('\n');
       }
@@ -511,7 +511,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
         _addTableRow (aSB2, null, "Total sum", "test", aSumTest);
         _addTableRow (aSB2, null, "Total sum", "sum", aSumSum);
         aSB2.append ("</tfoot></table>\n");
-        aSB.append ("* Overall sum\n").append ("    * ").append (aSB2);
+        aSB.append ("### Overall sum\n\n").append (aSB2);
       }
     }
 
