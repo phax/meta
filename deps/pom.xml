@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20181010</version>
+  <version>1.0.0-20181011</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20180910</version>
+      <version>v20181008</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -964,98 +964,98 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-wsclient</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bc</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>9.1.6</version>
+      <version>9.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
