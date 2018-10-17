@@ -27,9 +27,6 @@ import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.CommonsTreeSet;
@@ -276,8 +273,6 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       m_nLinesWhitespaceOnly += rhs.m_nLinesWhitespaceOnly;
     }
   }
-
-  private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateMetaLinesOfCode.class);
 
   private static void _scan (@Nonnull final File aBaseDir,
                              @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
