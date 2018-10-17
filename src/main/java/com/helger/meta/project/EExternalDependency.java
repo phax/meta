@@ -77,11 +77,11 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.6", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.1", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.2", EJDK.JDK8),
   @IsLegacy
   GROOVY_ALL_24 ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.2", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.3", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK8),
@@ -98,7 +98,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.25", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.6.26", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -183,6 +183,7 @@ public enum EExternalDependency
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
+  JETTY_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY_BOM),
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
@@ -285,9 +286,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.0.1", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.0", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.0", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.0", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.1", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.1", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.1", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
