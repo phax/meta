@@ -42,6 +42,7 @@ public enum EExternalDependency
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
   ASM ("org.ow2.asm", "asm", "6.2.1", EJDK.JDK8),
+  ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.60", EJDK.JDK8),
