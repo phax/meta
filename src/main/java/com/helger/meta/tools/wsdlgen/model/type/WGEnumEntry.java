@@ -16,6 +16,8 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import java.io.Serializable;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -28,7 +30,7 @@ import com.helger.commons.string.StringHelper;
  *
  * @author Philip Helger
  */
-public class WGEnumEntry
+public class WGEnumEntry implements Serializable
 {
   private final String m_sKey;
   private final String m_sDoc;

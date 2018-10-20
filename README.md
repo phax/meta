@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2018-10-17):
+Current list of all released projects (as of 2018-10-20):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
 
@@ -57,7 +57,7 @@ Current list of all released projects (as of 2018-10-17):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
    [![Build Status](https://travis-ci.org/CenPc434/java-tools.svg?branch=master)](https://travis-ci.org/CenPc434/java-tools)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.1.0 - JDK 1.8
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)

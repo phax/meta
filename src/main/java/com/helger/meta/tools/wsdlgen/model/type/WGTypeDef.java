@@ -16,6 +16,8 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import java.io.Serializable;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -23,7 +25,7 @@ import com.helger.commons.ValueEnforcer;
 import com.helger.commons.state.ETriState;
 import com.helger.commons.string.StringHelper;
 
-public class WGTypeDef
+public class WGTypeDef implements Serializable
 {
   private final IWGType m_aType;
   private String m_sDoc;

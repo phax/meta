@@ -24,26 +24,33 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.helger.commons.collection.impl.CommonsArrayList;
+import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.io.resource.FileSystemResource;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
+/**
+ * Test class for class {@link InterfaceReader}.
+ * 
+ * @author Philip Helger
+ */
 public final class InterfaceReaderTest
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (InterfaceReaderTest.class);
 
-  public static final String [] FILENAMES = new String [] { "wsdlgen/example-complex.interface",
-                                                            "wsdlgen/example-currencyConvert.interface",
-                                                            "wsdlgen/erb/erb-in-invoice-201.interface",
-                                                            "wsdlgen/erb/erb-in-test-order-102.interface",
-                                                            "wsdlgen/erb/erb-out-invoice-callback-100.interface",
-                                                            "wsdlgen/erb/erc-in-async-status-110.interface",
-                                                            "wsdlgen/erb/erc-in-status-update-100.interface",
-                                                            "wsdlgen/erb/erc-out-async-110.interface",
-                                                            "wsdlgen/erb/erc-out-bbg-100.interface",
-                                                            "wsdlgen/erb/erc-out-sync-120.interface",
-                                                            "wsdlgen/erb/erg-in-status-update-100.interface",
-                                                            "wsdlgen/erb/in-progress/erc-out-sync-120.interface",
-                                                            "wsdlgen/pp/pp-dvs.interface" };
+  static final ICommonsList <String> FILENAMES = new CommonsArrayList <> ("wsdlgen/example-complex.interface",
+                                                                          "wsdlgen/example-currencyConvert.interface",
+                                                                          "wsdlgen/erb/erb-in-invoice-201.interface",
+                                                                          "wsdlgen/erb/erb-in-test-order-102.interface",
+                                                                          "wsdlgen/erb/erb-out-invoice-callback-100.interface",
+                                                                          "wsdlgen/erb/erc-in-async-status-110.interface",
+                                                                          "wsdlgen/erb/erc-in-status-update-100.interface",
+                                                                          "wsdlgen/erb/erc-out-async-110.interface",
+                                                                          "wsdlgen/erb/erc-out-bbg-100.interface",
+                                                                          "wsdlgen/erb/erc-out-sync-120.interface",
+                                                                          "wsdlgen/erb/erg-in-status-update-100.interface",
+                                                                          "wsdlgen/erb/in-progress/erc-out-sync-120.interface",
+                                                                          "wsdlgen/pp/pp-dvs.interface");
 
   @Test
   public void testReadAll ()
