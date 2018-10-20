@@ -42,12 +42,12 @@ public class BlindSignature
   /**
    * server-side of blind signature voting module.
    */
-  public static VotingServer vs;
+  static VotingServer vs;
 
   /**
    * client-side of blind signature voting module.
    */
-  public static VotingClient vc;
+  static VotingClient vc;
 
   /**
    * @param args
