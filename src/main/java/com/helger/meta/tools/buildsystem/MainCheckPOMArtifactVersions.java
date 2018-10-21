@@ -27,6 +27,7 @@ import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
 import com.helger.commons.collection.impl.ICommonsMap;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
@@ -148,6 +149,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     // Read all properties
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
+    aProperties.put ("${maven.build.timestamp}", PDTFactory.getCurrentLocalDateTime ().toString ());
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
