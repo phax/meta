@@ -41,7 +41,7 @@ public enum EProject implements IProject
                  EProjectType.MAVEN_POM,
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
-                 "1.10.6",
+                 "1.10.7",
                  EJDK.JDK8),
   PH_FORBIDDEN_APIS (null,
                      IProject.DEFAULT_PROJECT_OWNER,
