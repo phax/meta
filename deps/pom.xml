@@ -1218,7 +1218,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-javacc-maven-plugin</artifactId>
-      <version>4.0.3</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>

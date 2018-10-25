@@ -413,7 +413,7 @@ Current list of all released projects (as of 2018-10-25):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax) 
    [![Build Status](https://travis-ci.org/phax/ph-isorelax.svg?branch=master)](https://travis-ci.org/phax/ph-isorelax)
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.0.3 - JDK 1.8
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
