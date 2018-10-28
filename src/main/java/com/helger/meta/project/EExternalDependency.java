@@ -41,7 +41,8 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.5", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "7.0.0", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "7.0", EJDK.JDK8),
+  ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
