@@ -109,6 +109,17 @@ public enum EProject implements IProject
   PH_LESS_COMMONS (PH_COMMONS_PARENT_POM, "ph-less-commons", EProjectType.JAVA_LIBRARY),
   PH_DAO (PH_COMMONS_PARENT_POM, "ph-dao", EProjectType.JAVA_LIBRARY),
 
+  PH_JDMC_PARENT_POM (null,
+                      IProject.DEFAULT_PROJECT_OWNER,
+                      "ph-jdmc-parent-pom",
+                      "ph-jdmc",
+                      EProjectType.MAVEN_POM,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      null,
+                      EJDK.JDK8),
+  PH_JDMC_CORE (PH_JDMC_PARENT_POM, "ph-jdmc-core", EProjectType.JAVA_LIBRARY),
+
   PH_JAXB22_PLUGIN (null,
                     IProject.DEFAULT_PROJECT_OWNER,
                     "ph-jaxb22-plugin",
