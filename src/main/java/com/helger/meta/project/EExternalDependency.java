@@ -52,7 +52,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20181008", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20181028", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -189,7 +189,7 @@ public enum EExternalDependency
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
-  JJWT ("io.jsonwebtoken", "jjwt", "0.9.1", EJDK.JDK8),
+  JJWT ("io.jsonwebtoken", "jjwt-impl", "0.10.5", EJDK.JDK8),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.54", EJDK.JDK8),
@@ -218,12 +218,12 @@ public enum EExternalDependency
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
-  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.5.2", EJDK.JDK8),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.2", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
-  MONGO_DB ("org.mongodb", "mongodb-driver", "3.8.2", EJDK.JDK8),
+  MONGO_DB ("org.mongodb", "mongodb-driver", "3.9.0", EJDK.JDK8),
   MYSQL ("mysql", "mysql-connector-java", "8.0.13", EJDK.JDK8),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.12", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -233,8 +233,8 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.0-1", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.14.0", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.0-2", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.5", EJDK.JDK8),
   @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
@@ -276,7 +276,7 @@ public enum EExternalDependency
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "2.5.2", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "1.4", EJDK.JDK8),
+  PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.0.1", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.0.0", EJDK.JDK8),

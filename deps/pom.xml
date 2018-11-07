@@ -78,7 +78,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20181008</version>
+      <version>v20181028</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -472,8 +472,8 @@
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt</artifactId>
-      <version>0.9.1</version>
+      <artifactId>jjwt-impl</artifactId>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -588,7 +588,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-plugin-plugin</artifactId>
-      <version>3.5.2</version>
+      <version>3.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.metro</groupId>
@@ -603,7 +603,7 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver</artifactId>
-      <version>3.8.2</version>
+      <version>3.9.0</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -653,12 +653,12 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.9.0-1</version>
+      <version>9.9.0-2</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.14.0</version>
+      <version>3.141.5</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -853,7 +853,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jarsigner-plugin</artifactId>
-      <version>1.4</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
