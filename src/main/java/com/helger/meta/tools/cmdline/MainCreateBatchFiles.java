@@ -115,6 +115,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
                       "git commit -m \"Normalize all the line endings\"",
                       "git_normalize_crlf.cmd",
                       false);
+    _createBatchFile ("git fetch --prune", "git_fetch_prune.cmd", true);
     System.out.println ("Batch files created in " + CMeta.GIT_BASE_DIR);
   }
 }
