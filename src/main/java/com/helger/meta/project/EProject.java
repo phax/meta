@@ -568,7 +568,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "5.0.4",
+                      "5.0.5",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_UBL (PH_BDVE_PARENT_POM, "ph-bdve-ubl", EProjectType.JAVA_LIBRARY),
@@ -581,6 +581,7 @@ public enum EProject implements IProject
   PH_BDVE_OIOUBL (PH_BDVE_PARENT_POM, "ph-bdve-oioubl", EProjectType.JAVA_LIBRARY),
   PH_BDVE_EBINTERFACE (PH_BDVE_PARENT_POM, "ph-bdve-ebinterface", EProjectType.JAVA_LIBRARY),
   PH_BDVE_TEAPPS (PH_BDVE_PARENT_POM, "ph-bdve-teapps", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_UBLBE (PH_BDVE_PARENT_POM, "ph-bdve-ublbe", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_DIRECTORY_PARENT_POM (null,
                                IProject.DEFAULT_PROJECT_OWNER,
