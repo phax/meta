@@ -702,7 +702,7 @@ public enum EProject implements IProject
                    EProjectType.MAVEN_POM,
                    EHasPages.FALSE,
                    EHasWiki.FALSE,
-                   "1.0.5",
+                   "1.1.0",
                    EJDK.JDK8),
 
   TOOP_COMMONS_PARENT_POM (null,

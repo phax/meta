@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20181107</version>
+  <version>1.0.0-20181109</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1881,7 +1881,7 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-parent-pom</artifactId>
-      <version>1.0.5</version>
+      <version>1.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
