@@ -83,14 +83,14 @@ public enum EExternalDependency
   @IsLegacy
   GROOVY_ALL_24 ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.3", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.4", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "1.3", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.11", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.10", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.6", EJDK.JDK8),
-  HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.12", EJDK.JDK8),
+  HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.7", EJDK.JDK8),
@@ -100,7 +100,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.7.0", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.8.0", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -181,7 +181,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.12.v20180830", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.14.v20181114", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -207,7 +207,7 @@ public enum EExternalDependency
                                      JUNIT5_PLATFORM_LAUNCHER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER_API),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.0.0", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.0.1", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.1", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
@@ -234,7 +234,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.9.0-2", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.5", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
@@ -285,7 +285,7 @@ public enum EExternalDependency
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.0", EJDK.JDK8),
+  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.0.1", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.1", EJDK.JDK8),
