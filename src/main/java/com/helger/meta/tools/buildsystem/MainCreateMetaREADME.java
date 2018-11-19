@@ -19,10 +19,10 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
-import java.util.List;
 
 import javax.annotation.Nonnull;
 
+import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
@@ -37,10 +37,10 @@ import com.helger.meta.project.ProjectList;
 public final class MainCreateMetaREADME extends AbstractProjectMain
 {
   @Nonnull
-  private static String _getGitHubRepoName (@Nonnull final IProject aProject)
+  static String getGitHubRepoName (@Nonnull final IProject aProject)
   {
     if (aProject.isNestedProject ())
-      return _getGitHubRepoName (aProject.getParentProject ());
+      return getGitHubRepoName (aProject.getParentProject ());
     return aProject.getBaseDir ().getName ();
   }
 
@@ -62,7 +62,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
   {
     final String sProjectOwner = aProject.getProjectOwner ();
-    final String sRepoName = _getGitHubRepoName (aProject);
+    final String sRepoName = getGitHubRepoName (aProject);
     aSB.append ("\n   [![Build Status](https://travis-ci.org/")
        .append (sProjectOwner)
        .append ('/')
@@ -78,19 +78,19 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final List <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
-                                                       .getSortedInline (Comparator.comparing (IProject::getBaseDir)
-                                                                                   .thenComparing (IProject::getProjectName));
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
+                                                               .getSortedInline (Comparator.comparing (IProject::getBaseDir)
+                                                                                           .thenComparing (IProject::getProjectName));
 
     // Show all
-    aSB.append ("Current list of all projects (as of ")
+    aSB.append ("Current list of all released projects (as of ")
        .append (PDTFactory.getCurrentLocalDate ().toString ())
        .append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
       {
         final String sProjectOwner = aProject.getProjectOwner ();
-        final String sRepoName = _getGitHubRepoName (aProject);
+        final String sRepoName = getGitHubRepoName (aProject);
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
@@ -119,7 +119,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
            .append ("](https://github.com/")
            .append (sProjectOwner)
            .append ('/')
-           .append (_getGitHubRepoName (aProject))
+           .append (getGitHubRepoName (aProject))
            .append (") - ")
            .append (aProject.getMinimumJDKVersion ().getDisplayName ())
            .append ('\n');

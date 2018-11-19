@@ -130,36 +130,37 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
   {
-    if (!aProject.isNestedProject () && CHECK_TRAVIS)
-    {
-      if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
+    if (CHECK_TRAVIS)
+      if (!aProject.isNestedProject ())
       {
-        _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
-        if (aProject.getProjectType ().hasJavaCode () && aProject.getMinimumJDKVersion ().isAtLeast8 ())
+        if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
         {
-          // jdeps only with JDK8+
-          _checkFileContains (aProject,
-                              ".travis.yml",
-                              "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
-        }
-        else
-        {
-          _checkFileContains (aProject,
-                              ".travis.yml",
-                              "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
-        }
-
-        // No SNAPSHOT deployment for applications
-        if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
-            aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
-        {
-          if (_checkFileExisting (aProject, "travis-settings.xml").isSuccess ())
+          _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
+          if (aProject.getProjectType ().hasJavaCode ())
+          {
+            // jdeps only with JDK8+
             _checkFileContains (aProject,
                                 ".travis.yml",
-                                "mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy");
+                                "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
+          }
+          else
+          {
+            _checkFileContains (aProject,
+                                ".travis.yml",
+                                "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
+          }
+
+          // No SNAPSHOT deployment for applications
+          if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
+              aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
+          {
+            if (_checkFileExisting (aProject, "travis-settings.xml").isSuccess ())
+              _checkFileContains (aProject,
+                                  ".travis.yml",
+                                  "mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy");
+          }
         }
       }
-    }
   }
 
   public static void main (final String [] args)

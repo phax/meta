@@ -25,10 +25,11 @@ import com.helger.commons.lang.EnumHelper;
 
 public enum EJDK
 {
-  JDK6 (6),
-  JDK7 (7),
+  LEGACY (7),
   JDK8 (8),
-  JDK9 (9);
+  JDK9 (9),
+  JDK10 (10),
+  JDK11 (11);
 
   private final int m_nMajor;
 
@@ -55,14 +56,9 @@ public enum EJDK
     return m_nMajor <= eRTVersion.m_nMajor;
   }
 
-  public boolean isAtLeast7 ()
+  public boolean isAtLeast9 ()
   {
-    return m_nMajor >= 7;
-  }
-
-  public boolean isAtLeast8 ()
-  {
-    return m_nMajor >= 8;
+    return m_nMajor >= 9;
   }
 
   @Nullable

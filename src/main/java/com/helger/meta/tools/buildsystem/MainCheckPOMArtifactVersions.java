@@ -27,6 +27,7 @@ import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
 import com.helger.commons.collection.impl.ICommonsMap;
+import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
@@ -148,6 +149,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     // Read all properties
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
+    aProperties.put ("${maven.build.timestamp}", PDTFactory.getCurrentLocalDateTime ().toString ());
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -377,17 +379,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               if (!aReferencedProject.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK) &&
                   aReferencedProject.getProjectType () != EProjectType.MAVEN_POM)
               {
-                final boolean bIsSpecialCase1 = aReferencedProject == EProject.PH_COMMONS &&
-                                                "6.2.4".equals (sVersion) &&
-                                                eProjectJDK == EJDK.JDK6;
-                final boolean bIsSpecialCase2 = aReferencedProject == EProject.PH_DATETIME &&
-                                                "4.2.1".equals (sVersion) &&
-                                                eProjectJDK == EJDK.JDK6;
-                final boolean bIsSpecialCase3 = aReferencedProject == EProject.PEPPOL_COMMONS &&
-                                                "4.3.5".equals (sVersion) &&
-                                                eProjectJDK == EJDK.JDK6;
+                final boolean bIsSpecialCase1 = false;
 
-                if (!bIsSpecialCase1 && !bIsSpecialCase2 && !bIsSpecialCase3)
+                if (!bIsSpecialCase1)
                 {
                   _info (aProject,
                          "Incompatible artifact " +

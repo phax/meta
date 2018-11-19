@@ -107,6 +107,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     _createBatchFile ("call mvn javadoc:javadoc %* > ../javadoc-results.txt 2>&1", "mvn_javadoc.cmd", true);
     _createBatchFile ("git pull", "git_pull.cmd", true);
     _createBatchFile ("git gc", "git_gc.cmd", true);
+    _createBatchFile ("git gc --auto", "git_gc_auto.cmd", true);
     _createBatchFile ("git add . -u\n" +
                       "git commit -m \"Saving files before refreshing line endings\"\n" +
                       "git rm --cached -r .\n" +
@@ -115,6 +116,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
                       "git commit -m \"Normalize all the line endings\"",
                       "git_normalize_crlf.cmd",
                       false);
+    _createBatchFile ("git fetch --prune", "git_fetch_prune.cmd", true);
     System.out.println ("Batch files created in " + CMeta.GIT_BASE_DIR);
   }
 }

@@ -1,4 +1,4 @@
-#My personal Git cheat sheet
+# My personal Git cheat sheet
 
 ## Global settings
 
@@ -24,6 +24,8 @@ Proxy settings:
 set HTTP_PROXY=http://proxy.mycompany.org:80
 git config --global http.proxy %HTTP_PROXY%
 ```
+Note: git does not differentiate between `http` and `https`
+
 
 Disable acknowledgement box in Eclipse:
 ```
@@ -52,4 +54,11 @@ git tag --delete tagname
 Delete remote:
 ```
 git push --delete origin tagname
+```
+
+## Eclipse and git
+
+Get rid of all non-existing remote branches:
+```
+git fetch --prune
 ```

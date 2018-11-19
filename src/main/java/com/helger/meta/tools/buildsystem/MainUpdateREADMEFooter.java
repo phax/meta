@@ -123,7 +123,6 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
       }
 
     if (aSB.length () > 0)
-
     {
       aSB.insert (0, BATCH_HEADER);
       // Delete yourself

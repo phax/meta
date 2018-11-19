@@ -18,6 +18,7 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
+import com.helger.commons.io.file.FileOperations;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -28,15 +29,14 @@ public final class MainEclipseCompilerErrorsRestoreBackup extends AbstractProjec
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated () &&
-                                                                    p.getBaseDir ().exists () &&
-                                                                    p.getMinimumJDKVersion ().isAtLeast8 ()))
+                                                                    p.getBaseDir ().exists ()))
     {
       final File fCur = new File (aProject.getBaseDir (), ".settings/org.eclipse.jdt.core.prefs");
       final File fBackup = new File (aProject.getBaseDir (), ".settings/org.eclipse.jdt.core.prefs.bup");
       if (fBackup.exists ())
       {
-        fCur.delete ();
-        fBackup.renameTo (fCur);
+        FileOperations.deleteDirIfExisting (fCur);
+        FileOperations.renameFile (fBackup, fCur);
         _info (aProject, "Done restoring backup");
       }
     }

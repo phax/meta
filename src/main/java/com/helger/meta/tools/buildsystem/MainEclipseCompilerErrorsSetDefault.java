@@ -19,6 +19,7 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import com.helger.commons.io.file.FileOperations;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -37,8 +38,7 @@ public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMa
 
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated () &&
-                                                                    p.getBaseDir ().exists () &&
-                                                                    p.getMinimumJDKVersion ().isAtLeast8 ()))
+                                                                    p.getBaseDir ().exists ()))
     {
       final File fCur = new File (aProject.getBaseDir (), ".settings/org.eclipse.jdt.core.prefs");
       assert fCur.exists ();
@@ -46,7 +46,7 @@ public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMa
 
       if (!fBackup.exists ())
       {
-        fCur.renameTo (fBackup);
+        FileOperations.renameFile (fCur, fBackup);
       }
       SimpleFileIO.writeFile (fCur, sContent.getBytes (StandardCharsets.UTF_8));
       _info (aProject, "Done restoring default");

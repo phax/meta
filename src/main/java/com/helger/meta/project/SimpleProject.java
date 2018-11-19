@@ -21,6 +21,9 @@ import java.io.File;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
@@ -30,6 +33,8 @@ import com.helger.xml.microdom.serialize.MicroReader;
 
 public class SimpleProject implements IProject
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (SimpleProject.class);
+
   private final IProject m_aParentProject;
   private final String m_sProjectOwner;
   private final String m_sProjectName;
@@ -108,6 +113,9 @@ public class SimpleProject implements IProject
     }
     else
     {
+      if (!m_bIsDeprecated)
+        LOGGER.warn ("Failed to read POM " + getPOMFile ());
+
       // For deprecated projects
       m_sMavenGroupID = eProjectType == EProjectType.MAVEN_PLUGIN ? "com.helger.maven" : "com.helger";
       m_sMavenArtifactID = m_sProjectName;
