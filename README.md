@@ -3,21 +3,25 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2018-11-19):
+Current list of all released projects (as of 2018-11-21):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.2.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-webapp) 
+   [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.1.1 - JDK 1.8
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
@@ -29,7 +33,7 @@ Current list of all released projects (as of 2018-11-19):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
- * [as2-server](https://github.com/phax/as2-server) - Version 4.1.1 - JDK 1.8
+ * [as2-server](https://github.com/phax/as2-server) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
@@ -780,6 +784,12 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-jaxb-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb-pom)
+ * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
  * [ph-jdmc](https://github.com/phax/ph-jdmc) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
@@ -847,9 +857,6 @@ All deprecated projects:
  * ph-html/ph-html-jscode - Version 6.0.4
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-html-jscode) 
- * ph-jaxws - Version 1.0.4
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws) 
  * ph-jdk5 - Version 1.1.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5) 

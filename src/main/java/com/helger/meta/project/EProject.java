@@ -507,11 +507,12 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.1.1",
+                      "4.2.0",
                       EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
+  AS2_DEMO_WEBAPP (AS2_LIB_PARENT_POM, "as2-demo-webapp", EProjectType.JAVA_WEB_APPLICATION),
 
   AS2_SERVER (null,
               IProject.DEFAULT_PROJECT_OWNER,
@@ -520,7 +521,7 @@ public enum EProject implements IProject
               EProjectType.JAVA_LIBRARY,
               EHasPages.FALSE,
               EHasWiki.FALSE,
-              "4.1.1",
+              "4.2.0",
               EJDK.JDK8),
 
   PEPPOL_COMMONS_PARENT_POM (null,
