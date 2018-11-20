@@ -31,7 +31,9 @@ import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
+import com.helger.commons.system.SystemProperties;
 import com.helger.commons.version.Version;
+import com.helger.commons.version.VersionRange;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
@@ -147,9 +149,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
     final String sProjectOwner = aProject.getProjectOwner ();
 
-    // Read all properties
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
+    // Put in predefined properties
     aProperties.put ("${maven.build.timestamp}", PDTFactory.getCurrentLocalDateTime ().toString ());
+
+    // Read all unconditional properties
     {
       final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
       if (eProperties != null)
@@ -158,6 +162,63 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           sValue = _getResolvedVar (sValue, aProperties);
           aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
         });
+    }
+
+    // Read all profile properties
+    {
+      final Version aCurrentVersion = Version.parse (SystemProperties.getJavaVersion ());
+
+      final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
+      if (eProfiles != null)
+        for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
+        {
+          boolean bCanUseProfile = false;
+          final IMicroElement eActivation = eProfile.getFirstChildElement ("activation");
+          if (eActivation != null)
+          {
+            final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
+            if (eJdk != null)
+            {
+              final String sValue = eJdk.getTextContentTrimmed ();
+              if (sValue.indexOf (',') >= 0)
+              {
+                // Version range
+                final VersionRange aRange = VersionRange.parse (sValue);
+                bCanUseProfile = aRange.versionMatches (aCurrentVersion);
+              }
+              else
+              {
+                // Single version
+                final Version aVersion = Version.parse (sValue);
+                bCanUseProfile = aVersion.equals (aCurrentVersion);
+              }
+            }
+            else
+              _warn (aProject, "Only profile activations with JDK version are supported");
+          }
+          else
+          {
+            // Happens in parent POM
+            if (false)
+              _warn (aProject, "Found profile without activation");
+          }
+
+          if (bCanUseProfile)
+          {
+            // Add all properties from profile
+            final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
+            if (eProperties != null)
+            {
+              _info (aProject,
+                     "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
+              eProperties.forAllChildElements (eProperty -> {
+                String sValue = eProperty.getTextContentTrimmed ();
+                sValue = _getResolvedVar (sValue, aProperties);
+                aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
+              });
+            }
+          }
+        }
     }
 
     // Check parent POM
