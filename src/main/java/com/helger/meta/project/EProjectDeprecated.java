@@ -147,16 +147,7 @@ public enum EProjectDeprecated implements IProject
              EHasPages.FALSE,
              EHasWiki.FALSE,
              null,
-             EJDK.JDK8),
-  PH_JAXWS (null,
-            IProject.DEFAULT_PROJECT_OWNER,
-            "ph-jaxws",
-            "ph-jaxws",
-            EProjectType.MAVEN_POM,
-            EHasPages.FALSE,
-            EHasWiki.FALSE,
-            "1.0.4",
-            EJDK.JDK8);
+             EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
