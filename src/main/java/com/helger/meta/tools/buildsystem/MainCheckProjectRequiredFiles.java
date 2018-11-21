@@ -37,7 +37,7 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static final boolean CHECK_TRAVIS = false;
+  private static final boolean CHECK_TRAVIS = true;
 
   @Nonnull
   private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
@@ -135,10 +135,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       {
         if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
         {
-          _checkFileNotExisting (aProject, "mvn-settings-add-snapshot.py");
-          if (aProject.getProjectType ().hasJavaCode ())
+          if (false && aProject.getProjectType ().hasJavaCode ())
           {
             // jdeps only with JDK8+
+            // JDeps is disabled for multi-version JAR issue
             _checkFileContains (aProject,
                                 ".travis.yml",
                                 "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
@@ -149,6 +149,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
                                 ".travis.yml",
                                 "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
           }
+
+          _checkFileContains (aProject, ".travis.yml", "oraclejdk8");
+          _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
+          _checkFileContains (aProject, ".travis.yml", "openjdk11");
 
           // No SNAPSHOT deployment for applications
           if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
