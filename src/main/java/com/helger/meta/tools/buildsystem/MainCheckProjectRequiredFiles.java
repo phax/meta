@@ -153,6 +153,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           _checkFileContains (aProject, ".travis.yml", "oraclejdk8");
           _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
+          _checkFileContains (aProject, ".travis.yml", "branches:");
 
           // No SNAPSHOT deployment for applications
           if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&

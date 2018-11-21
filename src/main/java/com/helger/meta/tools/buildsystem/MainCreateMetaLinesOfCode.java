@@ -86,6 +86,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                 "svrl",
                                 "xsl",
                                 "xslt")),
+    JDM ("JDM", true, new CommonsTreeSet <> ("jdm")),
     // Binary stuff
     EXCEL ("Excel", false, new CommonsTreeSet <> ("xls", "xlsx", "ods")),
     FLASH ("Flash", false, new CommonsTreeSet <> ("swf")),

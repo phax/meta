@@ -425,10 +425,18 @@ Current list of all released projects (as of 2018-11-21):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
+ * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 1.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom) 
+   [![Build Status](https://travis-ci.org/phax/ph-jaxb-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb-pom)
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.2.11.13 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
+ * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.1.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
+   [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
@@ -784,12 +792,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-jaxb-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb-pom)
- * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
  * [ph-jdmc](https://github.com/phax/ph-jdmc) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
