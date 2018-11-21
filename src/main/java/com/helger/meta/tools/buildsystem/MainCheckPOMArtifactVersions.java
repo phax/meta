@@ -152,6 +152,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
     // Put in predefined properties
     aProperties.put ("${maven.build.timestamp}", PDTFactory.getCurrentLocalDateTime ().toString ());
+    aProperties.put ("${project.build.directory}", aProject.getFullBaseDirName () + "/target");
 
     // Read all unconditional properties
     {
