@@ -130,6 +130,7 @@ public enum EExternalDependency
   JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
   JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
+  JAXB9_XSOM ("org.glassfish.jaxb", "xsom", JAXB9_BOM),
 
   // Not in 2.3.1...
   JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", "2.3.0.1", EJDK.JDK9),
