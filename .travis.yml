@@ -1,14 +1,18 @@
 language: java
 
-jdk:
-  - oraclejdk8
-  - oraclejdk11
-  - openjdk11
-  
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps
   
 cache:
   directories:
-  - $HOME/.m2
- 
+    - $HOME/.m2
+
+jobs:
+  include:
+    - stage: test
+      jdk: oraclejdk8
+    - stage: test
+      jdk: oraclejdk11
+    - stage: test
+      jdk: openjdk11
+  
