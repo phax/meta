@@ -195,7 +195,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
               }
             }
             else
-              _warn (aProject, "Only profile activations with JDK version are supported");
+            {
+              if (false)
+                _warn (aProject, "Only profile activations with JDK version are supported");
+            }
           }
           else
           {
@@ -210,8 +213,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
             if (eProperties != null)
             {
-              _info (aProject,
-                     "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
+              if (false)
+                _info (aProject,
+                       "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
               eProperties.forAllChildElements (eProperty -> {
                 String sValue = eProperty.getTextContentTrimmed ();
                 sValue = _getResolvedVar (sValue, aProperties);
