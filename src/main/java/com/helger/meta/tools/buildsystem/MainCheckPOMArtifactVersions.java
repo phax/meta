@@ -617,12 +617,13 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-    {
-      final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
-      if (aDoc == null)
-        throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-      _validatePOM (aProject, aDoc);
-    }
+      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
+      {
+        final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
+        if (aDoc == null)
+          throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
+        _validatePOM (aProject, aDoc);
+      }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }
