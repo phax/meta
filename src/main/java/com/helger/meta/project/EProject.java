@@ -482,7 +482,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "6.0.2",
+                     "6.1.0",
                      EJDK.JDK8),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
   PH_UBL_JAXB_PLUGIN (PH_UBL_PARENT_POM, "ph-ubl-jaxb-plugin", EProjectType.OTHER_PLUGIN),
@@ -577,7 +577,7 @@ public enum EProject implements IProject
                      EJDK.JDK8),
 
   EN16931_PARENT_POM (null,
-                      "CenPc434",
+                      IProject.PROJECT_OWNER_CENTC434,
                       "en16931-parent-pom",
                       "java-tools",
                       EProjectType.MAVEN_POM,
