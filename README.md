@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2018-11-26):
+Current list of all released projects (as of 2018-11-28):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.1 - JDK 1.8
 
@@ -25,11 +25,11 @@ Current list of all released projects (as of 2018-11-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.0.2 - JDK 1.8
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 5.0.2 - JDK 1.8
+ * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 5.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
@@ -149,27 +149,27 @@ Current list of all released projects (as of 2018-11-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-server-xml) 
    [![Build Status](https://travis-ci.org/phax/peppol-smp-server.svg?branch=master)](https://travis-ci.org/phax/peppol-smp-server)
- * [ph-as4](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4/ph-as4-esens](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-esens) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4/ph-as4-lib](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-lib) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-server-webapp](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4/ph-as4-server-webapp](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-server-webapp-test](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4/ph-as4-server-webapp-test](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-server-webapp-test) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [ph-as4/ph-as4-servlet](https://github.com/phax/ph-as4) - Version 0.8.0 - JDK 1.8
+ * [ph-as4/ph-as4-servlet](https://github.com/phax/ph-as4) - Version 0.8.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-as4-servlet) 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
