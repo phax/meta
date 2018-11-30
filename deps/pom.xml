@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20181128</version>
+  <version>1.0.0-20181130</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1668,33 +1668,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
