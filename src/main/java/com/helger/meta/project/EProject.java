@@ -134,7 +134,7 @@ public enum EProject implements IProject
                     EProjectType.OTHER_PLUGIN,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "2.3.1.1",
+                    "2.3.1.2",
                     EJDK.JDK8),
   PH_WSIMPORT_PLUGIN (null,
                       IProject.DEFAULT_PROJECT_OWNER,
