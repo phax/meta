@@ -77,6 +77,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                 "dtd",
                                 "wsdl",
                                 "xjb",
+                                "xjc",
                                 "gc",
                                 "gc_",
                                 "cva",
@@ -285,7 +286,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       {
         if (aFile.isFile ())
         {
-          final EFileType eFileType = EFileType.getFromFilename (aFile.getName ());
+          final EFileType eFileType = EFileType.getFromFilename (aFile.getAbsolutePath ());
           // Map was prefilled
           final FileTypeCount aFTCount = aMap.get (eFileType);
 
