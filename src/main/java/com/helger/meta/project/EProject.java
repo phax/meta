@@ -299,7 +299,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_PLUGIN,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "4.1.0",
+                          "4.1.1",
                           EJDK.JDK8),
   PH_BUILDINFO_MAVEN_PLUGIN (null,
                              IProject.DEFAULT_PROJECT_OWNER,
