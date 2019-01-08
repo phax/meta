@@ -2,8 +2,9 @@
 
 ## Install Win64 OpenSSL
 
-* Download from https://slproweb.com/products/Win32OpenSSL.html
 * This is required for mod_ssl to work
+* Download from https://slproweb.com/products/Win32OpenSSL.html
+* Option "copy into Windows directory" MUST be checked
 
 ## Get a binary version of Apache from ApacheLounge:
 
