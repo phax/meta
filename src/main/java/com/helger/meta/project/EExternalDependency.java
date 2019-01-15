@@ -52,7 +52,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20181210", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190106", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -100,7 +100,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.9.1", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.10.0", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -124,7 +124,7 @@ public enum EExternalDependency
   JAXB_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
 
   @IsBOM
-  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.1", EJDK.JDK9),
+  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.2", EJDK.JDK9),
   JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
   JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
@@ -144,7 +144,7 @@ public enum EExternalDependency
   // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
   // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
   // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
-  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", "2.3.1", EJDK.JDK9),
+  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB9_BOM),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
@@ -244,12 +244,12 @@ public enum EExternalDependency
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   SPOCK_CORE ("org.spockframework", "spock-core", "1.2-groovy-2.5", EJDK.JDK8),
-  STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8", EJDK.JDK8),
+  STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.1", EJDK.JDK8),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.4", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.16.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.17.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.2", EJDK.JDK8),
