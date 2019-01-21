@@ -31,7 +31,7 @@ import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
 /**
  * Test class for class {@link InterfaceReader}.
- * 
+ *
  * @author Philip Helger
  */
 public final class InterfaceReaderTest
@@ -50,7 +50,8 @@ public final class InterfaceReaderTest
                                                                           "wsdlgen/erb/erc-out-sync-120.interface",
                                                                           "wsdlgen/erb/erg-in-status-update-100.interface",
                                                                           "wsdlgen/erb/in-progress/erc-out-sync-120.interface",
-                                                                          "wsdlgen/pp/pp-dvs.interface");
+                                                                          "wsdlgen/pp/pp-dvs.interface",
+                                                                          "wsdlgen/eproc-bbg/eproc-bbg.interface");
 
   @Test
   public void testReadAll ()

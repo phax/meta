@@ -1,0 +1,91 @@
+{
+  $name: "E2BWS",
+  $namespace: "http://at.gv.brz.eproc.etender/ws/tobbg/201901/",
+  $endpoint: "http://dummy.example.org/path",
+  $doc: "DVS - Document Validation Service
+         Defines the XSD types for the KD to BBG push service
+    Author: Philip Helger
+    Version: 1.0.0
+    Last Update: 2019-01-21
+    
+    History: 
+      1.0.0: Initial version
+  ",       
+  $types: {
+    // Generic types
+    #ActionType: {
+      $restriction: "token",
+      $doc: "KD action to be performed",
+      $enum: ["CREATE", "UPDATE", "DELETE"]
+    },
+    // Request types
+    BeginIndexRequestType: {
+      $doc: "The type for the /beginIndex request",
+      @index-date: {
+        $type: "date",
+        $doc: "Date of indexing"
+      }
+    },
+    ModifiedKDRequestType: {
+      $doc: "The type for /modifiedKD request.
+             The uniqueness of the entry can be achieved by the triple of (kdq-id, kd-id and index-date)",
+      @kdq-id: {
+        $type: "string",
+        $doc: "Kerndatenquellen ID"
+      },
+      @kd-id: {
+        $type: "string",
+        $doc: "Kerndaten ID"
+      },
+      @index-date: {
+        $type: "date",
+        $doc: "Date of indexing"
+      },
+      @action: {
+        $type: "ActionType",
+        $doc: "What changed"
+      },
+      Payload: {
+        $type: "base64Binary",
+        $doc: "The XML of the Kerndaten 'as-is'.
+               Please note, that this XML may contain a different encoding than the surrounding request." 
+      }
+    },
+    EndIndexRequestType: {
+      $doc: "The type for the /endIndex request",
+      @index-date: {
+        $type: "date",
+        $doc: "Date of indexing"
+      },
+      @count-create: {
+        $type: "unsignedInt",
+        $doc: "Number of CREATEs for this date of indexing"
+      },
+      @count-update: {
+        $type: "unsignedInt",
+        $doc: "Number of UPDATEs for this date of indexing"
+      },
+      @count-delete: {
+        $type: "unsignedInt",
+        $doc: "Number of DELETEs for this date of indexing"
+      }
+    }
+  },
+  // Methods
+  beginIndex: {
+    $input: {
+      Request: "BeginIndexRequestType"
+    }
+  },
+  modifiedKD: {
+    $input: {
+      Request: "ModifiedKDRequestType"
+    }
+  },
+  endIndex: {
+    $input: {
+      Request: "EndIndexRequestType"
+    }
+  }
+}
+    
