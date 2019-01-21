@@ -1,6 +1,6 @@
 {
-  $name: "E2BWS",
-  $namespace: "http://at.gv.brz.eproc.etender/ws/tobbg/201901/",
+  $name: "EPCWS",
+  $namespace: "http://www.brz.gv.at/eproc/clearing/201901/",
   $endpoint: "http://dummy.example.org/path",
   $doc: "DVS - Document Validation Service
          Defines the XSD types for the KD to BBG push service

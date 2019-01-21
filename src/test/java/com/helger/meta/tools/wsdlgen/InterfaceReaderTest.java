@@ -51,7 +51,7 @@ public final class InterfaceReaderTest
                                                                           "wsdlgen/erb/erg-in-status-update-100.interface",
                                                                           "wsdlgen/erb/in-progress/erc-out-sync-120.interface",
                                                                           "wsdlgen/pp/pp-dvs.interface",
-                                                                          "wsdlgen/eproc-bbg/eproc-bbg.interface");
+                                                                          "wsdlgen/eproc/eproc-clearing-2019-01.interface");
 
   @Test
   public void testReadAll ()
