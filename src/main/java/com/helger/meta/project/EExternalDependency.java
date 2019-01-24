@@ -66,7 +66,7 @@ public enum EExternalDependency
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.0.2", EJDK.JDK8),
 
-  ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.3", EJDK.JDK8),
+  ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.4", EJDK.JDK8),
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
@@ -88,7 +88,7 @@ public enum EExternalDependency
   H2 ("com.h2database", "h2", "1.4.197", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.1", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.11.1", EJDK.JDK8),
-  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.10", EJDK.JDK8),
+  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.11", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.6", EJDK.JDK8),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
@@ -100,7 +100,7 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.10.0", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.10.1", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -158,7 +158,7 @@ public enum EExternalDependency
   JAXWS_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
   @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.1", EJDK.JDK9),
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.2", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
 
@@ -223,10 +223,10 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "2.4.2", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.9.1", EJDK.JDK8),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.13", EJDK.JDK8),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.14", EJDK.JDK8),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.13", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
@@ -235,7 +235,7 @@ public enum EExternalDependency
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.0-2", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-1", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
@@ -244,7 +244,7 @@ public enum EExternalDependency
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.25", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
-  SPOCK_CORE ("org.spockframework", "spock-core", "1.2-groovy-2.5", EJDK.JDK8),
+  SPOCK_CORE ("org.spockframework", "spock-core", "1.3-RC1-groovy-2.5", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.1", EJDK.JDK8),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
