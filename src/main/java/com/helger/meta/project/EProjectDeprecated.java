@@ -147,7 +147,16 @@ public enum EProjectDeprecated implements IProject
              EHasPages.FALSE,
              EHasWiki.FALSE,
              null,
-             EJDK.JDK8);
+             EJDK.JDK8),
+  PH_UBL_JAXB_PLUGIN (null,
+                      IProject.DEFAULT_PROJECT_OWNER,
+                      "ph-ubl-jaxb-plugin",
+                      "ph-ubl-jaxb-plugin",
+                      EProjectType.OTHER_PLUGIN,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      "6.1.0",
+                      EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
