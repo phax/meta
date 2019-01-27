@@ -52,7 +52,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190106", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190121", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -74,7 +74,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
-  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.6", EJDK.JDK8),
+  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.7", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -89,7 +89,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.1", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.11.1", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.11", EJDK.JDK8),
-  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.6", EJDK.JDK8),
+  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.7", EJDK.JDK8),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
@@ -99,8 +99,8 @@ public enum EExternalDependency
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.10.1", EJDK.JDK8),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.3", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.10.2", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -174,7 +174,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.27", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.28", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
