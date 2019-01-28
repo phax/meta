@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-01-27):
+Current list of all released projects (as of 2019-01-28):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.1 - JDK 1.8
 
@@ -69,7 +69,7 @@ Current list of all released projects (as of 2019-01-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.0 - JDK 1.8
+ * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
@@ -425,7 +425,7 @@ Current list of all released projects (as of 2019-01-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax) 
    [![Build Status](https://travis-ci.org/phax/ph-isorelax.svg?branch=master)](https://travis-ci.org/phax/ph-isorelax)
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.1 - JDK 1.8
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)

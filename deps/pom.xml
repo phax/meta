@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190127</version>
+  <version>1.0.0-20190128</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -996,7 +996,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parser-generator-cc</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1245,7 +1245,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-javacc-maven-plugin</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
