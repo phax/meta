@@ -71,7 +71,7 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.1", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.2", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.7", EJDK.JDK8),
@@ -226,7 +226,7 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
   MONGO_DB ("org.mongodb", "mongodb-driver", "3.9.1", EJDK.JDK8),
-  MYSQL ("mysql", "mysql-connector-java", "8.0.14", EJDK.JDK8),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.15", EJDK.JDK8),
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.13", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190128</version>
+  <version>1.0.0-20190203</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -163,7 +163,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.framework</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
@@ -618,7 +618,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.14</version>
+      <version>8.0.15</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
