@@ -204,10 +204,8 @@ public enum EExternalDependency
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.4.0", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.4.0", EJDK.JDK8),
-  JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform",
-                                     "junit-platform-surefire-provider",
-                                     JUNIT5_PLATFORM_LAUNCHER),
-  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER_API),
+  JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
+  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.1.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
