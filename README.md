@@ -799,6 +799,9 @@ Current list of all unreleased projects:
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)
+ * [baumschule](https://github.com/phax/baumschule) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/baumschule.svg?branch=master)](https://travis-ci.org/phax/baumschule)
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
@@ -814,12 +817,18 @@ Current list of all unreleased projects:
  * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
+ * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [registry434](https://github.com/phax/registry434) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
 
 All deprecated projects:
 

@@ -161,5 +161,10 @@ public interface IProject
   @Nullable
   Version getLastPublishedVersion ();
 
+  default boolean isGitHubPrivate ()
+  {
+    return false;
+  }
+
   int compareTo (@Nonnull IProject aProject);
 }

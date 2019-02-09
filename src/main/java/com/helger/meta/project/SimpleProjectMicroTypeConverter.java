@@ -38,6 +38,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   private static final String ATTR_HAS_WIKI = "haswiki";
   private static final String ATTR_LAST_PUBLISHED_VERSION = "lastpubversion";
   private static final String ATTR_MIN_JDK_VERSION = "minjdk";
+  private static final String ATTR_GITHUB_PRIVATE = "githubprivate";
 
   @Nonnull
   public IMicroElement convertToMicroElement (@Nonnull final SimpleProject aValue,
@@ -54,6 +55,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     ret.setAttribute (ATTR_HAS_WIKI, aValue.hasWikiProject ());
     ret.setAttribute (ATTR_LAST_PUBLISHED_VERSION, aValue.getLastPublishedVersionString ());
     ret.setAttribute (ATTR_MIN_JDK_VERSION, aValue.getMinimumJDKVersion ().getMajor ());
+    ret.setAttribute (ATTR_GITHUB_PRIVATE, aValue.isGitHubPrivate ());
     return ret;
   }
 
@@ -76,14 +78,16 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final File aBaseDir = ProjectList.findBaseDirectory (sDir);
 
-    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
-    final boolean bHasPages = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_PAGES), false);
-    final boolean bHasWiki = StringParser.parseBool (aElement.getAttributeValue (ATTR_HAS_WIKI), false);
+    final boolean bIsDeprecated = aElement.getAttributeValueAsBool (ATTR_IS_DEPRECATED, false);
+    final boolean bHasPages = aElement.getAttributeValueAsBool (ATTR_HAS_PAGES, false);
+    final boolean bHasWiki = aElement.getAttributeValueAsBool (ATTR_HAS_WIKI, false);
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
     final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION),
                                                                          -1));
+
+    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, false);
 
     return new SimpleProject ((IProject) null,
                               sProjectOwner,
@@ -94,7 +98,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               EHasPages.valueOf (bHasPages),
                               EHasWiki.valueOf (bHasWiki),
                               sLastPublishedVersion,
-                              eMinJDK);
+                              eMinJDK,
+                              bIsGitHubPrivate);
   }
 
   @Nonnull
@@ -116,11 +121,14 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
       sDir = sProjectName;
     final File aBaseDir = new File (aParentProject.getBaseDir (), sDir);
 
-    final boolean bIsDeprecated = StringParser.parseBool (aElement.getAttributeValue (ATTR_IS_DEPRECATED), false);
+    final boolean bIsDeprecated = aElement.getAttributeValueAsBool (ATTR_IS_DEPRECATED, false);
 
     String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
     if (sLastPublishedVersion == null)
       sLastPublishedVersion = aParentProject.getLastPublishedVersionString ();
+
+    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE,
+                                                                       aParentProject.isGitHubPrivate ());
 
     return new SimpleProject (aParentProject,
                               sProjectOwner,
@@ -131,6 +139,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               EHasPages.valueOf (aParentProject.hasPagesProject ()),
                               EHasWiki.valueOf (aParentProject.hasWikiProject ()),
                               sLastPublishedVersion,
-                              aParentProject.getMinimumJDKVersion ());
+                              aParentProject.getMinimumJDKVersion (),
+                              bIsGitHubPrivate);
   }
 }

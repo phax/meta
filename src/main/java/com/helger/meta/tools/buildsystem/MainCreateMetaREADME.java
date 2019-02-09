@@ -78,7 +78,8 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                                     !p.isGitHubPrivate ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
                                                                                            .thenComparing (IProject::getProjectName));
 

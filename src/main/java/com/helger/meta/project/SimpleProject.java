@@ -47,6 +47,7 @@ public class SimpleProject implements IProject
   private final String m_sLastPublishedVersion;
   private final Version m_aLastPublishedVersion;
   private final EJDK m_eMinJDK;
+  private final boolean m_bIsGitHubPrivate;
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
 
@@ -59,7 +60,8 @@ public class SimpleProject implements IProject
                         @Nonnull final EHasPages eHasPagesProject,
                         @Nonnull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion,
-                        @Nonnull final EJDK eMinJDK)
+                        @Nonnull final EJDK eMinJDK,
+                        final boolean bIsGitHubPrivate)
   {
     ValueEnforcer.notEmpty (sProjectOwner, "ProjectOwner");
     ValueEnforcer.notEmpty (sProjectName, "ProjectName");
@@ -85,6 +87,7 @@ public class SimpleProject implements IProject
     m_sLastPublishedVersion = sLastPublishedVersion;
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : Version.parse (sLastPublishedVersion);
     m_eMinJDK = eMinJDK;
+    m_bIsGitHubPrivate = bIsGitHubPrivate;
 
     // Determine group and artifact from POM
     String sGroupID = null;
@@ -210,6 +213,11 @@ public class SimpleProject implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aLastPublishedVersion;
+  }
+
+  public boolean isGitHubPrivate ()
+  {
+    return m_bIsGitHubPrivate;
   }
 
   public int compareTo (@Nonnull final IProject aProject)

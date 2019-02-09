@@ -17,6 +17,7 @@
 package com.helger.meta.project;
 
 import java.io.File;
+import java.lang.reflect.Field;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -153,9 +154,10 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      null,
+                      "0.0.2",
                       EJDK.JDK8),
   PH_JDMC_CORE (PH_JDMC_PARENT_POM, "ph-jdmc-core", EProjectType.JAVA_LIBRARY),
+  PH_JDMC_MAVEN_PLUGIN (PH_JDMC_PARENT_POM, "ph-jdmc-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
   PH_XSDS_PARENT_POM (null,
                       IProject.DEFAULT_PROJECT_OWNER,
@@ -687,6 +689,17 @@ public enum EProject implements IProject
   PH_AS4_SERVER_WEBAPP (PH_AS4_PARENT_POM, "ph-as4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM, "ph-as4-server-webapp-test", EProjectType.JAVA_WEB_APPLICATION),
 
+  @IsGitHubPrivate
+  BAUMSCHULE (null,
+              IProject.DEFAULT_PROJECT_OWNER,
+              "baumschule",
+              "baumschule",
+              EProjectType.JAVA_WEB_APPLICATION,
+              EHasPages.FALSE,
+              EHasWiki.FALSE,
+              null,
+              EJDK.JDK8),
+  @IsGitHubPrivate
   BOZOO (null,
          IProject.DEFAULT_PROJECT_OWNER,
          "bozoo",
@@ -714,6 +727,16 @@ public enum EProject implements IProject
                    EHasWiki.FALSE,
                    null,
                    EJDK.JDK8),
+  @IsGitHubPrivate
+  REGISTRY434 (null,
+               IProject.DEFAULT_PROJECT_OWNER,
+               "registry434",
+               "registry434",
+               EProjectType.JAVA_WEB_APPLICATION,
+               EHasPages.FALSE,
+               EHasWiki.FALSE,
+               null,
+               EJDK.JDK8),
 
   // TOOP stuff
   TOOP_PARENT_POM (null,
@@ -762,6 +785,7 @@ public enum EProject implements IProject
   TOOP_R2D2_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
   TOOP_SMM_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
   TOOP_MESSAGE_EXCHANGE (TOOP_CONNECTOR_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
+  TOOP_MEM_PHASE4 (TOOP_CONNECTOR_PARENT_POM, "toop-mem-phase4", EProjectType.JAVA_LIBRARY),
   TOOP_CONNECTOR_WEBAPP (TOOP_CONNECTOR_PARENT_POM, "toop-connector-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
@@ -845,6 +869,17 @@ public enum EProject implements IProject
                     @Nullable final String sLastPublishedVersion,
                     @Nonnull final EJDK eMinJDK)
   {
+    boolean bIsGitHubPrivate;
+    try
+    {
+      final Field aField = EProject.class.getField (name ());
+      bIsGitHubPrivate = aField.isAnnotationPresent (IsGitHubPrivate.class);
+    }
+    catch (final Exception ex)
+    {
+      throw new IllegalStateException (ex);
+    }
+
     m_aProject = new SimpleProject (eParentProject,
                                     sProjectOwner,
                                     sProjectName,
@@ -857,7 +892,8 @@ public enum EProject implements IProject
                                     eHasPagesProject,
                                     eHasWikiProject,
                                     sLastPublishedVersion,
-                                    eMinJDK);
+                                    eMinJDK,
+                                    bIsGitHubPrivate);
   }
 
   public boolean isBuildInProject ()

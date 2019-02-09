@@ -450,7 +450,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     final StringBuilder aSB = new StringBuilder ();
     aSB.append ("Line count as of ").append (PDTFactory.getCurrentLocalDateTime ().toString ()).append (":\n\n");
 
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject ())
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                                     !p.isGitHubPrivate ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
                                                                                            .thenComparing (IProject::getProjectName));
 

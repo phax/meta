@@ -228,7 +228,8 @@ public enum EProjectDeprecated implements IProject
                                     eHasPagesProject,
                                     eHasWikiProject,
                                     sLastPublishedVersion,
-                                    eMinJDK);
+                                    eMinJDK,
+                                    true);
   }
 
   public boolean isBuildInProject ()
