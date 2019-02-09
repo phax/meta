@@ -1,7 +1,7 @@
 # Lines of Code
 Note: This file was automatically generated.
 
-Line count as of 2019-02-03T09:33:34.721:
+Line count as of 2019-02-09T21:28:26.768:
 
 
 Current list of all released projects:
@@ -140,15 +140,15 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>26</td><td>546,286</td><td>11,151</td><td>1,003</td><td>8.99%</td><td>546,240</td><td>167,853</td><td>30.73%</td></tr>
+<tr><td>Java files</td><td>main</td><td>26</td><td>553,916</td><td>11,257</td><td>1,003</td><td>8.91%</td><td>553,870</td><td>167,795</td><td>30.30%</td></tr>
 <tr><td>Java files</td><td>test</td><td>7</td><td>34,838</td><td>785</td><td>106</td><td>13.50%</td><td>34,838</td><td>8,486</td><td>24.36%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>33</td><td>581,124</td><td>11,936</td><td>1,109</td><td>9.29%</td><td>581,078</td><td>176,339</td><td>30.35%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>33</td><td>588,754</td><td>12,042</td><td>1,109</td><td>9.21%</td><td>588,708</td><td>176,281</td><td>29.94%</td></tr>
 <tr><td>XML files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>test</td><td>182</td><td>3,199,661</td><td>54,516</td><td>1,269</td><td>2.33%</td><td>3,196,614</td><td>226,221</td><td>7.08%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>182</td><td>3,199,661</td><td>54,516</td><td>1,269</td><td>2.33%</td><td>3,196,614</td><td>226,221</td><td>7.08%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>28</td><td>557,169</td><td>11,151</td><td>1,003</td><td>8.99%</td><td>546,240</td><td>167,853</td><td>30.73%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>28</td><td>564,799</td><td>11,257</td><td>1,003</td><td>8.91%</td><td>553,870</td><td>167,795</td><td>30.30%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>189</td><td>3,234,499</td><td>55,301</td><td>1,375</td><td>2.49%</td><td>3,231,452</td><td>234,707</td><td>7.26%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>217</td><td>3,791,668</td><td>66,452</td><td>2,378</td><td>3.58%</td><td>3,777,692</td><td>402,560</td><td>10.66%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>217</td><td>3,799,298</td><td>66,558</td><td>2,378</td><td>3.57%</td><td>3,785,322</td><td>402,502</td><td>10.63%</td></tr>
 </tfoot></table>
 
 
@@ -156,15 +156,15 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>4</td><td>32,160</td><td>846</td><td>91</td><td>10.76%</td><td>32,160</td><td>5,909</td><td>18.37%</td></tr>
+<tr><td>Java files</td><td>main</td><td>4</td><td>32,243</td><td>848</td><td>91</td><td>10.73%</td><td>32,243</td><td>5,932</td><td>18.40%</td></tr>
 <tr><td>Java files</td><td>test</td><td>2</td><td>5,207</td><td>150</td><td>22</td><td>14.67%</td><td>5,207</td><td>688</td><td>13.21%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>6</td><td>37,367</td><td>996</td><td>113</td><td>11.35%</td><td>37,367</td><td>6,597</td><td>17.65%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>6</td><td>37,450</td><td>998</td><td>113</td><td>11.32%</td><td>37,450</td><td>6,620</td><td>17.68%</td></tr>
 <tr><td>XML files</td><td>main</td><td>4</td><td>50,032</td><td>1,039</td><td>21</td><td>2.02%</td><td>50,028</td><td>10,098</td><td>20.18%</td></tr>
 <tr><td>XML files</td><td>test</td><td>1</td><td>3,258</td><td>82</td><td>5</td><td>6.10%</td><td>3,257</td><td>445</td><td>13.66%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>5</td><td>53,290</td><td>1,121</td><td>26</td><td>2.32%</td><td>53,285</td><td>10,543</td><td>19.79%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10</td><td>94,049</td><td>1,885</td><td>112</td><td>5.94%</td><td>82,188</td><td>16,007</td><td>19.48%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10</td><td>94,132</td><td>1,887</td><td>112</td><td>5.94%</td><td>82,271</td><td>16,030</td><td>19.48%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>3</td><td>8,465</td><td>232</td><td>27</td><td>11.64%</td><td>8,464</td><td>1,133</td><td>13.39%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>13</td><td>102,514</td><td>2,117</td><td>139</td><td>6.57%</td><td>90,652</td><td>17,140</td><td>18.91%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>13</td><td>102,597</td><td>2,119</td><td>139</td><td>6.56%</td><td>90,735</td><td>17,163</td><td>18.92%</td></tr>
 </tfoot></table>
 
 
@@ -532,9 +532,9 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>73</td><td>650,339</td><td>12,663</td><td>1,155</td><td>9.12%</td><td>650,339</td><td>188,580</td><td>29.00%</td></tr>
+<tr><td>Java files</td><td>main</td><td>73</td><td>650,437</td><td>12,665</td><td>1,155</td><td>9.12%</td><td>650,437</td><td>188,610</td><td>29.00%</td></tr>
 <tr><td>Java files</td><td>test</td><td>5</td><td>30,315</td><td>653</td><td>59</td><td>9.04%</td><td>30,315</td><td>5,267</td><td>17.37%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>78</td><td>680,654</td><td>13,316</td><td>1,214</td><td>9.12%</td><td>680,654</td><td>193,847</td><td>28.48%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>78</td><td>680,752</td><td>13,318</td><td>1,214</td><td>9.12%</td><td>680,752</td><td>193,877</td><td>28.48%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>2</td><td>841</td><td>22</td><td>1</td><td>4.55%</td><td>841</td><td>121</td><td>14.39%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>2</td><td>841</td><td>22</td><td>1</td><td>4.55%</td><td>841</td><td>121</td><td>14.39%</td></tr>
@@ -544,9 +544,9 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>test</td><td>1</td><td>1,157</td><td>32</td><td>5</td><td>15.62%</td><td>1,157</td><td>197</td><td>17.03%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>1</td><td>1,157</td><td>32</td><td>5</td><td>15.62%</td><td>1,157</td><td>197</td><td>17.03%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>81</td><td>674,268</td><td>12,750</td><td>1,163</td><td>9.12%</td><td>653,217</td><td>188,909</td><td>28.92%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>81</td><td>674,366</td><td>12,752</td><td>1,163</td><td>9.12%</td><td>653,315</td><td>188,939</td><td>28.92%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>8</td><td>34,022</td><td>749</td><td>73</td><td>9.75%</td><td>34,022</td><td>5,778</td><td>16.98%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>89</td><td>708,290</td><td>13,499</td><td>1,236</td><td>9.16%</td><td>687,239</td><td>194,687</td><td>28.33%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>89</td><td>708,388</td><td>13,501</td><td>1,236</td><td>9.15%</td><td>687,337</td><td>194,717</td><td>28.33%</td></tr>
 </tfoot></table>
 
 
@@ -620,18 +620,18 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>15</td><td>1</td><td>0</td><td>0.00%</td><td>15</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>15</td><td>1</td><td>0</td><td>0.00%</td><td>15</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>3</td><td>22,680</td><td>582</td><td>45</td><td>7.73%</td><td>23,031</td><td>5,770</td><td>25.05%</td></tr>
+<tr><td>Java files</td><td>main</td><td>3</td><td>22,252</td><td>588</td><td>47</td><td>7.99%</td><td>22,603</td><td>5,312</td><td>23.50%</td></tr>
 <tr><td>Java files</td><td>test</td><td>4</td><td>50,726</td><td>1,056</td><td>96</td><td>9.09%</td><td>50,775</td><td>15,507</td><td>30.54%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>7</td><td>73,406</td><td>1,638</td><td>141</td><td>8.61%</td><td>73,806</td><td>21,277</td><td>28.83%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>7</td><td>72,978</td><td>1,644</td><td>143</td><td>8.70%</td><td>73,378</td><td>20,819</td><td>28.37%</td></tr>
 <tr><td>Text files</td><td>main</td><td>1</td><td>119</td><td>1</td><td>0</td><td>0.00%</td><td>119</td><td>2</td><td>1.68%</td></tr>
 <tr><td>Text files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Text files</td><td>sum</td><td>1</td><td>119</td><td>1</td><td>0</td><td>0.00%</td><td>119</td><td>2</td><td>1.68%</td></tr>
 <tr><td>XML files</td><td>main</td><td>1</td><td>3,088</td><td>77</td><td>5</td><td>6.49%</td><td>3,088</td><td>468</td><td>15.16%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>1</td><td>3,088</td><td>77</td><td>5</td><td>6.49%</td><td>3,088</td><td>468</td><td>15.16%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>7</td><td>37,781</td><td>660</td><td>50</td><td>7.58%</td><td>26,238</td><td>6,240</td><td>23.78%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>7</td><td>37,353</td><td>666</td><td>52</td><td>7.81%</td><td>25,810</td><td>5,782</td><td>22.40%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>5</td><td>50,741</td><td>1,057</td><td>96</td><td>9.08%</td><td>50,790</td><td>15,507</td><td>30.53%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>12</td><td>88,522</td><td>1,717</td><td>146</td><td>8.50%</td><td>77,028</td><td>21,747</td><td>28.23%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>12</td><td>88,094</td><td>1,723</td><td>148</td><td>8.59%</td><td>76,600</td><td>21,289</td><td>27.79%</td></tr>
 </tfoot></table>
 
 
@@ -642,9 +642,9 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>1</td><td>15</td><td>1</td><td>0</td><td>0.00%</td><td>15</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>3</td><td>29</td><td>3</td><td>0</td><td>0.00%</td><td>31</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>4</td><td>44</td><td>4</td><td>0</td><td>0.00%</td><td>46</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>105</td><td>489,979</td><td>13,317</td><td>1,464</td><td>10.99%</td><td>490,068</td><td>93,491</td><td>19.08%</td></tr>
+<tr><td>Java files</td><td>main</td><td>105</td><td>490,686</td><td>13,330</td><td>1,460</td><td>10.95%</td><td>490,775</td><td>93,727</td><td>19.10%</td></tr>
 <tr><td>Java files</td><td>test</td><td>13</td><td>60,014</td><td>1,328</td><td>135</td><td>10.17%</td><td>60,014</td><td>18,788</td><td>31.31%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>118</td><td>549,993</td><td>14,645</td><td>1,599</td><td>10.92%</td><td>550,082</td><td>112,279</td><td>20.41%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>118</td><td>550,700</td><td>14,658</td><td>1,595</td><td>10.88%</td><td>550,789</td><td>112,515</td><td>20.43%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>1</td><td>782</td><td>21</td><td>1</td><td>4.76%</td><td>782</td><td>93</td><td>11.89%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>1</td><td>782</td><td>21</td><td>1</td><td>4.76%</td><td>782</td><td>93</td><td>11.89%</td></tr>
@@ -654,9 +654,9 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>7</td><td>52,718</td><td>1,150</td><td>73</td><td>6.35%</td><td>52,720</td><td>7,434</td><td>14.10%</td></tr>
 <tr><td>XML files</td><td>test</td><td>18</td><td>47,460</td><td>1,158</td><td>92</td><td>7.94%</td><td>47,487</td><td>6,263</td><td>13.19%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>25</td><td>100,178</td><td>2,308</td><td>165</td><td>7.15%</td><td>100,207</td><td>13,697</td><td>13.67%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>116</td><td>554,725</td><td>14,469</td><td>1,537</td><td>10.62%</td><td>542,922</td><td>100,927</td><td>18.59%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>116</td><td>555,432</td><td>14,482</td><td>1,533</td><td>10.59%</td><td>543,629</td><td>101,163</td><td>18.61%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>39</td><td>448,763</td><td>2,510</td><td>228</td><td>9.08%</td><td>108,314</td><td>25,144</td><td>23.21%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>155</td><td>1,003,488</td><td>16,979</td><td>1,765</td><td>10.40%</td><td>651,236</td><td>126,071</td><td>19.36%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>155</td><td>1,004,195</td><td>16,992</td><td>1,761</td><td>10.36%</td><td>651,943</td><td>126,307</td><td>19.37%</td></tr>
 </tfoot></table>
 
 
@@ -720,12 +720,12 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>24</td><td>174,599</td><td>4,416</td><td>475</td><td>10.76%</td><td>174,599</td><td>41,188</td><td>23.59%</td></tr>
+<tr><td>Java files</td><td>main</td><td>24</td><td>174,923</td><td>4,423</td><td>475</td><td>10.74%</td><td>174,923</td><td>41,285</td><td>23.60%</td></tr>
 <tr><td>Java files</td><td>test</td><td>1</td><td>1,004</td><td>35</td><td>3</td><td>8.57%</td><td>1,004</td><td>142</td><td>14.14%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>25</td><td>175,603</td><td>4,451</td><td>478</td><td>10.74%</td><td>175,603</td><td>41,330</td><td>23.54%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>27</td><td>186,493</td><td>4,416</td><td>475</td><td>10.76%</td><td>174,599</td><td>41,188</td><td>23.59%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>25</td><td>175,927</td><td>4,458</td><td>478</td><td>10.72%</td><td>175,927</td><td>41,427</td><td>23.55%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>27</td><td>186,817</td><td>4,423</td><td>475</td><td>10.74%</td><td>174,923</td><td>41,285</td><td>23.60%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>2</td><td>1,004</td><td>35</td><td>3</td><td>8.57%</td><td>1,004</td><td>142</td><td>14.14%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>29</td><td>187,497</td><td>4,451</td><td>478</td><td>10.74%</td><td>175,603</td><td>41,330</td><td>23.54%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>29</td><td>187,821</td><td>4,458</td><td>478</td><td>10.72%</td><td>175,927</td><td>41,427</td><td>23.55%</td></tr>
 </tfoot></table>
 
 
@@ -764,7 +764,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -780,7 +780,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-cii](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-cii](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -796,7 +796,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-ebinterface](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-ebinterface](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -815,7 +815,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-ehf](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-ehf](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -837,7 +837,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-en16931](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-en16931](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -856,7 +856,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-energieefactuur](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-energieefactuur](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -875,7 +875,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-oioubl](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-oioubl](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -894,7 +894,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-peppol](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-peppol](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -916,7 +916,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-simplerinvoicing](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-simplerinvoicing](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -944,7 +944,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-teapps](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-teapps](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -963,7 +963,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-ubl](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-ubl](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -979,7 +979,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-bdve/ph-bdve-ublbe](https://github.com/phax/ph-bdve) - last release 5.1.1
+### [ph-bdve/ph-bdve-ublbe](https://github.com/phax/ph-bdve) - last release 5.1.2
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1068,7 +1068,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-bc](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-bc](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1084,7 +1084,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-charset](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-charset](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1100,7 +1100,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-cli](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-cli](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1116,7 +1116,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-collection](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-collection](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1132,13 +1132,13 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-commons](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-commons](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>727</td><td>4,216,082</td><td>125,651</td><td>11,396</td><td>9.07%</td><td>4,217,324</td><td>955,210</td><td>22.65%</td></tr>
-<tr><td>Java files</td><td>test</td><td>386</td><td>2,090,385</td><td>54,205</td><td>5,188</td><td>9.57%</td><td>2,092,520</td><td>571,547</td><td>27.31%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>1,113</td><td>6,306,467</td><td>179,856</td><td>16,584</td><td>9.22%</td><td>6,309,844</td><td>1,526,757</td><td>24.20%</td></tr>
+<tr><td>Java files</td><td>main</td><td>727</td><td>4,212,017</td><td>125,468</td><td>11,396</td><td>9.08%</td><td>4,213,259</td><td>953,364</td><td>22.63%</td></tr>
+<tr><td>Java files</td><td>test</td><td>386</td><td>2,091,697</td><td>54,227</td><td>5,193</td><td>9.58%</td><td>2,093,832</td><td>571,754</td><td>27.31%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>1,113</td><td>6,303,714</td><td>179,695</td><td>16,589</td><td>9.23%</td><td>6,307,091</td><td>1,525,118</td><td>24.18%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>12</td><td>97,279</td><td>1,201</td><td>10</td><td>0.83%</td><td>97,298</td><td>1,524</td><td>1.57%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>12</td><td>97,279</td><td>1,201</td><td>10</td><td>0.83%</td><td>97,298</td><td>1,524</td><td>1.57%</td></tr>
@@ -1148,29 +1148,29 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>12</td><td>223,818</td><td>6,399</td><td>69</td><td>1.08%</td><td>218,450</td><td>22,406</td><td>10.26%</td></tr>
 <tr><td>XML files</td><td>test</td><td>1</td><td>749</td><td>22</td><td>5</td><td>22.73%</td><td>749</td><td>128</td><td>17.09%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>13</td><td>224,567</td><td>6,421</td><td>74</td><td>1.15%</td><td>219,199</td><td>22,534</td><td>10.28%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>742</td><td>4,454,819</td><td>132,050</td><td>11,465</td><td>8.68%</td><td>4,435,774</td><td>977,616</td><td>22.04%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>406</td><td>4,555,269</td><td>55,449</td><td>5,207</td><td>9.39%</td><td>2,191,356</td><td>573,340</td><td>26.16%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>1,148</td><td>9,010,088</td><td>187,499</td><td>16,672</td><td>8.89%</td><td>6,627,130</td><td>1,550,956</td><td>23.40%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>742</td><td>4,450,754</td><td>131,867</td><td>11,465</td><td>8.69%</td><td>4,431,709</td><td>975,770</td><td>22.02%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>406</td><td>4,556,581</td><td>55,471</td><td>5,212</td><td>9.40%</td><td>2,192,668</td><td>573,547</td><td>26.16%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>1,148</td><td>9,007,335</td><td>187,338</td><td>16,677</td><td>8.90%</td><td>6,624,377</td><td>1,549,317</td><td>23.39%</td></tr>
 </tfoot></table>
 
 
-### [ph-commons/ph-dao](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-dao](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>18</td><td>144,962</td><td>4,096</td><td>371</td><td>9.06%</td><td>144,962</td><td>34,397</td><td>23.73%</td></tr>
+<tr><td>Java files</td><td>main</td><td>18</td><td>145,380</td><td>4,106</td><td>371</td><td>9.04%</td><td>145,380</td><td>34,506</td><td>23.74%</td></tr>
 <tr><td>Java files</td><td>test</td><td>1</td><td>2,269</td><td>75</td><td>8</td><td>10.67%</td><td>2,269</td><td>323</td><td>14.24%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>19</td><td>147,231</td><td>4,171</td><td>379</td><td>9.09%</td><td>147,231</td><td>34,720</td><td>23.58%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>20</td><td>155,645</td><td>4,096</td><td>371</td><td>9.06%</td><td>144,962</td><td>34,397</td><td>23.73%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>19</td><td>147,649</td><td>4,181</td><td>379</td><td>9.06%</td><td>147,649</td><td>34,829</td><td>23.59%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>20</td><td>156,063</td><td>4,106</td><td>371</td><td>9.04%</td><td>145,380</td><td>34,506</td><td>23.74%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>2</td><td>2,269</td><td>75</td><td>8</td><td>10.67%</td><td>2,269</td><td>323</td><td>14.24%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>22</td><td>157,914</td><td>4,171</td><td>379</td><td>9.09%</td><td>147,231</td><td>34,720</td><td>23.58%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>22</td><td>158,332</td><td>4,181</td><td>379</td><td>9.06%</td><td>147,649</td><td>34,829</td><td>23.59%</td></tr>
 </tfoot></table>
 
 
-### [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1189,7 +1189,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-graph](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-graph](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1205,7 +1205,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1224,26 +1224,26 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-json](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-json](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>32</td><td>2</td><td>0</td><td>0.00%</td><td>32</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>32</td><td>2</td><td>0</td><td>0.00%</td><td>32</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>41</td><td>191,783</td><td>6,199</td><td>715</td><td>11.53%</td><td>191,783</td><td>37,758</td><td>19.69%</td></tr>
+<tr><td>Java files</td><td>main</td><td>41</td><td>191,834</td><td>6,200</td><td>715</td><td>11.53%</td><td>191,834</td><td>37,769</td><td>19.69%</td></tr>
 <tr><td>Java files</td><td>test</td><td>10</td><td>73,540</td><td>1,649</td><td>151</td><td>9.16%</td><td>73,540</td><td>17,448</td><td>23.73%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>51</td><td>265,323</td><td>7,848</td><td>866</td><td>11.03%</td><td>265,323</td><td>55,206</td><td>20.81%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>51</td><td>265,374</td><td>7,849</td><td>866</td><td>11.03%</td><td>265,374</td><td>55,217</td><td>20.81%</td></tr>
 <tr><td>JSON files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JSON files</td><td>test</td><td>46</td><td>1,596,400</td><td>32,041</td><td>5</td><td>0.02%</td><td>1,530,806</td><td>720,595</td><td>47.07%</td></tr>
 <tr><td>JSON files</td><td>sum</td><td>46</td><td>1,596,400</td><td>32,041</td><td>5</td><td>0.02%</td><td>1,530,806</td><td>720,595</td><td>47.07%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>43</td><td>202,563</td><td>6,199</td><td>715</td><td>11.53%</td><td>191,783</td><td>37,758</td><td>19.69%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>43</td><td>202,614</td><td>6,200</td><td>715</td><td>11.53%</td><td>191,834</td><td>37,769</td><td>19.69%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>57</td><td>1,669,972</td><td>33,692</td><td>156</td><td>0.46%</td><td>1,604,378</td><td>738,043</td><td>46.00%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>100</td><td>1,872,535</td><td>39,891</td><td>871</td><td>2.18%</td><td>1,796,161</td><td>775,801</td><td>43.19%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>100</td><td>1,872,586</td><td>39,892</td><td>871</td><td>2.18%</td><td>1,796,212</td><td>775,812</td><td>43.19%</td></tr>
 </tfoot></table>
 
 
-### [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1262,7 +1262,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1278,7 +1278,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1291,7 +1291,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-security](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-security](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1307,7 +1307,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-settings](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-settings](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1323,7 +1323,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-tree](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-tree](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1339,7 +1339,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1355,7 +1355,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-commons/ph-xml](https://github.com/phax/ph-commons) - last release 9.2.1
+### [ph-commons/ph-xml](https://github.com/phax/ph-commons) - last release 9.3.0
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -1770,6 +1770,41 @@ Current list of all released projects:
 </tfoot></table>
 
 
+### [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - last release 0.0.2
+
+<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
+</thead><tbody>
+<tr><td>Java files</td><td>main</td><td>27</td><td>192,002</td><td>4,918</td><td>483</td><td>9.82%</td><td>192,001</td><td>49,241</td><td>25.65%</td></tr>
+<tr><td>Java files</td><td>test</td><td>1</td><td>5,897</td><td>150</td><td>19</td><td>12.67%</td><td>5,897</td><td>873</td><td>14.80%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>28</td><td>197,899</td><td>5,068</td><td>502</td><td>9.91%</td><td>197,898</td><td>50,114</td><td>25.32%</td></tr>
+<tr><td>JDM files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>JDM files</td><td>test</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
+<tr><td>JDM files</td><td>sum</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>29</td><td>203,861</td><td>4,918</td><td>483</td><td>9.82%</td><td>192,001</td><td>49,241</td><td>25.65%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>28</td><td>20,885</td><td>745</td><td>19</td><td>2.55%</td><td>20,801</td><td>3,488</td><td>16.77%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>57</td><td>224,746</td><td>5,663</td><td>502</td><td>8.86%</td><td>212,802</td><td>52,729</td><td>24.78%</td></tr>
+</tfoot></table>
+
+
+### [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - last release 0.0.2
+
+<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
+</thead><tbody>
+<tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Java files</td><td>main</td><td>1</td><td>13,756</td><td>393</td><td>47</td><td>11.96%</td><td>13,756</td><td>2,359</td><td>17.15%</td></tr>
+<tr><td>Java files</td><td>test</td><td>1</td><td>1,025</td><td>35</td><td>3</td><td>8.57%</td><td>1,025</td><td>143</td><td>13.95%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>2</td><td>14,781</td><td>428</td><td>50</td><td>11.68%</td><td>14,781</td><td>2,502</td><td>16.93%</td></tr>
+<tr><td>XML files</td><td>main</td><td>1</td><td>1,124</td><td>35</td><td>5</td><td>14.29%</td><td>1,124</td><td>216</td><td>19.22%</td></tr>
+<tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>1</td><td>1,124</td><td>35</td><td>5</td><td>14.29%</td><td>1,124</td><td>216</td><td>19.22%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>4</td><td>25,765</td><td>428</td><td>52</td><td>12.15%</td><td>14,880</td><td>2,575</td><td>17.31%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>2</td><td>1,025</td><td>35</td><td>3</td><td>8.57%</td><td>1,025</td><td>143</td><td>13.95%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>6</td><td>26,790</td><td>463</td><td>55</td><td>11.88%</td><td>15,905</td><td>2,718</td><td>17.09%</td></tr>
+</tfoot></table>
+
+
 ### [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - last release 2.2.1
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
@@ -1789,16 +1824,16 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - last release 6.1.2
+### [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - last release 6.1.3
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
 <tr><td>CSV files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>CSV files</td><td>test</td><td>3</td><td>22,369</td><td>1,626</td><td>0</td><td>0.00%</td><td>22,369</td><td>843</td><td>3.77%</td></tr>
 <tr><td>CSV files</td><td>sum</td><td>3</td><td>22,369</td><td>1,626</td><td>0</td><td>0.00%</td><td>22,369</td><td>843</td><td>3.77%</td></tr>
-<tr><td>Java files</td><td>main</td><td>137</td><td>701,162</td><td>19,616</td><td>1,944</td><td>9.91%</td><td>701,015</td><td>133,161</td><td>19.00%</td></tr>
-<tr><td>Java files</td><td>test</td><td>58</td><td>665,604</td><td>12,144</td><td>537</td><td>4.42%</td><td>665,569</td><td>78,465</td><td>11.79%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>195</td><td>1,366,766</td><td>31,760</td><td>2,481</td><td>7.81%</td><td>1,366,584</td><td>211,626</td><td>15.49%</td></tr>
+<tr><td>Java files</td><td>main</td><td>137</td><td>701,390</td><td>19,625</td><td>1,948</td><td>9.93%</td><td>701,243</td><td>133,171</td><td>18.99%</td></tr>
+<tr><td>Java files</td><td>test</td><td>58</td><td>666,144</td><td>12,161</td><td>544</td><td>4.47%</td><td>666,109</td><td>78,503</td><td>11.79%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>195</td><td>1,367,534</td><td>31,786</td><td>2,492</td><td>7.84%</td><td>1,367,352</td><td>211,674</td><td>15.48%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>9</td><td>66,422</td><td>771</td><td>9</td><td>1.17%</td><td>66,440</td><td>1,775</td><td>2.67%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>9</td><td>66,422</td><td>771</td><td>9</td><td>1.17%</td><td>66,440</td><td>1,775</td><td>2.67%</td></tr>
@@ -1808,13 +1843,13 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>23</td><td>1,430,493</td><td>26,549</td><td>118</td><td>0.44%</td><td>1,420,516</td><td>191,315</td><td>13.47%</td></tr>
 <tr><td>XML files</td><td>test</td><td>3</td><td>622,616</td><td>14,255</td><td>15</td><td>0.11%</td><td>616,613</td><td>116,162</td><td>18.84%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>26</td><td>2,053,109</td><td>40,804</td><td>133</td><td>0.33%</td><td>2,037,129</td><td>307,477</td><td>15.09%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>162</td><td>2,142,435</td><td>46,165</td><td>2,062</td><td>4.47%</td><td>2,121,531</td><td>324,476</td><td>15.29%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>86</td><td>6,400,723</td><td>29,284</td><td>561</td><td>1.92%</td><td>1,386,976</td><td>197,787</td><td>14.26%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>248</td><td>8,543,158</td><td>75,449</td><td>2,623</td><td>3.48%</td><td>3,508,507</td><td>522,263</td><td>14.89%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>162</td><td>2,142,663</td><td>46,174</td><td>2,066</td><td>4.47%</td><td>2,121,759</td><td>324,486</td><td>15.29%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>86</td><td>6,401,263</td><td>29,301</td><td>568</td><td>1.94%</td><td>1,387,516</td><td>197,825</td><td>14.26%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>248</td><td>8,543,926</td><td>75,475</td><td>2,634</td><td>3.49%</td><td>3,509,275</td><td>522,311</td><td>14.88%</td></tr>
 </tfoot></table>
 
 
-### [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - last release 6.1.2
+### [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - last release 6.1.3
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -2001,15 +2036,15 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>128</td><td>482,647</td><td>11,925</td><td>1,159</td><td>9.72%</td><td>482,868</td><td>66,224</td><td>13.71%</td></tr>
+<tr><td>Java files</td><td>main</td><td>128</td><td>483,336</td><td>11,930</td><td>1,157</td><td>9.70%</td><td>483,557</td><td>66,350</td><td>13.72%</td></tr>
 <tr><td>Java files</td><td>test</td><td>6</td><td>12,497</td><td>345</td><td>30</td><td>8.70%</td><td>12,497</td><td>1,996</td><td>15.97%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>134</td><td>495,144</td><td>12,270</td><td>1,189</td><td>9.69%</td><td>495,365</td><td>68,220</td><td>13.77%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>134</td><td>495,833</td><td>12,275</td><td>1,187</td><td>9.67%</td><td>496,054</td><td>68,346</td><td>13.78%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>6</td><td>475,906</td><td>11,099</td><td>1,994</td><td>17.97%</td><td>487,006</td><td>74,406</td><td>15.28%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>6</td><td>475,906</td><td>11,099</td><td>1,994</td><td>17.97%</td><td>487,006</td><td>74,406</td><td>15.28%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>154</td><td>3,972,241</td><td>37,019</td><td>4,599</td><td>12.42%</td><td>1,449,151</td><td>180,328</td><td>12.44%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>154</td><td>3,972,930</td><td>37,024</td><td>4,597</td><td>12.42%</td><td>1,449,840</td><td>180,454</td><td>12.45%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>7</td><td>12,497</td><td>345</td><td>30</td><td>8.70%</td><td>12,497</td><td>1,996</td><td>15.97%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>161</td><td>3,984,738</td><td>37,364</td><td>4,629</td><td>12.39%</td><td>1,461,648</td><td>182,324</td><td>12.47%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>161</td><td>3,985,427</td><td>37,369</td><td>4,627</td><td>12.38%</td><td>1,462,337</td><td>182,450</td><td>12.48%</td></tr>
 </tfoot></table>
 
 
@@ -2086,18 +2121,18 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>40</td><td>143,634</td><td>3,991</td><td>424</td><td>10.62%</td><td>144,495</td><td>23,065</td><td>15.96%</td></tr>
+<tr><td>Java files</td><td>main</td><td>40</td><td>143,501</td><td>3,989</td><td>424</td><td>10.63%</td><td>144,362</td><td>23,056</td><td>15.97%</td></tr>
 <tr><td>Java files</td><td>test</td><td>5</td><td>7,827</td><td>227</td><td>21</td><td>9.25%</td><td>7,872</td><td>1,073</td><td>13.63%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>45</td><td>151,461</td><td>4,218</td><td>445</td><td>10.55%</td><td>152,367</td><td>24,138</td><td>15.84%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>45</td><td>151,328</td><td>4,216</td><td>445</td><td>10.56%</td><td>152,234</td><td>24,129</td><td>15.85%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>6</td><td>230,404</td><td>4,227</td><td>572</td><td>13.53%</td><td>230,467</td><td>46,531</td><td>20.19%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>6</td><td>230,404</td><td>4,227</td><td>572</td><td>13.53%</td><td>230,467</td><td>46,531</td><td>20.19%</td></tr>
 <tr><td>Text files</td><td>main</td><td>1</td><td>118</td><td>7</td><td>3</td><td>42.86%</td><td>118</td><td>9</td><td>7.63%</td></tr>
 <tr><td>Text files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Text files</td><td>sum</td><td>1</td><td>118</td><td>7</td><td>3</td><td>42.86%</td><td>118</td><td>9</td><td>7.63%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>55</td><td>405,429</td><td>8,700</td><td>1,010</td><td>11.61%</td><td>395,991</td><td>73,106</td><td>18.46%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>55</td><td>405,296</td><td>8,698</td><td>1,010</td><td>11.61%</td><td>395,858</td><td>73,097</td><td>18.47%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>6</td><td>7,827</td><td>227</td><td>21</td><td>9.25%</td><td>7,872</td><td>1,073</td><td>13.63%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>61</td><td>413,256</td><td>8,927</td><td>1,031</td><td>11.55%</td><td>403,863</td><td>74,179</td><td>18.37%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>61</td><td>413,123</td><td>8,925</td><td>1,031</td><td>11.55%</td><td>403,730</td><td>74,170</td><td>18.37%</td></tr>
 </tfoot></table>
 
 
@@ -2124,9 +2159,9 @@ Current list of all released projects:
 <tr><td>CSS files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>CSS files</td><td>test</td><td>2</td><td>113,462</td><td>2,584</td><td>312</td><td>12.07%</td><td>113,462</td><td>13,262</td><td>11.69%</td></tr>
 <tr><td>CSS files</td><td>sum</td><td>2</td><td>113,462</td><td>2,584</td><td>312</td><td>12.07%</td><td>113,462</td><td>13,262</td><td>11.69%</td></tr>
-<tr><td>Java files</td><td>main</td><td>149</td><td>747,801</td><td>20,596</td><td>2,137</td><td>10.38%</td><td>748,377</td><td>146,063</td><td>19.52%</td></tr>
+<tr><td>Java files</td><td>main</td><td>149</td><td>747,592</td><td>20,589</td><td>2,137</td><td>10.38%</td><td>748,168</td><td>145,999</td><td>19.51%</td></tr>
 <tr><td>Java files</td><td>test</td><td>10</td><td>21,862</td><td>574</td><td>54</td><td>9.41%</td><td>21,862</td><td>3,391</td><td>15.51%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>159</td><td>769,663</td><td>21,170</td><td>2,191</td><td>10.35%</td><td>770,239</td><td>149,454</td><td>19.40%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>159</td><td>769,454</td><td>21,163</td><td>2,191</td><td>10.35%</td><td>770,030</td><td>149,390</td><td>19.40%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>2</td><td>23,945</td><td>589</td><td>46</td><td>7.81%</td><td>23,945</td><td>8,082</td><td>33.75%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>2</td><td>23,945</td><td>589</td><td>46</td><td>7.81%</td><td>23,945</td><td>8,082</td><td>33.75%</td></tr>
@@ -2136,9 +2171,9 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>42</td><td>988,878</td><td>29,648</td><td>5,800</td><td>19.56%</td><td>988,463</td><td>209,698</td><td>21.21%</td></tr>
 <tr><td>XML files</td><td>test</td><td>1</td><td>1,131</td><td>27</td><td>6</td><td>22.22%</td><td>1,133</td><td>155</td><td>13.68%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>43</td><td>990,009</td><td>29,675</td><td>5,806</td><td>19.57%</td><td>989,596</td><td>209,853</td><td>21.21%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>193</td><td>1,747,459</td><td>50,244</td><td>7,937</td><td>15.80%</td><td>1,736,840</td><td>355,761</td><td>20.48%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>193</td><td>1,747,250</td><td>50,237</td><td>7,937</td><td>15.80%</td><td>1,736,631</td><td>355,697</td><td>20.48%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>21</td><td>750,376</td><td>4,090</td><td>423</td><td>10.34%</td><td>181,895</td><td>25,709</td><td>14.13%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>214</td><td>2,497,835</td><td>54,334</td><td>8,360</td><td>15.39%</td><td>1,918,735</td><td>381,470</td><td>19.88%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>214</td><td>2,497,626</td><td>54,327</td><td>8,360</td><td>15.39%</td><td>1,918,526</td><td>381,406</td><td>19.88%</td></tr>
 </tfoot></table>
 
 
@@ -2187,9 +2222,9 @@ Current list of all released projects:
 <tr><td>HTML files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>HTML files</td><td>test</td><td>22</td><td>52,829</td><td>730</td><td>81</td><td>11.10%</td><td>52,871</td><td>5,362</td><td>10.14%</td></tr>
 <tr><td>HTML files</td><td>sum</td><td>22</td><td>52,829</td><td>730</td><td>81</td><td>11.10%</td><td>52,871</td><td>5,362</td><td>10.14%</td></tr>
-<tr><td>Java files</td><td>main</td><td>399</td><td>1,368,596</td><td>43,813</td><td>4,399</td><td>10.04%</td><td>1,369,421</td><td>255,563</td><td>18.66%</td></tr>
+<tr><td>Java files</td><td>main</td><td>399</td><td>1,369,019</td><td>43,824</td><td>4,399</td><td>10.04%</td><td>1,369,844</td><td>255,646</td><td>18.66%</td></tr>
 <tr><td>Java files</td><td>test</td><td>66</td><td>266,489</td><td>5,575</td><td>456</td><td>8.18%</td><td>265,253</td><td>64,768</td><td>24.42%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>465</td><td>1,635,085</td><td>49,388</td><td>4,855</td><td>9.83%</td><td>1,634,674</td><td>320,331</td><td>19.60%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>465</td><td>1,635,508</td><td>49,399</td><td>4,855</td><td>9.83%</td><td>1,635,097</td><td>320,414</td><td>19.60%</td></tr>
 <tr><td>JavaScript files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>2</td><td>28,392</td><td>748</td><td>0</td><td>0.00%</td><td>28,392</td><td>3,973</td><td>13.99%</td></tr>
 <tr><td>JavaScript files</td><td>sum</td><td>2</td><td>28,392</td><td>748</td><td>0</td><td>0.00%</td><td>28,392</td><td>3,973</td><td>13.99%</td></tr>
@@ -2199,9 +2234,9 @@ Current list of all released projects:
 <tr><td>XML files</td><td>main</td><td>3</td><td>71,976</td><td>2,496</td><td>488</td><td>19.55%</td><td>71,976</td><td>14,559</td><td>20.23%</td></tr>
 <tr><td>XML files</td><td>test</td><td>1</td><td>12,437</td><td>163</td><td>5</td><td>3.07%</td><td>12,429</td><td>999</td><td>8.04%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>4</td><td>84,413</td><td>2,659</td><td>493</td><td>18.54%</td><td>84,405</td><td>15,558</td><td>18.43%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>445</td><td>1,617,585</td><td>46,309</td><td>4,887</td><td>10.55%</td><td>1,441,397</td><td>270,122</td><td>18.74%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>445</td><td>1,618,008</td><td>46,320</td><td>4,887</td><td>10.55%</td><td>1,441,820</td><td>270,205</td><td>18.74%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>116</td><td>416,225</td><td>9,453</td><td>1,331</td><td>14.08%</td><td>415,033</td><td>83,571</td><td>20.14%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>561</td><td>2,033,810</td><td>55,762</td><td>6,218</td><td>11.15%</td><td>1,856,430</td><td>353,693</td><td>19.05%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>561</td><td>2,034,233</td><td>55,773</td><td>6,218</td><td>11.15%</td><td>1,856,853</td><td>353,776</td><td>19.05%</td></tr>
 </tfoot></table>
 
 
@@ -2391,7 +2426,7 @@ Current list of all released projects:
 </tfoot></table>
 
 
-### [ph-poi](https://github.com/phax/ph-poi) - last release 5.0.3
+### [ph-poi](https://github.com/phax/ph-poi) - last release 5.0.4
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
@@ -2839,12 +2874,12 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>60</td><td>436,642</td><td>13,290</td><td>1,405</td><td>10.57%</td><td>436,642</td><td>80,584</td><td>18.46%</td></tr>
+<tr><td>Java files</td><td>main</td><td>60</td><td>437,434</td><td>13,311</td><td>1,406</td><td>10.56%</td><td>437,434</td><td>80,735</td><td>18.46%</td></tr>
 <tr><td>Java files</td><td>test</td><td>7</td><td>42,011</td><td>1,005</td><td>109</td><td>10.85%</td><td>42,011</td><td>5,516</td><td>13.13%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>67</td><td>478,653</td><td>14,295</td><td>1,514</td><td>10.59%</td><td>478,653</td><td>86,100</td><td>17.99%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>62</td><td>447,395</td><td>13,290</td><td>1,405</td><td>10.57%</td><td>436,642</td><td>80,584</td><td>18.46%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>67</td><td>479,445</td><td>14,316</td><td>1,515</td><td>10.58%</td><td>479,445</td><td>86,251</td><td>17.99%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>62</td><td>448,187</td><td>13,311</td><td>1,406</td><td>10.56%</td><td>437,434</td><td>80,735</td><td>18.46%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>8</td><td>42,011</td><td>1,005</td><td>109</td><td>10.85%</td><td>42,011</td><td>5,516</td><td>13.13%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>70</td><td>489,406</td><td>14,295</td><td>1,514</td><td>10.59%</td><td>478,653</td><td>86,100</td><td>17.99%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>70</td><td>490,198</td><td>14,316</td><td>1,515</td><td>10.58%</td><td>479,445</td><td>86,251</td><td>17.99%</td></tr>
 </tfoot></table>
 
 
@@ -2906,15 +2941,15 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>83</td><td>394,179</td><td>11,731</td><td>1,025</td><td>8.74%</td><td>394,173</td><td>77,818</td><td>19.74%</td></tr>
+<tr><td>Java files</td><td>main</td><td>83</td><td>393,705</td><td>11,713</td><td>1,023</td><td>8.73%</td><td>393,699</td><td>77,698</td><td>19.74%</td></tr>
 <tr><td>Java files</td><td>test</td><td>36</td><td>118,579</td><td>3,321</td><td>352</td><td>10.60%</td><td>118,575</td><td>22,745</td><td>19.18%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>119</td><td>512,758</td><td>15,052</td><td>1,377</td><td>9.15%</td><td>512,748</td><td>100,563</td><td>19.61%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>119</td><td>512,284</td><td>15,034</td><td>1,375</td><td>9.15%</td><td>512,274</td><td>100,443</td><td>19.61%</td></tr>
 <tr><td>XML files</td><td>main</td><td>1</td><td>2,582</td><td>73</td><td>5</td><td>6.85%</td><td>2,581</td><td>324</td><td>12.55%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>1</td><td>2,582</td><td>73</td><td>5</td><td>6.85%</td><td>2,581</td><td>324</td><td>12.55%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>86</td><td>407,541</td><td>11,804</td><td>1,030</td><td>8.73%</td><td>396,754</td><td>78,142</td><td>19.70%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>86</td><td>407,067</td><td>11,786</td><td>1,028</td><td>8.72%</td><td>396,280</td><td>78,022</td><td>19.69%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>36</td><td>118,579</td><td>3,321</td><td>352</td><td>10.60%</td><td>118,575</td><td>22,745</td><td>19.18%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>122</td><td>526,120</td><td>15,125</td><td>1,382</td><td>9.14%</td><td>515,329</td><td>100,887</td><td>19.58%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>122</td><td>525,646</td><td>15,107</td><td>1,380</td><td>9.13%</td><td>514,855</td><td>100,767</td><td>19.57%</td></tr>
 </tfoot></table>
 
 
@@ -3059,18 +3094,18 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>22</td><td>108,914</td><td>2,853</td><td>315</td><td>11.04%</td><td>108,905</td><td>17,751</td><td>16.30%</td></tr>
-<tr><td>Java files</td><td>test</td><td>10</td><td>45,191</td><td>1,010</td><td>87</td><td>8.61%</td><td>45,191</td><td>10,200</td><td>22.57%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>32</td><td>154,105</td><td>3,863</td><td>402</td><td>10.41%</td><td>154,096</td><td>27,951</td><td>18.14%</td></tr>
+<tr><td>Java files</td><td>main</td><td>27</td><td>116,035</td><td>3,090</td><td>347</td><td>11.23%</td><td>116,026</td><td>19,839</td><td>17.10%</td></tr>
+<tr><td>Java files</td><td>test</td><td>10</td><td>46,228</td><td>1,020</td><td>89</td><td>8.73%</td><td>46,228</td><td>10,931</td><td>23.65%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>37</td><td>162,263</td><td>4,110</td><td>436</td><td>10.61%</td><td>162,254</td><td>30,770</td><td>18.96%</td></tr>
 <tr><td>Text files</td><td>main</td><td>1</td><td>1,339</td><td>20</td><td>4</td><td>20.00%</td><td>1,330</td><td>242</td><td>18.20%</td></tr>
 <tr><td>Text files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Text files</td><td>sum</td><td>1</td><td>1,339</td><td>20</td><td>4</td><td>20.00%</td><td>1,330</td><td>242</td><td>18.20%</td></tr>
 <tr><td>XML files</td><td>main</td><td>8</td><td>121,322</td><td>2,244</td><td>168</td><td>7.49%</td><td>122,611</td><td>23,017</td><td>18.77%</td></tr>
 <tr><td>XML files</td><td>test</td><td>18</td><td>300,626</td><td>3,116</td><td>147</td><td>4.72%</td><td>300,276</td><td>41,934</td><td>13.97%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>26</td><td>421,948</td><td>5,360</td><td>315</td><td>5.88%</td><td>422,887</td><td>64,951</td><td>15.36%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>34</td><td>256,637</td><td>5,117</td><td>487</td><td>9.52%</td><td>232,846</td><td>41,010</td><td>17.61%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>29</td><td>382,327</td><td>4,126</td><td>234</td><td>5.67%</td><td>345,467</td><td>52,134</td><td>15.09%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>63</td><td>638,964</td><td>9,243</td><td>721</td><td>7.80%</td><td>578,313</td><td>93,144</td><td>16.11%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>39</td><td>263,758</td><td>5,354</td><td>519</td><td>9.69%</td><td>239,967</td><td>43,098</td><td>17.96%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>29</td><td>383,364</td><td>4,136</td><td>236</td><td>5.71%</td><td>346,504</td><td>52,865</td><td>15.26%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>68</td><td>647,122</td><td>9,490</td><td>755</td><td>7.96%</td><td>586,471</td><td>95,963</td><td>16.36%</td></tr>
 </tfoot></table>
 
 
@@ -3097,18 +3132,18 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>2</td><td>5,213</td><td>142</td><td>13</td><td>9.15%</td><td>5,213</td><td>693</td><td>13.29%</td></tr>
-<tr><td>Java files</td><td>test</td><td>2</td><td>4,478</td><td>120</td><td>13</td><td>10.83%</td><td>4,478</td><td>867</td><td>19.36%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>4</td><td>9,691</td><td>262</td><td>26</td><td>9.92%</td><td>9,691</td><td>1,560</td><td>16.10%</td></tr>
+<tr><td>Java files</td><td>main</td><td>2</td><td>5,217</td><td>142</td><td>13</td><td>9.15%</td><td>5,217</td><td>693</td><td>13.28%</td></tr>
+<tr><td>Java files</td><td>test</td><td>4</td><td>13,528</td><td>316</td><td>34</td><td>10.76%</td><td>13,528</td><td>2,982</td><td>22.04%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>6</td><td>18,745</td><td>458</td><td>47</td><td>10.26%</td><td>18,745</td><td>3,675</td><td>19.61%</td></tr>
 <tr><td>Text files</td><td>main</td><td>1</td><td>121</td><td>3</td><td>1</td><td>33.33%</td><td>121</td><td>9</td><td>7.44%</td></tr>
 <tr><td>Text files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Text files</td><td>sum</td><td>1</td><td>121</td><td>3</td><td>1</td><td>33.33%</td><td>121</td><td>9</td><td>7.44%</td></tr>
-<tr><td>XML files</td><td>main</td><td>24</td><td>1,010,490</td><td>30,059</td><td>435</td><td>1.45%</td><td>1,037,531</td><td>235,571</td><td>22.70%</td></tr>
+<tr><td>XML files</td><td>main</td><td>27</td><td>1,142,120</td><td>32,528</td><td>674</td><td>2.07%</td><td>1,161,566</td><td>256,700</td><td>22.10%</td></tr>
 <tr><td>XML files</td><td>test</td><td>12</td><td>203,420</td><td>2,265</td><td>124</td><td>5.47%</td><td>203,066</td><td>32,496</td><td>16.00%</td></tr>
-<tr><td>XML files</td><td>sum</td><td>36</td><td>1,213,910</td><td>32,324</td><td>559</td><td>1.73%</td><td>1,240,597</td><td>268,067</td><td>21.61%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>27</td><td>1,015,824</td><td>30,204</td><td>449</td><td>1.49%</td><td>1,042,865</td><td>236,273</td><td>22.66%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>14</td><td>207,898</td><td>2,385</td><td>137</td><td>5.74%</td><td>207,544</td><td>33,363</td><td>16.08%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>41</td><td>1,223,722</td><td>32,589</td><td>586</td><td>1.80%</td><td>1,250,409</td><td>269,636</td><td>21.56%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>39</td><td>1,345,540</td><td>34,793</td><td>798</td><td>2.29%</td><td>1,364,632</td><td>289,196</td><td>21.19%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>30</td><td>1,147,458</td><td>32,673</td><td>688</td><td>2.11%</td><td>1,166,904</td><td>257,402</td><td>22.06%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>16</td><td>216,948</td><td>2,581</td><td>158</td><td>6.12%</td><td>216,594</td><td>35,478</td><td>16.38%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>46</td><td>1,364,406</td><td>35,254</td><td>846</td><td>2.40%</td><td>1,383,498</td><td>292,880</td><td>21.17%</td></tr>
 </tfoot></table>
 
 
@@ -3116,15 +3151,15 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>10</td><td>30,496</td><td>1,032</td><td>128</td><td>12.40%</td><td>30,496</td><td>5,004</td><td>16.41%</td></tr>
-<tr><td>Java files</td><td>test</td><td>2</td><td>2,093</td><td>71</td><td>6</td><td>8.45%</td><td>2,093</td><td>297</td><td>14.19%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>12</td><td>32,589</td><td>1,103</td><td>134</td><td>12.15%</td><td>32,589</td><td>5,301</td><td>16.27%</td></tr>
+<tr><td>Java files</td><td>main</td><td>12</td><td>42,424</td><td>1,388</td><td>169</td><td>12.18%</td><td>42,424</td><td>7,131</td><td>16.81%</td></tr>
+<tr><td>Java files</td><td>test</td><td>3</td><td>3,044</td><td>105</td><td>9</td><td>8.57%</td><td>3,044</td><td>435</td><td>14.29%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>15</td><td>45,468</td><td>1,493</td><td>178</td><td>11.92%</td><td>45,468</td><td>7,566</td><td>16.64%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>1</td><td>1,499</td><td>51</td><td>10</td><td>19.61%</td><td>1,499</td><td>161</td><td>10.74%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>1</td><td>1,499</td><td>51</td><td>10</td><td>19.61%</td><td>1,499</td><td>161</td><td>10.74%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>12</td><td>41,179</td><td>1,032</td><td>128</td><td>12.40%</td><td>30,496</td><td>5,004</td><td>16.41%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>3</td><td>3,592</td><td>122</td><td>16</td><td>13.11%</td><td>3,592</td><td>458</td><td>12.75%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>15</td><td>44,771</td><td>1,154</td><td>144</td><td>12.48%</td><td>34,088</td><td>5,462</td><td>16.02%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>14</td><td>53,107</td><td>1,388</td><td>169</td><td>12.18%</td><td>42,424</td><td>7,131</td><td>16.81%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>4</td><td>4,543</td><td>156</td><td>19</td><td>12.18%</td><td>4,543</td><td>596</td><td>13.12%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>18</td><td>57,650</td><td>1,544</td><td>188</td><td>12.18%</td><td>46,967</td><td>7,727</td><td>16.45%</td></tr>
 </tfoot></table>
 
 
@@ -3132,24 +3167,43 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>git files</td><td>main</td><td>1</td><td>27</td><td>2</td><td>0</td><td>0.00%</td><td>29</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>main</td><td>1</td><td>39</td><td>3</td><td>0</td><td>0.00%</td><td>39</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>git files</td><td>sum</td><td>2</td><td>27</td><td>2</td><td>0</td><td>0.00%</td><td>29</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>2</td><td>39</td><td>3</td><td>0</td><td>0.00%</td><td>39</td><td>0</td><td>0.00%</td></tr>
 <tr><td>HTML files</td><td>main</td><td>1</td><td>650</td><td>18</td><td>5</td><td>27.78%</td><td>669</td><td>124</td><td>18.54%</td></tr>
 <tr><td>HTML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>HTML files</td><td>sum</td><td>1</td><td>650</td><td>18</td><td>5</td><td>27.78%</td><td>669</td><td>124</td><td>18.54%</td></tr>
-<tr><td>Java files</td><td>main</td><td>18</td><td>100,343</td><td>2,334</td><td>239</td><td>10.24%</td><td>100,381</td><td>28,877</td><td>28.77%</td></tr>
-<tr><td>Java files</td><td>test</td><td>5</td><td>5,153</td><td>163</td><td>15</td><td>9.20%</td><td>5,153</td><td>736</td><td>14.28%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>23</td><td>105,496</td><td>2,497</td><td>254</td><td>10.17%</td><td>105,534</td><td>29,613</td><td>28.06%</td></tr>
-<tr><td>Properties files</td><td>main</td><td>5</td><td>9,826</td><td>293</td><td>53</td><td>18.09%</td><td>9,826</td><td>1,022</td><td>10.40%</td></tr>
+<tr><td>Java files</td><td>main</td><td>18</td><td>105,396</td><td>2,399</td><td>239</td><td>9.96%</td><td>105,395</td><td>30,698</td><td>29.13%</td></tr>
+<tr><td>Java files</td><td>test</td><td>5</td><td>5,781</td><td>169</td><td>15</td><td>8.88%</td><td>5,781</td><td>1,172</td><td>20.27%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>23</td><td>111,177</td><td>2,568</td><td>254</td><td>9.89%</td><td>111,176</td><td>31,870</td><td>28.67%</td></tr>
+<tr><td>Properties files</td><td>main</td><td>5</td><td>10,026</td><td>300</td><td>54</td><td>18.00%</td><td>10,026</td><td>1,046</td><td>10.43%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Properties files</td><td>sum</td><td>5</td><td>9,826</td><td>293</td><td>53</td><td>18.09%</td><td>9,826</td><td>1,022</td><td>10.40%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>5</td><td>10,026</td><td>300</td><td>54</td><td>18.00%</td><td>10,026</td><td>1,046</td><td>10.43%</td></tr>
 <tr><td>XML files</td><td>main</td><td>2</td><td>2,179</td><td>60</td><td>11</td><td>18.33%</td><td>2,208</td><td>353</td><td>15.99%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>2</td><td>2,179</td><td>60</td><td>11</td><td>18.33%</td><td>2,208</td><td>353</td><td>15.99%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>32</td><td>132,417</td><td>2,707</td><td>308</td><td>11.38%</td><td>113,113</td><td>30,376</td><td>26.85%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>6</td><td>5,153</td><td>163</td><td>15</td><td>9.20%</td><td>5,153</td><td>736</td><td>14.28%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>38</td><td>137,570</td><td>2,870</td><td>323</td><td>11.25%</td><td>118,266</td><td>31,112</td><td>26.31%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>32</td><td>137,682</td><td>2,780</td><td>309</td><td>11.12%</td><td>118,337</td><td>32,221</td><td>27.23%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>6</td><td>5,781</td><td>169</td><td>15</td><td>8.88%</td><td>5,781</td><td>1,172</td><td>20.27%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>38</td><td>143,463</td><td>2,949</td><td>324</td><td>10.99%</td><td>124,118</td><td>33,393</td><td>26.90%</td></tr>
+</tfoot></table>
+
+
+### [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - last release 0.9.3
+
+<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
+</thead><tbody>
+<tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Java files</td><td>main</td><td>5</td><td>23,904</td><td>561</td><td>58</td><td>10.34%</td><td>23,904</td><td>5,680</td><td>23.76%</td></tr>
+<tr><td>Java files</td><td>test</td><td>1</td><td>943</td><td>34</td><td>3</td><td>8.82%</td><td>943</td><td>138</td><td>14.63%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>6</td><td>24,847</td><td>595</td><td>61</td><td>10.25%</td><td>24,847</td><td>5,818</td><td>23.42%</td></tr>
+<tr><td>Properties files</td><td>main</td><td>2</td><td>2,200</td><td>57</td><td>5</td><td>8.77%</td><td>2,200</td><td>186</td><td>8.45%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>2</td><td>2,200</td><td>57</td><td>5</td><td>8.77%</td><td>2,200</td><td>186</td><td>8.45%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>9</td><td>36,787</td><td>618</td><td>63</td><td>10.19%</td><td>26,104</td><td>5,866</td><td>22.47%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>2</td><td>943</td><td>34</td><td>3</td><td>8.82%</td><td>943</td><td>138</td><td>14.63%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>11</td><td>37,730</td><td>652</td><td>66</td><td>10.12%</td><td>27,047</td><td>6,004</td><td>22.20%</td></tr>
 </tfoot></table>
 
 
@@ -3157,21 +3211,21 @@ Current list of all released projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>20</td><td>77,561</td><td>2,135</td><td>281</td><td>13.16%</td><td>77,596</td><td>12,325</td><td>15.88%</td></tr>
-<tr><td>Java files</td><td>test</td><td>9</td><td>28,146</td><td>831</td><td>161</td><td>19.37%</td><td>28,145</td><td>4,080</td><td>14.50%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>29</td><td>105,707</td><td>2,966</td><td>442</td><td>14.90%</td><td>105,741</td><td>16,405</td><td>15.51%</td></tr>
+<tr><td>Java files</td><td>main</td><td>21</td><td>84,946</td><td>2,299</td><td>300</td><td>13.05%</td><td>84,981</td><td>14,212</td><td>16.72%</td></tr>
+<tr><td>Java files</td><td>test</td><td>10</td><td>31,831</td><td>930</td><td>164</td><td>17.63%</td><td>31,830</td><td>4,590</td><td>14.42%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>31</td><td>116,777</td><td>3,229</td><td>464</td><td>14.37%</td><td>116,811</td><td>18,802</td><td>16.10%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>4</td><td>4,471</td><td>130</td><td>16</td><td>12.31%</td><td>4,471</td><td>507</td><td>11.34%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>4</td><td>4,471</td><td>130</td><td>16</td><td>12.31%</td><td>4,471</td><td>507</td><td>11.34%</td></tr>
 <tr><td>Text files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Text files</td><td>test</td><td>1</td><td>1,407</td><td>33</td><td>0</td><td>0.00%</td><td>1,407</td><td>265</td><td>18.83%</td></tr>
-<tr><td>Text files</td><td>sum</td><td>1</td><td>1,407</td><td>33</td><td>0</td><td>0.00%</td><td>1,407</td><td>265</td><td>18.83%</td></tr>
+<tr><td>Text files</td><td>test</td><td>1</td><td>1,549</td><td>35</td><td>0</td><td>0.00%</td><td>1,549</td><td>287</td><td>18.53%</td></tr>
+<tr><td>Text files</td><td>sum</td><td>1</td><td>1,549</td><td>35</td><td>0</td><td>0.00%</td><td>1,549</td><td>287</td><td>18.53%</td></tr>
 <tr><td>XML files</td><td>main</td><td>1</td><td>8,127</td><td>191</td><td>16</td><td>8.38%</td><td>8,318</td><td>1,450</td><td>17.43%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>1</td><td>8,127</td><td>191</td><td>16</td><td>8.38%</td><td>8,318</td><td>1,450</td><td>17.43%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>24</td><td>97,096</td><td>2,326</td><td>297</td><td>12.77%</td><td>85,914</td><td>13,775</td><td>16.03%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>16</td><td>36,461</td><td>994</td><td>177</td><td>17.81%</td><td>34,023</td><td>4,852</td><td>14.26%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>40</td><td>133,557</td><td>3,320</td><td>474</td><td>14.28%</td><td>119,937</td><td>18,627</td><td>15.53%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>25</td><td>104,481</td><td>2,490</td><td>316</td><td>12.69%</td><td>93,299</td><td>15,662</td><td>16.79%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>17</td><td>40,288</td><td>1,095</td><td>180</td><td>16.44%</td><td>37,850</td><td>5,384</td><td>14.22%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>42</td><td>144,769</td><td>3,585</td><td>496</td><td>13.84%</td><td>131,149</td><td>21,046</td><td>16.05%</td></tr>
 </tfoot></table>
 
 
@@ -3183,11 +3237,11 @@ Current list of all released projects:
 <tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Java files</td><td>main</td><td>4</td><td>26,616</td><td>646</td><td>54</td><td>8.36%</td><td>27,082</td><td>7,705</td><td>28.45%</td></tr>
-<tr><td>Java files</td><td>test</td><td>1</td><td>10,566</td><td>171</td><td>12</td><td>7.02%</td><td>10,566</td><td>2,572</td><td>24.34%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>5</td><td>37,182</td><td>817</td><td>66</td><td>8.08%</td><td>37,648</td><td>10,277</td><td>27.30%</td></tr>
+<tr><td>Java files</td><td>test</td><td>2</td><td>11,524</td><td>205</td><td>15</td><td>7.32%</td><td>11,524</td><td>2,710</td><td>23.52%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>6</td><td>38,140</td><td>851</td><td>69</td><td>8.11%</td><td>38,606</td><td>10,415</td><td>26.98%</td></tr>
 </tbody><tfoot><tr><td>Total sum</td><td>main</td><td>6</td><td>37,299</td><td>646</td><td>54</td><td>8.36%</td><td>27,082</td><td>7,705</td><td>28.45%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>2</td><td>10,566</td><td>171</td><td>12</td><td>7.02%</td><td>10,566</td><td>2,572</td><td>24.34%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>8</td><td>47,865</td><td>817</td><td>66</td><td>8.08%</td><td>37,648</td><td>10,277</td><td>27.30%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>3</td><td>11,524</td><td>205</td><td>15</td><td>7.32%</td><td>11,524</td><td>2,710</td><td>23.52%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>9</td><td>48,823</td><td>851</td><td>69</td><td>8.11%</td><td>38,606</td><td>10,415</td><td>26.98%</td></tr>
 </tfoot></table>
 
 
@@ -3196,17 +3250,20 @@ Current list of all released projects:
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>git files</td><td>sum</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>1</td><td>23</td><td>1</td><td>0</td><td>0.00%</td><td>23</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>1</td><td>23</td><td>1</td><td>0</td><td>0.00%</td><td>23</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Java files</td><td>main</td><td>7</td><td>31,911</td><td>865</td><td>90</td><td>10.40%</td><td>31,962</td><td>7,565</td><td>23.67%</td></tr>
-<tr><td>Java files</td><td>test</td><td>2</td><td>9,731</td><td>246</td><td>27</td><td>10.98%</td><td>9,731</td><td>2,063</td><td>21.20%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>9</td><td>41,642</td><td>1,111</td><td>117</td><td>10.53%</td><td>41,693</td><td>9,628</td><td>23.09%</td></tr>
+<tr><td>Java files</td><td>test</td><td>4</td><td>12,706</td><td>315</td><td>35</td><td>11.11%</td><td>12,706</td><td>2,565</td><td>20.19%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>11</td><td>44,617</td><td>1,180</td><td>125</td><td>10.59%</td><td>44,668</td><td>10,130</td><td>22.68%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Properties files</td><td>test</td><td>1</td><td>745</td><td>21</td><td>2</td><td>9.52%</td><td>745</td><td>100</td><td>13.42%</td></tr>
-<tr><td>Properties files</td><td>sum</td><td>1</td><td>745</td><td>21</td><td>2</td><td>9.52%</td><td>745</td><td>100</td><td>13.42%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>1</td><td>827</td><td>24</td><td>3</td><td>12.50%</td><td>827</td><td>107</td><td>12.94%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>1</td><td>827</td><td>24</td><td>3</td><td>12.50%</td><td>827</td><td>107</td><td>12.94%</td></tr>
+<tr><td>XML files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>XML files</td><td>test</td><td>1</td><td>3,945</td><td>62</td><td>0</td><td>0.00%</td><td>3,945</td><td>381</td><td>9.66%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>1</td><td>3,945</td><td>62</td><td>0</td><td>0.00%</td><td>3,945</td><td>381</td><td>9.66%</td></tr>
 </tbody><tfoot><tr><td>Total sum</td><td>main</td><td>9</td><td>42,413</td><td>865</td><td>90</td><td>10.40%</td><td>31,962</td><td>7,565</td><td>23.67%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>4</td><td>10,476</td><td>267</td><td>29</td><td>10.86%</td><td>10,476</td><td>2,163</td><td>20.65%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>13</td><td>52,889</td><td>1,132</td><td>119</td><td>10.51%</td><td>42,438</td><td>9,728</td><td>22.92%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>7</td><td>17,501</td><td>402</td><td>38</td><td>9.45%</td><td>17,501</td><td>3,053</td><td>17.44%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>16</td><td>59,914</td><td>1,267</td><td>128</td><td>10.10%</td><td>49,463</td><td>10,618</td><td>21.47%</td></tr>
 </tfoot></table>
 
 
@@ -3217,15 +3274,15 @@ Current list of all released projects:
 <tr><td>git files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>10</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>1</td><td>10</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Java files</td><td>main</td><td>8</td><td>25,072</td><td>672</td><td>73</td><td>10.86%</td><td>25,072</td><td>4,937</td><td>19.69%</td></tr>
+<tr><td>Java files</td><td>main</td><td>9</td><td>29,345</td><td>808</td><td>89</td><td>11.01%</td><td>29,345</td><td>5,866</td><td>19.99%</td></tr>
 <tr><td>Java files</td><td>test</td><td>1</td><td>1,119</td><td>35</td><td>3</td><td>8.57%</td><td>1,119</td><td>149</td><td>13.32%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>9</td><td>26,191</td><td>707</td><td>76</td><td>10.75%</td><td>26,191</td><td>5,086</td><td>19.42%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>10</td><td>30,464</td><td>843</td><td>92</td><td>10.91%</td><td>30,464</td><td>6,015</td><td>19.74%</td></tr>
 <tr><td>Properties files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>Properties files</td><td>test</td><td>1</td><td>902</td><td>23</td><td>2</td><td>8.70%</td><td>902</td><td>102</td><td>11.31%</td></tr>
-<tr><td>Properties files</td><td>sum</td><td>1</td><td>902</td><td>23</td><td>2</td><td>8.70%</td><td>902</td><td>102</td><td>11.31%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10</td><td>35,755</td><td>672</td><td>73</td><td>10.86%</td><td>25,072</td><td>4,937</td><td>19.69%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>4</td><td>38,541</td><td>59</td><td>5</td><td>8.47%</td><td>2,033</td><td>251</td><td>12.35%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>14</td><td>74,296</td><td>731</td><td>78</td><td>10.67%</td><td>27,105</td><td>5,188</td><td>19.14%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>1</td><td>985</td><td>26</td><td>3</td><td>11.54%</td><td>985</td><td>110</td><td>11.17%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>1</td><td>985</td><td>26</td><td>3</td><td>11.54%</td><td>985</td><td>110</td><td>11.17%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>11</td><td>40,028</td><td>808</td><td>89</td><td>11.01%</td><td>29,345</td><td>5,866</td><td>19.99%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>4</td><td>38,624</td><td>62</td><td>6</td><td>9.68%</td><td>2,116</td><td>259</td><td>12.24%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>15</td><td>78,652</td><td>870</td><td>95</td><td>10.92%</td><td>31,461</td><td>6,125</td><td>19.47%</td></tr>
 </tfoot></table>
 
 
@@ -3251,6 +3308,37 @@ Current list of all unreleased projects:
 </tbody><tfoot><tr><td>Total sum</td><td>main</td><td>21</td><td>79,297</td><td>1,569</td><td>161</td><td>10.26%</td><td>61,296</td><td>12,279</td><td>20.03%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>4</td><td>3,342</td><td>105</td><td>10</td><td>9.52%</td><td>3,342</td><td>458</td><td>13.70%</td></tr>
 <tr><td>Total sum</td><td>sum</td><td>25</td><td>82,639</td><td>1,674</td><td>171</td><td>10.22%</td><td>64,638</td><td>12,737</td><td>19.71%</td></tr>
+</tfoot></table>
+
+
+### [baumschule](https://github.com/phax/baumschule)
+
+<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
+</thead><tbody>
+<tr><td>CSS files</td><td>main</td><td>2</td><td>1,901</td><td>71</td><td>10</td><td>14.08%</td><td>1,903</td><td>149</td><td>7.83%</td></tr>
+<tr><td>CSS files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>CSS files</td><td>sum</td><td>2</td><td>1,901</td><td>71</td><td>10</td><td>14.08%</td><td>1,903</td><td>149</td><td>7.83%</td></tr>
+<tr><td>git files</td><td>main</td><td>2</td><td>12</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>3</td><td>12</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Java files</td><td>main</td><td>42</td><td>364,668</td><td>6,971</td><td>837</td><td>12.01%</td><td>364,393</td><td>119,890</td><td>32.90%</td></tr>
+<tr><td>Java files</td><td>test</td><td>3</td><td>1,745</td><td>76</td><td>9</td><td>11.84%</td><td>1,745</td><td>196</td><td>11.23%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>45</td><td>366,413</td><td>7,047</td><td>846</td><td>12.01%</td><td>366,138</td><td>120,086</td><td>32.80%</td></tr>
+<tr><td>JavaScript files</td><td>main</td><td>2</td><td>229</td><td>11</td><td>1</td><td>9.09%</td><td>230</td><td>31</td><td>13.48%</td></tr>
+<tr><td>JavaScript files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>JavaScript files</td><td>sum</td><td>2</td><td>229</td><td>11</td><td>1</td><td>9.09%</td><td>230</td><td>31</td><td>13.48%</td></tr>
+<tr><td>Properties files</td><td>main</td><td>2</td><td>1,115</td><td>44</td><td>8</td><td>18.18%</td><td>1,115</td><td>126</td><td>11.30%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>2</td><td>1,115</td><td>44</td><td>8</td><td>18.18%</td><td>1,115</td><td>126</td><td>11.30%</td></tr>
+<tr><td>XML files</td><td>main</td><td>5</td><td>3,562</td><td>131</td><td>21</td><td>16.03%</td><td>3,562</td><td>446</td><td>12.52%</td></tr>
+<tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>5</td><td>3,562</td><td>131</td><td>21</td><td>16.03%</td><td>3,562</td><td>446</td><td>12.52%</td></tr>
+<tr><td>JDM files</td><td>main</td><td>27</td><td>21,096</td><td>611</td><td>13</td><td>2.13%</td><td>21,019</td><td>3,123</td><td>14.86%</td></tr>
+<tr><td>JDM files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>JDM files</td><td>sum</td><td>27</td><td>21,096</td><td>611</td><td>13</td><td>2.13%</td><td>21,019</td><td>3,123</td><td>14.86%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>85</td><td>407,126</td><td>7,840</td><td>890</td><td>11.35%</td><td>392,234</td><td>123,765</td><td>31.55%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>4</td><td>1,745</td><td>76</td><td>9</td><td>11.84%</td><td>1,745</td><td>196</td><td>11.23%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>89</td><td>408,871</td><td>7,916</td><td>899</td><td>11.36%</td><td>393,979</td><td>123,961</td><td>31.46%</td></tr>
 </tfoot></table>
 
 
@@ -3289,15 +3377,15 @@ Current list of all unreleased projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>Java files</td><td>main</td><td>57</td><td>376,036</td><td>9,675</td><td>1,003</td><td>10.37%</td><td>376,035</td><td>88,821</td><td>23.62%</td></tr>
+<tr><td>Java files</td><td>main</td><td>58</td><td>379,182</td><td>9,761</td><td>1,010</td><td>10.35%</td><td>379,181</td><td>89,658</td><td>23.65%</td></tr>
 <tr><td>Java files</td><td>test</td><td>9</td><td>31,089</td><td>977</td><td>113</td><td>11.57%</td><td>31,088</td><td>6,796</td><td>21.86%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>66</td><td>407,125</td><td>10,652</td><td>1,116</td><td>10.48%</td><td>407,123</td><td>95,617</td><td>23.49%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>67</td><td>410,271</td><td>10,738</td><td>1,123</td><td>10.46%</td><td>410,269</td><td>96,454</td><td>23.51%</td></tr>
 <tr><td>XML files</td><td>main</td><td>2</td><td>127,735</td><td>2,533</td><td>170</td><td>6.71%</td><td>127,737</td><td>27,654</td><td>21.65%</td></tr>
 <tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>XML files</td><td>sum</td><td>2</td><td>127,735</td><td>2,533</td><td>170</td><td>6.71%</td><td>127,737</td><td>27,654</td><td>21.65%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>61</td><td>515,630</td><td>12,208</td><td>1,173</td><td>9.61%</td><td>503,772</td><td>116,475</td><td>23.12%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>62</td><td>518,776</td><td>12,294</td><td>1,180</td><td>9.60%</td><td>506,918</td><td>117,312</td><td>23.14%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>27</td><td>169,068</td><td>977</td><td>113</td><td>11.57%</td><td>31,088</td><td>6,796</td><td>21.86%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>88</td><td>684,698</td><td>13,185</td><td>1,286</td><td>9.75%</td><td>534,860</td><td>123,271</td><td>23.05%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>89</td><td>687,844</td><td>13,271</td><td>1,293</td><td>9.74%</td><td>538,006</td><td>124,108</td><td>23.07%</td></tr>
 </tfoot></table>
 
 
@@ -3305,9 +3393,9 @@ Current list of all unreleased projects:
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
 </thead><tbody>
-<tr><td>CSS files</td><td>main</td><td>4</td><td>3,554</td><td>118</td><td>15</td><td>12.71%</td><td>3,556</td><td>396</td><td>11.14%</td></tr>
+<tr><td>CSS files</td><td>main</td><td>4</td><td>3,603</td><td>119</td><td>15</td><td>12.61%</td><td>3,605</td><td>397</td><td>11.01%</td></tr>
 <tr><td>CSS files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>CSS files</td><td>sum</td><td>4</td><td>3,554</td><td>118</td><td>15</td><td>12.71%</td><td>3,556</td><td>396</td><td>11.14%</td></tr>
+<tr><td>CSS files</td><td>sum</td><td>4</td><td>3,603</td><td>119</td><td>15</td><td>12.61%</td><td>3,605</td><td>397</td><td>11.01%</td></tr>
 <tr><td>git files</td><td>main</td><td>2</td><td>37</td><td>2</td><td>0</td><td>0.00%</td><td>37</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>test</td><td>1</td><td>23</td><td>1</td><td>0</td><td>0.00%</td><td>23</td><td>0</td><td>0.00%</td></tr>
 <tr><td>git files</td><td>sum</td><td>3</td><td>60</td><td>3</td><td>0</td><td>0.00%</td><td>60</td><td>0</td><td>0.00%</td></tr>
@@ -3323,28 +3411,12 @@ Current list of all unreleased projects:
 <tr><td>Properties files</td><td>main</td><td>3</td><td>2,889</td><td>84</td><td>11</td><td>13.10%</td><td>2,889</td><td>379</td><td>13.12%</td></tr>
 <tr><td>Properties files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Properties files</td><td>sum</td><td>3</td><td>2,889</td><td>84</td><td>11</td><td>13.10%</td><td>2,889</td><td>379</td><td>13.12%</td></tr>
-<tr><td>XML files</td><td>main</td><td>19</td><td>208,500</td><td>4,663</td><td>471</td><td>10.10%</td><td>208,489</td><td>33,467</td><td>16.05%</td></tr>
+<tr><td>XML files</td><td>main</td><td>19</td><td>210,774</td><td>4,697</td><td>475</td><td>10.11%</td><td>210,763</td><td>33,780</td><td>16.03%</td></tr>
 <tr><td>XML files</td><td>test</td><td>3</td><td>48,388</td><td>492</td><td>20</td><td>4.07%</td><td>48,408</td><td>4,458</td><td>9.21%</td></tr>
-<tr><td>XML files</td><td>sum</td><td>22</td><td>256,888</td><td>5,155</td><td>491</td><td>9.52%</td><td>256,897</td><td>37,925</td><td>14.76%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>134</td><td>7,532,765</td><td>17,631</td><td>1,739</td><td>9.86%</td><td>810,283</td><td>188,758</td><td>23.30%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>22</td><td>259,162</td><td>5,189</td><td>495</td><td>9.54%</td><td>259,171</td><td>38,238</td><td>14.75%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>134</td><td>7,535,088</td><td>17,666</td><td>1,743</td><td>9.87%</td><td>812,606</td><td>189,072</td><td>23.27%</td></tr>
 <tr><td>Total sum</td><td>test</td><td>14</td><td>72,252</td><td>1,111</td><td>86</td><td>7.74%</td><td>72,272</td><td>9,593</td><td>13.27%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>148</td><td>7,605,017</td><td>18,742</td><td>1,825</td><td>9.74%</td><td>882,555</td><td>198,351</td><td>22.47%</td></tr>
-</tfoot></table>
-
-
-### [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc)
-
-<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
-</thead><tbody>
-<tr><td>Java files</td><td>main</td><td>27</td><td>192,002</td><td>4,918</td><td>483</td><td>9.82%</td><td>192,001</td><td>49,241</td><td>25.65%</td></tr>
-<tr><td>Java files</td><td>test</td><td>1</td><td>5,897</td><td>150</td><td>19</td><td>12.67%</td><td>5,897</td><td>873</td><td>14.80%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>28</td><td>197,899</td><td>5,068</td><td>502</td><td>9.91%</td><td>197,898</td><td>50,114</td><td>25.32%</td></tr>
-<tr><td>JDM files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>JDM files</td><td>test</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
-<tr><td>JDM files</td><td>sum</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>29</td><td>203,861</td><td>4,918</td><td>483</td><td>9.82%</td><td>192,001</td><td>49,241</td><td>25.65%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>28</td><td>20,885</td><td>745</td><td>19</td><td>2.55%</td><td>20,801</td><td>3,488</td><td>16.77%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>57</td><td>224,746</td><td>5,663</td><td>502</td><td>8.86%</td><td>212,802</td><td>52,729</td><td>24.78%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>148</td><td>7,607,340</td><td>18,777</td><td>1,829</td><td>9.74%</td><td>884,878</td><td>198,665</td><td>22.45%</td></tr>
 </tfoot></table>
 
 
@@ -3395,6 +3467,40 @@ Current list of all unreleased projects:
 </tfoot></table>
 
 
+### [registry434](https://github.com/phax/registry434)
+
+<table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
+</thead><tbody>
+<tr><td>CSS files</td><td>main</td><td>2</td><td>2,363</td><td>79</td><td>10</td><td>12.66%</td><td>2,365</td><td>228</td><td>9.64%</td></tr>
+<tr><td>CSS files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>CSS files</td><td>sum</td><td>2</td><td>2,363</td><td>79</td><td>10</td><td>12.66%</td><td>2,365</td><td>228</td><td>9.64%</td></tr>
+<tr><td>CSV files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>CSV files</td><td>test</td><td>1</td><td>9,750</td><td>213</td><td>0</td><td>0.00%</td><td>9,752</td><td>531</td><td>5.45%</td></tr>
+<tr><td>CSV files</td><td>sum</td><td>1</td><td>9,750</td><td>213</td><td>0</td><td>0.00%</td><td>9,752</td><td>531</td><td>5.45%</td></tr>
+<tr><td>git files</td><td>main</td><td>2</td><td>12</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>2</td><td>12</td><td>1</td><td>0</td><td>0.00%</td><td>12</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Java files</td><td>main</td><td>25</td><td>101,248</td><td>2,319</td><td>268</td><td>11.56%</td><td>101,248</td><td>23,614</td><td>23.32%</td></tr>
+<tr><td>Java files</td><td>test</td><td>5</td><td>7,674</td><td>241</td><td>32</td><td>13.28%</td><td>7,674</td><td>1,269</td><td>16.54%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>30</td><td>108,922</td><td>2,560</td><td>300</td><td>11.72%</td><td>108,922</td><td>24,883</td><td>22.84%</td></tr>
+<tr><td>JavaScript files</td><td>main</td><td>2</td><td>691</td><td>19</td><td>1</td><td>5.26%</td><td>692</td><td>110</td><td>15.90%</td></tr>
+<tr><td>JavaScript files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>JavaScript files</td><td>sum</td><td>2</td><td>691</td><td>19</td><td>1</td><td>5.26%</td><td>692</td><td>110</td><td>15.90%</td></tr>
+<tr><td>Properties files</td><td>main</td><td>2</td><td>2,031</td><td>60</td><td>8</td><td>13.33%</td><td>2,031</td><td>268</td><td>13.20%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>2</td><td>2,031</td><td>60</td><td>8</td><td>13.33%</td><td>2,031</td><td>268</td><td>13.20%</td></tr>
+<tr><td>XML files</td><td>main</td><td>6</td><td>24,014</td><td>410</td><td>31</td><td>7.56%</td><td>24,014</td><td>3,282</td><td>13.67%</td></tr>
+<tr><td>XML files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>6</td><td>24,014</td><td>410</td><td>31</td><td>7.56%</td><td>24,014</td><td>3,282</td><td>13.67%</td></tr>
+<tr><td>JDM files</td><td>main</td><td>4</td><td>1,638</td><td>43</td><td>0</td><td>0.00%</td><td>1,638</td><td>248</td><td>15.14%</td></tr>
+<tr><td>JDM files</td><td>test</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>JDM files</td><td>sum</td><td>4</td><td>1,638</td><td>43</td><td>0</td><td>0.00%</td><td>1,638</td><td>248</td><td>15.14%</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>47</td><td>148,674</td><td>2,931</td><td>318</td><td>10.85%</td><td>132,000</td><td>27,750</td><td>21.02%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>6</td><td>17,424</td><td>454</td><td>32</td><td>7.05%</td><td>17,426</td><td>1,800</td><td>10.33%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>53</td><td>166,098</td><td>3,385</td><td>350</td><td>10.34%</td><td>149,426</td><td>29,550</td><td>19.78%</td></tr>
+</tfoot></table>
+
+
 ### Overall sum
 
 <table><thead><tr><th>File type</th><th>Context</th><th>File count</th><th>File bytes</th><th>Lines total</th><th>Lines empty</th><th>Lines empty %</th><th>Chars total</th><th>Chars WS</th><th>Chars WS %</th></tr>
@@ -3405,33 +3511,33 @@ Current list of all unreleased projects:
 <tr><td>Code generation files</td><td>main</td><td>9</td><td>340,005</td><td>15,783</td><td>1,176</td><td>7.45%</td><td>340,005</td><td>70,678</td><td>20.79%</td></tr>
 <tr><td>Code generation files</td><td>test</td><td>3</td><td>3,369</td><td>129</td><td>20</td><td>15.50%</td><td>3,369</td><td>482</td><td>14.31%</td></tr>
 <tr><td>Code generation files</td><td>sum</td><td>12</td><td>343,374</td><td>15,912</td><td>1,196</td><td>7.52%</td><td>343,374</td><td>71,160</td><td>20.72%</td></tr>
-<tr><td>CSS files</td><td>main</td><td>273</td><td>1,986,415</td><td>42,555</td><td>3,673</td><td>8.63%</td><td>2,007,829</td><td>135,869</td><td>6.77%</td></tr>
+<tr><td>CSS files</td><td>main</td><td>277</td><td>1,990,728</td><td>42,706</td><td>3,693</td><td>8.65%</td><td>2,012,146</td><td>136,247</td><td>6.77%</td></tr>
 <tr><td>CSS files</td><td>test</td><td>515</td><td>2,102,115</td><td>51,568</td><td>3,934</td><td>7.63%</td><td>2,100,213</td><td>201,638</td><td>9.60%</td></tr>
-<tr><td>CSS files</td><td>sum</td><td>788</td><td>4,088,530</td><td>94,123</td><td>7,607</td><td>8.08%</td><td>4,108,042</td><td>337,507</td><td>8.22%</td></tr>
+<tr><td>CSS files</td><td>sum</td><td>792</td><td>4,092,843</td><td>94,274</td><td>7,627</td><td>8.09%</td><td>4,112,359</td><td>337,885</td><td>8.22%</td></tr>
 <tr><td>CSV files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
-<tr><td>CSV files</td><td>test</td><td>3</td><td>22,369</td><td>1,626</td><td>0</td><td>0.00%</td><td>22,369</td><td>843</td><td>3.77%</td></tr>
-<tr><td>CSV files</td><td>sum</td><td>3</td><td>22,369</td><td>1,626</td><td>0</td><td>0.00%</td><td>22,369</td><td>843</td><td>3.77%</td></tr>
-<tr><td>git files</td><td>main</td><td>26</td><td>405</td><td>33</td><td>0</td><td>0.00%</td><td>415</td><td>0</td><td>0.00%</td></tr>
-<tr><td>git files</td><td>test</td><td>103</td><td>332</td><td>24</td><td>0</td><td>0.00%</td><td>336</td><td>0</td><td>0.00%</td></tr>
-<tr><td>git files</td><td>sum</td><td>129</td><td>737</td><td>57</td><td>0</td><td>0.00%</td><td>751</td><td>0</td><td>0.00%</td></tr>
+<tr><td>CSV files</td><td>test</td><td>4</td><td>32,119</td><td>1,839</td><td>0</td><td>0.00%</td><td>32,121</td><td>1,374</td><td>4.28%</td></tr>
+<tr><td>CSV files</td><td>sum</td><td>4</td><td>32,119</td><td>1,839</td><td>0</td><td>0.00%</td><td>32,121</td><td>1,374</td><td>4.28%</td></tr>
+<tr><td>git files</td><td>main</td><td>30</td><td>441</td><td>36</td><td>0</td><td>0.00%</td><td>449</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>test</td><td>106</td><td>355</td><td>25</td><td>0</td><td>0.00%</td><td>359</td><td>0</td><td>0.00%</td></tr>
+<tr><td>git files</td><td>sum</td><td>136</td><td>796</td><td>61</td><td>0</td><td>0.00%</td><td>808</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Groovy files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
 <tr><td>Groovy files</td><td>test</td><td>6</td><td>17,540</td><td>431</td><td>24</td><td>5.57%</td><td>17,542</td><td>2,677</td><td>15.26%</td></tr>
 <tr><td>Groovy files</td><td>sum</td><td>6</td><td>17,540</td><td>431</td><td>24</td><td>5.57%</td><td>17,542</td><td>2,677</td><td>15.26%</td></tr>
 <tr><td>HTML files</td><td>main</td><td>36</td><td>418,093</td><td>11,420</td><td>196</td><td>1.72%</td><td>417,717</td><td>63,656</td><td>15.24%</td></tr>
 <tr><td>HTML files</td><td>test</td><td>26</td><td>346,441</td><td>11,705</td><td>2,711</td><td>23.16%</td><td>346,450</td><td>78,460</td><td>22.65%</td></tr>
 <tr><td>HTML files</td><td>sum</td><td>62</td><td>764,534</td><td>23,125</td><td>2,907</td><td>12.57%</td><td>764,167</td><td>142,116</td><td>18.60%</td></tr>
-<tr><td>Java files</td><td>main</td><td>6,385</td><td>53,956,967</td><td>1,437,050</td><td>101,410</td><td>7.06%</td><td>53,965,299</td><td>13,022,982</td><td>24.13%</td></tr>
-<tr><td>Java files</td><td>test</td><td>2,039</td><td>10,227,907</td><td>251,834</td><td>26,688</td><td>10.60%</td><td>10,229,228</td><td>2,185,145</td><td>21.36%</td></tr>
-<tr><td>Java files</td><td>sum</td><td>8,424</td><td>64,184,874</td><td>1,688,884</td><td>128,098</td><td>7.58%</td><td>64,194,527</td><td>15,208,127</td><td>23.69%</td></tr>
-<tr><td>JavaScript files</td><td>main</td><td>768</td><td>14,796,621</td><td>290,644</td><td>23,013</td><td>7.92%</td><td>14,931,151</td><td>2,318,269</td><td>15.53%</td></tr>
+<tr><td>Java files</td><td>main</td><td>6,468</td><td>54,505,587</td><td>1,448,321</td><td>102,734</td><td>7.09%</td><td>54,513,605</td><td>13,182,535</td><td>24.18%</td></tr>
+<tr><td>Java files</td><td>test</td><td>2,056</td><td>10,260,430</td><td>252,707</td><td>26,787</td><td>10.60%</td><td>10,261,751</td><td>2,191,706</td><td>21.36%</td></tr>
+<tr><td>Java files</td><td>sum</td><td>8,524</td><td>64,766,017</td><td>1,701,028</td><td>129,521</td><td>7.61%</td><td>64,775,356</td><td>15,374,241</td><td>23.73%</td></tr>
+<tr><td>JavaScript files</td><td>main</td><td>772</td><td>14,797,541</td><td>290,674</td><td>23,015</td><td>7.92%</td><td>14,932,073</td><td>2,318,410</td><td>15.53%</td></tr>
 <tr><td>JavaScript files</td><td>test</td><td>40</td><td>581,853</td><td>16,666</td><td>2,102</td><td>12.61%</td><td>581,854</td><td>159,831</td><td>27.47%</td></tr>
-<tr><td>JavaScript files</td><td>sum</td><td>808</td><td>15,378,474</td><td>307,310</td><td>25,115</td><td>8.17%</td><td>15,513,005</td><td>2,478,100</td><td>15.97%</td></tr>
+<tr><td>JavaScript files</td><td>sum</td><td>812</td><td>15,379,394</td><td>307,340</td><td>25,117</td><td>8.17%</td><td>15,513,927</td><td>2,478,241</td><td>15.97%</td></tr>
 <tr><td>JSON files</td><td>main</td><td>1</td><td>750</td><td>41</td><td>0</td><td>0.00%</td><td>752</td><td>125</td><td>16.62%</td></tr>
 <tr><td>JSON files</td><td>test</td><td>47</td><td>4,105,452</td><td>70,861</td><td>5</td><td>0.01%</td><td>4,039,858</td><td>1,162,866</td><td>28.78%</td></tr>
 <tr><td>JSON files</td><td>sum</td><td>48</td><td>4,106,202</td><td>70,902</td><td>5</td><td>0.01%</td><td>4,040,610</td><td>1,162,991</td><td>28.78%</td></tr>
-<tr><td>Properties files</td><td>main</td><td>58</td><td>188,312</td><td>3,620</td><td>303</td><td>8.37%</td><td>188,354</td><td>40,934</td><td>21.73%</td></tr>
-<tr><td>Properties files</td><td>test</td><td>85</td><td>301,642</td><td>4,803</td><td>285</td><td>5.93%</td><td>301,701</td><td>16,127</td><td>5.35%</td></tr>
-<tr><td>Properties files</td><td>sum</td><td>143</td><td>489,954</td><td>8,423</td><td>588</td><td>6.98%</td><td>490,055</td><td>57,061</td><td>11.64%</td></tr>
+<tr><td>Properties files</td><td>main</td><td>64</td><td>193,858</td><td>3,788</td><td>325</td><td>8.58%</td><td>193,900</td><td>41,538</td><td>21.42%</td></tr>
+<tr><td>Properties files</td><td>test</td><td>85</td><td>301,807</td><td>4,809</td><td>287</td><td>5.97%</td><td>301,866</td><td>16,142</td><td>5.35%</td></tr>
+<tr><td>Properties files</td><td>sum</td><td>149</td><td>495,665</td><td>8,597</td><td>612</td><td>7.12%</td><td>495,766</td><td>57,680</td><td>11.63%</td></tr>
 <tr><td>RelaxNG files</td><td>main</td><td>4</td><td>17,283</td><td>603</td><td>52</td><td>8.62%</td><td>17,281</td><td>3,500</td><td>20.25%</td></tr>
 <tr><td>RelaxNG files</td><td>test</td><td>4</td><td>48,079</td><td>1,788</td><td>6</td><td>0.34%</td><td>48,077</td><td>14,032</td><td>29.19%</td></tr>
 <tr><td>RelaxNG files</td><td>sum</td><td>8</td><td>65,362</td><td>2,391</td><td>58</td><td>2.43%</td><td>65,358</td><td>17,532</td><td>26.82%</td></tr>
@@ -3439,14 +3545,14 @@ Current list of all unreleased projects:
 <tr><td>SQL files</td><td>test</td><td>2</td><td>6,545</td><td>69</td><td>4</td><td>5.80%</td><td>6,545</td><td>591</td><td>9.03%</td></tr>
 <tr><td>SQL files</td><td>sum</td><td>2</td><td>6,545</td><td>69</td><td>4</td><td>5.80%</td><td>6,545</td><td>591</td><td>9.03%</td></tr>
 <tr><td>Text files</td><td>main</td><td>65</td><td>186,377</td><td>5,046</td><td>683</td><td>13.54%</td><td>187,428</td><td>26,773</td><td>14.28%</td></tr>
-<tr><td>Text files</td><td>test</td><td>50</td><td>128,130</td><td>3,351</td><td>875</td><td>26.11%</td><td>126,101</td><td>10,657</td><td>8.45%</td></tr>
-<tr><td>Text files</td><td>sum</td><td>115</td><td>314,507</td><td>8,397</td><td>1,558</td><td>18.55%</td><td>313,529</td><td>37,430</td><td>11.94%</td></tr>
-<tr><td>XML files</td><td>main</td><td>2,216</td><td>431,170,830</td><td>7,801,225</td><td>112,412</td><td>1.44%</td><td>432,595,321</td><td>40,003,012</td><td>9.25%</td></tr>
-<tr><td>XML files</td><td>test</td><td>2,059</td><td>33,092,764</td><td>575,092</td><td>7,317</td><td>1.27%</td><td>33,135,130</td><td>3,494,725</td><td>10.55%</td></tr>
-<tr><td>XML files</td><td>sum</td><td>4,275</td><td>464,263,594</td><td>8,376,317</td><td>119,729</td><td>1.43%</td><td>465,730,451</td><td>43,497,737</td><td>9.34%</td></tr>
-<tr><td>JDM files</td><td>main</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0.00%</td></tr>
+<tr><td>Text files</td><td>test</td><td>50</td><td>128,272</td><td>3,353</td><td>875</td><td>26.10%</td><td>126,243</td><td>10,679</td><td>8.46%</td></tr>
+<tr><td>Text files</td><td>sum</td><td>115</td><td>314,649</td><td>8,399</td><td>1,558</td><td>18.55%</td><td>313,671</td><td>37,452</td><td>11.94%</td></tr>
+<tr><td>XML files</td><td>main</td><td>2,231</td><td>431,333,434</td><td>7,804,304</td><td>112,712</td><td>1.44%</td><td>432,750,330</td><td>40,028,398</td><td>9.25%</td></tr>
+<tr><td>XML files</td><td>test</td><td>2,060</td><td>33,096,709</td><td>575,154</td><td>7,317</td><td>1.27%</td><td>33,139,075</td><td>3,495,106</td><td>10.55%</td></tr>
+<tr><td>XML files</td><td>sum</td><td>4,291</td><td>464,430,143</td><td>8,379,458</td><td>120,029</td><td>1.43%</td><td>465,889,405</td><td>43,523,504</td><td>9.34%</td></tr>
+<tr><td>JDM files</td><td>main</td><td>31</td><td>22,734</td><td>654</td><td>13</td><td>1.99%</td><td>22,657</td><td>3,371</td><td>14.88%</td></tr>
 <tr><td>JDM files</td><td>test</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
-<tr><td>JDM files</td><td>sum</td><td>27</td><td>14,988</td><td>595</td><td>0</td><td>0.00%</td><td>14,904</td><td>2,615</td><td>17.55%</td></tr>
+<tr><td>JDM files</td><td>sum</td><td>58</td><td>37,722</td><td>1,249</td><td>13</td><td>1.04%</td><td>37,561</td><td>5,986</td><td>15.94%</td></tr>
 <tr><td>Excel files</td><td>main</td><td>0</td><td>0</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Excel files</td><td>test</td><td>35</td><td>5,277,130</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Excel files</td><td>sum</td><td>35</td><td>5,277,130</td><td colspan="6">No lines counted</td></tr>
@@ -3456,9 +3562,9 @@ Current list of all unreleased projects:
 <tr><td>Font files</td><td>main</td><td>111</td><td>26,762,815</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Font files</td><td>test</td><td>0</td><td>0</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Font files</td><td>sum</td><td>111</td><td>26,762,815</td><td colspan="6">No lines counted</td></tr>
-<tr><td>Image files</td><td>main</td><td>160</td><td>5,348,412</td><td colspan="6">No lines counted</td></tr>
+<tr><td>Image files</td><td>main</td><td>163</td><td>5,355,720</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Image files</td><td>test</td><td>11</td><td>1,814,054</td><td colspan="6">No lines counted</td></tr>
-<tr><td>Image files</td><td>sum</td><td>171</td><td>7,162,466</td><td colspan="6">No lines counted</td></tr>
+<tr><td>Image files</td><td>sum</td><td>174</td><td>7,169,774</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Keystore files</td><td>main</td><td>23</td><td>134,766</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Keystore files</td><td>test</td><td>15</td><td>108,120</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Keystore files</td><td>sum</td><td>38</td><td>242,886</td><td colspan="6">No lines counted</td></tr>
@@ -3471,12 +3577,12 @@ Current list of all unreleased projects:
 <tr><td>ZIP files</td><td>main</td><td>5</td><td>6,657,822</td><td colspan="6">No lines counted</td></tr>
 <tr><td>ZIP files</td><td>test</td><td>14</td><td>30,603,155</td><td colspan="6">No lines counted</td></tr>
 <tr><td>ZIP files</td><td>sum</td><td>19</td><td>37,260,977</td><td colspan="6">No lines counted</td></tr>
-<tr><td>Known other files</td><td>main</td><td>495</td><td>6,525,402</td><td colspan="6">No lines counted</td></tr>
+<tr><td>Known other files</td><td>main</td><td>503</td><td>6,570,882</td><td colspan="6">No lines counted</td></tr>
 <tr><td>Known other files</td><td>test</td><td>125</td><td>3,012,144</td><td colspan="6">No lines counted</td></tr>
-<tr><td>Known other files</td><td>sum</td><td>620</td><td>9,537,546</td><td colspan="6">No lines counted</td></tr>
-</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10,650</td><td>552,145,455</td><td>9,608,249</td><td>242,972</td><td>2.53%</td><td>504,658,273</td><td>55,686,594</td><td>11.03%</td></tr>
-<tr><td>Total sum</td><td>test</td><td>5,214</td><td>92,692,122</td><td>990,608</td><td>43,975</td><td>4.44%</td><td>50,976,742</td><td>7,331,097</td><td>14.38%</td></tr>
-<tr><td>Total sum</td><td>sum</td><td>15,864</td><td>644,837,577</td><td>10,598,857</td><td>286,947</td><td>2.71%</td><td>555,635,015</td><td>63,017,691</td><td>11.34%</td></tr>
+<tr><td>Known other files</td><td>sum</td><td>628</td><td>9,583,026</td><td colspan="6">No lines counted</td></tr>
+</tbody><tfoot><tr><td>Total sum</td><td>main</td><td>10,808</td><td>552,943,016</td><td>9,623,605</td><td>244,653</td><td>2.54%</td><td>505,395,064</td><td>55,876,027</td><td>11.06%</td></tr>
+<tr><td>Total sum</td><td>test</td><td>5,236</td><td>92,738,670</td><td>991,765</td><td>44,076</td><td>4.44%</td><td>51,023,292</td><td>7,338,607</td><td>14.38%</td></tr>
+<tr><td>Total sum</td><td>sum</td><td>16,044</td><td>645,681,686</td><td>10,615,370</td><td>288,729</td><td>2.72%</td><td>556,418,356</td><td>63,214,634</td><td>11.36%</td></tr>
 </tfoot></table>
 
 ## Legend

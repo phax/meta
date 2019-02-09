@@ -441,6 +441,18 @@ Current list of all released projects (as of 2019-02-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
+ * [ph-jdmc](https://github.com/phax/ph-jdmc) - Version 0.0.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
+ * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - Version 0.0.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core) 
+   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
+ * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - Version 0.0.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin) 
+   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
@@ -773,6 +785,10 @@ Current list of all released projects (as of 2019-02-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
+ * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.9.3 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4) 
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
  * [toop-connector/toop-message-exchange](https://github.com/TOOP4EU/toop-connector) - Version 0.9.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange) 
@@ -811,15 +827,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [ph-jdmc](https://github.com/phax/ph-jdmc) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
- * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
- * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
  * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
