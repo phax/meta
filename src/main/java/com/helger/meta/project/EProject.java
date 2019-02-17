@@ -403,7 +403,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "6.1.1",
+                     "6.1.2",
                      EJDK.JDK8),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),
@@ -785,7 +785,7 @@ public enum EProject implements IProject
   TOOP_R2D2_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
   TOOP_SMM_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
   TOOP_MESSAGE_EXCHANGE (TOOP_CONNECTOR_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
-  TOOP_MEM_PHASE4 (TOOP_CONNECTOR_PARENT_POM, "toop-mem-phase4", EProjectType.JAVA_LIBRARY),
+  TOOP_MEM_PHASE4 (TOOP_CONNECTOR_PARENT_POM, "toop-mem-phase4", EProjectType.JAVA_LIBRARY, (String) null),
   TOOP_CONNECTOR_WEBAPP (TOOP_CONNECTOR_PARENT_POM, "toop-connector-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
