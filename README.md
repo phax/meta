@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-02-18):
+Current list of all released projects (as of 2019-02-25):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.1 - JDK 1.8
 
@@ -65,7 +65,7 @@ Current list of all released projects (as of 2019-02-18):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/jaxws-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/jaxws-maven-plugin)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.1 - JDK 1.8
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -817,6 +817,9 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
  * [meta](https://github.com/phax/meta) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/meta.svg?branch=master)](https://travis-ci.org/phax/meta)
