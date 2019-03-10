@@ -477,7 +477,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_XPATH2 &&
+    if (aProject == EProjectDeprecated.PH_XPATH2 &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserXP2") ||

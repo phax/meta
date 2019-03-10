@@ -827,9 +827,6 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
- * [ph-xpath2](https://github.com/phax/ph-xpath2) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/ph-xpath2.svg?branch=master)](https://travis-ci.org/phax/ph-xpath2)
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
@@ -920,6 +917,7 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes) 
  * ph-wsdl-gen - never released
+ * ph-xpath2 - never released
  * ph-zeromq - never released
 
 ---

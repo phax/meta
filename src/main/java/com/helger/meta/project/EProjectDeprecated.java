@@ -156,7 +156,17 @@ public enum EProjectDeprecated implements IProject
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
                       "6.1.0",
-                      EJDK.JDK8);
+                      EJDK.JDK8),
+
+  PH_XPATH2 (null,
+             IProject.DEFAULT_PROJECT_OWNER,
+             "ph-xpath2",
+             "ph-xpath2",
+             EProjectType.JAVA_LIBRARY,
+             EHasPages.FALSE,
+             EHasWiki.FALSE,
+             null,
+             EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 

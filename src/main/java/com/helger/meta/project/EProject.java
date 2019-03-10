@@ -673,16 +673,6 @@ public enum EProject implements IProject
                        "3.0.2",
                        EJDK.JDK8),
 
-  PH_XPATH2 (null,
-             IProject.DEFAULT_PROJECT_OWNER,
-             "ph-xpath2",
-             "ph-xpath2",
-             EProjectType.JAVA_LIBRARY,
-             EHasPages.FALSE,
-             EHasWiki.FALSE,
-             null,
-             EJDK.JDK8),
-
   PH_AS4_PARENT_POM (null,
                      IProject.DEFAULT_PROJECT_OWNER,
                      "ph-as4-parent-pom",
