@@ -613,7 +613,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "0.7.0",
+                               "0.7.1",
                                EJDK.JDK8),
   PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM,
                                  "peppol-directory-businesscard",
