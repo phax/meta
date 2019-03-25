@@ -553,7 +553,7 @@ public enum EProject implements IProject
                      EProjectType.JAVA_LIBRARY,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "3.0.3",
+                     "3.0.4",
                      EJDK.JDK8),
   AS2_PEPPOL_SERVLET (null,
                       IProject.DEFAULT_PROJECT_OWNER,
