@@ -231,7 +231,7 @@ public enum EExternalDependency
   POI ("org.apache.poi", "poi", "4.0.1", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
-  QUARTZ ("org.quartz-scheduler", "quartz", "2.3.0", EJDK.JDK8),
+  QUARTZ ("org.quartz-scheduler", "quartz", "2.3.1", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-2", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
