@@ -252,7 +252,7 @@ public enum EExternalDependency
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.2", EJDK.JDK8),
-  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.0.2", EJDK.JDK8),
+  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.2", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.3.3", EJDK.JDK8),
