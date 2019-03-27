@@ -24,6 +24,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.ValueEnforcer;
+import com.helger.commons.annotation.DevelopersNote;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.lang.EnumHelper;
@@ -100,12 +101,15 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.3", EJDK.JDK8),
+  JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
   JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.13.4", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
   JAVAX_MAIL ("com.sun.mail", "javax.mail", "1.6.2", EJDK.JDK8),
-  JAVAX_PERSISTENCE ("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK8),
+  @IsLegacy
+  @DevelopersNote ("Replaced with jakarta.persistence")
+  JAVAX_PERSISTENCE("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK8),
 
   @IsBOM
   @IsLegacy
