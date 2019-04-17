@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-03-28):
+Current list of all released projects (as of 2019-04-17):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.2 - JDK 1.8
 
@@ -37,7 +37,7 @@ Current list of all released projects (as of 2019-03-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
- * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 3.0.7 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 3.0.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
@@ -69,7 +69,7 @@ Current list of all released projects (as of 2019-03-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/jaxws-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/jaxws-maven-plugin)
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.2 - JDK 1.8
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
@@ -769,31 +769,31 @@ Current list of all released projects (as of 2019-03-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-message-exchange](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-message-exchange](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-r2d2-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-r2d2-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-r2d2-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-r2d2-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-smm-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.0 - JDK 1.8
+ * [toop-connector/toop-smm-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-smm-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-smm-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
@@ -922,7 +922,9 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-webscopes) 
  * ph-wsdl-gen - never released
- * ph-xpath2 - never released
+ * ph-xpath2 - Version 0.1.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2) 
  * ph-zeromq - never released
 
 ---

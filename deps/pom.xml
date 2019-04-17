@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190328</version>
+  <version>1.0.0-20190417</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -78,7 +78,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20190301</version>
+      <version>v20190325</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -118,7 +118,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
-      <version>2.6.1</version>
+      <version>2.6.2</version>
     </dependency>
     <dependency>
       <groupId>dnsjava</groupId>
@@ -178,7 +178,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>fluent-hc</artifactId>
-      <version>4.5.7</version>
+      <version>4.5.8</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -229,7 +229,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>3.11.2</version>
+      <version>3.12</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -239,7 +239,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.5.7</version>
+      <version>4.5.8</version>
     </dependency>
     <dependency>
       <groupId>com.netflix.hystrix</groupId>
@@ -289,7 +289,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.13.4</version>
+      <version>3.13.6</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -396,7 +396,7 @@
     <dependency>
       <groupId>org.zeromq</groupId>
       <artifactId>jeromq</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.sun.jersey</groupId>
@@ -442,33 +442,33 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.15.v20190215</version>
+      <version>9.4.16.v20190411</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -518,17 +518,17 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.4.1</version>
+      <version>5.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.4.1</version>
+      <version>5.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.4.1</version>
+      <version>1.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -538,7 +538,7 @@
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.4.1</version>
+      <version>5.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -613,7 +613,7 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver</artifactId>
-      <version>3.10.1</version>
+      <version>3.10.2</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -623,32 +623,32 @@
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
-      <version>2.0.14</version>
+      <version>2.0.15</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-app</artifactId>
-      <version>2.0.14</version>
+      <version>2.0.15</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
-      <version>2.0.14</version>
+      <version>2.0.15</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -728,7 +728,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.0.19.Final</version>
+      <version>2.0.20.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -743,7 +743,7 @@
     <dependency>
       <groupId>org.apache.wss4j</groupId>
       <artifactId>wss4j-ws-security-dom</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -753,7 +753,7 @@
     <dependency>
       <groupId>org.apache.santuario</groupId>
       <artifactId>xmlsec</artifactId>
-      <version>2.1.2</version>
+      <version>2.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xsom</groupId>
@@ -778,7 +778,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>maven-bundle-plugin</artifactId>
-      <version>4.1.0</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -991,7 +991,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>jcodemodel</artifactId>
-      <version>3.2.2</version>
+      <version>3.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1893,7 +1893,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>3.0.7</version>
+      <version>3.0.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
@@ -1968,38 +1968,38 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-parent-pom</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-api</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-r2d2-client</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-smm-client</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-message-exchange</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-mem-phase4</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-webapp</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.1</version>
       <type>war</type>
     </dependency>
   </dependencies>

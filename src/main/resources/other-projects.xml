@@ -24,7 +24,7 @@
   <basedir>c:\dev\svn-philip\dev</basedir>
   <basedir>c:\Entwicklung\git</basedir>
   <basedir>c:\Entwicklung\svn\svn-philip\dev</basedir>
-  <!-- KB -->
+  <!-- KB
   <project projectname="kb-parent-pom" projecttype="maven-pom" minjdk="8" dir="kellerbuch">
     <project projectname="kb-app" />
     <project projectname="kb-core" />
@@ -33,17 +33,19 @@
     <project projectname="kb-plugin-freefinance" />
     <project projectname="kb-plugin-postingtransfer" />
     <project projectname="kb-plugin-r2o"  />
-    <project projectname="kb-plugin-dpd"  />
+    <project projectname="kb-plugin-logistics"  />
     <project projectname="kb-printprofile" />
     <project projectname="kb-selenium" projecttype="java-application" />
     <project projectname="kb-uicore" />
     <project projectname="kb-webapp"   projecttype="java-web-application" />
     <project projectname="wm-webapp"   projecttype="java-web-application" />
   </project>
-  <!-- Ecoware etc. -->
+   -->
+  <!-- Ecoware etc.
   <project projectname="ecoware-parent-pom" projecttype="maven-pom" minjdk="8" dir="ecoware">
     <project projectname="ecoware-domain" />
     <project projectname="ecoware-ui" projecttype="java-web-application" />
   </project>
+   -->
   <project projectname="peppol-ap-lister" projecttype="java-application" minjdk="8" />
 </root>

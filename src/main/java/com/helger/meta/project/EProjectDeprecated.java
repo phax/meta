@@ -165,7 +165,7 @@ public enum EProjectDeprecated implements IProject
              EProjectType.JAVA_LIBRARY,
              EHasPages.FALSE,
              EHasWiki.FALSE,
-             null,
+             "0.1.0",
              EJDK.JDK8);
 
   private final SimpleProject m_aProject;
