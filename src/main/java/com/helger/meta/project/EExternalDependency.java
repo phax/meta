@@ -53,7 +53,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190325", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190415", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190417</version>
+  <version>1.0.0-20190419</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -78,7 +78,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20190325</version>
+      <version>v20190415</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -1845,6 +1845,11 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-client</artifactId>
+      <version>0.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>peppol-directory-searchapi</artifactId>
       <version>0.7.1</version>
     </dependency>
     <dependency>
