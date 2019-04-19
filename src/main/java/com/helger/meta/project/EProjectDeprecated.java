@@ -157,6 +157,16 @@ public enum EProjectDeprecated implements IProject
                       EHasWiki.FALSE,
                       "6.1.0",
                       EJDK.JDK8),
+  // 8.1.3 is the last
+  PH_OTON_BASIC (null,
+                 IProject.DEFAULT_PROJECT_OWNER,
+                 "ph-oton",
+                 "ph-oton-basic",
+                 EProjectType.JAVA_LIBRARY,
+                 EHasPages.FALSE,
+                 EHasWiki.FALSE,
+                 "8.1.3",
+                 EJDK.JDK8),
 
   PH_XPATH2 (null,
              IProject.DEFAULT_PROJECT_OWNER,

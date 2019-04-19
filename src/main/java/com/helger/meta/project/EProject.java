@@ -626,6 +626,7 @@ public enum EProject implements IProject
                               "peppol-directory-publisher",
                               EProjectType.JAVA_WEB_APPLICATION),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_SMP_SERVER_PARENT_POM (null,
                                 IProject.DEFAULT_PROJECT_OWNER,
