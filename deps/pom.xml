@@ -289,7 +289,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.13.6</version>
+      <version>3.13.9</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -442,33 +442,33 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.16.v20190411</version>
+      <version>9.4.17.v20190418</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -883,7 +883,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-pmd-plugin</artifactId>
-      <version>3.11.0</version>
+      <version>3.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1849,45 +1849,40 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-searchapi</artifactId>
-      <version>0.7.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-parent-pom</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-library</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-sql</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-xml</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-sql</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-server-webapp-xml</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
