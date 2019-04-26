@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190425</version>
+  <version>1.0.0-20190426</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -618,7 +618,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -1757,68 +1757,68 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-parent-pom</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-ubl</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-cii</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-peppol</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-simplerinvoicing</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-en16931</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-ehf</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-energieefactuur</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-oioubl</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-ebinterface</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-teapps</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-ublbe</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
