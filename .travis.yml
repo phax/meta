@@ -14,7 +14,7 @@ branches:
 jobs:
   include:
     - stage: test
-      jdk: oraclejdk8
+      jdk: openjdk8
     - stage: test
       jdk: oraclejdk11
     - stage: test
