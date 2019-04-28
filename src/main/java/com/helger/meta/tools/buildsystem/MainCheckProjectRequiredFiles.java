@@ -150,9 +150,15 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
                                 "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
           }
 
-          _checkFileContains (aProject, ".travis.yml", "oraclejdk8");
+          // Dist
+          _checkFileContains (aProject, ".travis.yml", "xenial");
+
+          // JDK
+          _checkFileContains (aProject, ".travis.yml", "openjdk8");
           _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
+
+          // master only
           _checkFileContains (aProject, ".travis.yml", "branches:");
 
           // No SNAPSHOT deployment for applications
