@@ -429,7 +429,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
- * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 1.0.1 - JDK 1.8
+ * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 1.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb-pom)
@@ -437,7 +437,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
- * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.1.0 - JDK 1.8
+ * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
