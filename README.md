@@ -73,7 +73,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.1 - JDK 1.8
+ * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
@@ -425,7 +425,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-isorelax) 
    [![Build Status](https://travis-ci.org/phax/ph-isorelax.svg?branch=master)](https://travis-ci.org/phax/ph-isorelax)
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.2 - JDK 1.8
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-javacc-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-javacc-maven-plugin)
