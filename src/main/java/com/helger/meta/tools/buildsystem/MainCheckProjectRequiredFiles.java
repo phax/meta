@@ -151,12 +151,14 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           }
 
           // Dist
-          _checkFileContains (aProject, ".travis.yml", "xenial");
+          final boolean bXenial = _checkFileContains (aProject, ".travis.yml", "xenial");
 
           // JDK
           _checkFileContains (aProject, ".travis.yml", "openjdk8");
-          _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
+          _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
+          if (bXenial)
+            _checkFileContains (aProject, ".travis.yml", "openjdk12");
 
           // master only
           _checkFileContains (aProject, ".travis.yml", "branches:");
