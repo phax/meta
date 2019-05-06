@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-05-02):
+Current list of all released projects (as of 2019-05-06):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.2 - JDK 1.8
 
@@ -77,27 +77,27 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 6.2.3 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 6.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
@@ -433,7 +433,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb-pom)
- * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.3.1.4 - JDK 1.8
+ * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.3.1.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxb22-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jaxb22-plugin)
@@ -721,7 +721,7 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xservlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xservlet) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.3.1.1 - JDK 1.8
+ * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.3.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
@@ -729,27 +729,35 @@ Current list of all released projects (as of 2019-05-02):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xmldsig.svg?branch=master)](https://travis-ci.org/phax/ph-xmldsig)
- * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp1) 
+   [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp2) 
+   [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-ccts-cct-schemamodule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-ccts-cct-schemamodule) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades132/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades132) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades141/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades141) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 2.1.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)

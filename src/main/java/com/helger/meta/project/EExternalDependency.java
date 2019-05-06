@@ -72,7 +72,7 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.2", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
   FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.8", EJDK.JDK8),
@@ -80,7 +80,7 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.6", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.6.3", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.7.0", EJDK.JDK8),
   @IsLegacy
   GROOVY_ALL_24 ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
@@ -102,7 +102,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.3", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.13.10", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.0", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -273,7 +273,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.8.0", EJDK.JDK8),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.8.1", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.0.1", EJDK.JDK8),
@@ -295,9 +295,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.0.1", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.1", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.1", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.1", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.2", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.2", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
