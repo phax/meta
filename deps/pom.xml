@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190506</version>
+  <version>1.0.0-20190507</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1123,43 +1123,43 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-parent-pom</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xmldsig</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xmldsig11</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xades132</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-xades141</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-ccts-cct-schemamodule</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-bdxr-smp1</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xsds-bdxr-smp2</artifactId>
-      <version>2.2.1</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1189,7 +1189,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout4</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1291,7 +1291,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxws-maven-plugin</artifactId>
-      <version>2.6</version>
+      <version>2.6.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1560,38 +1560,38 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.0.9</version>
+      <version>5.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
