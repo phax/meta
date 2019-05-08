@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-05-07):
+Current list of all released projects (as of 2019-05-08):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.2 - JDK 1.8
 
@@ -633,47 +633,47 @@ Current list of all released projects (as of 2019-05-07):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-ubl](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-api) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ublpe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ublpe) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 6.1.1 - JDK 1.8
+ * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
