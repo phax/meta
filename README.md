@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-05-08):
+Current list of all released projects (as of 2019-05-13):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.2.2 - JDK 1.8
 
@@ -809,7 +809,7 @@ Current list of all released projects (as of 2019-05-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-interface.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-interface)
- * [toop-parent-pom](https://github.com/TOOP4EU/toop-parent-pom) - Version 1.1.0 - JDK 1.8
+ * [toop-parent-pom](https://github.com/TOOP4EU/toop-parent-pom) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-parent-pom.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-parent-pom)
@@ -819,9 +819,6 @@ Current list of all unreleased projects:
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)
- * [baumschule](https://github.com/phax/baumschule) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/baumschule.svg?branch=master)](https://travis-ci.org/phax/baumschule)
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
@@ -852,6 +849,9 @@ Current list of all unreleased projects:
  * [registry434](https://github.com/phax/registry434) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
+ * [totholz](https://github.com/phax/totholz) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/totholz.svg?branch=master)](https://travis-ci.org/phax/totholz)
 
 All deprecated projects:
 

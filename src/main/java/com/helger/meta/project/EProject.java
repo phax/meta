@@ -697,15 +697,15 @@ public enum EProject implements IProject
   PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM, "ph-as4-server-webapp-test", EProjectType.JAVA_WEB_APPLICATION),
 
   @IsGitHubPrivate
-  BAUMSCHULE (null,
-              IProject.DEFAULT_PROJECT_OWNER,
-              "baumschule",
-              "baumschule",
-              EProjectType.JAVA_WEB_APPLICATION,
-              EHasPages.FALSE,
-              EHasWiki.FALSE,
-              null,
-              EJDK.JDK8),
+  TOTHOLZ (null,
+           IProject.DEFAULT_PROJECT_OWNER,
+           "totholz",
+           "totholz",
+           EProjectType.JAVA_WEB_APPLICATION,
+           EHasPages.FALSE,
+           EHasWiki.FALSE,
+           null,
+           EJDK.JDK8),
   @IsGitHubPrivate
   BOZOO (null,
          IProject.DEFAULT_PROJECT_OWNER,
@@ -753,7 +753,7 @@ public enum EProject implements IProject
                    EProjectType.MAVEN_POM,
                    EHasPages.FALSE,
                    EHasWiki.FALSE,
-                   "1.1.0",
+                   "1.1.1",
                    EJDK.JDK8),
 
   TOOP_COMMONS_PARENT_POM (null,
