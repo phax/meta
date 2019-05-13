@@ -1983,38 +1983,38 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-parent-pom</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-api</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-r2d2-client</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-smm-client</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-message-exchange</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-mem-phase4</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-webapp</artifactId>
-      <version>0.10.1</version>
+      <version>0.10.2</version>
       <type>war</type>
     </dependency>
   </dependencies>

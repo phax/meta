@@ -781,31 +781,31 @@ Current list of all released projects (as of 2019-05-13):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-message-exchange](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-message-exchange](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-message-exchange) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-r2d2-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-r2d2-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-r2d2-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-r2d2-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-smm-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.1 - JDK 1.8
+ * [toop-connector/toop-smm-client](https://github.com/TOOP4EU/toop-connector) - Version 0.10.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-smm-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-smm-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
