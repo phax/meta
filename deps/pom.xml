@@ -1833,29 +1833,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-parent-pom</artifactId>
-      <version>0.7.1</version>
+      <version>0.7.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>0.7.1</version>
+      <version>0.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-indexer</artifactId>
-      <version>0.7.1</version>
+      <version>0.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-publisher</artifactId>
-      <version>0.7.1</version>
+      <version>0.7.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-directory-client</artifactId>
-      <version>0.7.1</version>
+      <version>0.7.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>peppol-directory-searchapi</artifactId>
+      <version>0.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1952,28 +1957,28 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-parent-pom</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-schematron</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-interface</artifactId>
-      <version>0.10.0</version>
+      <version>0.10.2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
