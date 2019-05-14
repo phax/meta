@@ -161,6 +161,10 @@ public interface IProject
   @Nullable
   Version getLastPublishedVersion ();
 
+  /**
+   * @return <code>true</code> if it is private on GitHub, <code>false</code> if
+   *         it is public
+   */
   default boolean isGitHubPrivate ()
   {
     return false;
