@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190513</version>
+  <version>1.0.0-20190514</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1829,38 +1829,6 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-bdve-ublbe</artifactId>
       <version>5.1.6</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-parent-pom</artifactId>
-      <version>0.7.2</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-businesscard</artifactId>
-      <version>0.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-indexer</artifactId>
-      <version>0.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-publisher</artifactId>
-      <version>0.7.2</version>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-client</artifactId>
-      <version>0.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>peppol-directory-searchapi</artifactId>
-      <version>0.7.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
