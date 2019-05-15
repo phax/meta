@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190515</version>
+  <version>1.0.0-20190516</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -663,7 +663,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.9.1-2</version>
+      <version>9.9.1-3</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -1871,7 +1871,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>1.1.2</version>
+      <version>1.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1925,23 +1925,23 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-parent-pom</artifactId>
-      <version>0.10.2</version>
+      <version>0.10.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>0.10.2</version>
+      <version>0.10.3</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-schematron</artifactId>
-      <version>0.10.2</version>
+      <version>0.10.3</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>0.10.2</version>
+      <version>0.10.3</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>

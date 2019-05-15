@@ -240,7 +240,7 @@ public enum EExternalDependency
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.1", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-2", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-3", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   @IsLegacy
   SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
