@@ -227,7 +227,10 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
-  MONGO_DB ("org.mongodb", "mongodb-driver", "3.10.2", EJDK.JDK8),
+
+  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.10.2", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER),
+
   MYSQL ("mysql", "mysql-connector-java", "8.0.16", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.15", EJDK.JDK8),

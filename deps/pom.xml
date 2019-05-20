@@ -616,6 +616,11 @@
       <version>3.10.2</version>
     </dependency>
     <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-sync</artifactId>
+      <version>3.10.2</version>
+    </dependency>
+    <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.16</version>
@@ -1854,11 +1859,6 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-as4-lib</artifactId>
-      <version>0.8.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-as4-esens</artifactId>
       <version>0.8.2</version>
     </dependency>
     <dependency>

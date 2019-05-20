@@ -682,7 +682,7 @@ public enum EProject implements IProject
                      "0.8.2",
                      EJDK.JDK8),
   PH_AS4_LIB (PH_AS4_PARENT_POM, "ph-as4-lib", EProjectType.JAVA_LIBRARY),
-  PH_AS4_ESENS (PH_AS4_PARENT_POM, "ph-as4-esens", EProjectType.JAVA_LIBRARY),
+  PH_AS4_PROFILE_CEF (PH_AS4_PARENT_POM, "ph-as4-profile-cef", EProjectType.JAVA_LIBRARY, null),
   PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY),
   PH_AS4_SERVER_WEBAPP (PH_AS4_PARENT_POM, "ph-as4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM, "ph-as4-server-webapp-test", EProjectType.JAVA_WEB_APPLICATION),
