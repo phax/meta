@@ -754,7 +754,7 @@ public enum EProject implements IProject
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "0.10.3",
+                           "0.10.4",
                            EJDK.JDK8),
   TOOP_COMMONS (TOOP_COMMONS_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
   TOOP_SCHEMATRON (TOOP_COMMONS_PARENT_POM, "toop-schematron", EProjectType.JAVA_LIBRARY),
@@ -767,7 +767,7 @@ public enum EProject implements IProject
                   EProjectType.JAVA_LIBRARY,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "0.10.3",
+                  "0.10.4",
                   EJDK.JDK8),
 
   TOOP_CONNECTOR_PARENT_POM (null,
