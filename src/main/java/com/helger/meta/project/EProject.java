@@ -777,7 +777,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "0.10.3",
+                             "0.10.4",
                              EJDK.JDK8),
   TOOP_CONNECTOR_API (TOOP_CONNECTOR_PARENT_POM, "toop-connector-api", EProjectType.JAVA_LIBRARY),
   TOOP_R2D2_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
