@@ -35,13 +35,18 @@ public interface IProject
   String EXTENSION_WIKI_PROJECT = ".wiki";
 
   /**
-   * @return <code>true</code> if this project is part of {@link EProject}.
+   * @return <code>true</code> if this project is part of {@link EProject},
+   *         <code>false</code> otherwise.
    */
   boolean isBuildInProject ();
 
   @Nullable
   IProject getParentProject ();
 
+  /**
+   * @return <code>true</code> if this project is a module of a parent project.
+   * @see #getParentProject()
+   */
   default boolean isNestedProject ()
   {
     return getParentProject () != null;
@@ -119,6 +124,10 @@ public interface IProject
     return getMavenArtifactID ().equals (EProject.PH_PARENT_POM.getMavenArtifactID ());
   }
 
+  /**
+   * @return <code>true</code> if this project is deprecated and no longer
+   *         maintained, <code>false</code> for active projects
+   */
   boolean isDeprecated ();
 
   /**

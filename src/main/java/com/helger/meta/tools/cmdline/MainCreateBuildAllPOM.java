@@ -23,7 +23,7 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.helger.commons.collection.CollectionHelper;
+import com.helger.commons.collection.impl.CommonsArrayList;
 import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.CommonsHashSet;
 import com.helger.commons.collection.impl.ICommonsList;
@@ -32,7 +32,6 @@ import com.helger.commons.collection.impl.ICommonsSet;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
@@ -97,13 +96,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
             {
               if (!sArtifactID.equals (sThisArtefactID))
               {
-                ICommonsSet <IProject> aRefProjects = aTree.get (aThisProject);
-                if (aRefProjects == null)
-                {
-                  aRefProjects = new CommonsHashSet <> ();
-                  aTree.put (aThisProject, aRefProjects);
-                }
-                aRefProjects.add (aReferencedProject);
+                aTree.computeIfAbsent (aThisProject, k -> new CommonsHashSet <> ()).add (aReferencedProject);
               }
             }
           }
@@ -115,10 +108,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   {
     // Read all dependencies
     final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType () != EProjectType.MAVEN_POM &&
-                                                                    p.isBuildInProject () &&
-                                                                    !p.isDeprecated () &&
-                                                                    !p.isNestedProject ()))
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () && !p.isDeprecated ()))
     {
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)
@@ -136,7 +126,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
       for (final Map.Entry <IProject, ICommonsSet <IProject>> aEntry : aTree.entrySet ())
       {
         final int nOld = aEntry.getValue ().size ();
-        for (final IProject eReferencedProject : CollectionHelper.newList (aEntry.getValue ()))
+        for (final IProject eReferencedProject : new CommonsArrayList <> (aEntry.getValue ()))
         {
           final Set <IProject> aTransitiveDeps = aTree.get (eReferencedProject);
           if (aTransitiveDeps != null)
@@ -149,7 +139,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     LOGGER.info ("Found all transitive dependencies after " + nIterations + " iterations");
 
     // Evaluate dependencies
-    final ICommonsList <Map.Entry <IProject, ICommonsSet <IProject>>> aEntries = CollectionHelper.newList (aTree.entrySet ());
+    final ICommonsList <Map.Entry <IProject, ICommonsSet <IProject>>> aEntries = new CommonsArrayList <> (aTree.entrySet ());
     aEntries.sort ( (o1, o2) -> {
       // Less dependencies before many dependencies, because transitivity was
       // already handled
