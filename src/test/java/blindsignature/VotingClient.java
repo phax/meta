@@ -19,7 +19,7 @@ package blindsignature;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import com.helger.commons.random.RandomHelper;
+import com.helger.commons.random.VerySecureRandom;
 
 /**
  * VotingClient is a client-side of blind signature voting module.
@@ -104,7 +104,7 @@ public class VotingClient
   {
     m_aCards = new BigInteger [m_nCardamount] [m_nCandidates];
 
-    final SecureRandom randomGenerator = RandomHelper.getSecureRandom ();
+    final SecureRandom randomGenerator = VerySecureRandom.getInstance ();
     for (int i = 1; i <= m_nCardamount; ++i)
     {
       // generate 9digit number
