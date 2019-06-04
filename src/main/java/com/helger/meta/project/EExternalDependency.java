@@ -53,7 +53,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190513", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190528", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -80,7 +80,7 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.6", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.7.0", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.7.1", EJDK.JDK8),
   @IsLegacy
   GROOVY_ALL_24 ("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
@@ -102,7 +102,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.3", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.4", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -211,17 +211,19 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.4.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.2.0", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.2.1", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.2", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "8.1.0", EJDK.JDK8),
+
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "8.1.1", EJDK.JDK8),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
+
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),

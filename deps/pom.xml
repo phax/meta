@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190528</version>
+  <version>1.0.0-20190604</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -78,7 +78,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20190513</version>
+      <version>v20190528</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -203,7 +203,7 @@
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
       <artifactId>gmavenplus-plugin</artifactId>
-      <version>1.7.0</version>
+      <version>1.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -289,7 +289,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.14.3</version>
+      <version>3.14.4</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -543,7 +543,7 @@
     <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka-clients</artifactId>
-      <version>2.2.0</version>
+      <version>2.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.littleshoot</groupId>
@@ -568,32 +568,32 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
