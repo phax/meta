@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190611</version>
+  <version>1.0.0-20190612</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1570,38 +1570,38 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.0.10</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
