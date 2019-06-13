@@ -330,7 +330,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_PLUGIN,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "3.0.0",
+                            "3.0.1",
                             EJDK.JDK8),
   PH_JSCOMPRESS_MAVEN_PLUGIN (null,
                               IProject.DEFAULT_PROJECT_OWNER,
