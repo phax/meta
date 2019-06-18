@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190613</version>
+  <version>1.0.0-20190618</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -289,7 +289,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.14.4</version>
+      <version>3.14.5</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -733,7 +733,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.0.21.Final</version>
+      <version>2.0.22.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1683,34 +1683,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.3.0</version>
+      <version>4.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1751,7 +1751,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
