@@ -195,7 +195,18 @@ public enum EProjectDeprecated implements IProject
              EHasPages.FALSE,
              EHasWiki.FALSE,
              "0.1.0",
-             EJDK.JDK8);
+             EJDK.JDK8),
+
+  @IsLegacy (replacedWith = "Use com.sun.xml.ws::jaxws-maven-plugin::2.3.2")
+  PH_JAXWS_MAVEN_PLUGIN(null,
+                        IProject.DEFAULT_PROJECT_OWNER,
+                        "jaxws-maven-plugin",
+                        "jaxws-maven-plugin",
+                        EProjectType.MAVEN_PLUGIN,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        "2.6.1",
+                        EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 

@@ -38,6 +38,7 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectDeprecated;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -552,13 +553,19 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 if (eExternalDep.isDeprecatedForJDK (eProjectJDK))
                 {
                   _warn (aProject,
-                         sArtifactID +
+                         sGroupID +
+                                   "::" +
+                                   sArtifactID +
                                    " is deprecated - use " +
                                    eExternalDep.getReplacement (eProjectJDK).getDisplayNameWithVersion () +
                                    " instead");
                 }
                 else
                 {
+                  if (false)
+                    if (eExternalDep.isLegacy ())
+                      _warn (aProject, sGroupID + "::" + sArtifactID + " is legacy - there is something better");
+
                   // Referenced project published at least once
                   final Version aVersionInFile = Version.parse (sVersion);
                   if (aVersionInFile.isLT (eExternalDep.getLastPublishedVersion ()))
@@ -617,7 +624,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
+      if (aProject != EProjectDeprecated.PH_JAXWS_MAVEN_PLUGIN)
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)
