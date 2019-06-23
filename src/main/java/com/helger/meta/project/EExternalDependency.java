@@ -52,7 +52,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190528", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190618", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -291,7 +291,7 @@ public enum EExternalDependency
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.1", EJDK.JDK8),
+  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.12.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.0.0", EJDK.JDK8),
