@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190623</version>
+  <version>1.0.0-20190624</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1897,64 +1897,64 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-parent-pom</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-schematron</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-interface</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-parent-pom</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-api</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-r2d2-client</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-smm-client</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-message-exchange</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-mem-phase4</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-webapp</artifactId>
-      <version>0.10.4</version>
+      <version>0.10.5</version>
       <type>war</type>
     </dependency>
   </dependencies>
