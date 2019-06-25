@@ -341,6 +341,16 @@ public enum EProject implements IProject
                               EHasWiki.FALSE,
                               "2.2.1",
                               EJDK.JDK8),
+  @IsLegacy (replacedWith = "Use com.sun.xml.ws::jaxws-maven-plugin::2.3.2")
+  PH_JAXWS_MAVEN_PLUGIN(null,
+                        IProject.DEFAULT_PROJECT_OWNER,
+                        "jaxws-maven-plugin",
+                        "jaxws-maven-plugin",
+                        EProjectType.MAVEN_PLUGIN,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        "2.6.2",
+                        EJDK.JDK8),
 
   PH_DATETIME_PARENT_POM (null,
                           IProject.DEFAULT_PROJECT_OWNER,

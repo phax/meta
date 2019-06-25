@@ -65,6 +65,10 @@ Current list of all released projects (as of 2019-06-25):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
    [![Build Status](https://travis-ci.org/CenPc434/java-tools.svg?branch=master)](https://travis-ci.org/CenPc434/java-tools)
+ * [jaxws-maven-plugin](https://github.com/phax/jaxws-maven-plugin) - Version 2.6.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin) 
+   [![Build Status](https://travis-ci.org/phax/jaxws-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/jaxws-maven-plugin)
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
@@ -869,9 +873,6 @@ All deprecated projects:
  * cipa-start-jmssender - Version 1.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
- * jaxws-maven-plugin - Version 2.6.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxws-maven-plugin) 
  * jgatsp - never released
  * peppol-directory - Version 0.7.2
 

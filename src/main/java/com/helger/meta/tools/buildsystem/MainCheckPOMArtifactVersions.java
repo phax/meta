@@ -38,7 +38,6 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectDeprecated;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -624,7 +623,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-      if (aProject != EProjectDeprecated.PH_JAXWS_MAVEN_PLUGIN)
+      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)
