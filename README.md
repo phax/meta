@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-06-25):
+Current list of all released projects (as of 2019-06-27):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.4.0 - JDK 1.8
 
@@ -737,6 +737,30 @@ Current list of all released projects (as of 2019-06-25):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
+ * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.8.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
+   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
  * [toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom) 
@@ -807,24 +831,6 @@ Current list of all unreleased projects:
  * [ph-as4/ph-as4-profile-cef](https://github.com/phax/ph-as4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/ph-as4.svg?branch=master)](https://travis-ci.org/phax/ph-as4)
- * [phoss-directory](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
  * [phoss-smp](https://github.com/phax/phoss-smp) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
