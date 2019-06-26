@@ -218,12 +218,20 @@ public enum EExternalDependency
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "8.1.1", EJDK.JDK8),
+  LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.7.2", EJDK.JDK8),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
+
+  // JDK 9 is just fake, because I'm stuck with Lucene 7
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.1.1", EJDK.JDK9),
+  LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
+  LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
+  LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
+  LUCENE8_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE8_CORE),
+  LUCENE8_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE8_CORE),
 
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
   @IsLegacy
