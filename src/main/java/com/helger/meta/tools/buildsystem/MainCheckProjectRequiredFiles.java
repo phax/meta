@@ -72,6 +72,18 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return false;
   }
 
+  private static boolean _checkFileContainsNot (@Nonnull final IProject aProject,
+                                                @Nonnull final String sRelativeFilename,
+                                                @Nonnull final String sExpectedContent)
+  {
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
+    final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
+    if (sContent != null && !sContent.contains (sExpectedContent))
+      return true;
+    _warn (aProject, "File " + f.getAbsolutePath () + " contains phrase '" + sExpectedContent + "'!");
+    return false;
+  }
+
   private static boolean _isApache2Project (@Nonnull final IProject aProject)
   {
     return aProject != EProject.JCODEMODEL;
@@ -156,7 +168,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           // JDK
           _checkFileContains (aProject, ".travis.yml", "openjdk8");
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
-          _checkFileContains (aProject, ".travis.yml", "oraclejdk11");
+          _checkFileContainsNot (aProject, ".travis.yml", "oraclejdk11");
           if (bXenial)
             _checkFileContains (aProject, ".travis.yml", "openjdk12");
 
