@@ -179,7 +179,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.28", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.29", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -206,15 +206,15 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.12", EJDK.JDK8),
 
-  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.4.2", EJDK.JDK8),
+  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.5.0", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.4.2", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.5.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
-  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.4.2", EJDK.JDK8),
+  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.5.0", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.2.1", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.3.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.11.2", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.12.0", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
@@ -225,7 +225,7 @@ public enum EExternalDependency
   LUCENE_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE_CORE),
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
-  // JDK 9 is just fake, because I'm stuck with Lucene 7
+  // JDK 9 is just fake, because I'm stuck with Lucene 7 in Directory
   LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.1.1", EJDK.JDK9),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
@@ -244,7 +244,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.16", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.15", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.16", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
