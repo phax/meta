@@ -861,6 +861,21 @@ Current list of all unreleased projects:
  * [phoss-validator](https://github.com/phax/phoss-validator) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [phoss-validator/phoss-validator-engine](https://github.com/phax/phoss-validator) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [phoss-validator/phoss-validator-jaxws](https://github.com/phax/phoss-validator) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [phoss-validator/phoss-validator-standalone](https://github.com/phax/phoss-validator) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [phoss-validator/phoss-validator-ui](https://github.com/phax/phoss-validator) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
+ * [phoss-validator/phoss-validator-webapp](https://github.com/phax/phoss-validator) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/phoss-validator.svg?branch=master)](https://travis-ci.org/phax/phoss-validator)
  * [registry434](https://github.com/phax/registry434) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)

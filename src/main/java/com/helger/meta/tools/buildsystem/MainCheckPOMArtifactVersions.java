@@ -628,7 +628,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)
           throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-        _validatePOM (aProject, aDoc);
+        try
+        {
+          _validatePOM (aProject, aDoc);
+        }
+        catch (final RuntimeException ex)
+        {
+          LOGGER.error ("Error interpreting " + aProject.getPOMFile ().getAbsolutePath ());
+          throw ex;
+        }
       }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
