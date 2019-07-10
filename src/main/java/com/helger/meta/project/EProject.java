@@ -739,6 +739,7 @@ public enum EProject implements IProject
                    EJDK.JDK8),
   PHOSS_VALIDATOR_ENGINE (PHOSS_VALIDATOR, "phoss-validator-engine", EProjectType.JAVA_LIBRARY),
   PHOSS_VALIDATOR_JAXWS (PHOSS_VALIDATOR, "phoss-validator-jaxws", EProjectType.JAVA_LIBRARY),
+  PHOSS_VALIDATOR_AWSLAMBDA (PHOSS_VALIDATOR, "phoss-validator-awslambda", EProjectType.JAVA_LIBRARY),
   PHOSS_VALIDATOR_UI (PHOSS_VALIDATOR, "phoss-validator-ui", EProjectType.JAVA_LIBRARY),
   PHOSS_VALIDATOR_WEBAPP (PHOSS_VALIDATOR, "phoss-validator-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_VALIDATOR_STANDALONE (PHOSS_VALIDATOR, "phoss-validator-standalone", EProjectType.JAVA_APPLICATION),
