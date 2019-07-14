@@ -56,7 +56,7 @@ public enum EExternalDependency
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
-  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.3", EJDK.JDK8),
+  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.6.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
@@ -196,8 +196,8 @@ public enum EExternalDependency
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
-  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.10.6", EJDK.JDK8),
-  JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", "0.10.6", EJDK.JDK8),
+  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.10.7", EJDK.JDK8),
+  JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", "0.10.7", EJDK.JDK8),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
