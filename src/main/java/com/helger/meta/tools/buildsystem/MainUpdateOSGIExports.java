@@ -24,8 +24,10 @@ import org.objectweb.asm.tree.ClassNode;
 
 import com.helger.commons.annotation.IsSPIInterface;
 import com.helger.commons.collection.impl.CommonsArrayList;
+import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
 import com.helger.commons.collection.impl.ICommonsList;
+import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.commons.collection.impl.ICommonsOrderedMap;
 import com.helger.commons.collection.impl.ICommonsSortedMap;
 import com.helger.commons.collection.impl.ICommonsSortedSet;
@@ -68,6 +70,8 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
     aNSCtx.addMapping ("", NS_MAVEN);
     aNSCtx.addMapping ("xsi", "http://www.w3.org/2001/XMLSchema-instance");
     final XMLWriterSettings aXWS = new XMLWriterSettings ().setNamespaceContext (aNSCtx);
+    final ICommonsMap <String, IProject> aUsedAutomaticModuleNames = new CommonsHashMap <> ();
+    final ICommonsMap <String, IProject> aUsedExportPackages = new CommonsHashMap <> ();
 
     for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
                                                                     !x.isDeprecated () &&
@@ -115,14 +119,38 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               final String sAutomaticModuleName = aInstructionMap.get (AUTOMATIC_MODULE_NAME);
               if (StringHelper.hasNoText (sAutomaticModuleName))
                 _warn (aProject, "No " + AUTOMATIC_MODULE_NAME + " present!");
+              else
+              {
+                // Check if name is unique
+                final IProject aOld = aUsedAutomaticModuleNames.put (sAutomaticModuleName, aProject);
+                if (aOld != null)
+                {
+                  _warn (aProject,
+                         "The automatic module name '" +
+                                   sAutomaticModuleName +
+                                   "' is already used in project " +
+                                   aOld.getProjectName ());
+                }
+              }
 
               final String sExportPackage = aInstructionMap.get (EXPORT_PACKAGE);
               if (StringHelper.hasNoText (sExportPackage))
                 _warn (aProject, "No " + EXPORT_PACKAGE + " present!");
               else
               {
+                // Check if name is unique
+                final IProject aOld = aUsedExportPackages.put (sExportPackage, aProject);
+                if (aOld != null)
+                {
+                  _warn (aProject,
+                         "The export package '" +
+                                   sExportPackage +
+                                   "' is already used in project " +
+                                   aOld.getProjectName ());
+                }
                 if (StringHelper.hasText (sAutomaticModuleName) &&
                     !sExportPackage.contains (sAutomaticModuleName + ".*"))
+                {
                   _warn (aProject,
                          "Weird " +
                                    EXPORT_PACKAGE +
@@ -131,6 +159,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                                    "' vs automatic module name '" +
                                    sAutomaticModuleName +
                                    "'");
+                }
               }
 
               final String sImportPackage = aInstructionMap.get (IMPORT_PACKAGE);
