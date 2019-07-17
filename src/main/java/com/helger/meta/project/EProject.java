@@ -815,7 +815,7 @@ public enum EProject implements IProject
                              "0.10.5",
                              EJDK.JDK8),
   TOOP_CONNECTOR_API (TOOP_CONNECTOR_PARENT_POM, "toop-connector-api", EProjectType.JAVA_LIBRARY),
-  TOOP_MEM_DEFAULT (TOOP_CONNECTOR_PARENT_POM, "toop-mem-default", EProjectType.JAVA_LIBRARY),
+  TOOP_MEM_DEFAULT (TOOP_CONNECTOR_PARENT_POM, "toop-mem-default", EProjectType.JAVA_LIBRARY, (String) null),
   TOOP_MEM_PHASE4 (TOOP_CONNECTOR_PARENT_POM, "toop-mem-phase4", EProjectType.JAVA_LIBRARY),
   TOOP_CONNECTOR (TOOP_CONNECTOR_PARENT_POM, "toop-connector", EProjectType.JAVA_LIBRARY, (String) null),
   TOOP_CONNECTOR_WEBAPP (TOOP_CONNECTOR_PARENT_POM, "toop-connector-webapp", EProjectType.JAVA_WEB_APPLICATION);
