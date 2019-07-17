@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190715</version>
+  <version>1.0.0-20190717</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -654,6 +654,11 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.16</version>
+    </dependency>
+    <dependency>
+      <groupId>org.owasp</groupId>
+      <artifactId>dependency-check-maven</artifactId>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -2020,17 +2025,7 @@
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
-      <artifactId>toop-r2d2-client</artifactId>
-      <version>0.10.5</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-smm-client</artifactId>
-      <version>0.10.5</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-message-exchange</artifactId>
+      <artifactId>toop-mem-default</artifactId>
       <version>0.10.5</version>
     </dependency>
     <dependency>

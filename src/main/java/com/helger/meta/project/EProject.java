@@ -728,6 +728,7 @@ public enum EProject implements IProject
          null,
          EJDK.JDK8),
 
+  @IsGitHubPrivate
   PHOSS_VALIDATOR (null,
                    IProject.DEFAULT_PROJECT_OWNER,
                    "phoss-validator-parent-pom",
@@ -737,11 +738,17 @@ public enum EProject implements IProject
                    EHasWiki.FALSE,
                    null,
                    EJDK.JDK8),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_ENGINE (PHOSS_VALIDATOR, "phoss-validator-engine", EProjectType.JAVA_LIBRARY),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_JAXWS (PHOSS_VALIDATOR, "phoss-validator-jaxws", EProjectType.JAVA_LIBRARY),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_AWSLAMBDA (PHOSS_VALIDATOR, "phoss-validator-awslambda", EProjectType.JAVA_LIBRARY),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_UI (PHOSS_VALIDATOR, "phoss-validator-ui", EProjectType.JAVA_LIBRARY),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_WEBAPP (PHOSS_VALIDATOR, "phoss-validator-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  @IsGitHubPrivate
   PHOSS_VALIDATOR_STANDALONE (PHOSS_VALIDATOR, "phoss-validator-standalone", EProjectType.JAVA_APPLICATION),
 
   PEPPOL_PRACTICAL (null,
@@ -808,10 +815,9 @@ public enum EProject implements IProject
                              "0.10.5",
                              EJDK.JDK8),
   TOOP_CONNECTOR_API (TOOP_CONNECTOR_PARENT_POM, "toop-connector-api", EProjectType.JAVA_LIBRARY),
-  TOOP_R2D2_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-r2d2-client", EProjectType.JAVA_LIBRARY),
-  TOOP_SMM_CLIENT (TOOP_CONNECTOR_PARENT_POM, "toop-smm-client", EProjectType.JAVA_LIBRARY),
-  TOOP_MESSAGE_EXCHANGE (TOOP_CONNECTOR_PARENT_POM, "toop-message-exchange", EProjectType.JAVA_LIBRARY),
+  TOOP_MEM_DEFAULT (TOOP_CONNECTOR_PARENT_POM, "toop-mem-default", EProjectType.JAVA_LIBRARY),
   TOOP_MEM_PHASE4 (TOOP_CONNECTOR_PARENT_POM, "toop-mem-phase4", EProjectType.JAVA_LIBRARY),
+  TOOP_CONNECTOR (TOOP_CONNECTOR_PARENT_POM, "toop-connector", EProjectType.JAVA_LIBRARY, (String) null),
   TOOP_CONNECTOR_WEBAPP (TOOP_CONNECTOR_PARENT_POM, "toop-connector-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;

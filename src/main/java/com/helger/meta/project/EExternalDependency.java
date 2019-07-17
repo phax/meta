@@ -245,6 +245,8 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.16", EJDK.JDK8),
 
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.1.0", EJDK.JDK8),
+
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.16", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
