@@ -103,7 +103,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.7", EJDK.JDK8),
+  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.8", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -208,11 +208,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.12", EJDK.JDK8),
 
-  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.5.0", EJDK.JDK8),
+  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.5.1", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.5.0", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.5.1", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
-  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.5.0", EJDK.JDK8),
+  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.5.1", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.3.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
@@ -244,9 +244,9 @@ public enum EExternalDependency
   MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.10.2", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER),
 
-  MYSQL ("mysql", "mysql-connector-java", "8.0.16", EJDK.JDK8),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.17", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.1.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.16", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -278,7 +278,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.3", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.3", EJDK.JDK8),
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.4", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.4.0", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
