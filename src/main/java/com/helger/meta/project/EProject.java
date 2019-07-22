@@ -607,7 +607,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "5.1.10",
+                      "5.1.11",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_UBL (PH_BDVE_PARENT_POM, "ph-bdve-ubl", EProjectType.JAVA_LIBRARY),
@@ -772,16 +772,6 @@ public enum EProject implements IProject
                EJDK.JDK8),
 
   // TOOP stuff
-  TOOP_PARENT_POM (null,
-                   IProject.PROJECT_OWNER_TOOP,
-                   "toop-parent-pom",
-                   "toop-parent-pom",
-                   EProjectType.MAVEN_POM,
-                   EHasPages.FALSE,
-                   EHasWiki.FALSE,
-                   "1.1.1",
-                   EJDK.JDK8),
-
   TOOP_COMMONS_PARENT_POM (null,
                            IProject.PROJECT_OWNER_TOOP,
                            "toop-commons-parent-pom",

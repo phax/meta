@@ -195,7 +195,17 @@ public enum EProjectDeprecated implements IProject
              EHasPages.FALSE,
              EHasWiki.FALSE,
              "0.1.0",
-             EJDK.JDK8);
+             EJDK.JDK8),
+
+  TOOP_PARENT_POM (null,
+                   IProject.PROJECT_OWNER_TOOP,
+                   "toop-parent-pom",
+                   "toop-parent-pom",
+                   EProjectType.MAVEN_POM,
+                   EHasPages.FALSE,
+                   EHasWiki.FALSE,
+                   "1.1.1",
+                   EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
