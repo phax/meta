@@ -88,7 +88,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         "9.3.4",
+                         "9.3.5",
                          EJDK.JDK8),
   PH_COMMONS (PH_COMMONS_PARENT_POM, "ph-commons", EProjectType.JAVA_LIBRARY),
   PH_WSCLIENT (PH_COMMONS_PARENT_POM, "ph-wsclient", EProjectType.JAVA_LIBRARY),
@@ -705,7 +705,7 @@ public enum EProject implements IProject
   PH_AS4_PROFILE_CEF (PH_AS4_PARENT_POM, "ph-as4-profile-cef", EProjectType.JAVA_LIBRARY, null),
   PH_AS4_SERVLET (PH_AS4_PARENT_POM, "ph-as4-servlet", EProjectType.JAVA_LIBRARY),
   PH_AS4_SERVER_WEBAPP (PH_AS4_PARENT_POM, "ph-as4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM, "ph-as4-server-webapp-test", EProjectType.JAVA_WEB_APPLICATION),
+  PH_AS4_TEST (PH_AS4_PARENT_POM, "ph-as4-test", EProjectType.JAVA_WEB_APPLICATION, (String) null),
 
   @IsGitHubPrivate
   TOTHOLZ (null,

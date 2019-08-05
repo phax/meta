@@ -61,7 +61,7 @@ public enum EExternalDependency
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.6.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.6.2", EJDK.JDK8),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.7.0", EJDK.JDK8),
   DNSJAVA ("dnsjava", "dnsjava", "2.1.9", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
@@ -88,7 +88,7 @@ public enum EExternalDependency
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.199", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.1", EJDK.JDK8),
-  HAZELCAST ("com.hazelcast", "hazelcast", "3.12.1", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "3.12.2", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.11", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.9", EJDK.JDK8),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
@@ -97,13 +97,13 @@ public enum EExternalDependency
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.9", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   // TODO special version
-  JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", "2.9.9.1", EJDK.JDK8),
+  JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", "2.9.9.2", EJDK.JDK8),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER ("com.github.javaparser", "javaparser-core", "3.14.8", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.9", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -228,7 +228,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 9 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.1.1", EJDK.JDK9),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.2.0", EJDK.JDK9),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -246,7 +246,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.17", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.16", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -273,10 +273,10 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.22.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.23.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
-  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.3", EJDK.JDK8),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.4", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
@@ -311,7 +311,7 @@ public enum EExternalDependency
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.1", EJDK.JDK8),
-  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.7.1", EJDK.JDK8),
+  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.8.2", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.2", EJDK.JDK8),
