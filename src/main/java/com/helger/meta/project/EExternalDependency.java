@@ -53,12 +53,12 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190709", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190729", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
-  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.6.0", EJDK.JDK8),
+  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.7.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.7.0", EJDK.JDK8),
@@ -97,7 +97,7 @@ public enum EExternalDependency
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.9.9", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   // TODO special version
-  JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", "2.9.9.2", EJDK.JDK8),
+  JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", "2.9.9.3", EJDK.JDK8),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
@@ -264,13 +264,15 @@ public enum EExternalDependency
   SERVLET_API_310("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.26", EJDK.JDK8),
+
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.27", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
-  SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
-  STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.1", EJDK.JDK8),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
+
+  SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
+  STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.1", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   UNDERTOW ("io.undertow", "undertow-servlet", "2.0.23.Final", EJDK.JDK8),

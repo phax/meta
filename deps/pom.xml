@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190805</version>
+  <version>1.0.0-20190808</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20190709</version>
+      <version>v20190729</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -108,7 +108,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-dbcp2</artifactId>
-      <version>2.6.0</version>
+      <version>2.7.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -269,7 +269,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.9.2</version>
+      <version>2.9.9.3</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
@@ -728,17 +728,27 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.26</version>
+      <version>1.7.27</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>1.7.26</version>
+      <version>1.7.27</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.26</version>
+      <version>1.7.27</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jul-to-slf4j</artifactId>
+      <version>1.7.27</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>1.7.27</version>
     </dependency>
     <dependency>
       <groupId>org.spockframework</groupId>
@@ -749,16 +759,6 @@
       <groupId>org.jvnet.staxex</groupId>
       <artifactId>stax-ex</artifactId>
       <version>1.8.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.26</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.26</version>
     </dependency>
     <dependency>
       <groupId>org.threeten</groupId>
@@ -1959,24 +1959,35 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-as4-parent-pom</artifactId>
-      <version>0.8.2</version>
+      <artifactId>phase4-parent-pom</artifactId>
+      <version>0.9.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-as4-lib</artifactId>
-      <version>0.8.2</version>
+      <artifactId>phase4-lib</artifactId>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-as4-servlet</artifactId>
-      <version>0.8.2</version>
+      <artifactId>phase4-profile-cef</artifactId>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-as4-server-webapp</artifactId>
-      <version>0.8.2</version>
+      <artifactId>phase4-servlet</artifactId>
+      <version>0.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phase4-server-webapp</artifactId>
+      <version>0.9.0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phase4-test</artifactId>
+      <version>0.9.0</version>
       <type>war</type>
     </dependency>
     <dependency>
