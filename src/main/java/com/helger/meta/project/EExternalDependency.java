@@ -55,7 +55,7 @@ public enum EExternalDependency
 
   CLOSURE ("com.google.javascript", "closure-compiler", "v20190729", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
-  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.3", EJDK.JDK8),
+  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.7.0", EJDK.JDK8),
@@ -103,7 +103,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.9", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.10", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -189,7 +189,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.19.v20190610", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.20.v20190813", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -216,7 +216,7 @@ public enum EExternalDependency
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.3.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.12.0", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.12.1", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
@@ -241,7 +241,7 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
-  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.10.2", EJDK.JDK8),
+  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.11.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.17", EJDK.JDK8),
@@ -265,7 +265,7 @@ public enum EExternalDependency
   SERVLET_API_400 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.27", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.28", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
@@ -275,7 +275,7 @@ public enum EExternalDependency
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.1", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.23.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.25.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
