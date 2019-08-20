@@ -103,7 +103,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.2", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.10", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.11", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -286,7 +286,7 @@ public enum EExternalDependency
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0", EJDK.JDK8),
-  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "4.2.0", EJDK.JDK8),
+  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "4.2.1", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "1.8", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.1.1", EJDK.JDK8),
