@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190820</version>
+  <version>1.0.0-20190827</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20190729</version>
+      <version>v20190819</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -294,7 +294,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.14.11</version>
+      <version>3.14.12</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
