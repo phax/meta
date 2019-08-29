@@ -67,6 +67,7 @@ git push --delete origin tagname
 ## Eclipse and git
 
 Get rid of all non-existing remote branches:
+
 ```
 git fetch --prune
 ```
