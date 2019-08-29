@@ -8,9 +8,15 @@ git config --global user.email "philip@helger.com"
 git config --global user.name "Philip Helger"
 ```
 
-Store credentials when using commandline git:
+Store credentials when using commandline git.
+Windows:
 ```
 git config --global credential.helper wincred
+```
+
+Linux:
+```
+git config --global credential.helper cache
 ```
 
 Newline settings for Windows users:
