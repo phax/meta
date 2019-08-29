@@ -24,6 +24,8 @@
   <basedir>c:\dev\svn-philip\dev</basedir>
   <basedir>c:\Entwicklung\git</basedir>
   <basedir>c:\Entwicklung\svn\svn-philip\dev</basedir>
+  <basedir>/home/philip/git</basedir>
+  <basedir>/home/philip/svn/philip/dev</basedir>
   <!-- KB
   <project projectname="kb-parent-pom" projecttype="maven-pom" minjdk="8" dir="kellerbuch">
     <project projectname="kb-app" />
