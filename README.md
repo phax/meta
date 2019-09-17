@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-09-12):
+Current list of all released projects (as of 2019-09-17):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.4.3 - JDK 1.8
 
@@ -37,11 +37,11 @@ Current list of all released projects (as of 2019-09-12):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-server.svg?branch=master)](https://travis-ci.org/phax/as2-server)
- * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 3.0.8 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.1.4 - JDK 1.8
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.1.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
@@ -814,6 +814,9 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
+ * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/austriapro/ebinterface-rendering.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-rendering)
  * [meta](https://github.com/phax/meta) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/meta.svg?branch=master)](https://travis-ci.org/phax/meta)

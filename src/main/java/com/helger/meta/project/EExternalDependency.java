@@ -47,13 +47,13 @@ public enum EExternalDependency
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.0", EJDK.JDK8),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.62", EJDK.JDK8),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.63", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLOSURE ("com.google.javascript", "closure-compiler", "v20190819", EJDK.JDK8),
+  CLOSURE ("com.google.javascript", "closure-compiler", "v20190909", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
@@ -76,7 +76,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
-  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.9", EJDK.JDK8),
+  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.10", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -91,7 +91,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.1", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.12.2", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.12", EJDK.JDK8),
-  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.9", EJDK.JDK8),
+  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.10", EJDK.JDK8),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
@@ -104,7 +104,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.13", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.14.14", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   JAVAX_ACTIVATION ("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -182,7 +182,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.29", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.29.1", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
