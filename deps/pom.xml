@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190925</version>
+  <version>1.0.0-20190926</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1753,34 +1753,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1821,12 +1821,12 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.0.8</version>
+      <version>3.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-servlet</artifactId>
-      <version>5.0.5</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.en16931</groupId>
