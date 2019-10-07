@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20190918</version>
+  <version>1.0.0-20191001</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -33,22 +33,22 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>7.1</version>
+      <version>7.2</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>7.1</version>
+      <version>7.2</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>7.1</version>
+      <version>7.2</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>7.1</version>
+      <version>7.2</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -213,7 +213,7 @@
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
       <artifactId>gmavenplus-plugin</artifactId>
-      <version>1.7.1</version>
+      <version>1.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -264,27 +264,27 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.9.9</version>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.9.9</version>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.9.3</version>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-afterburner</artifactId>
-      <version>2.9.9</version>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-cbor</artifactId>
-      <version>2.9.9</version>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.jacoco</groupId>
@@ -292,14 +292,34 @@
       <version>0.8.4</version>
     </dependency>
     <dependency>
+      <groupId>com.sun.activation</groupId>
+      <artifactId>jakarta.activation</artifactId>
+      <version>1.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>jakarta.mail</artifactId>
+      <version>1.6.4</version>
+    </dependency>
+    <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>jakarta.persistence</artifactId>
       <version>2.2.3</version>
     </dependency>
     <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>4.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <version>2.3.6</version>
+    </dependency>
+    <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.14.14</version>
+      <version>3.14.159265359</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -307,19 +327,14 @@
       <version>7.0.4</version>
     </dependency>
     <dependency>
-      <groupId>javax.activation</groupId>
-      <artifactId>activation</artifactId>
-      <version>1.1.1</version>
-    </dependency>
-    <dependency>
       <groupId>org.glassfish</groupId>
       <artifactId>javax.el</artifactId>
       <version>3.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.sun.mail</groupId>
-      <artifactId>javax.mail</artifactId>
-      <version>1.6.2</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
@@ -452,33 +467,33 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.20.v20190813</version>
+      <version>9.4.21.v20190926</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -499,16 +514,6 @@
       <groupId>com.jcraft</groupId>
       <artifactId>jsch</artifactId>
       <version>0.1.55</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>jsp-api</artifactId>
-      <version>2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>javax.servlet.jsp-api</artifactId>
-      <version>2.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
@@ -668,22 +673,22 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>5.2.1</version>
+      <version>5.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
-      <version>2.0.16</version>
+      <version>2.0.17</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-app</artifactId>
-      <version>2.0.16</version>
+      <version>2.0.17</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
-      <version>2.0.16</version>
+      <version>2.0.17</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -719,11 +724,6 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>3.141.59</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.odftoolkit</groupId>
@@ -768,7 +768,7 @@
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
       <artifactId>stax-ex</artifactId>
-      <version>1.8.1</version>
+      <version>1.8.2</version>
     </dependency>
     <dependency>
       <groupId>org.threeten</groupId>
@@ -1051,98 +1051,98 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-wsclient</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-bc</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>9.3.6</version>
+      <version>9.3.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1753,34 +1753,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.4.3</version>
+      <version>4.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1821,12 +1821,12 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.0.8</version>
+      <version>3.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-servlet</artifactId>
-      <version>5.0.5</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.en16931</groupId>
@@ -1958,14 +1958,19 @@
       <version>1.1.5</version>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>4.0.1</version>
+      <groupId>at.austriapro</groupId>
+      <artifactId>ebinterface-rendering</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
+      <groupId>at.austriapro</groupId>
+      <artifactId>ebinterface-ubl-mapping</artifactId>
+      <version>4.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-xrechnung-mapping</artifactId>
-      <version>0.9.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
