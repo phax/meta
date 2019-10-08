@@ -816,6 +816,9 @@ Current list of all released projects (as of 2019-10-08):
 
 Current list of all unreleased projects:
 
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
  * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)

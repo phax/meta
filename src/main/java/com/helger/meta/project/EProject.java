@@ -533,6 +533,7 @@ public enum EProject implements IProject
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
   AS2_SERVER (AS2_LIB_PARENT_POM, "as2-server", EProjectType.JAVA_LIBRARY),
   AS2_DEMO_WEBAPP (AS2_LIB_PARENT_POM, "as2-demo-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION, (String) null),
 
   PEPPOL_COMMONS_PARENT_POM (null,
                              IProject.DEFAULT_PROJECT_OWNER,

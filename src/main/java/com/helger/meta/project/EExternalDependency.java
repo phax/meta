@@ -279,7 +279,10 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
+  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.1.9.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.1.9.RELEASE", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.2", EJDK.JDK8),
+
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   UNDERTOW ("io.undertow", "undertow-servlet", "2.0.26.Final", EJDK.JDK8),
