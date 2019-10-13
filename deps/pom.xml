@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20191010</version>
+  <version>1.0.0-20191014</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -58,27 +58,27 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk15on</artifactId>
-      <version>1.63</version>
+      <version>1.64</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk15on</artifactId>
-      <version>1.63</version>
+      <version>1.64</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.63</version>
+      <version>1.64</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
-      <version>1.63</version>
+      <version>1.64</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
-      <version>1.63</version>
+      <version>1.64</version>
     </dependency>
     <dependency>
       <groupId>com.google.javascript</groupId>
@@ -208,7 +208,7 @@
     <dependency>
       <groupId>de.thetaphi</groupId>
       <artifactId>forbiddenapis</artifactId>
-      <version>2.6</version>
+      <version>2.7</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
@@ -289,7 +289,7 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5</version>
     </dependency>
     <dependency>
       <groupId>com.sun.activation</groupId>
@@ -658,17 +658,17 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver</artifactId>
-      <version>3.11.0</version>
+      <version>3.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>3.11.0</version>
+      <version>3.11.1</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.17</version>
+      <version>8.0.18</version>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
@@ -1763,33 +1763,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.4.4</version>
+      <version>4.4.5</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -1831,12 +1831,12 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.0.9</version>
+      <version>3.0.10</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-servlet</artifactId>
-      <version>5.1.1</version>
+      <version>5.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.en16931</groupId>

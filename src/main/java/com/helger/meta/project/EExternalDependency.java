@@ -47,7 +47,7 @@ public enum EExternalDependency
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.0", EJDK.JDK8),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.63", EJDK.JDK8),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.64", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
@@ -80,7 +80,7 @@ public enum EExternalDependency
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.3", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.6", EJDK.JDK8),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.7", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.0", EJDK.JDK8),
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -101,7 +101,7 @@ public enum EExternalDependency
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.4", EJDK.JDK8),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.5", EJDK.JDK8),
   JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.1", EJDK.JDK8),
   JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
@@ -250,10 +250,10 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
-  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.11.0", EJDK.JDK8),
+  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.11.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER),
 
-  MYSQL ("mysql", "mysql-connector-java", "8.0.17", EJDK.JDK8),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.18", EJDK.JDK8),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.2", EJDK.JDK8),
 
