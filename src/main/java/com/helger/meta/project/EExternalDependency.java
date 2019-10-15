@@ -87,7 +87,7 @@ public enum EExternalDependency
   @IsBOM
   GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.8", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
-  H2 ("com.h2database", "h2", "1.4.199", EJDK.JDK8),
+  H2 ("com.h2database", "h2", "1.4.200", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.1", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.12.3", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.12", EJDK.JDK8),
@@ -107,7 +107,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.0", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.1", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.4", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),

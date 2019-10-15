@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20191014</version>
+  <version>1.0.0-20191015</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -229,7 +229,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>1.4.199</version>
+      <version>1.4.200</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -319,7 +319,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.15.0</version>
+      <version>3.15.1</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -1980,7 +1980,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-xrechnung-mapping</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
