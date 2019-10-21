@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20191015</version>
+  <version>1.0.0-20191021</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -153,22 +153,22 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.core</artifactId>
-      <version>2.7.4</version>
+      <version>2.7.5</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.jpa</artifactId>
-      <version>2.7.4</version>
+      <version>2.7.5</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.antlr</artifactId>
-      <version>2.7.4</version>
+      <version>2.7.5</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.asm</artifactId>
-      <version>2.7.4</version>
+      <version>2.7.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
@@ -234,7 +234,7 @@
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
-      <version>2.1</version>
+      <version>2.2</version>
     </dependency>
     <dependency>
       <groupId>com.hazelcast</groupId>
@@ -319,12 +319,12 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.15.1</version>
+      <version>3.15.2</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
       <artifactId>javacc</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
@@ -698,17 +698,17 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -773,12 +773,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.1.9.RELEASE</version>
+      <version>2.2.0.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.1.9.RELEASE</version>
+      <version>2.2.0.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -798,7 +798,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.0.26.Final</version>
+      <version>2.0.27.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1691,58 +1691,58 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl-parent-pom</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl-api</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl-testfiles</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl20</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl20-codelists</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl21</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl21-codelists</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl22</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubl22-codelists</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ublpe</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ubltr</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1768,33 +1768,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.4.5</version>
+      <version>4.4.6</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -2033,49 +2033,59 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-parent-pom</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-schematron</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-interface</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-parent-pom</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-api</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
+    </dependency>
+    <dependency>
+      <groupId>eu.toop</groupId>
+      <artifactId>toop-mem-default</artifactId>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-mem-phase4</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
+    </dependency>
+    <dependency>
+      <groupId>eu.toop</groupId>
+      <artifactId>toop-connector</artifactId>
+      <version>0.10.6</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-connector-webapp</artifactId>
-      <version>0.10.5</version>
+      <version>0.10.6</version>
       <type>war</type>
     </dependency>
   </dependencies>
