@@ -136,7 +136,7 @@ public enum EExternalDependency
 
   @IsBOM
   JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.2", EJDK.JDK9),
-  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
+  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", "2.3.2-1", EJDK.JDK9),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
   JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
