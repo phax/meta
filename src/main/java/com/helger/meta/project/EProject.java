@@ -370,7 +370,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "6.1.4",
+                    "6.1.5",
                     EJDK.JDK8),
   PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY),
   PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
@@ -599,7 +599,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "5.1.13",
+                      "5.1.14",
                       EJDK.JDK8),
   PH_BDVE (PH_BDVE_PARENT_POM, "ph-bdve", EProjectType.JAVA_LIBRARY),
   PH_BDVE_UBL (PH_BDVE_PARENT_POM, "ph-bdve-ubl", EProjectType.JAVA_LIBRARY),
@@ -717,6 +717,7 @@ public enum EProject implements IProject
   PHASE4_SERVLET (PHASE4_PARENT_POM, "phase4-servlet", EProjectType.JAVA_LIBRARY),
   PHASE4_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PHASE4_TEST (PHASE4_PARENT_POM, "phase4-test", EProjectType.JAVA_WEB_APPLICATION),
+  PHASE4_PEPPOL_CLIENT (PHASE4_PARENT_POM, "phase4-peppol-client", EProjectType.JAVA_LIBRARY, (String) null),
 
   @IsGitHubPrivate
   TOTHOLZ (null,
