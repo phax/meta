@@ -16,6 +16,7 @@
  */
 package com.helger.meta.tools.buildsystem;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -28,6 +29,7 @@ import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
 import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.commons.datetime.PDTFactory;
+import com.helger.commons.io.file.FilenameHelper;
 import com.helger.commons.regex.RegExHelper;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
@@ -141,6 +143,40 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     return ret;
   }
 
+  private static void _addParentPOMProperties (@Nonnull final File aThisPOMFile,
+                                               @Nonnull final IMicroElement eProject,
+                                               @Nonnull final ICommonsMap <String, String> aProperties)
+  {
+    final IMicroElement eParent = eProject.getFirstChildElement ("parent");
+    if (eParent != null)
+    {
+      String sParentPath = MicroHelper.getChildTextContent (eParent, "relativePath");
+      if (StringHelper.hasNoText (sParentPath))
+        sParentPath = "../";
+      else
+        sParentPath = FilenameHelper.ensurePathEndingWithSeparator (sParentPath);
+      final File fParentPOM = new File (aThisPOMFile.getParentFile (), sParentPath + "pom.xml").getAbsoluteFile ();
+      final IMicroDocument aParentPOM = MicroReader.readMicroXML (fParentPOM);
+      if (aParentPOM != null)
+      {
+        if (LOGGER.isDebugEnabled ())
+          LOGGER.debug ("Sucessfully resolved parent POM " + fParentPOM.getAbsolutePath ());
+
+        // First read parent of parent properties
+        _addParentPOMProperties (fParentPOM, aParentPOM.getDocumentElement (), aProperties);
+
+        // Than read the properties
+        final IMicroElement eProperties = aParentPOM.getDocumentElement ().getFirstChildElement ("properties");
+        if (eProperties != null)
+          eProperties.forAllChildElements (eProperty -> {
+            String sValue = eProperty.getTextContentTrimmed ();
+            sValue = _getResolvedVar (sValue, aProperties);
+            aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
+          });
+      }
+    }
+  }
+
   private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
   {
     if (LOGGER.isDebugEnabled ())
@@ -154,6 +190,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     // Put in predefined properties
     aProperties.put ("${maven.build.timestamp}", PDTFactory.getCurrentLocalDateTime ().toString ());
     aProperties.put ("${project.build.directory}", aProject.getFullBaseDirName () + "/target");
+
+    // Try read the parent POM properties
+    _addParentPOMProperties (aProject.getPOMFile (), eRoot, aProperties);
 
     // Read all unconditional properties
     {
@@ -227,6 +266,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         }
     }
 
+    if (LOGGER.isDebugEnabled ())
+      LOGGER.debug ("Having the following POM properties: " + aProperties.toString ());
+
     // Check parent POM
     String sParentPOMGroupId = null;
     String sParentPOMArtifactId = null;
@@ -240,6 +282,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       }
       else
       {
+        // Found a "<parent>" element
         final String sGroupId = MicroHelper.getChildTextContent (eParent, "groupId");
         sParentPOMGroupId = sGroupId;
         if (!_isSupportedGroupID (sGroupId))

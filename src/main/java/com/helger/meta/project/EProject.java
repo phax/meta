@@ -81,6 +81,23 @@ public enum EProject implements IProject
               "3.2.4",
               EJDK.JDK8),
 
+  MAVEN_JAXB2_PLUGIN_PROJECT (null,
+                              IProject.DEFAULT_PROJECT_OWNER,
+                              "maven-jaxb2-plugin-project",
+                              "maven-jaxb2-plugin",
+                              EProjectType.MAVEN_POM,
+                              EHasPages.FALSE,
+                              EHasWiki.FALSE,
+                              "0.14.1",
+                              EJDK.JDK8),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
+                            "maven-jaxb22-plugin-core",
+                            "plugin-core",
+                            EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
+
   PH_COMMONS_PARENT_POM (null,
                          IProject.DEFAULT_PROJECT_OWNER,
                          "ph-commons-parent-pom",
@@ -503,6 +520,8 @@ public enum EProject implements IProject
   PH_UBL21_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl21-codelists", EProjectType.JAVA_LIBRARY),
   PH_UBL22 (PH_UBL_PARENT_POM, "ph-ubl22", EProjectType.JAVA_LIBRARY),
   PH_UBL22_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl22-codelists", EProjectType.JAVA_LIBRARY),
+  PH_UBL23 (PH_UBL_PARENT_POM, "ph-ubl23", EProjectType.JAVA_LIBRARY, (String) null),
+  PH_UBL23_CODELISTS (PH_UBL_PARENT_POM, "ph-ubl23-codelists", EProjectType.JAVA_LIBRARY, (String) null),
   PH_UBLPE (PH_UBL_PARENT_POM, "ph-ublpe", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
 
@@ -639,20 +658,14 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        null,
+                        "5.2.0",
                         EJDK.JDK8),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
-  PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM,
-                             "phoss-smp-backend-mongodb",
-                             EProjectType.JAVA_LIBRARY,
-                             (String) null),
+  PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_SQL (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-sql", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_XML (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-xml", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_WEBAPP (PHOSS_SMP_PARENT_POM, "phoss-smp-webapp", EProjectType.JAVA_LIBRARY),
-  PHOSS_SMP_WEBAPP_MONGODB (PHOSS_SMP_PARENT_POM,
-                            "phoss-smp-webapp-mongodb",
-                            EProjectType.JAVA_WEB_APPLICATION,
-                            (String) null),
+  PHOSS_SMP_WEBAPP_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-webapp-mongodb", EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_SMP_WEBAPP_SQL (PHOSS_SMP_PARENT_POM, "phoss-smp-webapp-sql", EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_SMP_WEBAPP_XML (PHOSS_SMP_PARENT_POM, "phoss-smp-webapp-xml", EProjectType.JAVA_WEB_APPLICATION),
 
@@ -839,7 +852,27 @@ public enum EProject implements IProject
                     @Nonnull @Nonempty final String sProjectName,
                     @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject, sProjectName, sProjectName, eProjectType);
+  }
+
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull @Nonempty final String sProjectBaseDirName,
+                    @Nonnull final EProjectType eProjectType)
+  {
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
+  }
+
+  private EProject (@Nonnull final EProject eParentProject,
+                    @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull final EProjectType eProjectType,
+                    @Nullable final String sLastPublishedVersion)
+  {
+    this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
   }
 
   /**
@@ -857,6 +890,7 @@ public enum EProject implements IProject
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   private EProject (@Nonnull final EProject eParentProject,
                     @Nonnull @Nonempty final String sProjectName,
+                    @Nonnull @Nonempty final String sProjectBaseDirName,
                     @Nonnull final EProjectType eProjectType,
                     @Nullable final String sLastPublishedVersion)
   {
@@ -864,7 +898,7 @@ public enum EProject implements IProject
     this (eParentProject,
           eParentProject.getProjectOwner (),
           sProjectName,
-          sProjectName,
+          sProjectBaseDirName,
           eProjectType,
           EHasPages.FALSE,
           EHasWiki.FALSE,

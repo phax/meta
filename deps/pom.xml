@@ -56,6 +56,11 @@
       <version>1.2.0</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.xmlgraphics</groupId>
+      <artifactId>batik-bridge</artifactId>
+      <version>1.11</version>
+    </dependency>
+    <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk15on</artifactId>
       <version>1.64</version>
@@ -1064,6 +1069,32 @@
       <version>3.2.4</version>
     </dependency>
     <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>maven-jaxb2-plugin-project</artifactId>
+      <version>0.14.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>maven-jaxb2-plugin-core</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>maven-jaxb22-plugin</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>maven-jaxb23-plugin</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>maven-jaxb2-plugin</artifactId>
+      <version>0.14.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
       <version>9.3.7</version>
@@ -1971,6 +2002,55 @@
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
       <version>0.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-parent-pom</artifactId>
+      <version>5.2.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-backend</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-backend-mongodb</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-backend-sql</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-backend-xml</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-webapp</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-webapp-mongodb</artifactId>
+      <version>5.2.0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-webapp-sql</artifactId>
+      <version>5.2.0</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>phoss-smp-webapp-xml</artifactId>
+      <version>5.2.0</version>
+      <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
