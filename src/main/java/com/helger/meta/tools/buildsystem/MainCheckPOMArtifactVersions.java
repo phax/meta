@@ -667,12 +667,13 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN &&
+      if (aProject != EProject.EBINTERFACE_RENDERING &&
           aProject != EProject.MAVEN_JAXB2_PLUGIN_PROJECT &&
           aProject != EProject.MAVEN_JAXB22_PLUGIN_CORE &&
           aProject != EProject.MAVEN_JAXB2_PLUGIN &&
           aProject != EProject.MAVEN_JAXB22_PLUGIN &&
-          aProject != EProject.MAVEN_JAXB23_PLUGIN)
+          aProject != EProject.MAVEN_JAXB23_PLUGIN &&
+          aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)

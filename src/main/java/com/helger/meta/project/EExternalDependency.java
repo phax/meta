@@ -117,9 +117,9 @@ public enum EExternalDependency
   JAVAX_MAIL("com.sun.mail", "javax.mail", "1.6.2", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.persistence")
   JAVAX_PERSISTENCE("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK8),
-  @IsLegacy (replacedWith = "4.x")
-  JAVAX_SERVLET_API_310("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.LEGACY),
-  JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK8),
+  // @IsLegacy (replacedWith = "4.x")
+  JAVAX_SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
+  JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK9),
 
   @IsBOM
   @IsLegacy (replacedWith = "2.3.x")
