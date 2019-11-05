@@ -49,5 +49,5 @@
     <project projectname="ecoware-ui" projecttype="java-web-application" />
   </project>
    -->
-  <project projectname="peppol-ap-lister" projecttype="java-application" minjdk="8" />
+  <project projectname="peppol-analytics" projecttype="java-application" minjdk="8" />
 </root>
