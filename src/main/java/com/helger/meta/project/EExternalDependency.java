@@ -256,6 +256,7 @@ public enum EExternalDependency
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
   MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.11.1", EJDK.JDK8),
+  MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", MONGO_DRIVER),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.18", EJDK.JDK8),
