@@ -1041,6 +1041,11 @@
       <version>3.0.5</version>
     </dependency>
     <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-maven-plugin</artifactId>
+      <version>3.1.12.1</version>
+    </dependency>
+    <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>jdepend-maven-plugin</artifactId>
       <version>2.0</version>
