@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-11-06):
+Current list of all released projects (as of 2019-11-07):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.4.8 - JDK 1.8
 
@@ -409,15 +409,15 @@ Current list of all released projects (as of 2019-11-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jaxws-pom.svg?branch=master)](https://travis-ci.org/phax/ph-jaxws-pom)
- * [ph-jdmc](https://github.com/phax/ph-jdmc) - Version 0.0.3 - JDK 1.8
+ * [ph-jdmc](https://github.com/phax/ph-jdmc) - Version 0.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
- * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - Version 0.0.3 - JDK 1.8
+ * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - Version 0.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core) 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
- * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - Version 0.0.3 - JDK 1.8
+ * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - Version 0.0.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)

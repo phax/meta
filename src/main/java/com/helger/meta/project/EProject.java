@@ -171,7 +171,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "0.0.3",
+                      "0.0.4",
                       EJDK.JDK8),
   PH_JDMC_CORE (PH_JDMC_PARENT_POM, "ph-jdmc-core", EProjectType.JAVA_LIBRARY),
   PH_JDMC_MAVEN_PLUGIN (PH_JDMC_PARENT_POM, "ph-jdmc-maven-plugin", EProjectType.MAVEN_PLUGIN),
