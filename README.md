@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2019-11-20):
+Current list of all released projects (as of 2019-11-22):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.4.8 - JDK 1.8
 
@@ -137,7 +137,7 @@ Current list of all released projects (as of 2019-11-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [ph-asic](https://github.com/phax/ph-asic) - Version 1.4.0 - JDK 1.8
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 1.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
    [![Build Status](https://travis-ci.org/phax/ph-asic.svg?branch=master)](https://travis-ci.org/phax/ph-asic)
