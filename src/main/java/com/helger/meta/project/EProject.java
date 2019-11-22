@@ -494,7 +494,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.TRUE,
                             EHasWiki.FALSE,
-                            "5.2.0",
+                            "5.3.0",
                             EJDK.JDK8),
   PH_SCHEMATRON (PH_SCHEMATRON_PARENT_POM, "ph-schematron", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
