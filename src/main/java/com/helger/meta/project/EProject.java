@@ -78,7 +78,7 @@ public enum EProject implements IProject
               EProjectType.JAVA_LIBRARY,
               EHasPages.TRUE,
               EHasWiki.FALSE,
-              "3.2.4",
+              "3.3.0",
               EJDK.JDK8),
 
   MAVEN_JAXB2_PLUGIN_PROJECT (null,
