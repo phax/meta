@@ -31,6 +31,7 @@ public interface IProject
   String PROJECT_OWNER_AUSTRIAPRO = "austriapro";
   String PROJECT_OWNER_TOOP = "TOOP4EU";
   String PROJECT_OWNER_CENTC434 = "CenPc434";
+  String PROJECT_ECOSIO_PH = "ecosio-ph";
   String EXTENSION_PAGES_PROJECT = ".pages";
   String EXTENSION_WIKI_PROJECT = ".wiki";
 

@@ -561,7 +561,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "7.0.3",
+                             "7.0.4",
                              EJDK.JDK8),
   PEPPOL_ID (PEPPOL_COMMONS_PARENT_POM, "peppol-id", EProjectType.JAVA_LIBRARY),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
@@ -754,27 +754,27 @@ public enum EProject implements IProject
          EJDK.JDK8),
 
   @IsGitHubPrivate
-  PHOSS_VALIDATOR (null,
-                   IProject.DEFAULT_PROJECT_OWNER,
-                   "phoss-validator-parent-pom",
-                   "phoss-validator",
-                   EProjectType.MAVEN_POM,
-                   EHasPages.FALSE,
-                   EHasWiki.FALSE,
-                   null,
-                   EJDK.JDK8),
+  ENTWERTER (null,
+             IProject.PROJECT_ECOSIO_PH,
+             "entwerter-parent-pom",
+             "entwerter",
+             EProjectType.MAVEN_POM,
+             EHasPages.FALSE,
+             EHasWiki.FALSE,
+             null,
+             EJDK.JDK8),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_ENGINE (PHOSS_VALIDATOR, "phoss-validator-engine", EProjectType.JAVA_LIBRARY),
+  ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_JAXWS (PHOSS_VALIDATOR, "phoss-validator-jaxws", EProjectType.JAVA_LIBRARY),
+  ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_AWSLAMBDA (PHOSS_VALIDATOR, "phoss-validator-awslambda", EProjectType.JAVA_LIBRARY),
+  ENTWERTER_AWSLAMBDA (ENTWERTER, "entwerter-awslambda", EProjectType.JAVA_LIBRARY),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_UI (PHOSS_VALIDATOR, "phoss-validator-ui", EProjectType.JAVA_LIBRARY),
+  ENTWERTER_UI (ENTWERTER, "entwerter-ui", EProjectType.JAVA_LIBRARY),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_WEBAPP (PHOSS_VALIDATOR, "phoss-validator-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
   @IsGitHubPrivate
-  PHOSS_VALIDATOR_STANDALONE (PHOSS_VALIDATOR, "phoss-validator-standalone", EProjectType.JAVA_APPLICATION),
+  ENTWERTER_STANDALONE (ENTWERTER, "entwerter-standalone", EProjectType.JAVA_APPLICATION),
 
   PEPPOL_PRACTICAL (null,
                     IProject.DEFAULT_PROJECT_OWNER,
