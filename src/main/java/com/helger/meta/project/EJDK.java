@@ -28,9 +28,7 @@ public enum EJDK
   LEGACY (7),
   JDK8 (8),
   JDK9 (9),
-  JDK10 (10),
-  JDK11 (11),
-  JDK12 (12);
+  JDK11 (11);
 
   private final int m_nMajor;
 
@@ -49,6 +47,8 @@ public enum EJDK
   @Nonempty
   public String getDisplayName ()
   {
+    if (m_nMajor > 8)
+      return "JDK " + m_nMajor;
     return "JDK 1." + m_nMajor;
   }
 
