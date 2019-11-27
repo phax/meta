@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20191126</version>
+  <version>1.0.0-20191127</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -84,11 +84,6 @@
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
       <version>1.64</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.javascript</groupId>
-      <artifactId>closure-compiler</artifactId>
-      <version>v20191111</version>
     </dependency>
     <dependency>
       <groupId>com.sun.codemodel</groupId>
@@ -219,6 +214,16 @@
       <groupId>org.codehaus.gmavenplus</groupId>
       <artifactId>gmavenplus-plugin</artifactId>
       <version>1.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.javascript</groupId>
+      <artifactId>closure-compiler</artifactId>
+      <version>v20191111</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf</artifactId>
+      <version>3.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -1897,7 +1902,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.0.11</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
