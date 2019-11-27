@@ -757,35 +757,35 @@ Current list of all released projects (as of 2019-11-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [phase4](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.4 - JDK 1.8
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
@@ -902,25 +902,25 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
- * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-awslambda](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-awslambda](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-engine](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-engine](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-jaxws](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-jaxws](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-standalone](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-standalone](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-ui](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-ui](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-webapp](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-webapp](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
  * [meta](https://github.com/phax/meta) - JDK 1.8
