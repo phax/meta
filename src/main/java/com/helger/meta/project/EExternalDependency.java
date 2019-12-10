@@ -84,7 +84,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20191111", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.0", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.1", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -278,7 +278,7 @@ public enum EExternalDependency
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-5", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-6", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
 
@@ -290,8 +290,8 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
-  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.1.RELEASE", EJDK.JDK8),
-  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.1.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.2.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.2.RELEASE", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.2", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
