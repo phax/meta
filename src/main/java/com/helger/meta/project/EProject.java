@@ -721,7 +721,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "0.9.5",
+                     "0.9.6",
                      EJDK.JDK8),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_CEF (PHASE4_PARENT_POM, "phase4-profile-cef", EProjectType.JAVA_LIBRARY),
