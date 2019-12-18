@@ -693,7 +693,7 @@ public enum EProject implements IProject
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "4.5.1",
+                           "4.5.2",
                            EJDK.JDK8),
   EBINTERFACE_XRECHNUNG_MAPPING (null,
                                  IProject.PROJECT_OWNER_AUSTRIAPRO,
