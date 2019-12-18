@@ -111,7 +111,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.6", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.7", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -185,7 +185,7 @@ public enum EExternalDependency
 
   @IsLegacy (replacedWith = "org.apache.pdfbox::jbig2-imageio")
   JBIG2("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK8),
-  JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.2", EJDK.JDK8),
+  JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.1", EJDK.JDK8),
 
   JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.19.0", EJDK.JDK8),
@@ -231,9 +231,9 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.5.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.3.1", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.4.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.12.1", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.13.0", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
@@ -282,7 +282,7 @@ public enum EExternalDependency
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.29", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.30", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
