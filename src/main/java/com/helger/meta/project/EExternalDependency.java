@@ -83,7 +83,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.7", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20191111", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200101", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.1", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -99,7 +99,7 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.10.1", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.10.2", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -111,7 +111,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.7", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.9", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -188,7 +188,7 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.1", EJDK.JDK8),
 
-  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.19.0", EJDK.JDK8),
+  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.20.0", EJDK.JDK8),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -204,7 +204,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.24.v20191120", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.25.v20191220", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -223,7 +223,7 @@ public enum EExternalDependency
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
-  JUNIT ("junit", "junit", "4.12", EJDK.JDK8),
+  JUNIT ("junit", "junit", "4.13", EJDK.JDK8),
 
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.5.2", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
@@ -245,7 +245,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 9 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.3.1", EJDK.JDK9),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.4.0", EJDK.JDK9),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -268,7 +268,7 @@ public enum EExternalDependency
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.4", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.17", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.18", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
@@ -296,7 +296,7 @@ public enum EExternalDependency
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.28.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.29.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
@@ -335,7 +335,7 @@ public enum EExternalDependency
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.8.2", EJDK.JDK8),
-  PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.0", EJDK.JDK8),
+  PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.2", EJDK.JDK8),
