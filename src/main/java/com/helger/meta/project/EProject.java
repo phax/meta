@@ -713,6 +713,7 @@ public enum EProject implements IProject
   PHASE4_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PHASE4_TEST (PHASE4_PARENT_POM, "phase4-test", EProjectType.JAVA_WEB_APPLICATION),
   PHASE4_PEPPOL_CLIENT (PHASE4_PARENT_POM, "phase4-peppol-client", EProjectType.JAVA_LIBRARY),
+  PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY, (String) null),
 
   @IsGitHubPrivate
   TOTHOLZ (null,

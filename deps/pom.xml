@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200107</version>
+  <version>1.0.0-20200108</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1089,32 +1089,6 @@
       <version>3.3.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin-project</artifactId>
-      <version>0.14.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin-core</artifactId>
-      <version>0.14.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb22-plugin</artifactId>
-      <version>0.14.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb23-plugin</artifactId>
-      <version>0.14.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin</artifactId>
-      <version>0.14.1</version>
-    </dependency>
-    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
       <version>9.3.9</version>
@@ -1415,7 +1389,7 @@
       <version>2.2.2</version>
     </dependency>
     <dependency>
-      <groupId>org.codehaus.mojo</groupId>
+      <groupId>com.helger.maven</groupId>
       <artifactId>jaxws-maven-plugin</artifactId>
       <version>2.6.2</version>
     </dependency>
