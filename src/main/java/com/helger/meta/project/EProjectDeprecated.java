@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2014-2019 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2020 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -220,7 +220,24 @@ public enum EProjectDeprecated implements IProject
                    EHasPages.FALSE,
                    EHasWiki.FALSE,
                    "1.1.1",
-                   EJDK.JDK8);
+                   EJDK.JDK8),
+
+  MAVEN_JAXB2_PLUGIN_PROJECT (null,
+                              IProject.DEFAULT_PROJECT_OWNER,
+                              "maven-jaxb2-plugin-project",
+                              "maven-jaxb2-plugin",
+                              EProjectType.MAVEN_POM,
+                              EHasPages.FALSE,
+                              EHasWiki.FALSE,
+                              "0.14.1",
+                              EJDK.JDK8),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
+                            "maven-jaxb22-plugin-core",
+                            "plugin-core",
+                            EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),;
 
   private final SimpleProject m_aProject;
 
@@ -240,10 +257,18 @@ public enum EProjectDeprecated implements IProject
                               @Nonnull final EProjectType eProjectType)
   {
     // Project name equals project base directory name
+    this (eParentProject, sProjectName, sProjectName, eProjectType);
+  }
+
+  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+                              @Nonnull @Nonempty final String sProjectName,
+                              @Nonnull @Nonempty final String sProjectBaseDirName,
+                              @Nonnull final EProjectType eProjectType)
+  {
     this (eParentProject,
           IProject.DEFAULT_PROJECT_OWNER,
           sProjectName,
-          sProjectName,
+          sProjectBaseDirName,
           eProjectType,
           EHasPages.FALSE,
           EHasWiki.FALSE,
