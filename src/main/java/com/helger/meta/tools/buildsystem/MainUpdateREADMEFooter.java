@@ -35,11 +35,12 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
   private static final String GIT_COMMIT_FOOTER_CHANGE_CMD = "git-commit-footer-change.cmd";
   private static final Charset README_CHARSET = StandardCharsets.UTF_8;
   private static final String SEPARATOR = "\n" + "---\n";
-  // Length is approx. 180 chars
+  // Length is approx. 245 chars
   public static final String COMMON_FOOTER = SEPARATOR +
                                              "\n" +
                                              "My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |\n" +
-                                             "On Twitter: <a href=\"https://twitter.com/philiphelger\">@philiphelger</a>\n";
+                                             "On Twitter: <a href=\"https://twitter.com/philiphelger\">@philiphelger</a> |\n" +
+                                             "Kindly supported by [YourKit Java Profiler](https://www.yourkit.com)";
 
   public static void main (final String [] args)
   {
