@@ -356,3 +356,6 @@ mongodb
 dockerfile
 normative
 crypting
+qvalia
+serverless
+preconfigured
