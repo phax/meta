@@ -49,7 +49,7 @@ Current list of all released projects (as of 2020-01-13):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
- * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.0.1 - JDK 1.8
+ * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping)
