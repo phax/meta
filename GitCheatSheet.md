@@ -56,6 +56,14 @@ Remove ALL Eclipse project files:
 git rm --cached -r .classpath .project .settings
 ```
 
+## Security related
+
+Globally ignore all certificate errors:
+
+```
+git config --global http.sslVerify false
+```
+
 ## Delete a tag
 
 Delete local:
