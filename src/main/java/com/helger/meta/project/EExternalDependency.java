@@ -84,13 +84,13 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.7", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200101", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200112", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.1", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.8", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "2.5.9", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.200", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
@@ -205,7 +205,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.25.v20191220", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", " 9.4.26.v20200117", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -246,7 +246,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 9 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.4.0", EJDK.JDK9),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.4.1", EJDK.JDK9),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -259,7 +259,7 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "2.4.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
-  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.12.0", EJDK.JDK8),
+  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.12.1", EJDK.JDK8),
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", MONGO_DRIVER),
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "1.13.0", EJDK.JDK8),
@@ -267,7 +267,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.19", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.2.4", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.3.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.18", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -292,8 +292,8 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
-  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.2.RELEASE", EJDK.JDK8),
-  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.2.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.3.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.3.RELEASE", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.2", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
