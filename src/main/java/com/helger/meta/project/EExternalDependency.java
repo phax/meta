@@ -77,7 +77,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
-  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.10", EJDK.JDK8),
+  FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.11", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.4", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -96,7 +96,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
   HAZELCAST ("com.hazelcast", "hazelcast", "3.12.5", EJDK.JDK8),
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.13", EJDK.JDK8),
-  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.10", EJDK.JDK8),
+  HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.11", EJDK.JDK8),
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
@@ -226,11 +226,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13", EJDK.JDK8),
 
-  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.5.2", EJDK.JDK8),
+  JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", "5.6.0", EJDK.JDK8),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER_API),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.5.2", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.6.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
-  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.5.2", EJDK.JDK8),
+  JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", "5.6.0", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.4.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
@@ -292,8 +292,8 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   SPOCK_CORE ("org.spockframework", "spock-core", "1.3-groovy-2.5", EJDK.JDK8),
-  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.3.RELEASE", EJDK.JDK8),
-  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.3.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.4.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.4.RELEASE", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.2", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),

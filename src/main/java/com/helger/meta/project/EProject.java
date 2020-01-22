@@ -559,7 +559,7 @@ public enum EProject implements IProject
                      EProjectType.JAVA_LIBRARY,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "3.2.0",
+                     "3.2.1",
                      EJDK.JDK8),
   AS2_PEPPOL_SERVLET (null,
                       IProject.DEFAULT_PROJECT_OWNER,
@@ -704,7 +704,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "0.9.6",
+                     "0.9.7",
                      EJDK.JDK8),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_CEF (PHASE4_PARENT_POM, "phase4-profile-cef", EProjectType.JAVA_LIBRARY),
@@ -713,7 +713,7 @@ public enum EProject implements IProject
   PHASE4_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PHASE4_TEST (PHASE4_PARENT_POM, "phase4-test", EProjectType.JAVA_WEB_APPLICATION),
   PHASE4_PEPPOL_CLIENT (PHASE4_PARENT_POM, "phase4-peppol-client", EProjectType.JAVA_LIBRARY),
-  PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY, (String) null),
+  PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY),
 
   @IsGitHubPrivate
   TOTHOLZ (null,
