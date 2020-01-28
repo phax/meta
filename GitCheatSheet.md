@@ -33,6 +33,13 @@ git config --global http.proxy %HTTP_PROXY%
 
 Note: git does not differentiate between `http` and `https`
 
+Exclude certain hosts from using the proxy:
+```
+set NO_PROXY=.company.com,localhost,127.0.0.1,::1
+```
+
+Note: change `.company.com` to your domain(s) and keep the leading dot!
+
 Disable TLS verification for all repos:
 ```
 git config --global http.sslVerify false
