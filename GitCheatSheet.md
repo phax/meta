@@ -22,7 +22,7 @@ git config --global credential.helper cache
 Newline settings for Windows users:
 ```
 git config --global core.autocrlf true
-git config --global core.eol lf
+# git config --global core.eol lf
 ```
 
 Proxy settings:
@@ -30,12 +30,12 @@ Proxy settings:
 set HTTP_PROXY=http://proxy.mycompany.org:80
 git config --global http.proxy %HTTP_PROXY%
 ```
+
 Note: git does not differentiate between `http` and `https`
 
-
-Disable acknowledgement box in Eclipse:
+Disable TLS verification for all repos:
 ```
-git config push.default simple
+git config --global http.sslVerify false
 ```
 
 ## Release a branch with maven-release-plugin
@@ -84,4 +84,10 @@ Get rid of all non-existing remote branches:
 
 ```
 git fetch --prune
+```
+
+Disable acknowledgement box in Eclipse (not 100% sure):
+
+```
+git config push.default simple
 ```
