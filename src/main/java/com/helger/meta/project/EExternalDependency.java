@@ -67,7 +67,7 @@ public enum EExternalDependency
   DNSJAVA ("dnsjava", "dnsjava", "2.1.9", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "4.1", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
 
   ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.5", EJDK.JDK8),
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
@@ -112,7 +112,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.9", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.10", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),

@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-01-22):
+Current list of all released projects (as of 2020-01-30):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.0 - JDK 1.8
 
@@ -733,143 +733,143 @@ Current list of all released projects (as of 2020-01-22):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [phase4](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.7 - JDK 1.8
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.8.3 - JDK 1.8
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.8.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.0 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.6-2 - JDK 1.8
+ * [toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.6-2 - JDK 1.8
+ * [toop-commons/toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-kafka-client](https://github.com/TOOP4EU/toop-commons) - Version 0.10.6-2 - JDK 1.8
+ * [toop-commons/toop-kafka-client](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-schematron](https://github.com/TOOP4EU/toop-commons) - Version 0.10.6-2 - JDK 1.8
+ * [toop-commons/toop-schematron](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector/toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-default](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector/toop-mem-default](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-default/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-default) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.6-2 - JDK 1.8
+ * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-interface](https://github.com/TOOP4EU/toop-interface) - Version 0.10.6-2 - JDK 1.8
+ * [toop-interface](https://github.com/TOOP4EU/toop-interface) - Version 0.10.8 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-interface.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-interface)
