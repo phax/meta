@@ -24,7 +24,7 @@
   Docs: http://www.mojohaus.org/versions-maven-plugin/version-rules.html 
    -->
   <ignoreVersions>
-    <ignoreVersion type="regex">.*[-_\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|pr|rc|RC|CR|M|EA|SNAOSHOT)[-_\.0-9]*</ignoreVersion>
+    <ignoreVersion type="regex">.*[-_\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|pr|rc|RC|CR|M|EA|SNAOSHOT|next)[-_\.0-9]*</ignoreVersion>
   </ignoreVersions>
   <rules>
     <rule groupId="*.maven" comparisonMethod="mercury"/>
