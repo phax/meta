@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200206</version>
+  <version>1.0.0-20200208</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -113,7 +113,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-compress</artifactId>
-      <version>1.19</version>
+      <version>1.20</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -223,7 +223,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20200112</version>
+      <version>v20200204</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -1399,7 +1399,7 @@
       <version>2.2.2</version>
     </dependency>
     <dependency>
-      <groupId>org.codehaus.mojo</groupId>
+      <groupId>com.helger.maven</groupId>
       <artifactId>jaxws-maven-plugin</artifactId>
       <version>2.6.2</version>
     </dependency>
@@ -1454,58 +1454,58 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>9.1.5</version>
+      <version>9.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1813,39 +1813,39 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.5.0</version>
+      <version>4.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1886,12 +1886,12 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-client</artifactId>
-      <version>3.2.1</version>
+      <version>3.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-servlet</artifactId>
-      <version>5.2.0</version>
+      <version>5.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.en16931</groupId>
@@ -2079,12 +2079,12 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>4.5.2</version>
+      <version>4.5.3</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-xrechnung-mapping</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>

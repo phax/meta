@@ -95,6 +95,8 @@ public class SimpleProject implements IProject
     final IMicroDocument aDoc = MicroReader.readMicroXML (getPOMFile ());
     if (aDoc != null)
     {
+      if (LOGGER.isDebugEnabled ())
+        LOGGER.debug ("Read " + getPOMFile ().getAbsolutePath () + " for project '" + sProjectName + "'");
       final IMicroElement eParent = aDoc.getDocumentElement ().getFirstChildElement ("parent");
       IMicroElement eGroupID = aDoc.getDocumentElement ().getFirstChildElement ("groupId");
       if (eGroupID == null && eParent != null)

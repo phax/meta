@@ -59,7 +59,7 @@ public enum EExternalDependency
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.14", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
-  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.19", EJDK.JDK8),
+  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.20", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.7.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
@@ -84,7 +84,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.7", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200112", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200204", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.3", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -182,7 +182,7 @@ public enum EExternalDependency
   JAXWS9_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS9_RI_BOM),
 
   @IsLegacy (replacedWith = "com.sun.xml.ws::jaxws-maven-plugin")
-  JAXWS_MAVEN_PLUGIN("org.codehaus.mojo", "jaxws-maven-plugin", "2.5", EJDK.JDK8),
+  JAXWS_MAVEN_PLUGIN("org.codehaus.mojo", "jaxws-maven-plugin", "2.6", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "org.apache.pdfbox::jbig2-imageio")
   JBIG2("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK8),
