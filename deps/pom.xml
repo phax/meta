@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200213</version>
+  <version>1.0.0-20200215</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1454,58 +1454,58 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-network</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-http</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-web</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>9.1.7</version>
+      <version>9.1.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1542,150 +1542,150 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-demo</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4-demo</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4-pages</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-bootstrap4-uictrls</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>8.2.1</version>
+      <version>8.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
