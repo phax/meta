@@ -35,6 +35,7 @@ public class SimpleProject implements IProject
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (SimpleProject.class);
 
+  private final EHostingPlatform m_eHostingPlatform;
   private final IProject m_aParentProject;
   private final String m_sProjectOwner;
   private final String m_sProjectName;
@@ -51,7 +52,8 @@ public class SimpleProject implements IProject
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
 
-  public SimpleProject (@Nullable final IProject aParentProject,
+  public SimpleProject (@Nonnull final EHostingPlatform eHostingPlatform,
+                        @Nullable final IProject aParentProject,
                         @Nonnull @Nonempty final String sProjectOwner,
                         @Nonnull @Nonempty final String sProjectName,
                         @Nonnull final EProjectType eProjectType,
@@ -72,6 +74,7 @@ public class SimpleProject implements IProject
     ValueEnforcer.notNull (eHasWikiProject, "HasWikiProject");
     ValueEnforcer.notNull (eMinJDK, "MinJDK");
 
+    m_eHostingPlatform = eHostingPlatform;
     m_aParentProject = aParentProject;
     m_sProjectOwner = sProjectOwner;
     m_sProjectName = sProjectName;
@@ -130,6 +133,12 @@ public class SimpleProject implements IProject
   public boolean isBuildInProject ()
   {
     return false;
+  }
+
+  @Nonnull
+  public EHostingPlatform getHostingPlatform ()
+  {
+    return m_eHostingPlatform;
   }
 
   @Nullable

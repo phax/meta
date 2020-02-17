@@ -17,6 +17,7 @@
 package com.helger.meta.project;
 
 import java.io.File;
+import java.lang.reflect.Field;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -80,6 +81,15 @@ public enum EProjectDeprecated implements IProject
                  EHasWiki.FALSE,
                  "3.5.3",
                  EJDK.JDK8),
+  PH_EVENTS (null,
+             IProject.DEFAULT_PROJECT_OWNER,
+             "ph-events",
+             "ph-events",
+             EProjectType.JAVA_LIBRARY,
+             EHasPages.FALSE,
+             EHasWiki.FALSE,
+             "5.0.0",
+             EJDK.JDK8),
 
   PH_HTML_PARENT_POM (null,
                       IProject.DEFAULT_PROJECT_OWNER,
@@ -306,7 +316,18 @@ public enum EProjectDeprecated implements IProject
                               @Nullable final String sLastPublishedVersion,
                               @Nonnull final EJDK eMinJDK)
   {
-    m_aProject = new SimpleProject (eParentProject,
+    final boolean bIsGitLab;
+    try
+    {
+      final Field aField = EProjectDeprecated.class.getField (name ());
+      bIsGitLab = aField.isAnnotationPresent (IsGitLab.class);
+    }
+    catch (final Exception ex)
+    {
+      throw new IllegalStateException (ex);
+    }
+    m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
+                                    eParentProject,
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
@@ -324,6 +345,12 @@ public enum EProjectDeprecated implements IProject
   public boolean isBuildInProject ()
   {
     return true;
+  }
+
+  @Nonnull
+  public EHostingPlatform getHostingPlatform ()
+  {
+    return m_aProject.getHostingPlatform ();
   }
 
   @Nullable

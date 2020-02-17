@@ -212,15 +212,6 @@ public enum EProject implements IProject
                   EHasWiki.TRUE,
                   "6.1.1",
                   EJDK.JDK8),
-  PH_EVENTS (null,
-             IProject.DEFAULT_PROJECT_OWNER,
-             "ph-events",
-             "ph-events",
-             EProjectType.JAVA_LIBRARY,
-             EHasPages.FALSE,
-             EHasWiki.FALSE,
-             "5.0.0",
-             EJDK.JDK8),
   PH_ISORELAX (null,
                IProject.DEFAULT_PROJECT_OWNER,
                "ph-isorelax",
@@ -717,7 +708,7 @@ public enum EProject implements IProject
   PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-peppol-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
 
-  @IsGitHubPrivate
+  @IsPrivateRepo
   TOTHOLZ (null,
            IProject.DEFAULT_PROJECT_OWNER,
            "totholz",
@@ -727,7 +718,7 @@ public enum EProject implements IProject
            EHasWiki.FALSE,
            null,
            EJDK.JDK8),
-  @IsGitHubPrivate
+  @IsPrivateRepo
   BOZOO (null,
          IProject.DEFAULT_PROJECT_OWNER,
          "bozoo",
@@ -738,7 +729,8 @@ public enum EProject implements IProject
          null,
          EJDK.JDK8),
 
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER (null,
              IProject.PROJECT_ECOSIO_PH,
              "entwerter-parent-pom",
@@ -748,17 +740,23 @@ public enum EProject implements IProject
              EHasWiki.FALSE,
              null,
              EJDK.JDK11),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_AWSLAMBDA (ENTWERTER, "entwerter-awslambda", EProjectType.JAVA_LIBRARY),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_UI (ENTWERTER, "entwerter-ui", EProjectType.JAVA_LIBRARY),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  @IsGitHubPrivate
+  @IsGitLab
+  @IsPrivateRepo
   ENTWERTER_STANDALONE (ENTWERTER, "entwerter-standalone", EProjectType.JAVA_APPLICATION),
 
   PEPPOL_PRACTICAL (null,
@@ -921,18 +919,29 @@ public enum EProject implements IProject
                     @Nullable final String sLastPublishedVersion,
                     @Nonnull final EJDK eMinJDK)
   {
-    boolean bIsGitHubPrivate;
+    final boolean bIsGitLab;
     try
     {
       final Field aField = EProject.class.getField (name ());
-      bIsGitHubPrivate = aField.isAnnotationPresent (IsGitHubPrivate.class);
+      bIsGitLab = aField.isAnnotationPresent (IsGitLab.class);
+    }
+    catch (final Exception ex)
+    {
+      throw new IllegalStateException (ex);
+    }
+    final boolean bIsPrivateRepo;
+    try
+    {
+      final Field aField = EProject.class.getField (name ());
+      bIsPrivateRepo = aField.isAnnotationPresent (IsPrivateRepo.class);
     }
     catch (final Exception ex)
     {
       throw new IllegalStateException (ex);
     }
 
-    m_aProject = new SimpleProject (eParentProject,
+    m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
+                                    eParentProject,
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
@@ -945,12 +954,18 @@ public enum EProject implements IProject
                                     eHasWikiProject,
                                     sLastPublishedVersion,
                                     eMinJDK,
-                                    bIsGitHubPrivate);
+                                    bIsPrivateRepo);
   }
 
   public boolean isBuildInProject ()
   {
     return true;
+  }
+
+  @Nonnull
+  public EHostingPlatform getHostingPlatform ()
+  {
+    return m_aProject.getHostingPlatform ();
   }
 
   @Nullable

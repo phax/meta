@@ -29,6 +29,7 @@ import com.helger.xml.microdom.convert.IMicroTypeConverter;
 
 public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter <SimpleProject>
 {
+  private static final String ATTR_HOSTING_PLATFORM = "hostingplatform";
   private static final String ATTR_PROJECT_OWNER = "projectowner";
   private static final String ATTR_PROJECT_NAME = "projectname";
   private static final String ATTR_PROJECT_TYPE = "projecttype";
@@ -46,6 +47,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                                               @Nonnull @Nonempty final String sTagName)
   {
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
+    ret.setAttribute (ATTR_HOSTING_PLATFORM, aValue.getHostingPlatform ().getID ());
     ret.setAttribute (ATTR_PROJECT_OWNER, aValue.getProjectOwner ());
     ret.setAttribute (ATTR_PROJECT_NAME, aValue.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aValue.getProjectType ().getID ());
@@ -62,6 +64,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   @Nonnull
   public SimpleProject convertToNative (@Nonnull final IMicroElement aElement)
   {
+    final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
+                                                                                   EHostingPlatform.GITHUB);
+
     // Added later
     String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
     if (sProjectOwner == null)
@@ -89,7 +94,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, false);
 
-    return new SimpleProject ((IProject) null,
+    return new SimpleProject (eHostingPlatform,
+                              (IProject) null,
                               sProjectOwner,
                               sProjectName,
                               eProjectType,
@@ -106,6 +112,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
                                                          @Nonnull final IMicroElement aElement)
   {
+    final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
+                                                                                   EHostingPlatform.GITHUB);
+
     // Added later
     String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
     if (sProjectOwner == null)
@@ -130,7 +139,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE,
                                                                        aParentProject.isGitHubPrivate ());
 
-    return new SimpleProject (aParentProject,
+    return new SimpleProject (eHostingPlatform,
+                              aParentProject,
                               sProjectOwner,
                               sProjectName,
                               eProjectType,

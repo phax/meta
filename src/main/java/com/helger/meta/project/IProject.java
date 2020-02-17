@@ -41,6 +41,9 @@ public interface IProject
    */
   boolean isBuildInProject ();
 
+  @Nonnull
+  EHostingPlatform getHostingPlatform ();
+
   @Nullable
   IProject getParentProject ();
 

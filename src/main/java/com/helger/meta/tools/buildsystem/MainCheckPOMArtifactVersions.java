@@ -372,7 +372,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.isBuildInProject ())
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
-      final String sExpectedURL = "https://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
+      final String sExpectedURL = "https://" +
+                                  aProject.getHostingPlatform ().getDomain () +
+                                  "/" +
+                                  sProjectOwner +
+                                  "/" +
+                                  aProject.getFullBaseDirName ();
       if (!sExpectedURL.equalsIgnoreCase (sURL))
         _warn (aProject, "Unexpected URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
     }
@@ -409,7 +414,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       else
       {
         final String sConnection = MicroHelper.getChildTextContent (eSCM, "connection");
-        final String sExpectedConnection = "scm:git:git@github.com:" +
+        final String sExpectedConnection = "scm:git:git@" +
+                                           aProject.getHostingPlatform ().getDomain () +
+                                           ":" +
                                            sProjectOwner +
                                            "/" +
                                            aProject.getFullBaseDirName () +
@@ -430,7 +437,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://github.com/" + sProjectOwner + "/" + aProject.getFullBaseDirName ();
+        final String sExpectedURL = "http://" +
+                                    aProject.getHostingPlatform ().getDomain () +
+                                    "/" +
+                                    sProjectOwner +
+                                    "/" +
+                                    aProject.getFullBaseDirName ();
         if (!sExpectedURL.equalsIgnoreCase (sURL))
           _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
 
