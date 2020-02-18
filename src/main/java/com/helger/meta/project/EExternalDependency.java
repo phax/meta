@@ -90,7 +90,7 @@ public enum EExternalDependency
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "3.0.0", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "3.0.1", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
   H2 ("com.h2database", "h2", "1.4.200", EJDK.JDK8),
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
