@@ -748,9 +748,6 @@ public enum EProject implements IProject
   ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
   @IsGitLab
   @IsPrivateRepo
-  ENTWERTER_AWSLAMBDA (ENTWERTER, "entwerter-awslambda", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
   ENTWERTER_UI (ENTWERTER, "entwerter-ui", EProjectType.JAVA_LIBRARY),
   @IsGitLab
   @IsPrivateRepo
