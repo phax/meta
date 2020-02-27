@@ -64,7 +64,7 @@ public enum EExternalDependency
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.8.0", EJDK.JDK8),
-  DNSJAVA ("dnsjava", "dnsjava", "3.0.0", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.0.1", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
@@ -84,7 +84,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "2.7", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.8.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200204", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200224", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.11.4", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -107,12 +107,12 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.5", EJDK.JDK8),
-  JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.1", EJDK.JDK8),
+  JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
   JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.4", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.12", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.13", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -197,7 +197,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.30", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.30.1", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -269,7 +269,7 @@ public enum EExternalDependency
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.3.0", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.18", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.19", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
@@ -293,8 +293,8 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M2-groovy-3.0", EJDK.JDK8),
-  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.4.RELEASE", EJDK.JDK8),
-  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.4.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", "2.2.5.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", "2.2.5.RELEASE", EJDK.JDK8),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.2", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
