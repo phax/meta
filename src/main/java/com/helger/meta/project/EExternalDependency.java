@@ -74,6 +74,7 @@ public enum EExternalDependency
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
+  EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
@@ -112,7 +113,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.13", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.14", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -205,7 +206,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.26.v20200117", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.27.v20200227", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -234,7 +235,7 @@ public enum EExternalDependency
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.4.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.13.0", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.13.1", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
