@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200303</version>
+  <version>1.0.0-20200308</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -724,6 +724,11 @@
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
       <version>2.0.19</version>
+    </dependency>
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli</artifactId>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -1695,33 +1700,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1897,27 +1902,6 @@
       <groupId>com.helger</groupId>
       <artifactId>as2-peppol-servlet</artifactId>
       <version>5.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.en16931</groupId>
-      <artifactId>en16931-parent-pom</artifactId>
-      <version>2.0.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.en16931</groupId>
-      <artifactId>en16931-xml-validator</artifactId>
-      <version>2.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.en16931</groupId>
-      <artifactId>en16931-edifact-to-xml</artifactId>
-      <version>2.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.en16931</groupId>
-      <artifactId>en16931-edifact-xml</artifactId>
-      <version>2.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
