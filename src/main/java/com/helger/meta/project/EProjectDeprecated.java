@@ -247,7 +247,20 @@ public enum EProjectDeprecated implements IProject
                             EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
-  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),;
+  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
+
+  EN16931_PARENT_POM (null,
+                      IProject.PROJECT_OWNER_CENTC434,
+                      "en16931-parent-pom",
+                      "java-tools",
+                      EProjectType.MAVEN_POM,
+                      EHasPages.FALSE,
+                      EHasWiki.FALSE,
+                      "2.0.1",
+                      EJDK.JDK8),
+  EN16931_XML_VALIDATOR (EN16931_PARENT_POM, "en16931-xml-validator", EProjectType.JAVA_LIBRARY),
+  EN16931_EDIFACT_TO_XML (EN16931_PARENT_POM, "en16931-edifact-to-xml", EProjectType.JAVA_LIBRARY),
+  EN16931_EDIFACT_XML (EN16931_PARENT_POM, "en16931-edifact-xml", EProjectType.JAVA_LIBRARY),;
 
   private final SimpleProject m_aProject;
 
