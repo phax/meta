@@ -53,9 +53,17 @@ Current list of all released projects (as of 2020-03-09):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping)
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.1.5 - JDK 1.8
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
+   [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 3.1.0 - JDK 1.8
 
@@ -870,12 +878,6 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
  * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 11
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)

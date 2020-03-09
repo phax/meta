@@ -2057,8 +2057,19 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>en16931-cii2ubl-parent-pom</artifactId>
+      <version>1.2.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>1.1.5</version>
+      <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>en16931-cii2ubl-cli</artifactId>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>

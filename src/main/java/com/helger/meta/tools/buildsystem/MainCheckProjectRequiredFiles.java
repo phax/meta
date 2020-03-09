@@ -21,9 +21,11 @@ import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnull;
 
+import com.helger.commons.ValueEnforcer;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.state.ESuccess;
+import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectType;
@@ -66,9 +68,34 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
-    if (sContent != null && sContent.contains (sExpectedContent))
-      return true;
+    if (sContent != null)
+    {
+      if (sContent.contains (sExpectedContent))
+        return true;
+    }
     _warn (aProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
+    return false;
+  }
+
+  private static boolean _checkFileContainsOR (@Nonnull final IProject aProject,
+                                               @Nonnull final String sRelativeFilename,
+                                               @Nonnull final String... aExpectedContentsOR)
+  {
+    ValueEnforcer.notEmptyNoNullValue (aExpectedContentsOR, "ExpectedContentsOR");
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
+    final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
+    if (sContent != null)
+    {
+      for (final String sExpectedContent : aExpectedContentsOR)
+        if (sContent.contains (sExpectedContent))
+          return true;
+    }
+    _warn (aProject,
+           "File " +
+                     f.getAbsolutePath () +
+                     " does not contain phrase " +
+                     StringHelper.getImploded (", ", aExpectedContentsOR) +
+                     "!");
     return false;
   }
 
@@ -92,8 +119,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   private static void _validateProjectWithJavaCode (@Nonnull final IProject aProject)
   {
     // Check for file existence
-    _checkFileExisting (aProject, ".classpath");
-    _checkFileExisting (aProject, ".project");
+    if (false)
+      _checkFileExisting (aProject, ".classpath");
+    if (false)
+      _checkFileExisting (aProject, ".project");
     _checkFileExisting (aProject, "pom.xml");
     if (!aProject.isNestedProject ())
     {
@@ -126,8 +155,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
   {
     // Check for file existence
-    _checkFileExisting (aProject, ".project");
-    _checkFileExisting (aProject, "pom.xml");
+    if (false)
+      _checkFileExisting (aProject, ".project");
+    if (false)
+      _checkFileExisting (aProject, "pom.xml");
 
     if (!aProject.isNestedProject ())
       _checkFileExisting (aProject, "README.MD");
@@ -170,7 +201,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
           _checkFileContainsNot (aProject, ".travis.yml", "oraclejdk11");
           if (bXenial)
-            _checkFileContains (aProject, ".travis.yml", "openjdk12");
+            _checkFileContainsOR (aProject, ".travis.yml", "openjdk12", "openjdk13");
 
           // master only
           _checkFileContains (aProject, ".travis.yml", "branches:");
