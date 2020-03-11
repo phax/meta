@@ -114,7 +114,7 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.5", EJDK.JDK8),
   JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
-  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.4", EJDK.JDK8),
+  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.5", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
@@ -182,7 +182,7 @@ public enum EExternalDependency
   JAXWS_TOOLS("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
 
   @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.2", EJDK.JDK9),
+  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.2-1", EJDK.JDK9),
   JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
   JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
   JAXWS9_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS9_RI_BOM),
@@ -273,7 +273,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.19", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.3.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.3.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.19", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -306,7 +306,7 @@ public enum EExternalDependency
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.29.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.0.30.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
@@ -344,7 +344,7 @@ public enum EExternalDependency
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.2.2", EJDK.JDK8),
-  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.8.2", EJDK.JDK8),
+  PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.9.0", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "2.22.2", EJDK.JDK8),
