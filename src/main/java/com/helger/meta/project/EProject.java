@@ -729,7 +729,7 @@ public enum EProject implements IProject
              EHasPages.FALSE,
              EHasWiki.FALSE,
              null,
-             EJDK.JDK11),
+             EJDK.JDK8),
   @IsGitLab
   @IsPrivateRepo
   ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
