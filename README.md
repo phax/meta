@@ -173,7 +173,7 @@ Current list of all released projects (as of 2020-03-11):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 3.0.0 - JDK 1.8
+ * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 3.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-buildinfo-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-buildinfo-maven-plugin)
@@ -305,7 +305,7 @@ Current list of all released projects (as of 2020-03-11):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
- * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.1 - JDK 1.8
+ * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-dirindex-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-dirindex-maven-plugin)
@@ -389,7 +389,7 @@ Current list of all released projects (as of 2020-03-11):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jdmc.svg?branch=master)](https://travis-ci.org/phax/ph-jdmc)
- * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.2 - JDK 1.8
+ * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-jscompress-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-jscompress-maven-plugin)
@@ -529,7 +529,7 @@ Current list of all released projects (as of 2020-03-11):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.11.0 - JDK 1.8
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.11.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-parent-pom.svg?branch=master)](https://travis-ci.org/phax/ph-parent-pom)
