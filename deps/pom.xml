@@ -1823,39 +1823,39 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.5.4</version>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
