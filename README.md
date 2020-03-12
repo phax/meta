@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-03-11):
+Current list of all released projects (as of 2020-03-12):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.4 - JDK 1.8
 
@@ -33,7 +33,7 @@ Current list of all released projects (as of 2020-03-11):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.3.1 - JDK 1.8
+ * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
@@ -878,19 +878,19 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
- * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 11
+ * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-engine](https://github.com/ecosio-ph/entwerter) - JDK 11
+ * [entwerter/entwerter-engine](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-jaxws](https://github.com/ecosio-ph/entwerter) - JDK 11
+ * [entwerter/entwerter-jaxws](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-standalone](https://github.com/ecosio-ph/entwerter) - JDK 11
+ * [entwerter/entwerter-standalone](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-webapp](https://github.com/ecosio-ph/entwerter) - JDK 11
+ * [entwerter/entwerter-webapp](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
  * [meta](https://github.com/phax/meta) - JDK 1.8
