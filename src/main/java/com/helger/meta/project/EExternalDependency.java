@@ -219,8 +219,8 @@ public enum EExternalDependency
   JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
-  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.11.0", EJDK.JDK8),
-  JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", "0.11.0", EJDK.JDK8),
+  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.11.1", EJDK.JDK8),
+  JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", "0.11.1", EJDK.JDK8),
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
@@ -311,7 +311,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.4", EJDK.JDK8),
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.1.5", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.4.0", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),

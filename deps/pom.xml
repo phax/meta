@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200312</version>
+  <version>1.0.0-20200313</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -533,12 +533,12 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-orgjson</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -868,7 +868,7 @@
     <dependency>
       <groupId>org.apache.santuario</groupId>
       <artifactId>xmlsec</artifactId>
-      <version>2.1.4</version>
+      <version>2.1.5</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xsom</groupId>
