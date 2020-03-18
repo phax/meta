@@ -25,7 +25,7 @@
       <id>forced-central</id>
       <name>Official Maven Central</name>
       <url>https://repo1.maven.org/maven2</url>
-      <mirrorOf>central</mirrorOf>
+      <mirrorOf>google-maven-central</mirrorOf>
     </mirror>
   </mirrors>
 </settings>
