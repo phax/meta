@@ -2,7 +2,7 @@ dist: xenial
 language: java
 
 install:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps -s travis-settings.xml
   
 cache:
   directories:
@@ -19,5 +19,5 @@ jobs:
     - stage: test
       jdk: openjdk11
     - stage: test
-      jdk: openjdk12
+      jdk: openjdk13
   
