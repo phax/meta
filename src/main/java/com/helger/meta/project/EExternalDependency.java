@@ -64,7 +64,7 @@ public enum EExternalDependency
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.8.0", EJDK.JDK8),
-  DNSJAVA ("dnsjava", "dnsjava", "3.0.1", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.0.2", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
@@ -118,7 +118,7 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.14", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.15.15", EJDK.JDK8),
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.5", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -149,7 +149,7 @@ public enum EExternalDependency
 
   @IsBOM
   JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.2", EJDK.JDK9),
-  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", "2.3.2-1", EJDK.JDK9),
+  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", "2.3.2-2", EJDK.JDK9),
   JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
   JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
   JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
@@ -252,7 +252,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 9 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.4.1", EJDK.JDK9),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.5.0", EJDK.JDK9),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -268,8 +268,8 @@ public enum EExternalDependency
   MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.12.2", EJDK.JDK8),
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.0.0", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.0.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.0.1", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.0.1", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.19", EJDK.JDK8),
 
@@ -288,7 +288,7 @@ public enum EExternalDependency
   R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "9.9.1-7", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "10.0", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
 
@@ -309,7 +309,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "2.0.30.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
-  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.4", EJDK.JDK8),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.5", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.1.5", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
