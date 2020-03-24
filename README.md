@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-03-20):
+Current list of all released projects (as of 2020-03-24):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -833,50 +833,6 @@ Current list of all released projects (as of 2020-03-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-parent-pom) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-commons](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-kafka-client](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-commons/toop-schematron](https://github.com/TOOP4EU/toop-commons) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-schematron) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons)
- * [toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-parent-pom) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-api](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-api) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-connector-webapp](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-connector-webapp) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-default](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-default/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-default) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-connector/toop-mem-phase4](https://github.com/TOOP4EU/toop-connector) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-mem-phase4) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector)
- * [toop-interface](https://github.com/TOOP4EU/toop-interface) - Version 0.10.8 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-interface) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-interface.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-interface)
 
 Current list of all unreleased projects:
 
@@ -913,6 +869,24 @@ Current list of all unreleased projects:
  * [registry434](https://github.com/phax/registry434) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
+ * [toop-connector-ng](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-commons](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-interface](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-regrep](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-schematron](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [totholz](https://github.com/phax/totholz) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/totholz.svg?branch=master)](https://travis-ci.org/phax/totholz)
