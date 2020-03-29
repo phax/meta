@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200328</version>
+  <version>1.0.0-20200329</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -33,22 +33,22 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>7.3.1</version>
+      <version>8.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>7.3.1</version>
+      <version>8.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>7.3.1</version>
+      <version>8.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>7.3.1</version>
+      <version>8.0</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -339,7 +339,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.15.15</version>
+      <version>3.15.17</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -451,7 +451,7 @@
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
       <artifactId>org.eclipse.jdt.core</artifactId>
-      <version>3.20.0</version>
+      <version>3.21.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.jersey</groupId>
@@ -703,7 +703,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -813,12 +813,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.2.5.RELEASE</version>
+      <version>2.2.6.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.2.5.RELEASE</version>
+      <version>2.2.6.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -1355,48 +1355,48 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-parent-pom</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-api</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-alegreya-sans</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-anaheim</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-exo2</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-lato2</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-open-sans</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-roboto</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fonts-source-sans-pro</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1426,13 +1426,13 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime-parent-pom</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-holiday</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1458,18 +1458,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>4.0.1</version>
+      <version>4.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
