@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-03-30):
+Current list of all released projects (as of 2020-03-31):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -77,6 +77,26 @@ Current list of all released projects (as of 2020-03-30):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
+ * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project) 
+   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
+ * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin) 
+   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
+ * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin) 
+   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
+ * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin) 
+   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
+ * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core) 
+   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
@@ -876,6 +896,9 @@ Current list of all unreleased projects:
  * [toop-connector-ng/toop-commons](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/toop-edm](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [toop-connector-ng/toop-interface](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
@@ -883,9 +906,6 @@ Current list of all unreleased projects:
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [toop-connector-ng/toop-regrep](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/toop-schematron](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [totholz](https://github.com/phax/totholz) - JDK 1.8
@@ -916,21 +936,6 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
  * jgatsp - never released
- * maven-jaxb2-plugin - Version 0.14.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project) 
- * maven-jaxb2-plugin/plugin - Version 0.14.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin) 
- * maven-jaxb2-plugin/plugin-2.2 - Version 0.14.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin) 
- * maven-jaxb2-plugin/plugin-2.3 - Version 0.14.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin) 
- * maven-jaxb2-plugin/plugin-core - Version 0.14.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core) 
  * peppol-directory - Version 0.7.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom) 

@@ -701,6 +701,23 @@ public enum EProject implements IProject
   PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-peppol-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
 
+  MAVEN_JAXB2_PLUGIN_PROJECT (null,
+                              IProject.DEFAULT_PROJECT_OWNER,
+                              "maven-jaxb2-plugin-project",
+                              "maven-jaxb2-plugin",
+                              EProjectType.MAVEN_POM,
+                              EHasPages.FALSE,
+                              EHasWiki.FALSE,
+                              "0.14.2",
+                              EJDK.JDK8),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
+                            "maven-jaxb22-plugin-core",
+                            "plugin-core",
+                            EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
+
   @IsPrivateRepo
   TOTHOLZ (null,
            IProject.DEFAULT_PROJECT_OWNER,
@@ -778,7 +795,7 @@ public enum EProject implements IProject
   TOOP_REGREP (TOOP_CONNECTOR_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
   TOOP_COMMONS (TOOP_CONNECTOR_NG_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
   TOOP_KAFKA_CLIENT (TOOP_CONNECTOR_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
-  TOOP_SCHEMATRON (TOOP_CONNECTOR_NG_PARENT_POM, "toop-schematron", EProjectType.JAVA_LIBRARY),
+  TOOP_EDM (TOOP_CONNECTOR_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY),
   TOOP_INTERFACE (TOOP_CONNECTOR_NG_PARENT_POM, "toop-interface", EProjectType.JAVA_LIBRARY);
 
   private final SimpleProject m_aProject;

@@ -40,7 +40,6 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectDeprecated;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -681,11 +680,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
       if (aProject != EProject.EBINTERFACE_RENDERING &&
-          aProject != EProjectDeprecated.MAVEN_JAXB2_PLUGIN_PROJECT &&
-          aProject != EProjectDeprecated.MAVEN_JAXB22_PLUGIN_CORE &&
-          aProject != EProjectDeprecated.MAVEN_JAXB2_PLUGIN &&
-          aProject != EProjectDeprecated.MAVEN_JAXB22_PLUGIN &&
-          aProject != EProjectDeprecated.MAVEN_JAXB23_PLUGIN &&
+          aProject != EProject.MAVEN_JAXB2_PLUGIN_PROJECT &&
+          aProject != EProject.MAVEN_JAXB22_PLUGIN_CORE &&
+          aProject != EProject.MAVEN_JAXB2_PLUGIN &&
+          aProject != EProject.MAVEN_JAXB22_PLUGIN &&
+          aProject != EProject.MAVEN_JAXB23_PLUGIN &&
           aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
       {
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
