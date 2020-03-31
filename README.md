@@ -709,7 +709,7 @@ Current list of all released projects (as of 2020-03-31):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.0.1 - JDK 1.8
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
    [![Build Status](https://travis-ci.org/phax/ph-xhe.svg?branch=master)](https://travis-ci.org/phax/ph-xhe)
