@@ -77,23 +77,23 @@ Current list of all released projects (as of 2020-04-01):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+ * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project) 
    [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+ * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin) 
    [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+ * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin) 
    [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+ * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin) 
    [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.2 - JDK 1.8
+ * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core) 
    [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
