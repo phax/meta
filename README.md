@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-03-31):
+Current list of all released projects (as of 2020-04-01):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -101,31 +101,31 @@ Current list of all released projects (as of 2020-03-31):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-id) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.0.2 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
@@ -133,7 +133,7 @@ Current list of all released projects (as of 2020-03-31):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
    [![Build Status](https://travis-ci.org/phax/ph-asic.svg?branch=master)](https://travis-ci.org/phax/ph-asic)
- * [ph-bde](https://github.com/phax/ph-bde) - Version 2.1.1 - JDK 1.8
+ * [ph-bde](https://github.com/phax/ph-bde) - Version 2.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde) 
    [![Build Status](https://travis-ci.org/phax/ph-bde.svg?branch=master)](https://travis-ci.org/phax/ph-bde)
@@ -333,7 +333,7 @@ Current list of all released projects (as of 2020-03-31):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-dirindex-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-dirindex-maven-plugin)
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.1.1 - JDK 1.8
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.1.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-ebinterface.svg?branch=master)](https://travis-ci.org/phax/ph-ebinterface)
@@ -709,7 +709,7 @@ Current list of all released projects (as of 2020-03-31):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.0.2 - JDK 1.8
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
    [![Build Status](https://travis-ci.org/phax/ph-xhe.svg?branch=master)](https://travis-ci.org/phax/ph-xhe)
