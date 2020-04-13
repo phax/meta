@@ -759,9 +759,6 @@ public enum EProject implements IProject
   @IsGitLab
   @IsPrivateRepo
   ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_STANDALONE (ENTWERTER, "entwerter-standalone", EProjectType.JAVA_APPLICATION),
 
   PEPPOL_PRACTICAL (null,
                     IProject.DEFAULT_PROJECT_OWNER,

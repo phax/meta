@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200406</version>
+  <version>1.0.0-20200410</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -228,7 +228,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20200315</version>
+      <version>v20200406</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -238,13 +238,13 @@
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -259,7 +259,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>4.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -693,12 +693,12 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -776,9 +776,9 @@
       <version>3.141.59</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.odftoolkit</groupId>
+      <groupId>org.odftoolkit</groupId>
       <artifactId>simple-odf</artifactId>
-      <version>0.8.2-incubating</version>
+      <version>0.9.0-RC1</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
