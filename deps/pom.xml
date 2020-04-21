@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200416</version>
+  <version>1.0.0-20200421</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -567,6 +567,11 @@
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.6.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>5.6.2</version>
     </dependency>
@@ -843,7 +848,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.0.30.Final</version>
+      <version>2.1.0.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1875,38 +1880,38 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
