@@ -1447,23 +1447,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>6.1.5</version>
+      <version>6.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>6.1.5</version>
+      <version>6.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>6.1.5</version>
+      <version>6.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>6.1.5</version>
+      <version>6.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
