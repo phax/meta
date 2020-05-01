@@ -19,5 +19,5 @@ jobs:
     - stage: test
       jdk: openjdk11
     - stage: test
-      jdk: openjdk13
+      jdk: openjdk14
   
