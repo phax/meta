@@ -538,7 +538,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "8.0.5",
+                             "8.0.7",
                              EJDK.JDK8),
   PEPPOL_ID (PEPPOL_COMMONS_PARENT_POM, "peppol-id", EProjectType.JAVA_LIBRARY),
   PEPPOL_COMMONS (PEPPOL_COMMONS_PARENT_POM, "peppol-commons", EProjectType.JAVA_LIBRARY),
@@ -785,10 +785,8 @@ public enum EProject implements IProject
                                 null,
                                 EJDK.JDK8),
   TOOP_REGREP (TOOP_CONNECTOR_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
-  TOOP_COMMONS (TOOP_CONNECTOR_NG_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
   TOOP_KAFKA_CLIENT (TOOP_CONNECTOR_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
-  TOOP_EDM (TOOP_CONNECTOR_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY),
-  TOOP_INTERFACE (TOOP_CONNECTOR_NG_PARENT_POM, "toop-interface", EProjectType.JAVA_LIBRARY);
+  TOOP_EDM (TOOP_CONNECTOR_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY);
 
   private final SimpleProject m_aProject;
 
