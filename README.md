@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-05-06):
+Current list of all released projects (as of 2020-05-11):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -717,43 +717,55 @@ Current list of all released projects (as of 2020-05-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xmldsig.svg?branch=master)](https://travis-ci.org/phax/ph-xmldsig)
- * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp1) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-bdxr-smp2) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-ccts-cct-schemamodule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-ccts-cct-schemamodule) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-wsaddr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-wsaddr) 
+   [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades132/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades132) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades141/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xades141) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xlink/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xlink) 
+   [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xml) 
+   [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
+ * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmldsig11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 2.2.4 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 2.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
