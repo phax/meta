@@ -52,8 +52,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   }
 
   @Nonnull
-  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject,
-                                                 @Nonnull final String sRelativeFilename)
+  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
@@ -77,6 +76,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return false;
   }
 
+  @SuppressWarnings ("unused")
   private static boolean _checkFileContainsOR (@Nonnull final IProject aProject,
                                                @Nonnull final String sRelativeFilename,
                                                @Nonnull final String... aExpectedContentsOR)
@@ -91,11 +91,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           return true;
     }
     _warn (aProject,
-           "File " +
-                     f.getAbsolutePath () +
-                     " does not contain phrase " +
-                     StringHelper.getImploded (", ", aExpectedContentsOR) +
-                     "!");
+           "File " + f.getAbsolutePath () + " does not contain phrase " + StringHelper.getImploded (", ", aExpectedContentsOR) + "!");
     return false;
   }
 
@@ -182,26 +178,21 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           {
             // jdeps only with JDK8+
             // JDeps is disabled for multi-version JAR issue
-            _checkFileContains (aProject,
-                                ".travis.yml",
-                                "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
+            _checkFileContains (aProject, ".travis.yml", "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
           }
           else
           {
-            _checkFileContains (aProject,
-                                ".travis.yml",
-                                "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
+            _checkFileContains (aProject, ".travis.yml", "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
           }
 
           // Dist
-          final boolean bXenial = _checkFileContains (aProject, ".travis.yml", "xenial");
+          _checkFileContains (aProject, ".travis.yml", "xenial");
 
           // JDK
           _checkFileContains (aProject, ".travis.yml", "openjdk8");
           _checkFileContains (aProject, ".travis.yml", "openjdk11");
-          _checkFileContainsNot (aProject, ".travis.yml", "oraclejdk11");
-          if (bXenial)
-            _checkFileContainsOR (aProject, ".travis.yml", "openjdk12", "openjdk13");
+          _checkFileContains (aProject, ".travis.yml", "openjdk14");
+          _checkFileContainsNot (aProject, ".travis.yml", "oraclejdk");
 
           // master only
           _checkFileContains (aProject, ".travis.yml", "branches:");
