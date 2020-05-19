@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-05-15):
+Current list of all released projects (as of 2020-05-19):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -769,43 +769,47 @@ Current list of all released projects (as of 2020-05-15):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xsds-xmlenc11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [phase4](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-cef-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-cef-client) 
+   [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.14 - JDK 1.8
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.15 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
@@ -899,16 +903,34 @@ Current list of all unreleased projects:
  * [registry434](https://github.com/phax/registry434) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
+ * [toop-commons-ng](https://github.com/TOOP4EU/toop-commons-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
+ * [toop-commons-ng/toop-commons](https://github.com/TOOP4EU/toop-commons-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
+ * [toop-commons-ng/toop-edm](https://github.com/TOOP4EU/toop-commons-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
+ * [toop-commons-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-commons-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
+ * [toop-commons-ng/toop-regrep](https://github.com/TOOP4EU/toop-commons-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
  * [toop-connector-ng](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/toop-edm](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+ * [toop-connector-ng/tc-api](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+ * [toop-connector-ng/tc-main](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/toop-regrep](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+ * [toop-connector-ng/tc-mem-external](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/tc-mem-phase4](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [totholz](https://github.com/phax/totholz) - JDK 1.8

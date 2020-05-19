@@ -690,7 +690,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "0.9.14",
+                     "0.9.15",
                      EJDK.JDK8),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_CEF (PHASE4_PARENT_POM, "phase4-profile-cef", EProjectType.JAVA_LIBRARY),
@@ -701,6 +701,7 @@ public enum EProject implements IProject
   PHASE4_PEPPOL_CLIENT (PHASE4_PARENT_POM, "phase4-peppol-client", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-peppol-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  PHASE4_CEF_CLIENT (PHASE4_PARENT_POM, "phase4-cef-client", EProjectType.JAVA_LIBRARY),
 
   MAVEN_JAXB2_PLUGIN_PROJECT (null,
                               IProject.DEFAULT_PROJECT_OWNER,
@@ -778,18 +779,33 @@ public enum EProject implements IProject
                EJDK.JDK8),
 
   // TOOP stuff
+  TOOP_COMMONS_NG_PARENT_POM (null,
+                              IProject.PROJECT_OWNER_TOOP,
+                              "toop-commons-ng-parent-pom",
+                              "toop-commons-ng",
+                              EProjectType.MAVEN_POM,
+                              EHasPages.FALSE,
+                              EHasWiki.FALSE,
+                              null,
+                              EJDK.JDK8),
+  TOOP_REGREP (TOOP_COMMONS_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
+  TOOP_KAFKA_CLIENT (TOOP_COMMONS_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
+  TOOP_EDM (TOOP_COMMONS_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY),
+  TOOP_COMMON (TOOP_COMMONS_NG_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
+
   TOOP_CONNECTOR_NG_PARENT_POM (null,
                                 IProject.PROJECT_OWNER_TOOP,
-                                "toop-connector-ng-parent-pom",
+                                "tc-parent-pom",
                                 "toop-connector-ng",
                                 EProjectType.MAVEN_POM,
                                 EHasPages.FALSE,
                                 EHasWiki.FALSE,
                                 null,
                                 EJDK.JDK8),
-  TOOP_REGREP (TOOP_CONNECTOR_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
-  TOOP_KAFKA_CLIENT (TOOP_CONNECTOR_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
-  TOOP_EDM (TOOP_CONNECTOR_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY);
+  TC_API (TOOP_CONNECTOR_NG_PARENT_POM, "tc-api", EProjectType.JAVA_LIBRARY),
+  TC_MEM_EXTERNAL (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-external", EProjectType.JAVA_LIBRARY),
+  TC_MEM_PHASE4 (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-phase4", EProjectType.JAVA_LIBRARY),
+  TC_TC_MAIN (TOOP_CONNECTOR_NG_PARENT_POM, "tc-main", EProjectType.JAVA_LIBRARY);
 
   private final SimpleProject m_aProject;
 
