@@ -392,7 +392,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "9.1.12",
+                     "9.2.0",
                      EJDK.JDK8),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_HTTP (PH_WEB_PARENT_POM, "ph-http", EProjectType.JAVA_LIBRARY),
@@ -404,6 +404,7 @@ public enum EProject implements IProject
   PH_SITEMAP (PH_WEB_PARENT_POM, "ph-sitemap", EProjectType.JAVA_LIBRARY),
   PH_WEB (PH_WEB_PARENT_POM, "ph-web", EProjectType.JAVA_LIBRARY),
   PH_XSERVLET (PH_WEB_PARENT_POM, "ph-xservlet", EProjectType.JAVA_LIBRARY),
+  PH_JSCH (PH_WEB_PARENT_POM, "ph-jsch", EProjectType.JAVA_LIBRARY),
 
   PH_CSS_PARENT_POM (null,
                      IProject.DEFAULT_PROJECT_OWNER,
