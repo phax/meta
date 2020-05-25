@@ -72,6 +72,8 @@ public final class ProjectList
     // Build in projects
     for (final IProject aProject : EProject.values ())
       _add (aProject);
+    for (final IProject aProject : EProjectToop.values ())
+      _add (aProject);
     for (final IProject aProject : EProjectDeprecated.values ())
       _add (aProject);
 
@@ -104,8 +106,7 @@ public final class ProjectList
 
           for (final IMicroElement eSubProject : eProject.getAllChildElements ("project"))
           {
-            final SimpleProject aSubProject = SimpleProjectMicroTypeConverter.convertToNativeWithParent (aProject,
-                                                                                                         eSubProject);
+            final SimpleProject aSubProject = SimpleProjectMicroTypeConverter.convertToNativeWithParent (aProject, eSubProject);
             _add (aSubProject);
           }
         }

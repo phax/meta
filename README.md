@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-05-24):
+Current list of all released projects (as of 2020-05-25):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
 
@@ -882,6 +882,18 @@ Current list of all unreleased projects:
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
+ * [data-services-directory](https://github.com/TOOP4EU/data-services-directory) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
+ * [data-services-directory/dsd-api](https://github.com/TOOP4EU/data-services-directory) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
+ * [data-services-directory/dsd-client](https://github.com/TOOP4EU/data-services-directory) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
+ * [data-services-directory/dsd-service](https://github.com/TOOP4EU/data-services-directory) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
  * [entwerter](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
@@ -931,6 +943,12 @@ Current list of all unreleased projects:
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [toop-connector-ng/tc-mem-phase4](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/tc-web-api](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
+ * [toop-connector-ng/tc-webapp](https://github.com/TOOP4EU/toop-connector-ng) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
  * [totholz](https://github.com/phax/totholz) - JDK 1.8

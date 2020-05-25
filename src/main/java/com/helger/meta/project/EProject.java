@@ -776,36 +776,7 @@ public enum EProject implements IProject
                EHasPages.FALSE,
                EHasWiki.FALSE,
                null,
-               EJDK.JDK8),
-
-  // TOOP stuff
-  TOOP_COMMONS_NG_PARENT_POM (null,
-                              IProject.PROJECT_OWNER_TOOP,
-                              "toop-commons-ng-parent-pom",
-                              "toop-commons-ng",
-                              EProjectType.MAVEN_POM,
-                              EHasPages.FALSE,
-                              EHasWiki.FALSE,
-                              null,
-                              EJDK.JDK8),
-  TOOP_REGREP (TOOP_COMMONS_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
-  TOOP_KAFKA_CLIENT (TOOP_COMMONS_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
-  TOOP_EDM (TOOP_COMMONS_NG_PARENT_POM, "toop-edm", EProjectType.JAVA_LIBRARY),
-  TOOP_COMMON (TOOP_COMMONS_NG_PARENT_POM, "toop-commons", EProjectType.JAVA_LIBRARY),
-
-  TOOP_CONNECTOR_NG_PARENT_POM (null,
-                                IProject.PROJECT_OWNER_TOOP,
-                                "tc-parent-pom",
-                                "toop-connector-ng",
-                                EProjectType.MAVEN_POM,
-                                EHasPages.FALSE,
-                                EHasWiki.FALSE,
-                                null,
-                                EJDK.JDK8),
-  TC_API (TOOP_CONNECTOR_NG_PARENT_POM, "tc-api", EProjectType.JAVA_LIBRARY),
-  TC_MEM_EXTERNAL (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-external", EProjectType.JAVA_LIBRARY),
-  TC_MEM_PHASE4 (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-phase4", EProjectType.JAVA_LIBRARY),
-  TC_TC_MAIN (TOOP_CONNECTOR_NG_PARENT_POM, "tc-main", EProjectType.JAVA_LIBRARY);
+               EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
