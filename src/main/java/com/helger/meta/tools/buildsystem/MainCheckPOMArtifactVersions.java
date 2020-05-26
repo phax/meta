@@ -18,7 +18,6 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.List;
 import java.util.regex.Pattern;
 
 import javax.annotation.Nonnull;
@@ -27,6 +26,7 @@ import javax.annotation.Nullable;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
+import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.FilenameHelper;
@@ -90,10 +90,10 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
+    if (sGroupID == null)
+      return false;
     return PARENT_POM_GROUPID.equals (sGroupID) ||
-           "com.helger.maven".equals (sGroupID) ||
-           "com.helger.erechnung.gv.at".equals (sGroupID) ||
-           "com.helger.en16931".equals (sGroupID) ||
+           sGroupID.startsWith ("com.helger.") ||
            "at.austriapro".equals (sGroupID) ||
            "at.winenet".equals (sGroupID) ||
            "eu.toop".equals (sGroupID);
@@ -115,8 +115,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   }
 
   @Nonnull
-  private static String _getResolvedVar (@Nonnull final String sText,
-                                         @Nonnull final ICommonsMap <String, String> aProps)
+  private static String _getResolvedVar (@Nonnull final String sText, @Nonnull final ICommonsMap <String, String> aProps)
   {
     String ret = sText;
     while (true)
@@ -254,8 +253,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (eProperties != null)
             {
               if (false)
-                _info (aProject,
-                       "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
+                _info (aProject, "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
               eProperties.forAllChildElements (eProperty -> {
                 String sValue = eProperty.getTextContentTrimmed ();
                 sValue = _getResolvedVar (sValue, aProperties);
@@ -332,12 +330,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
       final String [] aExpectedPackagings = _getDesiredPackagings (aProject);
       if (!ArrayHelper.contains (aExpectedPackagings, sPackaging))
-        _warn (aProject,
-               "Unexpected packaging '" +
-                         sPackaging +
-                         "' used. Expected one of " +
-                         Arrays.toString (aExpectedPackagings) +
-                         ".");
+        _warn (aProject, "Unexpected packaging '" + sPackaging + "' used. Expected one of " + Arrays.toString (aExpectedPackagings) + ".");
     }
 
     // Group ID for properties
@@ -429,11 +422,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final String sExpectedDeveloperConnection = sExpectedConnection;
         if (!sExpectedDeveloperConnection.equalsIgnoreCase (sDeveloperConnection))
           _warn (aProject,
-                 "Unexpected SCM developer connection '" +
-                           sDeveloperConnection +
-                           "'. Expected '" +
-                           sExpectedDeveloperConnection +
-                           "'");
+                 "Unexpected SCM developer connection '" + sDeveloperConnection + "'. Expected '" + sExpectedDeveloperConnection + "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
         final String sExpectedURL = "http://" +
@@ -531,9 +520,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                                                                                                     SUFFIX_SNAPSHOT))
                                                                              : aReferencedProject.getLastPublishedVersion ();
 
-                  final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion,
-                                                                                                    SUFFIX_SNAPSHOT)
-                                                                            : sVersion);
+                  final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion, SUFFIX_SNAPSHOT) : sVersion);
                   if (aVersionInFile.isLT (aLastPublishedVersion))
                   {
                     // Version in file lower than known
@@ -570,8 +557,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                            aReferencedProject.getLastPublishedVersionString ());
                       }
                       else
-                        _warn (aProject,
-                               "Houston we have a problem: " + aVersionInFile + " vs. " + aLastPublishedVersion);
+                        _warn (aProject, "Houston we have a problem: " + aVersionInFile + " vs. " + aLastPublishedVersion);
                 }
                 else
                 {
@@ -591,7 +577,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (sGroupID != null && sArtifactID != null && sVersion != null)
             {
               // Check for known external deps
-              final List <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
+              final ICommonsList <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
 
               final String sSuffix = aExternalDeps.size () <= 1 ? "" : " for " + eProjectJDK.getDisplayName ();
 
