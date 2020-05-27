@@ -3,44 +3,52 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-05-26):
+Current list of all released projects (as of 2020-05-27):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-spring-boot) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-demo-webapp) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-lib) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-partnership-mongodb) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-server) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.5.5 - JDK 1.8
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-servlet) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol-client](https://github.com/phax/as2-peppol-client) - Version 3.3.2 - JDK 1.8
+ * [as2-peppol](https://github.com/phax/as2-peppol) - Version 5.4.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol-client.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-client)
- * [as2-peppol-servlet](https://github.com/phax/as2-peppol-servlet) - Version 5.3.1 - JDK 1.8
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-parent-pom) 
+   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
+ * [as2-peppol/as2-peppol-client](https://github.com/phax/as2-peppol) - Version 5.4.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol-servlet.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-servlet)
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-client) 
+   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
+ * [as2-peppol/as2-peppol-server](https://github.com/phax/as2-peppol) - Version 5.4.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-server) 
+   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
+ * [as2-peppol/as2-peppol-servlet](https://github.com/phax/as2-peppol) - Version 5.4.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet) 
+   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
  * [data-services-directory](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.0-beta3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory) 
@@ -61,23 +69,23 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-rendering.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-rendering)
- * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.5.5 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.5.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
- * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.0.5 - JDK 1.8
+ * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.0.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping)
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 1.2.0 - JDK 1.8
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 1.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
@@ -117,117 +125,117 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-commons) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-id) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sbdh) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-sml-client) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-smp-client) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.0.7 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-testfiles) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [ph-asic](https://github.com/phax/ph-asic) - Version 1.5.0 - JDK 1.8
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 1.5.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
    [![Build Status](https://travis-ci.org/phax/ph-asic.svg?branch=master)](https://travis-ci.org/phax/ph-asic)
- * [ph-bde](https://github.com/phax/ph-bde) - Version 2.2.0 - JDK 1.8
+ * [ph-bde](https://github.com/phax/ph-bde) - Version 2.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde) 
    [![Build Status](https://travis-ci.org/phax/ph-bde.svg?branch=master)](https://travis-ci.org/phax/ph-bde)
- * [ph-bdve](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-cii](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-cii/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-cii) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-cii](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-ebinterface](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-cii/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-cii) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-ebinterface](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-ehf](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ebinterface) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ehf/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ehf) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-ehf](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-en16931](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ehf/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ehf) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-en16931/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-en16931) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-en16931](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-energieefactuur](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-en16931/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-en16931) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-energieefactuur/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-energieefactuur) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-energieefactuur](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-engine](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-energieefactuur/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-energieefactuur) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-engine) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-oioubl](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-oioubl](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-oioubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-oioubl) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-oioubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-oioubl) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-peppol](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-peppol](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-peppol) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-peppol) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-simplerinvoicing](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-simplerinvoicing](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-simplerinvoicing) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-simplerinvoicing) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-teapps](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-teapps](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-teapps/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-teapps) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-teapps/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-teapps) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-ubl](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-ubl](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ubl) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ubl) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-ublbe](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-ublbe](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ublbe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-ublbe) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ublbe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-ublbe) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-xrechnung](https://github.com/phax/ph-bdve) - Version 5.2.11 - JDK 1.8
+ * [ph-bdve/ph-bdve-xrechnung](https://github.com/phax/ph-bdve) - Version 5.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bdve-xrechnung) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 3.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-buildinfo-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-buildinfo-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-buildinfo-maven-plugin)
- * [ph-cii](https://github.com/phax/ph-cii) - Version 2.1.1 - JDK 1.8
+ * [ph-cii](https://github.com/phax/ph-cii) - Version 2.2.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 2.1.1 - JDK 1.8
+ * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 2.2.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16a-1) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-d16a-1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-d16a-1) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 2.1.1 - JDK 1.8
+ * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 2.2.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-d16b) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-d16b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-d16b) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 2.1.1 - JDK 1.8
+ * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 2.2.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cii-testfiles) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
  * [ph-commons](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
 
@@ -349,45 +357,45 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-dirindex-maven-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-dirindex-maven-plugin)
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.1.4 - JDK 1.8
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.1.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-ebinterface.svg?branch=master)](https://travis-ci.org/phax/ph-ebinterface)
- * [ph-fonts](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-alegreya-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-alegreya-sans) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-alegreya-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-alegreya-sans) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-anaheim/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-anaheim) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-anaheim/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-anaheim) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-api) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-api) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-exo2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-exo2) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-exo2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-exo2) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-lato2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-lato2) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-lato2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-lato2) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-open-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-open-sans) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-open-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-open-sans) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-roboto) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-roboto) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
- * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 4.0.2 - JDK 1.8
+ * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 4.1.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-source-sans-pro/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fonts-source-sans-pro) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans-pro/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans-pro) 
    [![Build Status](https://travis-ci.org/phax/ph-fonts.svg?branch=master)](https://travis-ci.org/phax/ph-fonts)
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
 
@@ -453,121 +461,121 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-math) 
    [![Build Status](https://travis-ci.org/phax/ph-math.svg?branch=master)](https://travis-ci.org/phax/ph-math)
- * [ph-oton](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-ajax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-ajax) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-api) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-app/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-app) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-atom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-atom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-audit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-audit) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-demo) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-pages) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-stub) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap3-uictrls) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-demo) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-demo) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-pages) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-pages) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-stub) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-stub) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-bootstrap4-uictrls) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-connect) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-connect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-connect) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-core) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-core) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-datatables/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-datatables) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-datatables/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-datatables) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-exchange) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-exchange) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-html/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-html) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-html/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-html) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-icon/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-icon) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jetty) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jquery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jquery) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jquery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jquery) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-jscode) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jscode) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-security) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-security) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-tinymce4) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-tinymce4) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uicore) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uicore/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uicore) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 8.2.4 - JDK 1.8
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 8.2.5 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-oton-uictrls) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls) 
    [![Build Status](https://travis-ci.org/phax/ph-oton.svg?branch=master)](https://travis-ci.org/phax/ph-oton)
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 1.11.1 - JDK 1.8
 
@@ -621,115 +629,119 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-ubl](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-api) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-api) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-dian/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-dian) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-dian/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-dian) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl-testfiles) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl20-codelists) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl21-codelists) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl22-codelists) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl23/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl23) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl23-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubl23-codelists) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23-codelists) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ublpe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ublpe) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ublpe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ublpe) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 6.2.1 - JDK 1.8
+ * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 6.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ubltr) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr) 
    [![Build Status](https://travis-ci.org/phax/ph-ubl.svg?branch=master)](https://travis-ci.org/phax/ph-ubl)
- * [ph-web](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-http](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-http) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-dns/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-dns) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-http](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-httpclient) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-http) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jsch/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jsch) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-httpclient) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-mail) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-jsch/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-jsch) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-network/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-network) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-mail) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-servlet) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-network/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-network) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sitemap/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sitemap) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-servlet) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-smtp) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-sitemap/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-sitemap) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-useragent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-useragent) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-smtp) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-web) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-useragent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-useragent) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 9.2.0 - JDK 1.8
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xservlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xservlet) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web) 
+   [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
+ * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 9.3.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.3.1.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.1.0 - JDK 1.8
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
    [![Build Status](https://travis-ci.org/phax/ph-xhe.svg?branch=master)](https://travis-ci.org/phax/ph-xhe)
@@ -789,49 +801,49 @@ Current list of all released projects (as of 2020-05-26):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [phase4](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-cef-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-cef-client) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-cef-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-cef-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-lib) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-lib) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-client) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-server-webapp) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-peppol-servlet) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-cef) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-cef) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-profile-peppol) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-server-webapp) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-servlet](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-servlet) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.16 - JDK 1.8
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.9.17 - JDK 1.8
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phase4-test) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.8.6 - JDK 1.8
 
@@ -944,9 +956,6 @@ Current list of all released projects (as of 2020-05-26):
 
 Current list of all unreleased projects:
 
- * [as2-peppol-server](https://github.com/phax/as2-peppol-server) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/as2-peppol-server.svg?branch=master)](https://travis-ci.org/phax/as2-peppol-server)
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/bozoo.svg?branch=master)](https://travis-ci.org/phax/bozoo)
