@@ -757,7 +757,7 @@ Current list of all released projects (as of 2020-06-08):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
    [![Build Status](https://travis-ci.org/phax/ph-xhe.svg?branch=master)](https://travis-ci.org/phax/ph-xhe)
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.3.1 - JDK 1.8
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
    [![Build Status](https://travis-ci.org/phax/ph-xmldsig.svg?branch=master)](https://travis-ci.org/phax/ph-xmldsig)
