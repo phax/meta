@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200609</version>
+  <version>1.0.0-20200611</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1999,68 +1999,68 @@
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-parent-pom</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-cii</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-ebinterface</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-ehf</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-en16931</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-energieefactuur</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-oioubl</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-peppol</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-simplerinvoicing</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-teapps</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-ubl</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-ublbe</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
       <artifactId>ph-bdve-rules-xrechnung</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
