@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200614</version>
+  <version>1.0.0-20200615</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1359,7 +1359,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout4</artifactId>
-      <version>5.1.1</version>
+      <version>5.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1395,48 +1395,53 @@
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-parent-pom</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-api</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-alegreya-sans</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-anaheim</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-exo2</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-lato2</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.font</groupId>
+      <artifactId>ph-fonts-markazi</artifactId>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-open-sans</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-roboto</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-source-sans-pro</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
