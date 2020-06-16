@@ -161,7 +161,7 @@ Current list of all released projects (as of 2020-06-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bde) 
    [![Build Status](https://travis-ci.org/phax/ph-bde.svg?branch=master)](https://travis-ci.org/phax/ph-bde)
- * [ph-bdve](https://github.com/phax/ph-bdve) - Version 6.0.1 - JDK 1.8
+ * [ph-bdve](https://github.com/phax/ph-bdve) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
@@ -217,15 +217,15 @@ Current list of all released projects (as of 2020-06-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve/ph-bdve-api](https://github.com/phax/ph-bdve) - Version 6.0.1 - JDK 1.8
+ * [ph-bdve/ph-bdve-api](https://github.com/phax/ph-bdve) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-api) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-engine](https://github.com/phax/ph-bdve) - Version 6.0.1 - JDK 1.8
+ * [ph-bdve/ph-bdve-engine](https://github.com/phax/ph-bdve) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-engine) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve/ph-bdve-json](https://github.com/phax/ph-bdve) - Version 6.0.1 - JDK 1.8
+ * [ph-bdve/ph-bdve-json](https://github.com/phax/ph-bdve) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-json) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)

@@ -1989,23 +1989,23 @@
     <dependency>
       <groupId>com.helger.bdve</groupId>
       <artifactId>ph-bdve-parent-pom</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve</groupId>
       <artifactId>ph-bdve-api</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve</groupId>
       <artifactId>ph-bdve-engine</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve</groupId>
       <artifactId>ph-bdve-json</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.bdve.rules</groupId>
