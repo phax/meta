@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-06-16):
+Current list of all released projects (as of 2020-06-17):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
@@ -373,6 +373,10 @@ Current list of all released projects (as of 2020-06-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-ebinterface.svg?branch=master)](https://travis-ci.org/phax/ph-ebinterface)
+ * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 1.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa) 
+   [![Build Status](https://travis-ci.org/phax/ph-fatturapa.svg?branch=master)](https://travis-ci.org/phax/ph-fatturapa)
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 4.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom) 

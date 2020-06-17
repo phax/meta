@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200616</version>
+  <version>1.0.0-20200617</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1356,6 +1356,11 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
       <version>6.1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-fatturapa</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
