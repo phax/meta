@@ -2278,86 +2278,86 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-ng-parent-pom</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-regrep</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-edm</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>data-services-directory</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-api</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-client</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-service</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-parent-pom</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-api</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-mem-external</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-mem-phase4</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-main</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-web-api</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-webapp</artifactId>
-      <version>2.0.0-beta5</version>
+      <version>2.0.0-rc2</version>
       <type>war</type>
     </dependency>
   </dependencies>

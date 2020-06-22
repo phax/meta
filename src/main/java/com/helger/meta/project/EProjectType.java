@@ -40,7 +40,7 @@ public enum EProjectType implements IHasID <String>
 
   private final String m_sID;
 
-  private EProjectType (@Nonnull @Nonempty final String sID)
+  EProjectType (@Nonnull @Nonempty final String sID)
   {
     m_sID = sID;
   }

@@ -32,7 +32,7 @@ public enum EJDK
 
   private final int m_nMajor;
 
-  private EJDK (@Nonnegative final int nMajor)
+  EJDK (@Nonnegative final int nMajor)
   {
     m_nMajor = nMajor;
   }

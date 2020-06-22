@@ -379,17 +379,17 @@ public enum EExternalDependency
   private final boolean m_bIsBOM;
   private final boolean m_bIsLegacy;
 
-  private EExternalDependency (@Nonnull @Nonempty final String sGroupID,
-                               @Nonnull @Nonempty final String sArticfactID,
-                               @Nonnull final EExternalDependency eBase)
+  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
+                       @Nonnull @Nonempty final String sArticfactID,
+                       @Nonnull final EExternalDependency eBase)
   {
     this (sGroupID, sArticfactID, eBase.getLastPublishedVersionString (), eBase.getMinimumJDKVersion ());
   }
 
-  private EExternalDependency (@Nonnull @Nonempty final String sGroupID,
-                               @Nonnull @Nonempty final String sArticfactID,
-                               @Nonnull @Nonempty final String sVersion,
-                               @Nonnull final EJDK eMinJDK)
+  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
+                       @Nonnull @Nonempty final String sArticfactID,
+                       @Nonnull @Nonempty final String sVersion,
+                       @Nonnull final EJDK eMinJDK)
   {
     m_sGroupID = sGroupID;
     m_sArticfactID = sArticfactID;

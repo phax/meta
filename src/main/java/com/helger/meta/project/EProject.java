@@ -799,25 +799,23 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject, @Nonnull @Nonempty final String sProjectName, @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull @Nonempty final String sProjectBaseDirName,
-                    @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull @Nonempty final String sProjectBaseDirName,
+            @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
   }
 
-  private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull final EProjectType eProjectType,
-                    @Nullable final String sLastPublishedVersion)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull final EProjectType eProjectType,
+            @Nullable final String sLastPublishedVersion)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
   }
@@ -835,11 +833,11 @@ public enum EProject implements IProject
    *        Last published version
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
-  private EProject (@Nonnull final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull @Nonempty final String sProjectBaseDirName,
-                    @Nonnull final EProjectType eProjectType,
-                    @Nullable final String sLastPublishedVersion)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull @Nonempty final String sProjectBaseDirName,
+            @Nonnull final EProjectType eProjectType,
+            @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
     this (eParentProject,
@@ -874,15 +872,15 @@ public enum EProject implements IProject
    *        Minimum JDK version to use
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
-  private EProject (@Nullable final EProject eParentProject,
-                    @Nonnull @Nonempty final String sProjectOwner,
-                    @Nonnull @Nonempty final String sProjectName,
-                    @Nonnull @Nonempty final String sProjectBaseDirName,
-                    @Nonnull final EProjectType eProjectType,
-                    @Nonnull final EHasPages eHasPagesProject,
-                    @Nonnull final EHasWiki eHasWikiProject,
-                    @Nullable final String sLastPublishedVersion,
-                    @Nonnull final EJDK eMinJDK)
+  EProject (@Nullable final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectOwner,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull @Nonempty final String sProjectBaseDirName,
+            @Nonnull final EProjectType eProjectType,
+            @Nonnull final EHasPages eHasPagesProject,
+            @Nonnull final EHasWiki eHasWikiProject,
+            @Nullable final String sLastPublishedVersion,
+            @Nonnull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try

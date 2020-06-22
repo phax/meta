@@ -43,7 +43,7 @@ public enum EProjectToop implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "2.0.0-beta5",
+                              "2.0.0-rc2",
                               EJDK.JDK8),
   TOOP_REGREP (TOOP_COMMONS_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
   TOOP_KAFKA_CLIENT (TOOP_COMMONS_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
@@ -58,7 +58,7 @@ public enum EProjectToop implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "2.0.0-beta5",
+                               "2.0.0-rc2",
                                EJDK.JDK8),
   DSD_API (DATA_SERVICES_DIRECTORY_POM, "dsd-api", EProjectType.JAVA_LIBRARY),
   DSD_CLIENT (DATA_SERVICES_DIRECTORY_POM, "dsd-client", EProjectType.JAVA_LIBRARY),
@@ -72,7 +72,7 @@ public enum EProjectToop implements IProject
                                 EProjectType.MAVEN_POM,
                                 EHasPages.FALSE,
                                 EHasWiki.FALSE,
-                                "2.0.0-beta5",
+                                "2.0.0-rc2",
                                 EJDK.JDK8),
   TC_API (TOOP_CONNECTOR_NG_PARENT_POM, "tc-api", EProjectType.JAVA_LIBRARY),
   TC_MEM_EXTERNAL (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-external", EProjectType.JAVA_LIBRARY),
@@ -94,25 +94,25 @@ public enum EProjectToop implements IProject
    * @param eProjectType
    *        Project type
    */
-  private EProjectToop (@Nonnull final EProjectToop eParentProject,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull final EProjectType eProjectType)
+  EProjectToop (@Nonnull final EProjectToop eParentProject,
+                @Nonnull @Nonempty final String sProjectName,
+                @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  private EProjectToop (@Nonnull final EProjectToop eParentProject,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull @Nonempty final String sProjectBaseDirName,
-                        @Nonnull final EProjectType eProjectType)
+  EProjectToop (@Nonnull final EProjectToop eParentProject,
+                @Nonnull @Nonempty final String sProjectName,
+                @Nonnull @Nonempty final String sProjectBaseDirName,
+                @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
   }
 
-  private EProjectToop (@Nonnull final EProjectToop eParentProject,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull final EProjectType eProjectType,
-                        @Nullable final String sLastPublishedVersion)
+  EProjectToop (@Nonnull final EProjectToop eParentProject,
+                @Nonnull @Nonempty final String sProjectName,
+                @Nonnull final EProjectType eProjectType,
+                @Nullable final String sLastPublishedVersion)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
   }
@@ -130,11 +130,11 @@ public enum EProjectToop implements IProject
    *        Last published version
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
-  private EProjectToop (@Nonnull final EProjectToop eParentProject,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull @Nonempty final String sProjectBaseDirName,
-                        @Nonnull final EProjectType eProjectType,
-                        @Nullable final String sLastPublishedVersion)
+  EProjectToop (@Nonnull final EProjectToop eParentProject,
+                @Nonnull @Nonempty final String sProjectName,
+                @Nonnull @Nonempty final String sProjectBaseDirName,
+                @Nonnull final EProjectType eProjectType,
+                @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
     this (eParentProject,
@@ -169,15 +169,15 @@ public enum EProjectToop implements IProject
    *        Minimum JDK version to use
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
-  private EProjectToop (@Nullable final EProjectToop eParentProject,
-                        @Nonnull @Nonempty final String sProjectOwner,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull @Nonempty final String sProjectBaseDirName,
-                        @Nonnull final EProjectType eProjectType,
-                        @Nonnull final EHasPages eHasPagesProject,
-                        @Nonnull final EHasWiki eHasWikiProject,
-                        @Nullable final String sLastPublishedVersion,
-                        @Nonnull final EJDK eMinJDK)
+  EProjectToop (@Nullable final EProjectToop eParentProject,
+                @Nonnull @Nonempty final String sProjectOwner,
+                @Nonnull @Nonempty final String sProjectName,
+                @Nonnull @Nonempty final String sProjectBaseDirName,
+                @Nonnull final EProjectType eProjectType,
+                @Nonnull final EHasPages eHasPagesProject,
+                @Nonnull final EHasWiki eHasWikiProject,
+                @Nullable final String sLastPublishedVersion,
+                @Nonnull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try

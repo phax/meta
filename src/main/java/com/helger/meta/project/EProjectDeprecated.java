@@ -37,18 +37,8 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
-  CIPA_START_JMSRECEIVER (null,
-                          "cipa-start-jmsreceiver",
-                          EProjectType.JAVA_LIBRARY,
-                          EHasPages.FALSE,
-                          EHasWiki.FALSE,
-                          "1.0.2"),
-  CIPA_START_JMSSENDER (null,
-                        "cipa-start-jmssender",
-                        EProjectType.JAVA_WEB_APPLICATION,
-                        EHasPages.FALSE,
-                        EHasWiki.FALSE,
-                        "1.0.2"),
+  CIPA_START_JMSRECEIVER (null, "cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
+  CIPA_START_JMSSENDER (null, "cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
   PEPPOL_LIME_PARENT_POM (null,
@@ -187,13 +177,9 @@ public enum EProjectDeprecated implements IProject
                                EHasWiki.FALSE,
                                "0.7.2",
                                EJDK.JDK8),
-  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM,
-                                 "peppol-directory-businesscard",
-                                 EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM,
-                              "peppol-directory-publisher",
-                              EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -258,18 +244,18 @@ public enum EProjectDeprecated implements IProject
    * @param eProjectType
    *        Project type
    */
-  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
-                              @Nonnull @Nonempty final String sProjectName,
-                              @Nonnull final EProjectType eProjectType)
+  EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+                      @Nonnull @Nonempty final String sProjectName,
+                      @Nonnull final EProjectType eProjectType)
   {
     // Project name equals project base directory name
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  private EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
-                              @Nonnull @Nonempty final String sProjectName,
-                              @Nonnull @Nonempty final String sProjectBaseDirName,
-                              @Nonnull final EProjectType eProjectType)
+  EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
+                      @Nonnull @Nonempty final String sProjectName,
+                      @Nonnull @Nonempty final String sProjectBaseDirName,
+                      @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject,
           IProject.DEFAULT_PROJECT_OWNER,
@@ -282,12 +268,12 @@ public enum EProjectDeprecated implements IProject
           EJDK.JDK8);
   }
 
-  private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
-                              @Nonnull @Nonempty final String sProjectName,
-                              @Nonnull final EProjectType eProjectType,
-                              @Nonnull final EHasPages eHasPagesProject,
-                              @Nonnull final EHasWiki eHasWikiProject,
-                              @Nullable final String sLastPublishedVersion)
+  EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
+                      @Nonnull @Nonempty final String sProjectName,
+                      @Nonnull final EProjectType eProjectType,
+                      @Nonnull final EHasPages eHasPagesProject,
+                      @Nonnull final EHasWiki eHasWikiProject,
+                      @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
     this (eParentProject,
@@ -302,15 +288,15 @@ public enum EProjectDeprecated implements IProject
   }
 
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
-  private EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
-                              @Nonnull @Nonempty final String sProjectOwner,
-                              @Nonnull @Nonempty final String sProjectName,
-                              @Nonnull @Nonempty final String sProjectBaseDirName,
-                              @Nonnull final EProjectType eProjectType,
-                              @Nonnull final EHasPages eHasPagesProject,
-                              @Nonnull final EHasWiki eHasWikiProject,
-                              @Nullable final String sLastPublishedVersion,
-                              @Nonnull final EJDK eMinJDK)
+  EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
+                      @Nonnull @Nonempty final String sProjectOwner,
+                      @Nonnull @Nonempty final String sProjectName,
+                      @Nonnull @Nonempty final String sProjectBaseDirName,
+                      @Nonnull final EProjectType eProjectType,
+                      @Nonnull final EHasPages eHasPagesProject,
+                      @Nonnull final EHasWiki eHasWikiProject,
+                      @Nullable final String sLastPublishedVersion,
+                      @Nonnull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
@@ -327,8 +313,7 @@ public enum EProjectDeprecated implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
                                               sProjectBaseDirName),
                                     EIsDeprecated.TRUE,
                                     eHasPagesProject,

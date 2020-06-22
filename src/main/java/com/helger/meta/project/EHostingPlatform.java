@@ -15,7 +15,7 @@ public enum EHostingPlatform implements IHasID <String>
   private final String m_sID;
   private final String m_sDomain;
 
-  private EHostingPlatform (@Nonnull @Nonempty final String sID, @Nonnull @Nonempty final String sDomain)
+  EHostingPlatform (@Nonnull @Nonempty final String sID, @Nonnull @Nonempty final String sDomain)
   {
     m_sID = sID;
     m_sDomain = sDomain;
@@ -36,8 +36,7 @@ public enum EHostingPlatform implements IHasID <String>
   }
 
   @Nullable
-  public static EHostingPlatform getFromIDOrDefault (@Nullable final String sID,
-                                                     @Nullable final EHostingPlatform eDefault)
+  public static EHostingPlatform getFromIDOrDefault (@Nullable final String sID, @Nullable final EHostingPlatform eDefault)
   {
     return EnumHelper.getFromIDOrDefault (EHostingPlatform.class, sID, eDefault);
   }
