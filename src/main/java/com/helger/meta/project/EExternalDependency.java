@@ -67,7 +67,7 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.6", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.8.0", EJDK.JDK8),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.1.0", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.2.1", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.0.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.9.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200517", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200614", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.12.2", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -119,9 +119,11 @@ public enum EExternalDependency
   JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
   JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.5", EJDK.JDK8),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
-  JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.3", EJDK.JDK8),
+  JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "4.0.4", EJDK.JDK8),
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
+
   JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.16.1", EJDK.JDK8),
+
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.6", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.activation")
   JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
@@ -132,6 +134,7 @@ public enum EExternalDependency
   JAVAX_PERSISTENCE("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK8),
   // @IsLegacy (replacedWith = "4.x")
   JAVAX_SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
+  // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK9),
 
   @IsBOM
@@ -198,7 +201,7 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
-  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.21.0", EJDK.JDK8),
+  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.22.0", EJDK.JDK8),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -320,7 +323,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "2.1.3.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.7", EJDK.JDK8),
-  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.2.5", EJDK.JDK8),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.0", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "3.1.0", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.2.0", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
@@ -364,7 +367,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_36a ("com.github.spotbugs", "spotbugs-maven-plugin", "4.0.0", EJDK.JDK8),
+  PARENT_POM_36a ("com.github.spotbugs", "spotbugs-maven-plugin", "4.0.4", EJDK.JDK8),
   PARENT_POM_37 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "taglist-maven-plugin", "2.4", EJDK.JDK8);
 
