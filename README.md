@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2020-06-24):
+Current list of all released projects (as of 2020-06-30):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
 
@@ -189,6 +189,10 @@ Current list of all released projects (as of 2020-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-energieefactuur/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-energieefactuur) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
+ * [ph-bdve-rules/ph-bdve-rules-fatturapa](https://github.com/phax/ph-bdve-rules) - Version 1.0.3 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-fatturapa) 
+   [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
  * [ph-bdve-rules/ph-bdve-rules-oioubl](https://github.com/phax/ph-bdve-rules) - Version 1.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-oioubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-oioubl) 
@@ -249,83 +253,83 @@ Current list of all released projects (as of 2020-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-cii.svg?branch=master)](https://travis-ci.org/phax/ph-cii)
- * [ph-commons](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-bc) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-charset](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-charset](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-cli) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-collection/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-collection) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-config/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-config) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-dao/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-dao) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-datetime/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-datetime) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-graph/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-graph) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-json) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-less-commons) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-matrix/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-matrix) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-scopes) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-security) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-settings) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-tree) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsclient) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 9.4.4 - JDK 1.8
+ * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 9.4.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
@@ -373,7 +377,7 @@ Current list of all released projects (as of 2020-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-ebinterface.svg?branch=master)](https://travis-ci.org/phax/ph-ebinterface)
- * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 1.0.0 - JDK 1.8
+ * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 1.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa) 
    [![Build Status](https://travis-ci.org/phax/ph-fatturapa.svg?branch=master)](https://travis-ci.org/phax/ph-fatturapa)
@@ -885,39 +889,39 @@ Current list of all released projects (as of 2020-06-24):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
