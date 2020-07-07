@@ -87,7 +87,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.0.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.9.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200614", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200628", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.12.2", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
