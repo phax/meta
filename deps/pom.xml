@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200707</version>
+  <version>1.0.0-20200708</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2188,7 +2188,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>4.5.6</version>
+      <version>4.5.7</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>
