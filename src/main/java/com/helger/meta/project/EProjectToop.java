@@ -43,7 +43,7 @@ public enum EProjectToop implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "2.0.0-rc2",
+                              "2.0.0-rc3",
                               EJDK.JDK8),
   TOOP_REGREP (TOOP_COMMONS_NG_PARENT_POM, "toop-regrep", EProjectType.JAVA_LIBRARY),
   TOOP_KAFKA_CLIENT (TOOP_COMMONS_NG_PARENT_POM, "toop-kafka-client", EProjectType.JAVA_LIBRARY),
@@ -58,7 +58,7 @@ public enum EProjectToop implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "2.0.0-rc2",
+                               "2.0.0-rc3",
                                EJDK.JDK8),
   DSD_API (DATA_SERVICES_DIRECTORY_POM, "dsd-api", EProjectType.JAVA_LIBRARY),
   DSD_CLIENT (DATA_SERVICES_DIRECTORY_POM, "dsd-client", EProjectType.JAVA_LIBRARY),
@@ -72,14 +72,15 @@ public enum EProjectToop implements IProject
                                 EProjectType.MAVEN_POM,
                                 EHasPages.FALSE,
                                 EHasWiki.FALSE,
-                                "2.0.0-rc2",
+                                "2.0.0-rc3",
                                 EJDK.JDK8),
   TC_API (TOOP_CONNECTOR_NG_PARENT_POM, "tc-api", EProjectType.JAVA_LIBRARY),
   TC_MEM_EXTERNAL (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-external", EProjectType.JAVA_LIBRARY),
   TC_MEM_PHASE4 (TOOP_CONNECTOR_NG_PARENT_POM, "tc-mem-phase4", EProjectType.JAVA_LIBRARY),
   TC_MAIN (TOOP_CONNECTOR_NG_PARENT_POM, "tc-main", EProjectType.JAVA_LIBRARY),
   TC_WEB_API (TOOP_CONNECTOR_NG_PARENT_POM, "tc-web-api", EProjectType.JAVA_LIBRARY),
-  TC_WEBAPP (TOOP_CONNECTOR_NG_PARENT_POM, "tc-webapp", EProjectType.JAVA_WEB_APPLICATION);
+  TC_WEBAPP (TOOP_CONNECTOR_NG_PARENT_POM, "tc-webapp", EProjectType.JAVA_WEB_APPLICATION),
+  TC_JETTY (TOOP_CONNECTOR_NG_PARENT_POM, "tc-jetty", EProjectType.JAVA_APPLICATION);
 
   private final SimpleProject m_aProject;
 
