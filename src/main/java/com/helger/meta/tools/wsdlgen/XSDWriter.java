@@ -128,8 +128,7 @@ public class XSDWriter
     return sMethodName + sRealPartName + eType.getID ();
   }
 
-  private void _appendDocumentLiteralElements (@Nonnull final MapBasedNamespaceContext aNSC,
-                                               @Nonnull final IMicroElement eSchema)
+  private void _appendDocumentLiteralElements (@Nonnull final MapBasedNamespaceContext aNSC, @Nonnull final IMicroElement eSchema)
   {
     /*
      * Note: when using document/literal the 3 strings created for the "name"
@@ -265,10 +264,10 @@ public class XSDWriter
                   eElement.setAttribute ("default", aChildTypeDef.getDefault ());
                 else
                   LOGGER.warn ("Element " +
-                                  sChildName +
-                                  " of complex type " +
-                                  aChildTypeDef.getType ().getName () +
-                                  " cannot have a default value!");
+                               sChildName +
+                               " of complex type " +
+                               aChildTypeDef.getType ().getName () +
+                               " cannot have a default value!");
               }
               if (aChildTypeDef.hasMin ())
                 eElement.setAttribute ("minOccurs", aChildTypeDef.getMin ());

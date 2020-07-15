@@ -33,8 +33,7 @@ public class MainListSecurity
   {
     final List <Provider> aSortedProviders = Arrays.asList (Security.getProviders ());
     Collections.sort (aSortedProviders,
-                      Comparator.comparing (Provider::getName)
-                                .thenComparing (Comparator.comparingDouble (Provider::getVersion)));
+                      Comparator.comparing (Provider::getName).thenComparing (Comparator.comparingDouble (Provider::getVersion)));
 
     // show all providers
     System.out.println ("All security providers");

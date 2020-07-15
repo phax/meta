@@ -67,8 +67,7 @@ public final class XSDWriterTest
 
       final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ();
       new XSDWriter (aInterface).setDocumentLiteral (true).generatedXSD (aBAOS);
-      SimpleFileIO.writeFile (new File ("xsd", FilenameHelper.getWithoutExtension (sFilename) + ".xsd"),
-                              aBAOS.toByteArray ());
+      SimpleFileIO.writeFile (new File ("xsd", FilenameHelper.getWithoutExtension (sFilename) + ".xsd"), aBAOS.toByteArray ());
     }
   }
 }

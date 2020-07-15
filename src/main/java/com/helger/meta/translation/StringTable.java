@@ -115,9 +115,7 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  public EChange setText (@Nonnull final String sID,
-                          @Nonnull @Nonempty final String sLocale,
-                          @Nonnull final String sNewText)
+  public EChange setText (@Nonnull final String sID, @Nonnull @Nonempty final String sLocale, @Nonnull final String sNewText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -144,9 +142,7 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @Nonnull
-  public EChange overwriteText (@Nonnull final String sID,
-                                @Nonnull @Nonempty final String sLocale,
-                                @Nonnull final String sText)
+  public EChange overwriteText (@Nonnull final String sID, @Nonnull @Nonempty final String sLocale, @Nonnull final String sText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -185,8 +181,7 @@ public final class StringTable implements ICloneable <StringTable>
     return m_aMap;
   }
 
-  public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText,
-                                        @Nonnull final Collection <String> aIDCont)
+  public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText, @Nonnull final Collection <String> aIDCont)
   {
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {

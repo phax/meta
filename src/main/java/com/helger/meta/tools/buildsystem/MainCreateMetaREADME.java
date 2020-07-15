@@ -78,15 +78,12 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
-                                                                                     !p.isGitHubPrivate ())
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () && !p.isGitHubPrivate ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
                                                                                            .thenComparing (IProject::getProjectName));
 
     // Show all
-    aSB.append ("Current list of all released projects (as of ")
-       .append (PDTFactory.getCurrentLocalDate ().toString ())
-       .append ("):\n\n");
+    aSB.append ("Current list of all released projects (as of ").append (PDTFactory.getCurrentLocalDate ().toString ()).append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
       {

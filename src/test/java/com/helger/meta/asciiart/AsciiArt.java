@@ -69,9 +69,7 @@ public class AsciiArt
 
     final double dScale = 0.9;
     final double dOffsetLeft = (1 - dScale) / 2;
-    graphics2D.drawString (text,
-                           (int) (aSettings.m_nWidth / text.length () * dOffsetLeft),
-                           (int) (aSettings.m_nHeight * dScale));
+    graphics2D.drawString (text, (int) (aSettings.m_nWidth / text.length () * dOffsetLeft), (int) (aSettings.m_nHeight * dScale));
 
     final int nLineLen = aSettings.m_nWidth + aSettings.m_sNewLine.length ();
     final ICommonsList <String> aLines = new CommonsArrayList <> (aSettings.m_nHeight);
@@ -100,8 +98,6 @@ public class AsciiArt
     final int nCharsToCut = nMinTrailingSpaces;
 
     // Combine to a single row
-    return StringHelper.getImplodedMapped (aSettings.m_sNewLine,
-                                           aLines,
-                                           x -> x.substring (0, x.length () - nCharsToCut));
+    return StringHelper.getImplodedMapped (aSettings.m_sNewLine, aLines, x -> x.substring (0, x.length () - nCharsToCut));
   }
 }

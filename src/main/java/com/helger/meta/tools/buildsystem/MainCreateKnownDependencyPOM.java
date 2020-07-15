@@ -70,9 +70,7 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       }
 
     eDeps.appendComment ("Internal projects:");
-    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
-                                                                    x.isPublished () &&
-                                                                    !x.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () && x.isPublished () && !x.isDeprecated ()))
     {
       final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
       eDep.appendElement (NS, "groupId").appendText (aProject.getMavenGroupID ());
@@ -95,8 +93,7 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       final IMicroElement ePlugin = ePlugins.appendElement (NS, "plugin");
       ePlugin.appendElement (NS, "groupId").appendText ("org.codehaus.mojo");
       ePlugin.appendElement (NS, "artifactId").appendText ("versions-maven-plugin");
-      ePlugin.appendElement (NS, "version")
-             .appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
+      ePlugin.appendElement (NS, "version").appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
       final IMicroElement eConfig = ePlugin.appendElement (NS, "configuration");
       eConfig.appendElement (NS, "allowSnapshots").appendText ("false");
       eConfig.appendElement (NS, "rulesUri").appendText ("file:versions-maven-plugin-rules.xml");

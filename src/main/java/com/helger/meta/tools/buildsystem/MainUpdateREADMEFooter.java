@@ -131,9 +131,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
       // http://stackoverflow.com/questions/20329355/how-to-make-a-batch-file-delete-itself
       aSB.append ("(goto) 2>nul & del \"%~f0\"\n");
       aSB.append (BATCH_FOOTER);
-      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
-                              aSB.toString (),
-                              BATCH_CHARSET);
+      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD), aSB.toString (), BATCH_CHARSET);
       LOGGER.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
     }
 

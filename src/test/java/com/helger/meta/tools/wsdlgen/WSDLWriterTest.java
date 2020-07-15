@@ -69,8 +69,7 @@ public final class WSDLWriterTest
 
       final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ();
       new WSDLWriter (aInterface).generatedWSDL (aBAOS, EStyle.DOCUMENT, EUse.LITERAL);
-      SimpleFileIO.writeFile (new File ("wsdl", FilenameHelper.getWithoutExtension (sFilename) + ".wsdl"),
-                              aBAOS.toByteArray ());
+      SimpleFileIO.writeFile (new File ("wsdl", FilenameHelper.getWithoutExtension (sFilename) + ".wsdl"), aBAOS.toByteArray ());
     }
   }
 }

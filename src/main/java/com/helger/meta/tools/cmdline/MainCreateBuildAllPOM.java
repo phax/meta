@@ -81,8 +81,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
         if (aElement.getLocalName ().equals ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
-          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
-                                                                          "groupId");
+          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "groupId");
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!

@@ -67,9 +67,7 @@ public final class EProjectTest
       String sProjectName = aFile.getName ();
 
       // ebinterface-ubl-mapping: different GitHub entity
-      if (!"ebinterface-ubl-mapping".equals (sProjectName) &&
-          !"Holodeck-B2B".equals (sProjectName) &&
-          !"junrar".equals (sProjectName))
+      if (!"ebinterface-ubl-mapping".equals (sProjectName) && !"Holodeck-B2B".equals (sProjectName) && !"junrar".equals (sProjectName))
       {
         // Ignore all Pages and Wiki directories
         sProjectName = StringHelper.trimEnd (sProjectName, IProject.EXTENSION_PAGES_PROJECT);

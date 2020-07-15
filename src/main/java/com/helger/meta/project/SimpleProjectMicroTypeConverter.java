@@ -89,8 +89,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
-    final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION),
-                                                                         -1));
+    final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION), -1));
 
     final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, false);
 
@@ -109,8 +108,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   }
 
   @Nonnull
-  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
-                                                         @Nonnull final IMicroElement aElement)
+  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject, @Nonnull final IMicroElement aElement)
   {
     final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
                                                                                    EHostingPlatform.GITHUB);
@@ -136,8 +134,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     if (sLastPublishedVersion == null)
       sLastPublishedVersion = aParentProject.getLastPublishedVersionString ();
 
-    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE,
-                                                                       aParentProject.isGitHubPrivate ());
+    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, aParentProject.isGitHubPrivate ());
 
     return new SimpleProject (eHostingPlatform,
                               aParentProject,

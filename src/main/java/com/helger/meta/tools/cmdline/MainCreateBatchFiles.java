@@ -88,8 +88,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }
 
-  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand,
-                                           @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand, @Nonnull @Nonempty final String sBatchFileName)
   {
     _createBatchFile ("call mvn " + sMavenCommand + " %*", sBatchFileName, true);
   }
@@ -102,8 +101,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     _createMvnBatchFile ("clean install", "mvn_clean_install.cmd");
     _createMvnBatchFile ("clean install -DskipTests=true", "mvn_clean_install_skip_tests.cmd");
     _createMvnBatchFile ("clean install sonar:sonar", "mvn_clean_install_sonar.cmd");
-    _createMvnBatchFile ("clean install forbiddenapis:check forbiddenapis:testCheck",
-                         "mvn_clean_install_forbiddenapis.cmd");
+    _createMvnBatchFile ("clean install forbiddenapis:check forbiddenapis:testCheck", "mvn_clean_install_forbiddenapis.cmd");
     _createBatchFile ("call mvn javadoc:javadoc %* > ../javadoc-results.txt 2>&1", "mvn_javadoc.cmd", true);
     _createBatchFile ("git pull", "git_pull.cmd", true);
     _createBatchFile ("git gc", "git_gc.cmd", true);

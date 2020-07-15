@@ -80,9 +80,7 @@ public class InterfaceReader
     final CollectingJsonParserHandler aHandler = new CollectingJsonParserHandler ();
     if (JsonReader.parseJson (new NonBlockingStringReader (sPreprocessedContent),
                               aHandler,
-                              x -> x.setTrackPosition (true)
-                                    .setRequireStringQuotes (false)
-                                    .setAllowSpecialCharsInStrings (true),
+                              x -> x.setTrackPosition (true).setRequireStringQuotes (false).setAllowSpecialCharsInStrings (true),
                               ex -> LOGGER.error ("Failed to parse JSON", ex))
                   .isSuccess ())
     {
@@ -123,9 +121,7 @@ public class InterfaceReader
   }
 
   @Nonnull
-  private static WGTypeDef _readTypeDef (final WGInterface aInterface,
-                                         final String sTypeChildName,
-                                         @Nonnull final IJson aTypeChildNode)
+  private static WGTypeDef _readTypeDef (final WGInterface aInterface, final String sTypeChildName, @Nonnull final IJson aTypeChildNode)
   {
     if (aTypeChildNode.isValue ())
     {
@@ -133,11 +129,7 @@ public class InterfaceReader
       final String sChildTypeName = aTypeChildNode.getAsValue ().getAsString ();
       final IWGType aChildType = aInterface.getTypeOfName (sChildTypeName);
       if (aChildType == null)
-        throw new IllegalArgumentException ("Property '" +
-                                            sTypeChildName +
-                                            "' has invalid type '" +
-                                            sChildTypeName +
-                                            "'");
+        throw new IllegalArgumentException ("Property '" + sTypeChildName + "' has invalid type '" + sChildTypeName + "'");
       return new WGTypeDef (aChildType);
     }
 
@@ -147,11 +139,7 @@ public class InterfaceReader
     final String sChildTypeName = _getChildAsText (aType, "$type");
     final IWGType aChildType = aInterface.getTypeOfName (sChildTypeName);
     if (aChildType == null)
-      throw new IllegalArgumentException ("Property '" +
-                                          sTypeChildName +
-                                          "' has invalid type '" +
-                                          sChildTypeName +
-                                          "'");
+      throw new IllegalArgumentException ("Property '" + sTypeChildName + "' has invalid type '" + sChildTypeName + "'");
     final WGTypeDef aTypeDef = new WGTypeDef (aChildType);
     aTypeDef.setDocumentation (_getDocumentation (_getChildAsText (aType, "$doc")));
     aTypeDef.setMin (_getChildAsText (aType, "$min"));
@@ -232,9 +220,7 @@ public class InterfaceReader
                     {
                       final IJsonArray aEntries = aTypeChildNode.getAsArray ();
                       if (aEntries == null)
-                        throw new IllegalArgumentException ("Simple type '" +
-                                                            aSimpleType.getName () +
-                                                            "' has invalid enum entries");
+                        throw new IllegalArgumentException ("Simple type '" + aSimpleType.getName () + "' has invalid enum entries");
 
                       // Convert all to string
                       final ICommonsList <WGEnumEntry> aEnumEntries = new CommonsArrayList <> ();
@@ -244,8 +230,7 @@ public class InterfaceReader
                         {
                           // [key, documentation]
                           final IJsonArray aProvValueList = aPropValue.getAsArray ();
-                          aEnumEntries.add (new WGEnumEntry (aProvValueList.getAsString (0),
-                                                             aProvValueList.getAsString (1)));
+                          aEnumEntries.add (new WGEnumEntry (aProvValueList.getAsString (0), aProvValueList.getAsString (1)));
                         }
                         else
                         {
@@ -301,8 +286,7 @@ public class InterfaceReader
                 aComplexTypeDef.setDocumentation (_getDocumentation (aTypeChildNode.getAsValue ().getAsString ()));
               else
                 if (sTypeChildName.equals ("$type"))
-                  aComplexType.setType (EComplexTypeType.getFromTagNameOrThrow (aTypeChildNode.getAsValue ()
-                                                                                              .getAsString ()));
+                  aComplexType.setType (EComplexTypeType.getFromTagNameOrThrow (aTypeChildNode.getAsValue ().getAsString ()));
                 else
                   if (!sTypeChildName.startsWith ("$"))
                   {

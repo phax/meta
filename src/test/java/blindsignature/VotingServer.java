@@ -64,11 +64,7 @@ public class VotingServer
   /**
    * Voting Server constructor
    */
-  VotingServer (final int candidates,
-                final int cardamount,
-                final BigInteger d,
-                final BigInteger e,
-                final BigInteger mod)
+  VotingServer (final int candidates, final int cardamount, final BigInteger d, final BigInteger e, final BigInteger mod)
   {
     this.m_nCandidates = candidates;
     this.m_nCardamount = cardamount;

@@ -76,11 +76,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           }
           else
           {
-            _warn (eProject,
-                   cn.name +
-                             " field m_aTP is of wrong type " +
-                             Type.getType (fn.desc) +
-                             " and not of type IMultilingualText");
+            _warn (eProject, cn.name + " field m_aTP is of wrong type " + Type.getType (fn.desc) + " and not of type IMultilingualText");
           }
         }
         else
@@ -178,8 +174,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
     if (!aSTProject.isEmpty () && eProject.isBuildInProject ())
     {
-      final File aDstFileXML = new File (eProject.getBaseDir (),
-                                         "src/main/resources/translation/translatable-texts.xml");
+      final File aDstFileXML = new File (eProject.getBaseDir (), "src/main/resources/translation/translatable-texts.xml");
       if (StringTableSerializer.writeStringTableAsXML (aDstFileXML, aSTProject).isSuccess ())
         s_aActions.add ("cd " + eProject.getProjectName () + " && call mvn license:format && cd..");
       else
@@ -190,8 +185,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     LOGGER.info ("Start extracting text from .class files!");
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
-                                                                    !p.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () && !p.isDeprecated ()))
       _scanProject (aProject);
     LOGGER.info ("Done - " + getWarnCount () + " warning(s)");
     if (!s_aActions.isEmpty ())

@@ -85,8 +85,7 @@ public class WSDLWriter
     return aNSC.getPrefix (aType.getNamespace ()) + ":" + aType.getName ();
   }
 
-  private static String _getFaultName (@Nonnull @Nonempty final String sMethodName,
-                                       @Nonnull final String sLocalFaultName)
+  private static String _getFaultName (@Nonnull @Nonempty final String sMethodName, @Nonnull final String sLocalFaultName)
   {
     // JAXWS expects fault names to start with uppercase *sigh*
     String sRealMethodName = sMethodName;
@@ -155,11 +154,7 @@ public class WSDLWriter
 
             if (bIsDocumentLiteral)
               ePart.setAttribute ("element",
-                                  PREFIX_TNS +
-                                             ":" +
-                                             XSDWriter.getElementName (sMethodName,
-                                                                       aEntry.getKey (),
-                                                                       EElementType.INPUT));
+                                  PREFIX_TNS + ":" + XSDWriter.getElementName (sMethodName, aEntry.getKey (), EElementType.INPUT));
             else
               ePart.setAttribute ("type", _getTypeRef (aNSC, aType));
           }
@@ -181,11 +176,7 @@ public class WSDLWriter
 
             if (bIsDocumentLiteral)
               ePart.setAttribute ("element",
-                                  PREFIX_TNS +
-                                             ":" +
-                                             XSDWriter.getElementName (sMethodName,
-                                                                       aEntry.getKey (),
-                                                                       EElementType.OUTPUT));
+                                  PREFIX_TNS + ":" + XSDWriter.getElementName (sMethodName, aEntry.getKey (), EElementType.OUTPUT));
             else
               ePart.setAttribute ("type", _getTypeRef (aNSC, aType));
           }
@@ -208,11 +199,7 @@ public class WSDLWriter
             ePart.setAttribute ("name", aEntry.getKey ());
             if (bIsDocumentLiteral)
               ePart.setAttribute ("element",
-                                  PREFIX_TNS +
-                                             ":" +
-                                             XSDWriter.getElementName (sMethodName,
-                                                                       aEntry.getKey (),
-                                                                       EElementType.FAULT));
+                                  PREFIX_TNS + ":" + XSDWriter.getElementName (sMethodName, aEntry.getKey (), EElementType.FAULT));
             else
               ePart.setAttribute ("type", _getTypeRef (aNSC, aType));
           }

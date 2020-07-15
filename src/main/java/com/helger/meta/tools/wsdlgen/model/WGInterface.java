@@ -43,9 +43,7 @@ public class WGInterface
   private final ICommonsOrderedMap <String, WGTypeDef> m_aTypes = new CommonsLinkedHashMap <> ();
   private final ICommonsOrderedMap <String, WGMethod> m_aMethods = new CommonsLinkedHashMap <> ();
 
-  public WGInterface (@Nonnull @Nonempty final String sName,
-                      @Nonnull @Nonempty final String sNamespace,
-                      @Nullable final String sEndpoint)
+  public WGInterface (@Nonnull @Nonempty final String sName, @Nonnull @Nonempty final String sNamespace, @Nullable final String sEndpoint)
   {
     ValueEnforcer.notEmpty (sName, "Name");
     ValueEnforcer.notEmpty (sNamespace, "Namespace");
