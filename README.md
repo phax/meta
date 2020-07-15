@@ -5,31 +5,31 @@ This project is not meant to be released but only helps me internally to get all
 
 Current list of all released projects (as of 2020-07-15):
 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.6.0 - JDK 1.8
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
@@ -825,43 +825,43 @@ Current list of all released projects (as of 2020-07-15):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11) 
    [![Build Status](https://travis-ci.org/phax/ph-xsds.svg?branch=master)](https://travis-ci.org/phax/ph-xsds)
- * [phase4](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-cef-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-cef-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-lib) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-client) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-cef/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-cef) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-server-webapp) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.10.2 - JDK 1.8
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 0.10.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
