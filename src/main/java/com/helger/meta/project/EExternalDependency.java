@@ -69,7 +69,9 @@ public enum EExternalDependency
 
   DNSJAVA ("dnsjava", "dnsjava", "3.2.2", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
-  DOM4J ("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
+  @IsLegacy (replacedWith = "org.dom4j:dom4j")
+  DOM4J_OLD("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
+  DOM4J ("org.dom4j", "dom4j", "2.1.3", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
 
   ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.7", EJDK.JDK8),
