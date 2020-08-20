@@ -353,19 +353,19 @@ Current list of all released projects (as of 2020-08-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday) 
    [![Build Status](https://travis-ci.org/phax/ph-datetime.svg?branch=master)](https://travis-ci.org/phax/ph-datetime)
- * [ph-db](https://github.com/phax/ph-db) - Version 6.2.0 - JDK 1.8
+ * [ph-db](https://github.com/phax/ph-db) - Version 6.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.2.0 - JDK 1.8
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.2.0 - JDK 1.8
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.2.0 - JDK 1.8
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa) 
    [![Build Status](https://travis-ci.org/phax/ph-db.svg?branch=master)](https://travis-ci.org/phax/ph-db)
@@ -889,39 +889,39 @@ Current list of all released projects (as of 2020-08-20):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.5 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
