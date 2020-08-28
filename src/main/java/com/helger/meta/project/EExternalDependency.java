@@ -286,21 +286,21 @@ public enum EExternalDependency
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "5.3.2", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.20", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.21", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.5.0", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.5.1", EJDK.JDK8),
   POI ("org.apache.poi", "poi", "4.1.2", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
-  POSTGRESQL ("org.postgresql", "postgresql", "42.2.15", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.2.16", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.3", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "10.1", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "10.2", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   @IsLegacy (replacedWith = "org.odftoolkit:simple-odf")
   SIMPLE_ODF_APACHE("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
