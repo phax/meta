@@ -140,64 +140,22 @@ public enum EExternalDependency
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK9),
 
+  JAXB_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_BOM("org.glassfish.jaxb", "jaxb-bom", "2.2.11", EJDK.JDK8),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_CODEMODEL("org.glassfish.jaxb", "codemodel", JAXB_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_CORE("org.glassfish.jaxb", "jaxb-core", JAXB_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_JXC("org.glassfish.jaxb", "jaxb-jxc", JAXB_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_RUNTIME("org.glassfish.jaxb", "jaxb-runtime", JAXB_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_TXW2("org.glassfish.jaxb", "txw2", JAXB_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_XJC("org.glassfish.jaxb", "jaxb-xjc", JAXB_BOM),
-
-  @IsBOM
-  JAXB9_BOM ("org.glassfish.jaxb", "jaxb-bom", "2.3.3", EJDK.JDK9),
-  JAXB9_CODEMODEL ("org.glassfish.jaxb", "codemodel", JAXB9_BOM),
-  JAXB9_JXC ("org.glassfish.jaxb", "jaxb-jxc", JAXB9_BOM),
-  JAXB9_RUNTIME ("org.glassfish.jaxb", "jaxb-runtime", JAXB9_BOM),
-  JAXB9_TXW2 ("org.glassfish.jaxb", "txw2", JAXB9_BOM),
-  JAXB9_XJC ("org.glassfish.jaxb", "jaxb-xjc", JAXB9_BOM),
-  JAXB9_XSOM ("org.glassfish.jaxb", "xsom", JAXB9_BOM),
-
-  // Not in 2.3.1...
-  JAXB9_CORE ("org.glassfish.jaxb", "jaxb-core", "2.3.0.1", EJDK.JDK9),
-
-  // JAXB_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.2.11", EJDK.JDK8),
-  // JAXB_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB_IMPL_SUN),
-  // JAXB_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB_IMPL_SUN),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXB_RNGOM_SUN("com.sun.xml.bind.external", "rngom", "2.2.11", EJDK.JDK8),
-
-  // JAXB9_IMPL_SUN ("com.sun.xml.bind", "jaxb-impl", "2.3.0", EJDK.JDK9),
-  // JAXB9_JXC_SUN ("com.sun.xml.bind", "jaxb-jxc", JAXB9_IMPL_SUN),
-  // JAXB9_XJC_SUN ("com.sun.xml.bind", "jaxb-xjc", JAXB9_IMPL_SUN),
-  JAXB9_RNGOM_SUN ("com.sun.xml.bind.external", "rngom", JAXB9_BOM),
+  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", JAXB_API),
+  JAXB_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB_API),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
 
+  JAXWS_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXWS_RI_BOM("com.sun.xml.ws", "jaxws-ri-bom", "2.2.10", EJDK.JDK8),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXWS_RT("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
-  @IsLegacy (replacedWith = "2.3.x")
-  JAXWS_TOOLS("com.sun.xml.ws", "jaxws-tools", JAXWS_RI_BOM),
-
-  @IsBOM
-  JAXWS9_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.3", EJDK.JDK9),
-  JAXWS9_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS9_RI_BOM),
-  JAXWS9_TOOLS ("com.sun.xml.ws", "jaxws-tools", JAXWS9_RI_BOM),
-  JAXWS9_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS9_RI_BOM),
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", JAXWS_API),
+  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_API),
+  JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RT),
 
   @IsLegacy (replacedWith = "com.sun.xml.ws::jaxws-maven-plugin")
-  JAXWS_MAVEN_PLUGIN("org.codehaus.mojo", "jaxws-maven-plugin", "2.6", EJDK.JDK8),
+  JAXWS_MAVEN_PLUGIN_OLD("org.codehaus.mojo", "jaxws-maven-plugin", "2.6", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "org.apache.pdfbox::jbig2-imageio")
   JBIG2("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK8),
@@ -483,8 +441,8 @@ public enum EExternalDependency
       // return JAXB_XJC;
       case JSP_API_OLD:
         return JAKARTA_JSP_API;
-      case JAXWS_MAVEN_PLUGIN:
-        return JAXWS9_MAVEN_PLUGIN;
+      case JAXWS_MAVEN_PLUGIN_OLD:
+        return JAXWS_MAVEN_PLUGIN;
     }
     return null;
   }
