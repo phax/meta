@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200916</version>
+  <version>1.0.0-20200917</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -208,7 +208,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>6.5.5</version>
+      <version>6.5.6</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -466,7 +466,7 @@
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
       <artifactId>org.eclipse.jdt.core</artifactId>
-      <version>3.22.0</version>
+      <version>3.23.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.jersey</groupId>
@@ -838,18 +838,18 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>2.3.3.RELEASE</version>
+      <version>2.3.4.RELEASE</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.3.3.RELEASE</version>
+      <version>2.3.4.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.3.3.RELEASE</version>
+      <version>2.3.4.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -2122,34 +2122,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-businesscard</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.8.8</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
