@@ -49,19 +49,19 @@ Current list of all released projects (as of 2020-09-18):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
- * [data-services-directory](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.0 - JDK 1.8
+ * [data-services-directory](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory) 
    [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-api](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.0 - JDK 1.8
+ * [data-services-directory/dsd-api](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-client](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.0 - JDK 1.8
+ * [data-services-directory/dsd-client](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-service](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.0 - JDK 1.8
+ * [data-services-directory/dsd-service](https://github.com/TOOP4EU/data-services-directory) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-service/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-service) 
    [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
@@ -937,55 +937,55 @@ Current list of all released projects (as of 2020-09-18):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [toop-commons-ng](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-commons-ng](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-ng-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-ng-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-commons](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-commons-ng/toop-commons](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-edm](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-commons-ng/toop-edm](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-edm/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-edm) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-commons-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-regrep](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-commons-ng/toop-regrep](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-regrep) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-connector-ng](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-parent-pom) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-jetty](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-jetty](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-jetty) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-main](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-main](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-main/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-main) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-mem-external](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-mem-external](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-external/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-external) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-mem-phase4](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-mem-phase4](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-phase4) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-web-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-web-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-web-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-web-api) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-webapp](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.0 - JDK 1.8
+ * [toop-connector-ng/tc-webapp](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.0.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-webapp) 
    [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
