@@ -538,7 +538,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.6.2",
+                      "4.6.3",
                       EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
@@ -594,7 +594,9 @@ public enum EProject implements IProject
   PH_BDVE_RULES_FINVOICE (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-finvoice", EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_OIOUBL (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-oioubl", EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_PEPPOL (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-peppol", EProjectType.JAVA_LIBRARY),
-  PH_BDVE_RULES_SIMPLERINVOICING (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-simplerinvoicing", EProjectType.JAVA_LIBRARY),
+  PH_BDVE_RULES_SIMPLERINVOICING (PH_BDVE_RULES_PARENT_POM,
+                                  "ph-bdve-rules-simplerinvoicing",
+                                  EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_SVEFAKTURA (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-svefaktura", EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_TEAPPS (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-teapps", EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_UBL (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-ubl", EProjectType.JAVA_LIBRARY),
@@ -637,7 +639,9 @@ public enum EProject implements IProject
                               EJDK.JDK8),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
+  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM,
+                             "phoss-directory-publisher",
+                             EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_DIRECTORY_CLIENT (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-client", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_SEARCHAPI (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -725,7 +729,10 @@ public enum EProject implements IProject
                               EHasWiki.FALSE,
                               "0.14.3",
                               EJDK.JDK8),
-  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin-core", "plugin-core", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
+                            "maven-jaxb22-plugin-core",
+                            "plugin-core",
+                            EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
@@ -804,7 +811,9 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProject (@Nonnull final EProject eParentProject, @Nonnull @Nonempty final String sProjectName, @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
@@ -814,7 +823,11 @@ public enum EProject implements IProject
             @Nonnull @Nonempty final String sProjectBaseDirName,
             @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
   }
 
   EProject (@Nonnull final EProject eParentProject,
@@ -913,8 +926,10 @@ public enum EProject implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : CMeta.GIT_BASE_DIR,
+                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout"
+                                                                                            : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
                                     eHasWikiProject,
