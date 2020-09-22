@@ -33,22 +33,22 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>8.0.1</version>
+      <version>9.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>8.0.1</version>
+      <version>9.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>8.0.1</version>
+      <version>9.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>8.0.1</version>
+      <version>9.0</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -208,7 +208,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>6.5.6</version>
+      <version>6.5.7</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -233,12 +233,12 @@
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
       <artifactId>gmavenplus-plugin</artifactId>
-      <version>1.10.0</version>
+      <version>1.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20200830</version>
+      <version>v20200920</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -269,7 +269,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>4.0.2</version>
+      <version>4.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>

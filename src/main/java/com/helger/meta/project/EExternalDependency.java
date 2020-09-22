@@ -41,7 +41,7 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.8", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "8.0.1", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "9.0", EJDK.JDK8),
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
@@ -54,7 +54,10 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
 
-  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention", "classloader-leak-prevention-core", "2.7.0", EJDK.JDK8),
+  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
+                               "classloader-leak-prevention-core",
+                               "2.7.0",
+                               EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
@@ -83,14 +86,14 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "2.2.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "6.5.6", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "6.5.7", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.0.1", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.10.0", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.10.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200830", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20200920", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.13.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -103,7 +106,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "4.0.2", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "4.0.3", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.13", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.12", EJDK.JDK8),
@@ -463,11 +466,14 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
+  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
+                                                            @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
+                                                                 x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
-    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ()).reversed ());
+    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
+                        .reversed ());
     return ret;
   }
 
