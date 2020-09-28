@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20200924</version>
+  <version>1.0.0-20200928</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1125,103 +1125,103 @@
       <version>1.1.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
       <version>9.5.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-bc</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-charset</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-cli</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-collection</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-commons</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-config</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-dao</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-datetime</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-graph</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-jaxb</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-json</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-less-commons</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-matrix</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-scopes</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-security</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-settings</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-tree</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-wsclient</artifactId>
       <version>9.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.commons</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
       <version>9.5.1</version>
     </dependency>
@@ -1684,33 +1684,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.6.2</version>
+      <version>5.6.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
@@ -2092,34 +2092,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-businesscard</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
