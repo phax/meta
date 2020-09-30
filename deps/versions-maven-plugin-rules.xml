@@ -48,5 +48,10 @@
         <ignoreVersion>1.11.1-PUBLISHED-BY-MISTAKE</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="com.helger" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion>9.5.2</ignoreVersion>
+      </ignoreVersions>
+    </rule>
   </rules>  
 </ruleset>
