@@ -91,7 +91,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.11.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201006", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201102", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.13.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -104,7 +104,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "4.0.3", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "4.1", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.13", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -141,19 +141,19 @@ public enum EExternalDependency
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK11),
 
-  JAXB_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
+  JAXB_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.0", EJDK.JDK8),
   @IsBOM
-  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", JAXB_API),
-  JAXB_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB_API),
+  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.3", EJDK.JDK8),
+  JAXB_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB_BOM),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
 
-  JAXWS_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
+  JAXWS_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.0", EJDK.JDK8),
   @IsBOM
-  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", JAXWS_API),
-  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_API),
-  JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RT),
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.3", EJDK.JDK8),
+  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
+  JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RI_BOM),
 
   @IsLegacy (replacedWith = "com.sun.xml.ws::jaxws-maven-plugin")
   JAXWS_MAVEN_PLUGIN_OLD("org.codehaus.mojo", "jaxws-maven-plugin", "2.6", EJDK.JDK8),
@@ -179,7 +179,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.33.v20201020", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.34.v20201102", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -221,7 +221,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.6.3", EJDK.JDK11),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.7.0", EJDK.JDK11),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -243,7 +243,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.22", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.2", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.3", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.21", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -277,7 +277,7 @@ public enum EExternalDependency
   SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.3.5.RELEASE", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
-  STAX_EX ("org.jvnet.staxex", "stax-ex", "1.8.3", EJDK.JDK8),
+  STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
 
   TESTNG ("org.testng", "testng", "7.3.0", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
