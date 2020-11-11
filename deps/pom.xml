@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20201106</version>
+  <version>1.0.0-20201111</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2183,7 +2183,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-xrechnung-mapping</artifactId>
-      <version>1.0.9</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
