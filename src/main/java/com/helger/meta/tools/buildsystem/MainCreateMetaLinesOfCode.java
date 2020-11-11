@@ -54,7 +54,7 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 {
-  private static enum EFileType
+  private enum EFileType
   {
     BATCH ("Batch", true, new CommonsTreeSet <> ("bat", "cmd")),
     CODEGEN ("Code generation", true, new CommonsTreeSet <> ("jj", "jjt")),
@@ -110,6 +110,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                        "dat",
                                        "ent",
                                        "episode",
+                                       "flow",
                                        "header",
                                        "ijmap",
                                        "in",
