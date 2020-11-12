@@ -165,67 +165,75 @@ Current list of all released projects (as of 2020-11-12):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve/ph-bdve-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve.svg?branch=master)](https://travis-ci.org/phax/ph-bdve)
- * [ph-bdve-rules](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-cii](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-cii](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-cii/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-cii) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-ebinterface](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-cius-pt](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-cius-pt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-cius-pt) 
+   [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
+ * [ph-bdve-rules/ph-bdve-rules-ebinterface](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-ehf](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-ehf](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ehf/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ehf) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-en16931](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-en16931](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-en16931/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-en16931) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-energieefactuur](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-energieefactuur](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-energieefactuur/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-energieefactuur) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-fatturapa](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-facturae](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-facturae/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-facturae) 
+   [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
+ * [ph-bdve-rules/ph-bdve-rules-fatturapa](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-fatturapa) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-finvoice](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-finvoice](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-finvoice/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-finvoice) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-oioubl](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-oioubl](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-oioubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-oioubl) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-peppol](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-peppol](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-peppol) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-simplerinvoicing](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-simplerinvoicing](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-simplerinvoicing) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-svefaktura](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-svefaktura](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-svefaktura/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-svefaktura) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-teapps](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-teapps](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-teapps/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-teapps) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-ubl](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-ubl](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ubl) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-ublbe](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-ublbe](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ublbe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-ublbe) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
- * [ph-bdve-rules/ph-bdve-rules-xrechnung](https://github.com/phax/ph-bdve-rules) - Version 1.0.11 - JDK 1.8
+ * [ph-bdve-rules/ph-bdve-rules-xrechnung](https://github.com/phax/ph-bdve-rules) - Version 1.0.12 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.bdve.rules/ph-bdve-rules-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/ph-bdve-rules.svg?branch=master)](https://travis-ci.org/phax/ph-bdve-rules)
