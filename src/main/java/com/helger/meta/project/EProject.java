@@ -583,7 +583,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "1.0.12",
+                            "1.0.13",
                             EJDK.JDK8),
   PH_BDVE_RULES_CII (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-cii", EProjectType.JAVA_LIBRARY),
   PH_BDVE_RULES_CIUS_PT (PH_BDVE_RULES_PARENT_POM, "ph-bdve-rules-cius-pt", EProjectType.JAVA_LIBRARY),
