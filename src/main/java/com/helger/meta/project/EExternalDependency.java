@@ -84,7 +84,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.1.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.2.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -92,7 +92,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.11.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201102", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.13.0", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.14.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -120,22 +120,21 @@ public enum EExternalDependency
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_CORE),
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.6", EJDK.JDK8),
-  JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "2.0.0", EJDK.JDK8),
-  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "2.0.0", EJDK.JDK8),
+
+  JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
+  // We need to wait for BouncyCastle before we can update
+  JAKARTA_ACTIVATION_2 ("com.sun.activation", "jakarta.activation", "2.0.0", EJDK.JDK11),
+  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.5", EJDK.JDK8),
+  // We need to wait for BouncyCastle before we can update
+  JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.0", EJDK.JDK11),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
-  JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
+  JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK8),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.16.2", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.17.0", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.9", EJDK.JDK8),
-  @IsLegacy (replacedWith = "jakarta.activation")
-  JAVAX_ACTIVATION("javax.activation", "activation", "1.1.1", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
-  @IsLegacy (replacedWith = "jakarta.mail")
-  JAVAX_MAIL("com.sun.mail", "javax.mail", "1.6.2", EJDK.JDK8),
-  @IsLegacy (replacedWith = "jakarta.persistence")
-  JAVAX_PERSISTENCE("org.eclipse.persistence", "javax.persistence", "2.2.1", EJDK.JDK8),
   // @IsLegacy (replacedWith = "4.x")
   JAVAX_SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
@@ -155,11 +154,6 @@ public enum EExternalDependency
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
   JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RI_BOM),
 
-  @IsLegacy (replacedWith = "com.sun.xml.ws::jaxws-maven-plugin")
-  JAXWS_MAVEN_PLUGIN_OLD("org.codehaus.mojo", "jaxws-maven-plugin", "2.6", EJDK.JDK8),
-
-  @IsLegacy (replacedWith = "org.apache.pdfbox::jbig2-imageio")
-  JBIG2("com.levigo.jbig2", "levigo-jbig2-imageio", "2.0", EJDK.JDK8),
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
@@ -192,10 +186,6 @@ public enum EExternalDependency
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
-  @IsLegacy
-  JSP_API_OLD ("javax.servlet.jsp", "jsp-api", "2.2", EJDK.JDK8),
-  @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
-  JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.1", EJDK.JDK8),
@@ -209,7 +199,8 @@ public enum EExternalDependency
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.6.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.13.3", EJDK.JDK8),
+
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.14.0", EJDK.JDK8),
   LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
@@ -235,8 +226,6 @@ public enum EExternalDependency
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
   @IsLegacy
-  MONGO_DRIVER ("org.mongodb", "mongodb-driver", "3.12.2", EJDK.JDK8),
-  @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.1.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.1.1", EJDK.JDK8),
@@ -261,8 +250,6 @@ public enum EExternalDependency
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.3", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
-  @IsLegacy (replacedWith = "org.odftoolkit:simple-odf")
-  SIMPLE_ODF_APACHE("org.apache.odftoolkit", "simple-odf", "0.8.2-incubating", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.30", EJDK.JDK8),
@@ -274,7 +261,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.3.5.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.0.RELEASE", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
@@ -440,10 +427,10 @@ public enum EExternalDependency
       // return JAXB_JXC;
       // case JAXB_XJC_SUN:
       // return JAXB_XJC;
-      case JSP_API_OLD:
-        return JAKARTA_JSP_API;
-      case JAXWS_MAVEN_PLUGIN_OLD:
-        return JAXWS_MAVEN_PLUGIN;
+      // case JSP_API_OLD:
+      // return JAKARTA_JSP_API;
+      // case JAXWS_MAVEN_PLUGIN_OLD:
+      // return JAXWS_MAVEN_PLUGIN;
     }
     return null;
   }
