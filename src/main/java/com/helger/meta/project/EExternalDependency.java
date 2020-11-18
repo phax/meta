@@ -186,6 +186,8 @@ public enum EExternalDependency
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
+  @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
+  JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.1", EJDK.JDK8),
@@ -261,7 +263,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.0.RELEASE", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.0", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
@@ -427,8 +429,8 @@ public enum EExternalDependency
       // return JAXB_JXC;
       // case JAXB_XJC_SUN:
       // return JAXB_XJC;
-      // case JSP_API_OLD:
-      // return JAKARTA_JSP_API;
+      case JAVAX_JSP_API:
+        return JAKARTA_JSP_API;
       // case JAXWS_MAVEN_PLUGIN_OLD:
       // return JAXWS_MAVEN_PLUGIN;
     }
