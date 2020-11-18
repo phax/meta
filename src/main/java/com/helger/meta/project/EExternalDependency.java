@@ -129,7 +129,10 @@ public enum EExternalDependency
   JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.0", EJDK.JDK11),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
   JAKARTA_SERVLET_API ("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
-  JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK8),
+
+  JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
+  // We need to wait for implementations
+  JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
 
   JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.17.0", EJDK.JDK8),
 
