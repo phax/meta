@@ -1632,68 +1632,68 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-http</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>9.5.0</version>
+      <version>9.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1961,150 +1961,150 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>8.2.7</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>6.0.4</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>6.0.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-engine</artifactId>
-      <version>6.0.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-json</artifactId>
-      <version>6.0.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-parent-pom</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-parent-pom</artifactId>
+      <version>2.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-cii</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-cii</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-cius-pt</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-cius-pt</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-ebinterface</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-ebinterface</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-ehf</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-ehf</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-en16931</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-en16931</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-energieefactuur</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-energieefactuur</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-facturae</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-facturae</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-fatturapa</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-fatturapa</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-finvoice</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-finvoice</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-oioubl</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-oioubl</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-peppol</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-peppol</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-simplerinvoicing</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-simplerinvoicing</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-svefaktura</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-svefaktura</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-teapps</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-teapps</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-ubl</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-ubl</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-ublbe</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-ublbe</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.bdve.rules</groupId>
-      <artifactId>ph-bdve-rules-xrechnung</artifactId>
-      <version>1.0.15</version>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-xrechnung</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
