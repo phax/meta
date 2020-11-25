@@ -449,7 +449,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (aProject == EProject.PH_SBDH && sPackageName.equals ("org.unece.cefact.namespaces.sbdh"))
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_SCHEMATRON && sPackageName.equals ("org.oclc.purl.dsdl.svrl"))
+    if (aProject == EProject.PH_SCHEMATRON_API && sPackageName.equals ("org.oclc.purl.dsdl.svrl"))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_UBL20 &&

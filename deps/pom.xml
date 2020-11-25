@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20201124</version>
+  <version>1.0.0-20201125</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -208,7 +208,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -374,7 +374,7 @@
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
       <artifactId>javacc</artifactId>
-      <version>7.0.9</version>
+      <version>7.0.10</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
@@ -497,33 +497,33 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.34.v20201102</version>
+      <version>9.4.35.v20201120</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -776,6 +776,11 @@
       <version>10.3</version>
     </dependency>
     <dependency>
+      <groupId>name.dmaus.schxslt</groupId>
+      <artifactId>schxslt</artifactId>
+      <version>1.5.2</version>
+    </dependency>
+    <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>3.141.59</version>
@@ -1019,7 +1024,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-pmd-plugin</artifactId>
-      <version>3.13.0</version>
+      <version>3.14.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1709,33 +1714,48 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>5.6.4</version>
+      <version>6.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
-      <artifactId>ph-schematron</artifactId>
-      <version>5.6.4</version>
+      <artifactId>ph-schematron-api</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-xslt</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-schxslt</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-pure</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>5.6.4</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>5.6.4</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>5.6.4</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>5.6.4</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
@@ -1941,38 +1961,38 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>8.2.6</version>
+      <version>8.2.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>

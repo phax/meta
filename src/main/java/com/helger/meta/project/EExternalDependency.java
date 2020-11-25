@@ -84,7 +84,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.2.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.2.1", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -136,7 +136,7 @@ public enum EExternalDependency
 
   JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.17.0", EJDK.JDK8),
 
-  JAVACC ("net.java.dev.javacc", "javacc", "7.0.9", EJDK.JDK8),
+  JAVACC ("net.java.dev.javacc", "javacc", "7.0.10", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
   // @IsLegacy (replacedWith = "4.x")
   JAVAX_SERVLET_API_310 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
@@ -176,7 +176,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.34.v20201102", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.35.v20201120", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -254,6 +254,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.3", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.5.2", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
 
@@ -307,7 +308,7 @@ public enum EExternalDependency
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.13.0", EJDK.JDK8),
+  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.14.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
