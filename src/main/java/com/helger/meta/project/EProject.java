@@ -615,7 +615,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         "5.4.2",
+                         "5.4.3",
                          EJDK.JDK8),
   AS2_PEPPOL_CLIENT (AS2_PEPPOL_PARENT_POM, "as2-peppol-client", EProjectType.JAVA_LIBRARY),
   AS2_PEPPOL_SERVLET (AS2_PEPPOL_PARENT_POM, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY),

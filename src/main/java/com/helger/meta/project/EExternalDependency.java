@@ -75,7 +75,7 @@ public enum EExternalDependency
   DOM4J ("org.dom4j", "dom4j", "2.1.3", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
 
-  ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.7", EJDK.JDK8),
+  ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.0", EJDK.JDK8),
   ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
   ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
@@ -84,20 +84,20 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.2.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.3.1", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.11.0", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201102", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201207", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.14.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
   @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "3.0.6", EJDK.JDK8),
+  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "3.0.7", EJDK.JDK8),
   GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
 
   H2 ("com.h2database", "h2", "1.4.200", EJDK.JDK8),
@@ -106,14 +106,14 @@ public enum EExternalDependency
 
   HAZELCAST ("com.hazelcast", "hazelcast", "4.1", EJDK.JDK8),
 
-  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.13", EJDK.JDK8),
+  HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.14", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
   HTTP_CLIENT_FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.13", EJDK.JDK8),
 
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.11.3", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.12.0", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -134,7 +134,7 @@ public enum EExternalDependency
   // We need to wait for implementations
   JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.17.0", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.18.0", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.10", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -145,7 +145,7 @@ public enum EExternalDependency
 
   JAXB_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.0", EJDK.JDK8),
   @IsBOM
-  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.3", EJDK.JDK8),
+  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.0", EJDK.JDK8),
   JAXB_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB_BOM),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
@@ -153,7 +153,7 @@ public enum EExternalDependency
 
   JAXWS_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.0", EJDK.JDK8),
   @IsBOM
-  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.3", EJDK.JDK8),
+  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.0", EJDK.JDK8),
   JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
   JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RI_BOM),
 
@@ -168,7 +168,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.32", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "3.0.0", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -176,7 +176,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.35.v20201120", EJDK.JDK8),
+  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.0", EJDK.JDK8),
   JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
   JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
   JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
@@ -227,7 +227,7 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "2.4.4", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "3.0.0", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.2", EJDK.JDK8),
 
   @IsLegacy
@@ -267,7 +267,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.0", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.1", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
@@ -276,7 +276,7 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.1", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.2.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.3.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.0", EJDK.JDK8),
