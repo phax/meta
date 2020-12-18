@@ -81,10 +81,10 @@ public enum EExternalDependency
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.3", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.4", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.3.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.3.2", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -160,7 +160,7 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
-  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.23.0", EJDK.JDK8),
+  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.24.0", EJDK.JDK8),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -281,7 +281,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.0", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "4.0.0", EJDK.JDK8),
-  XMLSEC ("org.apache.santuario", "xmlsec", "2.2.0", EJDK.JDK8),
+  XMLSEC ("org.apache.santuario", "xmlsec", "2.2.1", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.4.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
