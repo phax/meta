@@ -36,7 +36,7 @@ import com.helger.commons.version.Version;
  */
 public enum EExternalDependency
 {
-  API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.0", EJDK.JDK8),
+  API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.1", EJDK.JDK8),
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.7", EJDK.JDK8),
   ANT ("org.apache.ant", "ant", "1.10.9", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
@@ -48,12 +48,11 @@ public enum EExternalDependency
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.1", EJDK.JDK8),
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.13", EJDK.JDK8),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.67", EJDK.JDK8),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.68", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  @Deprecated
-  BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", "1.66", EJDK.JDK8),
+  BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
 
   CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention", "classloader-leak-prevention-core", "2.7.0", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
@@ -81,7 +80,7 @@ public enum EExternalDependency
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "6.0.4", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
   FLYWAY ("org.flywaydb", "flyway-core", "7.3.2", EJDK.JDK8),
@@ -104,7 +103,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "4.1", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "4.1.1", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.14", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -202,7 +201,7 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.7.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.6.0", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.7.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.14.0", EJDK.JDK8),
@@ -239,11 +238,11 @@ public enum EExternalDependency
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.3", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.21", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.22", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.5.2", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.6.0", EJDK.JDK8),
   POI ("org.apache.poi", "poi", "4.1.2", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
@@ -279,7 +278,7 @@ public enum EExternalDependency
   UNDERTOW ("io.undertow", "undertow-servlet", "2.2.3.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
-  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.0", EJDK.JDK8),
+  WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.1", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "4.0.0", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.2.1", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
