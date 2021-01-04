@@ -208,7 +208,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>7.3.2</version>
+      <version>7.4.0</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -233,7 +233,7 @@
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
       <artifactId>gmavenplus-plugin</artifactId>
-      <version>1.12.0</version>
+      <version>1.12.1</version>
     </dependency>
     <dependency>
       <groupId>com.google.javascript</groupId>
@@ -708,7 +708,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -728,7 +728,7 @@
     <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli</artifactId>
-      <version>4.6.0</version>
+      <version>4.6.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -969,7 +969,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-ear-plugin</artifactId>
-      <version>3.1.0</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1099,7 +1099,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.1.4</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
