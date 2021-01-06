@@ -565,39 +565,39 @@ Current list of all released projects (as of 2021-01-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.0.1 - JDK 1.8
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
