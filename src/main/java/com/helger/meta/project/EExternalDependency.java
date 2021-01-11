@@ -90,7 +90,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20201207", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210106", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.14.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -112,7 +112,7 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.12.0", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.12.1", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -142,19 +142,30 @@ public enum EExternalDependency
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_401 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK11),
 
-  JAXB_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.0", EJDK.JDK8),
+  JAXB2_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  JAXB_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.0", EJDK.JDK8),
-  JAXB_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB_BOM),
+  JAXB2_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.3", EJDK.JDK8),
+  JAXB2_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB2_BOM),
 
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
 
-  JAXWS_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.0", EJDK.JDK8),
+  JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.0", EJDK.JDK11),
   @IsBOM
-  JAXWS_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.0", EJDK.JDK8),
-  JAXWS_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS_RI_BOM),
-  JAXWS_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS_RI_BOM),
+  JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.0", EJDK.JDK11),
+  JAXB3_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB3_BOM),
+
+  JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
+  @IsBOM
+  JAXWS2_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.3", EJDK.JDK8),
+  JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
+  JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
+
+  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.0", EJDK.JDK11),
+  @IsBOM
+  JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.0", EJDK.JDK11),
+  JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
+  JAXWS3_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS3_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
@@ -236,7 +247,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.22", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.4", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.5", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.22", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
