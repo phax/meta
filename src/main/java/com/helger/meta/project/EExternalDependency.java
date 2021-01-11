@@ -74,10 +74,15 @@ public enum EExternalDependency
   DOM4J ("org.dom4j", "dom4j", "2.1.3", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "4.2", EJDK.JDK8),
 
-  ECLIPSELINK_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.0", EJDK.JDK8),
-  ECLIPSELINK_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK_CORE),
-  ECLIPSELINK_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK_CORE),
-  ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK_CORE),
+  ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
+  ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
+  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK2_CORE),
+  ECLIPSELINK2_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK2_CORE),
+
+  ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.0", EJDK.JDK11),
+  ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
+  ECLIPSELINK3_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK3_CORE),
+  ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK3_CORE),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
@@ -186,12 +191,20 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JETTY_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.0", EJDK.JDK8),
-  JETTY_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY_BOM),
-  JETTY_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY_BOM),
-  JETTY_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY_BOM),
-  JETTY_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY_BOM),
-  JETTY_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY_BOM),
+  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.35.v20201120", EJDK.JDK8),
+  JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
+  JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
+  JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
+  JETTY9_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY9_BOM),
+  JETTY9_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY9_BOM),
+
+  @IsBOM
+  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.0", EJDK.JDK11),
+  JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
+  JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
+  JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
+  JETTY11_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY11_BOM),
+  JETTY11_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY11_BOM),
 
   JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.11.2", EJDK.JDK8),
