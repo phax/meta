@@ -58,7 +58,7 @@
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>batik-bridge</artifactId>
-      <version>1.13</version>
+      <version>1.14</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
@@ -228,7 +228,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>7.4.0</version>
+      <version>7.5.0</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -238,7 +238,7 @@
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>fop</artifactId>
-      <version>2.5</version>
+      <version>2.6</version>
     </dependency>
     <dependency>
       <groupId>net.sf.offo</groupId>
@@ -822,7 +822,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.22</version>
+      <version>8.0.23</version>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
@@ -852,17 +852,17 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>4.1.2</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>4.1.2</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>4.1.2</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -897,7 +897,7 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt</artifactId>
-      <version>1.5.2</version>
+      <version>1.6.2</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -947,18 +947,18 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>2.4.1</version>
+      <version>2.4.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.4.1</version>
+      <version>2.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.4.1</version>
+      <version>2.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -2303,50 +2303,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>5.3.1</version>
+      <version>5.3.2</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -2457,92 +2457,92 @@
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons-ng-parent-pom</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-regrep</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-kafka-client</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-edm</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>toop-commons</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>data-services-directory</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-api</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-client</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>dsd-service</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-parent-pom</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-api</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-mem-external</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-mem-phase4</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-main</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-web-api</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-webapp</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>eu.toop</groupId>
       <artifactId>tc-jetty</artifactId>
-      <version>2.1.0-1</version>
+      <version>2.1.1</version>
     </dependency>
   </dependencies>
   <build>

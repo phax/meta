@@ -46,7 +46,7 @@ public enum EExternalDependency
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.1", EJDK.JDK8),
-  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.13", EJDK.JDK8),
+  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.14", EJDK.JDK8),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.68", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
@@ -88,9 +88,9 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.4.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.5.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
-  FOP ("org.apache.xmlgraphics", "fop", "2.5", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
@@ -266,7 +266,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.1.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.1.1", EJDK.JDK8),
 
-  MYSQL ("mysql", "mysql-connector-java", "8.0.22", EJDK.JDK8),
+  MYSQL ("mysql", "mysql-connector-java", "8.0.23", EJDK.JDK8),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.0.5", EJDK.JDK8),
 
@@ -275,7 +275,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
   PICOCLI ("info.picocli", "picocli", "4.6.1", EJDK.JDK8),
-  POI ("org.apache.poi", "poi", "4.1.2", EJDK.JDK8),
+  POI ("org.apache.poi", "poi", "5.0.0", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   POSTGRESQL ("org.postgresql", "postgresql", "42.2.18", EJDK.JDK8),
@@ -285,7 +285,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.3", EJDK.JDK8),
-  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.5.2", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.6.2", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
 
@@ -298,7 +298,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.1", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.2", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
