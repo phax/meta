@@ -81,7 +81,6 @@ public enum EExternalDependency
 
   ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.0", EJDK.JDK11),
   ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
-  ECLIPSELINK3_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK3_CORE),
   ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK3_CORE),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
