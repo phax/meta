@@ -545,7 +545,7 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
    [![Build Status](https://travis-ci.org/phax/ph-pdf-layout.svg?branch=master)](https://travis-ci.org/phax/ph-pdf-layout)
- * [ph-poi](https://github.com/phax/ph-poi) - Version 5.0.7 - JDK 1.8
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 5.1.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
    [![Build Status](https://travis-ci.org/phax/ph-poi.svg?branch=master)](https://travis-ci.org/phax/ph-poi)
@@ -565,39 +565,39 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-schedule) 
    [![Build Status](https://travis-ci.org/phax/ph-schedule.svg?branch=master)](https://travis-ci.org/phax/ph-schedule)
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.0.2 - JDK 1.8
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
    [![Build Status](https://travis-ci.org/phax/ph-schematron.svg?branch=master)](https://travis-ci.org/phax/ph-schematron)
@@ -825,7 +825,7 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phive](https://github.com/phax/phive) - Version 7.1.0 - JDK 1.8
+ * [phive](https://github.com/phax/phive) - Version 7.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
@@ -905,15 +905,15 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive/phive-api](https://github.com/phax/phive) - Version 7.1.0 - JDK 1.8
+ * [phive/phive-api](https://github.com/phax/phive) - Version 7.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phive/phive-engine](https://github.com/phax/phive) - Version 7.1.0 - JDK 1.8
+ * [phive/phive-engine](https://github.com/phax/phive) - Version 7.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phive/phive-json](https://github.com/phax/phive) - Version 7.1.0 - JDK 1.8
+ * [phive/phive-json](https://github.com/phax/phive) - Version 7.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)

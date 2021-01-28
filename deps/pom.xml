@@ -1443,7 +1443,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-poi</artifactId>
-      <version>5.0.7</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1828,48 +1828,48 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>6.0.2</version>
+      <version>6.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
@@ -2111,23 +2111,23 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-engine</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-json</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
