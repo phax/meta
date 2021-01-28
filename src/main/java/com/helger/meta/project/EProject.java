@@ -726,19 +726,26 @@ public enum EProject implements IProject
   PHASE4_CEF_CLIENT (PHASE4_PARENT_POM, "phase4-cef-client", EProjectType.JAVA_LIBRARY),
   PHASE4_ENTSOG_CLIENT (PHASE4_PARENT_POM, "phase4-entsog-client", EProjectType.JAVA_LIBRARY),
 
-  MAVEN_JAXB2_PLUGIN_PROJECT (null,
-                              IProject.DEFAULT_PROJECT_OWNER,
-                              "maven-jaxb2-plugin-project",
-                              "maven-jaxb2-plugin",
-                              EProjectType.MAVEN_POM,
-                              EHasPages.FALSE,
-                              EHasWiki.FALSE,
-                              "0.14.3",
-                              EJDK.JDK8),
-  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin-core", "plugin-core", EProjectType.MAVEN_PLUGIN),
-  MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
-  MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
-  MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
+  @IsGitLab
+  @IsPrivateRepo
+  ENTWERTER (null,
+             IProject.PROJECT_ECOSIO_PH,
+             "entwerter-parent-pom",
+             "entwerter",
+             EProjectType.MAVEN_POM,
+             EHasPages.FALSE,
+             EHasWiki.FALSE,
+             null,
+             EJDK.JDK8),
+  @IsGitLab
+  @IsPrivateRepo
+  ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
+  @IsGitLab
+  @IsPrivateRepo
+  ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
+  @IsGitLab
+  @IsPrivateRepo
+  ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
 
   @IsPrivateRepo
   TOTHOLZ (null,
@@ -760,27 +767,6 @@ public enum EProject implements IProject
          EHasWiki.FALSE,
          null,
          EJDK.JDK8),
-
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER (null,
-             IProject.PROJECT_ECOSIO_PH,
-             "entwerter-parent-pom",
-             "entwerter",
-             EProjectType.MAVEN_POM,
-             EHasPages.FALSE,
-             EHasWiki.FALSE,
-             null,
-             EJDK.JDK8),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
 
   PEPPOL_PRACTICAL (null,
                     IProject.DEFAULT_PROJECT_OWNER,
