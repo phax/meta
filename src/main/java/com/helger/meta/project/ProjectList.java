@@ -72,8 +72,9 @@ public final class ProjectList
     // Build in projects
     for (final IProject aProject : EProject.values ())
       _add (aProject);
-    for (final IProject aProject : EProjectToop.values ())
-      _add (aProject);
+    if (false)
+      for (final IProject aProject : EProjectToop.values ())
+        _add (aProject);
     for (final IProject aProject : EProjectDeprecated.values ())
       _add (aProject);
 
