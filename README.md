@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-01-28):
+Current list of all released projects (as of 2021-02-01):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.3 - JDK 1.8
 
@@ -49,22 +49,6 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
- * [data-services-directory](https://github.com/TOOP4EU/data-services-directory) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/data-services-directory) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-api](https://github.com/TOOP4EU/data-services-directory) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-api) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-client](https://github.com/TOOP4EU/data-services-directory) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-client) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
- * [data-services-directory/dsd-service](https://github.com/TOOP4EU/data-services-directory) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-service/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/dsd-service) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/data-services-directory.svg?branch=master)](https://travis-ci.org/TOOP4EU/data-services-directory)
  * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
@@ -101,26 +85,6 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
    [![Build Status](https://travis-ci.org/phax/jcodemodel.svg?branch=master)](https://travis-ci.org/phax/jcodemodel)
- * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project) 
-   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin) 
-   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin) 
-   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin) 
-   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
- * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.14.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core) 
-   [![Build Status](https://travis-ci.org/phax/maven-jaxb2-plugin.svg?branch=master)](https://travis-ci.org/phax/maven-jaxb2-plugin)
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
@@ -917,27 +881,27 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory/phoss-directory-businesscard](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-businesscard) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-client) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-indexer) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-publisher) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.9.2 - JDK 1.8
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.9.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
    [![Build Status](https://travis-ci.org/phax/phoss-directory.svg?branch=master)](https://travis-ci.org/phax/phoss-directory)
@@ -977,58 +941,6 @@ Current list of all released projects (as of 2021-01-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
    [![Build Status](https://travis-ci.org/phax/phoss-smp.svg?branch=master)](https://travis-ci.org/phax/phoss-smp)
- * [toop-commons-ng](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-ng-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons-ng-parent-pom) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-commons](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-commons) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-edm](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-edm/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-edm) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-kafka-client](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-kafka-client) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-commons-ng/toop-regrep](https://github.com/TOOP4EU/toop-commons-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-regrep) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-commons-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-commons-ng)
- * [toop-connector-ng](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-parent-pom) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-api) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-jetty](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-jetty) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-main](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-main/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-main) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-mem-external](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-external/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-external) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-mem-phase4](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-phase4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-mem-phase4) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-web-api](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-web-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-web-api) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
- * [toop-connector-ng/tc-webapp](https://github.com/TOOP4EU/toop-connector-ng) - Version 2.1.1 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/tc-webapp) 
-   [![Build Status](https://travis-ci.org/TOOP4EU/toop-connector-ng.svg?branch=master)](https://travis-ci.org/TOOP4EU/toop-connector-ng)
 
 Current list of all unreleased projects:
 
@@ -1084,6 +996,21 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
  * jgatsp - never released
+ * maven-jaxb2-plugin - Version 0.14.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-project) 
+ * maven-jaxb2-plugin/plugin - Version 0.14.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin) 
+ * maven-jaxb2-plugin/plugin-2.2 - Version 0.14.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb22-plugin) 
+ * maven-jaxb2-plugin/plugin-2.3 - Version 0.14.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb23-plugin) 
+ * maven-jaxb2-plugin/plugin-core - Version 0.14.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/maven-jaxb2-plugin-core) 
  * peppol-directory - Version 0.7.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom) 

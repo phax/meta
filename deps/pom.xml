@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20210128</version>
+  <version>1.0.0-20210201</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2266,34 +2266,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-businesscard</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2432,122 +2432,6 @@
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
       <version>0.14.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin-project</artifactId>
-      <version>0.14.3</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin-core</artifactId>
-      <version>0.14.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb22-plugin</artifactId>
-      <version>0.14.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb23-plugin</artifactId>
-      <version>0.14.3</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>maven-jaxb2-plugin</artifactId>
-      <version>0.14.3</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-commons-ng-parent-pom</artifactId>
-      <version>2.1.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-regrep</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-kafka-client</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-edm</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>toop-commons</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>data-services-directory</artifactId>
-      <version>2.1.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>dsd-api</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>dsd-client</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>dsd-service</artifactId>
-      <version>2.1.1</version>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-parent-pom</artifactId>
-      <version>2.1.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-api</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-mem-external</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-mem-phase4</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-main</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-web-api</artifactId>
-      <version>2.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-webapp</artifactId>
-      <version>2.1.1</version>
-      <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>eu.toop</groupId>
-      <artifactId>tc-jetty</artifactId>
-      <version>2.1.1</version>
     </dependency>
   </dependencies>
   <build>
