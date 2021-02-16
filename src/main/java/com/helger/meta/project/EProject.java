@@ -213,7 +213,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "2.4.1",
+                      "2.4.2",
                       EJDK.JDK8),
   PH_XSDS_XML (PH_XSDS_PARENT_POM, "ph-xsds-xml", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XLINK (PH_XSDS_PARENT_POM, "ph-xsds-xlink", EProjectType.JAVA_LIBRARY),
