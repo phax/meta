@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20210216</version>
+  <version>1.0.0-20210217</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1525,6 +1525,11 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-bde</artifactId>
       <version>2.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-regrep</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

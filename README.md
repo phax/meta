@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-02-16):
+Current list of all released projects (as of 2021-02-17):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.3 - JDK 1.8
 
@@ -521,6 +521,10 @@ Current list of all released projects (as of 2021-02-16):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
    [![Build Status](https://travis-ci.org/phax/ph-poi.svg?branch=master)](https://travis-ci.org/phax/ph-poi)
+ * [ph-regrep](https://github.com/phax/ph-regrep) - Version 1.0.0 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep) 
+   [![Build Status](https://travis-ci.org/phax/ph-regrep.svg?branch=master)](https://travis-ci.org/phax/ph-regrep)
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 4.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
@@ -973,6 +977,9 @@ Current list of all unreleased projects:
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/peppol-practical.svg?branch=master)](https://travis-ci.org/phax/peppol-practical)
+ * [ph-commons/ph-jaxb-adapter](https://github.com/phax/ph-commons) - JDK 1.8
+
+   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [registry434](https://github.com/phax/registry434) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
