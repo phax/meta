@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-02-17):
+Current list of all released projects (as of 2021-02-19):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.3 - JDK 1.8
 
@@ -160,10 +160,6 @@ Current list of all released projects (as of 2021-02-17):
  * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 9.5.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-bc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-bc) 
-   [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-commons/ph-charset](https://github.com/phax/ph-commons) - Version 9.5.4 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-charset/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-charset) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
  * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 9.5.4 - JDK 1.8
 

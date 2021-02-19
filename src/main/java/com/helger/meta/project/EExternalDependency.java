@@ -41,7 +41,7 @@ public enum EExternalDependency
   ANT ("org.apache.ant", "ant", "1.10.9", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "9.0", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "9.1", EJDK.JDK8),
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
@@ -64,7 +64,7 @@ public enum EExternalDependency
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.8.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
-  COMMONS_NET ("commons-net", "commons-net", "3.7.2", EJDK.JDK8),
+  COMMONS_NET ("commons-net", "commons-net", "3.8.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.9.0", EJDK.JDK8),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.3.1", EJDK.JDK8),
@@ -87,15 +87,15 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.5.2", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.5.3", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210106", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.14.0", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210202", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.15.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -137,7 +137,7 @@ public enum EExternalDependency
   // We need to wait for implementations
   JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.18.0", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.19.0", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.10", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -223,13 +223,13 @@ public enum EExternalDependency
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
   JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
-  JUNIT ("junit", "junit", "4.13.1", EJDK.JDK8),
+  JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.7.0", EJDK.JDK8),
+  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.7.1", EJDK.JDK8),
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT5_JUPITER),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.7.0", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.7.1", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.7.0", EJDK.JDK8),
@@ -247,7 +247,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.7.0", EJDK.JDK11),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.8.0", EJDK.JDK11),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -262,12 +262,12 @@ public enum EExternalDependency
 
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.1.1", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.1.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.2.1", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.2.1", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.23", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.1.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.1.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.22", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -277,10 +277,10 @@ public enum EExternalDependency
   POI ("org.apache.poi", "poi", "5.0.0", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
-  POSTGRESQL ("org.postgresql", "postgresql", "42.2.18", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.2.19", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
-  R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.6", EJDK.JDK8),
+  R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.7", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.3", EJDK.JDK8),
@@ -297,16 +297,16 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.2", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.3", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
 
   TESTNG ("org.testng", "testng", "7.3.0", EJDK.JDK8),
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.5.0", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.6.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.1", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.3.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.4.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.1", EJDK.JDK8),
@@ -322,7 +322,7 @@ public enum EExternalDependency
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
-  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.1.1", EJDK.JDK8),
+  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.8.1", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.1.2", EJDK.JDK8),
