@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-02-25):
+Current list of all released projects (as of 2021-03-01):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.6.3 - JDK 1.8
 
@@ -33,22 +33,6 @@ Current list of all released projects (as of 2021-02-25):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
    [![Build Status](https://travis-ci.org/phax/as2-lib.svg?branch=master)](https://travis-ci.org/phax/as2-lib)
- * [as2-peppol](https://github.com/phax/as2-peppol) - Version 5.4.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-parent-pom) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
- * [as2-peppol/as2-peppol-client](https://github.com/phax/as2-peppol) - Version 5.4.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-client) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
- * [as2-peppol/as2-peppol-server](https://github.com/phax/as2-peppol) - Version 5.4.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-server) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
- * [as2-peppol/as2-peppol-servlet](https://github.com/phax/as2-peppol) - Version 5.4.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/as2-peppol-servlet) 
-   [![Build Status](https://travis-ci.org/phax/as2-peppol.svg?branch=master)](https://travis-ci.org/phax/as2-peppol)
  * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
@@ -979,15 +963,24 @@ Current list of all unreleased projects:
  * [phase4/phase4-spring-boot-demo](https://github.com/phax/phase4) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [registry434](https://github.com/phax/registry434) - JDK 1.8
-
-   [![Build Status](https://travis-ci.org/phax/registry434.svg?branch=master)](https://travis-ci.org/phax/registry434)
  * [totholz](https://github.com/phax/totholz) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/phax/totholz.svg?branch=master)](https://travis-ci.org/phax/totholz)
 
 All deprecated projects:
 
+ * as2-peppol - Version 5.4.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom) 
+ * as2-peppol/as2-peppol-client - Version 5.4.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-client) 
+ * as2-peppol/as2-peppol-server - Version 5.4.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-server) 
+ * as2-peppol/as2-peppol-servlet - Version 5.4.3
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-servlet) 
  * cipa-start-jms-api - Version 1.5.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jms-api) 
@@ -1139,6 +1132,7 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2) 
  * ph-zeromq - never released
+ * registry434 - never released
  * toop-parent-pom - Version 1.1.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 

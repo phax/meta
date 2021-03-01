@@ -243,7 +243,30 @@ public enum EProjectDeprecated implements IProject
                       EJDK.JDK8),
   EN16931_XML_VALIDATOR (EN16931_PARENT_POM, "en16931-xml-validator", EProjectType.JAVA_LIBRARY),
   EN16931_EDIFACT_TO_XML (EN16931_PARENT_POM, "en16931-edifact-to-xml", EProjectType.JAVA_LIBRARY),
-  EN16931_EDIFACT_XML (EN16931_PARENT_POM, "en16931-edifact-xml", EProjectType.JAVA_LIBRARY);
+  EN16931_EDIFACT_XML (EN16931_PARENT_POM, "en16931-edifact-xml", EProjectType.JAVA_LIBRARY),
+
+  REGISTRY434 (null,
+               IProject.DEFAULT_PROJECT_OWNER,
+               "registry434",
+               "registry434",
+               EProjectType.JAVA_WEB_APPLICATION,
+               EHasPages.FALSE,
+               EHasWiki.FALSE,
+               null,
+               EJDK.JDK8),
+
+  AS2_PEPPOL_PARENT_POM (null,
+                         IProject.DEFAULT_PROJECT_OWNER,
+                         "as2-peppol-parent-pom",
+                         "as2-peppol",
+                         EProjectType.MAVEN_POM,
+                         EHasPages.FALSE,
+                         EHasWiki.FALSE,
+                         "5.4.3",
+                         EJDK.JDK8),
+  AS2_PEPPOL_CLIENT (AS2_PEPPOL_PARENT_POM, "as2-peppol-client", EProjectType.JAVA_LIBRARY),
+  AS2_PEPPOL_SERVLET (AS2_PEPPOL_PARENT_POM, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY),
+  AS2_PEPPOL_SERVER (AS2_PEPPOL_PARENT_POM, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION),;
 
   private final SimpleProject m_aProject;
 

@@ -622,19 +622,6 @@ public enum EProject implements IProject
   PHIVE_RULES_UBLBE (PHIVE_RULES_PARENT_POM, "phive-rules-ublbe", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_XRECHNUNG (PHIVE_RULES_PARENT_POM, "phive-rules-xrechnung", EProjectType.JAVA_LIBRARY),
 
-  AS2_PEPPOL_PARENT_POM (null,
-                         IProject.DEFAULT_PROJECT_OWNER,
-                         "as2-peppol-parent-pom",
-                         "as2-peppol",
-                         EProjectType.MAVEN_POM,
-                         EHasPages.FALSE,
-                         EHasWiki.FALSE,
-                         "5.4.3",
-                         EJDK.JDK8),
-  AS2_PEPPOL_CLIENT (AS2_PEPPOL_PARENT_POM, "as2-peppol-client", EProjectType.JAVA_LIBRARY),
-  AS2_PEPPOL_SERVLET (AS2_PEPPOL_PARENT_POM, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY),
-  AS2_PEPPOL_SERVER (AS2_PEPPOL_PARENT_POM, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION),
-
   EN16931_CII2UBL_PARENT_POM (null,
                               IProject.DEFAULT_PROJECT_OWNER,
                               "en16931-cii2ubl-parent-pom",
@@ -790,16 +777,7 @@ public enum EProject implements IProject
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
                     null,
-                    EJDK.JDK8),
-  REGISTRY434 (null,
-               IProject.DEFAULT_PROJECT_OWNER,
-               "registry434",
-               "registry434",
-               EProjectType.JAVA_WEB_APPLICATION,
-               EHasPages.FALSE,
-               EHasWiki.FALSE,
-               null,
-               EJDK.JDK8);
+                    EJDK.JDK8);
 
   private final SimpleProject m_aProject;
 
