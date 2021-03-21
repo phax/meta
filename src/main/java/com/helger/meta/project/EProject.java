@@ -97,7 +97,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         "9.5.4",
+                         "9.5.5",
                          EJDK.JDK8),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   // PH_CHARSET (PH_COMMONS_PARENT_POM, "ph-charset",
@@ -215,7 +215,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "2.4.2",
+                      "2.4.3",
                       EJDK.JDK8),
   PH_XSDS_XML (PH_XSDS_PARENT_POM, "ph-xsds-xml", EProjectType.JAVA_LIBRARY),
   PH_XSDS_XLINK (PH_XSDS_PARENT_POM, "ph-xsds-xlink", EProjectType.JAVA_LIBRARY),
@@ -237,7 +237,7 @@ public enum EProject implements IProject
            EProjectType.JAVA_LIBRARY,
            EHasPages.FALSE,
            EHasWiki.FALSE,
-           "1.5.3",
+           "1.5.4",
            EJDK.JDK8),
   PH_BDE (null,
           IProject.DEFAULT_PROJECT_OWNER,
@@ -255,7 +255,7 @@ public enum EProject implements IProject
              EProjectType.JAVA_LIBRARY,
              EHasPages.FALSE,
              EHasWiki.FALSE,
-             "1.0.0",
+             "1.0.1",
              EJDK.JDK8),
   PH_XHE (null,
           IProject.DEFAULT_PROJECT_OWNER,
@@ -264,7 +264,7 @@ public enum EProject implements IProject
           EProjectType.JAVA_LIBRARY,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          "2.0.0",
+          "2.0.1",
           EJDK.JDK8),
   PH_EBINTERFACE (null,
                   IProject.DEFAULT_PROJECT_OWNER,
@@ -310,7 +310,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "2.3.1",
+                     "2.3.2",
                      EJDK.JDK8),
   PH_CII_TESTFILES (PH_CII_PARENT_POM, "ph-cii-testfiles", EProjectType.JAVA_LIBRARY),
   PH_CII_D16A1 (PH_CII_PARENT_POM, "ph-cii-d16a-1", EProjectType.JAVA_LIBRARY),
@@ -646,7 +646,9 @@ public enum EProject implements IProject
                               EJDK.JDK8),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
+  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM,
+                             "phoss-directory-publisher",
+                             EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_DIRECTORY_CLIENT (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-client", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_SEARCHAPI (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -793,7 +795,9 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProject (@Nonnull final EProject eParentProject, @Nonnull @Nonempty final String sProjectName, @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
@@ -803,7 +807,11 @@ public enum EProject implements IProject
             @Nonnull @Nonempty final String sProjectBaseDirName,
             @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
   }
 
   EProject (@Nonnull final EProject eParentProject,
@@ -902,8 +910,10 @@ public enum EProject implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
-                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : CMeta.GIT_BASE_DIR,
+                                              sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout"
+                                                                                            : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
                                     eHasWikiProject,
