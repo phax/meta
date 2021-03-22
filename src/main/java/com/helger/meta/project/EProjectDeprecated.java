@@ -37,8 +37,18 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
-  CIPA_START_JMSRECEIVER (null, "cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
-  CIPA_START_JMSSENDER (null, "cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
+  CIPA_START_JMSRECEIVER (null,
+                          "cipa-start-jmsreceiver",
+                          EProjectType.JAVA_LIBRARY,
+                          EHasPages.FALSE,
+                          EHasWiki.FALSE,
+                          "1.0.2"),
+  CIPA_START_JMSSENDER (null,
+                        "cipa-start-jmssender",
+                        EProjectType.JAVA_WEB_APPLICATION,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
   PEPPOL_LIME_PARENT_POM (null,
@@ -177,9 +187,13 @@ public enum EProjectDeprecated implements IProject
                                EHasWiki.FALSE,
                                "0.7.2",
                                EJDK.JDK8),
-  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM,
+                                 "peppol-directory-businesscard",
+                                 EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM,
+                              "peppol-directory-publisher",
+                              EProjectType.JAVA_WEB_APPLICATION),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -217,7 +231,10 @@ public enum EProjectDeprecated implements IProject
                               EHasWiki.FALSE,
                               "0.14.3",
                               EJDK.JDK8),
-  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin-core", "plugin-core", EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
+                            "maven-jaxb22-plugin-core",
+                            "plugin-core",
+                            EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
@@ -239,7 +256,7 @@ public enum EProjectDeprecated implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "2.0.3",
+                      "2.0.4",
                       EJDK.JDK8),
   EN16931_XML_VALIDATOR (EN16931_PARENT_POM, "en16931-xml-validator", EProjectType.JAVA_LIBRARY),
   EN16931_EDIFACT_TO_XML (EN16931_PARENT_POM, "en16931-edifact-to-xml", EProjectType.JAVA_LIBRARY),
@@ -266,7 +283,17 @@ public enum EProjectDeprecated implements IProject
                          EJDK.JDK8),
   AS2_PEPPOL_CLIENT (AS2_PEPPOL_PARENT_POM, "as2-peppol-client", EProjectType.JAVA_LIBRARY),
   AS2_PEPPOL_SERVLET (AS2_PEPPOL_PARENT_POM, "as2-peppol-servlet", EProjectType.JAVA_LIBRARY),
-  AS2_PEPPOL_SERVER (AS2_PEPPOL_PARENT_POM, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION),;
+  AS2_PEPPOL_SERVER (AS2_PEPPOL_PARENT_POM, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION),
+
+  PH_BDE (null,
+          IProject.DEFAULT_PROJECT_OWNER,
+          "ph-bde",
+          "ph-bde",
+          EProjectType.JAVA_LIBRARY,
+          EHasPages.FALSE,
+          EHasWiki.FALSE,
+          "2.3.0",
+          EJDK.JDK8),;
 
   private final SimpleProject m_aProject;
 
@@ -350,7 +377,8 @@ public enum EProjectDeprecated implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : CMeta.GIT_BASE_DIR,
                                               sProjectBaseDirName),
                                     EIsDeprecated.TRUE,
                                     eHasPagesProject,
