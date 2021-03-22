@@ -2424,7 +2424,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-xrechnung-mapping</artifactId>
-      <version>1.1.2</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
