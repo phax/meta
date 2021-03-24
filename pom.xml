@@ -135,6 +135,8 @@
             <exclude>**/NOTICE</exclude>
             <exclude>**/LICENSE</exclude>
             <exclude>deps/pom.xml</exclude>
+            <exclude>wsdl/**</exclude>
+            <exclude>xsd/**</exclude>
           </excludes>
         </configuration>
       </plugin>
