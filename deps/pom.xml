@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20210326</version>
+  <version>1.0.0-20210405</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -223,7 +223,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>7.7.0</version>
+      <version>7.7.2</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -258,7 +258,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.15.6</version>
+      <version>3.15.7</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -284,7 +284,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>4.1.2</version>
+      <version>4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -611,33 +611,33 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>11.0.1</version>
+      <version>11.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -822,7 +822,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.1.2</version>
+      <version>6.1.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -892,7 +892,7 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt</artifactId>
-      <version>1.6.2</version>
+      <version>1.7</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -937,7 +937,7 @@
     <dependency>
       <groupId>org.spockframework</groupId>
       <artifactId>spock-core</artifactId>
-      <version>2.0-M4-groovy-3.0</version>
+      <version>2.0-M5-groovy-3.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -983,7 +983,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.2.5.Final</version>
+      <version>2.2.7.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1028,12 +1028,12 @@
     <dependency>
       <groupId>com.mycila</groupId>
       <artifactId>license-maven-plugin</artifactId>
-      <version>3.0</version>
+      <version>4.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>maven-bundle-plugin</artifactId>
-      <version>5.1.1</version>
+      <version>5.1.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -2038,39 +2038,39 @@
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2142,103 +2142,103 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ebinterface</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-facturae</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-fatturapa</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-finvoice</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-legacy</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-teapps</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ubl</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2259,76 +2259,76 @@
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-parent-pom</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-lib</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-cef</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-entsog</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-peppol</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-server-webapp</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-test</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-dynamic-discovery</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-client</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-servlet</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-server-webapp</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-cef-client</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-spring-boot-demo</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

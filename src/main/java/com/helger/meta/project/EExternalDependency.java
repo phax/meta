@@ -90,7 +90,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.7.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.7.2", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -98,7 +98,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210302", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.15.6", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.15.7", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -110,7 +110,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "4.1.2", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "4.2", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.14", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -209,7 +209,7 @@ public enum EExternalDependency
   JETTY9_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY9_BOM),
 
   @IsBOM
-  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.1", EJDK.JDK11),
+  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.2", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
@@ -270,7 +270,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.23", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.1.2", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.1.5", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.23", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -287,7 +287,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.6.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.3", EJDK.JDK8),
-  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.6.2", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.7", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
 
@@ -298,7 +298,7 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
-  SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M4-groovy-3.0", EJDK.JDK8),
+  SPOCK_CORE ("org.spockframework", "spock-core", "2.0-M5-groovy-3.0", EJDK.JDK8),
   @IsBOM
   SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.4", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
@@ -309,7 +309,7 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.6.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.1", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.5.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.7.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.1", EJDK.JDK8),
@@ -319,8 +319,8 @@ public enum EExternalDependency
   ZXING_CORE ("com.google.zxing", "core", "3.4.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
-  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "3.0", EJDK.JDK8),
-  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.1", EJDK.JDK8),
+  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.0", EJDK.JDK8),
+  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.2", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.3.0", EJDK.JDK8),
