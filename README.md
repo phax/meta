@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-04-23):
+Current list of all released projects (as of 2021-04-28):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -953,7 +953,7 @@ Current list of all unreleased projects:
  * [entwerter/entwerter-engine](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
- * [entwerter/entwerter-jaxws](https://github.com/ecosio-ph/entwerter) - JDK 1.8
+ * [entwerter/entwerter-repo](https://github.com/ecosio-ph/entwerter) - JDK 1.8
 
    [![Build Status](https://travis-ci.org/ecosio-ph/entwerter.svg?branch=master)](https://travis-ci.org/ecosio-ph/entwerter)
  * [entwerter/entwerter-webapp](https://github.com/ecosio-ph/entwerter) - JDK 1.8

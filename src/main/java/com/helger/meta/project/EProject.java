@@ -733,7 +733,7 @@ public enum EProject implements IProject
   ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
   @IsGitLab
   @IsPrivateRepo
-  ENTWERTER_JAXWS (ENTWERTER, "entwerter-jaxws", EProjectType.JAVA_LIBRARY),
+  ENTWERTER_REPO (ENTWERTER, "entwerter-repo", EProjectType.JAVA_LIBRARY),
   @IsGitLab
   @IsPrivateRepo
   ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),

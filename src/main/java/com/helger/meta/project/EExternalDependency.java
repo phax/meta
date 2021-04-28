@@ -79,7 +79,7 @@ public enum EExternalDependency
   ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK2_CORE),
   ECLIPSELINK2_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK2_CORE),
 
-  ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.0", EJDK.JDK11),
+  ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.1", EJDK.JDK11),
   ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
   ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK3_CORE),
 
@@ -87,7 +87,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.8.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.8.2", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -154,9 +154,9 @@ public enum EExternalDependency
   JAXB2_PLUGIN ("org.jvnet.jaxb2.maven2", "maven-jaxb2-plugin", "0.14.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
 
-  JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.0", EJDK.JDK11),
+  JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.1", EJDK.JDK11),
   @IsBOM
-  JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.0", EJDK.JDK11),
+  JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.1", EJDK.JDK11),
   JAXB3_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB3_BOM),
 
   JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
@@ -165,9 +165,9 @@ public enum EExternalDependency
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
-  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.0", EJDK.JDK11),
+  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.1", EJDK.JDK11),
   @IsBOM
-  JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.0", EJDK.JDK11),
+  JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.1", EJDK.JDK11),
   JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
   JAXWS3_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS3_RI_BOM),
 
@@ -254,11 +254,11 @@ public enum EExternalDependency
   LUCENE8_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE8_CORE),
   LUCENE8_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE8_CORE),
 
-  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.0", EJDK.JDK8),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.1", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "3.0.0", EJDK.JDK8),
-  MIGLAYOUT ("com.miglayout", "miglayout-swing", "5.3", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "3.0.1", EJDK.JDK8),
+  MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
@@ -300,7 +300,7 @@ public enum EExternalDependency
   SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.4.5", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
-  STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.0", EJDK.JDK8),
+  STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
 
   TESTNG ("org.testng", "testng", "7.4.0", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.6.0", EJDK.JDK8),
@@ -316,7 +316,7 @@ public enum EExternalDependency
   ZXING_CORE ("com.google.zxing", "core", "3.4.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
   // parent POM dependencies
-  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.0", EJDK.JDK8),
+  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.1", EJDK.JDK8),
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.2", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.0.0", EJDK.JDK8),
