@@ -841,6 +841,10 @@ Current list of all released projects (as of 2021-04-28):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
+ * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 2.1.1 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-italy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-italy) 
+   [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
  * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 2.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy) 
