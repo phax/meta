@@ -135,7 +135,7 @@ public enum EProject implements IProject
                       EProjectType.OTHER_PLUGIN,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "2.3.3.1",
+                      "2.3.3.2",
                       EJDK.JDK8),
 
   META (null,
@@ -699,7 +699,7 @@ public enum EProject implements IProject
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "4.7.0",
+                           "4.8.0",
                            EJDK.JDK8),
   EBINTERFACE_XRECHNUNG_MAPPING (null,
                                  IProject.PROJECT_OWNER_AUSTRIAPRO,
@@ -708,7 +708,7 @@ public enum EProject implements IProject
                                  EProjectType.JAVA_LIBRARY,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "1.2.0",
+                                 "1.3.0",
                                  EJDK.JDK8),
   ERECHNUNG_WS_CLIENT (null,
                        IProject.DEFAULT_PROJECT_OWNER,
@@ -717,7 +717,7 @@ public enum EProject implements IProject
                        EProjectType.JAVA_LIBRARY,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "3.2.2",
+                       "3.2.3",
                        EJDK.JDK8),
 
   @IsGitLab
