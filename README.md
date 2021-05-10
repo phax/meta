@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-05-03):
+Current list of all released projects (as of 2021-05-10):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -37,11 +37,11 @@ Current list of all released projects (as of 2021-05-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-rendering.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-rendering)
- * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.7.0 - JDK 1.8
+ * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-ubl-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-ubl-mapping)
- * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.2.0 - JDK 1.8
+ * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.3.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping)
@@ -57,7 +57,7 @@ Current list of all released projects (as of 2021-05-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 3.2.2 - JDK 1.8
+ * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 3.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 
    [![Build Status](https://travis-ci.org/phax/erechnung.gv.at-webservice-client.svg?branch=master)](https://travis-ci.org/phax/erechnung.gv.at-webservice-client)
@@ -73,39 +73,39 @@ Current list of all released projects (as of 2021-05-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
    [![Build Status](https://travis-ci.org/phax/ParserGeneratorCC.svg?branch=master)](https://travis-ci.org/phax/ParserGeneratorCC)
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.6.0 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.6.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
    [![Build Status](https://travis-ci.org/phax/peppol-commons.svg?branch=master)](https://travis-ci.org/phax/peppol-commons)
@@ -665,7 +665,7 @@ Current list of all released projects (as of 2021-05-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet) 
    [![Build Status](https://travis-ci.org/phax/ph-web.svg?branch=master)](https://travis-ci.org/phax/ph-web)
- * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.3.3.1 - JDK 1.8
+ * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 2.3.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-wsimport-plugin.svg?branch=master)](https://travis-ci.org/phax/ph-wsimport-plugin)
@@ -789,87 +789,87 @@ Current list of all released projects (as of 2021-05-03):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phive-rules](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-cii](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-cii](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-cii/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-cii) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-cius-pt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-cius-pt) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-ebinterface](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-ebinterface](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ebinterface) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ehf/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ehf) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-en16931/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-en16931) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-energieefactuur/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-energieefactuur) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-facturae](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-facturae](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-facturae/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-facturae) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-fatturapa](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-fatturapa](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-fatturapa) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-finvoice](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-finvoice](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-finvoice/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-finvoice) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-isdoc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-isdoc) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-oioubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-oioubl) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-italy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-italy) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-simplerinvoicing) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-svefaktura/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-svefaktura) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-teapps](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-teapps](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-teapps/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-teapps) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-ubl](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-ubl](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ubl) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ublbe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-ublbe) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 2.1.3 - JDK 1.8
+ * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 2.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
