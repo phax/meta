@@ -54,10 +54,7 @@ public enum EExternalDependency
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
 
-  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
-                               "classloader-leak-prevention-core",
-                               "2.7.0",
-                               EJDK.JDK8),
+  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention", "classloader-leak-prevention-core", "2.7.0", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
@@ -90,7 +87,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.9.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.9.1", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -130,7 +127,7 @@ public enum EExternalDependency
   JAKARTA_ACTIVATION ("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
   // We need to wait for BouncyCastle before we can update
   JAKARTA_ACTIVATION_2 ("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
-  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.5", EJDK.JDK8),
+  JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.7", EJDK.JDK8),
   // We need to wait for BouncyCastle before we can update
   JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
@@ -187,7 +184,7 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.32", EJDK.JDK8),
+  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.34", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -203,7 +200,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.40.v20210413", EJDK.JDK8),
+  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.41.v20210516", EJDK.JDK8),
   JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
   JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
@@ -493,14 +490,11 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
-                                                            @Nullable final String sArtifactID)
+  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
-                                                                 x.hasArtifactID (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
-    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
-                        .reversed ());
+    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ()).reversed ());
     return ret;
   }
 
