@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-05-27):
+Current list of all released projects (as of 2021-05-31):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -213,15 +213,15 @@ Current list of all released projects (as of 2021-05-27):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 6.3.2 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.3.2 - JDK 1.8
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.3.2 - JDK 1.8
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
