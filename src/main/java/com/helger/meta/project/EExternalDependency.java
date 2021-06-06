@@ -65,7 +65,7 @@ public enum EExternalDependency
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.8.0", EJDK.JDK8),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.9.0", EJDK.JDK8),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.10.0", EJDK.JDK8),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.3.1", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
@@ -81,21 +81,21 @@ public enum EExternalDependency
 
   ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.1", EJDK.JDK11),
   ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
-  ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK3_CORE),
+  ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.1.0", EJDK.JDK11),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.9.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.9.2", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210505", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.1", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210601", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.2", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -269,7 +269,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.25", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.1.6", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.2.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.23", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
