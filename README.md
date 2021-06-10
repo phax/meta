@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-06-06):
+Current list of all released projects (as of 2021-06-10):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -213,15 +213,15 @@ Current list of all released projects (as of 2021-06-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
    [![Build Status](https://travis-ci.org/phax/ph-commons.svg?branch=master)](https://travis-ci.org/phax/ph-commons)
- * [ph-css](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 6.3.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.3.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.3.3 - JDK 1.8
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.3.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
    [![Build Status](https://travis-ci.org/phax/ph-css.svg?branch=master)](https://travis-ci.org/phax/ph-css)
@@ -785,7 +785,7 @@ Current list of all released projects (as of 2021-06-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
    [![Build Status](https://travis-ci.org/phax/phase4.svg?branch=master)](https://travis-ci.org/phax/phase4)
- * [phive](https://github.com/phax/phive) - Version 7.2.0 - JDK 1.8
+ * [phive](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
@@ -873,15 +873,15 @@ Current list of all released projects (as of 2021-06-06):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
    [![Build Status](https://travis-ci.org/phax/phive-rules.svg?branch=master)](https://travis-ci.org/phax/phive-rules)
- * [phive/phive-api](https://github.com/phax/phive) - Version 7.2.0 - JDK 1.8
+ * [phive/phive-api](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phive/phive-engine](https://github.com/phax/phive) - Version 7.2.0 - JDK 1.8
+ * [phive/phive-engine](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
- * [phive/phive-json](https://github.com/phax/phive) - Version 7.2.0 - JDK 1.8
+ * [phive/phive-json](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json) 
    [![Build Status](https://travis-ci.org/phax/phive.svg?branch=master)](https://travis-ci.org/phax/phive)
@@ -1144,7 +1144,7 @@ All deprecated projects:
  * registry434 - never released
  * toop-parent-pom - Version 1.1.1
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
 
 ---
 

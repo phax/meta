@@ -48,7 +48,7 @@ public enum EExternalDependency
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.1", EJDK.JDK8),
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.14", EJDK.JDK8),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.68", EJDK.JDK8),
+  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.69", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
   BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
   BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
@@ -67,7 +67,7 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.8.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.10.0", EJDK.JDK8),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.3.1", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.4.0", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   @IsLegacy (replacedWith = "org.dom4j:dom4j")
   DOM4J_OLD("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
@@ -95,7 +95,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210601", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.2", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.3", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -200,7 +200,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.41.v20210516", EJDK.JDK8),
+  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.42.v20210604", EJDK.JDK8),
   JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
   JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
@@ -208,7 +208,7 @@ public enum EExternalDependency
   JETTY9_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY9_BOM),
 
   @IsBOM
-  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.3", EJDK.JDK11),
+  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.4", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),

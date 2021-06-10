@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20210606</version>
+  <version>1.0.0-20210610</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -63,27 +63,27 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk15on</artifactId>
-      <version>1.68</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk15on</artifactId>
-      <version>1.68</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.68</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
-      <version>1.68</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
-      <version>1.68</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -148,7 +148,7 @@
     <dependency>
       <groupId>dnsjava</groupId>
       <artifactId>dnsjava</artifactId>
-      <version>3.3.1</version>
+      <version>3.4.0</version>
     </dependency>
     <dependency>
       <groupId>org.umlgraph</groupId>
@@ -258,7 +258,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.17.2</version>
+      <version>3.17.3</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -580,64 +580,64 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.41.v20210516</version>
+      <version>9.4.42.v20210604</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>11.0.3</version>
+      <version>11.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -1812,18 +1812,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>6.3.3</version>
+      <version>6.3.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>6.3.3</version>
+      <version>6.3.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>6.3.3</version>
+      <version>6.3.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
@@ -2121,23 +2121,23 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-engine</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-json</artifactId>
-      <version>7.2.0</version>
+      <version>7.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
