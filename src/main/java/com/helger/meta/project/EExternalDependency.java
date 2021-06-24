@@ -76,7 +76,7 @@ public enum EExternalDependency
 
   ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
   ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
-  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", ECLIPSELINK2_CORE),
+  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", "2.7.9", EJDK.JDK8),
   ECLIPSELINK2_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK2_CORE),
 
   ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.1", EJDK.JDK11),
@@ -84,10 +84,10 @@ public enum EExternalDependency
   ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.1.0", EJDK.JDK11),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.9", EJDK.JDK8),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.0", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.9.2", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.10.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -176,7 +176,7 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
-  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.25.0", EJDK.JDK8),
+  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.26.0", EJDK.JDK8),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -208,7 +208,7 @@ public enum EExternalDependency
   JETTY9_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY9_BOM),
 
   @IsBOM
-  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.4", EJDK.JDK11),
+  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.5", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
@@ -249,7 +249,7 @@ public enum EExternalDependency
   LUCENE_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE_CORE),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.8.2", EJDK.JDK11),
+  LUCENE8_CORE ("org.apache.lucene", "lucene-core", "8.9.0", EJDK.JDK11),
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE8_CORE),
   LUCENE8_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE8_CORE),
   LUCENE8_DEMO ("org.apache.lucene", "lucene-demo", LUCENE8_CORE),
@@ -269,9 +269,9 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.25", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.2.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.2.2", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.23", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.24", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
@@ -279,7 +279,7 @@ public enum EExternalDependency
   POI ("org.apache.poi", "poi", "5.0.0", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
-  POSTGRESQL ("org.postgresql", "postgresql", "42.2.20", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.2.22", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.7", EJDK.JDK8),
@@ -290,7 +290,7 @@ public enum EExternalDependency
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.30", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "1.7.31", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   SLF4J_LOG4J12 ("org.slf4j", "slf4j-log4j12", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
@@ -299,7 +299,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.5.0", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.5.1", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
@@ -328,7 +328,7 @@ public enum EExternalDependency
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.8.1", EJDK.JDK8),
-  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.1.2", EJDK.JDK8),
+  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "2.8.2", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.1.0", EJDK.JDK8),

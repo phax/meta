@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-06-10):
+Current list of all released projects (as of 2021-06-24):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -45,15 +45,15 @@ Current list of all released projects (as of 2021-06-10):
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
    [![Build Status](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping.svg?branch=master)](https://travis-ci.org/austriapro/ebinterface-xrechnung-mapping)
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.4.1 - JDK 1.8
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.4.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.4.1 - JDK 1.8
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.4.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 1.4.1 - JDK 1.8
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 1.4.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
    [![Build Status](https://travis-ci.org/phax/en16931-cii2ubl.svg?branch=master)](https://travis-ci.org/phax/en16931-cii2ubl)
@@ -1144,7 +1144,7 @@ All deprecated projects:
  * registry434 - never released
  * toop-parent-pom - Version 1.1.1
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
 
 ---
 
