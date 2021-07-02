@@ -36,12 +36,12 @@ import com.helger.commons.version.Version;
  */
 public enum EExternalDependency
 {
-  API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.1", EJDK.JDK8),
+  API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.2", EJDK.JDK8),
   ARCHAIS_CORE ("com.netflix.archaius", "archaius-core", "0.7.7", EJDK.JDK8),
   ANT ("org.apache.ant", "ant", "1.10.10", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
-  ASM ("org.ow2.asm", "asm", "9.1", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "9.2", EJDK.JDK8),
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.10.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.11.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -107,7 +107,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "4.2", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "4.2.1", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.14", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -299,7 +299,7 @@ public enum EExternalDependency
 
   SPOCK_CORE ("org.spockframework", "spock-core", "2.0-groovy-3.0", EJDK.JDK8),
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.5.1", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.5.2", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
