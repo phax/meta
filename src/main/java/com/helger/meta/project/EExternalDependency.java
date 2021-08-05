@@ -61,7 +61,7 @@ public enum EExternalDependency
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.21", EJDK.JDK8),
-  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.8.0", EJDK.JDK8),
+  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.9.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.8.0", EJDK.JDK8),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.12.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.12.1", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -158,7 +158,7 @@ public enum EExternalDependency
 
   JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.1", EJDK.JDK11),
   @IsBOM
-  JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.1", EJDK.JDK11),
+  JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.2", EJDK.JDK11),
   JAXB3_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB3_BOM),
 
   JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
@@ -169,7 +169,7 @@ public enum EExternalDependency
 
   JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.1", EJDK.JDK11),
   @IsBOM
-  JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.1", EJDK.JDK11),
+  JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.2", EJDK.JDK11),
   JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
   JAXWS3_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS3_RI_BOM),
 
@@ -259,13 +259,13 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.1", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "3.0.1", EJDK.JDK8),
+  METRO ("org.glassfish.metro", "webservices-rt", "3.0.2", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.3.0", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.3.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.3.1", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.3.1", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.26", EJDK.JDK8),
 
@@ -282,7 +282,7 @@ public enum EExternalDependency
   POSTGRESQL ("org.postgresql", "postgresql", "42.2.23", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
-  R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.7", EJDK.JDK8),
+  R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.8", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.5", EJDK.JDK8),

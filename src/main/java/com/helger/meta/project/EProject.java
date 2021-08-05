@@ -718,27 +718,6 @@ public enum EProject implements IProject
                        "3.2.3",
                        EJDK.JDK8),
 
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER (null,
-             IProject.PROJECT_ECOSIO_PH,
-             "entwerter-parent-pom",
-             "entwerter",
-             EProjectType.MAVEN_POM,
-             EHasPages.FALSE,
-             EHasWiki.FALSE,
-             null,
-             EJDK.JDK8),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_REPO (ENTWERTER, "entwerter-repo", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION),
-
   @IsPrivateRepo
   TOTHOLZ (null,
            IProject.DEFAULT_PROJECT_OWNER,
