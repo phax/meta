@@ -1676,6 +1676,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
+      <artifactId>ph-merge-jaxb-episodes-maven-plugin</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
       <artifactId>jaxws-maven-plugin</artifactId>
       <version>2.6.2</version>
     </dependency>

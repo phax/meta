@@ -61,17 +61,21 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
 
   private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
   {
-    final String sProjectOwner = aProject.getProjectOwner ();
-    final String sRepoName = getGitHubRepoName (aProject);
-    aSB.append ("\n   [![Build Status](https://travis-ci.org/")
-       .append (sProjectOwner)
-       .append ('/')
-       .append (sRepoName)
-       .append (".svg?branch=master)](https://travis-ci.org/")
-       .append (sProjectOwner)
-       .append ('/')
-       .append (sRepoName)
-       .append (")");
+    // No longer
+    if (false)
+    {
+      final String sProjectOwner = aProject.getProjectOwner ();
+      final String sRepoName = getGitHubRepoName (aProject);
+      aSB.append ("\n   [![Build Status](https://travis-ci.com/")
+         .append (sProjectOwner)
+         .append ('/')
+         .append (sRepoName)
+         .append (".svg?branch=master)](https://travis-ci.com/")
+         .append (sProjectOwner)
+         .append ('/')
+         .append (sRepoName)
+         .append (")");
+    }
   }
 
   public static void main (final String [] args)
