@@ -728,16 +728,6 @@ public enum EProject implements IProject
                        EJDK.JDK8),
 
   @IsPrivateRepo
-  TOTHOLZ (null,
-           IProject.DEFAULT_PROJECT_OWNER,
-           "totholz",
-           "totholz",
-           EProjectType.JAVA_WEB_APPLICATION,
-           EHasPages.FALSE,
-           EHasWiki.FALSE,
-           null,
-           EJDK.JDK8),
-  @IsPrivateRepo
   BOZOO (null,
          IProject.DEFAULT_PROJECT_OWNER,
          "bozoo",

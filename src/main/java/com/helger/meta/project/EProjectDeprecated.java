@@ -37,18 +37,8 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
-  CIPA_START_JMSRECEIVER (null,
-                          "cipa-start-jmsreceiver",
-                          EProjectType.JAVA_LIBRARY,
-                          EHasPages.FALSE,
-                          EHasWiki.FALSE,
-                          "1.0.2"),
-  CIPA_START_JMSSENDER (null,
-                        "cipa-start-jmssender",
-                        EProjectType.JAVA_WEB_APPLICATION,
-                        EHasPages.FALSE,
-                        EHasWiki.FALSE,
-                        "1.0.2"),
+  CIPA_START_JMSRECEIVER (null, "cipa-start-jmsreceiver", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
+  CIPA_START_JMSSENDER (null, "cipa-start-jmssender", EProjectType.JAVA_WEB_APPLICATION, EHasPages.FALSE, EHasWiki.FALSE, "1.0.2"),
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
   PEPPOL_LIME_PARENT_POM (null,
@@ -187,13 +177,9 @@ public enum EProjectDeprecated implements IProject
                                EHasWiki.FALSE,
                                "0.7.2",
                                EJDK.JDK8),
-  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM,
-                                 "peppol-directory-businesscard",
-                                 EProjectType.JAVA_LIBRARY),
+  PEPPOL_DIRECTORY_BUSINESSCARD (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_INDEXER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM,
-                              "peppol-directory-publisher",
-                              EProjectType.JAVA_WEB_APPLICATION),
+  PEPPOL_DIRECTORY_PUBLISHER (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -231,10 +217,7 @@ public enum EProjectDeprecated implements IProject
                               EHasWiki.FALSE,
                               "0.14.3",
                               EJDK.JDK8),
-  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT,
-                            "maven-jaxb22-plugin-core",
-                            "plugin-core",
-                            EProjectType.MAVEN_PLUGIN),
+  MAVEN_JAXB22_PLUGIN_CORE (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin-core", "plugin-core", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB22_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb22-plugin", "plugin-2.2", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB23_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb23-plugin", "plugin-2.3", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
@@ -293,7 +276,18 @@ public enum EProjectDeprecated implements IProject
           EHasPages.FALSE,
           EHasWiki.FALSE,
           "2.3.0",
-          EJDK.JDK8),;
+          EJDK.JDK8),
+
+  @IsPrivateRepo
+  TOTHOLZ (null,
+           IProject.DEFAULT_PROJECT_OWNER,
+           "totholz",
+           "totholz",
+           EProjectType.JAVA_WEB_APPLICATION,
+           EHasPages.FALSE,
+           EHasWiki.FALSE,
+           null,
+           EJDK.JDK8),;
 
   private final SimpleProject m_aProject;
 
@@ -377,8 +371,7 @@ public enum EProjectDeprecated implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
                                               sProjectBaseDirName),
                                     EIsDeprecated.TRUE,
                                     eHasPagesProject,

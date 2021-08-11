@@ -81,20 +81,20 @@ public enum EExternalDependency
 
   ECLIPSELINK3_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "3.0.2", EJDK.JDK11),
   ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
-  ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.1.0", EJDK.JDK11),
+  ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.1.1", EJDK.JDK11),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.12.1", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "7.13.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210601", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210808", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.3", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
@@ -308,7 +308,7 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.1", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.9.Final", EJDK.JDK8),
+  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.10.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.3.2", EJDK.JDK8),

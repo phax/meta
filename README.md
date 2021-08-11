@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-08-05):
+Current list of all released projects (as of 2021-08-11):
 
  * [as2-lib](https://github.com/phax/as2-lib) - Version 4.7.1 - JDK 1.8
 
@@ -722,8 +722,6 @@ Current list of all unreleased projects:
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 
- * [totholz](https://github.com/phax/totholz) - JDK 1.8
-
 
 All deprecated projects:
 
@@ -897,6 +895,7 @@ All deprecated projects:
  * toop-parent-pom - Version 1.1.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
+ * totholz - never released
 
 ---
 
