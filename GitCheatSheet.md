@@ -3,6 +3,7 @@
 ## Global settings
 
 Basic user info:
+
 ```
 git config --global user.email "philip@helger.com"
 git config --global user.name "Philip Helger"
@@ -10,22 +11,26 @@ git config --global user.name "Philip Helger"
 
 Store credentials when using commandline git.
 Windows:
+
 ```
 git config --global credential.helper wincred
 ```
 
 Linux:
+
 ```
 git config --global credential.helper cache
 ```
 
 Newline settings for Windows users:
+
 ```
 git config --global core.autocrlf true
 # git config --global core.eol lf
 ```
 
 Proxy settings:
+
 ```
 set HTTP_PROXY=http://proxy.mycompany.org:80
 git config --global http.proxy %HTTP_PROXY%
@@ -34,6 +39,7 @@ git config --global http.proxy %HTTP_PROXY%
 Note: git does not differentiate between `http` and `https`
 
 Exclude certain hosts from using the proxy:
+
 ```
 set NO_PROXY=.company.com,localhost,127.0.0.1,::1
 ```
@@ -41,6 +47,7 @@ set NO_PROXY=.company.com,localhost,127.0.0.1,::1
 Note: change `.company.com` to your domain(s) and keep the leading dot!
 
 Disable TLS verification for all repos:
+
 ```
 git config --global http.sslVerify false
 ```
