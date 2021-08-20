@@ -413,7 +413,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "6.7.0",
+                    "6.7.1",
                     EJDK.JDK8),
   PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY),
   PH_DB_JDBC (PH_DB_PARENT_POM, "ph-db-jdbc", EProjectType.JAVA_LIBRARY),
@@ -870,7 +870,10 @@ public enum EProject implements IProject
                                     sProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : IProject.PROJECT_OWNER_AUSTRIAPRO.equals (sProjectOwner) ? new File (CMeta.GIT_BASE_DIR,
+                                                                                                                                            "../git-austriapro")
+                                                                                                                                : CMeta.GIT_BASE_DIR,
                                               sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
