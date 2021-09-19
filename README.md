@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-09-17):
+Current list of all released projects (as of 2021-09-19):
 
  * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
 
@@ -176,16 +176,16 @@ Current list of all released projects (as of 2021-09-17):
  * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 6.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 6.7.1 - JDK 1.8
+ * [ph-db](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.7.1 - JDK 1.8
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.7.1 - JDK 1.8
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.7.1 - JDK 1.8
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.3 - JDK 1.8
@@ -686,31 +686,31 @@ Current list of all released projects (as of 2021-09-17):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.9.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.3.3 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 5.4.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
 

@@ -91,11 +91,11 @@ public enum EExternalDependency
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.1", EJDK.JDK8),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.2", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.12.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210907", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.17.3", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.18.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -176,7 +176,7 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
-  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.26.0", EJDK.JDK8),
+  JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.27.0", EJDK.JDK8),
 
   JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
   JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
@@ -234,7 +234,7 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.8.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.8.0", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "2.8.1", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.14.1", EJDK.JDK8),
@@ -285,7 +285,7 @@ public enum EExternalDependency
   R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.8", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "10.5", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "10.6", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.8.2", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "3.141.59", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0-RC1", EJDK.JDK8),
