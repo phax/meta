@@ -87,15 +87,15 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.0.0", EJDK.JDK8),
-  FLYWAY ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
+  FLYWAY ("org.flywaydb", "flyway-core", "8.0.0", EJDK.JDK8),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.2", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20210907", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.18.0", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20211006", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.18.1", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "2.5.x")
   GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
@@ -137,7 +137,7 @@ public enum EExternalDependency
   // We need to wait for implementations
   JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.23.0", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.23.1", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.10", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -265,8 +265,8 @@ public enum EExternalDependency
 
   @IsLegacy
   MONGO_DRIVER_ASYNC ("org.mongodb", "mongodb-driver-async", "3.12.1", EJDK.JDK8),
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.3.2", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.3.2", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.3.3", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.3.3", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.26", EJDK.JDK8),
 
