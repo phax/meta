@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211010</version>
+  <version>1.0.0-20211014</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -223,7 +223,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -585,64 +585,64 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.43.v20210629</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>11.0.6</version>
+      <version>11.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -827,7 +827,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.3.2</version>
+      <version>6.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -902,7 +902,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.141.59</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1218,7 +1218,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.4.1</version>
+      <version>4.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -2258,18 +2258,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>1.4.3</version>
+      <version>1.4.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>1.4.3</version>
+      <version>1.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>1.4.3</version>
+      <version>1.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
