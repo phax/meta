@@ -679,7 +679,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        "5.4.0",
+                        "5.4.1",
                         EJDK.JDK8),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),
