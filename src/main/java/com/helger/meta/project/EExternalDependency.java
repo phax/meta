@@ -148,7 +148,7 @@ public enum EExternalDependency
 
   JAXB2_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  JAXB2_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.3", EJDK.JDK8),
+  JAXB2_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.5", EJDK.JDK8),
   JAXB2_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB2_BOM),
 
   @IsLegacy (replacedWith = "com.evolvedbinary.maven.jvnet:jaxb2-maven-plugin")
@@ -161,9 +161,9 @@ public enum EExternalDependency
   JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.2", EJDK.JDK11),
   JAXB3_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB3_BOM),
 
-  JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
+  JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.5", EJDK.JDK8),
   @IsBOM
-  JAXWS2_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.3", EJDK.JDK8),
+  JAXWS2_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.5", EJDK.JDK8),
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
