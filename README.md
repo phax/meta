@@ -245,13 +245,13 @@ Current list of all released projects (as of 2021-10-31):
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
- * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 1.2.1 - JDK 1.8
+ * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 1.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom) 
  * [ph-jaxb22-plugin](https://github.com/phax/ph-jaxb22-plugin) - Version 2.3.3.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb22-plugin) 
- * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.3.1 - JDK 1.8
+ * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
  * [ph-jdmc](https://github.com/phax/ph-jdmc) - Version 0.0.5 - JDK 1.8
