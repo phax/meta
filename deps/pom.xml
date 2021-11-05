@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211102</version>
+  <version>1.0.0-20211105</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2131,23 +2131,23 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>7.2.1</version>
+      <version>7.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>7.2.1</version>
+      <version>7.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-engine</artifactId>
-      <version>7.2.1</version>
+      <version>7.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-json</artifactId>
-      <version>7.2.1</version>
+      <version>7.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>

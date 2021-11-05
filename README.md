@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-11-02):
+Current list of all released projects (as of 2021-11-05):
 
  * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
 
@@ -593,7 +593,7 @@ Current list of all released projects (as of 2021-11-02):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 1.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
+ * [phive](https://github.com/phax/phive) - Version 7.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 2.1.7 - JDK 1.8
@@ -659,13 +659,13 @@ Current list of all released projects (as of 2021-11-02):
  * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 2.1.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
+ * [phive/phive-api](https://github.com/phax/phive) - Version 7.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
- * [phive/phive-engine](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
+ * [phive/phive-engine](https://github.com/phax/phive) - Version 7.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-engine) 
- * [phive/phive-json](https://github.com/phax/phive) - Version 7.2.1 - JDK 1.8
+ * [phive/phive-json](https://github.com/phax/phive) - Version 7.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-json) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.9.6 - JDK 1.8
