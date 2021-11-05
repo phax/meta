@@ -377,7 +377,7 @@ Current list of all released projects (as of 2021-11-05):
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 5.2.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout4) 
- * [ph-poi](https://github.com/phax/ph-poi) - Version 5.2.0 - JDK 1.8
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 5.3.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
  * [ph-regrep](https://github.com/phax/ph-regrep) - Version 1.2.0 - JDK 1.8
