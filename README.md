@@ -509,7 +509,7 @@ Current list of all released projects (as of 2021-11-19):
  * [ph-xhe](https://github.com/phax/ph-xhe) - Version 3.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.4.1 - JDK 1.8
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.4.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
  * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
