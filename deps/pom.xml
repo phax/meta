@@ -2080,6 +2080,11 @@
       <version>8.3.2</version>
     </dependency>
     <dependency>
+      <groupId>com.helger.photon</groupId>
+      <artifactId>ph-oton-jdbc</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jdmc-parent-pom</artifactId>
       <version>0.0.5</version>

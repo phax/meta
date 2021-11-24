@@ -532,6 +532,7 @@ public enum EProject implements IProject
   PH_OTON_UICORE (PH_OTON_PARENT_POM, "ph-oton-uicore", EProjectType.JAVA_LIBRARY),
   PH_OTON_ICON (PH_OTON_PARENT_POM, "ph-oton-icon", EProjectType.JAVA_LIBRARY),
   PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY),
+
   PH_OTON_JDBC (null,
                 IProject.DEFAULT_PROJECT_OWNER,
                 "ph-oton-jdbc",
@@ -539,7 +540,7 @@ public enum EProject implements IProject
                 EProjectType.JAVA_LIBRARY,
                 EHasPages.FALSE,
                 EHasWiki.FALSE,
-                null,
+                "1.0.0",
                 EJDK.JDK8),
 
   PH_JDMC_PARENT_POM (null,
