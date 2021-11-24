@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2021-11-22):
+Current list of all released projects (as of 2021-11-24):
 
  * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
 
@@ -176,16 +176,16 @@ Current list of all released projects (as of 2021-11-22):
  * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 6.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
+ * [ph-db](https://github.com/phax/ph-db) - Version 6.7.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 6.7.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 6.7.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.7.2 - JDK 1.8
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 6.7.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.3 - JDK 1.8
@@ -395,31 +395,31 @@ Current list of all released projects (as of 2021-11-22):
  * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 4.2.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule) 
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom) 
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task) 
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api) 
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure) 
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt) 
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles) 
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator) 
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.2.5 - JDK 1.8
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 6.2.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 6.6.3 - JDK 1.8
@@ -721,6 +721,8 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 1.8
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
+
+ * [ph-oton-db](https://github.com/phax/ph-oton-db) - JDK 1.8
 
 
 All deprecated projects:

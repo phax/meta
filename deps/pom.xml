@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211123</version>
+  <version>1.0.0-20211124</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -199,6 +199,56 @@
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.asm</artifactId>
       <version>9.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.equinox.common</artifactId>
+      <version>3.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.equinox.common</artifactId>
+      <version>3.15.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>3.13.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>3.23.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.resources</artifactId>
+      <version>3.13.900</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.resources</artifactId>
+      <version>3.15.100</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.jobs</artifactId>
+      <version>3.10.1100</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.jobs</artifactId>
+      <version>3.12.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.contenttype</artifactId>
+      <version>3.7.1000</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.contenttype</artifactId>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>net.jodah</groupId>
@@ -1703,23 +1753,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>6.7.2</version>
+      <version>6.7.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>6.7.2</version>
+      <version>6.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>6.7.2</version>
+      <version>6.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>6.7.2</version>
+      <version>6.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -1838,48 +1888,48 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>6.2.5</version>
+      <version>6.2.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
