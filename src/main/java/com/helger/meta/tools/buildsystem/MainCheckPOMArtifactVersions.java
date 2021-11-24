@@ -58,6 +58,8 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
  */
 public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
+  private static final boolean DEBUG_LOG = false;
+
   // Parent POM requirements
   private static final String PARENT_POM_GROUPID = "com.helger";
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
@@ -96,10 +98,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
            sGroupID.startsWith ("com.helger.") ||
            "at.austriapro".equals (sGroupID) ||
            "at.winenet".equals (sGroupID) ||
-           "eu.toop".equals (sGroupID);
+           "eu.toop".equals (sGroupID) ||
+           "eu.de4a".equals (sGroupID);
   }
 
-  private static boolean _isSnapshot (final String sVersion)
+  private static boolean _isSnapshotVersion (final String sVersion)
   {
     return sVersion.endsWith (SUFFIX_SNAPSHOT) ||
            RegExHelper.stringMatchesPattern (".+[-_\\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|rc|RC|M|EA|SNAOSHOT)[-_\\.]?[0-9]+",
@@ -235,14 +238,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
             else
             {
-              if (false)
+              if (DEBUG_LOG)
                 _warn (aProject, "Only profile activations with JDK version are supported");
             }
           }
           else
           {
             // Happens in parent POM
-            if (false)
+            if (DEBUG_LOG)
               _warn (aProject, "Found profile without activation");
           }
 
@@ -252,7 +255,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
             if (eProperties != null)
             {
-              if (false)
+              if (DEBUG_LOG)
                 _info (aProject, "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
               eProperties.forAllChildElements (eProperty -> {
                 String sValue = eProperty.getTextContentTrimmed ();
@@ -511,11 +514,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
               if (sVersion != null)
               {
-                final boolean bIsSnapshot = _isSnapshot (sVersion);
+                final boolean bIsSnapshot = _isSnapshotVersion (sVersion);
                 if (aReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
-                  final boolean bPublishedIsSnapshot = _isSnapshot (aReferencedProject.getLastPublishedVersionString ());
+                  final boolean bPublishedIsSnapshot = _isSnapshotVersion (aReferencedProject.getLastPublishedVersionString ());
                   final Version aLastPublishedVersion = bPublishedIsSnapshot ? Version.parse (StringHelper.trimEnd (aReferencedProject.getLastPublishedVersionString (),
                                                                                                                     SUFFIX_SNAPSHOT))
                                                                              : aReferencedProject.getLastPublishedVersion ();
@@ -586,7 +589,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 // Avoid warnings for components that require a later JDK
                 if (!eExternalDep.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
                 {
-                  if (false)
+                  if (DEBUG_LOG)
                     _info (aProject, "Incompatible artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
                   continue;
                 }
@@ -603,9 +606,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 }
                 else
                 {
-                  if (false)
-                    if (eExternalDep.isLegacy ())
-                      _warn (aProject, sGroupID + "::" + sArtifactID + " is legacy - there is something better");
+                  // if (DEBUG_LOG)
+                  if (eExternalDep.isLegacy ())
+                    _warn (aProject, sGroupID + "::" + sArtifactID + " is legacy - there is something better");
 
                   // Referenced project published at least once
                   final Version aVersionInFile = Version.parse (sVersion);
@@ -655,7 +658,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               // Group ID, Artifact ID or Version is null
-              if (false)
+              if (DEBUG_LOG)
                 _warn (aProject, "Unchecked artifact " + sGroupID + "::" + sArtifactID + "::" + sVersion);
             }
         }
@@ -667,6 +670,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
       if (aProject != EProject.EBINTERFACE_RENDERING && aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
       {
+        if (DEBUG_LOG)
+          _info (aProject, "Scanning POM " + aProject.getPOMFile ().getAbsolutePath ());
+
         final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
         if (aDoc == null)
           throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());

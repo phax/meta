@@ -83,6 +83,17 @@ public enum EExternalDependency
   ECLIPSELINK3_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK3_CORE),
   ECLIPSELINK3_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.2.0", EJDK.JDK11),
 
+  ECLIPSE_EQUINOX_COMMON ("org.eclipse.platform", "org.eclipse.equinox.common", "3.8.0", EJDK.JDK8),
+  ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.15.0", EJDK.JDK11),
+  ECLIPSE_CORE_RUNTIME ("org.eclipse.platform", "org.eclipse.core.runtime", "3.13.0", EJDK.JDK8),
+  ECLIPSE_CORE_RUNTIME2 ("org.eclipse.platform", "org.eclipse.core.runtime", "3.23.0", EJDK.JDK11),
+  ECLIPSE_CORE_RESOURCES ("org.eclipse.platform", "org.eclipse.core.resources", "3.13.900", EJDK.JDK8),
+  ECLIPSE_CORE_RESOURCES2 ("org.eclipse.platform", "org.eclipse.core.resources", "3.15.100", EJDK.JDK11),
+  ECLIPSE_CORE_JOBS ("org.eclipse.platform", "org.eclipse.core.jobs", "3.10.1100", EJDK.JDK8),
+  ECLIPSE_CORE_JOBS2 ("org.eclipse.platform", "org.eclipse.core.jobs", "3.12.0", EJDK.JDK11),
+  ECLIPSE_CORE_CONTENTTYPE ("org.eclipse.platform", "org.eclipse.core.contenttype", "3.7.1000", EJDK.JDK8),
+  ECLIPSE_CORE_CONTENTTYPE2 ("org.eclipse.platform", "org.eclipse.core.contenttype", "3.8.0", EJDK.JDK11),
+
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.1", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
