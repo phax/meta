@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211202</version>
+  <version>1.0.0-20211205</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
-      <version>1.70</version>
+      <version>1.69</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.0</version>
+      <version>3.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -1043,7 +1043,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.2.13.Final</version>
+      <version>2.2.14.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
