@@ -14,25 +14,25 @@ Current list of all released projects (as of 2021-12-13):
  * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 1.3.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom) 
- * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot) 
- * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp) 
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib) 
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb) 
- * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server) 
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.8.0 - JDK 1.8
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 4.9.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 1.4.4 - JDK 1.8
