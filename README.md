@@ -266,13 +266,13 @@ Current list of all released projects (as of 2021-12-13):
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.1 - JDK 1.8
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.1 - JDK 1.8
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 6.2.1 - JDK 1.8
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy) 
  * [ph-math](https://github.com/phax/ph-math) - Version 4.1.0 - JDK 1.8
