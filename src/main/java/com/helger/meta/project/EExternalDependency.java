@@ -254,7 +254,8 @@ public enum EExternalDependency
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.15.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
-  LOG4J2_SLF4J ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
+  LOG4J2_SLF4J_IMPL ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
+  LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
   LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.7.3", EJDK.JDK8),
