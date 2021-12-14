@@ -252,7 +252,7 @@ public enum EExternalDependency
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.0.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.15.0", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.16.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J_IMPL ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
