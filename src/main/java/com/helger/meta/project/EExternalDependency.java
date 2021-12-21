@@ -97,11 +97,11 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.2.3", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.2.4", EJDK.JDK8),
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
-  FLYWAY8 ("org.flywaydb", "flyway-core", "8.2.2", EJDK.JDK11),
+  FLYWAY8 ("org.flywaydb", "flyway-core", "8.2.3", EJDK.JDK11),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -121,7 +121,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.0", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.0.2", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.15", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -130,7 +130,7 @@ public enum EExternalDependency
   HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
   HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.0", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.1", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -252,7 +252,7 @@ public enum EExternalDependency
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.0.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.16.0", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.17.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J_IMPL ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -286,9 +286,9 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.27", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.5.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.5.1", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.24", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.25", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
@@ -299,12 +299,10 @@ public enum EExternalDependency
   POSTGRESQL ("org.postgresql", "postgresql", "42.3.1", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
-  R7INSIGHT ("com.rapid7", "r7insight_java", "3.0.9", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
-  RXJAVA ("io.reactivex", "rxjava", "1.3.8", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.6", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.8.5", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.1.0", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.1.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.32", EJDK.JDK8),
@@ -314,7 +312,6 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
-  SPOCK_CORE ("org.spockframework", "spock-core", "2.1-M2-groovy-3.0", EJDK.JDK8),
   @IsBOM
   SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.1", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
@@ -325,7 +322,6 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),
   TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.1", EJDK.JDK8),
-  UNDERTOW ("io.undertow", "undertow-servlet", "2.2.14.Final", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.0", EJDK.JDK8),

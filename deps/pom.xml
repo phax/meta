@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211217</version>
+  <version>1.0.0-20211221</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.3</version>
+      <version>3.2.4</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.2.2</version>
+      <version>8.2.3</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -339,7 +339,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>5.0</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -369,27 +369,27 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-afterburner</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-cbor</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>org.jacoco</groupId>
@@ -777,27 +777,27 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.16.0</version>
+      <version>2.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.16.0</version>
+      <version>2.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.16.0</version>
+      <version>2.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-to-slf4j</artifactId>
-      <version>2.16.0</version>
+      <version>2.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.16.0</version>
+      <version>2.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -892,22 +892,22 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.5.0</version>
+      <version>6.5.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
-      <version>2.0.24</version>
+      <version>2.0.25</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-app</artifactId>
-      <version>2.0.24</version>
+      <version>2.0.25</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
-      <version>2.0.24</version>
+      <version>2.0.25</version>
     </dependency>
     <dependency>
       <groupId>info.picocli</groupId>
@@ -940,19 +940,9 @@
       <version>2.3.2</version>
     </dependency>
     <dependency>
-      <groupId>com.rapid7</groupId>
-      <artifactId>r7insight_java</artifactId>
-      <version>3.0.9</version>
-    </dependency>
-    <dependency>
       <groupId>es.moki.ratelimitj</groupId>
       <artifactId>ratelimitj-inmemory</artifactId>
       <version>0.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>io.reactivex</groupId>
-      <artifactId>rxjava</artifactId>
-      <version>1.3.8</version>
     </dependency>
     <dependency>
       <groupId>net.sf.saxon</groupId>
@@ -967,7 +957,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1003,11 +993,6 @@
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
       <version>1.7.32</version>
-    </dependency>
-    <dependency>
-      <groupId>org.spockframework</groupId>
-      <artifactId>spock-core</artifactId>
-      <version>2.1-M2-groovy-3.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -1049,11 +1034,6 @@
       <groupId>com.typesafe</groupId>
       <artifactId>config</artifactId>
       <version>1.4.1</version>
-    </dependency>
-    <dependency>
-      <groupId>io.undertow</groupId>
-      <artifactId>undertow-servlet</artifactId>
-      <version>2.2.14.Final</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -2328,18 +2308,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>1.4.4</version>
+      <version>1.4.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>1.4.4</version>
+      <version>1.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>1.4.4</version>
+      <version>1.4.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
@@ -2450,50 +2430,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
       <type>war</type>
     </dependency>
     <dependency>
