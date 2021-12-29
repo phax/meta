@@ -312,7 +312,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "6.6.3",
+                     "6.7.0",
                      EJDK.JDK8),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
   PH_UBL_TESTFILES (PH_UBL_PARENT_POM, "ph-ubl-testfiles", EProjectType.JAVA_LIBRARY),
@@ -327,6 +327,7 @@ public enum EProject implements IProject
   PH_UBLPE (PH_UBL_PARENT_POM, "ph-ublpe", EProjectType.JAVA_LIBRARY),
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
   PH_UBL_DIAN (PH_UBL_PARENT_POM, "ph-ubl-dian", EProjectType.JAVA_LIBRARY),
+  PH_UBL_EFORMS (PH_UBL_PARENT_POM, "ph-ubl-eforms", EProjectType.JAVA_LIBRARY),
 
   PH_MATH_PARENT_POM (null,
                       IProject.DEFAULT_PROJECT_OWNER,

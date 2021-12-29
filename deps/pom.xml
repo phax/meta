@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20211224</version>
+  <version>1.0.0-20211229</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.4</version>
+      <version>3.2.5</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -777,27 +777,27 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.17.0</version>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.17.0</version>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.17.0</version>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-to-slf4j</artifactId>
-      <version>2.17.0</version>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.17.0</version>
+      <version>2.17.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -1218,7 +1218,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-site-plugin</artifactId>
-      <version>3.9.1</version>
+      <version>3.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1625,73 +1625,78 @@
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-parent-pom</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-api</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-testfiles</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20-codelists</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21-codelists</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22-codelists</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23-codelists</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ublpe</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubltr</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-dian</artifactId>
-      <version>6.6.3</version>
+      <version>6.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl-eforms</artifactId>
+      <version>6.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
