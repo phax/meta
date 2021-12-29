@@ -28,7 +28,6 @@ import com.helger.commons.state.ESuccess;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -39,8 +38,6 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
-  private static final boolean CHECK_TRAVIS = true;
-
   @Nonnull
   private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
@@ -95,6 +92,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return false;
   }
 
+  @SuppressWarnings ("unused")
   private static boolean _checkFileContainsNot (@Nonnull final IProject aProject,
                                                 @Nonnull final String sRelativeFilename,
                                                 @Nonnull final String sExpectedContent)
@@ -169,45 +167,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
   {
-    if (CHECK_TRAVIS)
-      if (!aProject.isNestedProject ())
-      {
-        if (_checkFileExisting (aProject, ".travis.yml").isSuccess ())
-        {
-          if (false && aProject.getProjectType ().hasJavaCode ())
-          {
-            // jdeps only with JDK8+
-            // JDeps is disabled for multi-version JAR issue
-            _checkFileContains (aProject, ".travis.yml", "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps");
-          }
-          else
-          {
-            _checkFileContains (aProject, ".travis.yml", "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U");
-          }
-
-          // Dist
-          _checkFileContains (aProject, ".travis.yml", "xenial");
-
-          // JDK
-          _checkFileContains (aProject, ".travis.yml", "openjdk8");
-          _checkFileContains (aProject, ".travis.yml", "openjdk11");
-          _checkFileContains (aProject, ".travis.yml", "openjdk14");
-          _checkFileContainsNot (aProject, ".travis.yml", "oraclejdk");
-
-          // master only
-          _checkFileContains (aProject, ".travis.yml", "branches:");
-
-          // No SNAPSHOT deployment for applications
-          if (aProject.getProjectType () != EProjectType.JAVA_APPLICATION &&
-              aProject.getProjectType () != EProjectType.JAVA_WEB_APPLICATION)
-          {
-            if (_checkFileExisting (aProject, "travis-settings.xml").isSuccess ())
-              _checkFileContains (aProject,
-                                  ".travis.yml",
-                                  "mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy");
-          }
-        }
-      }
+    if (!aProject.isNestedProject ())
+    {
+      _checkFileNotExisting (aProject, ".travis.yml");
+      _checkFileNotExisting (aProject, "travis-settings.xml");
+    }
   }
 
   public static void main (final String [] args)
