@@ -669,7 +669,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-      if (aProject != EProject.EBINTERFACE_RENDERING && aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
+      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
       {
         if (DEBUG_LOG)
           _info (aProject, "Scanning POM " + aProject.getPOMFile ().getAbsolutePath ());

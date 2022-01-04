@@ -286,7 +286,17 @@ public enum EProjectDeprecated implements IProject
            EHasPages.FALSE,
            EHasWiki.FALSE,
            null,
-           EJDK.JDK8),;
+           EJDK.JDK8),
+
+  EBINTERFACE_RENDERING (null,
+                         EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
+                         "ebinterface-rendering",
+                         "ebinterface-rendering",
+                         EProjectType.JAVA_LIBRARY,
+                         EHasPages.FALSE,
+                         EHasWiki.FALSE,
+                         "1.0.0",
+                         EJDK.JDK8),;
 
   private final SimpleProject m_aProject;
 

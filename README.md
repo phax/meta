@@ -5,9 +5,6 @@ This project is not meant to be released but only helps me internally to get all
 
 Current list of all released projects (as of 2022-01-04):
 
- * [ebinterface-rendering](https://github.com/austriapro/ebinterface-rendering) - Version 1.0.0 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-ubl-mapping) 
@@ -731,6 +728,24 @@ Current list of all unreleased projects:
 
 All deprecated projects:
 
+ * ebinterface-rendering - Version 1.0.0
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
+ * java-tools - Version 2.0.4
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom) 
+ * java-tools/en16931-edifact-to-xml - Version 2.0.4
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml) 
+ * java-tools/en16931-edifact-xml - Version 2.0.4
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml) 
+ * java-tools/en16931-xml-validator - Version 2.0.4
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
+ * toop-parent-pom - Version 1.1.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
  * as2-peppol - Version 5.4.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom) 
@@ -752,18 +767,6 @@ All deprecated projects:
  * cipa-start-jmssender - Version 1.0.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
- * java-tools - Version 2.0.4
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom) 
- * java-tools/en16931-edifact-to-xml - Version 2.0.4
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml) 
- * java-tools/en16931-edifact-xml - Version 2.0.4
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml) 
- * java-tools/en16931-xml-validator - Version 2.0.4
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator) 
  * jgatsp - never released
  * maven-jaxb2-plugin - Version 0.14.3
 
@@ -898,9 +901,6 @@ All deprecated projects:
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2) 
  * ph-zeromq - never released
  * registry434 - never released
- * toop-parent-pom - Version 1.1.1
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
  * totholz - never released
 
 ---

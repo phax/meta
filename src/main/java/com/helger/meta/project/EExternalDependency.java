@@ -97,7 +97,7 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.2.5", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.2.6", EJDK.JDK8),
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
@@ -267,7 +267,6 @@ public enum EExternalDependency
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
   LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.0.0", EJDK.JDK11),
-  LUCENE9_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE9_CORE),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -286,7 +285,7 @@ public enum EExternalDependency
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.27", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.5.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.5.2", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.25", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -301,7 +300,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "10.6", EJDK.JDK8),
-  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.8.5", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.8.6", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.1.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
@@ -325,7 +324,7 @@ public enum EExternalDependency
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.8.1", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.0", EJDK.JDK8),
-  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.0.2", EJDK.JDK8),
+  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.0.3", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "2.3.0", EJDK.JDK8),
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.4.1", EJDK.JDK8),

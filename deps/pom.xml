@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.5</version>
+      <version>3.2.6</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -836,11 +836,6 @@
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
-      <artifactId>lucene-analyzers-common</artifactId>
-      <version>9.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
       <version>9.0.0</version>
     </dependency>
@@ -892,7 +887,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.5.1</version>
+      <version>6.5.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -952,7 +947,7 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt</artifactId>
-      <version>1.8.5</version>
+      <version>1.8.6</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -1053,7 +1048,7 @@
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
       <artifactId>xmlbeans</artifactId>
-      <version>5.0.2</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.santuario</groupId>
@@ -2480,11 +2475,6 @@
       <artifactId>phoss-smp-webapp-xml</artifactId>
       <version>5.4.5</version>
       <type>war</type>
-    </dependency>
-    <dependency>
-      <groupId>at.austriapro</groupId>
-      <artifactId>ebinterface-rendering</artifactId>
-      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>
