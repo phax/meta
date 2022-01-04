@@ -24,7 +24,6 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
-import com.helger.meta.CMeta;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
@@ -42,7 +41,7 @@ public enum EProjectDeprecated implements IProject
   JGATSP (null, "jgatsp", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, null),
 
   PEPPOL_LIME_PARENT_POM (null,
-                          IProject.DEFAULT_PROJECT_OWNER,
+                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "peppol-lime-parent-pom",
                           "peppol-lime",
                           EProjectType.MAVEN_POM,
@@ -63,7 +62,7 @@ public enum EProjectDeprecated implements IProject
   PH_WEBCTRLS (null, "ph-webctrls", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "4.0.2"),
   PH_WEBSCOPES (null, "ph-webscopes", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "6.8.1"),
   PH_PDF_LAYOUT (null,
-                 IProject.DEFAULT_PROJECT_OWNER,
+                 EProjectOwner.DEFAULT_PROJECT_OWNER,
                  "ph-pdf-layout",
                  "ph-pdf-layout",
                  EProjectType.JAVA_LIBRARY,
@@ -72,7 +71,7 @@ public enum EProjectDeprecated implements IProject
                  "3.5.3",
                  EJDK.JDK8),
   PH_EVENTS (null,
-             IProject.DEFAULT_PROJECT_OWNER,
+             EProjectOwner.DEFAULT_PROJECT_OWNER,
              "ph-events",
              "ph-events",
              EProjectType.JAVA_LIBRARY,
@@ -82,7 +81,7 @@ public enum EProjectDeprecated implements IProject
              EJDK.JDK8),
 
   PH_HTML_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-html-parent-pom",
                       "ph-html",
                       EProjectType.MAVEN_POM,
@@ -95,7 +94,7 @@ public enum EProjectDeprecated implements IProject
   PH_HTML_JQUERY (PH_HTML_PARENT_POM, "ph-html-jquery", EProjectType.JAVA_LIBRARY),
 
   PH_LOCALES_PARENT_POM (null,
-                         IProject.DEFAULT_PROJECT_OWNER,
+                         EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "ph-locales-parent-pom",
                          "ph-locales",
                          EProjectType.MAVEN_POM,
@@ -107,7 +106,7 @@ public enum EProjectDeprecated implements IProject
   PH_LOCALES16 (PH_LOCALES_PARENT_POM, "ph-locales16", EProjectType.JAVA_LIBRARY),
 
   PH_STX_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-stx-parent-pom",
                      "ph-stx",
                      EProjectType.MAVEN_POM,
@@ -119,7 +118,7 @@ public enum EProjectDeprecated implements IProject
   PH_STX_ENGINE (PH_STX_PARENT_POM, "ph-stx-engine", EProjectType.JAVA_LIBRARY),
 
   PH_DEE_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-dee-parent-pom",
                      "ph-dee",
                      EProjectType.MAVEN_POM,
@@ -131,7 +130,7 @@ public enum EProjectDeprecated implements IProject
   PH_DEE_ENGINE (PH_DEE_PARENT_POM, "ph-dee-engine", EProjectType.JAVA_LIBRARY),
 
   PH_WSDL_GEN (null,
-               IProject.DEFAULT_PROJECT_OWNER,
+               EProjectOwner.DEFAULT_PROJECT_OWNER,
                "ph-wsdl-gen",
                "ph-wsdl-gen",
                EProjectType.JAVA_LIBRARY,
@@ -140,7 +139,7 @@ public enum EProjectDeprecated implements IProject
                null,
                EJDK.JDK8),
   PH_ZEROMQ (null,
-             IProject.DEFAULT_PROJECT_OWNER,
+             EProjectOwner.DEFAULT_PROJECT_OWNER,
              "ph-zeromq",
              "ph-zeromq",
              EProjectType.JAVA_LIBRARY,
@@ -149,7 +148,7 @@ public enum EProjectDeprecated implements IProject
              null,
              EJDK.JDK8),
   PH_UBL_JAXB_PLUGIN (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-ubl-jaxb-plugin",
                       "ph-ubl-jaxb-plugin",
                       EProjectType.OTHER_PLUGIN,
@@ -159,7 +158,7 @@ public enum EProjectDeprecated implements IProject
                       EJDK.JDK8),
   // 8.1.3 is the last
   PH_OTON_BASIC (null,
-                 IProject.DEFAULT_PROJECT_OWNER,
+                 EProjectOwner.DEFAULT_PROJECT_OWNER,
                  "ph-oton",
                  "ph-oton-basic",
                  EProjectType.JAVA_LIBRARY,
@@ -169,7 +168,7 @@ public enum EProjectDeprecated implements IProject
                  EJDK.JDK8),
 
   PEPPOL_DIRECTORY_PARENT_POM (null,
-                               IProject.DEFAULT_PROJECT_OWNER,
+                               EProjectOwner.DEFAULT_PROJECT_OWNER,
                                "peppol-directory-parent-pom",
                                "peppol-directory",
                                EProjectType.MAVEN_POM,
@@ -184,7 +183,7 @@ public enum EProjectDeprecated implements IProject
   PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_PARENT_POM, "peppol-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
   PH_XPATH2 (null,
-             IProject.DEFAULT_PROJECT_OWNER,
+             EProjectOwner.DEFAULT_PROJECT_OWNER,
              "ph-xpath2",
              "ph-xpath2",
              EProjectType.JAVA_LIBRARY,
@@ -194,7 +193,7 @@ public enum EProjectDeprecated implements IProject
              EJDK.JDK8),
 
   PH_AS4_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-as4-parent-pom",
                      "ph-as4",
                      EProjectType.MAVEN_POM,
@@ -209,7 +208,7 @@ public enum EProjectDeprecated implements IProject
   PH_AS4_SERVER_WEBAPP_TEST (PH_AS4_PARENT_POM, "ph-as4-server-webapp-test", EProjectType.JAVA_WEB_APPLICATION),
 
   MAVEN_JAXB2_PLUGIN_PROJECT (null,
-                              IProject.DEFAULT_PROJECT_OWNER,
+                              EProjectOwner.DEFAULT_PROJECT_OWNER,
                               "maven-jaxb2-plugin-project",
                               "maven-jaxb2-plugin",
                               EProjectType.MAVEN_POM,
@@ -223,7 +222,7 @@ public enum EProjectDeprecated implements IProject
   MAVEN_JAXB2_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "maven-jaxb2-plugin", "plugin", EProjectType.MAVEN_PLUGIN),
 
   TOOP_PARENT_POM (null,
-                   IProject.PROJECT_OWNER_TOOP,
+                   EProjectOwner.PROJECT_OWNER_TOOP,
                    "toop-parent-pom",
                    "toop-parent-pom",
                    EProjectType.MAVEN_POM,
@@ -233,7 +232,7 @@ public enum EProjectDeprecated implements IProject
                    EJDK.JDK8),
 
   EN16931_PARENT_POM (null,
-                      IProject.PROJECT_OWNER_CENTC434,
+                      EProjectOwner.PROJECT_OWNER_CENTC434,
                       "en16931-parent-pom",
                       "java-tools",
                       EProjectType.MAVEN_POM,
@@ -246,7 +245,7 @@ public enum EProjectDeprecated implements IProject
   EN16931_EDIFACT_XML (EN16931_PARENT_POM, "en16931-edifact-xml", EProjectType.JAVA_LIBRARY),
 
   REGISTRY434 (null,
-               IProject.DEFAULT_PROJECT_OWNER,
+               EProjectOwner.DEFAULT_PROJECT_OWNER,
                "registry434",
                "registry434",
                EProjectType.JAVA_WEB_APPLICATION,
@@ -256,7 +255,7 @@ public enum EProjectDeprecated implements IProject
                EJDK.JDK8),
 
   AS2_PEPPOL_PARENT_POM (null,
-                         IProject.DEFAULT_PROJECT_OWNER,
+                         EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "as2-peppol-parent-pom",
                          "as2-peppol",
                          EProjectType.MAVEN_POM,
@@ -269,7 +268,7 @@ public enum EProjectDeprecated implements IProject
   AS2_PEPPOL_SERVER (AS2_PEPPOL_PARENT_POM, "as2-peppol-server", EProjectType.JAVA_WEB_APPLICATION),
 
   PH_BDE (null,
-          IProject.DEFAULT_PROJECT_OWNER,
+          EProjectOwner.DEFAULT_PROJECT_OWNER,
           "ph-bde",
           "ph-bde",
           EProjectType.JAVA_LIBRARY,
@@ -280,7 +279,7 @@ public enum EProjectDeprecated implements IProject
 
   @IsPrivateRepo
   TOTHOLZ (null,
-           IProject.DEFAULT_PROJECT_OWNER,
+           EProjectOwner.DEFAULT_PROJECT_OWNER,
            "totholz",
            "totholz",
            EProjectType.JAVA_WEB_APPLICATION,
@@ -316,7 +315,7 @@ public enum EProjectDeprecated implements IProject
                       @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject,
-          IProject.DEFAULT_PROJECT_OWNER,
+          EProjectOwner.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectBaseDirName,
           eProjectType,
@@ -335,7 +334,7 @@ public enum EProjectDeprecated implements IProject
   {
     // Project name equals project base directory name
     this (eParentProject,
-          IProject.DEFAULT_PROJECT_OWNER,
+          EProjectOwner.DEFAULT_PROJECT_OWNER,
           sProjectName,
           sProjectName,
           eProjectType,
@@ -347,7 +346,7 @@ public enum EProjectDeprecated implements IProject
 
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
-                      @Nonnull @Nonempty final String sProjectOwner,
+                      @Nonnull final EProjectOwner eProjectOwner,
                       @Nonnull @Nonempty final String sProjectName,
                       @Nonnull @Nonempty final String sProjectBaseDirName,
                       @Nonnull final EProjectType eProjectType,
@@ -368,10 +367,10 @@ public enum EProjectDeprecated implements IProject
     }
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
-                                    sProjectOwner,
+                                    eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.TRUE,
                                     eHasPagesProject,
@@ -399,8 +398,7 @@ public enum EProjectDeprecated implements IProject
   }
 
   @Nonnull
-  @Nonempty
-  public String getProjectOwner ()
+  public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }

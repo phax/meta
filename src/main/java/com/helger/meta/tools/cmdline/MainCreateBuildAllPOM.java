@@ -32,6 +32,7 @@ import com.helger.commons.collection.impl.ICommonsSet;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
@@ -107,7 +108,9 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   {
     // Read all dependencies
     final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () && !p.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                    !p.isDeprecated () &&
+                                                                    p.getProjectOwner () == EProjectOwner.DEFAULT_PROJECT_OWNER))
     {
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)

@@ -24,7 +24,6 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
-import com.helger.meta.CMeta;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
@@ -37,7 +36,7 @@ public enum EProjectToop implements IProject
 {
   // toop-commons
   TOOP_COMMONS_NG_PARENT_POM (null,
-                              IProject.PROJECT_OWNER_TOOP,
+                              EProjectOwner.PROJECT_OWNER_TOOP,
                               "toop-commons-ng-parent-pom",
                               "toop-commons-ng",
                               EProjectType.MAVEN_POM,
@@ -52,7 +51,7 @@ public enum EProjectToop implements IProject
 
   // DSD
   DATA_SERVICES_DIRECTORY_POM (null,
-                               IProject.PROJECT_OWNER_TOOP,
+                               EProjectOwner.PROJECT_OWNER_TOOP,
                                "data-services-directory",
                                "data-services-directory",
                                EProjectType.MAVEN_POM,
@@ -66,7 +65,7 @@ public enum EProjectToop implements IProject
 
   // Toop Connector
   TOOP_CONNECTOR_NG_PARENT_POM (null,
-                                IProject.PROJECT_OWNER_TOOP,
+                                EProjectOwner.PROJECT_OWNER_TOOP,
                                 "tc-parent-pom",
                                 "toop-connector-ng",
                                 EProjectType.MAVEN_POM,
@@ -171,7 +170,7 @@ public enum EProjectToop implements IProject
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectToop (@Nullable final EProjectToop eParentProject,
-                @Nonnull @Nonempty final String sProjectOwner,
+                @Nonnull final EProjectOwner eProjectOwner,
                 @Nonnull @Nonempty final String sProjectName,
                 @Nonnull @Nonempty final String sProjectBaseDirName,
                 @Nonnull final EProjectType eProjectType,
@@ -203,10 +202,10 @@ public enum EProjectToop implements IProject
 
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
-                                    sProjectOwner,
+                                    eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
@@ -234,8 +233,7 @@ public enum EProjectToop implements IProject
   }
 
   @Nonnull
-  @Nonempty
-  public String getProjectOwner ()
+  public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }

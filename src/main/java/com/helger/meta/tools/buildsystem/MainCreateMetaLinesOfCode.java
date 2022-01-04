@@ -44,6 +44,7 @@ import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
 import com.helger.commons.timing.StopWatch;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -460,13 +461,13 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished () && aProject.getProjectType ().hasJavaCode ())
       {
-        final String sProjectOwner = aProject.getProjectOwner ();
+        final EProjectOwner eProjectOwner = aProject.getProjectOwner ();
         final String sRepoName = MainCreateMetaREADME.getGitHubRepoName (aProject);
 
         aSB.append ("### [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
-           .append (sProjectOwner)
+           .append (eProjectOwner.getGitOrgaName ())
            .append ('/')
            .append (sRepoName)
            .append (") - last release ")
@@ -480,12 +481,12 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && !aProject.isPublished () && aProject.getProjectType ().hasJavaCode ())
       {
-        final String sProjectOwner = aProject.getProjectOwner ();
+        final EProjectOwner eProjectOwner = aProject.getProjectOwner ();
 
         aSB.append ("### [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
-           .append (sProjectOwner)
+           .append (eProjectOwner.getGitOrgaName ())
            .append ('/')
            .append (MainCreateMetaREADME.getGitHubRepoName (aProject))
            .append (")\n\n");

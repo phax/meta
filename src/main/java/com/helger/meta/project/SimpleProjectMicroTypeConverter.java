@@ -22,6 +22,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.string.StringHelper;
 import com.helger.commons.string.StringParser;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroElement;
@@ -48,7 +49,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   {
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
     ret.setAttribute (ATTR_HOSTING_PLATFORM, aValue.getHostingPlatform ().getID ());
-    ret.setAttribute (ATTR_PROJECT_OWNER, aValue.getProjectOwner ());
+    ret.setAttribute (ATTR_PROJECT_OWNER, aValue.getProjectOwner ().getGitOrgaName ());
     ret.setAttribute (ATTR_PROJECT_NAME, aValue.getProjectName ());
     ret.setAttribute (ATTR_PROJECT_TYPE, aValue.getProjectType ().getID ());
     ret.setAttribute (ATTR_DIR, aValue.getBaseDir ().getName ());
@@ -68,9 +69,14 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                                                                                    EHostingPlatform.GITHUB);
 
     // Added later
-    String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
-    if (sProjectOwner == null)
-      sProjectOwner = IProject.DEFAULT_PROJECT_OWNER;
+    final String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
+    EProjectOwner eProjectOwner = EProjectOwner.getFromGitOrgaOrNull (sProjectOwner);
+    if (eProjectOwner == null)
+    {
+      if (StringHelper.hasText (sProjectOwner))
+        throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
+      eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
+    }
 
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
 
@@ -95,7 +101,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     return new SimpleProject (eHostingPlatform,
                               (IProject) null,
-                              sProjectOwner,
+                              eProjectOwner,
                               sProjectName,
                               eProjectType,
                               aBaseDir,
@@ -114,9 +120,14 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                                                                                    EHostingPlatform.GITHUB);
 
     // Added later
-    String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
-    if (sProjectOwner == null)
-      sProjectOwner = IProject.DEFAULT_PROJECT_OWNER;
+    final String sProjectOwner = aElement.getAttributeValue (ATTR_PROJECT_OWNER);
+    EProjectOwner eProjectOwner = EProjectOwner.getFromGitOrgaOrNull (sProjectOwner);
+    if (eProjectOwner == null)
+    {
+      if (StringHelper.hasText (sProjectOwner))
+        throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
+      eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
+    }
 
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
 
@@ -138,7 +149,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     return new SimpleProject (eHostingPlatform,
                               aParentProject,
-                              sProjectOwner,
+                              eProjectOwner,
                               sProjectName,
                               eProjectType,
                               aBaseDir,

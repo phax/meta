@@ -40,6 +40,7 @@ import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -186,7 +187,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     final IMicroElement eRoot = aDoc.getDocumentElement ();
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
-    final String sProjectOwner = aProject.getProjectOwner ();
+    final EProjectOwner eProjectOwner = aProject.getProjectOwner ();
 
     final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
     // Put in predefined properties
@@ -306,7 +307,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
             else
             {
-              if (aProject.getProjectOwner ().equals (IProject.DEFAULT_PROJECT_OWNER))
+              if (eProjectOwner.equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
                 _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }
           }
@@ -370,7 +371,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final String sExpectedURL = "https://" +
                                   aProject.getHostingPlatform ().getDomain () +
                                   "/" +
-                                  sProjectOwner +
+                                  eProjectOwner.getGitOrgaName () +
                                   "/" +
                                   aProject.getFullBaseDirName ();
       if (!sExpectedURL.equalsIgnoreCase (sURL))
@@ -412,7 +413,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final String sExpectedConnection = "scm:git:git@" +
                                            aProject.getHostingPlatform ().getDomain () +
                                            ":" +
-                                           sProjectOwner +
+                                           eProjectOwner.getGitOrgaName () +
                                            "/" +
                                            aProject.getFullBaseDirName () +
                                            ".git";
@@ -431,7 +432,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final String sExpectedURL = "http://" +
                                     aProject.getHostingPlatform ().getDomain () +
                                     "/" +
-                                    sProjectOwner +
+                                    eProjectOwner.getGitOrgaName () +
                                     "/" +
                                     aProject.getFullBaseDirName ();
         if (!sExpectedURL.equalsIgnoreCase (sURL))

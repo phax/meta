@@ -25,6 +25,7 @@ import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -40,9 +41,10 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
                                         @Nonnull @Nonempty final String sBatchFileName,
                                         final boolean bWithErrorCheck)
   {
-    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (aProject -> aProject.isBuildInProject () &&
-                                                                                      !aProject.isDeprecated () &&
-                                                                                      !aProject.isNestedProject ());
+    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+                                                                               !x.isDeprecated () &&
+                                                                               !x.isNestedProject () &&
+                                                                               x.getProjectOwner () == EProjectOwner.DEFAULT_PROJECT_OWNER);
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);

@@ -24,7 +24,6 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
-import com.helger.meta.CMeta;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
@@ -36,7 +35,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 public enum EProject implements IProject
 {
   PH_PARENT_POM (null,
-                 IProject.DEFAULT_PROJECT_OWNER,
+                 EProjectOwner.DEFAULT_PROJECT_OWNER,
                  "parent-pom",
                  "ph-parent-pom",
                  EProjectType.MAVEN_POM,
@@ -45,7 +44,7 @@ public enum EProject implements IProject
                  "1.11.4",
                  EJDK.JDK8),
   PH_FORBIDDEN_APIS (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-forbidden-apis",
                      "ph-forbidden-apis",
                      EProjectType.RESOURCES_ONLY,
@@ -54,7 +53,7 @@ public enum EProject implements IProject
                      "1.1.1",
                      EJDK.JDK8),
   PH_JAXB_POM (null,
-               IProject.DEFAULT_PROJECT_OWNER,
+               EProjectOwner.DEFAULT_PROJECT_OWNER,
                "ph-jaxb-pom",
                "ph-jaxb-pom",
                EProjectType.MAVEN_POM,
@@ -63,7 +62,7 @@ public enum EProject implements IProject
                "1.2.2",
                EJDK.JDK8),
   PH_JAXWS_POM (null,
-                IProject.DEFAULT_PROJECT_OWNER,
+                EProjectOwner.DEFAULT_PROJECT_OWNER,
                 "ph-jaxws-pom",
                 "ph-jaxws-pom",
                 EProjectType.MAVEN_POM,
@@ -72,7 +71,7 @@ public enum EProject implements IProject
                 "1.3.2",
                 EJDK.JDK8),
   JCODEMODEL (null,
-              IProject.DEFAULT_PROJECT_OWNER,
+              EProjectOwner.DEFAULT_PROJECT_OWNER,
               "jcodemodel",
               "jcodemodel",
               EProjectType.JAVA_LIBRARY,
@@ -81,7 +80,7 @@ public enum EProject implements IProject
               "3.4.0",
               EJDK.JDK8),
   PH_ISORELAX (null,
-               IProject.DEFAULT_PROJECT_OWNER,
+               EProjectOwner.DEFAULT_PROJECT_OWNER,
                "ph-isorelax",
                "ph-isorelax",
                EProjectType.JAVA_LIBRARY,
@@ -91,7 +90,7 @@ public enum EProject implements IProject
                EJDK.JDK8),
 
   PH_COMMONS_PARENT_POM (null,
-                         IProject.DEFAULT_PROJECT_OWNER,
+                         EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "ph-commons-parent-pom",
                          "ph-commons",
                          EProjectType.MAVEN_POM,
@@ -120,7 +119,7 @@ public enum EProject implements IProject
   PH_XML (PH_COMMONS_PARENT_POM, "ph-xml", EProjectType.JAVA_LIBRARY),
 
   PH_JAXB22_PLUGIN (null,
-                    IProject.DEFAULT_PROJECT_OWNER,
+                    EProjectOwner.DEFAULT_PROJECT_OWNER,
                     "ph-jaxb22-plugin",
                     "ph-jaxb22-plugin",
                     EProjectType.OTHER_PLUGIN,
@@ -129,7 +128,7 @@ public enum EProject implements IProject
                     "2.3.3.3",
                     EJDK.JDK8),
   PH_WSIMPORT_PLUGIN (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-wsimport-plugin",
                       "ph-wsimport-plugin",
                       EProjectType.OTHER_PLUGIN,
@@ -139,7 +138,7 @@ public enum EProject implements IProject
                       EJDK.JDK8),
 
   META (null,
-        IProject.DEFAULT_PROJECT_OWNER,
+        EProjectOwner.DEFAULT_PROJECT_OWNER,
         "meta",
         "meta",
         EProjectType.JAVA_APPLICATION,
@@ -148,7 +147,7 @@ public enum EProject implements IProject
         null,
         EJDK.JDK8),
   PGCC (null,
-        IProject.DEFAULT_PROJECT_OWNER,
+        EProjectOwner.DEFAULT_PROJECT_OWNER,
         "parser-generator-cc",
         "ParserGeneratorCC",
         EProjectType.JAVA_LIBRARY,
@@ -158,7 +157,7 @@ public enum EProject implements IProject
         EJDK.JDK8),
 
   PH_FONTS_PARENT_POM (null,
-                       IProject.DEFAULT_PROJECT_OWNER,
+                       EProjectOwner.DEFAULT_PROJECT_OWNER,
                        "ph-fonts-parent-pom",
                        "ph-fonts",
                        EProjectType.MAVEN_POM,
@@ -179,7 +178,7 @@ public enum EProject implements IProject
   PH_FONTS_SOURCE_SANS_PRO (PH_FONTS_PARENT_POM, "ph-fonts-source-sans-pro", EProjectType.JAVA_LIBRARY),
 
   PH_PDF_LAYOUT4 (null,
-                  IProject.DEFAULT_PROJECT_OWNER,
+                  EProjectOwner.DEFAULT_PROJECT_OWNER,
                   "ph-pdf-layout4",
                   "ph-pdf-layout4",
                   EProjectType.JAVA_LIBRARY,
@@ -188,7 +187,7 @@ public enum EProject implements IProject
                   "5.2.2",
                   EJDK.JDK8),
   PH_POI (null,
-          IProject.DEFAULT_PROJECT_OWNER,
+          EProjectOwner.DEFAULT_PROJECT_OWNER,
           "ph-poi",
           "ph-poi",
           EProjectType.JAVA_LIBRARY,
@@ -197,7 +196,7 @@ public enum EProject implements IProject
           "5.3.0",
           EJDK.JDK8),
   PH_XMLDSIG (null,
-              IProject.DEFAULT_PROJECT_OWNER,
+              EProjectOwner.DEFAULT_PROJECT_OWNER,
               "ph-xmldsig",
               "ph-xmldsig",
               EProjectType.JAVA_LIBRARY,
@@ -207,7 +206,7 @@ public enum EProject implements IProject
               EJDK.JDK8),
 
   PH_XSDS_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-xsds-parent-pom",
                       "ph-xsds",
                       EProjectType.MAVEN_POM,
@@ -229,7 +228,7 @@ public enum EProject implements IProject
   PH_XSDS_BDXR_SMP2 (PH_XSDS_PARENT_POM, "ph-xsds-bdxr-smp2", EProjectType.JAVA_LIBRARY),
 
   PH_ASIC (null,
-           IProject.DEFAULT_PROJECT_OWNER,
+           EProjectOwner.DEFAULT_PROJECT_OWNER,
            "ph-asic",
            "ph-asic",
            EProjectType.JAVA_LIBRARY,
@@ -238,7 +237,7 @@ public enum EProject implements IProject
            "1.7.0",
            EJDK.JDK8),
   PH_REGREP (null,
-             IProject.DEFAULT_PROJECT_OWNER,
+             EProjectOwner.DEFAULT_PROJECT_OWNER,
              "ph-regrep",
              "ph-regrep",
              EProjectType.JAVA_LIBRARY,
@@ -247,7 +246,7 @@ public enum EProject implements IProject
              "1.2.0",
              EJDK.JDK8),
   PH_XHE (null,
-          IProject.DEFAULT_PROJECT_OWNER,
+          EProjectOwner.DEFAULT_PROJECT_OWNER,
           "ph-xhe",
           "ph-xhe",
           EProjectType.JAVA_LIBRARY,
@@ -256,7 +255,7 @@ public enum EProject implements IProject
           "3.0.0",
           EJDK.JDK8),
   PH_EBINTERFACE (null,
-                  IProject.DEFAULT_PROJECT_OWNER,
+                  EProjectOwner.DEFAULT_PROJECT_OWNER,
                   "ph-ebinterface",
                   "ph-ebinterface",
                   EProjectType.JAVA_LIBRARY,
@@ -265,7 +264,7 @@ public enum EProject implements IProject
                   "6.4.0",
                   EJDK.JDK8),
   PH_FATTURAPA (null,
-                IProject.DEFAULT_PROJECT_OWNER,
+                EProjectOwner.DEFAULT_PROJECT_OWNER,
                 "ph-fatturapa",
                 "ph-fatturapa",
                 EProjectType.JAVA_LIBRARY,
@@ -274,7 +273,7 @@ public enum EProject implements IProject
                 "1.2.0",
                 EJDK.JDK8),
   PH_SBDH (null,
-           IProject.DEFAULT_PROJECT_OWNER,
+           EProjectOwner.DEFAULT_PROJECT_OWNER,
            "ph-sbdh",
            "ph-sbdh",
            EProjectType.JAVA_LIBRARY,
@@ -283,7 +282,7 @@ public enum EProject implements IProject
            "4.3.0",
            EJDK.JDK8),
   PH_GENERICODE (null,
-                 IProject.DEFAULT_PROJECT_OWNER,
+                 EProjectOwner.DEFAULT_PROJECT_OWNER,
                  "ph-genericode",
                  "ph-genericode",
                  EProjectType.JAVA_LIBRARY,
@@ -293,7 +292,7 @@ public enum EProject implements IProject
                  EJDK.JDK8),
 
   PH_CII_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-cii-parent-pom",
                      "ph-cii",
                      EProjectType.MAVEN_POM,
@@ -306,7 +305,7 @@ public enum EProject implements IProject
   PH_CII_D16B (PH_CII_PARENT_POM, "ph-cii-d16b", EProjectType.JAVA_LIBRARY),
 
   PH_UBL_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-ubl-parent-pom",
                      "ph-ubl",
                      EProjectType.MAVEN_POM,
@@ -330,7 +329,7 @@ public enum EProject implements IProject
   PH_UBL_EFORMS (PH_UBL_PARENT_POM, "ph-ubl-eforms", EProjectType.JAVA_LIBRARY),
 
   PH_MATH_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-math-parent-pom",
                       "ph-math",
                       EProjectType.MAVEN_POM,
@@ -341,7 +340,7 @@ public enum EProject implements IProject
   PH_MATH (PH_MATH_PARENT_POM, "ph-math", EProjectType.JAVA_LIBRARY),
 
   PH_JAVACC_MAVEN_PLUGIN (null,
-                          IProject.DEFAULT_PROJECT_OWNER,
+                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "ph-javacc-maven-plugin",
                           "ph-javacc-maven-plugin",
                           EProjectType.MAVEN_PLUGIN,
@@ -350,7 +349,7 @@ public enum EProject implements IProject
                           "4.1.4",
                           EJDK.JDK8),
   PH_BUILDINFO_MAVEN_PLUGIN (null,
-                             IProject.DEFAULT_PROJECT_OWNER,
+                             EProjectOwner.DEFAULT_PROJECT_OWNER,
                              "ph-buildinfo-maven-plugin",
                              "ph-buildinfo-maven-plugin",
                              EProjectType.MAVEN_PLUGIN,
@@ -359,7 +358,7 @@ public enum EProject implements IProject
                              "3.0.2",
                              EJDK.JDK8),
   PH_DIRINDEX_MAVEN_PLUGIN (null,
-                            IProject.DEFAULT_PROJECT_OWNER,
+                            EProjectOwner.DEFAULT_PROJECT_OWNER,
                             "ph-dirindex-maven-plugin",
                             "ph-dirindex-maven-plugin",
                             EProjectType.MAVEN_PLUGIN,
@@ -368,7 +367,7 @@ public enum EProject implements IProject
                             "3.0.3",
                             EJDK.JDK8),
   PH_JSCOMPRESS_MAVEN_PLUGIN (null,
-                              IProject.DEFAULT_PROJECT_OWNER,
+                              EProjectOwner.DEFAULT_PROJECT_OWNER,
                               "ph-jscompress-maven-plugin",
                               "ph-jscompress-maven-plugin",
                               EProjectType.MAVEN_PLUGIN,
@@ -377,7 +376,7 @@ public enum EProject implements IProject
                               "2.2.3",
                               EJDK.JDK8),
   PH_MERGE_JAXB_EPISODES_MAVEN_PLUGIN (null,
-                                       IProject.DEFAULT_PROJECT_OWNER,
+                                       EProjectOwner.DEFAULT_PROJECT_OWNER,
                                        "ph-merge-jaxb-episodes-maven-plugin",
                                        "ph-merge-jaxb-episodes-maven-plugin",
                                        EProjectType.MAVEN_PLUGIN,
@@ -387,7 +386,7 @@ public enum EProject implements IProject
                                        EJDK.JDK8),
   @IsLegacy (replacedWith = "Use com.sun.xml.ws::jaxws-maven-plugin::2.3.3")
   PH_JAXWS_MAVEN_PLUGIN(null,
-                        IProject.DEFAULT_PROJECT_OWNER,
+                        EProjectOwner.DEFAULT_PROJECT_OWNER,
                         "jaxws-maven-plugin",
                         "jaxws-maven-plugin",
                         EProjectType.MAVEN_PLUGIN,
@@ -397,7 +396,7 @@ public enum EProject implements IProject
                         EJDK.JDK8),
 
   PH_DATETIME_PARENT_POM (null,
-                          IProject.DEFAULT_PROJECT_OWNER,
+                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "ph-datetime-parent-pom",
                           "ph-datetime",
                           EProjectType.MAVEN_POM,
@@ -408,7 +407,7 @@ public enum EProject implements IProject
   PH_HOLIDAY (PH_DATETIME_PARENT_POM, "ph-holiday", EProjectType.JAVA_LIBRARY),
 
   PH_DB_PARENT_POM (null,
-                    IProject.DEFAULT_PROJECT_OWNER,
+                    EProjectOwner.DEFAULT_PROJECT_OWNER,
                     "ph-db-parent-pom",
                     "ph-db",
                     EProjectType.MAVEN_POM,
@@ -421,7 +420,7 @@ public enum EProject implements IProject
   PH_DB_JPA (PH_DB_PARENT_POM, "ph-db-jpa", EProjectType.JAVA_LIBRARY),
 
   PH_SCHEDULE_PARENT_POM (null,
-                          IProject.DEFAULT_PROJECT_OWNER,
+                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "ph-schedule-parent-pom",
                           "ph-schedule",
                           EProjectType.MAVEN_POM,
@@ -433,7 +432,7 @@ public enum EProject implements IProject
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
   PH_MASTERDATA_PARENT_POM (null,
-                            IProject.DEFAULT_PROJECT_OWNER,
+                            EProjectOwner.DEFAULT_PROJECT_OWNER,
                             "ph-masterdata-parent-pom",
                             "ph-masterdata",
                             EProjectType.MAVEN_POM,
@@ -445,7 +444,7 @@ public enum EProject implements IProject
   PH_TENANCY (PH_MASTERDATA_PARENT_POM, "ph-tenancy", EProjectType.JAVA_LIBRARY),
 
   PH_WEB_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-web-parent-pom",
                      "ph-web",
                      EProjectType.MAVEN_POM,
@@ -467,7 +466,7 @@ public enum EProject implements IProject
   PH_JSCH (PH_WEB_PARENT_POM, "ph-jsch", EProjectType.JAVA_LIBRARY),
 
   PH_CSS_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "ph-css-parent-pom",
                      "ph-css",
                      EProjectType.MAVEN_POM,
@@ -479,7 +478,7 @@ public enum EProject implements IProject
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
   PH_SCHEMATRON_PARENT_POM (null,
-                            IProject.DEFAULT_PROJECT_OWNER,
+                            EProjectOwner.DEFAULT_PROJECT_OWNER,
                             "ph-schematron-parent-pom",
                             "ph-schematron",
                             EProjectType.MAVEN_POM,
@@ -497,7 +496,7 @@ public enum EProject implements IProject
   PH_SCHEMATRON_ANT_TASK (PH_SCHEMATRON_PARENT_POM, "ph-schematron-ant-task", EProjectType.JAVA_LIBRARY),
 
   PH_OTON_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-oton-parent-pom",
                       "ph-oton",
                       EProjectType.MAVEN_POM,
@@ -535,9 +534,9 @@ public enum EProject implements IProject
   PH_OTON_UICTRLS (PH_OTON_PARENT_POM, "ph-oton-uictrls", EProjectType.JAVA_LIBRARY),
 
   PH_OTON_JDBC (null,
-                IProject.DEFAULT_PROJECT_OWNER,
+                EProjectOwner.DEFAULT_PROJECT_OWNER,
                 "ph-oton-jdbc",
-                "ph-oton-db",
+                "ph-oton-jdbc",
                 EProjectType.JAVA_LIBRARY,
                 EHasPages.FALSE,
                 EHasWiki.FALSE,
@@ -545,7 +544,7 @@ public enum EProject implements IProject
                 EJDK.JDK8),
 
   PH_JDMC_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "ph-jdmc-parent-pom",
                       "ph-jdmc",
                       EProjectType.MAVEN_POM,
@@ -557,13 +556,13 @@ public enum EProject implements IProject
   PH_JDMC_MAVEN_PLUGIN (PH_JDMC_PARENT_POM, "ph-jdmc-maven-plugin", EProjectType.MAVEN_PLUGIN),
 
   AS2_LIB_PARENT_POM (null,
-                      IProject.DEFAULT_PROJECT_OWNER,
+                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "as2-lib-parent-pom",
                       "as2-lib",
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "4.9.2",
+                      "4.10.0",
                       EJDK.JDK8),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
@@ -573,7 +572,7 @@ public enum EProject implements IProject
   AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION),
 
   PEPPOL_COMMONS_PARENT_POM (null,
-                             IProject.DEFAULT_PROJECT_OWNER,
+                             EProjectOwner.DEFAULT_PROJECT_OWNER,
                              "peppol-commons-parent-pom",
                              "peppol-commons",
                              EProjectType.MAVEN_POM,
@@ -591,7 +590,7 @@ public enum EProject implements IProject
   PEPPOL_SMP_CLIENT (PEPPOL_COMMONS_PARENT_POM, "peppol-smp-client", EProjectType.JAVA_LIBRARY),
 
   PHIVE_PARENT_POM (null,
-                    IProject.DEFAULT_PROJECT_OWNER,
+                    EProjectOwner.DEFAULT_PROJECT_OWNER,
                     "phive-parent-pom",
                     "phive",
                     EProjectType.MAVEN_POM,
@@ -604,7 +603,7 @@ public enum EProject implements IProject
   PHIVE_JSON (PHIVE_PARENT_POM, "phive-json", EProjectType.JAVA_LIBRARY),
 
   PHIVE_RULES_PARENT_POM (null,
-                          IProject.DEFAULT_PROJECT_OWNER,
+                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "phive-rules-parent-pom",
                           "phive-rules",
                           EProjectType.MAVEN_POM,
@@ -634,7 +633,7 @@ public enum EProject implements IProject
   PHIVE_RULES_XRECHNUNG (PHIVE_RULES_PARENT_POM, "phive-rules-xrechnung", EProjectType.JAVA_LIBRARY),
 
   EN16931_CII2UBL_PARENT_POM (null,
-                              IProject.DEFAULT_PROJECT_OWNER,
+                              EProjectOwner.DEFAULT_PROJECT_OWNER,
                               "en16931-cii2ubl-parent-pom",
                               "en16931-cii2ubl",
                               EProjectType.MAVEN_POM,
@@ -646,7 +645,7 @@ public enum EProject implements IProject
   EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_LIBRARY),
 
   PHASE4_PARENT_POM (null,
-                     IProject.DEFAULT_PROJECT_OWNER,
+                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "phase4-parent-pom",
                      "phase4",
                      EProjectType.MAVEN_POM,
@@ -669,7 +668,7 @@ public enum EProject implements IProject
   PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo", EProjectType.JAVA_LIBRARY),
 
   PHOSS_DIRECTORY_PARENT_POM (null,
-                              IProject.DEFAULT_PROJECT_OWNER,
+                              EProjectOwner.DEFAULT_PROJECT_OWNER,
                               "phoss-directory-parent-pom",
                               "phoss-directory",
                               EProjectType.MAVEN_POM,
@@ -684,7 +683,7 @@ public enum EProject implements IProject
   PHOSS_DIRECTORY_SEARCHAPI (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
   PHOSS_SMP_PARENT_POM (null,
-                        IProject.DEFAULT_PROJECT_OWNER,
+                        EProjectOwner.DEFAULT_PROJECT_OWNER,
                         "phoss-smp-parent-pom",
                         "phoss-smp",
                         EProjectType.MAVEN_POM,
@@ -702,7 +701,7 @@ public enum EProject implements IProject
   PHOSS_SMP_WEBAPP_XML (PHOSS_SMP_PARENT_POM, "phoss-smp-webapp-xml", EProjectType.JAVA_WEB_APPLICATION),
 
   EBINTERFACE_RENDERING (null,
-                         IProject.PROJECT_OWNER_AUSTRIAPRO,
+                         EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
                          "ebinterface-rendering",
                          "ebinterface-rendering",
                          EProjectType.JAVA_LIBRARY,
@@ -711,7 +710,7 @@ public enum EProject implements IProject
                          "1.0.0",
                          EJDK.JDK8),
   EBINTERFACE_UBL_MAPPING (null,
-                           IProject.PROJECT_OWNER_AUSTRIAPRO,
+                           EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
                            "ebinterface-ubl-mapping",
                            "ebinterface-ubl-mapping",
                            EProjectType.JAVA_LIBRARY,
@@ -720,7 +719,7 @@ public enum EProject implements IProject
                            "4.8.0",
                            EJDK.JDK8),
   EBINTERFACE_XRECHNUNG_MAPPING (null,
-                                 IProject.PROJECT_OWNER_AUSTRIAPRO,
+                                 EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
                                  "ebinterface-xrechnung-mapping",
                                  "ebinterface-xrechnung-mapping",
                                  EProjectType.JAVA_LIBRARY,
@@ -729,7 +728,7 @@ public enum EProject implements IProject
                                  "1.3.0",
                                  EJDK.JDK8),
   ERECHNUNG_WS_CLIENT (null,
-                       IProject.DEFAULT_PROJECT_OWNER,
+                       EProjectOwner.DEFAULT_PROJECT_OWNER,
                        "webservice-client",
                        "erechnung.gv.at-webservice-client",
                        EProjectType.JAVA_LIBRARY,
@@ -740,7 +739,7 @@ public enum EProject implements IProject
 
   @IsPrivateRepo
   BOZOO (null,
-         IProject.DEFAULT_PROJECT_OWNER,
+         EProjectOwner.DEFAULT_PROJECT_OWNER,
          "bozoo",
          "bozoo",
          EProjectType.JAVA_WEB_APPLICATION,
@@ -750,7 +749,7 @@ public enum EProject implements IProject
          EJDK.JDK8),
 
   PEPPOL_PRACTICAL (null,
-                    IProject.DEFAULT_PROJECT_OWNER,
+                    EProjectOwner.DEFAULT_PROJECT_OWNER,
                     "peppol-practical",
                     "peppol-practical",
                     EProjectType.JAVA_WEB_APPLICATION,
@@ -846,7 +845,7 @@ public enum EProject implements IProject
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProject (@Nullable final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectOwner,
+            @Nonnull final EProjectOwner eProjectOwner,
             @Nonnull @Nonempty final String sProjectName,
             @Nonnull @Nonempty final String sProjectBaseDirName,
             @Nonnull final EProjectType eProjectType,
@@ -878,13 +877,10 @@ public enum EProject implements IProject
 
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
-                                    sProjectOwner,
+                                    eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : IProject.PROJECT_OWNER_AUSTRIAPRO.equals (sProjectOwner) ? new File (CMeta.GIT_BASE_DIR,
-                                                                                                                                            "../git-austriapro")
-                                                                                                                                : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
@@ -913,7 +909,7 @@ public enum EProject implements IProject
 
   @Nonnull
   @Nonempty
-  public String getProjectOwner ()
+  public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }

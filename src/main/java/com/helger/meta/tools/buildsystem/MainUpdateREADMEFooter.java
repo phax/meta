@@ -27,6 +27,7 @@ import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -50,7 +51,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
                                                                     !p.isNestedProject ()))
-      if (!aProject.getProjectOwner ().equals (IProject.PROJECT_OWNER_TOOP))
+      if (aProject.getProjectOwner ().equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
       {
         if (false)
           _info (aProject, "Checking");
@@ -126,8 +127,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
     if (aSB.length () > 0)
     {
       aSB.insert (0, BATCH_HEADER);
-      // Delete yourself
-      // Source:
+      // Delete yourself. Source:
       // http://stackoverflow.com/questions/20329355/how-to-make-a-batch-file-delete-itself
       aSB.append ("(goto) 2>nul & del \"%~f0\"\n");
       aSB.append (BATCH_FOOTER);

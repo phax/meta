@@ -37,7 +37,7 @@ public class SimpleProject implements IProject
 
   private final EHostingPlatform m_eHostingPlatform;
   private final IProject m_aParentProject;
-  private final String m_sProjectOwner;
+  private final EProjectOwner m_eProjectOwner;
   private final String m_sProjectName;
   private final EProjectType m_eProjectType;
   private final File m_aBaseDir;
@@ -54,7 +54,7 @@ public class SimpleProject implements IProject
 
   public SimpleProject (@Nonnull final EHostingPlatform eHostingPlatform,
                         @Nullable final IProject aParentProject,
-                        @Nonnull @Nonempty final String sProjectOwner,
+                        @Nonnull final EProjectOwner eProjectOwner,
                         @Nonnull @Nonempty final String sProjectName,
                         @Nonnull final EProjectType eProjectType,
                         @Nonnull final File aBaseDir,
@@ -65,7 +65,7 @@ public class SimpleProject implements IProject
                         @Nonnull final EJDK eMinJDK,
                         final boolean bIsGitHubPrivate)
   {
-    ValueEnforcer.notEmpty (sProjectOwner, "ProjectOwner");
+    ValueEnforcer.notNull (eProjectOwner, "ProjectOwner");
     ValueEnforcer.notEmpty (sProjectName, "ProjectName");
     ValueEnforcer.notNull (eProjectType, "ProjectType");
     ValueEnforcer.notNull (aBaseDir, "BaseDir");
@@ -76,7 +76,7 @@ public class SimpleProject implements IProject
 
     m_eHostingPlatform = eHostingPlatform;
     m_aParentProject = aParentProject;
-    m_sProjectOwner = sProjectOwner;
+    m_eProjectOwner = eProjectOwner;
     m_sProjectName = sProjectName;
     m_eProjectType = eProjectType;
     m_aBaseDir = aBaseDir;
@@ -147,10 +147,9 @@ public class SimpleProject implements IProject
   }
 
   @Nonnull
-  @Nonempty
-  public String getProjectOwner ()
+  public EProjectOwner getProjectOwner ()
   {
-    return m_sProjectOwner;
+    return m_eProjectOwner;
   }
 
   @Nonnull
@@ -232,7 +231,7 @@ public class SimpleProject implements IProject
 
   public int compareTo (@Nonnull final IProject aProject)
   {
-    int ret = m_sProjectOwner.compareTo (aProject.getProjectOwner ());
+    int ret = m_eProjectOwner.compareTo (aProject.getProjectOwner ());
     if (ret == 0)
       ret = m_sProjectName.compareTo (aProject.getProjectName ());
     return ret;

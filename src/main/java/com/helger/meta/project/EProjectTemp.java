@@ -24,7 +24,6 @@ import javax.annotation.Nullable;
 
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
-import com.helger.meta.CMeta;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
@@ -38,7 +37,7 @@ public enum EProjectTemp implements IProject
   @IsGitLab
   @IsPrivateRepo
   ENTWERTER (null,
-             IProject.PROJECT_ECOSIO_PH,
+             EProjectOwner.PROJECT_ECOSIO_PH,
              "entwerter-parent-pom",
              "entwerter",
              EProjectType.MAVEN_POM,
@@ -145,7 +144,7 @@ public enum EProjectTemp implements IProject
    */
   @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectTemp (@Nullable final EProjectTemp eParentProject,
-                @Nonnull @Nonempty final String sProjectOwner,
+                @Nonnull final EProjectOwner eProjectOwner,
                 @Nonnull @Nonempty final String sProjectName,
                 @Nonnull @Nonempty final String sProjectBaseDirName,
                 @Nonnull final EProjectType eProjectType,
@@ -177,10 +176,10 @@ public enum EProjectTemp implements IProject
 
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
-                                    sProjectOwner,
+                                    eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : CMeta.GIT_BASE_DIR,
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName.equals ("ph-pdf-layout4") ? "ph-pdf-layout" : sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
@@ -208,8 +207,7 @@ public enum EProjectTemp implements IProject
   }
 
   @Nonnull
-  @Nonempty
-  public String getProjectOwner ()
+  public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }

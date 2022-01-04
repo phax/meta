@@ -34,7 +34,7 @@ public final class CMeta
   public static final File GIT_BASE_DIR = new File ("").getAbsoluteFile ().getParentFile ();
 
   @PresentForCodeCoverage
-  private static final CMeta s_aInstance = new CMeta ();
+  private static final CMeta INSTANCE = new CMeta ();
 
   private CMeta ()
   {}

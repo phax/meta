@@ -26,6 +26,7 @@ import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -59,25 +60,6 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
        .append (") ");
   }
 
-  private static void _addBadgeTravis (@Nonnull final IProject aProject, @Nonnull final StringBuilder aSB)
-  {
-    // No longer
-    if (false)
-    {
-      final String sProjectOwner = aProject.getProjectOwner ();
-      final String sRepoName = getGitHubRepoName (aProject);
-      aSB.append ("\n   [![Build Status](https://travis-ci.com/")
-         .append (sProjectOwner)
-         .append ('/')
-         .append (sRepoName)
-         .append (".svg?branch=master)](https://travis-ci.com/")
-         .append (sProjectOwner)
-         .append ('/')
-         .append (sRepoName)
-         .append (")");
-    }
-  }
-
   public static void main (final String [] args)
   {
     final StringBuilder aSB = new StringBuilder ();
@@ -91,13 +73,13 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
       {
-        final String sProjectOwner = aProject.getProjectOwner ();
+        final EProjectOwner eProjectOwner = aProject.getProjectOwner ();
         final String sRepoName = getGitHubRepoName (aProject);
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
-           .append (sProjectOwner)
+           .append (eProjectOwner.getGitOrgaName ())
            .append ('/')
            .append (sRepoName)
            .append (") - Version ")
@@ -106,7 +88,6 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
            .append (aProject.getMinimumJDKVersion ().getDisplayName ())
            .append ('\n');
         _addBadgeMavenCentral (aProject, aSB);
-        _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
       }
 
@@ -114,18 +95,17 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && !aProject.isPublished ())
       {
-        final String sProjectOwner = aProject.getProjectOwner ();
+        final EProjectOwner eProjectOwner = aProject.getProjectOwner ();
 
         aSB.append (" * [")
            .append (aProject.getFullBaseDirName ())
            .append ("](https://github.com/")
-           .append (sProjectOwner)
+           .append (eProjectOwner.getGitOrgaName ())
            .append ('/')
            .append (getGitHubRepoName (aProject))
            .append (") - ")
            .append (aProject.getMinimumJDKVersion ().getDisplayName ())
            .append ('\n');
-        _addBadgeTravis (aProject, aSB);
         aSB.append ('\n');
       }
 
