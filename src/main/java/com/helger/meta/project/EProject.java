@@ -153,7 +153,7 @@ public enum EProject implements IProject
         EProjectType.JAVA_LIBRARY,
         EHasPages.FALSE,
         EHasWiki.FALSE,
-        "1.1.3",
+        "1.1.4",
         EJDK.JDK8),
 
   PH_FONTS_PARENT_POM (null,
@@ -346,7 +346,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_PLUGIN,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "4.1.4",
+                          "4.1.5",
                           EJDK.JDK8),
   PH_BUILDINFO_MAVEN_PLUGIN (null,
                              EProjectOwner.DEFAULT_PROJECT_OWNER,
