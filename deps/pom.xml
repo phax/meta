@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220111</version>
+  <version>1.0.0-20220112</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.6</version>
+      <version>3.2.7</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.4.0</version>
+      <version>8.4.1</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -313,7 +313,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.19.2</version>
+      <version>3.19.3</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -892,7 +892,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.5.2</version>
+      <version>6.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -1118,7 +1118,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.8.1</version>
+      <version>3.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1163,7 +1163,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jar-plugin</artifactId>
-      <version>3.2.1</version>
+      <version>3.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1872,18 +1872,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>6.4.1</version>
+      <version>6.4.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
@@ -2435,50 +2435,50 @@
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.smp</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>5.5.2</version>
+      <version>5.5.3</version>
       <type>war</type>
     </dependency>
     <dependency>
