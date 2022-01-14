@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2022-01-12):
+Current list of all released projects (as of 2022-01-14):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.0 - JDK 1.8
 
@@ -263,13 +263,13 @@ Current list of all released projects (as of 2022-01-12):
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 6.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 6.2.2 - JDK 1.8
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 6.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy) 
  * [ph-math](https://github.com/phax/ph-math) - Version 4.1.0 - JDK 1.8
