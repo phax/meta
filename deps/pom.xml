@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220114</version>
+  <version>1.0.0-20220118</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.2.7</version>
+      <version>3.2.8</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -329,7 +329,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.0.206</version>
+      <version>2.1.210</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -862,7 +862,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-plugin-plugin</artifactId>
-      <version>3.6.2</version>
+      <version>3.6.4</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.metro</groupId>
@@ -887,7 +887,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.27</version>
+      <version>8.0.28</version>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
@@ -917,17 +917,17 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.1.0</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>5.1.0</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>5.1.0</version>
+      <version>5.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -967,32 +967,32 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
-      <version>1.7.32</version>
+      <version>1.7.33</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -1872,18 +1872,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>6.4.2</version>
+      <version>6.4.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>6.4.2</version>
+      <version>6.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>6.4.2</version>
+      <version>6.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
