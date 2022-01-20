@@ -53,31 +53,31 @@ Current list of all released projects (as of 2022-01-20):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom) 
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id) 
- * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes) 
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh) 
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client) 
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client) 
- * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes) 
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.7.0 - JDK 1.8
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.7.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 1.7.0 - JDK 1.8
@@ -251,15 +251,6 @@ Current list of all released projects (as of 2022-01-20):
  * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 1.3.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
- * [ph-jdmc](https://github.com/phax/ph-jdmc) - Version 0.0.5 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom) 
- * [ph-jdmc/ph-jdmc-core](https://github.com/phax/ph-jdmc) - Version 0.0.5 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core) 
- * [ph-jdmc/ph-jdmc-maven-plugin](https://github.com/phax/ph-jdmc) - Version 0.0.5 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin) 
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 2.2.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
@@ -858,6 +849,15 @@ All deprecated projects:
  * ph-jdk5 - Version 1.1.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdk5) 
+ * ph-jdmc - Version 0.0.5
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-parent-pom) 
+ * ph-jdmc/ph-jdmc-core - Version 0.0.5
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jdmc-core) 
+ * ph-jdmc/ph-jdmc-maven-plugin - Version 0.0.5
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jdmc-maven-plugin) 
  * ph-jms - Version 2.0.0
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jms) 
