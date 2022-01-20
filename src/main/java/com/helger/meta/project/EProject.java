@@ -543,18 +543,6 @@ public enum EProject implements IProject
                 "1.0.1",
                 EJDK.JDK8),
 
-  PH_JDMC_PARENT_POM (null,
-                      EProjectOwner.DEFAULT_PROJECT_OWNER,
-                      "ph-jdmc-parent-pom",
-                      "ph-jdmc",
-                      EProjectType.MAVEN_POM,
-                      EHasPages.FALSE,
-                      EHasWiki.FALSE,
-                      "0.0.5",
-                      EJDK.JDK8),
-  PH_JDMC_CORE (PH_JDMC_PARENT_POM, "ph-jdmc-core", EProjectType.JAVA_LIBRARY),
-  PH_JDMC_MAVEN_PLUGIN (PH_JDMC_PARENT_POM, "ph-jdmc-maven-plugin", EProjectType.MAVEN_PLUGIN),
-
   AS2_LIB_PARENT_POM (null,
                       EProjectOwner.DEFAULT_PROJECT_OWNER,
                       "as2-lib-parent-pom",
