@@ -101,9 +101,9 @@ public enum EExternalDependency
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
-  FLYWAY8 ("org.flywaydb", "flyway-core", "8.4.1", EJDK.JDK11),
+  FLYWAY8 ("org.flywaydb", "flyway-core", "8.4.2", EJDK.JDK11),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
-  FOP ("org.apache.xmlgraphics", "fop", "2.6", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.7", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.2", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
@@ -312,7 +312,7 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.2", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.3", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
