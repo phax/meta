@@ -221,6 +221,7 @@ public enum EExternalDependency
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
   JETTY9_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY9_BOM),
   JETTY9_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY9_BOM),
+  JETTY9_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY9_BOM),
 
   @IsBOM
   JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.7", EJDK.JDK11),

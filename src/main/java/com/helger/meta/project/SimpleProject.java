@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.string.ToStringGenerator;
 import com.helger.commons.version.Version;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
@@ -235,5 +236,11 @@ public class SimpleProject implements IProject
     if (ret == 0)
       ret = m_sProjectName.compareTo (aProject.getProjectName ());
     return ret;
+  }
+
+  @Override
+  public String toString ()
+  {
+    return new ToStringGenerator (null).append ("ProjectName", m_sProjectName).append ("ProjectType", m_eProjectType).getToString ();
   }
 }
