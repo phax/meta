@@ -158,13 +158,13 @@ Current list of all released projects (as of 2022-01-28):
  * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 10.1.6 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
- * [ph-css](https://github.com/phax/ph-css) - Version 6.4.4 - JDK 1.8
+ * [ph-css](https://github.com/phax/ph-css) - Version 6.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.4.4 - JDK 1.8
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 6.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.4.4 - JDK 1.8
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 6.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
  * [ph-datetime](https://github.com/phax/ph-datetime) - Version 6.2.0 - JDK 1.8
