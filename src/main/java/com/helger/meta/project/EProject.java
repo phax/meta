@@ -193,7 +193,7 @@ public enum EProject implements IProject
           EProjectType.JAVA_LIBRARY,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          "5.3.0",
+          "5.3.1",
           EJDK.JDK8),
   PH_XMLDSIG (null,
               EProjectOwner.DEFAULT_PROJECT_OWNER,
