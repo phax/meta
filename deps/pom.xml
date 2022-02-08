@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220128</version>
+  <version>1.0.0-20220208</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -148,7 +148,7 @@
     <dependency>
       <groupId>dnsjava</groupId>
       <artifactId>dnsjava</artifactId>
-      <version>3.4.3</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.umlgraph</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.3.0</version>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.4.3</version>
+      <version>8.4.4</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -308,12 +308,12 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20220104</version>
+      <version>v20220202</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.19.3</version>
+      <version>3.19.4</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
@@ -640,74 +640,74 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>9.4.44.v20210927</version>
+      <version>9.4.45.v20220203</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>11.0.7</version>
+      <version>11.0.8</version>
     </dependency>
     <dependency>
       <groupId>com.thaiopensource</groupId>
@@ -942,7 +942,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.3.1</version>
+      <version>42.3.2</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -957,7 +957,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>10.6</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
@@ -967,7 +967,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1043,7 +1043,7 @@
     <dependency>
       <groupId>com.typesafe</groupId>
       <artifactId>config</artifactId>
-      <version>1.4.1</version>
+      <version>1.4.2</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -1203,7 +1203,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-project-info-reports-plugin</artifactId>
-      <version>3.1.2</version>
+      <version>3.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1503,7 +1503,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-poi</artifactId>
-      <version>5.3.0</version>
+      <version>5.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2427,50 +2427,50 @@
       <version>0.9.9</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
       <version>5.5.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
       <version>5.5.3</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
       <version>5.5.3</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
       <version>5.5.3</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
       <version>5.5.3</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
       <version>5.5.3</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
       <version>5.5.3</version>
       <type>war</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
       <version>5.5.3</version>
       <type>war</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.smp</groupId>
+      <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
       <version>5.5.3</version>
       <type>war</type>
