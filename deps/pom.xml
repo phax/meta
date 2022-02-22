@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220218</version>
+  <version>1.0.0-20220222</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.3.1</version>
+      <version>3.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -963,7 +963,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>11.1.1</version>
+      <version>11.2</version>
     </dependency>
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
@@ -1769,23 +1769,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>6.7.3</version>
+      <version>6.7.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>6.7.3</version>
+      <version>6.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>6.7.3</version>
+      <version>6.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>6.7.3</version>
+      <version>6.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2435,50 +2435,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>5.5.3</version>
+      <version>5.5.4</version>
       <type>war</type>
     </dependency>
     <dependency>
