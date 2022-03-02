@@ -127,8 +127,7 @@ public enum EExternalDependency
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
   HTTP_CLIENT_FLUENT_HC ("org.apache.httpcomponents", "fluent-hc", "4.5.13", EJDK.JDK8),
 
-  HYSTRIX_CORE ("com.netflix.hystrix", "hystrix-core", "1.5.18", EJDK.JDK8),
-  HYSTRIX_METRICS_EVENT_STREAM ("com.netflix.hystrix", "hystrix-metrics-event-stream", HYSTRIX_CORE),
+  IBM_JCC ("com.ibm.db2", "jcc", "11.5.7.0", EJDK.JDK8),
 
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.1", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),

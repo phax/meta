@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220225</version>
+  <version>1.0.0-20220301</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -357,14 +357,9 @@
       <version>4.5.13</version>
     </dependency>
     <dependency>
-      <groupId>com.netflix.hystrix</groupId>
-      <artifactId>hystrix-core</artifactId>
-      <version>1.5.18</version>
-    </dependency>
-    <dependency>
-      <groupId>com.netflix.hystrix</groupId>
-      <artifactId>hystrix-metrics-event-stream</artifactId>
-      <version>1.5.18</version>
+      <groupId>com.ibm.db2</groupId>
+      <artifactId>jcc</artifactId>
+      <version>11.5.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
