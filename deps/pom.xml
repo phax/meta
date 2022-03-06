@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220301</version>
+  <version>1.0.0-20220306</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.5.1</version>
+      <version>8.5.2</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -308,23 +308,12 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20220202</version>
+      <version>v20220301</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
       <version>3.19.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-all</artifactId>
-      <version>3.0.9</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy</artifactId>
-      <version>3.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -339,7 +328,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>5.0.2</version>
+      <version>5.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -543,7 +532,7 @@
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>jbig2-imageio</artifactId>
-      <version>3.0.3</version>
+      <version>3.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.zeromq</groupId>
@@ -782,27 +771,27 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.17.1</version>
+      <version>2.17.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.17.1</version>
+      <version>2.17.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.17.1</version>
+      <version>2.17.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-to-slf4j</artifactId>
-      <version>2.17.1</version>
+      <version>2.17.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.17.1</version>
+      <version>2.17.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -903,7 +892,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>6.5.3</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -928,17 +917,17 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.2.0</version>
+      <version>5.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>5.2.0</version>
+      <version>5.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>5.2.0</version>
+      <version>5.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -2098,39 +2087,39 @@
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.10.0</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>

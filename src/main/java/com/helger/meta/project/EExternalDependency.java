@@ -101,27 +101,21 @@ public enum EExternalDependency
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
-  FLYWAY8 ("org.flywaydb", "flyway-core", "8.5.1", EJDK.JDK11),
+  FLYWAY8 ("org.flywaydb", "flyway-core", "8.5.2", EJDK.JDK11),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.7", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.2", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20220202", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20220301", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.19.4", EJDK.JDK8),
-
-  @IsLegacy (replacedWith = "2.5.x")
-  GROOVY_ALL_24("org.codehaus.groovy", "groovy-all", "2.4.15", EJDK.LEGACY),
-  @IsBOM
-  GROOVY_ALL ("org.codehaus.groovy", "groovy-all", "3.0.9", EJDK.JDK8),
-  GROOVY ("org.codehaus.groovy", "groovy", GROOVY_ALL),
 
   H2 ("com.h2database", "h2", "2.1.210", EJDK.JDK8),
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.0.2", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.1", EJDK.JDK8),
 
   HTTP_CORE ("org.apache.httpcomponents", "httpcore", "4.4.15", EJDK.JDK8),
   HTTP_CLIENT ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
@@ -186,7 +180,7 @@ public enum EExternalDependency
   JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
   JAXWS3_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS3_RI_BOM),
 
-  JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.3", EJDK.JDK8),
+  JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
 
   JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.26.0", EJDK.JDK8),
@@ -253,7 +247,7 @@ public enum EExternalDependency
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.1.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.17.1", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.17.2", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J_IMPL ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -289,14 +283,14 @@ public enum EExternalDependency
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.5.0.0", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "6.5.3", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "7.0.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.25", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
   PICOCLI ("info.picocli", "picocli", "4.6.3", EJDK.JDK8),
-  POI ("org.apache.poi", "poi", "5.2.0", EJDK.JDK8),
+  POI ("org.apache.poi", "poi", "5.2.1", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   POSTGRESQL ("org.postgresql", "postgresql", "42.3.3", EJDK.JDK8),
