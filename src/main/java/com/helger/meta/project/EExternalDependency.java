@@ -123,7 +123,7 @@ public enum EExternalDependency
 
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.7.0", EJDK.JDK8),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.1", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.2", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
