@@ -47,9 +47,7 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
   {
     final IMicroDocument aDoc = new MicroDocument ();
     final IMicroElement eProject = aDoc.appendElement (NS, "project");
-    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI,
-                           "schemaLocation",
-                           "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd");
+    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI, "schemaLocation", NS + " http://maven.apache.org/maven-v4_0_0.xsd");
     eProject.appendElement (NS, "modelVersion").appendText ("4.0.0");
     eProject.appendElement (NS, "groupId").appendText ("com.helger");
     eProject.appendElement (NS, "artifactId").appendText ("external-dependencies");
