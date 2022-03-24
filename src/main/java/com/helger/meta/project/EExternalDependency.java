@@ -263,7 +263,7 @@ public enum EExternalDependency
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", "8.11.1", EJDK.JDK11),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.0.0", EJDK.JDK11),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.1.0", EJDK.JDK11),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -275,22 +275,22 @@ public enum EExternalDependency
   METRO ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.5.0", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.5.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.5.1", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.5.1", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.28", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.5.0.0", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "7.0.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "7.0.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.25", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
 
   PICOCLI ("info.picocli", "picocli", "4.6.3", EJDK.JDK8),
-  POI ("org.apache.poi", "poi", "5.2.1", EJDK.JDK8),
+  POI ("org.apache.poi", "poi", "5.2.2", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
   POSTGRESQL ("org.postgresql", "postgresql", "42.3.3", EJDK.JDK8),
@@ -310,7 +310,7 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.4", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.5", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
@@ -350,7 +350,7 @@ public enum EExternalDependency
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.3.2", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
-  PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.1.1", EJDK.JDK8),
+  PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.16.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "2.4", EJDK.JDK8),
