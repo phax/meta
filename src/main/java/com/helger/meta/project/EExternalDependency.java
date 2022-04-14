@@ -211,7 +211,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.45.v20220203", EJDK.JDK8),
+  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.46.v20220331", EJDK.JDK8),
   JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
   JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
