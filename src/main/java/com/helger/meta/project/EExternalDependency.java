@@ -104,17 +104,17 @@ public enum EExternalDependency
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
-  FLYWAY8 ("org.flywaydb", "flyway-core", "8.5.5", EJDK.JDK11),
+  FLYWAY8 ("org.flywaydb", "flyway-core", "8.5.8", EJDK.JDK11),
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
   FOP ("org.apache.xmlgraphics", "fop", "2.7", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.3", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20220301", EJDK.JDK8),
+  GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20220405", EJDK.JDK8),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.20.0", EJDK.JDK8),
 
-  H2 ("com.h2database", "h2", "2.1.210", EJDK.JDK8),
+  H2 ("com.h2database", "h2", "2.1.212", EJDK.JDK8),
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
@@ -166,7 +166,7 @@ public enum EExternalDependency
   JAXB2_PLUGIN_EVOLVEDBINARY ("com.evolvedbinary.maven.jvnet", "jaxb2-maven-plugin", "0.15.0", EJDK.JDK8),
   JAXB2_BASICS ("org.jvnet.jaxb2_commons", "jaxb2-basics", "0.12.0", EJDK.JDK8),
 
-  JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "3.0.1", EJDK.JDK11),
+  JAXB3_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.0", EJDK.JDK11),
   @IsBOM
   JAXB3_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "3.0.2", EJDK.JDK11),
   JAXB3_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB3_BOM),
@@ -177,7 +177,7 @@ public enum EExternalDependency
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
-  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.1", EJDK.JDK11),
+  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.0", EJDK.JDK11),
   @IsBOM
   JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.2", EJDK.JDK11),
   JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
@@ -316,7 +316,7 @@ public enum EExternalDependency
   SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.6.6", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
-  STAX_EX ("org.jvnet.staxex", "stax-ex", "2.0.1", EJDK.JDK8),
+  STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
   TESTNG ("org.testng", "testng", "7.5", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),

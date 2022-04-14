@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220405</version>
+  <version>1.0.0-20220414</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.5.5</version>
+      <version>8.5.8</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -308,7 +308,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20220301</version>
+      <version>v20220405</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -318,7 +318,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.1.210</version>
+      <version>2.1.212</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -474,7 +474,7 @@
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
-      <version>3.0.1</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
@@ -511,7 +511,7 @@
     <dependency>
       <groupId>jakarta.xml.ws</groupId>
       <artifactId>jakarta.xml.ws-api</artifactId>
-      <version>3.0.1</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
@@ -624,38 +624,38 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>9.4.45.v20220203</version>
+      <version>9.4.46.v20220331</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -1013,7 +1013,7 @@
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
       <artifactId>stax-ex</artifactId>
-      <version>2.0.1</version>
+      <version>2.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
@@ -2473,7 +2473,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>4.8.0</version>
+      <version>4.8.1</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>
