@@ -21,6 +21,9 @@ import java.nio.charset.StandardCharsets;
 
 import javax.annotation.Nonnull;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
@@ -38,6 +41,8 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckProjectRequiredFiles.class);
+
   @Nonnull
   private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
@@ -49,7 +54,8 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   }
 
   @Nonnull
-  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
+  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject,
+                                                 @Nonnull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
@@ -88,7 +94,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           return true;
     }
     _warn (aProject,
-           "File " + f.getAbsolutePath () + " does not contain phrase " + StringHelper.getImploded (", ", aExpectedContentsOR) + "!");
+           "File " +
+                     f.getAbsolutePath () +
+                     " does not contain phrase " +
+                     StringHelper.getImploded (", ", aExpectedContentsOR) +
+                     "!");
     return false;
   }
 

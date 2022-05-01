@@ -23,6 +23,9 @@ import java.util.Set;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.collection.impl.CommonsArrayList;
 import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.CommonsHashSet;
@@ -52,11 +55,12 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
  */
 public final class MainCreateBuildAllPOM extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateBuildAllPOM.class);
   private static final String MAVEN_NS = "http://maven.apache.org/POM/4.0.0";
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
   {
-    return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID);
+    return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID) || "eu.de4a.ial".equals (sGroupID);
   }
 
   private static void _readPOM (@Nonnull final IProject aProject,
@@ -82,7 +86,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
         if (aElement.getLocalName ().equals ("artifactId"))
         {
           // Check if the current artefact is in the "com.helger" group
-          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (), "groupId");
+          final String sGroupID = MicroHelper.getChildTextContentTrimmed ((IMicroElement) aElement.getParent (),
+                                                                          "groupId");
           if (_isSupportedGroupID (sGroupID))
           {
             // Match!

@@ -52,7 +52,7 @@ public abstract class AbstractProjectMain
                                             ":exit\n";
   public static final Charset BATCH_CHARSET = StandardCharsets.ISO_8859_1;
 
-  protected static final Logger LOGGER = LoggerFactory.getLogger (AbstractProjectMain.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;
 
   static

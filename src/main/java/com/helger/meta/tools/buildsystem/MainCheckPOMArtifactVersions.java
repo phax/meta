@@ -23,6 +23,9 @@ import java.util.regex.Pattern;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.ArrayHelper;
 import com.helger.commons.collection.impl.CommonsLinkedHashMap;
@@ -59,6 +62,7 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
  */
 public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckPOMArtifactVersions.class);
   private static final boolean DEBUG_LOG = false;
 
   // Parent POM requirements
@@ -119,7 +123,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   }
 
   @Nonnull
-  private static String _getResolvedVar (@Nonnull final String sText, @Nonnull final ICommonsMap <String, String> aProps)
+  private static String _getResolvedVar (@Nonnull final String sText,
+                                         @Nonnull final ICommonsMap <String, String> aProps)
   {
     String ret = sText;
     while (true)
@@ -257,7 +262,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (eProperties != null)
             {
               if (DEBUG_LOG)
-                _info (aProject, "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
+                _info (aProject,
+                       "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
               eProperties.forAllChildElements (eProperty -> {
                 String sValue = eProperty.getTextContentTrimmed ();
                 sValue = _getResolvedVar (sValue, aProperties);
@@ -334,7 +340,12 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
       final String [] aExpectedPackagings = _getDesiredPackagings (aProject);
       if (!ArrayHelper.contains (aExpectedPackagings, sPackaging))
-        _warn (aProject, "Unexpected packaging '" + sPackaging + "' used. Expected one of " + Arrays.toString (aExpectedPackagings) + ".");
+        _warn (aProject,
+               "Unexpected packaging '" +
+                         sPackaging +
+                         "' used. Expected one of " +
+                         Arrays.toString (aExpectedPackagings) +
+                         ".");
     }
 
     // Group ID for properties
@@ -426,7 +437,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         final String sExpectedDeveloperConnection = sExpectedConnection;
         if (!sExpectedDeveloperConnection.equalsIgnoreCase (sDeveloperConnection))
           _warn (aProject,
-                 "Unexpected SCM developer connection '" + sDeveloperConnection + "'. Expected '" + sExpectedDeveloperConnection + "'");
+                 "Unexpected SCM developer connection '" +
+                           sDeveloperConnection +
+                           "'. Expected '" +
+                           sExpectedDeveloperConnection +
+                           "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
         final String sExpectedURL = "http://" +
@@ -524,7 +539,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                                                                                                     SUFFIX_SNAPSHOT))
                                                                              : aReferencedProject.getLastPublishedVersion ();
 
-                  final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion, SUFFIX_SNAPSHOT) : sVersion);
+                  final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion,
+                                                                                                    SUFFIX_SNAPSHOT)
+                                                                            : sVersion);
                   if (aVersionInFile.isLT (aLastPublishedVersion))
                   {
                     // Version in file lower than known
@@ -561,7 +578,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                            aReferencedProject.getLastPublishedVersionString ());
                       }
                       else
-                        _warn (aProject, "Houston we have a problem: " + aVersionInFile + " vs. " + aLastPublishedVersion);
+                        _warn (aProject,
+                               "Houston we have a problem: " + aVersionInFile + " vs. " + aLastPublishedVersion);
                 }
                 else
                 {
@@ -581,7 +599,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (sGroupID != null && sArtifactID != null && sVersion != null)
             {
               // Check for known external deps
-              final ICommonsList <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
+              final ICommonsList <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID,
+                                                                                                    sArtifactID);
 
               final String sSuffix = aExternalDeps.size () <= 1 ? "" : " for " + eProjectJDK.getDisplayName ();
 
@@ -648,6 +667,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                 if (true)
                   if (!sGroupID.startsWith ("org.apache.maven") &&
                       !sGroupID.startsWith ("org.codehaus.mojo") &&
+                      !sGroupID.startsWith ("eu.de4a") &&
                       !sArtifactID.equals ("rt") &&
                       !sArtifactID.contains ("-maven-") &&
                       !sArtifactID.startsWith ("maven-") &&

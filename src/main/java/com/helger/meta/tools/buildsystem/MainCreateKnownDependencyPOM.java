@@ -21,6 +21,9 @@ import java.time.format.DateTimeFormatter;
 
 import javax.xml.XMLConstants;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
@@ -41,13 +44,16 @@ import com.helger.xml.serialize.write.XMLWriterSettings;
  */
 public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateKnownDependencyPOM.class);
   private static final String NS = "http://maven.apache.org/POM/4.0.0";
 
   public static void main (final String [] args)
   {
     final IMicroDocument aDoc = new MicroDocument ();
     final IMicroElement eProject = aDoc.appendElement (NS, "project");
-    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI, "schemaLocation", NS + " http://maven.apache.org/maven-v4_0_0.xsd");
+    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI,
+                           "schemaLocation",
+                           NS + " http://maven.apache.org/maven-v4_0_0.xsd");
     eProject.appendElement (NS, "modelVersion").appendText ("4.0.0");
     eProject.appendElement (NS, "groupId").appendText ("com.helger");
     eProject.appendElement (NS, "artifactId").appendText ("external-dependencies");
@@ -68,7 +74,9 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       }
 
     eDeps.appendComment ("Internal projects:");
-    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () && x.isPublished () && !x.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+                                                                    x.isPublished () &&
+                                                                    !x.isDeprecated ()))
     {
       final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
       eDep.appendElement (NS, "groupId").appendText (aProject.getMavenGroupID ());
@@ -91,7 +99,8 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       final IMicroElement ePlugin = ePlugins.appendElement (NS, "plugin");
       ePlugin.appendElement (NS, "groupId").appendText ("org.codehaus.mojo");
       ePlugin.appendElement (NS, "artifactId").appendText ("versions-maven-plugin");
-      ePlugin.appendElement (NS, "version").appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
+      ePlugin.appendElement (NS, "version")
+             .appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
       final IMicroElement eConfig = ePlugin.appendElement (NS, "configuration");
       eConfig.appendElement (NS, "allowSnapshots").appendText ("false");
       eConfig.appendElement (NS, "rulesUri").appendText ("file:versions-maven-plugin-rules.xml");

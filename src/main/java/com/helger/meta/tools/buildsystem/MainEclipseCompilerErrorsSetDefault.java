@@ -19,6 +19,9 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.io.file.FileOperations;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
@@ -27,6 +30,8 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainEclipseCompilerErrorsSetDefault.class);
+
   public static void main (final String [] args)
   {
     final String sContent = "eclipse.preferences.version=1\n" +

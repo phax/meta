@@ -22,6 +22,9 @@ import java.math.RoundingMode;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
 import com.helger.commons.system.ENewLineMode;
@@ -33,6 +36,7 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainUpdateREADMEFooter extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateREADMEFooter.class);
   private static final String GIT_COMMIT_FOOTER_CHANGE_CMD = "git-commit-footer-change.cmd";
   private static final Charset README_CHARSET = StandardCharsets.UTF_8;
   private static final String SEPARATOR = "\n" + "---\n";
@@ -131,7 +135,9 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
       // http://stackoverflow.com/questions/20329355/how-to-make-a-batch-file-delete-itself
       aSB.append ("(goto) 2>nul & del \"%~f0\"\n");
       aSB.append (BATCH_FOOTER);
-      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD), aSB.toString (), BATCH_CHARSET);
+      SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, GIT_COMMIT_FOOTER_CHANGE_CMD),
+                              aSB.toString (),
+                              BATCH_CHARSET);
       LOGGER.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
     }
 

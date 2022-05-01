@@ -21,6 +21,8 @@ import java.io.File;
 import javax.xml.XMLConstants;
 
 import org.objectweb.asm.tree.ClassNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.helger.commons.annotation.IsSPIInterface;
 import com.helger.commons.collection.impl.CommonsArrayList;
@@ -56,6 +58,7 @@ import com.helger.xml.serialize.write.XMLWriterSettings;
 
 public final class MainUpdateOSGIExports extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateOSGIExports.class);
   private static final String NS_MAVEN = "http://maven.apache.org/POM/4.0.0";
   private static final String AUTOMATIC_MODULE_NAME = "Automatic-Module-Name";
   private static final String EXPORT_PACKAGE = "Export-Package";
@@ -113,7 +116,8 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                 _info (aProject, "Found Bundle instructions");
               bFoundInstructions = true;
               final ICommonsOrderedMap <String, String> aInstructionMap = new CommonsLinkedHashMap <> ();
-              eInstructions.forAllChildElements (x -> aInstructionMap.put (x.getLocalName (), x.getTextContentTrimmed ()));
+              eInstructions.forAllChildElements (x -> aInstructionMap.put (x.getLocalName (),
+                                                                           x.getTextContentTrimmed ()));
 
               final String sAutomaticModuleName = aInstructionMap.get (AUTOMATIC_MODULE_NAME);
               if (StringHelper.hasNoText (sAutomaticModuleName))
@@ -125,7 +129,10 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                 if (aOld != null)
                 {
                   _warn (aProject,
-                         "The automatic module name '" + sAutomaticModuleName + "' is already used in project " + aOld.getProjectName ());
+                         "The automatic module name '" +
+                                   sAutomaticModuleName +
+                                   "' is already used in project " +
+                                   aOld.getProjectName ());
                 }
               }
 
@@ -138,12 +145,23 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                 final IProject aOld = aUsedExportPackages.put (sExportPackage, aProject);
                 if (aOld != null)
                 {
-                  _warn (aProject, "The export package '" + sExportPackage + "' is already used in project " + aOld.getProjectName ());
+                  _warn (aProject,
+                         "The export package '" +
+                                   sExportPackage +
+                                   "' is already used in project " +
+                                   aOld.getProjectName ());
                 }
-                if (StringHelper.hasText (sAutomaticModuleName) && !sExportPackage.contains (sAutomaticModuleName + ".*"))
+                if (StringHelper.hasText (sAutomaticModuleName) &&
+                    !sExportPackage.contains (sAutomaticModuleName + ".*"))
                 {
                   _warn (aProject,
-                         "Weird " + EXPORT_PACKAGE + " '" + sExportPackage + "' vs automatic module name '" + sAutomaticModuleName + "'");
+                         "Weird " +
+                                   EXPORT_PACKAGE +
+                                   " '" +
+                                   sExportPackage +
+                                   "' vs automatic module name '" +
+                                   sAutomaticModuleName +
+                                   "'");
                 }
               }
 

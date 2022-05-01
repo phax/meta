@@ -19,6 +19,9 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.io.file.FileOperationManager;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
@@ -27,6 +30,8 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainUpdateSTALE_YML extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateSTALE_YML.class);
+
   public static void main (final String [] args)
   {
     final String sContent = "# Number of days of inactivity before an issue becomes stale\n" +

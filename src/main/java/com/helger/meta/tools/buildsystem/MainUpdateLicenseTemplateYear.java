@@ -19,6 +19,9 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.string.StringHelper;
@@ -34,6 +37,8 @@ import com.helger.meta.project.ProjectList;
  */
 public final class MainUpdateLicenseTemplateYear extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateLicenseTemplateYear.class);
+
   public static void main (final String [] args)
   {
     final int nThisYear = PDTFactory.getCurrentYear ();

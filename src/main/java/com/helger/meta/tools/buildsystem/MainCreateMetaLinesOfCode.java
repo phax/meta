@@ -27,6 +27,9 @@ import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.CommonsTreeSet;
@@ -96,7 +99,9 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     EXCEL ("Excel", false, new CommonsTreeSet <> ("xls", "xlsx", "ods")),
     FLASH ("Flash", false, new CommonsTreeSet <> ("swf")),
     FONT ("Font", false, new CommonsTreeSet <> ("ttf", "eot")),
-    IMAGE ("Image", false, new CommonsTreeSet <> ("bmp", "gif", "icc", "ico", "jpg", "otf", "png", "svg", "woff", "woff2")),
+    IMAGE ("Image",
+           false,
+           new CommonsTreeSet <> ("bmp", "gif", "icc", "ico", "jpg", "otf", "png", "svg", "woff", "woff2")),
     KEYSTORE ("Keystore", false, new CommonsTreeSet <> ("cer", "crt", "der", "jks", "pem", "pfx", "p12")),
     PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
     WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
@@ -139,7 +144,9 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     private final boolean m_bIsText;
     private final ICommonsSet <String> m_aExts;
 
-    private EFileType (@Nonnull @Nonempty final String sName, final boolean bIsText, @Nonnull final ICommonsSet <String> aExts)
+    private EFileType (@Nonnull @Nonempty final String sName,
+                       final boolean bIsText,
+                       @Nonnull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
       m_sExtensions = StringHelper.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
@@ -283,7 +290,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@Nonnull final File aBaseDir, @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
+  private static void _scan (@Nonnull final File aBaseDir,
+                             @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
   {
     if (aBaseDir.isDirectory ())
     {
@@ -315,6 +323,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       }
     }
   }
+
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateMetaLinesOfCode.class);
 
   private static void _addTableHead (@Nonnull final StringBuilder aSB)
   {
@@ -350,13 +360,21 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
     else
     {
-      aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getLinesTotal (), aDisplayLocale)).append ("</td>");
-      aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getLinesWhitespaceOnly (), aDisplayLocale)).append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getLinesTotal (), aDisplayLocale))
+         .append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getLinesWhitespaceOnly (), aDisplayLocale))
+         .append ("</td>");
       aSB.append ("<td>")
          .append (LocaleFormatter.getFormattedPercent (aCount.getLinesWhitespaceOnlyPerc (), 2, aDisplayLocale))
          .append ("</td>");
-      aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getCharsTotal (), aDisplayLocale)).append ("</td>");
-      aSB.append ("<td>").append (LocaleFormatter.getFormatted (aCount.getCharsWhitepaces (), aDisplayLocale)).append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getCharsTotal (), aDisplayLocale))
+         .append ("</td>");
+      aSB.append ("<td>")
+         .append (LocaleFormatter.getFormatted (aCount.getCharsWhitepaces (), aDisplayLocale))
+         .append ("</td>");
       aSB.append ("<td>")
          .append (LocaleFormatter.getFormattedPercent (aCount.getCharsWhitepacesPerc (), 2, aDisplayLocale))
          .append ("</td>");
@@ -448,7 +466,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     final StringBuilder aSB = new StringBuilder ();
     aSB.append ("Line count as of ").append (PDTFactory.getCurrentLocalDateTime ().toString ()).append (":\n\n");
 
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () && !p.isGitHubPrivate ())
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                                     !p.isGitHubPrivate ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
                                                                                            .thenComparing (IProject::getProjectName));
 

@@ -18,6 +18,9 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -31,6 +34,8 @@ import com.helger.xml.microdom.serialize.MicroReader;
  */
 public final class MainCheckFindBugsExcludes extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckFindBugsExcludes.class);
+
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode ()))

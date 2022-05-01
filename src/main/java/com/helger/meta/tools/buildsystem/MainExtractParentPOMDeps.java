@@ -18,6 +18,9 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.collection.impl.CommonsHashMap;
 import com.helger.commons.collection.impl.ICommonsMap;
 import com.helger.meta.AbstractProjectMain;
@@ -32,6 +35,8 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
 public final class MainExtractParentPOMDeps extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainExtractParentPOMDeps.class);
+
   public static void main (final String [] args)
   {
     final IMicroDocument eRoot = MicroReader.readMicroXML (new File ("../ph-parent-pom/pom.xml"));
@@ -83,7 +88,9 @@ public final class MainExtractParentPOMDeps extends AbstractProjectMain
                                                   x.hasGroupID (sFinalGroupID) &&
                                                   x.hasArtifactID (sFinalArtifactID))
                                    .isEmpty () &&
-                ProjectList.getAllProjects (x -> x.hasMavenGroupID (sFinalGroupID) && x.hasMavenArtifactID (sFinalArtifactID)).isEmpty ())
+                ProjectList.getAllProjects (x -> x.hasMavenGroupID (sFinalGroupID) &&
+                                                 x.hasMavenArtifactID (sFinalArtifactID))
+                           .isEmpty ())
             {
               aSB.append ("PARENT_POM_")
                  .append (i++)

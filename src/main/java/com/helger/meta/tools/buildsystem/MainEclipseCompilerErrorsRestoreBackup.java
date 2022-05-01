@@ -18,6 +18,9 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.helger.commons.io.file.FileOperations;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
@@ -25,6 +28,8 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainEclipseCompilerErrorsRestoreBackup extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainEclipseCompilerErrorsRestoreBackup.class);
+
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&

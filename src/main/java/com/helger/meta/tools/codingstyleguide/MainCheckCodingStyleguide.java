@@ -28,6 +28,8 @@ import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.helger.commons.annotation.CodingStyleguideUnaware;
 import com.helger.commons.annotation.Nonempty;
@@ -53,6 +55,7 @@ import com.helger.meta.project.ProjectList;
 
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckCodingStyleguide.class);
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
   private static void _checkClassNaming (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
@@ -82,7 +85,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     final boolean bClassIsInterface = Modifier.isInterface (cn.access);
 
     if (!Character.isUpperCase (sClassLocalName.charAt (0)))
-      _warn (aProject, sPrefix + "Class/interface/enum/annotation names should always start with an uppercase character");
+      _warn (aProject,
+             sPrefix + "Class/interface/enum/annotation names should always start with an uppercase character");
 
     if (!bIsAnonymousInnerClass)
     {
@@ -191,13 +195,15 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
     final String sClassName = aType.getClassName ();
     final String sPackageName = ClassHelper.getClassPackageName (sClassName);
-    return "com.helger.commons.collection.ext".equals (sPackageName) || "com.helger.commons.collection.impl".equals (sPackageName);
+    return "com.helger.commons.collection.ext".equals (sPackageName) ||
+           "com.helger.commons.collection.impl".equals (sPackageName);
   }
 
   private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = aProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.equals ("HelpMojo");
+    final boolean bIsSpecialCase = aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
+                                   sClassLocalName.equals ("HelpMojo");
     if (bIsSpecialCase)
       return;
 
@@ -306,7 +312,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (false)
         if (bReturnsJdkCollection)
           if (!mn.name.equals ("getAsUnmodifiable"))
-            _warn (aProject, sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
+            _warn (aProject,
+                   sPrefix + "returns a JDK Collection (" + mn.desc + ") - consider returning an ICommons* collection");
     }
 
     if (bClassIsAbstract && !bClassIsInterface && !bClassIsEnum)
@@ -326,7 +333,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   private static void _checkMainVariables (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
-    final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN && sClassLocalName.endsWith ("Mojo"));
+    final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
+                                    sClassLocalName.endsWith ("Mojo"));
     if (bIsSpecialCase)
       return;
 
@@ -348,18 +356,23 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       if (bIsStatic)
       {
         // Internal generated variable names
-        if (fn.name.startsWith ("$SWITCH_TABLE$") || fn.name.equals ("$assertionsDisabled") || fn.name.startsWith ("$SwitchMap$"))
+        if (fn.name.startsWith ("$SWITCH_TABLE$") ||
+            fn.name.equals ("$assertionsDisabled") ||
+            fn.name.startsWith ("$SwitchMap$"))
           continue;
 
         if (bIsFinal)
         {
-          if (!fn.name.startsWith ("s_") && !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) && !fn.name.equals ("serialVersionUID"))
+          if (!fn.name.startsWith ("s_") &&
+              !fn.name.equals (fn.name.toUpperCase (LOCALE_SYSTEM)) &&
+              !fn.name.equals ("serialVersionUID"))
             _warn (aProject, sPrefix + "Static final member name '" + fn.name + "' does not match naming conventions");
         }
         else
         {
           if (!fn.name.startsWith ("s_"))
-            _warn (aProject, sPrefix + "Static non-final member name '" + fn.name + "' does not match naming conventions");
+            _warn (aProject,
+                   sPrefix + "Static non-final member name '" + fn.name + "' does not match naming conventions");
 
           if (!bIsPrivate)
             _warn (aProject, sPrefix + "Static non-final member '" + fn.name + "' is not private");
@@ -379,7 +392,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
 
       if (bIsJdkCollection)
-        _warn (aProject, sPrefix + "Member '" + fn.name + "' is a JDK Collection - consider using an ICommons* collection");
+        _warn (aProject,
+               sPrefix + "Member '" + fn.name + "' is a JDK Collection - consider using an ICommons* collection");
     }
   }
 
@@ -432,7 +446,8 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sPackageName.equals ("com.helger.genericode.v10")))
       return EContinue.BREAK;
 
-    if (aProject == EProject.PH_ISORELAX && (sPackageName.startsWith ("jp.gr.xml.relax.") || sPackageName.startsWith ("org.iso_relax.")))
+    if (aProject == EProject.PH_ISORELAX &&
+        (sPackageName.startsWith ("jp.gr.xml.relax.") || sPackageName.startsWith ("org.iso_relax.")))
       return EContinue.BREAK;
 
     if (aProject == EProject.PH_JSON &&

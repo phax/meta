@@ -30,6 +30,8 @@ import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.MethodNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.helger.commons.collection.impl.CommonsArrayList;
 import com.helger.commons.collection.impl.CommonsLinkedHashSet;
@@ -51,7 +53,8 @@ import com.helger.meta.translation.StringTableSerializer;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
-  private static ICommonsOrderedSet <String> s_aActions = new CommonsLinkedHashSet <> ();
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainExtractTranslatableStrings.class);
+  private static final ICommonsOrderedSet <String> ACTIONS = new CommonsLinkedHashSet <> ();
 
   @Nullable
   private static StringTable _extractSTFromFile (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
@@ -76,7 +79,11 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
           }
           else
           {
-            _warn (eProject, cn.name + " field m_aTP is of wrong type " + Type.getType (fn.desc) + " and not of type IMultilingualText");
+            _warn (eProject,
+                   cn.name +
+                             " field m_aTP is of wrong type " +
+                             Type.getType (fn.desc) +
+                             " and not of type IMultilingualText");
           }
         }
         else
@@ -174,9 +181,10 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
 
     if (!aSTProject.isEmpty () && eProject.isBuildInProject ())
     {
-      final File aDstFileXML = new File (eProject.getBaseDir (), "src/main/resources/translation/translatable-texts.xml");
+      final File aDstFileXML = new File (eProject.getBaseDir (),
+                                         "src/main/resources/translation/translatable-texts.xml");
       if (StringTableSerializer.writeStringTableAsXML (aDstFileXML, aSTProject).isSuccess ())
-        s_aActions.add ("cd " + eProject.getProjectName () + " && call mvn license:format && cd..");
+        ACTIONS.add ("cd " + eProject.getProjectName () + " && call mvn license:format && cd..");
       else
         _warn (eProject, "Failed to writing translatable-texts.xml");
     }
@@ -185,13 +193,14 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
   public static void main (final String [] args) throws IOException
   {
     LOGGER.info ("Start extracting text from .class files!");
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () && !p.isDeprecated ()))
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
+                                                                    !p.isDeprecated ()))
       _scanProject (aProject);
     LOGGER.info ("Done - " + getWarnCount () + " warning(s)");
-    if (!s_aActions.isEmpty ())
+    if (!ACTIONS.isEmpty ())
     {
       final StringBuilder aSB = new StringBuilder (BATCH_HEADER);
-      for (final String sAction : s_aActions)
+      for (final String sAction : ACTIONS)
         aSB.append (sAction).append ('\n');
       aSB.append (BATCH_FOOTER);
       final File aDestFile = new File (CMeta.GIT_BASE_DIR, "translation-actions.cmd");
