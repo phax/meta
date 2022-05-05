@@ -49,6 +49,8 @@
     <project projectname="dcng-holodeck" projecttype="java-library" />
     <project projectname="dcng-web-api" projecttype="java-library" />
     <project projectname="dcng-webapp-phase4-it1-im" projecttype="java-web-application" />
+    <!-- 
     <project projectname="dcng-webapp-phase4-it1-usi" projecttype="java-web-application" />
+     -->
   </project>
 </root>

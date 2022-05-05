@@ -694,9 +694,14 @@
       <version>11.0.9</version>
     </dependency>
     <dependency>
-      <groupId>com.thaiopensource</groupId>
+      <groupId>org.relaxng</groupId>
       <artifactId>jing</artifactId>
-      <version>20091111</version>
+      <version>20181222</version>
+    </dependency>
+    <dependency>
+      <groupId>org.relaxng</groupId>
+      <artifactId>trang</artifactId>
+      <version>20181222</version>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
@@ -1024,11 +1029,6 @@
       <groupId>org.threeten</groupId>
       <artifactId>threeten-extra</artifactId>
       <version>1.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.thaiopensource</groupId>
-      <artifactId>trang</artifactId>
-      <version>20091111</version>
     </dependency>
     <dependency>
       <groupId>com.typesafe</groupId>

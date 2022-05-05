@@ -225,7 +225,9 @@ public enum EExternalDependency
   JETTY11_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY11_BOM),
   JETTY11_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY11_BOM),
 
-  JING ("com.thaiopensource", "jing", "20091111", EJDK.JDK8),
+  JING ("org.relaxng", "jing", "20181222", EJDK.JDK8),
+  TRANG ("org.relaxng", "trang", "20181222", EJDK.JDK8),
+
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.11.5", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", "0.11.5", EJDK.JDK8),
   @IsLegacy
@@ -317,7 +319,6 @@ public enum EExternalDependency
 
   TESTNG ("org.testng", "testng", "7.5", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),
-  TRANG ("com.thaiopensource", "trang", "20091111", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.2", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.10.0", EJDK.JDK8),
