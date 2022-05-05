@@ -644,6 +644,7 @@ public enum EProject implements IProject
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_BPC (PHASE4_PARENT_POM, "phase4-profile-bpc", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_CEF (PHASE4_PARENT_POM, "phase4-profile-cef", EProjectType.JAVA_LIBRARY),
+  PHASE4_PROFILE_EESPA (PHASE4_PARENT_POM, "phase4-profile-eespa", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_ENTSOG (PHASE4_PARENT_POM, "phase4-profile-entsog", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_PEPPOL (PHASE4_PARENT_POM, "phase4-profile-peppol", EProjectType.JAVA_LIBRARY),
   PHASE4_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
