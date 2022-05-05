@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.5.9</version>
+      <version>8.5.10</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -308,7 +308,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20220405</version>
+      <version>v20220502</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -469,7 +469,7 @@
     <dependency>
       <groupId>org.jvnet.jaxb2_commons</groupId>
       <artifactId>jaxb2-basics</artifactId>
-      <version>0.12.0</version>
+      <version>0.13.1</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
@@ -701,12 +701,12 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
-      <version>0.11.3</version>
+      <version>0.11.5</version>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-orgjson</artifactId>
-      <version>0.11.3</version>
+      <version>0.11.5</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -932,7 +932,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.3.4</version>
+      <version>42.3.5</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -957,7 +957,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.1.3</version>
+      <version>4.1.4</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1058,7 +1058,7 @@
     <dependency>
       <groupId>org.apache.santuario</groupId>
       <artifactId>xmlsec</artifactId>
-      <version>2.3.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xsom</groupId>
@@ -1068,12 +1068,12 @@
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>core</artifactId>
-      <version>3.4.1</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>javase</artifactId>
-      <version>3.4.1</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.mycila</groupId>
@@ -1083,7 +1083,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>maven-bundle-plugin</artifactId>
-      <version>5.1.4</version>
+      <version>5.1.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1193,7 +1193,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-project-info-reports-plugin</artifactId>
-      <version>3.2.2</version>
+      <version>3.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
