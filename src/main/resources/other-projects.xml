@@ -26,7 +26,7 @@
 
   <project projectname="peppol-analytics" projecttype="java-application" minjdk="8" />
 
-  <project projectname="ial-parent-pom" dir="ial-service" projecttype="maven-pom" minjdk="8" lastpubversion="0.1.3">
+  <project projectname="ial-parent-pom" dir="ial-service" projecttype="maven-pom" minjdk="8" lastpubversion="0.1.5">
     <project projectname="ial-api" projecttype="java-library" />
     <project projectname="ial-webapp" projecttype="java-web-application" />
   </project>
@@ -42,7 +42,7 @@
     <project projectname="de4a-canonical-evidences" projecttype="java-library" />
   </project>
 
-  <project projectname="dcng-parent-pom" dir="de4a-connector-ng" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.2">
+  <project projectname="dcng-parent-pom" dir="de4a-connector-ng" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.3">
     <project projectname="dcng-api" projecttype="java-library" />
     <project projectname="dcng-core" projecttype="java-library" />
     <project projectname="dcng-phase4" projecttype="java-library" />
