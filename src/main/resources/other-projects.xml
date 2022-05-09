@@ -42,7 +42,7 @@
     <project projectname="de4a-canonical-evidences" projecttype="java-library" />
   </project>
 
-  <project projectname="dcng-parent-pom" dir="de4a-connector-ng" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.3">
+  <project projectname="dcng-parent-pom" dir="de4a-connector-ng" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.4">
     <project projectname="dcng-api" projecttype="java-library" />
     <project projectname="dcng-core" projecttype="java-library" />
     <project projectname="dcng-phase4" projecttype="java-library" />
