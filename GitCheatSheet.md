@@ -52,6 +52,18 @@ Disable TLS verification for all repos:
 git config --global http.sslVerify false
 ```
 
+Enable prune behaviour for every fetch
+
+```
+git config --global fetch.prune true
+```
+
+Define a custom git alias to prune all gone local branches (for Linux) (source https://stackoverflow.com/a/48649889/15254):
+
+```
+git config --global alias.prune-branches '!git remote prune origin && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs -r git branch -d'
+```
+
 ## Release a branch with maven-release-plugin
 
 Set the `<scm><tag>` element to e.g. `origin/1.2` where *1.2* is the name of the branch at origin.
