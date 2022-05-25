@@ -100,7 +100,7 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.3", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.4.5", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.4.6", EJDK.JDK8),
   // Has MySQL 5.7 support
   FLYWAY7 ("org.flywaydb", "flyway-core", "7.15.0", EJDK.JDK8),
   // Dropped MySQL 5.7 support
@@ -268,7 +268,7 @@ public enum EExternalDependency
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", "8.11.1", EJDK.JDK11),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.1.0", EJDK.JDK11),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.2.0", EJDK.JDK11),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -298,7 +298,7 @@ public enum EExternalDependency
   POI ("org.apache.poi", "poi", "5.2.2", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
-  POSTGRESQL ("org.postgresql", "postgresql", "42.3.5", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.3.6", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -327,7 +327,7 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.2", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.10.0", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.11.0", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.0.3", EJDK.JDK8),
   XMLSEC ("org.apache.santuario", "xmlsec", "3.0.0", EJDK.JDK8),
@@ -373,7 +373,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.6.0.0", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.0.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 

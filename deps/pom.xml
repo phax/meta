@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220519</version>
+  <version>1.0.0-20220525</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -268,7 +268,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>3.4.5</version>
+      <version>3.4.6</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -836,27 +836,27 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>9.1.0</version>
+      <version>9.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>9.1.0</version>
+      <version>9.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>9.1.0</version>
+      <version>9.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>9.1.0</version>
+      <version>9.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>9.1.0</version>
+      <version>9.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -937,7 +937,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.3.5</version>
+      <version>42.3.6</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -1049,7 +1049,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>versions-maven-plugin</artifactId>
-      <version>2.10.0</version>
+      <version>2.11.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.wss4j</groupId>
@@ -1269,7 +1269,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.6.0.0</version>
+      <version>4.7.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -2507,7 +2507,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.10.0</version>
+        <version>2.11.0</version>
         <configuration>
           <allowSnapshots>false</allowSnapshots>
           <rulesUri>file:versions-maven-plugin-rules.xml</rulesUri>
