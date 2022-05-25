@@ -330,7 +330,11 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.11.0", EJDK.JDK8),
   WSS4J ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.0.3", EJDK.JDK8),
-  XMLSEC ("org.apache.santuario", "xmlsec", "3.0.0", EJDK.JDK8),
+
+  XMLSEC_2 ("org.apache.santuario", "xmlsec", "2.3.1", EJDK.JDK8),
+  // Jakarta Update
+  XMLSEC_3 ("org.apache.santuario", "xmlsec", "3.0.0", EJDK.JDK11),
+
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.5.0", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
