@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220525</version>
+  <version>1.0.0-20220619</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -208,7 +208,7 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.equinox.common</artifactId>
-      <version>3.16.0</version>
+      <version>3.16.100</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -218,7 +218,7 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.core.runtime</artifactId>
-      <version>3.24.100</version>
+      <version>3.25.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -228,7 +228,7 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.core.resources</artifactId>
-      <version>3.16.100</version>
+      <version>3.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -238,7 +238,7 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.core.jobs</artifactId>
-      <version>3.12.100</version>
+      <version>3.13.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -258,7 +258,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.framework</artifactId>
-      <version>7.0.3</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
@@ -278,7 +278,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>8.5.11</version>
+      <version>8.5.13</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -308,17 +308,17 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20220502</version>
+      <version>v20220601</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.20.1</version>
+      <version>3.21.1</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.1.212</version>
+      <version>2.1.214</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -328,7 +328,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>5.1.1</version>
+      <version>5.1.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -411,6 +411,11 @@
       <version>5.0.0</version>
     </dependency>
     <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>jakarta.servlet.jsp</groupId>
       <artifactId>jakarta.servlet.jsp-api</artifactId>
       <version>2.3.6</version>
@@ -479,13 +484,13 @@
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-bom-ext</artifactId>
-      <version>3.0.2</version>
+      <version>4.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
-      <version>3.0.2</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.ws</groupId>
@@ -547,7 +552,7 @@
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
       <artifactId>org.eclipse.jdt.core</artifactId>
-      <version>3.29.0</version>
+      <version>3.30.0</version>
     </dependency>
     <dependency>
       <groupId>com.sun.jersey</groupId>
@@ -593,33 +598,33 @@
     <dependency>
       <groupId>org.glassfish.jersey</groupId>
       <artifactId>jersey-bom</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-common</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-servlet</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -831,7 +836,7 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
-      <version>8.11.1</version>
+      <version>8.11.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -876,12 +881,12 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>4.6.0</version>
+      <version>4.6.1</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>4.6.0</version>
+      <version>4.6.1</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -897,7 +902,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -937,7 +942,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.3.6</version>
+      <version>42.4.0</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -957,12 +962,12 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt</artifactId>
-      <version>1.8.7</version>
+      <version>1.9.1</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.1.4</version>
+      <version>4.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1002,7 +1007,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>5.3.20</version>
+      <version>5.3.21</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1059,7 +1064,7 @@
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
       <artifactId>xmlbeans</artifactId>
-      <version>5.0.3</version>
+      <version>5.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.santuario</groupId>
@@ -1154,7 +1159,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-enforcer-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1199,7 +1204,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-pmd-plugin</artifactId>
-      <version>3.16.0</version>
+      <version>3.17.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
