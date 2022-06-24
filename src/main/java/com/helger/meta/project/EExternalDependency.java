@@ -178,11 +178,17 @@ public enum EExternalDependency
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
-  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.0", EJDK.JDK11),
+  JAXWS3_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "3.0.1", EJDK.JDK11),
   @IsBOM
   JAXWS3_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "3.0.2", EJDK.JDK11),
   JAXWS3_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS3_RI_BOM),
   JAXWS3_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS3_RI_BOM),
+
+  JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.0", EJDK.JDK11),
+  @IsBOM
+  JAXWS4_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "4.0.0", EJDK.JDK11),
+  JAXWS4_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS4_RI_BOM),
+  JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.2", EJDK.JDK8),
@@ -212,7 +218,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.46.v20220331", EJDK.JDK8),
+  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.48.v20220622", EJDK.JDK8),
   JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
   JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
@@ -221,7 +227,7 @@ public enum EExternalDependency
   JETTY9_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY9_BOM),
 
   @IsBOM
-  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.9", EJDK.JDK11),
+  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.11", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
@@ -278,7 +284,8 @@ public enum EExternalDependency
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.4", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
+  METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
+  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.0", EJDK.JDK11),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.6.1", EJDK.JDK8),
@@ -287,7 +294,7 @@ public enum EExternalDependency
   MYSQL ("mysql", "mysql-connector-java", "8.0.29", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.5.0.0", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.6.0.0.1", EJDK.JDK8),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "7.1.1", EJDK.JDK8),
 
@@ -305,7 +312,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "11.3", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.1", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.2.2", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.3.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "1.7.36", EJDK.JDK8),
@@ -319,7 +326,7 @@ public enum EExternalDependency
   SPRING_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "5.3.21", EJDK.JDK8),
 
   @IsBOM
-  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.7.0", EJDK.JDK8),
+  SPRING_BOOT_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.7.1", EJDK.JDK8),
   SPRING_BOOT_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT_DEPENDENCIES),
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
