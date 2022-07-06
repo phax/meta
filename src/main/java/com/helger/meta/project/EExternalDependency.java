@@ -112,7 +112,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE ("com.google.javascript", "closure-compiler", "v20220601", EJDK.JDK8),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.1", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.2", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
@@ -259,7 +259,7 @@ public enum EExternalDependency
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.2.0", EJDK.JDK8),
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.17.2", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.18.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J_IMPL ("org.apache.logging.log4j", "log4j-slf4j-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -285,7 +285,7 @@ public enum EExternalDependency
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
-  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.0", EJDK.JDK11),
+  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.1", EJDK.JDK11),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.6.1", EJDK.JDK8),
@@ -331,7 +331,6 @@ public enum EExternalDependency
   SPRING_BOOT_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT_DEPENDENCIES),
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
-  TESTNG ("org.testng", "testng", "7.6.0", EJDK.JDK8),
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.0", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.2", EJDK.JDK8),
   VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
@@ -352,7 +351,7 @@ public enum EExternalDependency
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.6", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.3.0", EJDK.JDK8),
+  PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
