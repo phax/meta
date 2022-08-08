@@ -188,7 +188,7 @@ Current list of all released projects (as of 2022-08-08):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.4.0 - JDK 1.8
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.5.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
  * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 1.2.0 - JDK 1.8
