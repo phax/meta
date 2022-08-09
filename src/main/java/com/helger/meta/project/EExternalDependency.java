@@ -308,6 +308,7 @@ public enum EExternalDependency
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.26", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
+  PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
   PICOCLI ("info.picocli", "picocli", "4.6.3", EJDK.JDK8),
 
