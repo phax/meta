@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220804</version>
+  <version>1.0.0-20220810</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -84,6 +84,31 @@
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
       <version>1.70</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcmail-jdk18on</artifactId>
+      <version>1.71</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcpg-jdk18on</artifactId>
+      <version>1.71</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>1.71</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcpkix-jdk18on</artifactId>
+      <version>1.71</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-ext-jdk18on</artifactId>
+      <version>1.71</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -619,33 +644,33 @@
     <dependency>
       <groupId>org.glassfish.jersey</groupId>
       <artifactId>jersey-bom</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-common</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-servlet</artifactId>
-      <version>3.0.5</version>
+      <version>3.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -782,7 +807,7 @@
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.8.2</version>
+      <version>1.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -943,6 +968,11 @@
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox-examples</artifactId>
+      <version>2.0.26</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>xmpbox</artifactId>
       <version>2.0.26</version>
     </dependency>
     <dependency>
@@ -1621,7 +1651,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
-      <version>6.4.0</version>
+      <version>6.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
