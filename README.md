@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2022-08-24):
+Current list of all released projects (as of 2022-08-30):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.2 - JDK 1.8
 
@@ -275,9 +275,6 @@ Current list of all released projects (as of 2022-08-24):
  * [ph-oton](https://github.com/phax/ph-oton) - Version 8.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom) 
- * [ph-oton-jdbc](https://github.com/phax/ph-oton-jdbc) - Version 1.0.3 - JDK 1.8
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc) 
  * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 8.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax) 
@@ -341,6 +338,9 @@ Current list of all released projects (as of 2022-08-24):
  * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 8.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon) 
+ * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 1.0.3 - JDK 1.8
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc) 
  * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 8.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty) 

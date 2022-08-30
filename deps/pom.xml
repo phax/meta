@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220824</version>
+  <version>1.0.0-20220830</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2128,6 +2128,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
+      <artifactId>ph-oton-jdbc</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
       <version>8.4.1</version>
     </dependency>
@@ -2160,11 +2165,6 @@
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
       <version>8.4.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.photon</groupId>
-      <artifactId>ph-oton-jdbc</artifactId>
-      <version>1.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
