@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20220830</version>
+  <version>1.0.0-20220901</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -88,27 +88,27 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk18on</artifactId>
-      <version>1.71</version>
+      <version>1.71.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk18on</artifactId>
-      <version>1.71</version>
+      <version>1.71.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk18on</artifactId>
-      <version>1.71</version>
+      <version>1.71.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk18on</artifactId>
-      <version>1.71</version>
+      <version>1.71.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk18on</artifactId>
-      <version>1.71</version>
+      <version>1.71.1</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -213,12 +213,12 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.core</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.jpa</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
@@ -298,12 +298,12 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>9.1.5</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>9.1.5</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>fop</groupId>
@@ -659,33 +659,33 @@
     <dependency>
       <groupId>org.glassfish.jersey</groupId>
       <artifactId>jersey-bom</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-common</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-servlet</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -962,13 +962,13 @@
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
       <artifactId>ojdbc-bom</artifactId>
-      <version>21.6.0.0.1</version>
+      <version>21.7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -1013,7 +1013,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.4.1</version>
+      <version>42.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -1048,32 +1048,32 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -1084,18 +1084,18 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>2.7.2</version>
+      <version>2.7.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.7.2</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.7.2</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -1130,7 +1130,7 @@
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
       <artifactId>xmlbeans</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.santuario</groupId>
@@ -1190,7 +1190,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-checkstyle-plugin</artifactId>
-      <version>3.1.2</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1265,12 +1265,12 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jxr-plugin</artifactId>
-      <version>3.2.0</version>
+      <version>3.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-pmd-plugin</artifactId>
-      <version>3.17.0</version>
+      <version>3.18.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1580,7 +1580,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
-      <version>4.4.2</version>
+      <version>4.4.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
@@ -2169,39 +2169,39 @@
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.10.1</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
