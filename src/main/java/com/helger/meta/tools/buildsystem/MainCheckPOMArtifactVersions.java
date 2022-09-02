@@ -102,8 +102,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     return PARENT_POM_GROUPID.equals (sGroupID) ||
            sGroupID.startsWith ("com.helger.") ||
            "at.austriapro".equals (sGroupID) ||
-           "at.winenet".equals (sGroupID) ||
-           "eu.toop".equals (sGroupID) ||
            "eu.de4a".equals (sGroupID);
   }
 
