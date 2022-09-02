@@ -27,6 +27,8 @@ import java.util.List;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLParameters;
 
+import com.helger.commons.string.StringParser;
+
 public class MainListSecurity
 {
   public static void main (final String [] args)
@@ -34,7 +36,8 @@ public class MainListSecurity
     final List <Provider> aSortedProviders = Arrays.asList (Security.getProviders ());
     Collections.sort (aSortedProviders,
                       Comparator.comparing (Provider::getName)
-                                .thenComparing (Comparator.comparingDouble (Provider::getVersion)));
+                                .thenComparing (Comparator.comparingDouble (p -> StringParser.parseDouble (p.getVersionStr (),
+                                                                                                           -1))));
 
     // show all providers
     System.out.println ("All security providers");
@@ -44,7 +47,7 @@ public class MainListSecurity
       System.out.println ("    " +
                           aSecurityProvider.getName () +
                           "\t" +
-                          aSecurityProvider.getVersion () +
+                          aSecurityProvider.getVersionStr () +
                           "\t" +
                           aSecurityProvider.getInfo ());
 
@@ -53,7 +56,7 @@ public class MainListSecurity
     System.out.println ("  Provider\tType\tAlgorithm\tClass name");
     for (final Provider aSecurityProvider : aSortedProviders)
     {
-      final String sProviderName = aSecurityProvider.getName () + " " + aSecurityProvider.getVersion ();
+      final String sProviderName = aSecurityProvider.getName () + " " + aSecurityProvider.getVersionStr ();
 
       for (final Service aService : aSecurityProvider.getServices ())
         System.out.println ("    " +
@@ -71,7 +74,7 @@ public class MainListSecurity
     System.out.println ("  Provider\tType\tAlgorithm\tDefault protocols\tDefault cipher suites\tSupported protocols\tSupported cipher suites");
     for (final Provider aSecurityProvider : aSortedProviders)
     {
-      final String sProviderName = aSecurityProvider.getName () + " " + aSecurityProvider.getVersion ();
+      final String sProviderName = aSecurityProvider.getName () + " " + aSecurityProvider.getVersionStr ();
 
       for (final Service aService : aSecurityProvider.getServices ())
         if ("SSLContext".equals (aService.getType ()))
