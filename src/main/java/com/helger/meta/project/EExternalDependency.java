@@ -60,7 +60,10 @@ public enum EExternalDependency
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", "1.71", EJDK.JDK8),
 
-  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention", "classloader-leak-prevention-core", "2.7.0", EJDK.JDK8),
+  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
+                               "classloader-leak-prevention-core",
+                               "2.7.0",
+                               EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
@@ -103,9 +106,9 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.4.8", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.4.9", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.2.2", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.3.0", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
@@ -115,7 +118,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20220803", EJDK.JDK11),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20220905", EJDK.JDK11),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.5", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
@@ -341,7 +344,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.0.2", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.11.0", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.12.0", EJDK.JDK8),
 
   WSS4J_2 ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
 
@@ -378,7 +381,7 @@ public enum EExternalDependency
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.18.0", EJDK.JDK8),
+  PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.19.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
@@ -393,7 +396,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.1.1", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.2.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 
@@ -527,11 +530,14 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
+  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
+                                                            @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
+                                                                 x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
-    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ()).reversed ());
+    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
+                        .reversed ());
     return ret;
   }
 
