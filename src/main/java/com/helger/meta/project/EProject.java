@@ -125,7 +125,7 @@ public enum EProject implements IProject
                   EProjectType.OTHER_PLUGIN,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "2.3.3.3",
+                  "4.0.0",
                   EJDK.JDK8),
   PH_WSIMPORT_PLUGIN (null,
                       EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -134,7 +134,7 @@ public enum EProject implements IProject
                       EProjectType.OTHER_PLUGIN,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "2.3.3.2",
+                      "4.0.0",
                       EJDK.JDK8),
 
   META (null,
@@ -660,9 +660,7 @@ public enum EProject implements IProject
                               EJDK.JDK8),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM,
-                             "phoss-directory-publisher",
-                             EProjectType.JAVA_WEB_APPLICATION),
+  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_DIRECTORY_CLIENT (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-client", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_SEARCHAPI (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -746,9 +744,7 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProject (@Nonnull final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject, @Nonnull @Nonempty final String sProjectName, @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
@@ -758,11 +754,7 @@ public enum EProject implements IProject
             @Nonnull @Nonempty final String sProjectBaseDirName,
             @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject,
-          sProjectName,
-          sProjectBaseDirName,
-          eProjectType,
-          eParentProject.getLastPublishedVersionString ());
+    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
   }
 
   EProject (@Nonnull final EProject eParentProject,
@@ -861,8 +853,7 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
