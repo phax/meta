@@ -96,7 +96,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "10.2.0",
+                         "11.0.0",
                          EJDK.JDK8),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   PH_CLI (PH_COMMONS_PARENT_POM, "ph-cli", EProjectType.JAVA_LIBRARY),
@@ -120,7 +120,7 @@ public enum EProject implements IProject
 
   PH_JAXB_PLUGIN (null,
                   EProjectOwner.DEFAULT_PROJECT_OWNER,
-                  "ph-jaxb22-plugin",
+                  "ph-jaxb-plugin",
                   "ph-jaxb-plugin",
                   EProjectType.OTHER_PLUGIN,
                   EHasPages.FALSE,
