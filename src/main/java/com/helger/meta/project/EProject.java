@@ -163,7 +163,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "4.2.0",
+                       "5.0.0",
                        EJDK.JDK8),
   PH_FONTS_API (PH_FONTS_PARENT_POM, "ph-fonts-api", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ALEGREYA_SANS (PH_FONTS_PARENT_POM, "ph-fonts-alegreya-sans", EProjectType.JAVA_LIBRARY),
@@ -184,7 +184,7 @@ public enum EProject implements IProject
                   EProjectType.JAVA_LIBRARY,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "6.0.3",
+                  "7.0.0",
                   EJDK.JDK8),
   PH_POI (null,
           EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -193,17 +193,8 @@ public enum EProject implements IProject
           EProjectType.JAVA_LIBRARY,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          "5.3.2",
+          "6.0.0",
           EJDK.JDK8),
-  PH_XMLDSIG (null,
-              EProjectOwner.DEFAULT_PROJECT_OWNER,
-              "ph-xmldsig",
-              "ph-xmldsig",
-              EProjectType.JAVA_LIBRARY,
-              EHasPages.FALSE,
-              EHasWiki.FALSE,
-              "4.4.3",
-              EJDK.JDK8),
 
   PH_XSDS_PARENT_POM (null,
                       EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -226,6 +217,16 @@ public enum EProject implements IProject
   PH_XSDS_WSADDR (PH_XSDS_PARENT_POM, "ph-xsds-wsaddr", EProjectType.JAVA_LIBRARY),
   PH_XSDS_BDXR_SMP1 (PH_XSDS_PARENT_POM, "ph-xsds-bdxr-smp1", EProjectType.JAVA_LIBRARY),
   PH_XSDS_BDXR_SMP2 (PH_XSDS_PARENT_POM, "ph-xsds-bdxr-smp2", EProjectType.JAVA_LIBRARY),
+
+  PH_XMLDSIG (null,
+              EProjectOwner.DEFAULT_PROJECT_OWNER,
+              "ph-xmldsig",
+              "ph-xmldsig",
+              EProjectType.JAVA_LIBRARY,
+              EHasPages.FALSE,
+              EHasWiki.FALSE,
+              "4.4.3",
+              EJDK.JDK8),
 
   PH_ASIC (null,
            EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -660,7 +661,9 @@ public enum EProject implements IProject
                               EJDK.JDK8),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
-  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-publisher", EProjectType.JAVA_WEB_APPLICATION),
+  PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM,
+                             "phoss-directory-publisher",
+                             EProjectType.JAVA_WEB_APPLICATION),
   PHOSS_DIRECTORY_CLIENT (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-client", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_SEARCHAPI (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-searchapi", EProjectType.JAVA_LIBRARY),
 
@@ -744,7 +747,9 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProject (@Nonnull final EProject eParentProject, @Nonnull @Nonempty final String sProjectName, @Nonnull final EProjectType eProjectType)
+  EProject (@Nonnull final EProject eParentProject,
+            @Nonnull @Nonempty final String sProjectName,
+            @Nonnull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
@@ -754,7 +759,11 @@ public enum EProject implements IProject
             @Nonnull @Nonempty final String sProjectBaseDirName,
             @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
   }
 
   EProject (@Nonnull final EProject eParentProject,
@@ -853,7 +862,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
