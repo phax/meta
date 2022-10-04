@@ -290,8 +290,8 @@ public enum EExternalDependency
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.1", EJDK.JDK11),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.7.1", EJDK.JDK8),
-  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.7.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.7.2", EJDK.JDK8),
+  MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.7.2", EJDK.JDK8),
 
   MYSQL ("mysql", "mysql-connector-java", "8.0.30", EJDK.JDK8),
 
