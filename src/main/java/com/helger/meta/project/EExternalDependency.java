@@ -81,7 +81,7 @@ public enum EExternalDependency
   @IsLegacy (replacedWith = "org.dom4j:dom4j")
   DOM4J_OLD("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.3", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "4.3", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "5.0.0", EJDK.JDK8),
 
   ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
   ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
@@ -118,7 +118,7 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.7", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.4", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "1.13.1", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20221004", EJDK.JDK11),
@@ -319,7 +319,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "11.4", EJDK.JDK8),
-  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.3", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.4", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.5.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
@@ -347,6 +347,7 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.12.0", EJDK.JDK8),
 
   WSS4J_2 ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
+  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.0", EJDK.JDK11),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.1.1", EJDK.JDK8),
 
