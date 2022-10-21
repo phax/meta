@@ -1,18 +1,18 @@
 # My personal Maven cheat sheet
 
-##Installation
+## Installation
 
-  * Download Maven
-  * Extract to `d:\tools\` &rarr; will create `apache-maven-x.y.z` folder
-  * Set environment variable:
-    * `set M2_HOME=d:\tools\apache-maven-x.y.z`
+* Download Apache Maven latest
+* Extract to `c:\tools\` &rarr; will create `apache-maven-x.y.z` folder
+* Set environment variable:
+    * `set M2_HOME=c:\tools\apache-maven-x.y.z`
     * `set PATH=%PATH%;%M2_HOME%\bin`
-  * Create settings.xml:
+* Create `settings.xml`:
 
 ```xml
 <?xml version="1.0" encoding="iso-8859-1"?>
 <settings>
-  <localRepository>D:/maven-repo/</localRepository>
+  <localRepository>C:/maven-repo/</localRepository>
   <servers>
     <server>
       <id>repo.ph.nexus</id>
@@ -42,7 +42,7 @@
       <host>1.2.3.4</host>
       <port>8080</port>
       <!-- separate by | char -->
-      <nonProxyHosts>*.gv.at</nonProxyHosts>
+      <nonProxyHosts>*.example.org</nonProxyHosts>
    </proxy>
   </proxies>
   <mirrors>
@@ -62,7 +62,7 @@
 
 Create a batch file `mvnrelease_github.cmd` with the following content:
 
-```
+```shell
 @echo off
 call mvn release:prepare %*
 if errorlevel 1 goto err
@@ -79,7 +79,7 @@ pause
 
 SVN username and password must be passed on the commandline. Replace "x" and "y" below.
 
-```
+```shell
 @echo off
 call mvn release:prepare -Dusername=x -Dpassword=x %*
 if errorlevel 1 goto err
@@ -95,8 +95,17 @@ pause
 ## License headers
 
 License headers in source files are automatically added using the Maven license plugin. Simply call the following on the commandline:
-```
+
+```shell
 mvn license:format
 ```
 
 The license source file must be located in the path `src/etc/license-template.txt` - the path is specified in my parent POM file.
+
+## Version number handling
+
+Set a new version to a project
+
+```shell
+mvn versions:set -DgenerateBackupPoms=false -DnewVersion=x.y.z-SNAPSHOT
+```
