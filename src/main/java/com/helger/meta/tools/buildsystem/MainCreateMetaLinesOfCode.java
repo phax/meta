@@ -68,6 +68,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     GROOVY ("Groovy", true, new CommonsTreeSet <> ("groovy")),
     HTML ("HTML", true, new CommonsTreeSet <> ("html", "htm", "xhtml")),
     JAVA ("Java", true, new CommonsTreeSet <> ("java", "jsp")),
+    JDM ("JDM", true, new CommonsTreeSet <> ("jdm")),
     JS ("JavaScript", true, new CommonsTreeSet <> ("js")),
     JSON ("JSON", true, new CommonsTreeSet <> ("json")),
     PROPERTIES ("Properties", true, new CommonsTreeSet <> ("properties", "conf")),
@@ -94,7 +95,6 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                 "xsig",
                                 "xsl",
                                 "xslt")),
-    JDM ("JDM", true, new CommonsTreeSet <> ("jdm")),
     // Binary stuff
     EXCEL ("Excel", false, new CommonsTreeSet <> ("xls", "xlsx", "ods")),
     FLASH ("Flash", false, new CommonsTreeSet <> ("swf")),
@@ -104,6 +104,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
            new CommonsTreeSet <> ("bmp", "gif", "icc", "ico", "jpg", "otf", "png", "svg", "woff", "woff2")),
     KEYSTORE ("Keystore", false, new CommonsTreeSet <> ("cer", "crt", "der", "jks", "pem", "pfx", "p12")),
     PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
+    RAR ("RAR", false, new CommonsTreeSet <> ("rar")),
     WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
     ZIP ("ZIP", false, new CommonsTreeSet <> ("asice", "gz", "zip")),
     // known rest
@@ -111,6 +112,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                 false,
                 new CommonsTreeSet <> ("",
                                        "95",
+                                       "as4in",
                                        "attachment",
                                        "b64",
                                        "bak",
