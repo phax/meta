@@ -21,7 +21,7 @@ public final class MainCreateMergeList
 
   public static void main (final String [] args)
   {
-    final File aBaseDir = new File ("C:\\a\\F1 Singapur\\R");
+    final File aBaseDir = new File ("C:\\a\\F1 USA");
     final String sRegEx = "([0-9]+)?.*\\.mp4";
 
     final ICommonsList <File> files = new CommonsArrayList <> ();
@@ -32,8 +32,10 @@ public final class MainCreateMergeList
       if (!s1.equals (s2))
         f.renameTo (new File (f.getParentFile (), s2));
     }
+
     for (final File f : new FileSystemIterator (aBaseDir).withFilter (IFileFilter.filenameMatchAnyRegEx (sRegEx)))
       files.add (f);
+
     if (files.isNotEmpty ())
     {
       if (true)
@@ -51,6 +53,7 @@ public final class MainCreateMergeList
       SimpleFileIO.writeFile (new File (aBaseDir, "_a.cmd"),
                               "@echo off\r\n" + "ffmpeg -f concat -safe 0 -i _a.txt -c copy _a.mp4\r\n",
                               StandardCharsets.ISO_8859_1);
+      LOGGER.info ("Done in " + aBaseDir);
     }
     else
       LOGGER.error ("No file found");
