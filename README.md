@@ -721,7 +721,7 @@ Current list of all unreleased projects:
 
  * [bozoo](https://github.com/phax/bozoo) - JDK 1.8
 
- * [meta](https://github.com/phax/meta) - JDK 1.8
+ * [meta](https://github.com/phax/meta) - JDK 11
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 1.8
 

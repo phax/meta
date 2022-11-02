@@ -145,7 +145,7 @@ public enum EProject implements IProject
         EHasPages.FALSE,
         EHasWiki.FALSE,
         null,
-        EJDK.JDK8),
+        EJDK.JDK11),
   PGCC (null,
         EProjectOwner.DEFAULT_PROJECT_OWNER,
         "parser-generator-cc",
