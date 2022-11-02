@@ -56,15 +56,15 @@ import com.helger.xml.microdom.serialize.MicroReader;
 public final class ProjectList
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (ProjectList.class);
-  private static final ICommonsOrderedSet <File> s_aBaseDirs = new CommonsLinkedHashSet <> ();
-  private static final ICommonsOrderedMap <String, IProject> s_aName2Project = new CommonsLinkedHashMap <> ();
+  private static final ICommonsOrderedSet <File> BASE_DIRS = new CommonsLinkedHashSet <> ();
+  private static final ICommonsOrderedMap <String, IProject> NAME_TO_PROJECT = new CommonsLinkedHashMap <> ();
 
   private static void _add (@Nonnull final IProject aProject)
   {
     final String sKey = aProject.getProjectName ();
-    if (s_aName2Project.containsKey (sKey))
+    if (NAME_TO_PROJECT.containsKey (sKey))
       throw new IllegalArgumentException ("Another project with name '" + sKey + "' is already contained!");
-    s_aName2Project.put (sKey, aProject);
+    NAME_TO_PROJECT.put (sKey, aProject);
   }
 
   static
@@ -90,14 +90,14 @@ public final class ProjectList
           final String sBaseDir = eBaseDir.getTextContentTrimmed ();
           final File aBaseDir = new File (sBaseDir);
           if (aBaseDir.exists ())
-            if (!s_aBaseDirs.add (aBaseDir))
+            if (!BASE_DIRS.add (aBaseDir))
               LOGGER.warn ("Duplicate base dir present: " + aBaseDir);
             else
               if (LOGGER.isDebugEnabled ())
                 LOGGER.debug ("Added base dir " + aBaseDir.getAbsolutePath ());
         }
 
-        if (s_aBaseDirs.isEmpty ())
+        if (BASE_DIRS.isEmpty ())
           LOGGER.error ("No base directory is present - resolution of other projects will fail!");
 
         for (final IMicroElement eProject : aOthers.getDocumentElement ().getAllChildElements ("project"))
@@ -121,27 +121,27 @@ public final class ProjectList
   @Nullable
   public static IProject getProjectOfName (@Nullable final String sName)
   {
-    return s_aName2Project.get (sName);
+    return NAME_TO_PROJECT.get (sName);
   }
 
   @Nonnull
   @ReturnsMutableCopy
   public static ICommonsList <IProject> getAllProjects ()
   {
-    return s_aName2Project.copyOfValues ();
+    return NAME_TO_PROJECT.copyOfValues ();
   }
 
   @Nonnull
   @ReturnsMutableCopy
   public static ICommonsList <IProject> getAllProjects (@Nonnull final Predicate <IProject> aFilter)
   {
-    return s_aName2Project.copyOfValues (aFilter);
+    return NAME_TO_PROJECT.copyOfValues (aFilter);
   }
 
   @Nonnegative
   public static int size ()
   {
-    return s_aName2Project.size ();
+    return NAME_TO_PROJECT.size ();
   }
 
   public static boolean containsProjectOfDir (@Nullable final String sDirName)
@@ -149,14 +149,14 @@ public final class ProjectList
     if (StringHelper.hasNoText (sDirName))
       return false;
 
-    return CollectionHelper.containsAny (s_aName2Project.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
+    return CollectionHelper.containsAny (NAME_TO_PROJECT.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
   }
 
   @Nonnull
   public static File findBaseDirectory (@Nonnull @Nonempty final String sDir)
   {
     ValueEnforcer.notEmpty (sDir, "Dir");
-    for (final File aBaseDir : s_aBaseDirs)
+    for (final File aBaseDir : BASE_DIRS)
     {
       final File ret = new File (aBaseDir, sDir);
       if (ret.exists ())
@@ -166,6 +166,6 @@ public final class ProjectList
         return ret;
       }
     }
-    throw new IllegalStateException ("Failed to resolve directory '" + sDir + "' in " + s_aBaseDirs.toString ());
+    throw new IllegalStateException ("Failed to resolve directory '" + sDir + "' in " + BASE_DIRS.toString ());
   }
 }
