@@ -46,7 +46,7 @@ public enum EExternalDependency
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.1", EJDK.JDK8),
-  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.15", EJDK.JDK8),
+  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.16", EJDK.JDK8),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.70", EJDK.JDK8),
   BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
@@ -55,7 +55,7 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.72", EJDK.JDK8),
-  BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
+  BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", "1.72.1", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
@@ -69,7 +69,7 @@ public enum EExternalDependency
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
-  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.21", EJDK.JDK8),
+  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.22", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.9.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
@@ -81,7 +81,7 @@ public enum EExternalDependency
   @IsLegacy (replacedWith = "org.dom4j:dom4j")
   DOM4J_OLD("dom4j", "dom4j", "1.6.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.3", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "5.0.0", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "5.0.1", EJDK.JDK8),
 
   ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
   ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
@@ -109,9 +109,9 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.1", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.2", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.5.1", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.7.0", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
@@ -121,25 +121,25 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20221004", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.8", EJDK.JDK8),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20221102", EJDK.JDK11),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.9", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.1.4", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.0", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.15", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
   HTTP_CLIENT_FLUENT_HC4 ("org.apache.httpcomponents", "fluent-hc", "4.5.13", EJDK.JDK8),
 
-  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.1.4", EJDK.JDK8),
+  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.2", EJDK.JDK8),
   HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.1.3", EJDK.JDK8),
 
-  IBM_JCC ("com.ibm.db2", "jcc", "11.5.7.0", EJDK.JDK8),
+  IBM_JCC ("com.ibm.db2", "jcc", "11.5.8.0", EJDK.JDK8),
 
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.13.4", EJDK.JDK8),
+  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", "2.14.0", EJDK.JDK8),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_CORE),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_CORE),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_CORE),
@@ -214,7 +214,7 @@ public enum EExternalDependency
   JERSEY2_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY2_BOM),
 
   @IsBOM
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.0.8", EJDK.JDK11),
+  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.0", EJDK.JDK11),
   JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
   JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
@@ -280,7 +280,7 @@ public enum EExternalDependency
   LUCENE8_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", "8.11.2", EJDK.JDK11),
 
   // JDK 11 is just fake, because I'm stuck with Lucene 7 in Directory
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.4.0", EJDK.JDK11),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.4.1", EJDK.JDK11),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -308,7 +308,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.6.3", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.7.0", EJDK.JDK8),
 
   POI ("org.apache.poi", "poi", "5.2.3", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
@@ -320,7 +320,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "11.4", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.4", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.5.2", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.6.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.3", EJDK.JDK8),
@@ -344,7 +344,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.0.2", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.12.0", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.13.0", EJDK.JDK8),
 
   WSS4J_2 ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
   WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.0", EJDK.JDK11),
@@ -356,7 +356,7 @@ public enum EExternalDependency
   XMLSEC_3 ("org.apache.santuario", "xmlsec", "3.0.1", EJDK.JDK11),
 
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
-  ZXING_CORE ("com.google.zxing", "core", "3.5.0", EJDK.JDK8),
+  ZXING_CORE ("com.google.zxing", "core", "3.5.1", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
 
   // parent POM dependencies
@@ -371,7 +371,7 @@ public enum EExternalDependency
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.10.1", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.2.0", EJDK.JDK8),
+  PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.0.1", EJDK.JDK8),
@@ -387,7 +387,7 @@ public enum EExternalDependency
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.0", EJDK.JDK8),
+  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "2.22.2", EJDK.JDK8),
@@ -397,7 +397,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.2.1", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.2.2", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 
