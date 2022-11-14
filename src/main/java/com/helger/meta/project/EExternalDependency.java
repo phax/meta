@@ -45,7 +45,7 @@ public enum EExternalDependency
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
-  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.1", EJDK.JDK8),
+  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.2", EJDK.JDK8),
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.16", EJDK.JDK8),
 
   BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.70", EJDK.JDK8),
@@ -60,10 +60,7 @@ public enum EExternalDependency
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
 
-  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
-                               "classloader-leak-prevention-core",
-                               "2.7.0",
-                               EJDK.JDK8),
+  CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention", "classloader-leak-prevention-core", "2.7.0", EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
@@ -111,11 +108,10 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.2", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.7.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.8.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FOP0 ("fop", "fop", "0.20.5", EJDK.JDK8),
-  FOP ("org.apache.xmlgraphics", "fop", "2.7", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.4", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
@@ -128,14 +124,14 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.0", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.1", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.15", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.13", EJDK.JDK8),
   HTTP_CLIENT_FLUENT_HC4 ("org.apache.httpcomponents", "fluent-hc", "4.5.13", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.2", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.1.3", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.2", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.8.0", EJDK.JDK8),
 
@@ -286,7 +282,7 @@ public enum EExternalDependency
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
   LUCENE9_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE9_CORE),
 
-  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.6.4", EJDK.JDK8),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.7.0", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
@@ -397,7 +393,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.2.2", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 
@@ -531,14 +527,11 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
-                                                            @Nullable final String sArtifactID)
+  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
-                                                                 x.hasArtifactID (sArtifactID));
+    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
-    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
-                        .reversed ());
+    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ()).reversed ());
     return ret;
   }
 
