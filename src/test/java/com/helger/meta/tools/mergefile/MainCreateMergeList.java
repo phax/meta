@@ -21,7 +21,7 @@ public final class MainCreateMergeList
 
   public static void main (final String [] args)
   {
-    final File aBaseDir = new File ("C:\\a\\F1 USA\\R");
+    final File aBaseDir = new File ("C:\\a\\F1 Sao Paolo\\R");
     final String sRegEx = "([0-9]+)?.*\\.mp4";
 
     final ICommonsList <File> files = new CommonsArrayList <> ();
