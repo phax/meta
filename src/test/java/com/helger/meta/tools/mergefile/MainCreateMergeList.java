@@ -21,14 +21,15 @@ public final class MainCreateMergeList
 
   public static void main (final String [] args)
   {
-    final File aBaseDir = new File ("C:\\a\\F1 Sao Paolo\\R");
+    final File aBaseDir = new File ("C:\\a\\WD");
     final String sRegEx = "([0-9]+)?.*\\.mp4";
 
     final ICommonsList <File> files = new CommonsArrayList <> ();
     for (final File f : new FileSystemIterator (aBaseDir).withFilter (IFileFilter.filenameMatchAnyRegEx (sRegEx)))
     {
       final String s1 = f.getName ();
-      final String s2 = FilenameHelper.getAsSecureValidASCIIFilename (s1);
+      String s2 = FilenameHelper.getAsSecureValidASCIIFilename (s1);
+      s2 = s2.replace ("'", "");
       if (!s1.equals (s2))
         f.renameTo (new File (f.getParentFile (), s2));
     }
