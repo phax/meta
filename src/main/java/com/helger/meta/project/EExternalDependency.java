@@ -153,7 +153,9 @@ public enum EExternalDependency
   // We need to wait for BouncyCastle before we can update
   JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
   JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
-  JAKARTA_SERVLET_API_5 ("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
+
+  @VersionMaxExcl ("6.0.0")
+  JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
   JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK11),
 
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
@@ -165,13 +167,15 @@ public enum EExternalDependency
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.12", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
   // @IsLegacy (replacedWith = "4.x")
-  JAVAX_SERVLET_API_3 ("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
+  @VersionMaxExcl ("4.0.0")
+  JAVAX_SERVLET_API_3("javax.servlet", "javax.servlet-api", "3.1.0", EJDK.JDK8),
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_4 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK11),
 
   JAXB2_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  JAXB2_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "2.3.6", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  JAXB2_BOM("com.sun.xml.bind", "jaxb-bom-ext", "2.3.6", EJDK.JDK8),
   JAXB2_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB2_BOM),
 
   @IsLegacy (replacedWith = "com.evolvedbinary.maven.jvnet:jaxb2-maven-plugin")
@@ -186,7 +190,8 @@ public enum EExternalDependency
 
   JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
   @IsBOM
-  JAXWS2_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "2.3.5", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  JAXWS2_RI_BOM("com.sun.xml.ws", "jaxws-ri-bom", "2.3.5", EJDK.JDK8),
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
@@ -205,7 +210,8 @@ public enum EExternalDependency
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
-  JERSEY2_BOM ("org.glassfish.jersey", "jersey-bom", "2.35", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  JERSEY2_BOM("org.glassfish.jersey", "jersey-bom", "2.35", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
@@ -221,7 +227,8 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY9_BOM ("org.eclipse.jetty", "jetty-bom", "9.4.50.v20221201", EJDK.JDK8),
+  @VersionMaxExcl ("10.0.0")
+  JETTY9_BOM("org.eclipse.jetty", "jetty-bom", "9.4.50.v20221201", EJDK.JDK8),
   JETTY9_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY9_BOM),
   JETTY9_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY9_BOM),
   JETTY9_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY9_BOM),
@@ -269,7 +276,8 @@ public enum EExternalDependency
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE_CORE ("org.apache.lucene", "lucene-core", "7.7.3", EJDK.JDK8),
+  @VersionMaxExcl ("8.0.0")
+  LUCENE_CORE("org.apache.lucene", "lucene-core", "7.7.3", EJDK.JDK8),
   LUCENE_ANALYZER_COMMON ("org.apache.lucene", "lucene-analyzers-common", LUCENE_CORE),
   LUCENE_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE_CORE),
   LUCENE_DEMO ("org.apache.lucene", "lucene-demo", LUCENE_CORE),
@@ -295,7 +303,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.8.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.8.1", EJDK.JDK8),
 
-  MYSQL ("mysql", "mysql-connector-java", "8.0.31", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-java", "8.0.31", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.8.0.0", EJDK.JDK8),
@@ -329,13 +337,15 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
   @IsBOM
-  SPRING5_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "5.3.23", EJDK.JDK8),
+  @VersionMaxExcl ("6.0.0")
+  SPRING5_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "5.3.23", EJDK.JDK8),
 
   @IsBOM
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.2", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT2_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "2.7.6", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.6", EJDK.JDK8),
   SPRING_BOOT2_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT2_DEPENDENCIES),
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
@@ -354,7 +364,8 @@ public enum EExternalDependency
 
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.14.0", EJDK.JDK8),
 
-  WSS4J_2 ("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  WSS4J_2("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
   WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.0", EJDK.JDK11),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.1.1", EJDK.JDK8),
@@ -416,18 +427,38 @@ public enum EExternalDependency
   private final EJDK m_eMinJDK;
   private final boolean m_bIsBOM;
   private final boolean m_bIsLegacy;
+  private final VersionMaxExcl m_aVersionMax;
 
   EExternalDependency (@Nonnull @Nonempty final String sGroupID,
                        @Nonnull @Nonempty final String sArticfactID,
                        @Nonnull final EExternalDependency eBase)
   {
-    this (sGroupID, sArticfactID, eBase.getLastPublishedVersionString (), eBase.getMinimumJDKVersion ());
+    this (sGroupID,
+          sArticfactID,
+          eBase.getLastPublishedVersionString (),
+          eBase.getMinimumJDKVersion (),
+          eBase.getVersionMaxExcl ());
   }
 
   EExternalDependency (@Nonnull @Nonempty final String sGroupID,
                        @Nonnull @Nonempty final String sArticfactID,
                        @Nonnull @Nonempty final String sVersion,
                        @Nonnull final EJDK eMinJDK)
+  {
+    this (sGroupID, sArticfactID, sVersion, eMinJDK, null);
+  }
+
+  @Nullable
+  private static <T> T _nonNull (@Nullable final T a, @Nullable final T b)
+  {
+    return a != null ? a : b;
+  }
+
+  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
+                       @Nonnull @Nonempty final String sArticfactID,
+                       @Nonnull @Nonempty final String sVersion,
+                       @Nonnull final EJDK eMinJDK,
+                       @Nullable final VersionMaxExcl aVersionMaxParent)
   {
     m_sGroupID = sGroupID;
     m_sArticfactID = sArticfactID;
@@ -439,6 +470,7 @@ public enum EExternalDependency
       final Field aField = EExternalDependency.class.getField (name ());
       m_bIsBOM = aField.isAnnotationPresent (IsBOM.class);
       m_bIsLegacy = aField.isAnnotationPresent (IsLegacy.class);
+      m_aVersionMax = _nonNull (aField.getAnnotation (VersionMaxExcl.class), aVersionMaxParent);
     }
     catch (final Exception ex)
     {
@@ -481,6 +513,18 @@ public enum EExternalDependency
   public String getLastPublishedVersionString ()
   {
     return m_sVersion;
+  }
+
+  @Nullable
+  public VersionMaxExcl getVersionMaxExcl ()
+  {
+    return m_aVersionMax;
+  }
+
+  @Nullable
+  public String getMaxVersionString ()
+  {
+    return m_aVersionMax == null ? null : m_aVersionMax.value ();
   }
 
   @Nonnull

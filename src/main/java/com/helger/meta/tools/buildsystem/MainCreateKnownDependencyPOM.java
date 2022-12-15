@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.datetime.PDTFactory;
+import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.IProject;
@@ -68,7 +69,17 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
         final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
         eDep.appendElement (NS, "groupId").appendText (e.getGroupID ());
         eDep.appendElement (NS, "artifactId").appendText (e.getArtifactID ());
-        eDep.appendElement (NS, "version").appendText (e.getLastPublishedVersionString ());
+
+        final String sMaxVersion = e.getMaxVersionString ();
+        if (StringHelper.hasNoText (sMaxVersion))
+          eDep.appendElement (NS, "version").appendText (e.getLastPublishedVersionString ());
+        else
+        {
+          // User a version range
+          eDep.appendElement (NS, "version")
+              .appendText ("[" + e.getLastPublishedVersionString () + "," + sMaxVersion + ")");
+        }
+
         if (e.isBOM ())
           eDep.appendElement (NS, "type").appendText ("pom");
       }
