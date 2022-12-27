@@ -303,7 +303,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.8.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.8.1", EJDK.JDK8),
 
-  MYSQL ("com.mysql", "mysql-connector-java", "8.0.31", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "8.0.31", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.8.0.0", EJDK.JDK8),
