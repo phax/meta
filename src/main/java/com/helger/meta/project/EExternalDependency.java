@@ -109,9 +109,9 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.3.1", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.3.3", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.10.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.10.2", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -305,7 +305,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.8.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", "4.8.1", EJDK.JDK8),
 
-  MYSQL ("com.mysql", "mysql-connector-java", "8.0.31", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "8.0.31", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.8.0.0", EJDK.JDK8),
@@ -343,7 +343,7 @@ public enum EExternalDependency
   SPRING5_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "5.3.23", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.2", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.3", EJDK.JDK11),
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
@@ -352,19 +352,19 @@ public enum EExternalDependency
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.0", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.1", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.1", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.2", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.2", EJDK.JDK8),
 
   JAVAX_VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.0.2", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.14.0", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.14.2", EJDK.JDK8),
 
   @VersionMaxExcl ("3.0.0")
   WSS4J_2("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
