@@ -1110,11 +1110,6 @@
       <version>1.4.2</version>
     </dependency>
     <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>2.0.1.Final</version>
-    </dependency>
-    <dependency>
       <groupId>jakarta.validation</groupId>
       <artifactId>jakarta.validation-api</artifactId>
       <version>3.0.2</version>
@@ -1587,103 +1582,139 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
-      <version>4.4.3</version>
+      <version>5.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb-maven-plugin-project</artifactId>
+      <version>0.16.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb-maven-plugin-core</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb22-maven-plugin</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb23-maven-plugin</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb30-maven-plugin</artifactId>
+      <version>0.16.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>jaxb40-maven-plugin</artifactId>
+      <version>0.16.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-parent-pom</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xml</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xlink</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmldsig</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmldsig11</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmlenc</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmlenc11</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xades132</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xades141</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-ccts-cct-schemamodule</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-wsaddr</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-bdxr-smp1</artifactId>
-      <version>2.6.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-bdxr-smp2</artifactId>
-      <version>2.6.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-asic</artifactId>
-      <version>1.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-regrep</artifactId>
-      <version>1.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-xhe</artifactId>
       <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>ph-asic</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-regrep</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-sbdh</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-xhe</artifactId>
+      <version>4.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
-      <version>6.5.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fatturapa</artifactId>
       <version>1.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>ph-sbdh</artifactId>
-      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

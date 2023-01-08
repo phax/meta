@@ -361,7 +361,8 @@ public enum EExternalDependency
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.7.2", EJDK.JDK8),
   TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.2", EJDK.JDK8),
 
-  JAVAX_VALIDATION_API ("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
+  @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
+  JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.0.2", EJDK.JDK8),
 
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.14.2", EJDK.JDK8),

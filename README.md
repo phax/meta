@@ -50,6 +50,27 @@ Current list of all released projects (as of 2023-01-08):
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
+ * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
+ * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 
+ * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin) 
+ * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin) 
+ * [maven-jaxb2-plugin/plugin-3.0](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin) 
+ * [maven-jaxb2-plugin/plugin-4.0](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin) 
+ * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core) 
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
@@ -80,7 +101,7 @@ Current list of all released projects (as of 2023-01-08):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 8.8.2 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
- * [ph-asic](https://github.com/phax/ph-asic) - Version 1.7.0 - JDK 1.8
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 2.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 3.0.2 - JDK 1.8
@@ -188,7 +209,7 @@ Current list of all released projects (as of 2023-01-08):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 3.0.3 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 6.5.0 - JDK 1.8
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.0.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
  * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 1.2.0 - JDK 1.8
@@ -371,10 +392,10 @@ Current list of all released projects (as of 2023-01-08):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 6.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
- * [ph-regrep](https://github.com/phax/ph-regrep) - Version 1.2.0 - JDK 1.8
+ * [ph-regrep](https://github.com/phax/ph-regrep) - Version 2.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep) 
- * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 4.3.0 - JDK 1.8
+ * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 5.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 4.2.0 - JDK 1.8
@@ -500,49 +521,49 @@ Current list of all released projects (as of 2023-01-08):
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 3.0.0 - JDK 1.8
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 4.4.3 - JDK 1.8
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 5.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
- * [ph-xsds](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-parent-pom) 
- * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-bdxr-smp1/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-bdxr-smp1) 
- * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-bdxr-smp2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-bdxr-smp2) 
- * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-ccts-cct-schemamodule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-ccts-cct-schemamodule) 
- * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-wsaddr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-wsaddr) 
- * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xades132/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xades132) 
- * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xades141/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xades141) 
- * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xlink/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xlink) 
- * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xml) 
- * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmldsig) 
- * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmldsig11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmldsig11) 
- * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc) 
- * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 2.6.0 - JDK 1.8
+ * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.xsd/ph-xsds-xmlenc11) 
  * [phase4](https://github.com/phax/phase4) - Version 1.4.2 - JDK 1.8
@@ -771,21 +792,6 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
  * jgatsp - never released
- * maven-jaxb2-plugin - Version 0.14.3
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
- * maven-jaxb2-plugin/plugin - Version 0.14.3
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 
- * maven-jaxb2-plugin/plugin-2.2 - Version 0.14.3
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin) 
- * maven-jaxb2-plugin/plugin-2.3 - Version 0.14.3
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin) 
- * maven-jaxb2-plugin/plugin-core - Version 0.14.3
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core) 
  * peppol-directory - Version 0.7.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom) 
