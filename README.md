@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2022-12-27):
+Current list of all released projects (as of 2023-01-08):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.3 - JDK 1.8
 
@@ -773,19 +773,19 @@ All deprecated projects:
  * jgatsp - never released
  * maven-jaxb2-plugin - Version 0.14.3
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb-maven-plugin-project) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
  * maven-jaxb2-plugin/plugin - Version 0.14.3
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb2-maven-plugin) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 
  * maven-jaxb2-plugin/plugin-2.2 - Version 0.14.3
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb22-maven-plugin) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin) 
  * maven-jaxb2-plugin/plugin-2.3 - Version 0.14.3
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb23-maven-plugin) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin) 
  * maven-jaxb2-plugin/plugin-core - Version 0.14.3
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.evolvedbinary.maven.jvnet/jaxb-maven-plugin-core) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core) 
  * peppol-directory - Version 0.7.2
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-directory-parent-pom) 
