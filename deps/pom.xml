@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230108</version>
+  <version>1.0.0-20230109</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1714,33 +1714,33 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fatturapa</artifactId>
-      <version>1.2.0</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-genericode</artifactId>
-      <version>6.3.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.cii</groupId>
       <artifactId>ph-cii-parent-pom</artifactId>
-      <version>2.5.0</version>
+      <version>3.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.cii</groupId>
       <artifactId>ph-cii-testfiles</artifactId>
-      <version>2.5.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.cii</groupId>
       <artifactId>ph-cii-d16a-1</artifactId>
-      <version>2.5.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.cii</groupId>
       <artifactId>ph-cii-d16b</artifactId>
-      <version>2.5.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
@@ -1821,13 +1821,13 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-math-parent-pom</artifactId>
-      <version>4.1.0</version>
+      <version>5.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-math</artifactId>
-      <version>4.1.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1837,12 +1837,12 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-buildinfo-maven-plugin</artifactId>
-      <version>3.0.2</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-dirindex-maven-plugin</artifactId>
-      <version>3.0.3</version>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1852,7 +1852,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-merge-jaxb-episodes-maven-plugin</artifactId>
-      <version>0.0.2</version>
+      <version>0.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1862,13 +1862,13 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-datetime-parent-pom</artifactId>
-      <version>6.2.0</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-holiday</artifactId>
-      <version>6.2.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1910,18 +1910,18 @@
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
-      <version>6.2.4</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>6.2.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-tenancy</artifactId>
-      <version>6.2.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
@@ -2008,48 +2008,48 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>6.3.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
