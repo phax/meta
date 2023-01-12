@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230109</version>
+  <version>1.0.0-20230112</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -11,24 +11,19 @@
       <version>1.1.2</version>
     </dependency>
     <dependency>
-      <groupId>com.netflix.archaius</groupId>
-      <artifactId>archaius-core</artifactId>
-      <version>0.7.7</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant</artifactId>
-      <version>1.10.12</version>
+      <version>1.10.13</version>
     </dependency>
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-apache-resolver</artifactId>
-      <version>1.10.12</version>
+      <version>1.10.13</version>
     </dependency>
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-testutil</artifactId>
-      <version>1.10.12</version>
+      <version>1.10.13</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
@@ -383,7 +378,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents.core5</groupId>
       <artifactId>httpcore5</artifactId>
-      <version>5.2</version>
+      <version>5.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
@@ -782,27 +777,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.9.1</version>
+      <version>5.9.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.9.1</version>
+      <version>5.9.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.9.1</version>
+      <version>5.9.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.9.1</version>
+      <version>5.9.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.9.1</version>
+      <version>1.9.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -1059,7 +1054,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1192,7 +1187,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-checkstyle-plugin</artifactId>
-      <version>3.2.0</version>
+      <version>3.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1207,7 +1202,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-dependency-plugin</artifactId>
-      <version>3.4.0</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1272,12 +1267,12 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-pmd-plugin</artifactId>
-      <version>3.19.0</version>
+      <version>3.20.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-project-info-reports-plugin</artifactId>
-      <version>3.4.1</version>
+      <version>3.4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1587,38 +1582,38 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb-maven-plugin-project</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb-maven-plugin-core</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb22-maven-plugin</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb23-maven-plugin</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb2-maven-plugin</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb30-maven-plugin</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>jaxb40-maven-plugin</artifactId>
-      <version>0.16.0</version>
+      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
@@ -1745,78 +1740,78 @@
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-parent-pom</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-api</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-testfiles</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20-codelists</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21-codelists</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22-codelists</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23-codelists</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ublpe</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubltr</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-dian</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-eforms</artifactId>
-      <version>6.7.0</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1847,7 +1842,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-jscompress-maven-plugin</artifactId>
-      <version>2.2.3</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1873,23 +1868,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>6.7.4</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>6.7.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>6.7.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>6.7.4</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2618,7 +2613,7 @@
     <dependency>
       <groupId>com.helger.erechnung.gv.at</groupId>
       <artifactId>webservice-client</artifactId>
-      <version>3.2.3</version>
+      <version>4.0.0</version>
     </dependency>
   </dependencies>
   <build>
