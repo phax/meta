@@ -140,7 +140,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.8.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON_BOM ("com.fasterxml.jackson.core", "jackson-bom", "2.14.1", EJDK.JDK8),
+  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.14.1", EJDK.JDK8),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON_BOM),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_BOM),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_BOM),
@@ -155,7 +155,10 @@ public enum EExternalDependency
   JAKARTA_MAIL ("com.sun.mail", "jakarta.mail", "1.6.7", EJDK.JDK8),
   // We need to wait for BouncyCastle before we can update
   JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
-  JAKARTA_PERSISTENCE ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
+
+  @Deprecated
+  JAKARTA_PERSISTENCE_2 ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
+  JAKARTA_PERSISTENCE_3 ("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
 
   @VersionMaxExcl ("6.0.0")
   JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
@@ -418,7 +421,6 @@ public enum EExternalDependency
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "2.22.2", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.3.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
-  PARENT_POM_35 ("org.codehaus.mojo", "cobertura-maven-plugin", "2.7", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
   PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
