@@ -108,9 +108,9 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.10", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.4.0", EJDK.JDK8),
+  FLAPDOODLE ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.4.1", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.14.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.14.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -164,7 +164,7 @@ public enum EExternalDependency
 
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
   // We need to wait for implementations
-  JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.1.0", EJDK.JDK11),
+  JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.1.1", EJDK.JDK11),
 
   JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.0", EJDK.JDK8),
 
@@ -189,7 +189,7 @@ public enum EExternalDependency
 
   JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.0", EJDK.JDK11),
   @IsBOM
-  JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.1", EJDK.JDK11),
+  JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.2", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
 
   JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
@@ -201,7 +201,7 @@ public enum EExternalDependency
 
   JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.0", EJDK.JDK11),
   @IsBOM
-  JAXWS4_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "4.0.0", EJDK.JDK11),
+  JAXWS4_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "4.0.1", EJDK.JDK11),
   JAXWS4_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS4_RI_BOM),
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
@@ -241,6 +241,16 @@ public enum EExternalDependency
   JETTY9_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY9_BOM),
 
   @IsBOM
+  @VersionMaxExcl ("11.0.0")
+  JETTY10_BOM("org.eclipse.jetty", "jetty-bom", "10.0.13", EJDK.JDK11),
+  JETTY10_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY10_BOM),
+  JETTY10_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY10_BOM),
+  JETTY10_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY10_BOM),
+  JETTY10_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY10_BOM),
+  JETTY10_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY10_BOM),
+  JETTY10_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY10_BOM),
+
+  @IsBOM
   JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.13", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
@@ -270,7 +280,7 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.9.2", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.3.2", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.4.0", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
@@ -290,7 +300,7 @@ public enum EExternalDependency
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
-  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.1", EJDK.JDK11),
+  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.2", EJDK.JDK11),
   MIGLAYOUT ("com.miglayout", "miglayout-swing", "11.0", EJDK.JDK8),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.8.2", EJDK.JDK8),
@@ -314,7 +324,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.5.2", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.5.3", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -383,7 +393,7 @@ public enum EExternalDependency
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.10.1", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.5.0", EJDK.JDK8),
-  PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.0.0", EJDK.JDK8),
+  PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.2.1", EJDK.JDK8),
