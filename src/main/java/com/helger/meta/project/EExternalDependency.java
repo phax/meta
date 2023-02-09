@@ -56,8 +56,9 @@ public enum EExternalDependency
   BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.72", EJDK.JDK8),
-  BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", "1.72.2", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
+  BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", "1.72.2", EJDK.JDK8),
+  BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
 
