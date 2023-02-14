@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230213</version>
+  <version>1.0.0-20230214</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -434,7 +434,7 @@
     <dependency>
       <groupId>com.sun.activation</groupId>
       <artifactId>jakarta.activation</artifactId>
-      <version>1.2.2</version>
+      <version>[1.2.2,2.0.0)</version>
     </dependency>
     <dependency>
       <groupId>com.sun.activation</groupId>
@@ -442,9 +442,19 @@
       <version>2.0.1</version>
     </dependency>
     <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <version>[1.3.5,2.0.0)</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+    <dependency>
       <groupId>com.sun.mail</groupId>
       <artifactId>jakarta.mail</artifactId>
-      <version>1.6.7</version>
+      <version>[1.6.7,2.0.0)</version>
     </dependency>
     <dependency>
       <groupId>com.sun.mail</groupId>
@@ -872,7 +882,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
+      <artifactId>log4j-slf4j2-impl</artifactId>
       <version>2.19.0</version>
     </dependency>
     <dependency>
