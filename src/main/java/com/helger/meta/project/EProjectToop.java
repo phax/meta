@@ -32,6 +32,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
  *
  * @author Philip Helger
  */
+@Deprecated
 public enum EProjectToop implements IProject
 {
   // toop-commons
@@ -106,7 +107,11 @@ public enum EProjectToop implements IProject
                 @Nonnull @Nonempty final String sProjectBaseDirName,
                 @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
   }
 
   EProjectToop (@Nonnull final EProjectToop eParentProject,
@@ -205,7 +210,8 @@ public enum EProjectToop implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

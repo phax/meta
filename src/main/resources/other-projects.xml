@@ -26,22 +26,25 @@
 
   <project projectname="peppol-analytics" projecttype="java-application" minjdk="8" />
 
+<!-- 
   <project projectname="ial-parent-pom" dir="ial-service" projecttype="maven-pom" minjdk="8" lastpubversion="0.1.6">
     <project projectname="ial-api" projecttype="java-library" />
     <project projectname="ial-webapp" projecttype="java-web-application" />
   </project>
+-->
 
+    <!-- it1:
+    <project projectname="de4a-iem" projecttype="java-library" lastpubversion="0.1.13" />
+     -->
+<!-- 
   <project projectname="de4a-commons-parent-pom" dir="de4a-commons" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.12">
     <project projectname="de4a-kafka-client" projecttype="java-library" />
-    <!-- it1 -->
-    <!-- 
-    <project projectname="de4a-iem" projecttype="java-library" lastpubversion="0.1.11" />
-     -->
-    <!-- it2 -->
     <project projectname="de4a-core-schemas" projecttype="java-library" />
     <project projectname="de4a-canonical-evidences" projecttype="java-library" />
   </project>
-
+-->
+ 
+<!-- 
   <project projectname="dcng-parent-pom" dir="de4a-connector-ng" projecttype="maven-pom" minjdk="8" lastpubversion="0.2.5">
     <project projectname="dcng-api" projecttype="java-library" />
     <project projectname="dcng-core" projecttype="java-library" />
@@ -49,8 +52,6 @@
     <project projectname="dcng-holodeck" projecttype="java-library" />
     <project projectname="dcng-web-api" projecttype="java-library" />
     <project projectname="dcng-webapp-phase4-it1-im" projecttype="java-web-application" />
-    <!-- 
-    <project projectname="dcng-webapp-phase4-it1-usi" projecttype="java-web-application" />
-     -->
   </project>
+-->
 </root>
