@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230209</version>
+  <version>1.0.0-20230213</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -87,12 +87,17 @@
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>1.72</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk18on</artifactId>
       <version>1.72.2</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk18on</artifactId>
+      <artifactId>bcjmail-jdk18on</artifactId>
       <version>1.72</version>
     </dependency>
     <dependency>
@@ -298,7 +303,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>4.4.1</version>
+      <version>4.5.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -338,7 +343,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20230103</version>
+      <version>v20230206</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -928,12 +933,12 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>4.8.2</version>
+      <version>4.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>4.8.2</version>
+      <version>4.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
@@ -943,13 +948,13 @@
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
       <artifactId>ojdbc-bom</artifactId>
-      <version>21.8.0.0</version>
+      <version>21.9.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>8.0.2</version>
+      <version>8.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
