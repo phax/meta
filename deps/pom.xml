@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230215</version>
+  <version>1.0.0-20230219</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -299,6 +299,11 @@
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>annotations</artifactId>
       <version>3.0.1u2</version>
+    </dependency>
+    <dependency>
+      <groupId>de.flapdoodle.embed</groupId>
+      <artifactId>de.flapdoodle.embed.mongo</artifactId>
+      <version>[3.5.4,4.0.0)</version>
     </dependency>
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
@@ -1069,30 +1074,30 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>[5.3.23,6.0.0)</version>
+      <version>[5.3.25,6.0.0)</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.0.4</version>
+      <version>6.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>[2.7.6,3.0.0)</version>
+      <version>[2.7.8,3.0.0)</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>[2.7.6,3.0.0)</version>
+      <version>[2.7.8,3.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>[2.7.6,3.0.0)</version>
+      <version>[2.7.8,3.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -2218,85 +2223,85 @@
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-server</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>4.11.0</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>8.8.4</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
