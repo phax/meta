@@ -85,7 +85,7 @@ public enum EExternalDependency
 
   ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
   ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
-  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", "2.7.11", EJDK.JDK8),
+  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", "2.7.12", EJDK.JDK8),
   ECLIPSELINK2_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK2_CORE),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.4.0", EJDK.JDK11),
@@ -112,9 +112,9 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.5.1", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.0", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.14.1", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.15.0", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -124,13 +124,13 @@ public enum EExternalDependency
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230206", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.21.12", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.22.0", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.1", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.2", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.16", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.14", EJDK.JDK8),
@@ -162,8 +162,12 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("2.0.0")
   JAKARTA_MAIL("com.sun.mail", "jakarta.mail", "1.6.7", EJDK.JDK8),
-  // We need to wait for BouncyCastle before we can update
+
+  // @IsLegacy (replacedWith = "org.eclipse.angus:angus-mail")
   JAKARTA_MAIL_2 ("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
+
+  // We need to wait for BouncyCastle before we can update
+  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.1", EJDK.JDK11),
 
   @Deprecated
   JAKARTA_PERSISTENCE_2 ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
@@ -295,7 +299,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.19.0", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.20.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -335,13 +339,13 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.5.3", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.5.4", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "12.0", EJDK.JDK8),
-  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.4", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.0", EJDK.JDK8),
+  SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.6", EJDK.JDK8),
@@ -413,7 +417,7 @@ public enum EExternalDependency
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.4.1", EJDK.JDK8),
+  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.20.0", EJDK.JDK8),
