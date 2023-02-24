@@ -174,8 +174,9 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE_3 ("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
 
   @VersionMaxExcl ("6.0.0")
-  JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK8),
-  JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK11),
+  JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK11),
+
+  JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
 
   JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
   // We need to wait for implementations

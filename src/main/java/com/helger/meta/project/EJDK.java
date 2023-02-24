@@ -28,7 +28,7 @@ public enum EJDK
   LEGACY (7),
   JDK8 (8),
   JDK11 (11),
-  JDK14 (14);
+  JDK17 (17);
 
   private final int m_nMajor;
 
