@@ -112,9 +112,9 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.0", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.1", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.15.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.15.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -368,7 +368,7 @@ public enum EExternalDependency
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.2", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.3", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
@@ -381,7 +381,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.0.2", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.14.2", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.15.0", EJDK.JDK8),
 
   @VersionMaxExcl ("3.0.0")
   WSS4J_2("org.apache.wss4j", "wss4j-ws-security-dom", "2.4.1", EJDK.JDK8),
@@ -402,7 +402,7 @@ public enum EExternalDependency
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.8", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.4.2", EJDK.JDK8),
+  PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
@@ -434,7 +434,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.3.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.0", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.1", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 

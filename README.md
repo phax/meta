@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-02-21):
+Current list of all released projects (as of 2023-02-24):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 4.8.3 - JDK 1.8
 
@@ -407,31 +407,31 @@ Current list of all released projects (as of 2023-02-21):
  * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 5.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule) 
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom) 
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task) 
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api) 
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure) 
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt) 
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles) 
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator) 
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 7.0.0 - JDK 11
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 7.0.0 - JDK 11
@@ -713,31 +713,31 @@ Current list of all released projects (as of 2023-02-21):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.11.0 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 6.0.6 - JDK 1.8
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 6.0.7 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
 
