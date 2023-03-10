@@ -505,7 +505,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.TRUE,
                             EHasWiki.FALSE,
-                            "7.0.1",
+                            "7.1.0",
                             EJDK.JDK11),
   PH_SCHEMATRON_API (PH_SCHEMATRON_PARENT_POM, "ph-schematron-api", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_XSLT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-xslt", EProjectType.JAVA_LIBRARY),
@@ -678,7 +678,7 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "0.11.0",
+                              "0.12.0",
                               EJDK.JDK8),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
@@ -713,8 +713,8 @@ public enum EProject implements IProject
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "4.8.3",
-                           EJDK.JDK8),
+                           "5.0.0",
+                           EJDK.JDK11),
   EBINTERFACE_XRECHNUNG_MAPPING (null,
                                  EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
                                  "ebinterface-xrechnung-mapping",
@@ -722,8 +722,8 @@ public enum EProject implements IProject
                                  EProjectType.JAVA_LIBRARY,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "1.4.0",
-                                 EJDK.JDK8),
+                                 "2.0.0",
+                                 EJDK.JDK11),
   ERECHNUNG_WS_CLIENT (null,
                        EProjectOwner.DEFAULT_PROJECT_OWNER,
                        "webservice-client",
@@ -743,7 +743,7 @@ public enum EProject implements IProject
          EHasPages.FALSE,
          EHasWiki.FALSE,
          null,
-         EJDK.JDK8),
+         EJDK.JDK11),
 
   PEPPOL_PRACTICAL (null,
                     EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -753,7 +753,7 @@ public enum EProject implements IProject
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
                     null,
-                    EJDK.JDK8);
+                    EJDK.JDK11);
 
   private final SimpleProject m_aProject;
 
