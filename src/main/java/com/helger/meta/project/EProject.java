@@ -89,7 +89,7 @@ public enum EProject implements IProject
                "1.1.1",
                EJDK.JDK8),
 
-  // 10.2.2 for JDK 8
+  // 10.2.3 for JDK 8
   PH_COMMONS_PARENT_POM (null,
                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "ph-commons-parent-pom",
@@ -640,7 +640,7 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "2.0.0",
+                              "2.0.1",
                               EJDK.JDK11),
   EN16931_CII2UBL (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl", EProjectType.JAVA_LIBRARY),
   EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_LIBRARY),
@@ -652,7 +652,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "1.4.3",
+                     "2.0.0-rc1",
                      EJDK.JDK11),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_BPC (PHASE4_PARENT_POM, "phase4-profile-bpc", EProjectType.JAVA_LIBRARY),
