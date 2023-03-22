@@ -112,9 +112,9 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.1", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.2", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.15.2", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.16.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -316,7 +316,7 @@ public enum EExternalDependency
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.9.0.0", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "8.1.2", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "8.2.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.27", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -329,16 +329,16 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.5.4", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.6.0", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "12.0", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "12.1", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.6", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.7", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
@@ -349,7 +349,7 @@ public enum EExternalDependency
   SPRING5_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "5.3.25", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.6", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.7", EJDK.JDK11),
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
@@ -413,7 +413,7 @@ public enum EExternalDependency
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.20.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.2", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "2.5.3", EJDK.JDK8),
+  PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
