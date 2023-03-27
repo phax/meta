@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230323</version>
+  <version>1.0.0-20230327</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -28,22 +28,22 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>9.4</version>
+      <version>9.5</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>9.4</version>
+      <version>9.5</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>9.4</version>
+      <version>9.5</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>9.4</version>
+      <version>9.5</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -333,7 +333,7 @@
     <dependency>
       <groupId>de.thetaphi</groupId>
       <artifactId>forbiddenapis</artifactId>
-      <version>3.4</version>
+      <version>3.5</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
@@ -368,7 +368,7 @@
     <dependency>
       <groupId>com.hazelcast</groupId>
       <artifactId>hazelcast</artifactId>
-      <version>5.2.2</version>
+      <version>5.2.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -928,7 +928,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>8.2.0</version>
+      <version>8.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -998,7 +998,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.8.1</version>
+      <version>4.8.3</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1061,18 +1061,18 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>3.0.4</version>
+      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -1142,7 +1142,7 @@
     <dependency>
       <groupId>com.mycila</groupId>
       <artifactId>license-maven-plugin</artifactId>
-      <version>4.1</version>
+      <version>4.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
@@ -1192,7 +1192,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-deploy-plugin</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1222,7 +1222,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-install-plugin</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1272,7 +1272,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-resources-plugin</artifactId>
-      <version>3.3.0</version>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1322,7 +1322,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.7.3.2</version>
+      <version>4.7.3.3</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -2219,48 +2219,48 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>9.0.0</version>
+      <version>9.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>

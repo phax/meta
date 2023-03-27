@@ -42,10 +42,11 @@ public enum EExternalDependency
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
 
-  ASM ("org.ow2.asm", "asm", "9.4", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "9.5", EJDK.JDK8),
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
+
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.2", EJDK.JDK8),
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.16", EJDK.JDK8),
 
@@ -119,7 +120,7 @@ public enum EExternalDependency
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.4", EJDK.JDK8),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
@@ -130,7 +131,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.2", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.3", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.16", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.14", EJDK.JDK8),
@@ -316,7 +317,7 @@ public enum EExternalDependency
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "21.9.0.0", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "8.2.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "8.2.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "2.0.27", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -335,7 +336,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "12.1", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.1", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.3", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.7", EJDK.JDK8),
@@ -358,7 +359,7 @@ public enum EExternalDependency
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.4", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.5", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
@@ -388,7 +389,7 @@ public enum EExternalDependency
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
 
   // parent POM dependencies
-  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.1", EJDK.JDK8),
+  PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.2", EJDK.JDK8),
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.8", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
@@ -398,13 +399,13 @@ public enum EExternalDependency
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.11.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.5.0", EJDK.JDK8),
-  PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.0", EJDK.JDK8),
+  PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.0.1", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK8),
-  PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.0", EJDK.JDK8),
+  PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.5.0", EJDK.JDK8),
@@ -414,7 +415,7 @@ public enum EExternalDependency
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.2", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.0", EJDK.JDK8),
+  PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
@@ -424,7 +425,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.3.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.2", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.7.3.3", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 
