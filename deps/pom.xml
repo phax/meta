@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230327</version>
+  <version>1.0.0-20230330</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -444,7 +444,7 @@
     <dependency>
       <groupId>com.sun.activation</groupId>
       <artifactId>jakarta.activation</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -459,7 +459,7 @@
     <dependency>
       <groupId>org.eclipse.angus</groupId>
       <artifactId>angus-mail</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
@@ -1337,7 +1337,7 @@
     <!--Internal projects:-->    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1348,13 +1348,13 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb-pom</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxws-pom</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1689,7 +1689,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-fatturapa</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1822,7 +1822,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-jscompress-maven-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -2397,18 +2397,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>

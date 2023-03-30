@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-03-27):
+Current list of all released projects (as of 2023-03-30):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.0.0 - JDK 11
 
@@ -272,7 +272,7 @@ Current list of all released projects (as of 2023-03-27):
  * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 2.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
- * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.0.0 - JDK 11
+ * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
  * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 7.0.0 - JDK 11
