@@ -679,7 +679,7 @@ public enum EProject implements IProject
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
                               "0.12.0",
-                              EJDK.JDK8),
+                              EJDK.JDK11),
   PHOSS_DIRECTORY_BUSINESSCARD (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-businesscard", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_PUBLISHER (PHOSS_DIRECTORY_PARENT_POM,
