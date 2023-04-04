@@ -150,7 +150,7 @@ public enum EExternalDependency
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_BOM),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_BOM),
 
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.8", EJDK.JDK8),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.9", EJDK.JDK8),
 
   @VersionMaxExcl ("2.0.0")
   JAKARTA_ACTIVATION("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
