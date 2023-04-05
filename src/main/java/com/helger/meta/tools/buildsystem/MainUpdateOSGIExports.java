@@ -68,7 +68,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
 
   public static void main (final String [] args) throws Exception
   {
-    final ClassPathResource aXSD = new ClassPathResource ("maven-4.0.0.xsd");
+    final ClassPathResource aXSD = new ClassPathResource ("external/maven-4.0.0.xsd");
     final MapBasedNamespaceContext aNSCtx = new MapBasedNamespaceContext ();
     aNSCtx.addMapping ("", NS_MAVEN);
     aNSCtx.addMapping ("xsi", "http://www.w3.org/2001/XMLSchema-instance");

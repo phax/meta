@@ -41,7 +41,7 @@ public final class WSDLWriterTest
     for (final String sFilename : InterfaceReaderTest.FILENAMES)
     {
       LOGGER.info (sFilename);
-      final File aFile = new File ("src/test/resources", sFilename);
+      final File aFile = new File ("src/test/resources/external", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);
 
@@ -63,13 +63,16 @@ public final class WSDLWriterTest
   {
     for (final String sFilename : InterfaceReaderTest.FILENAMES)
     {
-      final File aFile = new File ("src/test/resources", sFilename);
+      final File aFile = new File ("src/test/resources/external", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);
 
-      final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ();
-      new WSDLWriter (aInterface).generatedWSDL (aBAOS, EStyle.DOCUMENT, EUse.LITERAL);
-      SimpleFileIO.writeFile (new File ("wsdl", FilenameHelper.getWithoutExtension (sFilename) + ".wsdl"), aBAOS.toByteArray ());
+      try (final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ())
+      {
+        new WSDLWriter (aInterface).generatedWSDL (aBAOS, EStyle.DOCUMENT, EUse.LITERAL);
+        SimpleFileIO.writeFile (new File ("generated/wsdl", FilenameHelper.getWithoutExtension (sFilename) + ".wsdl"),
+                                aBAOS.toByteArray ());
+      }
     }
   }
 }

@@ -41,7 +41,7 @@ public final class XSDWriterTest
     for (final String sFilename : InterfaceReaderTest.FILENAMES)
     {
       LOGGER.info (sFilename);
-      final File aFile = new File ("src/test/resources", sFilename);
+      final File aFile = new File ("src/test/resources/external", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);
 
@@ -61,13 +61,16 @@ public final class XSDWriterTest
   {
     for (final String sFilename : InterfaceReaderTest.FILENAMES)
     {
-      final File aFile = new File ("src/test/resources", sFilename);
+      final File aFile = new File ("src/test/resources/external", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);
 
-      final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ();
-      new XSDWriter (aInterface).setDocumentLiteral (true).generatedXSD (aBAOS);
-      SimpleFileIO.writeFile (new File ("xsd", FilenameHelper.getWithoutExtension (sFilename) + ".xsd"), aBAOS.toByteArray ());
+      try (final NonBlockingByteArrayOutputStream aBAOS = new NonBlockingByteArrayOutputStream ())
+      {
+        new XSDWriter (aInterface).setDocumentLiteral (true).generatedXSD (aBAOS);
+        SimpleFileIO.writeFile (new File ("generated/xsd", FilenameHelper.getWithoutExtension (sFilename) + ".xsd"),
+                                aBAOS.toByteArray ());
+      }
     }
   }
 }

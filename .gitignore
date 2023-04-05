@@ -1,8 +1,7 @@
 .settings/ 
 bin/
 target/
-wsdl/
-xsd/
+generated/
 
 .classpath 
 .iml

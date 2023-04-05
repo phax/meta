@@ -59,7 +59,7 @@ public final class InterfaceReaderTest
     for (final String sFilename : FILENAMES)
     {
       LOGGER.info (sFilename);
-      final File aFile = new File ("src/test/resources", sFilename);
+      final File aFile = new File ("src/test/resources/external", sFilename);
       final WGInterface aInterface = InterfaceReader.readInterface (new FileSystemResource (aFile));
       assertNotNull (sFilename, aInterface);
     }
