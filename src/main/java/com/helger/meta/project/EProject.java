@@ -299,7 +299,7 @@ public enum EProject implements IProject
                 EProjectType.JAVA_LIBRARY,
                 EHasPages.FALSE,
                 EHasWiki.FALSE,
-                "2.0.1",
+                "2.0.2",
                 EJDK.JDK11),
   PH_GENERICODE (null,
                  EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -569,7 +569,7 @@ public enum EProject implements IProject
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
   AS2_SERVER (AS2_LIB_PARENT_POM, "as2-server", EProjectType.JAVA_LIBRARY),
   AS2_DEMO_WEBAPP (AS2_LIB_PARENT_POM, "as2-demo-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION),
+  AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION, "5.0.0"),
 
   PEPPOL_COMMONS_PARENT_POM (null,
                              EProjectOwner.DEFAULT_PROJECT_OWNER,
