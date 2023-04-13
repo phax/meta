@@ -152,10 +152,15 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.9", EJDK.JDK8),
 
-  @VersionMaxExcl ("2.0.0")
-  JAKARTA_ACTIVATION("com.sun.activation", "jakarta.activation", "1.2.2", EJDK.JDK8),
-  // We need to wait for BouncyCastle before we can update
-  JAKARTA_ACTIVATION_2 ("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
+  // @VersionMaxExcl ("2.0.0")
+  // @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
+  // JAKARTA_ACTIVATION("com.sun.activation", "jakarta.activation", "1.2.2",
+  // EJDK.JDK8),
+
+  @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
+  JAKARTA_ACTIVATION_2("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
+
+  ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.0", EJDK.JDK11),
 
   @VersionMaxExcl ("2.0.0")
   JAKARTA_ANNOTATION_API("jakarta.annotation", "jakarta.annotation-api", "1.3.5", EJDK.JDK8),
