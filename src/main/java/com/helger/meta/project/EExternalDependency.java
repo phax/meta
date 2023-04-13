@@ -124,8 +124,8 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230228", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.22.2", EJDK.JDK8),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230411", EJDK.JDK11),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.22.3", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
