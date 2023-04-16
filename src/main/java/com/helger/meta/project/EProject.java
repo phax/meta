@@ -97,7 +97,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "11.0.2",
+                         "11.0.3",
                          EJDK.JDK11),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   PH_CLI (PH_COMMONS_PARENT_POM, "ph-cli", EProjectType.JAVA_LIBRARY),
@@ -669,7 +669,7 @@ public enum EProject implements IProject
   PHASE4_CEF_CLIENT (PHASE4_PARENT_POM, "phase4-cef-client", EProjectType.JAVA_LIBRARY),
   PHASE4_ENTSOG_CLIENT (PHASE4_PARENT_POM, "phase4-entsog-client", EProjectType.JAVA_LIBRARY),
   PHASE4_EUDAMED_CLIENT (PHASE4_PARENT_POM, "phase4-eudamed-client", EProjectType.JAVA_LIBRARY),
-  PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo", EProjectType.JAVA_LIBRARY),
+  PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo", EProjectType.JAVA_LIBRARY, "1.4.3"),
 
   PHOSS_DIRECTORY_PARENT_POM (null,
                               EProjectOwner.DEFAULT_PROJECT_OWNER,
