@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230416</version>
+  <version>1.0.0-20230420</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1461,7 +1461,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb-plugin</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2387,18 +2387,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>

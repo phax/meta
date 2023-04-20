@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-04-16):
+Current list of all released projects (as of 2023-04-20):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.0.0 - JDK 11
 
@@ -32,13 +32,13 @@ Current list of all released projects (as of 2023-04-16):
  * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.2 - JDK 11
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.2 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.0.2 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 4.0.0 - JDK 11
@@ -263,7 +263,7 @@ Current list of all released projects (as of 2023-04-16):
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
- * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 4.0.0 - JDK 11
+ * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin) 
  * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 2.0.1 - JDK 11
