@@ -307,7 +307,7 @@ public enum EExternalDependency
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
   LUCENE9_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE9_CORE),
 
-  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.8.1", EJDK.JDK8),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.8.2", EJDK.JDK8),
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
@@ -358,12 +358,12 @@ public enum EExternalDependency
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.8", EJDK.JDK8),
+  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.9", EJDK.JDK8),
   SPRING_BOOT2_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT2_DEPENDENCIES),
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.5", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.6", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
