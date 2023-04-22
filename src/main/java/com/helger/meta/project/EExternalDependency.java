@@ -316,7 +316,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.9.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "8.0.32", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "8.0.33", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.2.0.0", EJDK.JDK8),
@@ -328,7 +328,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.7.2", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.7.3", EJDK.JDK8),
 
   POI ("org.apache.poi", "poi", "5.2.3", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
@@ -340,7 +340,7 @@ public enum EExternalDependency
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
   SAXON ("net.sf.saxon", "Saxon-HE", "12.1", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.8.3", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.9.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.7", EJDK.JDK8),
@@ -399,7 +399,7 @@ public enum EExternalDependency
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
-  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.2.1", EJDK.JDK8),
+  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.11.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.5.0", EJDK.JDK8),
@@ -416,7 +416,7 @@ public enum EExternalDependency
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.20.0", EJDK.JDK8),
-  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.2", EJDK.JDK8),
+  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.3", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
