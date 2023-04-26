@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-04-21):
+Current list of all released projects (as of 2023-04-26):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.0.0 - JDK 11
 
@@ -101,7 +101,7 @@ Current list of all released projects (as of 2023-04-21):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 9.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
- * [ph-asic](https://github.com/phax/ph-asic) - Version 2.0.0 - JDK 11
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 4.0.0 - JDK 11
@@ -209,7 +209,7 @@ Current list of all released projects (as of 2023-04-21):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.0.0 - JDK 11
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
  * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 2.0.2 - JDK 11
@@ -254,7 +254,7 @@ Current list of all released projects (as of 2023-04-21):
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis) 
- * [ph-genericode](https://github.com/phax/ph-genericode) - Version 7.0.0 - JDK 11
+ * [ph-genericode](https://github.com/phax/ph-genericode) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-genericode) 
  * [ph-isorelax](https://github.com/phax/ph-isorelax) - Version 1.1.1 - JDK 1.8
@@ -392,7 +392,7 @@ Current list of all released projects (as of 2023-04-21):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 6.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-poi) 
- * [ph-regrep](https://github.com/phax/ph-regrep) - Version 2.0.0 - JDK 11
+ * [ph-regrep](https://github.com/phax/ph-regrep) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep) 
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 5.0.1 - JDK 11
@@ -527,7 +527,7 @@ Current list of all released projects (as of 2023-04-21):
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.0 - JDK 11
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 5.0.1 - JDK 11
@@ -754,6 +754,12 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 11
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 11
+
+ * [peppol-reporting](https://github.com/phax/peppol-reporting) - JDK 11
+
+ * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - JDK 11
+
+ * [phase4/phase4-profile-bdew](https://github.com/phax/phase4) - JDK 11
 
 
 All deprecated projects:
