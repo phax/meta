@@ -113,9 +113,9 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.2", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.3", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.16.3", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.17.0", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
@@ -123,7 +123,6 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_8 ("com.google.javascript", "closure-compiler", "v20220502", EJDK.JDK8),
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230411", EJDK.JDK11),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.22.3", EJDK.JDK8),
 
@@ -143,19 +142,14 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.8.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.14.2", EJDK.JDK8),
+  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.15.0", EJDK.JDK8),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON_BOM),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_BOM),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_BOM),
   JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_BOM),
   JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_BOM),
 
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.9", EJDK.JDK8),
-
-  // @VersionMaxExcl ("2.0.0")
-  // @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
-  // JAKARTA_ACTIVATION("com.sun.activation", "jakarta.activation", "1.2.2",
-  // EJDK.JDK8),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.10", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
   JAKARTA_ACTIVATION_2("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
@@ -284,11 +278,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.9.2", EJDK.JDK8),
+  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.9.3", EJDK.JDK8),
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT5_JUPITER),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.9.2", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.9.3", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.4.0", EJDK.JDK8),
