@@ -32,13 +32,13 @@ Current list of all released projects (as of 2023-04-28):
  * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.0.3 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 4.0.0 - JDK 11
