@@ -50,12 +50,6 @@ public enum EExternalDependency
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.2", EJDK.JDK8),
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.16", EJDK.JDK8),
 
-  BC_MAIL ("org.bouncycastle", "bcmail-jdk15on", "1.70", EJDK.JDK8),
-  BC_PG ("org.bouncycastle", "bcpg-jdk15on", BC_MAIL),
-  BC_PROV ("org.bouncycastle", "bcprov-jdk15on", BC_MAIL),
-  BC_PKIX ("org.bouncycastle", "bcpkix-jdk15on", BC_MAIL),
-  BC_PROV_EXT ("org.bouncycastle", "bcprov-ext-jdk15on", BC_MAIL),
-
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.73", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
@@ -83,11 +77,6 @@ public enum EExternalDependency
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.4", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.1.0", EJDK.JDK8),
-
-  ECLIPSELINK2_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "2.7.8", EJDK.JDK8),
-  ECLIPSELINK2_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK2_CORE),
-  ECLIPSELINK2_ANTLR ("org.eclipse.persistence", "org.eclipse.persistence.antlr", "2.7.12", EJDK.JDK8),
-  ECLIPSELINK2_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", ECLIPSELINK2_CORE),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.5.0", EJDK.JDK11),
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.1", EJDK.JDK11),
@@ -154,7 +143,7 @@ public enum EExternalDependency
   @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
   JAKARTA_ACTIVATION_2("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
 
-  ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.0", EJDK.JDK11),
+  ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.1", EJDK.JDK11),
 
   @VersionMaxExcl ("2.0.0")
   JAKARTA_ANNOTATION_API("jakarta.annotation", "jakarta.annotation-api", "1.3.5", EJDK.JDK8),
@@ -194,7 +183,7 @@ public enum EExternalDependency
   JAXB2_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "2.3.3", EJDK.JDK8),
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  JAXB2_BOM("com.sun.xml.bind", "jaxb-bom-ext", "2.3.6", EJDK.JDK8),
+  JAXB2_BOM("com.sun.xml.bind", "jaxb-bom-ext", "2.3.8", EJDK.JDK8),
   JAXB2_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB2_BOM),
 
   @IsLegacy (replacedWith = "com.evolvedbinary.maven.jvnet:jaxb2-maven-plugin")
@@ -210,7 +199,7 @@ public enum EExternalDependency
   JAXWS2_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "2.3.3", EJDK.JDK8),
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  JAXWS2_RI_BOM("com.sun.xml.ws", "jaxws-ri-bom", "2.3.5", EJDK.JDK8),
+  JAXWS2_RI_BOM("com.sun.xml.ws", "jaxws-ri-bom", "2.3.6", EJDK.JDK8),
   JAXWS2_RT ("com.sun.xml.ws", "jaxws-rt", JAXWS2_RI_BOM),
   JAXWS2_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS2_RI_BOM),
 
@@ -223,14 +212,11 @@ public enum EExternalDependency
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.3", EJDK.JDK8),
 
-  JERSEY1_SERVLET ("com.sun.jersey", "jersey-servlet", "1.19.4", EJDK.JDK8),
-  JERSEY1_CLIENT ("com.sun.jersey", "jersey-client", JERSEY1_SERVLET),
-
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  JERSEY2_BOM("org.glassfish.jersey", "jersey-bom", "2.35", EJDK.JDK8),
+  JERSEY2_BOM("org.glassfish.jersey", "jersey-bom", "2.39.1", EJDK.JDK8),
   JERSEY2_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY2_BOM),
   JERSEY2_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY2_BOM),
   JERSEY2_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY2_BOM),
