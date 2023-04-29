@@ -97,7 +97,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "11.0.3",
+                         "11.0.4",
                          EJDK.JDK11),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   PH_CLI (PH_COMMONS_PARENT_POM, "ph-cli", EProjectType.JAVA_LIBRARY),
@@ -891,14 +891,13 @@ public enum EProject implements IProject
     {
       throw new IllegalStateException (ex);
     }
-
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
