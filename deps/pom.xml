@@ -1841,68 +1841,68 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-http</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
