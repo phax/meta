@@ -44,3 +44,9 @@ The following list gives a short overview of special programming techniques that
 * I'm not using the stream API since there are performance considerations and the regular iteration usually works pretty efficient and helper methods with Lambdas are available. Instead the class `CollectionHelper` offers some simple abstractions, for the rest I loop myself. I'm a big fan of "better the developer has increased effort than the user is impacted negatively".
 * Starting with ph-commons 8 a set of collection interfaces and classes starting with `ICommons` (e.g. `ICommonsList`) resp. `Commons` (like `CommonsArrayList`) are used because they offer tons of default sanity methods.
   * Usually the extended collections are used as return types (where use is expected) but not as parameter types (which should be as narrow as possible)
+
+## Some validation regular expressions
+
+All regular expressions listed here were tested within Eclipse:
+
+* Find illegal constants: `static final\s+\S+\s+[A-Z0-9_]*([^A-Z0-9_\s][A-Z0-9_]*)+(\s*\[\])*\s*=`
