@@ -434,55 +434,55 @@ Current list of all released projects (as of 2023-04-30):
  * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
- * [ph-ubl](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-parent-pom) 
- * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-api) 
- * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-dian/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-dian) 
- * [ph-ubl/ph-ubl-eforms](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl-eforms](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-eforms/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-eforms) 
- * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl-testfiles) 
- * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20) 
- * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl20-codelists) 
- * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21) 
- * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl21-codelists) 
- * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22) 
- * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl22-codelists) 
- * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23) 
- * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl23-codelists) 
- * [ph-ubl/ph-ubl24](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl24](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl24/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl24) 
- * [ph-ubl/ph-ubl24-codelists](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubl24-codelists](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl24-codelists/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubl24-codelists) 
- * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ublpe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ublpe) 
- * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 8.0.1 - JDK 11
+ * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 8.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr) 
  * [ph-web](https://github.com/phax/ph-web) - Version 10.1.1 - JDK 11
