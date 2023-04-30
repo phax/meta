@@ -44,7 +44,6 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
   public static final String COMMON_FOOTER = SEPARATOR +
                                              "\n" +
                                              "My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |\n" +
-                                             "On Twitter: <a href=\"https://twitter.com/philiphelger\">@philiphelger</a> |\n" +
                                              "Kindly supported by [YourKit Java Profiler](https://www.yourkit.com)";
 
   public static void main (final String [] args)
@@ -84,7 +83,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
             else
             {
               final double dPerc = nIndex * 100.0 / nFileSize;
-              final double dThreshold = (nFileSize - COMMON_FOOTER.length () * 1.3) * 100 / nFileSize;
+              final double dThreshold = (nFileSize - COMMON_FOOTER.length () * 2) * 100 / nFileSize;
               if (dPerc < dThreshold)
               {
                 _warn (aProject,
@@ -103,7 +102,6 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
                 sNewContent = sContent.substring (0, nIndex) + COMMON_FOOTER;
               }
             }
-
             if (sNewContent != null)
             {
               // Convert newline back to system default
@@ -140,7 +138,6 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
                               BATCH_CHARSET);
       LOGGER.info ("Batch file " + GIT_COMMIT_FOOTER_CHANGE_CMD + " written");
     }
-
     LOGGER.info ("Done");
   }
 }
