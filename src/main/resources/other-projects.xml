@@ -24,7 +24,7 @@
   <basedir>/home/philip/git</basedir>
   <basedir>/home/philip/svn/philip/dev</basedir>
 
-  <project projectname="peppol-analytics" projecttype="java-application" minjdk="8" />
+  <project projectname="peppol-analytics" projecttype="java-application" minjdk="11" />
 
 <!-- 
   <project projectname="ial-parent-pom" dir="ial-service" projecttype="maven-pom" minjdk="8" lastpubversion="0.1.6">
