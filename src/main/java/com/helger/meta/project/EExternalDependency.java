@@ -112,8 +112,8 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230411", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.22.3", EJDK.JDK8),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230502", EJDK.JDK11),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.0", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
@@ -170,7 +170,7 @@ public enum EExternalDependency
   // We need to wait for implementations
   JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.1.1", EJDK.JDK11),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.2", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.3", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.12", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -281,7 +281,7 @@ public enum EExternalDependency
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.5.0", EJDK.JDK8),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.6.0", EJDK.JDK8),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -318,9 +318,9 @@ public enum EExternalDependency
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "12.1", EJDK.JDK8),
+  SAXON ("net.sf.saxon", "Saxon-HE", "12.2", EJDK.JDK8),
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.9.0", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.9.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.7", EJDK.JDK8),
@@ -334,7 +334,7 @@ public enum EExternalDependency
   SPRING5_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "5.3.25", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.8", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.0.9", EJDK.JDK11),
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
@@ -387,7 +387,7 @@ public enum EExternalDependency
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.0.1", EJDK.JDK8),
+  PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.3.0", EJDK.JDK8),
@@ -403,9 +403,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.0.0", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.1.0", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.1.0", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.3.2", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),

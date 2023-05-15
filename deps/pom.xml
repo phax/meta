@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230430</version>
+  <version>1.0.0-20230515</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -298,12 +298,12 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20230411</version>
+      <version>v20230502</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.22.3</version>
+      <version>3.23.0</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -439,7 +439,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.25.2</version>
+      <version>3.25.3</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -797,27 +797,27 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>9.5.0</version>
+      <version>9.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>9.5.0</version>
+      <version>9.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>9.5.0</version>
+      <version>9.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>9.5.0</version>
+      <version>9.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>9.5.0</version>
+      <version>9.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -918,7 +918,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>12.1</version>
+      <version>12.2</version>
     </dependency>
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
@@ -928,7 +928,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.9.0</version>
+      <version>4.9.1</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -969,7 +969,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.0.8</version>
+      <version>6.0.9</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1142,7 +1142,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-gpg-plugin</artifactId>
-      <version>3.0.1</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1222,17 +1222,17 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-report-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-failsafe-plugin</artifactId>
-      <version>3.0.0</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1969,155 +1969,155 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-demo</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-demo</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-pages</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-uictrls</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jdbc</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
@@ -2484,50 +2484,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>6.0.7</version>
+      <version>7.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
