@@ -571,7 +571,7 @@ public enum EProject implements IProject
   AS2_SERVLET (AS2_LIB_PARENT_POM, "as2-servlet", EProjectType.JAVA_LIBRARY),
   AS2_SERVER (AS2_LIB_PARENT_POM, "as2-server", EProjectType.JAVA_LIBRARY),
   AS2_DEMO_WEBAPP (AS2_LIB_PARENT_POM, "as2-demo-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION, "5.0.0"),
+  AS2_DEMO_SPRING_BOOT (AS2_LIB_PARENT_POM, "as2-demo-spring-boot", EProjectType.JAVA_APPLICATION, "5.0.1"),
 
   PEPPOL_COMMONS_PARENT_POM (null,
                              EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -580,7 +580,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "9.0.4",
+                             "9.0.5",
                              EJDK.JDK11),
   PEPPOL_ID_DATATYPES (PEPPOL_COMMONS_PARENT_POM, "peppol-id-datatypes", EProjectType.JAVA_LIBRARY),
   PEPPOL_ID (PEPPOL_COMMONS_PARENT_POM, "peppol-id", EProjectType.JAVA_LIBRARY),
