@@ -2362,7 +2362,7 @@
       <version>2.1.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
+      <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bdew</artifactId>
       <version>2.1.0</version>
     </dependency>
@@ -2440,7 +2440,7 @@
       <version>2.1.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
+      <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-bdew-client</artifactId>
       <version>2.1.0</version>
     </dependency>
