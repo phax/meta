@@ -104,13 +104,13 @@ public enum EExternalDependency
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
   FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.3", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.18.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.19.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5.1", EJDK.JDK8),
-  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "2.1.0", EJDK.JDK8),
+  GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230502", EJDK.JDK11),
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.1", EJDK.JDK8),
@@ -119,7 +119,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.2.3", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.3.0", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.16", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.14", EJDK.JDK8),
@@ -155,7 +155,7 @@ public enum EExternalDependency
   @IsLegacy (replacedWith = "org.eclipse.angus:angus-mail")
   JAKARTA_MAIL_2("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
 
-  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.1", EJDK.JDK11),
+  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.2", EJDK.JDK11),
 
   @Deprecated
   JAKARTA_PERSISTENCE_2 ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
@@ -338,12 +338,12 @@ public enum EExternalDependency
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.9", EJDK.JDK8),
+  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.12", EJDK.JDK8),
   SPRING_BOOT2_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT2_DEPENDENCIES),
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.0.6", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.1.0", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
@@ -374,15 +374,15 @@ public enum EExternalDependency
 
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "4.2", EJDK.JDK8),
-  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.8", EJDK.JDK8),
+  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.9", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
-  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.2.2", EJDK.JDK8),
+  PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.11.0", EJDK.JDK8),
-  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.5.0", EJDK.JDK8),
+  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
@@ -402,7 +402,7 @@ public enum EExternalDependency
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
-  PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.2.1", EJDK.JDK8),
+  PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.1.0", EJDK.JDK8),
