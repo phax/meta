@@ -166,9 +166,12 @@ public enum EExternalDependency
 
   JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
 
-  JAKARTA_JSP_API ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
-  // We need to wait for implementations
-  JAKARTA_JSP_API_3 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.1.1", EJDK.JDK11),
+  JAKARTA_JSP_API_2 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "2.3.6", EJDK.JDK8),
+  // JakartaEE 9
+  JAKARTA_JSP_API_30 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
+  // JakartaEE 10
+  // JAKARTA_JSP_API_31 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api",
+  // "3.1.1", EJDK.JDK11),
 
   JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.3", EJDK.JDK8),
 
@@ -318,7 +321,12 @@ public enum EExternalDependency
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
-  SAXON ("net.sf.saxon", "Saxon-HE", "12.2", EJDK.JDK8),
+
+  @VersionMaxExcl ("12.0.0")
+  SAXON_11("net.sf.saxon", "Saxon-HE", "11.5", EJDK.JDK8),
+  // Currently Saxon 11 is the stable one
+  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.2", EJDK.JDK17),
+
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.9.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -364,7 +372,8 @@ public enum EExternalDependency
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.1.1", EJDK.JDK8),
 
-  XMLSEC_2 ("org.apache.santuario", "xmlsec", "2.3.1", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  XMLSEC_2("org.apache.santuario", "xmlsec", "2.3.1", EJDK.JDK8),
   // Jakarta Update
   XMLSEC_3 ("org.apache.santuario", "xmlsec", "3.0.2", EJDK.JDK11),
 
@@ -553,7 +562,7 @@ public enum EExternalDependency
       // case JAXB_XJC_SUN:
       // return JAXB_XJC;
       case JAVAX_JSP_API:
-        return JAKARTA_JSP_API;
+        return JAKARTA_JSP_API_2;
       // case JAXWS_MAVEN_PLUGIN_OLD:
       // return JAXWS_MAVEN_PLUGIN;
     }
