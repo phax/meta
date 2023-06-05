@@ -102,7 +102,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.6.3", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.7.0", EJDK.JDK8),
 
   FLYWAY9 ("org.flywaydb", "flyway-core", "9.19.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
@@ -113,7 +113,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230502", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.1", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.3", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
 
@@ -131,7 +131,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.8.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.15.1", EJDK.JDK8),
+  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.15.2", EJDK.JDK8),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON_BOM),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_BOM),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_BOM),
@@ -311,7 +311,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.7.3", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.7.4", EJDK.JDK8),
 
   POI ("org.apache.poi", "poi", "5.2.3", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
@@ -405,9 +405,9 @@ public enum EExternalDependency
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.21.0", EJDK.JDK8),
-  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.3", EJDK.JDK8),
+  PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.4.4", EJDK.JDK8),
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
-  PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.0.0", EJDK.JDK8),
+  PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.0.1", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.4.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
