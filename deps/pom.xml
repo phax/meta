@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230613</version>
+  <version>1.0.0-20230621</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -58,32 +58,32 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcjmail-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk18on</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -173,12 +173,12 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.core</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.jpa</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
@@ -268,12 +268,12 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>9.19.4</version>
+      <version>9.20.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>9.19.4</version>
+      <version>9.20.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -338,7 +338,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents.core5</groupId>
       <artifactId>httpcore5</artifactId>
-      <version>5.2.1</version>
+      <version>5.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
@@ -762,7 +762,7 @@
     <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka-clients</artifactId>
-      <version>3.4.0</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.littleshoot</groupId>
@@ -974,7 +974,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.0.9</version>
+      <version>6.0.10</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1112,7 +1112,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-clean-plugin</artifactId>
-      <version>3.2.0</version>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1212,7 +1212,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-shade-plugin</artifactId>
-      <version>3.4.1</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1242,7 +1242,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-war-plugin</artifactId>
-      <version>3.3.2</version>
+      <version>3.4.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -1257,7 +1257,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.7.3.4</version>
+      <version>4.7.3.5</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
