@@ -63,7 +63,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.15", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.16.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.23.0", EJDK.JDK8),
@@ -284,7 +284,7 @@ public enum EExternalDependency
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.6.0", EJDK.JDK8),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.7.0", EJDK.JDK8),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
@@ -296,7 +296,7 @@ public enum EExternalDependency
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.2", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.9.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.10.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "8.0.33", EJDK.JDK8),
@@ -346,12 +346,12 @@ public enum EExternalDependency
 
   @IsBOM
   @VersionMaxExcl ("3.0.0")
-  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.12", EJDK.JDK8),
+  SPRING_BOOT2_DEPENDENCIES("org.springframework.boot", "spring-boot-dependencies", "2.7.13", EJDK.JDK8),
   SPRING_BOOT2_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT2_DEPENDENCIES),
   SPRING_BOOT2_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT2_DEPENDENCIES),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.1.0", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.1.1", EJDK.JDK11),
   SPRING_BOOT3_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
 
