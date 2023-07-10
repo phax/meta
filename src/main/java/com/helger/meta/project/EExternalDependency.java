@@ -113,9 +113,9 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230502", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.3", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.4", EJDK.JDK8),
 
-  H2 ("com.h2database", "h2", "2.1.214", EJDK.JDK8),
+  H2 ("com.h2database", "h2", "2.2.220", EJDK.JDK8),
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
@@ -325,7 +325,7 @@ public enum EExternalDependency
   @VersionMaxExcl ("12.0.0")
   SAXON_11("net.sf.saxon", "Saxon-HE", "11.5", EJDK.JDK8),
   // Currently Saxon 11 is the stable one
-  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.2", EJDK.JDK17),
+  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.3", EJDK.JDK17),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.10.0", EJDK.JDK8),
