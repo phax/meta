@@ -56,6 +56,7 @@ public enum EExternalDependency
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
+  BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", BC_MAIL18),
 
   CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
                                "classloader-leak-prevention-core",

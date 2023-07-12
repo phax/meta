@@ -638,6 +638,7 @@ public enum EProject implements IProject
   PHIVE_RULES_PEPPOL (PHIVE_RULES_PARENT_POM, "phive-rules-peppol", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_PEPPOL_ITALY (PHIVE_RULES_PARENT_POM, "phive-rules-peppol-italy", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_PEPPOL_LEGACY (PHIVE_RULES_PARENT_POM, "phive-rules-peppol-legacy", EProjectType.JAVA_LIBRARY),
+  PHIVE_RULES_SETU (PHIVE_RULES_PARENT_POM, "phive-rules-setu", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_SIMPLERINVOICING (PHIVE_RULES_PARENT_POM, "phive-rules-simplerinvoicing", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_SVEFAKTURA (PHIVE_RULES_PARENT_POM, "phive-rules-svefaktura", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_TEAPPS (PHIVE_RULES_PARENT_POM, "phive-rules-teapps", EProjectType.JAVA_LIBRARY),

@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-07-11):
+Current list of all released projects (as of 2023-07-12):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.1.0 - JDK 11
 
@@ -680,6 +680,9 @@ Current list of all released projects (as of 2023-07-11):
  * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 3.0.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-peppol-legacy) 
+ * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 3.0.5 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-setu/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-setu) 
  * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 3.0.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-simplerinvoicing/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-simplerinvoicing) 
