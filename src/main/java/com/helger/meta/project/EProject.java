@@ -611,8 +611,11 @@ public enum EProject implements IProject
                     "8.0.1",
                     EJDK.JDK11),
   PHIVE_API (PHIVE_PARENT_POM, "phive-api", EProjectType.JAVA_LIBRARY),
-  PHIVE_ENGINE (PHIVE_PARENT_POM, "phive-engine", EProjectType.JAVA_LIBRARY),
-  PHIVE_JSON (PHIVE_PARENT_POM, "phive-json", EProjectType.JAVA_LIBRARY),
+  PHIVE_VES_MODEL (PHIVE_PARENT_POM, "phive-ves-model", EProjectType.JAVA_LIBRARY, (String) null),
+  PHIVE_XML (PHIVE_PARENT_POM, "phive-xml", EProjectType.JAVA_LIBRARY, (String) null),
+  PHIVE_REPO (PHIVE_PARENT_POM, "phive-repo", EProjectType.JAVA_LIBRARY, (String) null),
+  PHIVE_RESULT (PHIVE_PARENT_POM, "phive-result", EProjectType.JAVA_LIBRARY, (String) null),
+  PHIVE_VES_ENGINE (PHIVE_PARENT_POM, "phive-ves-engine", EProjectType.JAVA_LIBRARY, (String) null),
 
   PHIVE_RULES_PARENT_POM (null,
                           EProjectOwner.DEFAULT_PROJECT_OWNER,
