@@ -253,6 +253,7 @@ public enum EExternalDependency
   JETTY11_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY11_BOM),
   JETTY11_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY11_BOM),
   JETTY11_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY11_BOM),
+  JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
   TRANG ("org.relaxng", "trang", "20220510", EJDK.JDK8),
