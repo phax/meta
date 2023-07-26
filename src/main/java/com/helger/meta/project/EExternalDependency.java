@@ -339,6 +339,8 @@ public enum EExternalDependency
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
 
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.7.3", EJDK.JDK8),
+
   @IsBOM
   @VersionMaxExcl ("6.0.0")
   SPRING5_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "5.3.25", EJDK.JDK8),

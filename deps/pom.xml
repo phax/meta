@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20230724</version>
+  <version>1.0.0-20230726</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -976,6 +976,11 @@
       <version>2.0.7</version>
     </dependency>
     <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+      <version>4.7.3</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
       <version>[5.3.25,6.0.0)</version>
@@ -1856,68 +1861,68 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-http</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2510,50 +2515,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>7.0.1</version>
+      <version>7.0.2</version>
       <type>war</type>
     </dependency>
     <dependency>

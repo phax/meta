@@ -473,7 +473,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.1.2",
+                     "10.1.3",
                      EJDK.JDK11),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
@@ -715,7 +715,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        "7.0.1",
+                        "7.0.2",
                         EJDK.JDK11),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),
@@ -902,8 +902,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
