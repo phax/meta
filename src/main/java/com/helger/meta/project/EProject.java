@@ -89,7 +89,7 @@ public enum EProject implements IProject
                "1.1.1",
                EJDK.JDK8),
 
-  // 10.2.3 for JDK 8
+  // 10.2.6 for JDK 8
   PH_COMMONS_PARENT_POM (null,
                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "ph-commons-parent-pom",
@@ -97,7 +97,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "11.0.6",
+                         "11.1.0",
                          EJDK.JDK11),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   PH_CLI (PH_COMMONS_PARENT_POM, "ph-cli", EProjectType.JAVA_LIBRARY),
@@ -185,7 +185,7 @@ public enum EProject implements IProject
                  EProjectType.JAVA_LIBRARY,
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
-                 "7.0.0",
+                 "7.0.1",
                  EJDK.JDK11),
   PH_POI (null,
           EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -194,7 +194,7 @@ public enum EProject implements IProject
           EProjectType.JAVA_LIBRARY,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          "6.0.0",
+          "6.0.1",
           EJDK.JDK11),
   PH_XMLDSIG (null,
               EProjectOwner.DEFAULT_PROJECT_OWNER,
