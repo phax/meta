@@ -103,7 +103,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.7.2", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.8.0", EJDK.JDK8),
 
   FLYWAY9 ("org.flywaydb", "flyway-core", "9.21.1", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
@@ -113,8 +113,8 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230502", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.23.4", EJDK.JDK8),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230802", EJDK.JDK11),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.24.0", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.2.220", EJDK.JDK8),
 
@@ -246,7 +246,8 @@ public enum EExternalDependency
   JETTY9_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY9_BOM),
 
   @IsBOM
-  JETTY11_BOM ("org.eclipse.jetty", "jetty-bom", "11.0.15", EJDK.JDK11),
+  @VersionMaxExcl ("12.0.0")
+  JETTY11_BOM("org.eclipse.jetty", "jetty-bom", "11.0.15", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
@@ -254,6 +255,10 @@ public enum EExternalDependency
   JETTY11_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY11_BOM),
   JETTY11_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY11_BOM),
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
+
+  @IsBOM
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.0", EJDK.JDK17),
+  JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
   TRANG ("org.relaxng", "trang", "20220510", EJDK.JDK8),
