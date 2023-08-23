@@ -38,7 +38,7 @@ public enum EExternalDependency
 {
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.2", EJDK.JDK8),
 
-  ANT ("org.apache.ant", "ant", "1.10.13", EJDK.JDK8),
+  ANT ("org.apache.ant", "ant", "1.10.14", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
 
@@ -48,7 +48,7 @@ public enum EExternalDependency
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
-  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.16", EJDK.JDK8),
+  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.76", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
@@ -105,10 +105,10 @@ public enum EExternalDependency
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
   FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.9.0", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.21.1", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.21.2", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FOP ("org.apache.xmlgraphics", "fop", "2.8", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.9", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.5.1", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
@@ -120,7 +120,7 @@ public enum EExternalDependency
 
   HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
 
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.3.1", EJDK.JDK8),
+  HAZELCAST ("com.hazelcast", "hazelcast", "5.3.2", EJDK.JDK8),
 
   HTTP_CORE4 ("org.apache.httpcomponents", "httpcore", "4.4.16", EJDK.JDK8),
   HTTP_CLIENT4 ("org.apache.httpcomponents", "httpclient", "4.5.14", EJDK.JDK8),
@@ -404,7 +404,7 @@ public enum EExternalDependency
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.2.1", EJDK.JDK8),
-  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.3.0", EJDK.JDK8),
+  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.1", EJDK.JDK8),
