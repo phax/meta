@@ -103,7 +103,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("4.0.0")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
-  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.9.1", EJDK.JDK8),
+  FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.9.2", EJDK.JDK8),
 
   FLYWAY9 ("org.flywaydb", "flyway-core", "9.21.2", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
@@ -114,7 +114,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "3.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20230802", EJDK.JDK11),
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.24.1", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "3.24.2", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.2.220", EJDK.JDK8),
 
@@ -318,7 +318,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PICOCLI ("info.picocli", "picocli", "4.7.4", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.7.5", EJDK.JDK8),
 
   POI ("org.apache.poi", "poi", "5.2.3", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
