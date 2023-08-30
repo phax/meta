@@ -68,7 +68,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
 
   public static void main (final String [] args) throws Exception
   {
-    final ClassPathResource aXSD = new ClassPathResource ("external/maven-4.0.0.xsd");
+    final ClassPathResource aMavenXSD = new ClassPathResource ("external/maven-4.0.0.xsd");
     final MapBasedNamespaceContext aNSCtx = new MapBasedNamespaceContext ();
     aNSCtx.addMapping ("", NS_MAVEN);
     aNSCtx.addMapping ("xsi", "http://www.w3.org/2001/XMLSchema-instance");
@@ -88,10 +88,12 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
       aSRS.setFeatureValue (EXMLParserFeature.SCHEMA, true);
       aSRS.setFeatureValue (EXMLParserFeature.NAMESPACES, true);
       aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, XMLConstants.W3C_XML_SCHEMA_NS_URI);
-      aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SORUCE, aXSD.getAsFile ());
+      if (false)
+        aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SORUCE, aMavenXSD.getAsFile ());
       aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
-        if (sSystemId != null && sSystemId.endsWith ("/maven-v4_0_0.xsd"))
-          return InputSourceFactory.create (aXSD);
+        // Public ID is unfortunately null
+        if (sSystemId != null && (sSystemId.endsWith ("/maven-v4_0_0.xsd") || sSystemId.endsWith ("/maven-4.0.0.xsd")))
+          return InputSourceFactory.create (aMavenXSD);
         return null;
       });
 
