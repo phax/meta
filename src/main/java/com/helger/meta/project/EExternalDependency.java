@@ -217,6 +217,7 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "5.0.0", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.5.3", EJDK.JDK8),
 
   // JDK 1.7 since 2.7
