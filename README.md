@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2023-08-27):
+Current list of all released projects (as of 2023-09-14):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.1.0 - JDK 11
 
@@ -101,15 +101,24 @@ Current list of all released projects (as of 2023-08-27):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 9.0.8 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
- * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.0.0 - JDK 11
+ * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-parent-pom) 
- * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.0.0 - JDK 11
+ * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting) 
- * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 2.0.0 - JDK 11
+ * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-api) 
+ * [peppol-reporting/peppol-reporting-backend-inmemory](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-inmemory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-inmemory) 
+ * [peppol-reporting/peppol-reporting-backend-mongodb](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-mongodb) 
+ * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 2.1.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
@@ -218,6 +227,21 @@ Current list of all released projects (as of 2023-08-27):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom) 
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api) 
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo) 
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http) 
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.1.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-ebinterface) 
@@ -641,7 +665,7 @@ Current list of all released projects (as of 2023-08-27):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 2.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 8.0.1 - JDK 11
+ * [phive](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 3.0.5 - JDK 11
@@ -713,9 +737,21 @@ Current list of all released projects (as of 2023-08-27):
  * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 3.0.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 8.0.1 - JDK 11
+ * [phive/phive-api](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
+ * [phive/phive-result](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result) 
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine) 
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model) 
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 9.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.12.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-parent-pom) 
@@ -769,16 +805,6 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 11
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 11
-
- * [phive/phive-repo](https://github.com/phax/phive) - JDK 11
-
- * [phive/phive-result](https://github.com/phax/phive) - JDK 11
-
- * [phive/phive-ves-engine](https://github.com/phax/phive) - JDK 11
-
- * [phive/phive-ves-model](https://github.com/phax/phive) - JDK 11
-
- * [phive/phive-xml](https://github.com/phax/phive) - JDK 11
 
 
 All deprecated projects:

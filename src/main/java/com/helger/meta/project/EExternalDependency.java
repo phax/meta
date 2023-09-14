@@ -48,6 +48,9 @@ public enum EExternalDependency
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
+
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.20.146", EJDK.JDK8),
+
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.76", EJDK.JDK8),
@@ -338,11 +341,12 @@ public enum EExternalDependency
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.11.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.7", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.9", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
+  SLF4J_JDK_PLATFORM_LOGGING ("org.slf4j", "slf4j-jdk-platform-logging", SLF4J_API),
 
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.7.3", EJDK.JDK8),
 
