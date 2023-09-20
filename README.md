@@ -299,7 +299,7 @@ Current list of all released projects (as of 2023-09-20):
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 4.1.5 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-javacc-maven-plugin) 
- * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 4.0.2 - JDK 11
+ * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 4.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin) 
  * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 2.0.2 - JDK 11
