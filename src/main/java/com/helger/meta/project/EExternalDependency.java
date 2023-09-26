@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.20.153", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.20.154", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -217,8 +217,8 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "5.0.0", EJDK.JDK8),
-  JEROMQ ("org.zeromq", "jeromq", "0.5.3", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "5.0.1", EJDK.JDK8),
+  JEROMQ ("org.zeromq", "jeromq", "0.5.4", EJDK.JDK8),
 
   // JDK 1.7 since 2.7
   // JDK 1.8 since 2.26
@@ -329,7 +329,7 @@ public enum EExternalDependency
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.3", EJDK.JDK17),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
-  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.12.1", EJDK.JDK8),
+  SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.13.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.9", EJDK.JDK8),
