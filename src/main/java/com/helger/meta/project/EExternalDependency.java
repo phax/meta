@@ -353,7 +353,7 @@ public enum EExternalDependency
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.1.1", EJDK.JDK8),
 
   @VersionMaxExcl ("4.0.0")
-  XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.2", EJDK.JDK11),
+  XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.3", EJDK.JDK11),
   // Java 11
   XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.0", EJDK.JDK11),
 
