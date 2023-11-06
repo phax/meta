@@ -50,9 +50,6 @@ public enum EProjectTemp implements IProject
   ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
   @IsGitLab
   @IsPrivateRepo
-  ENTWERTER_REPO (ENTWERTER, "entwerter-repo", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
   ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION);
 
   private final SimpleProject m_aProject;
@@ -80,7 +77,11 @@ public enum EProjectTemp implements IProject
                 @Nonnull @Nonempty final String sProjectBaseDirName,
                 @Nonnull final EProjectType eProjectType)
   {
-    this (eParentProject, sProjectName, sProjectBaseDirName, eProjectType, eParentProject.getLastPublishedVersionString ());
+    this (eParentProject,
+          sProjectName,
+          sProjectBaseDirName,
+          eProjectType,
+          eParentProject.getLastPublishedVersionString ());
   }
 
   EProjectTemp (@Nonnull final EProjectTemp eParentProject,
@@ -179,7 +180,8 @@ public enum EProjectTemp implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
