@@ -302,10 +302,10 @@ Current list of all released projects (as of 2023-11-06):
  * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 4.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-plugin) 
- * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 2.0.2 - JDK 11
+ * [ph-jaxb-pom](https://github.com/phax/ph-jaxb-pom) - Version 2.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxb-pom) 
- * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 2.0.1 - JDK 11
+ * [ph-jaxws-pom](https://github.com/phax/ph-jaxws-pom) - Version 2.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-jaxws-pom) 
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.0.1 - JDK 11

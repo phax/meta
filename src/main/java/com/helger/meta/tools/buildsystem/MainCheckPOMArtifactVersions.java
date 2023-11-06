@@ -419,9 +419,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       else
       {
         final String sConnection = MicroHelper.getChildTextContent (eSCM, "connection");
-        final String sExpectedConnection = "scm:git:git@" +
+        final String sExpectedConnection = "scm:git:https://" +
                                            aProject.getHostingPlatform ().getDomain () +
-                                           ":" +
+                                           "/" +
                                            eProjectOwner.getGitOrgaName () +
                                            "/" +
                                            aProject.getFullBaseDirName () +
