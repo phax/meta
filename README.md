@@ -230,19 +230,19 @@ Current list of all released projects (as of 2023-11-07):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 1.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 1.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 1.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 1.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 1.0.0 - JDK 11
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 1.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.1.0 - JDK 11
@@ -817,19 +817,19 @@ All deprecated projects:
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
  * java-tools - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom) 
  * java-tools/en16931-edifact-to-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml) 
  * java-tools/en16931-edifact-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml) 
  * java-tools/en16931-xml-validator - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
  * toop-parent-pom - Version 1.1.1
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
  * as2-peppol - Version 5.4.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom) 
