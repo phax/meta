@@ -442,14 +442,15 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                            "'");
 
         final String sURL = MicroHelper.getChildTextContent (eSCM, "url");
-        final String sExpectedURL = "http://" +
-                                    aProject.getHostingPlatform ().getDomain () +
-                                    "/" +
-                                    eProjectOwner.getGitOrgaName () +
-                                    "/" +
-                                    aProject.getFullBaseDirName ();
-        if (!sExpectedURL.equalsIgnoreCase (sURL))
-          _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL + "'");
+        final String sExp = aProject.getHostingPlatform ().getDomain () +
+                            "/" +
+                            eProjectOwner.getGitOrgaName () +
+                            "/" +
+                            aProject.getFullBaseDirName ();
+        final String sExpectedURL1 = "http://" + sExp;
+        final String sExpectedURL2 = "https://" + sExp;
+        if (!sExpectedURL1.equalsIgnoreCase (sURL) && !sExpectedURL2.equalsIgnoreCase (sURL))
+          _warn (aProject, "Unexpected SCM URL '" + sURL + "'. Expected '" + sExpectedURL2 + "'");
 
         final String sTag = MicroHelper.getChildTextContent (eSCM, "tag");
         final String sExpectedTag = "HEAD";
