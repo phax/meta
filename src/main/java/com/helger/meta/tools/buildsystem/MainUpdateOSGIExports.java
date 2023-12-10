@@ -89,7 +89,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
       aSRS.setFeatureValue (EXMLParserFeature.NAMESPACES, true);
       aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, XMLConstants.W3C_XML_SCHEMA_NS_URI);
       if (false)
-        aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SORUCE, aMavenXSD.getAsFile ());
+        aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SOURCE, aMavenXSD.getAsFile ());
       aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
         // Public ID is unfortunately null
         if (sSystemId != null && (sSystemId.endsWith ("/maven-v4_0_0.xsd") || sSystemId.endsWith ("/maven-4.0.0.xsd")))
