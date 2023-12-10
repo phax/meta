@@ -108,7 +108,10 @@ public enum EExternalDependency
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
   FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.11.1", EJDK.JDK8),
 
-  FLYWAY10 ("org.flywaydb", "flyway-core", "10.2.0", EJDK.JDK8),
+  FLYWAY9 ("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
+  FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
+
+  FLYWAY10 ("org.flywaydb", "flyway-core", "10.2.0", EJDK.JDK17),
   FLYWAY_MYSQL10 ("org.flywaydb", "flyway-mysql", FLYWAY10),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.9", EJDK.JDK8),
