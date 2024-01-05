@@ -53,27 +53,6 @@ Current list of all released projects (as of 2024-01-05):
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.4.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
- * [maven-jaxb2-plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
- * [maven-jaxb2-plugin/plugin](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 
- * [maven-jaxb2-plugin/plugin-2.2](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin) 
- * [maven-jaxb2-plugin/plugin-2.3](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin) 
- * [maven-jaxb2-plugin/plugin-3.0](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin) 
- * [maven-jaxb2-plugin/plugin-4.0](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin) 
- * [maven-jaxb2-plugin/plugin-core](https://github.com/phax/maven-jaxb2-plugin) - Version 0.16.1 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core) 
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
@@ -855,6 +834,27 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/cipa-start-jmssender) 
  * jgatsp - never released
+ * maven-jaxb2-plugin - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
+ * maven-jaxb2-plugin/plugin - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 
+ * maven-jaxb2-plugin/plugin-2.2 - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb22-maven-plugin) 
+ * maven-jaxb2-plugin/plugin-2.3 - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb23-maven-plugin) 
+ * maven-jaxb2-plugin/plugin-3.0 - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb30-maven-plugin) 
+ * maven-jaxb2-plugin/plugin-4.0 - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb40-maven-plugin) 
+ * maven-jaxb2-plugin/plugin-core - Version 0.16.1
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-core) 
  * peppol-lime - Version 3.0.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/peppol-lime-parent-pom) 

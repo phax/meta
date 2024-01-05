@@ -442,16 +442,6 @@
       <version>4.0.1</version>
     </dependency>
     <dependency>
-      <groupId>com.evolvedbinary.maven.jvnet</groupId>
-      <artifactId>jaxb2-maven-plugin</artifactId>
-      <version>0.15.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jvnet.jaxb2_commons</groupId>
-      <artifactId>jaxb2-basics</artifactId>
-      <version>0.13.1</version>
-    </dependency>
-    <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
       <version>4.0.1</version>
@@ -466,6 +456,11 @@
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
       <version>4.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jvnet.jaxb</groupId>
+      <artifactId>jaxb-maven-plugin</artifactId>
+      <version>4.0.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.ws</groupId>
@@ -1373,42 +1368,6 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
       <version>5.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb-maven-plugin-project</artifactId>
-      <version>0.16.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb-maven-plugin-core</artifactId>
-      <version>0.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb22-maven-plugin</artifactId>
-      <version>0.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb23-maven-plugin</artifactId>
-      <version>0.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb2-maven-plugin</artifactId>
-      <version>0.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb30-maven-plugin</artifactId>
-      <version>0.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.maven</groupId>
-      <artifactId>jaxb40-maven-plugin</artifactId>
-      <version>0.16.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
