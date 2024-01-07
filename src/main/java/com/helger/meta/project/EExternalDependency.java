@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.22.11", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.22.12", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -72,7 +72,7 @@ public enum EExternalDependency
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.25.0", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.11.0", EJDK.JDK8),
-  COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.3", EJDK.JDK8),
+  COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.10.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.12.0", EJDK.JDK8),
@@ -274,7 +274,7 @@ public enum EExternalDependency
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.3.0.23.09", EJDK.JDK8),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "9.0.7", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "9.0.8", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.1", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),

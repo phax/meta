@@ -454,7 +454,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.1.6",
+                     "10.1.7",
                      EJDK.JDK11),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
@@ -562,7 +562,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "9.2.0",
+                             "9.2.1",
                              EJDK.JDK11),
   PEPPOL_ID_DATATYPES (PEPPOL_COMMONS_PARENT_POM, "peppol-id-datatypes", EProjectType.JAVA_LIBRARY),
   PEPPOL_ID (PEPPOL_COMMONS_PARENT_POM, "peppol-id", EProjectType.JAVA_LIBRARY),
@@ -921,8 +921,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
-                                                                                                                   .getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
