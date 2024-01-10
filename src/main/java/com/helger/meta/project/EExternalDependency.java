@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.22.12", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.22.13", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -301,7 +301,7 @@ public enum EExternalDependency
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.16.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.10", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.11", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
@@ -373,9 +373,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.12.1", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.2.3", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.2.3", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.2.3", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.2.5", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.2.5", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.2.5", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),

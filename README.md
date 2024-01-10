@@ -32,7 +32,7 @@ Current list of all released projects (as of 2024-01-10):
  * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
- * [ddd](https://github.com/phax/ddd) - Version 0.1.3 - JDK 11
+ * [ddd](https://github.com/phax/ddd) - Version 0.1.4 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ddd/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ddd) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.1.0 - JDK 11

@@ -664,7 +664,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.1.3",
+       "0.1.4",
        EJDK.JDK11),
 
   EN16931_CII2UBL_PARENT_POM (null,
