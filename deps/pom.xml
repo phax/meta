@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240110</version>
+  <version>1.0.0-20240123</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2008,58 +2008,58 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>9.2.3</version>
+      <version>9.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2289,101 +2289,101 @@
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-parent-pom</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-lib</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bdew</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bpc</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-cef</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-eespa</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-entsog</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-peppol</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-server-webapp</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-test</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-dynamic-discovery</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-client</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-servlet</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-server-webapp</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-cef-client</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-eudamed-client</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-bdew-client</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-spring-boot-demo</artifactId>
-      <version>2.7.1</version>
+      <version>2.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
