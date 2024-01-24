@@ -711,6 +711,16 @@ public enum EProject implements IProject
   PHASE4_BDEW_CLIENT (PHASE4_PARENT_POM, "phase4-bdew-client", EProjectType.JAVA_LIBRARY),
   PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo", EProjectType.JAVA_LIBRARY),
 
+  PHASE4_PEPPOL_STANDALONE (null,
+                            EProjectOwner.DEFAULT_PROJECT_OWNER,
+                            "phase4-peppol-standalone",
+                            "phase4-peppol-standalone",
+                            EProjectType.JAVA_WEB_APPLICATION,
+                            EHasPages.FALSE,
+                            EHasWiki.FALSE,
+                            "2.7.3",
+                            EJDK.JDK11),
+
   PHOSS_DIRECTORY_PARENT_POM (null,
                               EProjectOwner.DEFAULT_PROJECT_OWNER,
                               "phoss-directory-parent-pom",
