@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2024-01-24):
+Current list of all released projects (as of 2024-01-29):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.1.3 - JDK 11
 
@@ -11,25 +11,25 @@ Current list of all released projects (as of 2024-01-24):
  * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 2.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-xrechnung-mapping) 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom) 
- * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot) 
- * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp) 
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib) 
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb) 
- * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server) 
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.1 - JDK 11
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
  * [ddd](https://github.com/phax/ddd) - Version 0.2.0 - JDK 11
@@ -89,22 +89,22 @@ Current list of all released projects (as of 2024-01-24):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 9.3.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
- * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-parent-pom) 
- * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting) 
- * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-api) 
- * [peppol-reporting/peppol-reporting-backend-inmemory](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting/peppol-reporting-backend-inmemory](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-inmemory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-inmemory) 
- * [peppol-reporting/peppol-reporting-backend-mongodb](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting/peppol-reporting-backend-mongodb](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-mongodb) 
- * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 2.2.1 - JDK 11
+ * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 2.2.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.0 - JDK 11
@@ -410,7 +410,7 @@ Current list of all released projects (as of 2024-01-24):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.0.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.0 - JDK 11
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 6.0.1 - JDK 11
@@ -599,9 +599,6 @@ Current list of all released projects (as of 2024-01-24):
  * [phase4](https://github.com/phax/phase4) - Version 2.7.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom) 
- * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - Version 2.7.3 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone) 
  * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - Version 2.7.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client) 
@@ -841,7 +838,7 @@ All deprecated projects:
  * jgatsp - never released
  * maven-jaxb2-plugin - Version 0.16.1
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb-maven-plugin-project) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jaxb-maven-plugin-project/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jaxb-maven-plugin-project) 
  * maven-jaxb2-plugin/plugin - Version 0.16.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/jaxb2-maven-plugin) 

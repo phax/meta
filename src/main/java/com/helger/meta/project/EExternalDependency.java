@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.23.8", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.23.12", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -124,7 +124,7 @@ public enum EExternalDependency
   HAZELCAST ("com.hazelcast", "hazelcast", "5.3.6", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.2.4", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.3", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.3.1", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "11.5.9.0", EJDK.JDK8),
 
@@ -225,7 +225,7 @@ public enum EExternalDependency
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
   TRANG ("org.relaxng", "trang", "20220510", EJDK.JDK8),
 
-  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.12.3", EJDK.JDK8),
+  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.12.4", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
   @IsLegacy
@@ -254,7 +254,7 @@ public enum EExternalDependency
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.9.1", EJDK.JDK8),
+  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.9.2", EJDK.JDK8),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
