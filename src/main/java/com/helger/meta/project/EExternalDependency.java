@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.23.12", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.24.3", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -67,7 +67,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.9.4", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.16.0", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.16.1", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.25.0", EJDK.JDK8),
@@ -99,14 +99,15 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
 
-  @VersionMaxExcl ("4.0.0")
+  @VersionMaxExcl ("4")
   FLAPDOODLE_3("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "3.5.4", EJDK.JDK8),
   FLAPDOODLE_4 ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.12.2", EJDK.JDK8),
 
-  FLYWAY9 ("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
+  @VersionMaxExcl ("10")
+  FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY10 ("org.flywaydb", "flyway-core", "10.6.0", EJDK.JDK17),
+  FLYWAY10 ("org.flywaydb", "flyway-core", "10.8.1", EJDK.JDK17),
   FLYWAY_MYSQL10 ("org.flywaydb", "flyway-mysql", FLYWAY10),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.9", EJDK.JDK8),
@@ -186,7 +187,7 @@ public enum EExternalDependency
   JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.4", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
 
-  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.0", EJDK.JDK8),
+  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.3", EJDK.JDK8),
 
   JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.1", EJDK.JDK11),
 
@@ -197,7 +198,7 @@ public enum EExternalDependency
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
   JEDIS ("redis.clients", "jedis", "5.1.0", EJDK.JDK8),
-  JEROMQ ("org.zeromq", "jeromq", "0.5.4", EJDK.JDK8),
+  JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
   JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.5", EJDK.JDK11),
@@ -208,7 +209,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  @VersionMaxExcl ("12.0.0")
+  @VersionMaxExcl ("12")
   JETTY11_BOM("org.eclipse.jetty", "jetty-bom", "11.0.19", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
@@ -219,13 +220,13 @@ public enum EExternalDependency
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.5", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.6", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
   TRANG ("org.relaxng", "trang", "20220510", EJDK.JDK8),
 
-  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.12.4", EJDK.JDK8),
+  JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.12.5", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
   @IsLegacy
@@ -237,11 +238,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.10.1", EJDK.JDK8),
+  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.10.2", EJDK.JDK8),
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT5_JUPITER),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.10.1", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.10.2", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.6.1", EJDK.JDK8),
@@ -292,16 +293,13 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
 
-  @VersionMaxExcl ("12.0.0")
-  SAXON_11("net.sf.saxon", "Saxon-HE", "11.6", EJDK.JDK8),
-  // Currently Saxon 11 is the stable one
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.4", EJDK.JDK17),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.9.5", EJDK.JDK8),
   SELENIUM ("org.seleniumhq.selenium", "selenium-java", "4.17.0", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.11", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.12", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
@@ -311,7 +309,7 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.8.3", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.1.3", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.1.4", EJDK.JDK11),
 
   @IsBOM
   SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.2.2", EJDK.JDK11),
@@ -339,7 +337,7 @@ public enum EExternalDependency
   XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.1", EJDK.JDK11),
 
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
-  ZXING_CORE ("com.google.zxing", "core", "3.5.2", EJDK.JDK8),
+  ZXING_CORE ("com.google.zxing", "core", "3.5.3", EJDK.JDK8),
   ZXING_JAVASE ("com.google.zxing", "javase", ZXING_CORE),
 
   // parent POM dependencies
@@ -379,7 +377,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.8.3.0", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.8.3.1", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.0", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.0.0", EJDK.JDK8);
 

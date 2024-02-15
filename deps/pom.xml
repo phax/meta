@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240129</version>
+  <version>1.0.0-20240215</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.23.12</version>
+      <version>2.24.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -113,7 +113,7 @@
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
-      <version>1.16.0</version>
+      <version>1.16.1</version>
     </dependency>
     <dependency>
       <groupId>commons-collections</groupId>
@@ -243,7 +243,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>[3.5.4,4.0.0)</version>
+      <version>[3.5.4,4)</version>
     </dependency>
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
@@ -253,22 +253,22 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>9.22.3</version>
+      <version>[9.22.3,10)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>9.22.3</version>
+      <version>[9.22.3,10)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>10.6.0</version>
+      <version>10.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>10.6.0</version>
+      <version>10.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -460,7 +460,7 @@
     <dependency>
       <groupId>org.jvnet.jaxb</groupId>
       <artifactId>jaxb-maven-plugin</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.3</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.ws</groupId>
@@ -496,7 +496,7 @@
     <dependency>
       <groupId>org.zeromq</groupId>
       <artifactId>jeromq</artifactId>
-      <version>0.5.4</version>
+      <version>0.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey</groupId>
@@ -532,54 +532,54 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>[11.0.19,12.0.0)</version>
+      <version>[11.0.19,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>12.0.5</version>
+      <version>12.0.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>12.0.5</version>
+      <version>12.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.relaxng</groupId>
@@ -594,12 +594,12 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
-      <version>0.12.4</version>
+      <version>0.12.5</version>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-orgjson</artifactId>
-      <version>0.12.4</version>
+      <version>0.12.5</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -624,27 +624,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.10.1</version>
+      <version>5.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.10.1</version>
+      <version>5.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.10.1</version>
+      <version>5.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.10.1</version>
+      <version>5.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.10.1</version>
+      <version>1.10.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -810,11 +810,6 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>[11.6,12.0.0)</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sf.saxon</groupId>
-      <artifactId>Saxon-HE</artifactId>
       <version>12.4</version>
     </dependency>
     <dependency>
@@ -835,32 +830,32 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk-platform-logging</artifactId>
-      <version>2.0.11</version>
+      <version>2.0.12</version>
     </dependency>
     <dependency>
       <groupId>com.github.spotbugs</groupId>
@@ -870,7 +865,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.1.3</version>
+      <version>6.1.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -942,12 +937,12 @@
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>core</artifactId>
-      <version>3.5.2</version>
+      <version>3.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>javase</artifactId>
-      <version>3.5.2</version>
+      <version>3.5.3</version>
     </dependency>
     <dependency>
       <groupId>com.mycila</groupId>
@@ -1132,7 +1127,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.8.3.0</version>
+      <version>4.8.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -1180,103 +1175,103 @@
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-bc</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-config</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-jaxb-adapter</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-json</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-less-commons</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-security</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-wsclient</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>11.1.3</version>
+      <version>11.1.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2268,7 +2263,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.2.0</version>
+      <version>0.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2289,101 +2284,101 @@
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-parent-pom</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-lib</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bdew</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bpc</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-cef</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-eespa</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-entsog</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-peppol</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-server-webapp</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-test</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-dynamic-discovery</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-client</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-servlet</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-server-webapp</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-cef-client</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-eudamed-client</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-bdew-client</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-spring-boot-demo</artifactId>
-      <version>2.7.3</version>
+      <version>2.7.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
