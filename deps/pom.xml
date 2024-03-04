@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240226</version>
+  <version>1.0.0-20240304</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -532,43 +532,43 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-plus</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-runner</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>apache-jsp</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>[11.0.19,12)</version>
+      <version>[11.0.20,12)</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -876,12 +876,27 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>3.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
       <version>3.2.3</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+      <version>3.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>3.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
       <version>3.2.3</version>
     </dependency>
     <dependency>
@@ -1353,6 +1368,12 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
       <version>7.3.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-pdf-layout</artifactId>
+      <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1489,88 +1510,88 @@
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-parent-pom</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-api</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-testfiles</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl20-codelists</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl21-codelists</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl22-codelists</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl23-codelists</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl24</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl24-codelists</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ublpe</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubltr</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-dian</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-eforms</artifactId>
-      <version>8.0.3</version>
+      <version>9.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2003,58 +2024,58 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>9.3.0</version>
+      <version>9.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
