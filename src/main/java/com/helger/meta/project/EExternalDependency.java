@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.24.10", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.25.2", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -71,7 +71,7 @@ public enum EExternalDependency
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.26.0", EJDK.JDK8),
-  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.11.0", EJDK.JDK8),
+  COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.12.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.10.0", EJDK.JDK8),
@@ -139,22 +139,13 @@ public enum EExternalDependency
 
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.11", EJDK.JDK8),
 
-  @IsLegacy (replacedWith = "org.eclipse.angus:angus-activation")
-  JAKARTA_ACTIVATION_2("com.sun.activation", "jakarta.activation", "2.0.1", EJDK.JDK11),
-
-  ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.1", EJDK.JDK11),
+  ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.2", EJDK.JDK11),
 
   @VersionMaxExcl ("2.0.0")
   JAKARTA_ANNOTATION_API("jakarta.annotation", "jakarta.annotation-api", "1.3.5", EJDK.JDK8),
   JAKARTA_ANNOTATION_API_2 ("jakarta.annotation", "jakarta.annotation-api", "2.1.1", EJDK.JDK11),
 
-  // @VersionMaxExcl ("2.0.0")
-  // JAKARTA_MAIL("com.sun.mail", "jakarta.mail", "1.6.7", EJDK.JDK8),
-
-  @IsLegacy (replacedWith = "org.eclipse.angus:angus-mail")
-  JAKARTA_MAIL_2("com.sun.mail", "jakarta.mail", "2.0.1", EJDK.JDK11),
-
-  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.2", EJDK.JDK11),
+  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.3", EJDK.JDK11),
 
   @Deprecated
   JAKARTA_PERSISTENCE_2 ("org.eclipse.persistence", "jakarta.persistence", "2.2.3", EJDK.JDK8),
@@ -172,7 +163,7 @@ public enum EExternalDependency
   // JAKARTA_JSP_API_31 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api",
   // "3.1.1", EJDK.JDK11),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.8", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.25.9", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.13", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -245,7 +236,7 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.10.2", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.6.1", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.7.0", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
@@ -267,7 +258,7 @@ public enum EExternalDependency
   METRO3 ("org.glassfish.metro", "webservices-rt", "3.0.3", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.3", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "4.11.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.0.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "8.3.0", EJDK.JDK8),
@@ -330,7 +321,7 @@ public enum EExternalDependency
 
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.16.2", EJDK.JDK8),
 
-  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.2", EJDK.JDK11),
+  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.3", EJDK.JDK11),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.0", EJDK.JDK8),
 

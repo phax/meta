@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240304</version>
+  <version>1.0.0-20240305</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.24.10</version>
+      <version>2.25.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-dbcp2</artifactId>
-      <version>2.11.0</version>
+      <version>2.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -369,7 +369,7 @@
     <dependency>
       <groupId>org.eclipse.angus</groupId>
       <artifactId>angus-activation</artifactId>
-      <version>2.0.1</version>
+      <version>2.0.2</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -384,7 +384,7 @@
     <dependency>
       <groupId>org.eclipse.angus</groupId>
       <artifactId>angus-mail</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
@@ -419,7 +419,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.25.8</version>
+      <version>3.25.9</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -654,7 +654,7 @@
     <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka-clients</artifactId>
-      <version>3.6.1</version>
+      <version>3.7.0</version>
     </dependency>
     <dependency>
       <groupId>org.littleshoot</groupId>
@@ -729,12 +729,12 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>4.11.1</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>4.11.1</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
@@ -927,7 +927,7 @@
     <dependency>
       <groupId>org.apache.wss4j</groupId>
       <artifactId>wss4j-ws-security-dom</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -2080,33 +2080,33 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-parent-pom</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-api</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-inmemory</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-mongodb</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-redis</artifactId>
-      <version>2.2.2</version>
+      <version>2.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -2431,50 +2431,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>7.1.0</version>
+      <version>7.1.1</version>
       <type>war</type>
     </dependency>
     <dependency>
