@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.25.2", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.25.5", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -107,7 +107,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY10 ("org.flywaydb", "flyway-core", "10.8.1", EJDK.JDK17),
+  FLYWAY10 ("org.flywaydb", "flyway-core", "10.9.1", EJDK.JDK17),
   FLYWAY_MYSQL10 ("org.flywaydb", "flyway-mysql", FLYWAY10),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.9", EJDK.JDK8),
@@ -173,9 +173,9 @@ public enum EExternalDependency
   // @IsLegacy (replacedWith = "jakarta.servlet-api")
   JAVAX_SERVLET_API_4 ("javax.servlet", "javax.servlet-api", "4.0.1", EJDK.JDK11),
 
-  JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.1", EJDK.JDK11),
+  JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.2", EJDK.JDK11),
   @IsBOM
-  JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.4", EJDK.JDK11),
+  JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.5", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
 
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.3", EJDK.JDK8),
@@ -188,7 +188,7 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "5.1.1", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "5.1.2", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
@@ -211,7 +211,7 @@ public enum EExternalDependency
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.6", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.7", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
