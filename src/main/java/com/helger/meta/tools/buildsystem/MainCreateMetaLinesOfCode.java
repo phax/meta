@@ -60,8 +60,9 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 {
   private enum EFileType
   {
-    BATCH ("Batch", true, new CommonsTreeSet <> ("bat", "cmd")),
+    BATCH ("Batch/Shell", true, new CommonsTreeSet <> ("bat", "cmd", "sh")),
     CODEGEN ("Code generation", true, new CommonsTreeSet <> ("jj", "jjt")),
+    CODELIST ("Code list", true, new CommonsTreeSet <> ("gc", "cva")),
     CSS ("CSS", true, new CommonsTreeSet <> ("css", "scss")),
     CSV ("CSV", true, new CommonsTreeSet <> ("csv")),
     GIT ("git", true, new CommonsTreeSet <> ("gitignore")),
@@ -71,21 +72,20 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     JDM ("JDM", true, new CommonsTreeSet <> ("jdm")),
     JS ("JavaScript", true, new CommonsTreeSet <> ("js")),
     JSON ("JSON", true, new CommonsTreeSet <> ("json")),
-    PROPERTIES ("Properties", true, new CommonsTreeSet <> ("properties", "conf")),
+    PROPERTIES ("Properties", true, new CommonsTreeSet <> ("properties", "properties_", "conf")),
     RELAX_NG ("RelaxNG", true, new CommonsTreeSet <> ("rng", "rnc")),
     SQL ("SQL", true, new CommonsTreeSet <> ("sql")),
     TEXT ("Text", true, new CommonsTreeSet <> ("txt", "md", "text")),
     XML ("XML",
          true,
-         new CommonsTreeSet <> ("cva",
-                                "dita",
+         new CommonsTreeSet <> ("dita",
                                 "dtd",
-                                "gc",
                                 "gc_",
                                 "isdoc",
                                 "jrxml",
                                 "sch",
                                 "svrl",
+                                "ves",
                                 "wsdl",
                                 "xjb",
                                 "xjc",
@@ -102,7 +102,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     IMAGE ("Image",
            false,
            new CommonsTreeSet <> ("bmp", "gif", "icc", "ico", "jpg", "otf", "png", "svg", "woff", "woff2")),
-    KEYSTORE ("Keystore", false, new CommonsTreeSet <> ("cer", "crt", "der", "jks", "pem", "pfx", "p12")),
+    KEYSTORE ("Keystore", false, new CommonsTreeSet <> ("bks", "cer", "crt", "der", "jks", "pem", "pfx", "p12")),
     PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
     RAR ("RAR", false, new CommonsTreeSet <> ("rar")),
     WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
@@ -118,12 +118,14 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                        "bak",
                                        "cat",
                                        "dat",
+                                       "diff",
                                        "ent",
                                        "episode",
                                        "flow",
                                        "header",
                                        "ijmap",
                                        "in",
+                                       "inc",
                                        "incl",
                                        "interface",
                                        "map",
@@ -146,9 +148,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     private final boolean m_bIsText;
     private final ICommonsSet <String> m_aExts;
 
-    private EFileType (@Nonnull @Nonempty final String sName,
-                       final boolean bIsText,
-                       @Nonnull final ICommonsSet <String> aExts)
+    EFileType (@Nonnull @Nonempty final String sName, final boolean bIsText, @Nonnull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
       m_sExtensions = StringHelper.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
@@ -292,8 +292,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@Nonnull final File aBaseDir,
-                             @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
+  private static void _scan (@Nonnull final File aBaseDir, @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap)
+                                                                                                                       throws IOException
   {
     if (aBaseDir.isDirectory ())
     {
