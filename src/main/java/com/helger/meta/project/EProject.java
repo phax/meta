@@ -588,6 +588,7 @@ public enum EProject implements IProject
                                EJDK.JDK11),
   PEPPOL_REPORTING_API (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting", EProjectType.JAVA_LIBRARY),
+  PEPPOL_REPORTING_BACKEND_CSV (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-backend-csv", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING_BACKEND_INMEMORY (PEPPOL_REPORTING_PARENT_POM,
                                      "peppol-reporting-backend-inmemory",
                                      EProjectType.JAVA_LIBRARY),
