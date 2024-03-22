@@ -584,7 +584,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "2.2.3",
+                               "2.2.4",
                                EJDK.JDK11),
   PEPPOL_REPORTING_API (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-api", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting", EProjectType.JAVA_LIBRARY),
