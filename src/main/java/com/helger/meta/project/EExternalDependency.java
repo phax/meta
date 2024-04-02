@@ -267,6 +267,7 @@ public enum EExternalDependency
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.3.0.23.09", EJDK.JDK8),
+  ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "9.0.10", EJDK.JDK8),
 
