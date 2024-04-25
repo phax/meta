@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2024-04-23):
+Current list of all released projects (as of 2024-04-25):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.1 - JDK 11
 
@@ -218,19 +218,19 @@ Current list of all released projects (as of 2024-04-23):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 1.1.1 - JDK 11
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 1.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 1.1.1 - JDK 11
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 1.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 1.1.1 - JDK 11
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 1.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 1.1.1 - JDK 11
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 1.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 1.1.1 - JDK 11
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 1.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 7.1.0 - JDK 11
@@ -662,7 +662,7 @@ Current list of all released projects (as of 2024-04-23):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 2.7.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 3.1.9 - JDK 11
@@ -734,19 +734,19 @@ Current list of all released projects (as of 2024-04-23):
  * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 3.1.9 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-xrechnung) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive/phive-api](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive/phive-result](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 9.2.0 - JDK 11
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 9.2.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.13.2 - JDK 11

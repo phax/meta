@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240423</version>
+  <version>1.0.0-20240425</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2045,59 +2045,59 @@
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-parent-pom</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-api</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-http</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-s3</artifactId>
-      <version>1.1.1</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-model</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-engine</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result</artifactId>
-      <version>9.2.0</version>
+      <version>9.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
