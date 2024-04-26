@@ -2102,58 +2102,58 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>9.3.5</version>
+      <version>9.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2457,50 +2457,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>7.1.1</version>
+      <version>7.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
