@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.25.59", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.25.61", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -193,7 +193,7 @@ public enum EExternalDependency
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.6", EJDK.JDK11),
+  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.7", EJDK.JDK11),
   JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
   JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
@@ -326,7 +326,7 @@ public enum EExternalDependency
 
   WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.3", EJDK.JDK11),
 
-  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.0", EJDK.JDK8),
+  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.1", EJDK.JDK8),
 
   @VersionMaxExcl ("4.0.0")
   XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.4", EJDK.JDK11),
