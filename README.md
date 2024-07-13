@@ -59,6 +59,9 @@ Current list of all released projects (as of 2024-07-13):
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 9.4.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom) 
+ * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 9.4.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe) 
  * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 9.4.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 
@@ -110,6 +113,12 @@ Current list of all released projects (as of 2024-07-13):
  * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-backend-redis) 
+ * [peppol-reporting/peppol-reporting-datatypes](https://github.com/phax/peppol-reporting) - Version 3.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-datatypes) 
+ * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 3.0.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
@@ -623,6 +632,9 @@ Current list of all released projects (as of 2024-07-13):
  * [phase4/phase4-entsog-client](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-entsog-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-entsog-client) 
+ * [phase4/phase4-euctp-client](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-euctp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-euctp-client) 
  * [phase4/phase4-eudamed-client](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-eudamed-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-eudamed-client) 
@@ -656,6 +668,9 @@ Current list of all released projects (as of 2024-07-13):
  * [phase4/phase4-profile-entsog](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-entsog/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-entsog) 
+ * [phase4/phase4-profile-euctp](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-euctp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-euctp) 
  * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 2.7.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-profile-peppol) 
