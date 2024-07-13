@@ -787,7 +787,7 @@ public enum EProject implements IProject
                                  EProjectType.JAVA_LIBRARY,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "2.2.2",
+                                 "2.2.3",
                                  EJDK.JDK11),
   ERECHNUNG_WS_CLIENT (null,
                        EProjectOwner.DEFAULT_PROJECT_OWNER,
