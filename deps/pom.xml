@@ -1179,7 +1179,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxws-pom</artifactId>
-      <version>2.0.3</version>
+      <version>2.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1653,23 +1653,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -1966,34 +1966,34 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-parent-pom</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-demo</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>9.2.2</version>
+      <version>9.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>

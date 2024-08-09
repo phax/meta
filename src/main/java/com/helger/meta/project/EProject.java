@@ -41,7 +41,7 @@ public enum EProject implements IProject
                  EProjectType.MAVEN_POM,
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
-                 "2.0.5",
+                 "2.0.6",
                  EJDK.JDK11),
   PH_FORBIDDEN_APIS (null,
                      EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -543,7 +543,7 @@ public enum EProject implements IProject
                                  EProjectType.MAVEN_POM,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "9.2.2",
+                                 "9.2.3",
                                  EJDK.JDK11),
   PH_OTON_BOOTSTRAP3 (PH_OTON_BOOTSTRAP3_PARENT_POM, "ph-oton-bootstrap3", EProjectType.JAVA_LIBRARY),
   PH_OTON_BOOTSTRAP3_DEMO (PH_OTON_BOOTSTRAP3_PARENT_POM, "ph-oton-bootstrap3-demo", EProjectType.JAVA_WEB_APPLICATION),
@@ -947,8 +947,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
