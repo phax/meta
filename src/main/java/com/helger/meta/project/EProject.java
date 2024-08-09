@@ -314,7 +314,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "9.0.1",
+                     "9.0.2",
                      EJDK.JDK11),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
   PH_UBL_TESTFILES (PH_UBL_PARENT_POM, "ph-ubl-testfiles", EProjectType.JAVA_LIBRARY),
@@ -947,8 +947,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
-                                                                                                                   .getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

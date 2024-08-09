@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.26.27", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.27.1", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.17", EJDK.JDK8),
 
@@ -70,7 +70,7 @@ public enum EExternalDependency
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.17.1", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
-  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.26.2", EJDK.JDK8),
+  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.27.0", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.12.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
@@ -80,7 +80,7 @@ public enum EExternalDependency
   DNSJAVA ("dnsjava", "dnsjava", "3.6.1", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.4", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "5.3.0", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "5.4.0", EJDK.JDK8),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.7.0", EJDK.JDK11),
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.4", EJDK.JDK11),
@@ -117,12 +117,13 @@ public enum EExternalDependency
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
 
-  GOOGLE_PROTOBUF3 ("com.google.protobuf", "protobuf-java", "3.25.3", EJDK.JDK8),
-  GOOGLE_PROTOBUF4 ("com.google.protobuf", "protobuf-java", "4.27.2", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.27.3", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.3.230", EJDK.JDK8),
 
-  HAMCREST_LIBRARY ("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
+  @VersionMaxExcl ("3.0.0")
+  HAMCREST_LIBRARY_2("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
+  HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
 
   HAZELCAST ("com.hazelcast", "hazelcast", "5.5.0", EJDK.JDK8),
 
@@ -193,7 +194,7 @@ public enum EExternalDependency
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.7", EJDK.JDK11),
+  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.8", EJDK.JDK11),
   JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
   JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
@@ -258,18 +259,18 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.1.2", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.1.3", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.0.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.4.0.24.05", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.5.0.24.07", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "10.0.3", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.2", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.3", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
@@ -292,7 +293,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.13", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.15", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
