@@ -624,7 +624,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "3.0.0",
+                               "3.0.1",
                                EJDK.JDK11),
   PEPPOL_REPORTING_TESTFILES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING_DATATYPES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-datatypes", EProjectType.JAVA_LIBRARY),
@@ -640,6 +640,7 @@ public enum EProject implements IProject
   PEPPOL_REPORTING_BACKEND_REDIS (PEPPOL_REPORTING_PARENT_POM,
                                   "peppol-reporting-backend-redis",
                                   EProjectType.JAVA_LIBRARY),
+  PEPPOL_REPORTING_BACKEND_SQL (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-backend-sql", EProjectType.JAVA_LIBRARY),
 
   PHIVE_RULES_PARENT_POM (null,
                           EProjectOwner.DEFAULT_PROJECT_OWNER,
