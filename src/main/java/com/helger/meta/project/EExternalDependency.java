@@ -203,7 +203,7 @@ public enum EExternalDependency
 
   @IsBOM
   @VersionMaxExcl ("12")
-  JETTY11_BOM("org.eclipse.jetty", "jetty-bom", "11.0.22", EJDK.JDK11),
+  JETTY11_BOM("org.eclipse.jetty", "jetty-bom", "11.0.24", EJDK.JDK11),
   JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
   JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
   JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
