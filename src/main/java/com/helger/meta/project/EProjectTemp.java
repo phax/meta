@@ -25,8 +25,6 @@ import javax.annotation.Nullable;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 /**
  * Defines other projects.
  *
@@ -104,7 +102,6 @@ public enum EProjectTemp implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
-  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectTemp (@Nonnull final EProjectTemp eParentProject,
                 @Nonnull @Nonempty final String sProjectName,
                 @Nonnull @Nonempty final String sProjectBaseDirName,
@@ -143,7 +140,6 @@ public enum EProjectTemp implements IProject
    * @param eMinJDK
    *        Minimum JDK version to use
    */
-  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectTemp (@Nullable final EProjectTemp eParentProject,
                 @Nonnull final EProjectOwner eProjectOwner,
                 @Nonnull @Nonempty final String sProjectName,

@@ -25,8 +25,6 @@ import javax.annotation.Nullable;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 /**
  * Defines all the active projects.
  *
@@ -97,7 +95,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "11.1.6",
+                         "11.1.8",
                          EJDK.JDK11),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
   PH_CLI (PH_COMMONS_PARENT_POM, "ph-cli", EProjectType.JAVA_LIBRARY),
@@ -703,12 +701,12 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "2.8.2",
+                     "2.8.3",
                      EJDK.JDK11),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_BDEW (PHASE4_PARENT_POM, "phase4-profile-bdew", EProjectType.JAVA_LIBRARY),
   // PHASE4_PROFILE_BPC (PHASE4_PARENT_POM, "phase4-profile-bpc",
-  // EProjectType.JAVA_LIBRARY, "2.8.2"),
+  // EProjectType.JAVA_LIBRARY, "2.8.3"),
   PHASE4_PROFILE_CEF (PHASE4_PARENT_POM, "phase4-profile-cef", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_DBNALLIANCE (PHASE4_PARENT_POM, "phase4-profile-dbnalliance", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_EESPA (PHASE4_PARENT_POM, "phase4-profile-eespa", EProjectType.JAVA_LIBRARY),
@@ -874,7 +872,6 @@ public enum EProject implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
-  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProject (@Nonnull final EProject eParentProject,
             @Nonnull @Nonempty final String sProjectName,
             @Nonnull @Nonempty final String sProjectBaseDirName,
@@ -913,7 +910,6 @@ public enum EProject implements IProject
    * @param eMinJDK
    *        Minimum JDK version to use
    */
-  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProject (@Nullable final EProject eParentProject,
             @Nonnull final EProjectOwner eProjectOwner,
             @Nonnull @Nonempty final String sProjectName,

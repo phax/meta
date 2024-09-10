@@ -25,14 +25,11 @@ import javax.annotation.Nullable;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.version.Version;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 /**
  * Defines all the deprecated projects.
  *
  * @author Philip Helger
  */
-@SuppressFBWarnings ("NP_NONNULL_PARAM_VIOLATION")
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
@@ -347,7 +344,6 @@ public enum EProjectDeprecated implements IProject
           EJDK.JDK8);
   }
 
-  @SuppressFBWarnings ("NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE")
   EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
                       @Nonnull final EProjectOwner eProjectOwner,
                       @Nonnull @Nonempty final String sProjectName,
