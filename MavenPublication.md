@@ -1,0 +1,40 @@
+This is the public key I am using to sign my artefacts on Maven Central:
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: Benutzer-ID: Philip Helger (Maven Central key) <philip@helger.com>
+Comment: Erstellt:  13.07.2016 12:41
+Comment: Typ: 2 048-bit RSA (geheimer Schlüssel verfügbar)
+Comment: Verwendung:  Signieren, Verschlüsselung, Benutzerkennungen beglaubigen
+Comment: Fingerabdruck: 670BE7D076A0C89F5F07625AE57428DA9E879E7D
+
+
+mQENBFeGGvYBCADLqF9MxqNfwOuDrOmkOigwfiWxdKVHIpZqjFquuWIjH6IhADER
+HzaFrAuLF9DyodBvylQWMLpWOjv8ulGnUp8ow9Gjd2hH0vjrXjR+c9ks3NWtHX9n
+uED/BTZGnIwrKS5fVrOSAaUAl8LAx/dbnxnkwDMxKwSjdcSZhAU5jYZUyKT1KXfS
+4WeZ80kEoh26mNZtsXTSZSC24ou78eyFTLmNFuFY/v+dY4Vlg4zqb8xx7IFAq3wz
+pNGimqkSE8DU5U8Ld1Xua/XQEJpipf1xxXvo+n03dRCeEm6eyFbOJYdMIkZW3HsO
+kWnKxihvfAEWIKtiAxE0DMnruY0pON9RsR/1ABEBAAG0NVBoaWxpcCBIZWxnZXIg
+KE1hdmVuIENlbnRyYWwga2V5KSA8cGhpbGlwQGhlbGdlci5jb20+iQE4BBMBAgAi
+BQJXhhr2AhsDBgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRDldCjanoeefbjo
+CAChDouDa4rW74SjF7eML36TqE/o+Xkt6w8WKYs/j10AHoEG9z1AMquSst7ORfF5
+AyfdrurpKzKR1/YlLXyjhf/TnzZmbTCQR68Pcm5Fvfg4hmZE32WqcKNXyibwEjHj
+1HvzZFg36KvV5Rj6UgPTrZXe3DOtaccvlc2xb1cGlaSUmi5+BXP04Gh1r1fKfIcI
+FXw01TSPE3Nh8r7MR1CM5u4fA7atGIFFGToqpPiBGA7dmzlIsNHh+IGhhUeyyAcK
+juJBfBhmdIzYNcIe3WdJJiwkVA29QbjGUXSFcMYda+UZL/zZdRiK0w25BNyPqkBF
+J8JXjkQKs3EXAA0tu7CKKAK3uQENBFeGGvYBCAC3VzDctcGzOjGEkFlJSt+XEhOv
+FRM16euI5y0+1gZF+sDfThkW9ngYjTj9DUEkVmgdptn40nXJczQXf+i16Jkd+qM/
+aSVpE0kH4hBWzSGnrq3yy3APptqzGJ090pTBpbEYWXVMAJ7VaIFbT1DWBilv1pnX
+doIxP0L1Tf8Vc3bwBmiqVGIj9pqDNgs0Wlu1ZkgZsnCNlrHM5SwhGfs42SqOaehg
+/Cg1t/B8uiB4pytf2Y6NgnxaHDvFgvDSEd9SMnp/WGm40JHAC07j9wst8tAS+TYT
+mNv26Nk953X9u4sVoc7kcLfdSVp16GmZPjKxMPG+1p+HqDsu44l++uvKZYZrABEB
+AAGJAR8EGAECAAkFAleGGvYCGwwACgkQ5XQo2p6Hnn1/Lgf/eiy4kVmQS+N6AP1P
+pmswwDu2YfKDMS5+d2IXeGUrTY2MK1O1DCD7843kP9jz4s2dMBB5wk3cbO1Vojd/
+jtt265swzGsaoShWMWMKnkknGG1h5MS/nJLr8hXZeb6DjlfntznLuiD9aYuRltvP
+6Q00InAOLiuJ9gWINvWLxAK5OAaEFmWMkBx6BD9JCXc83EM+EymRiw3Lh0EELOq3
+pONeKIjgpbxvv0EhnLqNWGncA7FEC8GH3pr6NxuYKDybW5R6iEnr5ADAjZiXLgPc
+sF2NpBBynVDpIAUIhX9C2qZBSBRu0wbYgjWkLJrHciKHigbVRfiq0M/AqpYbytLW
+kOJE/Q==
+=S+2+
+-----END PGP PUBLIC KEY BLOCK-----
+```
