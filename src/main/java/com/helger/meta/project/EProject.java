@@ -572,7 +572,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "1.2.0",
+                       "3.0.0",
                        EJDK.JDK11),
   PH_DIVER_API (PH_DIVER_PARENT_POM, "ph-diver-api", EProjectType.JAVA_LIBRARY),
   PH_DIVER_REPO (PH_DIVER_PARENT_POM, "ph-diver-repo", EProjectType.JAVA_LIBRARY),
@@ -679,7 +679,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.3.2",
+       "0.4.0",
        EJDK.JDK11),
 
   EN16931_CII2UBL_PARENT_POM (null,

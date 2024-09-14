@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20240910</version>
+  <version>1.0.0-20240914</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2035,28 +2035,28 @@
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-parent-pom</artifactId>
-      <version>1.2.0</version>
+      <version>3.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-api</artifactId>
-      <version>1.2.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo</artifactId>
-      <version>1.2.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-http</artifactId>
-      <version>1.2.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-s3</artifactId>
-      <version>1.2.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
@@ -2320,7 +2320,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.3.2</version>
+      <version>0.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
