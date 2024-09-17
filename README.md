@@ -251,42 +251,51 @@ Current list of all released projects (as of 2024-09-17):
  * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 2.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa) 
- * [ph-fonts](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-parent-pom) 
- * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-alegreya-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-alegreya-sans) 
- * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-anaheim/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-anaheim) 
- * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-api) 
- * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-exo2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-exo2) 
- * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-kurinto-mono](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-kurinto-mono/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-kurinto-mono) 
+ * [ph-fonts/ph-fonts-kurinto-sans](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-kurinto-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-kurinto-sans) 
+ * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-lato2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-lato2) 
- * [ph-fonts/ph-fonts-markazi](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-markazi](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-markazi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-markazi) 
- * [ph-fonts/ph-fonts-noto-sans-hk](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-noto-sans-hk](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-noto-sans-hk/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-noto-sans-hk) 
- * [ph-fonts/ph-fonts-noto-sans-sc](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-noto-sans-sc](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-noto-sans-sc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-noto-sans-sc) 
- * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-open-sans/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-open-sans) 
- * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-roboto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-roboto) 
- * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 5.0.1 - JDK 11
+ * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans-pro/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans-pro) 
+ * [ph-fonts/ph-fonts-source-sans3](https://github.com/phax/ph-fonts) - Version 5.0.2 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans3) 
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis) 

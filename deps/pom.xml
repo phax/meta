@@ -1311,63 +1311,78 @@
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-parent-pom</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-api</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-alegreya-sans</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-anaheim</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-exo2</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.font</groupId>
+      <artifactId>ph-fonts-kurinto-mono</artifactId>
+      <version>5.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.font</groupId>
+      <artifactId>ph-fonts-kurinto-sans</artifactId>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-lato2</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-markazi</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-noto-sans-hk</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-noto-sans-sc</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-open-sans</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-roboto</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-source-sans-pro</artifactId>
-      <version>5.0.1</version>
+      <version>5.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.font</groupId>
+      <artifactId>ph-fonts-source-sans3</artifactId>
+      <version>5.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
