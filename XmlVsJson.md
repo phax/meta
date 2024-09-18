@@ -102,4 +102,4 @@ Summary table:
 
 Existing sources:
 * https://aws.amazon.com/compare/the-difference-between-json-xml/
-* JSONPath: an IETF Proposed Standard, with comparisons to XPath; Alan Painter; Proceedings of XML Prague 2024
+* JSONPath: an IETF Proposed Standard, with comparisons to XPath; Alan Painter; Proceedings of XML Prague 2024; https://archive.xmlprague.cz/2024/files/xmlprague-2024-proceedings.pdf
