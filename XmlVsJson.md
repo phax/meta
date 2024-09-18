@@ -25,6 +25,10 @@ This document provides my personal comparison on XML vs. JSON and should give a 
       For example, instead of the `<` character, XML uses the entity reference `&lt;`.
       XML also uses end tags, which makes it longer than JSON.
       XML supports different character encodings which supports a wider range of use.
+* Naming
+    * In JSON all object names have the same quality. There is no way to differentiate between "row" as in "table row" or "border around an element".
+    * XML supports namespaces to make names more unambiguous. Each element is uniquely identified by the combination of its namespace and its local name.
+      This provides for powerful ways to create unambiguity.   
 * Parsing
     * You must parse XML with an XML parser.
     * You can parse JSON by a standard JavaScript function, which is more accessible. 
@@ -38,7 +42,8 @@ This document provides my personal comparison on XML vs. JSON and should give a 
       However, they’re simpler and allow greater flexibility.
 * Data type support
     * JSON only supports a limited range of data types like strings, numbers, boolean, objects and arrays.
-    * However, XML is more flexible and supports complex data types like binary data and timestamps. 
+    * However, XML is more flexible and supports complex data types like binary data and timestamps.
+      Especially in numerical data types, XML excels JSON by far.
 * Ease of use
     * As a markup language, XML is more complex and requires a tag structure.
     * In contrast, JSON is a data format that extends from JavaScript. It does not use tags, which makes it more compact and easier to read for humans. JSON can represent the same data in a smaller file size for faster data transfer.
@@ -84,6 +89,7 @@ Summary table:
 | History | Douglas Crockford and Chip Morningstar released JSON in 2001. | The XML Working Group released XML in 1998. |
 | Format | JSON uses a maplike structure with key-value pairs. | XML stores data in a tree structure with namespaces for different data categories. |
 | Syntax | The syntax of JSON is more compact. | The syntax of XML substitutes some characters for entity references, making it more verbose. |
+| Naming | JSON supports flat naming only. | With namespaces XML improves the unambiguity of names. |
 | Parsing | You can parse JSON with a standard JavaScript function. | You need to parse XML with an XML parser. |
 | Schema documentation | JSON is simple and less flexible. | XML is complex and more flexible. |
 | Data types | JSON supports numbers, objects, strings, booleans and arrays. | XML supports all JSON data types and additional types like dates, binary, decimal and namespaces. |
