@@ -79,6 +79,7 @@ This document provides my personal comparison on XML vs. JSON and should give a 
 Summary table:
 
 | Item | JSON | XML |
+| ---- | ---- | --- |
 | Stands for | JSON means JavaScript Object Notation. | XML means Extensible Markup Language. |
 | History | Douglas Crockford and Chip Morningstar released JSON in 2001. | The XML Working Group released XML in 1998. |
 | Format | JSON uses a maplike structure with key-value pairs. | XML stores data in a tree structure with namespaces for different data categories. |
