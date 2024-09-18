@@ -86,7 +86,7 @@ Summary table:
 | Syntax | The syntax of JSON is more compact. | The syntax of XML substitutes some characters for entity references, making it more verbose. |
 | Parsing | You can parse JSON with a standard JavaScript function. | You need to parse XML with an XML parser. |
 | Schema documentation | JSON is simple and less flexible. | XML is complex and more flexible. |
-| Data types | JSON supports numbers, objects, strings, and Boolean arrays. | XML supports all JSON data types and additional types like Boolean, dates, images, and namespaces. |
+| Data types | JSON supports numbers, objects, strings, booleans and arrays. | XML supports all JSON data types and additional types like dates, binary, decimal and namespaces. |
 | Ease of use | JSON has smaller file sizes and faster data transmission. | XML tag structure is more complex to write and read and results in bulky files. |
 | Security | JSON is safer than XML. | You should turn off DTD when working with XML to mitigate potential security risks. |
 | Document metadata | No standardized way in JSON | XML supports comments and powerful processing instructions. |
