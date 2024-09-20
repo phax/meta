@@ -296,6 +296,9 @@ Current list of all released projects (as of 2024-09-20):
  * [ph-fonts/ph-fonts-source-sans3](https://github.com/phax/ph-fonts) - Version 5.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-source-sans3) 
+ * [ph-fonts/ph-fonts-test](https://github.com/phax/ph-fonts) - Version 5.0.3 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.font/ph-fonts-test) 
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-forbidden-apis) 

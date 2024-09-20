@@ -165,6 +165,7 @@ public enum EProject implements IProject
                        "5.0.3",
                        EJDK.JDK11),
   PH_FONTS_API (PH_FONTS_PARENT_POM, "ph-fonts-api", EProjectType.JAVA_LIBRARY),
+  PH_FONTS_TEST (PH_FONTS_PARENT_POM, "ph-fonts-test", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ALEGREYA_SANS (PH_FONTS_PARENT_POM, "ph-fonts-alegreya-sans", EProjectType.JAVA_LIBRARY),
   PH_FONTS_ANAHEIM (PH_FONTS_PARENT_POM, "ph-fonts-anaheim", EProjectType.JAVA_LIBRARY),
   PH_FONTS_EXO2 (PH_FONTS_PARENT_POM, "ph-fonts-exo2", EProjectType.JAVA_LIBRARY),

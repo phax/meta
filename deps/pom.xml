@@ -1321,6 +1321,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
+      <artifactId>ph-fonts-test</artifactId>
+      <version>5.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.font</groupId>
       <artifactId>ph-fonts-alegreya-sans</artifactId>
       <version>5.0.3</version>
     </dependency>
