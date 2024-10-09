@@ -440,10 +440,10 @@ Current list of all released projects (as of 2024-10-09):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.0.6 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.4 - JDK 11
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.4 - JDK 11
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 6.0.3 - JDK 11
