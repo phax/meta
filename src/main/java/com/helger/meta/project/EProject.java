@@ -783,7 +783,7 @@ public enum EProject implements IProject
                            EProjectType.JAVA_LIBRARY,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "5.2.4",
+                           "5.2.5",
                            EJDK.JDK11),
   EBINTERFACE_XRECHNUNG_MAPPING (null,
                                  EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
@@ -792,7 +792,7 @@ public enum EProject implements IProject
                                  EProjectType.JAVA_LIBRARY,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "2.2.3",
+                                 "2.3.0",
                                  EJDK.JDK11),
   ERECHNUNG_WS_CLIENT (null,
                        EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -950,8 +950,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
