@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2024-10-17):
+Current list of all released projects (as of 2024-10-24):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -35,13 +35,13 @@ Current list of all released projects (as of 2024-10-17):
  * [ddd](https://github.com/phax/ddd) - Version 0.4.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ddd/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ddd) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.2.4 - JDK 11
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.2.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.2.4 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 2.2.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.2.4 - JDK 11
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.2.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 4.0.0 - JDK 11
@@ -800,31 +800,31 @@ Current list of all released projects (as of 2024-10-17):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.13.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-directory-searchapi) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 7.1.6 - JDK 11
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 7.1.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/phoss-smp-webapp-xml) 
 
