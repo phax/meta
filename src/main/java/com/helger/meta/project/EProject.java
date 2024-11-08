@@ -626,7 +626,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "3.0.1",
+                               "3.0.2",
                                EJDK.JDK11),
   PEPPOL_REPORTING_TESTFILES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING_DATATYPES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-datatypes", EProjectType.JAVA_LIBRARY),
@@ -730,7 +730,8 @@ public enum EProject implements IProject
   PHASE4_PEPPOL_CLIENT (PHASE4_PARENT_POM, "phase4-peppol-client", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVLET (PHASE4_PARENT_POM, "phase4-peppol-servlet", EProjectType.JAVA_LIBRARY),
   PHASE4_PEPPOL_SERVER_WEBAPP (PHASE4_PARENT_POM, "phase4-peppol-server-webapp", EProjectType.JAVA_WEB_APPLICATION),
-  PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo", EProjectType.JAVA_LIBRARY),
+  // PHASE4_SPRING_BOOT_DEMO (PHASE4_PARENT_POM, "phase4-spring-boot-demo",
+  // EProjectType.JAVA_LIBRARY),
 
   // PHASE4_PEPPOL_STANDALONE (null,
   // EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -950,8 +951,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
-                                                                                                                   .getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

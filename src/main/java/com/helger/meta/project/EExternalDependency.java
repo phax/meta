@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.8", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -103,7 +103,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY10 ("org.flywaydb", "flyway-core", "10.20.1", EJDK.JDK17),
+  FLYWAY10 ("org.flywaydb", "flyway-core", "10.21.0", EJDK.JDK17),
   FLYWAY_MYSQL10 ("org.flywaydb", "flyway-mysql", FLYWAY10),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
@@ -209,7 +209,7 @@ public enum EExternalDependency
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.14", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.15", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20220510", EJDK.JDK8),
@@ -234,7 +234,7 @@ public enum EExternalDependency
   JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.11.3", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.8.1", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.9.0", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
@@ -261,13 +261,13 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.2.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.2.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.1.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.5.0.24.07", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.6.0.24.10", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "11.1.0", EJDK.JDK8),
@@ -328,12 +328,12 @@ public enum EExternalDependency
 
   WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.3", EJDK.JDK11),
 
-  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.1", EJDK.JDK8),
+  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.2", EJDK.JDK8),
 
   @VersionMaxExcl ("4.0.0")
-  XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.4", EJDK.JDK11),
+  XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.5", EJDK.JDK11),
   // Java 11
-  XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.2", EJDK.JDK11),
+  XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.3", EJDK.JDK11),
 
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.5.3", EJDK.JDK8),
@@ -359,7 +359,7 @@ public enum EExternalDependency
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.3", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.4.2", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.10.1", EJDK.JDK8),
+  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.11.1", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.26.0", EJDK.JDK8),
@@ -370,9 +370,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.21.0", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.3.1", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.1", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.1", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.1", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.2", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.2", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.2", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
