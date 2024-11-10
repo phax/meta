@@ -207,7 +207,7 @@ public enum EProject implements IProject
               EProjectType.JAVA_LIBRARY,
               EHasPages.FALSE,
               EHasWiki.FALSE,
-              "5.0.2",
+              "5.0.3",
               EJDK.JDK11),
 
   PH_XSDS_PARENT_POM (null,
@@ -239,7 +239,7 @@ public enum EProject implements IProject
            EProjectType.JAVA_LIBRARY,
            EHasPages.FALSE,
            EHasWiki.FALSE,
-           "3.0.0",
+           "3.0.1",
            EJDK.JDK11),
   PH_REGREP (null,
              EProjectOwner.DEFAULT_PROJECT_OWNER,
