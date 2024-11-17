@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.8", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.15", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -80,7 +80,7 @@ public enum EExternalDependency
   DNSJAVA ("dnsjava", "dnsjava", "3.6.2", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.4", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "5.4.0", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "5.5.0", EJDK.JDK8),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.7.1", EJDK.JDK11),
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.4", EJDK.JDK11),
@@ -287,7 +287,7 @@ public enum EExternalDependency
 
   POSTGRESQL ("org.postgresql", "postgresql", "42.7.4", EJDK.JDK8),
 
-  QUARTZ ("org.quartz-scheduler", "quartz", "2.3.2", EJDK.JDK8),
+  QUARTZ ("org.quartz-scheduler", "quartz", "2.5.0", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
 
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.5", EJDK.JDK17),
@@ -305,7 +305,7 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.8.6", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.1.14", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.0", EJDK.JDK11),
 
   @IsBOM
   SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.3.5", EJDK.JDK11),
@@ -324,9 +324,9 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.0", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.17.1", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.18.0", EJDK.JDK8),
 
-  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.3", EJDK.JDK11),
+  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.4", EJDK.JDK11),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.2.2", EJDK.JDK8),
 
@@ -376,7 +376,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.8.6.5", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.8.6.6", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.1", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.1", EJDK.JDK8);
 

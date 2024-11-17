@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2024-11-08):
+Current list of all released projects (as of 2024-11-17):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -56,40 +56,40 @@ Current list of all released projects (as of 2024-11-08):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons-parent-pom) 
- * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe) 
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 
- * [peppol-commons/peppol-directory-businesscard](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-directory-businesscard](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-directory-businesscard/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-directory-businesscard) 
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id) 
- * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-id-datatypes) 
- * [peppol-commons/peppol-mlr](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-mlr](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-mlr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-mlr) 
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sbdh) 
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-sml-client) 
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-client) 
- * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-smp-datatypes) 
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 9.5.1 - JDK 11
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 9.6.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-testfiles) 
  * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 3.0.2 - JDK 11
@@ -122,7 +122,7 @@ Current list of all released projects (as of 2024-11-08):
  * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 3.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-testfiles) 
- * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.0 - JDK 11
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 3.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-asic) 
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 4.0.1 - JDK 11
@@ -140,64 +140,64 @@ Current list of all released projects (as of 2024-11-08):
  * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 3.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.cii/ph-cii-testfiles) 
- * [ph-commons](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-commons-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-commons-parent-pom) 
- * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-bc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-bc) 
- * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-cli) 
- * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-collection/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-collection) 
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-commons) 
- * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-config/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-config) 
- * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-dao/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-dao) 
- * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-datetime/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-datetime) 
- * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-graph/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-graph) 
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-jaxb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-jaxb) 
- * [ph-commons/ph-jaxb-adapter](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-jaxb-adapter](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-jaxb-adapter/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-jaxb-adapter) 
- * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-json/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-json) 
- * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-less-commons](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-less-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-less-commons) 
- * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-matrix/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-matrix) 
- * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-scopes/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-scopes) 
- * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-security) 
- * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-settings/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-settings) 
- * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-tree/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-tree) 
- * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-wsclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-wsclient) 
- * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 11.1.9 - JDK 11
+ * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 11.1.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
  * [ph-css](https://github.com/phax/ph-css) - Version 7.0.3 - JDK 11
@@ -587,7 +587,7 @@ Current list of all released projects (as of 2024-11-08):
  * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 5.0.2 - JDK 11
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 5.0.3 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xmldsig) 
  * [ph-xsds](https://github.com/phax/ph-xsds) - Version 3.0.0 - JDK 11
@@ -841,19 +841,19 @@ All deprecated projects:
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
  * java-tools - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom) 
  * java-tools/en16931-edifact-to-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml) 
  * java-tools/en16931-edifact-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml) 
  * java-tools/en16931-xml-validator - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator) 
  * toop-parent-pom - Version 1.1.1
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/eu.toop/toop-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
  * as2-peppol - Version 5.4.3
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/as2-peppol-parent-pom) 
