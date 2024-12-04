@@ -590,7 +590,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "10.0.2",
+                    "10.0.3",
                     EJDK.JDK11),
   PHIVE_API (PHIVE_PARENT_POM, "phive-api", EProjectType.JAVA_LIBRARY),
   PHIVE_VES_MODEL (PHIVE_PARENT_POM, "phive-ves-model", EProjectType.JAVA_LIBRARY),
