@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.26", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.29", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -113,7 +113,7 @@ public enum EExternalDependency
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
 
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.29.0", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.29.1", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.3.232", EJDK.JDK8),
 
@@ -270,7 +270,7 @@ public enum EExternalDependency
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.6.0.24.10", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "11.1.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "11.1.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.3", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
