@@ -652,7 +652,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "3.2.1",
+                          "3.2.2",
                           EJDK.JDK11),
   PHIVE_RULES_API (PHIVE_RULES_PARENT_POM, "phive-rules-api", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_CII (PHIVE_RULES_PARENT_POM, "phive-rules-cii", EProjectType.JAVA_LIBRARY),
@@ -677,6 +677,7 @@ public enum EProject implements IProject
   PHIVE_RULES_UBL (PHIVE_RULES_PARENT_POM, "phive-rules-ubl", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_UBLBE (PHIVE_RULES_PARENT_POM, "phive-rules-ublbe", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_XRECHNUNG (PHIVE_RULES_PARENT_POM, "phive-rules-xrechnung", EProjectType.JAVA_LIBRARY),
+  PHIVE_RULES_ZUGFERD (PHIVE_RULES_PARENT_POM, "phive-rules-zugferd", EProjectType.JAVA_LIBRARY),
 
   DDD (null,
        EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -685,7 +686,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.4.0",
+       "0.4.1",
        EJDK.JDK11),
 
   EN16931_CII2UBL_PARENT_POM (null,
