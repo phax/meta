@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20241206</version>
+  <version>1.0.0-20241213</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -253,12 +253,12 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>11.0.1</version>
+      <version>11.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>11.0.1</version>
+      <version>11.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -568,13 +568,13 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>12.0.15</version>
+      <version>12.0.16</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>12.0.15</version>
+      <version>12.0.16</version>
     </dependency>
     <dependency>
       <groupId>org.relaxng</groupId>
@@ -885,7 +885,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1077,7 +1077,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-javadoc-plugin</artifactId>
-      <version>3.11.1</version>
+      <version>3.11.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -2370,7 +2370,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.4.1</version>
+      <version>0.4.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
