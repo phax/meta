@@ -493,7 +493,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.TRUE,
                             EHasWiki.FALSE,
-                            "8.0.4",
+                            "8.0.5",
                             EJDK.JDK11),
   PH_SCHEMATRON_API (PH_SCHEMATRON_PARENT_POM, "ph-schematron-api", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_XSLT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-xslt", EProjectType.JAVA_LIBRARY),
@@ -652,7 +652,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "3.2.2",
+                          "3.2.3",
                           EJDK.JDK11),
   PHIVE_RULES_API (PHIVE_RULES_PARENT_POM, "phive-rules-api", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_CII (PHIVE_RULES_PARENT_POM, "phive-rules-cii", EProjectType.JAVA_LIBRARY),
@@ -939,8 +939,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
