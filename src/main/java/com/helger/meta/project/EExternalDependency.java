@@ -49,11 +49,11 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.29.49", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.30.2", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
-  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.79", EJDK.JDK8),
+  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.80", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
@@ -98,12 +98,13 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.11", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
+  FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.18.1", EJDK.JDK8),
 
   @VersionMaxExcl ("10")
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.1.1", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.2.0", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
@@ -261,16 +262,16 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.2.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.3.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.1.0", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "9.2.0", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.6.0.24.10", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "11.1.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.0.1", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.3", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -285,7 +286,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.7.4", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.7.5", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.0", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -302,10 +303,10 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
   SLF4J_JDK_PLATFORM_LOGGING ("org.slf4j", "slf4j-jdk-platform-logging", SLF4J_API),
 
-  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.8.6", EJDK.JDK8),
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.0", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.1", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.2", EJDK.JDK11),
 
   @IsBOM
   SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.1", EJDK.JDK11),

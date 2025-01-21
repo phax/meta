@@ -198,7 +198,7 @@ public enum EProject implements IProject
           EProjectType.JAVA_LIBRARY,
           EHasPages.FALSE,
           EHasWiki.FALSE,
-          "6.0.3",
+          "6.0.4",
           EJDK.JDK11),
   PH_XMLDSIG (null,
               EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -939,8 +939,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
-                                                                                                                   .getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

@@ -28,7 +28,6 @@ import org.slf4j.LoggerFactory;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.datetime.PDTFactory;
 import com.helger.commons.debug.GlobalDebug;
-import com.helger.commons.string.StringHelper;
 import com.helger.meta.project.IProject;
 
 /**
@@ -82,13 +81,5 @@ public abstract class AbstractProjectMain
   protected static final void _info (@Nonnull final IProject aProject, @Nonnull final String sMsg)
   {
     LOGGER.info (_getLogPrefix (aProject) + sMsg);
-  }
-
-  @Nonnull
-  @Nonempty
-  protected static final String getBatchLabel (@Nonnull final String sPrefix, @Nonnull final IProject aProject)
-  {
-    final String ret = sPrefix + "-" + aProject.getProjectName ();
-    return StringHelper.removeAll (ret, '-');
   }
 }
