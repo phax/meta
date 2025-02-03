@@ -708,7 +708,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "3.0.2",
+                     "3.0.3",
                      EJDK.JDK11),
   PHASE4_LIB (PHASE4_PARENT_POM, "phase4-lib", EProjectType.JAVA_LIBRARY),
   PHASE4_PROFILE_BDEW (PHASE4_PARENT_POM, "phase4-profile-bdew", EProjectType.JAVA_LIBRARY),
@@ -939,8 +939,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

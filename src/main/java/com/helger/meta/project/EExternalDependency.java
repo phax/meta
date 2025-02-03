@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.30.2", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.30.11", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -67,7 +67,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.10.0", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.17.2", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.18.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.27.1", EJDK.JDK8),
@@ -75,9 +75,9 @@ public enum EExternalDependency
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.11.1", EJDK.JDK8),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.12.0", EJDK.JDK8),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.12.1", EJDK.JDK8),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.6.2", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.6.3", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.4", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.5.0", EJDK.JDK8),
@@ -104,7 +104,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.2.0", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.3.0", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
@@ -124,8 +124,8 @@ public enum EExternalDependency
 
   HAZELCAST ("com.hazelcast", "hazelcast", "5.5.0", EJDK.JDK8),
 
-  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.2", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.4.1", EJDK.JDK8),
+  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.3", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.4.2", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.0.0", EJDK.JDK8),
 
@@ -262,7 +262,7 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.3.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.3.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.2.0", EJDK.JDK8),
@@ -273,7 +273,7 @@ public enum EExternalDependency
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.0.1", EJDK.JDK8),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.3", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.4", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
@@ -309,7 +309,7 @@ public enum EExternalDependency
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.2", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.1", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.2", EJDK.JDK11),
   SPRING_BOOT3_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
@@ -323,7 +323,7 @@ public enum EExternalDependency
 
   @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
-  JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.0", EJDK.JDK8),
+  JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.1", EJDK.JDK8),
 
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.18.0", EJDK.JDK8),
 
