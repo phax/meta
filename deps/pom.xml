@@ -1667,7 +1667,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-dirindex-maven-plugin</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>

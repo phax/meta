@@ -84,6 +84,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                 "isdoc",
                                 "jrxml",
                                 "sch",
+                                "scmt",
                                 "status",
                                 "svrl",
                                 "ves",
@@ -105,7 +106,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
            new CommonsTreeSet <> ("bmp", "gif", "icc", "ico", "jpg", "otf", "png", "svg", "woff", "woff2")),
     KEYSTORE ("Keystore",
               false,
-              new CommonsTreeSet <> ("bks", "cer", "cert", "crt", "der", "jks", "pem", "pfx", "p12")),
+              new CommonsTreeSet <> ("bks", "cer", "cert", "crt", "der", "jks", "pem", "pfx", "p12", "keystore")),
     PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
     RAR ("RAR", false, new CommonsTreeSet <> ("rar")),
     WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
@@ -121,6 +122,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                        "bak",
                                        "cat",
                                        "dat",
+                                       "decrypted",
                                        "diff",
                                        "ent",
                                        "episode",
@@ -295,8 +297,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@Nonnull final File aBaseDir, @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap)
-                                                                                                                       throws IOException
+  private static void _scan (@Nonnull final File aBaseDir,
+                             @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
   {
     if (aBaseDir.isDirectory ())
     {
