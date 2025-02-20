@@ -206,13 +206,13 @@ Current list of all released projects (as of 2025-02-20):
  * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 11.2.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
- * [ph-css](https://github.com/phax/ph-css) - Version 7.0.3 - JDK 11
+ * [ph-css](https://github.com/phax/ph-css) - Version 7.0.4 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 7.0.3 - JDK 11
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 7.0.4 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 7.0.3 - JDK 11
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 7.0.4 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
  * [ph-datetime](https://github.com/phax/ph-datetime) - Version 7.0.0 - JDK 11
