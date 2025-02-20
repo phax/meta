@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-02-06):
+Current list of all released projects (as of 2025-02-20):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -458,7 +458,7 @@ Current list of all released projects (as of 2025-02-06):
  * [ph-regrep](https://github.com/phax/ph-regrep) - Version 3.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-regrep) 
- * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 5.0.1 - JDK 11
+ * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 5.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
  * [ph-schedule](https://github.com/phax/ph-schedule) - Version 5.0.1 - JDK 11
@@ -590,7 +590,7 @@ Current list of all released projects (as of 2025-02-06):
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-wsimport-plugin) 
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.1 - JDK 11
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 4.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xhe) 
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 5.0.3 - JDK 11
@@ -850,16 +850,16 @@ All deprecated projects:
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
  * java-tools - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-parent-pom) 
  * java-tools/en16931-edifact-to-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-to-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-to-xml) 
  * java-tools/en16931-edifact-xml - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-edifact-xml) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-edifact-xml) 
  * java-tools/en16931-xml-validator - Version 2.0.4
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-xml-validator) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.en16931/en16931-xml-validator) 
  * toop-parent-pom - Version 1.1.1
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/toop-parent-pom) 
