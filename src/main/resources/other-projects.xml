@@ -21,8 +21,7 @@
   <basedir>c:\dev\git</basedir>
   <basedir>c:\dev\git-de4a</basedir>
   <basedir>c:\dev\svn-philip\dev</basedir>
-  <basedir>/home/philip/git</basedir>
-  <basedir>/home/philip/svn/philip/dev</basedir>
+  <basedir>/Users/philip/svn-philip/dev</basedir>
 
   <project projectname="peppol-analytics" projecttype="java-application" minjdk="11" />
 
