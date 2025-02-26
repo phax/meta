@@ -2137,68 +2137,68 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-ap-helper</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
