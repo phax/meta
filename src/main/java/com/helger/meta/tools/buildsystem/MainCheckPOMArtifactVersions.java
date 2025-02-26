@@ -55,8 +55,7 @@ import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
 /**
- * Check whether the Maven pom.xml of a project is consistent to the
- * requirements
+ * Check whether the Maven pom.xml of a project is consistent to the requirements
  *
  * @author Philip Helger
  */
@@ -688,24 +687,24 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> !p.isDeprecated ()))
-      if (aProject != EProject.PH_JAXWS_MAVEN_PLUGIN)
-      {
-        if (DEBUG_LOG)
-          _info (aProject, "Scanning POM " + aProject.getPOMFile ().getAbsolutePath ());
+    {
+      if (DEBUG_LOG)
+        _info (aProject, "Scanning POM " + aProject.getPOMFile ().getAbsolutePath ());
 
-        final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
-        if (aDoc == null)
-          throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-        try
-        {
-          _validatePOM (aProject, aDoc);
-        }
-        catch (final RuntimeException ex)
-        {
-          LOGGER.error ("Error interpreting " + aProject.getPOMFile ().getAbsolutePath ());
-          throw ex;
-        }
+      final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
+      if (aDoc == null)
+        throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
+    
+      try
+      {
+        _validatePOM (aProject, aDoc);
       }
+      catch (final RuntimeException ex)
+      {
+        LOGGER.error ("Error interpreting " + aProject.getPOMFile ().getAbsolutePath ());
+        throw ex;
+      }
+    }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }

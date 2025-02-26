@@ -278,6 +278,17 @@ public enum EProjectDeprecated implements IProject
   MAVEN_JAXB30_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "jaxb30-maven-plugin", "plugin-3.0", EProjectType.MAVEN_PLUGIN),
   MAVEN_JAXB40_PLUGIN (MAVEN_JAXB2_PLUGIN_PROJECT, "jaxb40-maven-plugin", "plugin-4.0", EProjectType.MAVEN_PLUGIN),
 
+  @IsLegacy (replacedWith = "Use com.sun.xml.ws::jaxws-maven-plugin::2.3.3")
+  PH_JAXWS_MAVEN_PLUGIN(null,
+                        EProjectOwner.DEFAULT_PROJECT_OWNER,
+                        "jaxws-maven-plugin",
+                        "jaxws-maven-plugin",
+                        EProjectType.MAVEN_PLUGIN,
+                        EHasPages.FALSE,
+                        EHasWiki.FALSE,
+                        "2.6.2",
+                        EJDK.JDK8),
+
   EBINTERFACE_RENDERING (null,
                          EProjectOwner.PROJECT_OWNER_AUSTRIAPRO,
                          "ebinterface-rendering",

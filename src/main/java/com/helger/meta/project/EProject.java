@@ -393,17 +393,7 @@ public enum EProject implements IProject
                                        "0.0.4",
                                        EJDK.JDK11),
 
-  @IsLegacy (replacedWith = "Use com.sun.xml.ws::jaxws-maven-plugin::2.3.3")
-  PH_JAXWS_MAVEN_PLUGIN(null,
-                        EProjectOwner.DEFAULT_PROJECT_OWNER,
-                        "jaxws-maven-plugin",
-                        "jaxws-maven-plugin",
-                        EProjectType.MAVEN_PLUGIN,
-                        EHasPages.FALSE,
-                        EHasWiki.FALSE,
-                        "2.6.2",
-                        EJDK.JDK8),
-
+ 
   PH_DATETIME_PARENT_POM (null,
                           EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "ph-datetime-parent-pom",
@@ -459,7 +449,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.3.0",
+                     "10.4.0",
                      EJDK.JDK11),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
