@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.30.11", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.30.28", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -66,7 +66,7 @@ public enum EExternalDependency
                                "2.7.0",
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
-  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.10.0", EJDK.JDK8),
+  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.10.1", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.18.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
@@ -104,7 +104,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.3.0", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.3.3", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
@@ -228,11 +228,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.11.4", EJDK.JDK8),
+  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.12.0", EJDK.JDK8),
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT5_JUPITER),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.11.4", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.12.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "3.9.0", EJDK.JDK8),
@@ -268,10 +268,10 @@ public enum EExternalDependency
   MYSQL ("com.mysql", "mysql-connector-j", "9.2.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.6.0.24.10", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.7.0.25.01", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.0.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.0", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.4", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -296,7 +296,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.16", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.17", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
@@ -306,10 +306,10 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.0", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.2", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.3", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.2", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.3", EJDK.JDK11),
   SPRING_BOOT3_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
@@ -328,6 +328,8 @@ public enum EExternalDependency
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.18.0", EJDK.JDK8),
 
   WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.4", EJDK.JDK11),
+
+  WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.0", EJDK.JDK17),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.3.0", EJDK.JDK8),
 
@@ -348,8 +350,8 @@ public enum EExternalDependency
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
-  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.4.0", EJDK.JDK8),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.13.0", EJDK.JDK8),
+  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.4.1", EJDK.JDK8),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.14.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.8.1", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.3", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.3.0", EJDK.JDK8),

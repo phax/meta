@@ -372,7 +372,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_PLUGIN,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "4.0.2",
+                            "4.0.4",
                             EJDK.JDK11),
   PH_JSCOMPRESS_MAVEN_PLUGIN (null,
                               EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -393,7 +393,6 @@ public enum EProject implements IProject
                                        "0.0.4",
                                        EJDK.JDK11),
 
- 
   PH_DATETIME_PARENT_POM (null,
                           EProjectOwner.DEFAULT_PROJECT_OWNER,
                           "ph-datetime-parent-pom",
@@ -501,7 +500,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "9.2.9",
+                      "9.3.0",
                       EJDK.JDK11),
   PH_OTON_HTML (PH_OTON_PARENT_POM, "ph-oton-html", EProjectType.JAVA_LIBRARY),
   PH_OTON_JSCODE (PH_OTON_PARENT_POM, "ph-oton-jscode", EProjectType.JAVA_LIBRARY),
@@ -643,7 +642,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "3.2.5",
+                          "3.2.6",
                           EJDK.JDK11),
   PHIVE_RULES_API (PHIVE_RULES_PARENT_POM, "phive-rules-api", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_CII (PHIVE_RULES_PARENT_POM, "phive-rules-cii", EProjectType.JAVA_LIBRARY),
@@ -808,8 +807,8 @@ public enum EProject implements IProject
   private final SimpleProject m_aProject;
 
   /**
-   * Constructor for child projects where project name equals directory name and
-   * the last published version is identical to the one of the parent project
+   * Constructor for child projects where project name equals directory name and the last published
+   * version is identical to the one of the parent project
    *
    * @param eParentProject
    *        Parent project. May not be <code>null</code>.
@@ -930,8 +929,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
