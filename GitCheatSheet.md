@@ -64,6 +64,15 @@ Define a custom git alias to prune all gone local branches (for Linux) (source h
 git config --global alias.prune-branches '!git remote prune origin && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs -r git branch -d'
 ```
 
+## Select a Diff Tool
+
+Select diff tool on Mac:
+```
+brew install kdiff3
+git config --global merge.tool kdiff3
+git config --global diff.tool kdiff3
+```
+
 ## Release a branch with maven-release-plugin
 
 Set the `<scm><tag>` element to e.g. `origin/1.2` where *1.2* is the name of the branch at origin.
