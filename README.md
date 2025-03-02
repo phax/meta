@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-02-27):
+Current list of all released projects (as of 2025-03-02):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -844,7 +844,7 @@ All deprecated projects:
 
  * ebinterface-rendering - Version 1.0.0
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ebinterface-rendering) 
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering/badge.svg)](https://maven-badges.herokuapp.com/maven-central/at.austriapro/ebinterface-rendering) 
  * java-tools - Version 2.0.4
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-parent-pom) 
