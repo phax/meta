@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-03-02):
+Current list of all released projects (as of 2025-03-03):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -440,7 +440,7 @@ Current list of all released projects (as of 2025-03-02):
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 9.3.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls) 
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.0.6 - JDK 11
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.0.8 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.5 - JDK 11
@@ -695,7 +695,7 @@ Current list of all released projects (as of 2025-03-02):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 3.0.5 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 3.2.6 - JDK 11
@@ -773,19 +773,19 @@ Current list of all released projects (as of 2025-03-02):
  * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 3.2.6 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-zugferd/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive/phive-api](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-api) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive/phive-result](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-result) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-ves-model) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 10.1.0 - JDK 11
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-xml) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.13.5 - JDK 11

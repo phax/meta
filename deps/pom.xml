@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250302</version>
+  <version>1.0.0-20250303</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -993,6 +993,11 @@
       <groupId>com.mycila</groupId>
       <artifactId>license-maven-plugin</artifactId>
       <version>4.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>maven-bundle-plugin</artifactId>
+      <version>5.1.9</version>
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
@@ -2106,33 +2111,33 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-model</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-engine</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result</artifactId>
-      <version>10.1.0</version>
+      <version>10.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
