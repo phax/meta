@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250304</version>
+  <version>1.0.0-20250305</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1682,7 +1682,7 @@
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-jscompress-maven-plugin</artifactId>
-      <version>3.0.1</version>
+      <version>3.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>

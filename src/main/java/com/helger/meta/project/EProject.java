@@ -381,7 +381,7 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_PLUGIN,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "3.0.1",
+                              "3.0.2",
                               EJDK.JDK11),
   PH_MERGE_JAXB_EPISODES_MAVEN_PLUGIN (null,
                                        EProjectOwner.DEFAULT_PROJECT_OWNER,
