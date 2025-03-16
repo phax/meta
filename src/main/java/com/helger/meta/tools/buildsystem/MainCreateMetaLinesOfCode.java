@@ -124,6 +124,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
                                        "dat",
                                        "decrypted",
                                        "diff",
+                                       "ds_store",
                                        "ent",
                                        "episode",
                                        "flow",
@@ -194,7 +195,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       for (final EFileType e : values ())
         if (e.m_aExts.contains (sExtension))
           return e;
-      throw new IllegalStateException ("Unknown '" + sFilename + "'");
+      throw new IllegalStateException ("Filename '" + sFilename + "' uses unsupported extension '" + sExtension + "'");
     }
   }
 
@@ -297,8 +298,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@Nonnull final File aBaseDir,
-                             @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
+  private static void _scan (@Nonnull final File aBaseDir, @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap)
+                                                                                                                       throws IOException
   {
     if (aBaseDir.isDirectory ())
     {
