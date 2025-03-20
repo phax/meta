@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-03-16):
+Current list of all released projects (as of 2025-03-20):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -47,6 +47,15 @@ Current list of all released projects (as of 2025-03-16):
  * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 2.2.6 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-cii2ubl-cli) 
+ * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 1.1.1 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii-parent-pom) 
+ * [en16931-ubl2cii/en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 1.1.1 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii) 
+ * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 1.1.1 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii-cli/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/en16931-ubl2cii-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 4.0.0 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.erechnung.gv.at/webservice-client) 

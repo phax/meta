@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250316</version>
+  <version>1.0.0-20250320</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -2407,6 +2407,22 @@
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
       <version>2.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>en16931-ubl2cii-parent-pom</artifactId>
+      <version>1.1.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>en16931-ubl2cii</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>en16931-ubl2cii-cli</artifactId>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>

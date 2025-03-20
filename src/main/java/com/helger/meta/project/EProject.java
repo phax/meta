@@ -702,6 +702,18 @@ public enum EProject implements IProject
   EN16931_CII2UBL (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl", EProjectType.JAVA_LIBRARY),
   EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_LIBRARY),
 
+  EN16931_UBL2CII_PARENT_POM (null,
+                              EProjectOwner.DEFAULT_PROJECT_OWNER,
+                              "en16931-ubl2cii-parent-pom",
+                              "en16931-ubl2cii",
+                              EProjectType.MAVEN_POM,
+                              EHasPages.FALSE,
+                              EHasWiki.FALSE,
+                              "1.1.1",
+                              EJDK.JDK11),
+  EN16931_UBL2CII (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii", EProjectType.JAVA_LIBRARY),
+  EN16931_UBL2CII_CLI (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii-cli", EProjectType.JAVA_LIBRARY),
+
   PHASE4_PARENT_POM (null,
                      EProjectOwner.DEFAULT_PROJECT_OWNER,
                      "phase4-parent-pom",
