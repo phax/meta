@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250331</version>
+  <version>1.0.0-20250411</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -28,22 +28,22 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>9.7.1</version>
+      <version>9.8</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>9.7.1</version>
+      <version>9.8</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>9.7.1</version>
+      <version>9.8</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>9.7.1</version>
+      <version>9.8</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.31.5</version>
+      <version>2.31.20</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -178,17 +178,17 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.asm</artifactId>
-      <version>9.7.1</version>
+      <version>9.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.core</artifactId>
-      <version>4.0.5</version>
+      <version>4.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.jpa</artifactId>
-      <version>4.0.5</version>
+      <version>4.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
@@ -243,7 +243,7 @@
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
-      <version>4.18.1</version>
+      <version>4.20.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -258,12 +258,12 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>11.4.1</version>
+      <version>11.7.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>11.4.1</version>
+      <version>11.7.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -288,12 +288,12 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20240317</version>
+      <version>v20250402</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>4.30.1</version>
+      <version>4.30.2</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -323,7 +323,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5</artifactId>
-      <version>5.4.2</version>
+      <version>5.4.3</version>
     </dependency>
     <dependency>
       <groupId>com.ibm.db2</groupId>
@@ -364,7 +364,7 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.12</version>
+      <version>0.8.13</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -429,7 +429,7 @@
     <dependency>
       <groupId>com.github.javaparser</groupId>
       <artifactId>javaparser-core</artifactId>
-      <version>3.26.3</version>
+      <version>3.26.4</version>
     </dependency>
     <dependency>
       <groupId>net.java.dev.javacc</groupId>
@@ -460,7 +460,7 @@
     <dependency>
       <groupId>org.jvnet.jaxb</groupId>
       <artifactId>jaxb-maven-plugin</artifactId>
-      <version>4.0.8</version>
+      <version>4.0.9</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.ws</groupId>
@@ -573,13 +573,13 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>12.0.18</version>
+      <version>12.0.19</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>12.0.18</version>
+      <version>12.0.19</version>
     </dependency>
     <dependency>
       <groupId>org.relaxng</groupId>
@@ -624,27 +624,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.12.1</version>
+      <version>5.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>5.12.1</version>
+      <version>5.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.12.1</version>
+      <version>5.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.12.1</version>
+      <version>5.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>1.12.1</version>
+      <version>1.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -714,27 +714,27 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -775,7 +775,7 @@
     <dependency>
       <groupId>org.owasp</groupId>
       <artifactId>dependency-check-maven</artifactId>
-      <version>12.1.0</version>
+      <version>12.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -810,17 +810,17 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-scratchpad</artifactId>
-      <version>5.4.0</version>
+      <version>5.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -967,12 +967,12 @@
     <dependency>
       <groupId>org.apache.santuario</groupId>
       <artifactId>xmlsec</artifactId>
-      <version>[3.0.5,4.0.0)</version>
+      <version>[3.0.6,4.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.apache.santuario</groupId>
       <artifactId>xmlsec</artifactId>
-      <version>4.0.3</version>
+      <version>4.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xsom</groupId>
@@ -1147,17 +1147,17 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.5.2</version>
+      <version>3.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-report-plugin</artifactId>
-      <version>3.5.2</version>
+      <version>3.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-failsafe-plugin</artifactId>
-      <version>3.5.2</version>
+      <version>3.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1427,13 +1427,13 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
-      <version>7.3.5</version>
+      <version>7.3.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>7.3.5</version>
+      <version>7.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1761,68 +1761,68 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-http</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>10.4.0</version>
+      <version>10.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2432,110 +2432,110 @@
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-parent-pom</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-lib</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bdew</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-cef</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-dbnalliance</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-eespa</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-entsog</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-euctp</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-peppol</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-server-webapp</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-test</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-dynamic-discovery</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-bdew-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-cef-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-dbnalliance-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-euctp-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-eudamed-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-client</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-servlet</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-peppol-server-webapp</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.7</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -2568,50 +2568,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>7.2.2</version>
+      <version>7.2.3</version>
       <type>war</type>
     </dependency>
     <dependency>
