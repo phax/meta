@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250411</version>
+  <version>1.0.0-20250414</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -1708,23 +1708,23 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>7.0.6</version>
+      <version>7.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>7.0.6</version>
+      <version>7.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>7.0.6</version>
+      <version>7.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>7.0.6</version>
+      <version>7.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2147,119 +2147,124 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>dbnalliance-commons</artifactId>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>10.1.0</version>
+      <version>10.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-parent-pom</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-testfiles</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-datatypes</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-api</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-csv</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-inmemory</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-mongodb</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-redis</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-sql</artifactId>
-      <version>3.0.3</version>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
