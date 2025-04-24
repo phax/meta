@@ -323,7 +323,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5</artifactId>
-      <version>5.4.3</version>
+      <version>5.4.4</version>
     </dependency>
     <dependency>
       <groupId>com.ibm.db2</groupId>
@@ -896,33 +896,33 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
-      <version>3.4.4</version>
+      <version>3.4.5</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>

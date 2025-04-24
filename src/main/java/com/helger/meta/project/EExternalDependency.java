@@ -125,7 +125,7 @@ public enum EExternalDependency
   HAZELCAST ("com.hazelcast", "hazelcast", "5.5.0", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.4", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.4.3", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.4.4", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.0.0", EJDK.JDK8),
 
@@ -309,7 +309,7 @@ public enum EExternalDependency
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.6", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.4", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.5", EJDK.JDK11),
   SPRING_BOOT3_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
