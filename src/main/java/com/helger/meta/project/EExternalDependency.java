@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.20", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.28", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
 
@@ -69,7 +69,7 @@ public enum EExternalDependency
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.10.1", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.18.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
-  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.4", EJDK.JDK8),
+  COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.27.1", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.13.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
@@ -104,7 +104,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.7.0", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.8.0", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
@@ -112,7 +112,7 @@ public enum EExternalDependency
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.9", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.1.1", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20250402", EJDK.JDK11),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20250407", EJDK.JDK11),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.30.2", EJDK.JDK8),
 
@@ -280,7 +280,7 @@ public enum EExternalDependency
 
   PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.3", EJDK.JDK8),
 
-  PICOCLI ("info.picocli", "picocli", "4.7.6", EJDK.JDK8),
+  PICOCLI ("info.picocli", "picocli", "4.7.7", EJDK.JDK8),
 
   POI ("org.apache.poi", "poi", "5.4.1", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
@@ -306,7 +306,7 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.3", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.5", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.6", EJDK.JDK11),
 
   @IsBOM
   SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.4", EJDK.JDK11),
