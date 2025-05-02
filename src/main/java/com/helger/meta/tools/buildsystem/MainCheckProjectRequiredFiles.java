@@ -181,9 +181,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
       if (_isDirExisting (aProject, ".github"))
       {
+        _checkFileNotExisting (aProject, ".github/stale.yml");
         if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess ())
         {
           _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
+          _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.Java == 11");
         }
       }
     }
