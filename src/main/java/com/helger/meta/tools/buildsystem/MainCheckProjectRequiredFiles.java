@@ -43,6 +43,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckProjectRequiredFiles.class);
 
+  private static boolean _isDirExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeDirName)
+  {
+    final File f = new File (aProject.getBaseDir (), sRelativeDirName);
+    return f.isDirectory ();
+  }
+
   @Nonnull
   private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
   {
@@ -135,7 +141,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     }
     _checkFileExisting (aProject, "findbugs-exclude.xml");
     _checkFileExisting (aProject, "src/etc/javadoc.css");
-    _checkFileExisting (aProject, "src/etc/license-template.txt");
+    if (_checkFileExisting (aProject, "src/etc/license-template.txt").isSuccess ())
+    {
+      // Check for file contents
+      _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
+    }
     _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
     if (false)
       _checkFileExisting (aProject, "src/main/resources/changelog.xml");
@@ -152,8 +162,16 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileNotExisting (aProject, "LICENSE.txt");
     _checkFileNotExisting (aProject, "LICENSE");
 
-    // Check for file contents
-    _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
+    if (!aProject.isNestedProject ())
+    {
+      if (_isDirExisting (aProject, ".github"))
+      {
+        if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess ())
+        {
+          _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
+        }
+      }
+    }
   }
 
   private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
@@ -175,15 +193,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     _checkFileNotExisting (aProject, "LICENSE");
   }
 
-  private static void _validateProjectTravisConfig (@Nonnull final IProject aProject)
-  {
-    if (!aProject.isNestedProject ())
-    {
-      _checkFileNotExisting (aProject, ".travis.yml");
-      _checkFileNotExisting (aProject, "travis-settings.xml");
-    }
-  }
-
   public static void main (final String [] args)
   {
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
@@ -194,7 +203,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
         _validateProjectWithJavaCode (aProject);
       else
         _validateProjectWithoutJavaCode (aProject);
-      _validateProjectTravisConfig (aProject);
     }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
