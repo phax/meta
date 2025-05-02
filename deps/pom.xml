@@ -1189,6 +1189,11 @@
       <artifactId>taglist-maven-plugin</artifactId>
       <version>3.2.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.sonatype.central</groupId>
+      <artifactId>central-publishing-maven-plugin</artifactId>
+      <version>0.7.0</version>
+    </dependency>
     <!--Internal projects:-->    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
