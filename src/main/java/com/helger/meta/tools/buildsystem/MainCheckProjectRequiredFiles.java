@@ -154,24 +154,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
       _checkFileExisting (aProject, "src/main/resources/NOTICE");
     }
-
-    // So that GitHub displays the license
-    if (aProject.isBuildInProject () && !aProject.isNestedProject ())
-      _checkFileExisting (aProject, "LICENSE.txt");
-    else
-      _checkFileNotExisting (aProject, "LICENSE.txt");
-    _checkFileNotExisting (aProject, "LICENSE");
-
-    if (!aProject.isNestedProject ())
-    {
-      if (_isDirExisting (aProject, ".github"))
-      {
-        if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess ())
-        {
-          _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
-        }
-      }
-    }
   }
 
   private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
@@ -184,13 +166,27 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
     if (!aProject.isNestedProject ())
       _checkFileExisting (aProject, "README.MD");
+  }
 
-    // So that GitHub displays the license
-    if (aProject.isBuildInProject () && !aProject.isNestedProject ())
-      _checkFileExisting (aProject, "LICENSE.txt");
-    else
-      _checkFileNotExisting (aProject, "LICENSE.txt");
-    _checkFileNotExisting (aProject, "LICENSE");
+  private static void _validateTopLevelProject (final IProject aProject)
+  {
+    if (!aProject.isNestedProject ())
+    {
+      // So that GitHub displays the license
+      if (aProject.isBuildInProject ())
+        _checkFileExisting (aProject, "LICENSE.txt");
+      else
+        _checkFileNotExisting (aProject, "LICENSE.txt");
+      _checkFileNotExisting (aProject, "LICENSE");
+
+      if (_isDirExisting (aProject, ".github"))
+      {
+        if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess ())
+        {
+          _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
+        }
+      }
+    }
   }
 
   public static void main (final String [] args)
@@ -203,6 +199,8 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
         _validateProjectWithJavaCode (aProject);
       else
         _validateProjectWithoutJavaCode (aProject);
+
+      _validateTopLevelProject (aProject);
     }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
