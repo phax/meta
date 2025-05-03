@@ -875,6 +875,8 @@ Current list of all unreleased projects:
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 11
 
+ * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - JDK 11
+
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
  * [phase4-peppol-standalone-eb2b](https://github.com/phax/phase4-peppol-standalone-eb2b) - JDK 17
