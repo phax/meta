@@ -50,6 +50,11 @@ public abstract class AbstractProjectMain
                                             "echo Successfully done\n" +
                                             ":exit\n";
   public static final Charset BATCH_CHARSET = StandardCharsets.ISO_8859_1;
+  public static final String SHELL_HEADER = "#!/bin/bash -e\n" +
+                                            "# This files is generated - DO NOT EDIT - " +
+                                            PDTFactory.getCurrentLocalDateTime ().toString () +
+                                            "\n";
+  public static final String SHELL_FOOTER = "echo Successfully done\n";
 
   private static final Logger LOGGER = LoggerFactory.getLogger (AbstractProjectMain.class);
   private static int s_nWarnCount = 0;

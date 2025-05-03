@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-05-02):
+Current list of all released projects (as of 2025-05-03):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.2.7 - JDK 11
 
@@ -464,7 +464,7 @@ Current list of all released projects (as of 2025-05-02):
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 9.3.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls) 
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.0.8 - JDK 11
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.6 - JDK 11
@@ -668,6 +668,12 @@ Current list of all released projects (as of 2025-05-02):
  * [phase4/phase4-dbnalliance-client](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-client) 
+ * [phase4/phase4-dbnalliance-server-webapp](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-server-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-server-webapp) 
+ * [phase4/phase4-dbnalliance-servlet](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dbnalliance-servlet) 
  * [phase4/phase4-dynamic-discovery](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dynamic-discovery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-dynamic-discovery) 
