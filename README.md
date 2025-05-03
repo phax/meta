@@ -659,6 +659,12 @@ Current list of all released projects (as of 2025-05-03):
  * [phase4](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom) 
+ * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - Version 3.0.7 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone) 
+ * [phase4-peppol-standalone-eb2b](https://github.com/phax/phase4-peppol-standalone-eb2b) - Version 3.0.7 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone-eb2b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone-eb2b) 
  * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client) 
@@ -728,6 +734,9 @@ Current list of all released projects (as of 2025-05-03):
  * [phive](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
+ * [phive-binary](https://github.com/phax/phive-binary) - Version 0.1.0 - JDK 11
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-binary/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-binary) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 3.2.10 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-parent-pom) 
