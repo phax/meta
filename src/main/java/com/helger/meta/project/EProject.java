@@ -768,7 +768,7 @@ public enum EProject implements IProject
                             EProjectType.JAVA_APPLICATION,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "3.0.7",
+                            null,
                             EJDK.JDK17),
   PHASE4_PEPPOL_STANDALONE_EB2B (null,
                                  EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -777,7 +777,7 @@ public enum EProject implements IProject
                                  EProjectType.JAVA_APPLICATION,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "3.0.7",
+                                 null,
                                  EJDK.JDK17),
 
   PHOSS_DIRECTORY_PARENT_POM (null,

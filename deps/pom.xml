@@ -2581,16 +2581,6 @@
       <type>war</type>
     </dependency>
     <dependency>
-      <groupId>com.helger.phase4</groupId>
-      <artifactId>phase4-peppol-standalone</artifactId>
-      <version>3.0.7</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phase4</groupId>
-      <artifactId>phase4-peppol-standalone-eb2b</artifactId>
-      <version>3.0.7</version>
-    </dependency>
-    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
       <version>0.13.5</version>

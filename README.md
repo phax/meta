@@ -659,12 +659,6 @@ Current list of all released projects (as of 2025-05-03):
  * [phase4](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-parent-pom) 
- * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - Version 3.0.7 - JDK 17
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone) 
- * [phase4-peppol-standalone-eb2b](https://github.com/phax/phase4-peppol-standalone-eb2b) - Version 3.0.7 - JDK 17
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone-eb2b/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-peppol-standalone-eb2b) 
  * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - Version 3.0.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phase4/phase4-bdew-client) 
@@ -880,6 +874,10 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 11
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 11
+
+ * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
+
+ * [phase4-peppol-standalone-eb2b](https://github.com/phax/phase4-peppol-standalone-eb2b) - JDK 17
 
 
 All deprecated projects:
