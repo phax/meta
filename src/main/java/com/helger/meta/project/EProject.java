@@ -861,7 +861,7 @@ public enum EProject implements IProject
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
                     null,
-                    EJDK.JDK11),
+                    EJDK.JDK17),
   PEPPOL_PRACTICAL (null,
                     EProjectOwner.DEFAULT_PROJECT_OWNER,
                     "peppol-practical",
@@ -870,7 +870,7 @@ public enum EProject implements IProject
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
                     null,
-                    EJDK.JDK11);
+                    EJDK.JDK17);
 
   private final SimpleProject m_aProject;
 
