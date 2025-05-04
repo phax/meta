@@ -30,6 +30,7 @@ import com.helger.commons.io.file.SimpleFileIO;
 import com.helger.commons.state.ESuccess;
 import com.helger.commons.string.StringHelper;
 import com.helger.meta.AbstractProjectMain;
+import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -187,7 +188,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
             aProject != EProject.PHASE4_PEPPOL_STANDALONE_EB2B)
         {
           _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
-          _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.Java == 11");
+          if (aProject.getMinimumJDKVersion () == EJDK.JDK11)
+            _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 11");
+          else
+            _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 17");
         }
       }
     }
