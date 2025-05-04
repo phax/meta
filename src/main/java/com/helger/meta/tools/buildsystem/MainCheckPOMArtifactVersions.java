@@ -165,7 +165,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       if (aParentPOM != null)
       {
         if (LOGGER.isDebugEnabled ())
-          LOGGER.debug ("Sucessfully resolved parent POM " + fParentPOM.getAbsolutePath ());
+          LOGGER.debug ("Successfully resolved parent POM " + fParentPOM.getAbsolutePath ());
 
         // First read parent of parent properties
         _addParentPOMProperties (fParentPOM, aParentPOM.getDocumentElement (), aProperties);
@@ -694,7 +694,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)
         throw new IllegalStateException ("Failed to read " + aProject.getPOMFile ());
-    
+
       try
       {
         _validatePOM (aProject, aDoc);
