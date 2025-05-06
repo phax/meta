@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-05-04):
+Current list of all released projects (as of 2025-05-06):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.3.0 - JDK 11
 
@@ -467,10 +467,10 @@ Current list of all released projects (as of 2025-05-04):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 2.1.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.6 - JDK 11
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.6 - JDK 11
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.3.7 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-pdf-layout) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 6.0.4 - JDK 11
