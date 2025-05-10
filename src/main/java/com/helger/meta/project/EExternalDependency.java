@@ -49,9 +49,9 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.34", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.40", EJDK.JDK8),
 
-  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.18", EJDK.JDK8),
+  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.80", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
@@ -104,15 +104,16 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.8.0", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.8.1", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
-  FOP ("org.apache.xmlgraphics", "fop", "2.10", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.9", EJDK.JDK8),
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.2.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20250407", EJDK.JDK11),
+  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
+  GOOGLE_CLOSURE_17 ("com.google.javascript", "closure-compiler", "v20250407", EJDK.JDK17),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.30.2", EJDK.JDK8),
 
@@ -262,13 +263,13 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.4.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.5.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.3.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.7.0.25.01", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.8.0.25.04", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.1", EJDK.JDK8),
