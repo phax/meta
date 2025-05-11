@@ -879,8 +879,6 @@ Current list of all unreleased projects:
 
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
- * [phase4-peppol-standalone-eb2b](https://github.com/phax/phase4-peppol-standalone-eb2b) - JDK 17
-
 
 All deprecated projects:
 
@@ -1050,6 +1048,7 @@ All deprecated projects:
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-xpath2) 
  * ph-zeromq - never released
+ * phase4-peppol-standalone-eb2b - never released
  * registry434 - never released
  * totholz - never released
 

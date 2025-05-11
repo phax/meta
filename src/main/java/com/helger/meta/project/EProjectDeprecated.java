@@ -297,13 +297,23 @@ public enum EProjectDeprecated implements IProject
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
                          "1.0.0",
-                         EJDK.JDK8),;
+                         EJDK.JDK8),
+
+  PHASE4_PEPPOL_STANDALONE_EB2B (null,
+                                 EProjectOwner.DEFAULT_PROJECT_OWNER,
+                                 "phase4-peppol-standalone-eb2b",
+                                 "phase4-peppol-standalone-eb2b",
+                                 EProjectType.JAVA_APPLICATION,
+                                 EHasPages.FALSE,
+                                 EHasWiki.FALSE,
+                                 null,
+                                 EJDK.JDK17);
 
   private final SimpleProject m_aProject;
 
   /**
-   * Constructor for child projects where project name equals directory name and
-   * the last published version is identical to the one of the parent project
+   * Constructor for child projects where project name equals directory name and the last published
+   * version is identical to the one of the parent project
    *
    * @param eParentProject
    *        Parent project. May not be <code>null</code>.
