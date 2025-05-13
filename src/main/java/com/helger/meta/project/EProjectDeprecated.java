@@ -307,7 +307,26 @@ public enum EProjectDeprecated implements IProject
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
                                  null,
-                                 EJDK.JDK17);
+                                 EJDK.JDK17),
+
+  PH_JAXB_POM (null,
+               EProjectOwner.DEFAULT_PROJECT_OWNER,
+               "ph-jaxb-pom",
+               "ph-jaxb-pom",
+               EProjectType.MAVEN_POM,
+               EHasPages.FALSE,
+               EHasWiki.FALSE,
+               "2.0.4",
+               EJDK.JDK11),
+  PH_JAXWS_POM (null,
+                EProjectOwner.DEFAULT_PROJECT_OWNER,
+                "ph-jaxws-pom",
+                "ph-jaxws-pom",
+                EProjectType.MAVEN_POM,
+                EHasPages.FALSE,
+                EHasWiki.FALSE,
+                "2.0.4",
+                EJDK.JDK11);
 
   private final SimpleProject m_aProject;
 
