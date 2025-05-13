@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.40", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.41", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -104,7 +104,7 @@ public enum EExternalDependency
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.8.1", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.8.2", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
@@ -211,7 +211,7 @@ public enum EExternalDependency
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.20", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.21", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20241231", EJDK.JDK8),
