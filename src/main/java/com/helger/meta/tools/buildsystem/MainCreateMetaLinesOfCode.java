@@ -110,7 +110,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     PDF ("PDF", false, new CommonsTreeSet <> ("pdf")),
     RAR ("RAR", false, new CommonsTreeSet <> ("rar")),
     WORD ("Word", false, new CommonsTreeSet <> ("doc", "docx", "odt")),
-    ZIP ("ZIP", false, new CommonsTreeSet <> ("asice", "gz", "zip")),
+    ZIP ("ZIP", false, new CommonsTreeSet <> ("7z", "asice", "gz", "zip")),
     // known rest
     KNOWN_REST ("Known other",
                 false,
