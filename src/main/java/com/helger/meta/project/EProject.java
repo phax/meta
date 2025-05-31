@@ -578,7 +578,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "10.5.0",
+                             "10.5.1",
                              EJDK.JDK11),
   PEPPOL_ID_DATATYPES (PEPPOL_COMMONS_PARENT_POM, "peppol-id-datatypes", EProjectType.JAVA_LIBRARY),
   PEPPOL_ID (PEPPOL_COMMONS_PARENT_POM, "peppol-id", EProjectType.JAVA_LIBRARY),
@@ -776,7 +776,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        "7.2.3",
+                        "7.2.6",
                         EJDK.JDK11),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),
@@ -848,8 +848,8 @@ public enum EProject implements IProject
   private final SimpleProject m_aProject;
 
   /**
-   * Constructor for child projects where project name equals directory name and the last published
-   * version is identical to the one of the parent project
+   * Constructor for child projects where project name equals directory name and
+   * the last published version is identical to the one of the parent project
    *
    * @param eParentProject
    *        Parent project. May not be <code>null</code>.
@@ -970,8 +970,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
-                                                                                                                   .getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
+                                                                     : eProjectOwner.getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,

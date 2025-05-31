@@ -47,9 +47,9 @@ public enum EExternalDependency
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
-  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.2.3", EJDK.JDK8),
+  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.41", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.54", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -66,13 +66,13 @@ public enum EExternalDependency
                                "2.7.0",
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
-  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.10.1", EJDK.JDK8),
+  COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.11.0", EJDK.JDK8),
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.18.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.27.1", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.13.0", EJDK.JDK8),
-  COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.4.0", EJDK.JDK8),
+  COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.5.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.11.1", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.12.1", EJDK.JDK8),
@@ -80,7 +80,7 @@ public enum EExternalDependency
   DNSJAVA ("dnsjava", "dnsjava", "3.6.3", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.1.4", EJDK.JDK8),
-  EASYMOCK ("org.easymock", "easymock", "5.5.0", EJDK.JDK8),
+  EASYMOCK ("org.easymock", "easymock", "5.6.0", EJDK.JDK8),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.8.0", EJDK.JDK11),
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.6", EJDK.JDK11),
@@ -115,7 +115,7 @@ public enum EExternalDependency
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
   GOOGLE_CLOSURE_17 ("com.google.javascript", "closure-compiler", "v20250407", EJDK.JDK17),
 
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.30.2", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.31.1", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.3.232", EJDK.JDK8),
 
@@ -126,7 +126,7 @@ public enum EExternalDependency
   HAZELCAST ("com.hazelcast", "hazelcast", "5.5.0", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.4", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.4.4", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.5", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.0.0", EJDK.JDK8),
 
@@ -229,11 +229,11 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.12.2", EJDK.JDK8),
+  JUNIT5_JUPITER ("org.junit.jupiter", "junit-jupiter", "5.13.0", EJDK.JDK8),
   JUNIT5_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT5_JUPITER),
   JUNIT5_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT5_JUPITER),
   JUNIT5_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT5_JUPITER),
-  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.12.2", EJDK.JDK8),
+  JUNIT5_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", "1.13.0", EJDK.JDK8),
   JUNIT5_PLATFORM_SUREFIRE_PROVIDER ("org.junit.platform", "junit-platform-surefire-provider", "1.3.2", EJDK.JDK8),
 
   KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "4.0.0", EJDK.JDK8),
@@ -287,7 +287,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.7.5", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.7.6", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.0", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -307,10 +307,10 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.3", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.6", EJDK.JDK11),
+  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.7", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.4.5", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.5.0", EJDK.JDK11),
   SPRING_BOOT3_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
@@ -352,7 +352,7 @@ public enum EExternalDependency
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
-  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.4.1", EJDK.JDK8),
+  PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.14.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.8.1", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
