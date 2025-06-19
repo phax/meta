@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.64", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.66", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -384,7 +384,7 @@ public enum EExternalDependency
   PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.3.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.1", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.1", EJDK.JDK8),
-  PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.7.0", EJDK.JDK8);
+  PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.8.0", EJDK.JDK8);
 
   private final String m_sGroupID;
   private final String m_sArticfactID;
