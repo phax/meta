@@ -170,7 +170,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "7.4.0",
+                            "7.4.1",
                             EJDK.JDK11),
   PH_PDF_LAYOUT (PH_PDF_LAYOUT_PARENT_POM, "ph-pdf-layout", EProjectType.JAVA_LIBRARY),
 
