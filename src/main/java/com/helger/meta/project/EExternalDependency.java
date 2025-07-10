@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.77", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.31.78", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -113,7 +113,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.2.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_17 ("com.google.javascript", "closure-compiler", "v20250528", EJDK.JDK17),
+  GOOGLE_CLOSURE_17 ("com.google.javascript", "closure-compiler", "v20250706", EJDK.JDK17),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.31.1", EJDK.JDK8),
 
@@ -320,7 +320,7 @@ public enum EExternalDependency
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.8.0", EJDK.JDK8),
-  TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.3", EJDK.JDK8),
+  TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.4", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
