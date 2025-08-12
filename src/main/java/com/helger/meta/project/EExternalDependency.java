@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.32.9", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.32.20", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -70,11 +70,11 @@ public enum EExternalDependency
   COMMONS_CODEC ("commons-codec", "commons-codec", "1.19.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
-  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.27.1", EJDK.JDK8),
+  COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.13.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.5.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
-  COMMONS_NET ("commons-net", "commons-net", "3.11.1", EJDK.JDK8),
+  COMMONS_NET ("commons-net", "commons-net", "3.12.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.12.1", EJDK.JDK8),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.6.3", EJDK.JDK8),
@@ -98,13 +98,13 @@ public enum EExternalDependency
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.11", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
-  FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.20.1", EJDK.JDK8),
+  FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.21.0", EJDK.JDK8),
 
   @VersionMaxExcl ("10")
   FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
   FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.10.4", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.11.0", EJDK.JDK17),
   FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
@@ -149,7 +149,7 @@ public enum EExternalDependency
   // JakartaEE 11
   JAKARTA_ANNOTATION_API_3 ("jakarta.annotation", "jakarta.annotation-api", "3.0.0", EJDK.JDK11),
 
-  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.3", EJDK.JDK11),
+  ANGUAS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.4", EJDK.JDK11),
 
   JAKARTA_PERSISTENCE ("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
   JAKARTA_PERSISTENCE_11 ("jakarta.persistence", "jakarta.persistence-api", "3.2.0", EJDK.JDK17),
@@ -188,11 +188,11 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.4", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "6.0.0", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "6.1.0", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.10", EJDK.JDK11),
+  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.11", EJDK.JDK11),
   JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
   JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
@@ -211,7 +211,7 @@ public enum EExternalDependency
   JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.23", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.0.24", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20241231", EJDK.JDK8),
@@ -266,10 +266,10 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.5.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.3.0", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "9.4.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.8.0.25.04", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.9.0.25.07", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.3", EJDK.JDK8),
@@ -304,7 +304,7 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
   SLF4J_JDK_PLATFORM_LOGGING ("org.slf4j", "slf4j-jdk-platform-logging", SLF4J_API),
 
-  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.3", EJDK.JDK8),
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.4", EJDK.JDK8),
 
   @IsBOM
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.9", EJDK.JDK11),
