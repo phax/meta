@@ -431,7 +431,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.4.3",
+                     "10.5.0",
                      EJDK.JDK11),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
