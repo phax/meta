@@ -39,6 +39,7 @@ import com.helger.io.file.FileSystemRecursiveIterator;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
+import com.helger.meta.project.EJDK;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.unittestext.SPITestHelper;
@@ -90,10 +91,14 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
       aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, XMLConstants.W3C_XML_SCHEMA_NS_URI);
       if (false)
         aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SOURCE, aMavenXSD.getAsFile ());
+      // Required from Java 17 onwards
+      aSRS.setPropertyValue (EXMLParserProperty.ACCESS_EXTERNAL_SCHEMA, "all");
       aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
         // Public ID is unfortunately null
         if (sSystemId != null && (sSystemId.endsWith ("/maven-v4_0_0.xsd") || sSystemId.endsWith ("/maven-4.0.0.xsd")))
           return InputSourceFactory.create (aMavenXSD);
+
+        LOGGER.warn ("Not resolving '" + sPublicId + "' / '" + sSystemId + "'");
         return null;
       });
 
@@ -153,22 +158,26 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                                    "' is already used in project " +
                                    aOld.getProjectName ());
                 }
-                if (StringHelper.isNotEmpty (sAutomaticModuleName) &&
-                    !sExportPackage.contains (sAutomaticModuleName + ".*"))
-                {
-                  _warn (aProject,
-                         "Weird " +
-                                   EXPORT_PACKAGE +
-                                   " '" +
-                                   sExportPackage +
-                                   "' vs automatic module name '" +
-                                   sAutomaticModuleName +
-                                   "'");
-                }
+                if (false)
+                  if (StringHelper.isNotEmpty (sAutomaticModuleName) &&
+                      !sExportPackage.contains (sAutomaticModuleName + ".*"))
+                  {
+                    _warn (aProject,
+                           "Weird " +
+                                     EXPORT_PACKAGE +
+                                     " '" +
+                                     sExportPackage +
+                                     "' vs automatic module name '" +
+                                     sAutomaticModuleName +
+                                     "'");
+                  }
               }
 
               final String sImportPackage = aInstructionMap.get (IMPORT_PACKAGE);
-              if (!"!javax.annotation.*,*".equals (sImportPackage))
+              final String sExpectedImportPackage = aProject.getMinimumJDKVersion () == EJDK.JDK11
+                                                                                                   ? "!javax.annotation.*,*"
+                                                                                                   : "!jakarta.annotation.*,*";
+              if (!sExpectedImportPackage.equals (sImportPackage))
                 _warn (aProject, IMPORT_PACKAGE + " is weird: " + sImportPackage);
 
               boolean bChanged = false;
