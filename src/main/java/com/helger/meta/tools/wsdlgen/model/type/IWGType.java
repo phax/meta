@@ -18,9 +18,9 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import java.io.Serializable;
 
-import javax.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
-import com.helger.commons.annotation.Nonempty;
+import jakarta.annotation.Nonnull;
 
 public interface IWGType extends Serializable
 {

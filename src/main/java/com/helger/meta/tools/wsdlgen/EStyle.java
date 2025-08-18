@@ -16,9 +16,9 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
-import javax.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
-import com.helger.commons.annotation.Nonempty;
+import jakarta.annotation.Nonnull;
 
 /**
  * SOAP binding/operation style.

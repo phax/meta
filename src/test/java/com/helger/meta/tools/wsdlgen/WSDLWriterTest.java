@@ -24,10 +24,10 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.FilenameHelper;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.io.resource.FileSystemResource;
-import com.helger.commons.io.stream.NonBlockingByteArrayOutputStream;
+import com.helger.base.io.nonblocking.NonBlockingByteArrayOutputStream;
+import com.helger.io.file.FilenameHelper;
+import com.helger.io.file.SimpleFileIO;
+import com.helger.io.resource.FileSystemResource;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
 
 public final class WSDLWriterTest

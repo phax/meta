@@ -21,7 +21,7 @@ import java.io.File;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.FileOperations;
+import com.helger.io.file.FileOperations;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;

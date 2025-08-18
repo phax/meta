@@ -20,18 +20,15 @@ import java.io.File;
 import java.util.Map;
 import java.util.Set;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.CommonsHashSet;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsMap;
-import com.helger.commons.collection.impl.ICommonsSet;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.CommonsHashMap;
+import com.helger.collection.commons.CommonsHashSet;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsMap;
+import com.helger.collection.commons.ICommonsSet;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProject;
@@ -47,9 +44,11 @@ import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
+
 /**
- * Check whether the Maven pom.xml of a project is consistent to the
- * requirements
+ * Check whether the Maven pom.xml of a project is consistent to the requirements
  *
  * @author Philip Helger
  */
@@ -115,7 +114,8 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
                                                                     !p.isDeprecated () &&
-                                                                    p.getProjectOwner () == EProjectOwner.DEFAULT_PROJECT_OWNER))
+                                                                    p.getProjectOwner () ==
+                                                                                          EProjectOwner.DEFAULT_PROJECT_OWNER))
     {
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)
@@ -177,22 +177,22 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
     // Create builder POM
     final IMicroDocument aDoc = new MicroDocument ();
-    final IMicroElement eProject = aDoc.appendElement (MAVEN_NS, "project");
-    eProject.appendElement (MAVEN_NS, "modelVersion").appendText ("4.0.0");
-    eProject.appendElement (MAVEN_NS, "groupId").appendText ("com.helger.builder");
-    eProject.appendElement (MAVEN_NS, "artifactId").appendText ("all-builder");
-    eProject.appendElement (MAVEN_NS, "packaging").appendText ("pom");
-    eProject.appendElement (MAVEN_NS, "name").appendText ("all-builder");
-    eProject.appendElement (MAVEN_NS, "version").appendText ("1");
-    final IMicroElement eModules = eProject.appendElement (MAVEN_NS, "modules");
-    eModules.appendElement (MAVEN_NS, "module").appendText (EProject.PH_PARENT_POM.getProjectName ());
+    final IMicroElement eProject = aDoc.addElementNS (MAVEN_NS, "project");
+    eProject.addElementNS (MAVEN_NS, "modelVersion").addText ("4.0.0");
+    eProject.addElementNS (MAVEN_NS, "groupId").addText ("com.helger.builder");
+    eProject.addElementNS (MAVEN_NS, "artifactId").addText ("all-builder");
+    eProject.addElementNS (MAVEN_NS, "packaging").addText ("pom");
+    eProject.addElementNS (MAVEN_NS, "name").addText ("all-builder");
+    eProject.addElementNS (MAVEN_NS, "version").addText ("1");
+    final IMicroElement eModules = eProject.addElementNS (MAVEN_NS, "modules");
+    eModules.addElementNS (MAVEN_NS, "module").addText (EProject.PH_PARENT_POM.getProjectName ());
 
     // Parent POM and Maven plugins always go first!
     for (final Map.Entry <IProject, ICommonsSet <IProject>> aEntry : aEntries)
     {
       final IProject eCurProject = aEntry.getKey ();
-      eModules.appendComment (eCurProject + " -> " + aEntry.getValue ());
-      eModules.appendElement (MAVEN_NS, "module").appendText (eCurProject.getFullBaseDirName ());
+      eModules.addComment (eCurProject + " -> " + aEntry.getValue ());
+      eModules.addElementNS (MAVEN_NS, "module").addText (eCurProject.getFullBaseDirName ());
     }
 
     MicroWriter.writeToFile (aDoc, new File (CMeta.GIT_BASE_DIR, "pom-all.xml"));

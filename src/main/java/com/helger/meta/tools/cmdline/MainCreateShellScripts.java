@@ -18,16 +18,16 @@ package com.helger.meta.tools.cmdline;
 
 import java.io.File;
 
-import javax.annotation.Nonnull;
-
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.io.file.SimpleFileIO;
+import com.helger.annotation.Nonempty;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * Create a set of batch files that contains content that in most cases is relevant to all projects.

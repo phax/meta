@@ -16,10 +16,11 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
-import javax.annotation.Nonnull;
 import javax.xml.XMLConstants;
 
-import com.helger.commons.annotation.Nonempty;
+import com.helger.annotation.Nonempty;
+
+import jakarta.annotation.Nonnull;
 
 public class WGXSDType extends WGPredefinedType
 {

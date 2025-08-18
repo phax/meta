@@ -18,27 +18,24 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Pattern;
-
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.collection.ArrayHelper;
-import com.helger.commons.collection.impl.CommonsLinkedHashMap;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsMap;
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.io.file.FilenameHelper;
-import com.helger.commons.regex.RegExHelper;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.string.StringParser;
-import com.helger.commons.system.SystemProperties;
-import com.helger.commons.version.Version;
-import com.helger.commons.version.VersionRange;
+import com.helger.annotation.Nonempty;
+import com.helger.base.array.ArrayHelper;
+import com.helger.base.string.StringHelper;
+import com.helger.base.string.StringParser;
+import com.helger.base.system.SystemProperties;
+import com.helger.base.version.Version;
+import com.helger.base.version.VersionRange;
+import com.helger.cache.regex.RegExHelper;
+import com.helger.collection.commons.CommonsLinkedHashMap;
+import com.helger.collection.commons.ICommonsMap;
+import com.helger.datetime.helper.PDTFactory;
+import com.helger.io.file.FilenameHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
@@ -53,6 +50,9 @@ import com.helger.xml.microdom.IMicroNode;
 import com.helger.xml.microdom.serialize.MicroReader;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Check whether the Maven pom.xml of a project is consistent to the requirements
@@ -156,7 +156,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (eParent != null)
     {
       String sParentPath = MicroHelper.getChildTextContent (eParent, "relativePath");
-      if (StringHelper.hasNoText (sParentPath))
+      if (StringHelper.isEmpty (sParentPath))
         sParentPath = "../";
       else
         sParentPath = FilenameHelper.ensurePathEndingWithSeparator (sParentPath);
@@ -389,7 +389,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     // Check for inception year
     {
       final String sInceptionYear = MicroHelper.getChildTextContent (eRoot, "inceptionYear");
-      if (StringHelper.hasNoText (sInceptionYear))
+      if (StringHelper.isEmpty (sInceptionYear))
         _warn (aProject, "inceptionYear element is missing or empty");
       else
         if (!StringParser.isUnsignedInt (sInceptionYear))
@@ -597,8 +597,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             if (sGroupID != null && sArtifactID != null && sVersion != null)
             {
               // Check for known external deps
-              final ICommonsList <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID,
-                                                                                                    sArtifactID);
+              final List <EExternalDependency> aExternalDeps = EExternalDependency.findAll (sGroupID, sArtifactID);
 
               final String sSuffix = aExternalDeps.size () <= 1 ? "" : " for " + eProjectJDK.getDisplayName ();
 

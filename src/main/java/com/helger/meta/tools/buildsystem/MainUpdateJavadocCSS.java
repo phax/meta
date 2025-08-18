@@ -22,7 +22,7 @@ import java.nio.charset.StandardCharsets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.SimpleFileIO;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;

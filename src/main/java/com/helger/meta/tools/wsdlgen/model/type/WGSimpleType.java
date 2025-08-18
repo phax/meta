@@ -16,16 +16,17 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
+import com.helger.base.CGlobal;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.tostring.ToStringGenerator;
+import com.helger.collection.CollectionHelper;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.helper.CollectionHelperExt;
 
-import com.helger.commons.CGlobal;
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.annotation.ReturnsMutableCopy;
-import com.helger.commons.collection.CollectionHelper;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.string.ToStringGenerator;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public class WGSimpleType extends AbstractWGAssembledType
 {
@@ -123,7 +124,7 @@ public class WGSimpleType extends AbstractWGAssembledType
   @ReturnsMutableCopy
   public ICommonsList <WGEnumEntry> getAllEnumEntries ()
   {
-    return CollectionHelper.newList (m_aEnumEntries);
+    return CollectionHelperExt.createList (m_aEnumEntries);
   }
 
   public boolean hasEnumEntries ()

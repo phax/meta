@@ -18,12 +18,12 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import java.io.Serializable;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.state.ETriState;
+import com.helger.base.string.StringHelper;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.state.ETriState;
-import com.helger.commons.string.StringHelper;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public class WGTypeDef implements Serializable
 {
@@ -52,7 +52,7 @@ public class WGTypeDef implements Serializable
 
   public boolean hasDocumentation ()
   {
-    return StringHelper.hasText (m_sDoc);
+    return StringHelper.isNotEmpty (m_sDoc);
   }
 
   @Nullable
@@ -68,7 +68,7 @@ public class WGTypeDef implements Serializable
 
   public boolean hasMin ()
   {
-    return StringHelper.hasText (m_sMin);
+    return StringHelper.isNotEmpty (m_sMin);
   }
 
   @Nullable
@@ -84,7 +84,7 @@ public class WGTypeDef implements Serializable
 
   public boolean hasMax ()
   {
-    return StringHelper.hasText (m_sMax);
+    return StringHelper.isNotEmpty (m_sMax);
   }
 
   @Nullable
@@ -96,13 +96,13 @@ public class WGTypeDef implements Serializable
   public void setDefault (@Nullable final String sDefault)
   {
     m_sDefault = sDefault;
-    if (StringHelper.hasText (sDefault))
+    if (StringHelper.isNotEmpty (sDefault))
       m_bOptional = true;
   }
 
   public boolean hasDefault ()
   {
-    return StringHelper.hasText (m_sDefault);
+    return StringHelper.isNotEmpty (m_sDefault);
   }
 
   @Nullable
@@ -117,7 +117,7 @@ public class WGTypeDef implements Serializable
 
     if (eOptional.isDefined ())
     {
-      if (eOptional.isFalse () && StringHelper.hasText (m_sDefault))
+      if (eOptional.isFalse () && StringHelper.isNotEmpty (m_sDefault))
         throw new IllegalArgumentException ("Attributes with a default value must be optional");
       m_bOptional = eOptional.isTrue ();
     }

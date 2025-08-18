@@ -18,16 +18,16 @@ package com.helger.meta.project;
 
 import java.lang.reflect.Field;
 import java.util.Comparator;
+import java.util.List;
 import java.util.function.Predicate;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.annotation.Nonempty;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.lang.EnumHelper;
+import com.helger.base.version.Version;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.lang.EnumHelper;
-import com.helger.commons.version.Version;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Externally used dependencies in the latest applicable version per JDK.
@@ -549,11 +549,9 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nullable final String sGroupID,
-                                                            @Nullable final String sArtifactID)
+  public static List <EExternalDependency> findAll (@Nullable final String sGroupID, @Nullable final String sArtifactID)
   {
-    final ICommonsList <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) &&
-                                                                 x.hasArtifactID (sArtifactID));
+    final List <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
     ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
                         .reversed ());
@@ -561,7 +559,7 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static ICommonsList <EExternalDependency> findAll (@Nonnull final Predicate <EExternalDependency> aFilter)
+  public static List <EExternalDependency> findAll (@Nonnull final Predicate <EExternalDependency> aFilter)
   {
     return EnumHelper.getAll (EExternalDependency.class, aFilter);
   }

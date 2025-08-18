@@ -24,8 +24,8 @@ import javax.xml.XMLConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.string.StringHelper;
+import com.helger.base.string.StringHelper;
+import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.IProject;
@@ -38,8 +38,8 @@ import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xml.serialize.write.XMLWriterSettings;
 
 /**
- * Create a POM that contains all external dependencies defined in
- * {@link EExternalDependency} so that default maven checks can be performed.
+ * Create a POM that contains all external dependencies defined in {@link EExternalDependency} so
+ * that default maven checks can be performed.
  *
  * @author Philip Helger
  */
@@ -51,70 +51,70 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
   public static void main (final String [] args)
   {
     final IMicroDocument aDoc = new MicroDocument ();
-    final IMicroElement eProject = aDoc.appendElement (NS, "project");
-    eProject.setAttribute (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI,
-                           "schemaLocation",
-                           NS + " http://maven.apache.org/maven-v4_0_0.xsd");
-    eProject.appendElement (NS, "modelVersion").appendText ("4.0.0");
-    eProject.appendElement (NS, "groupId").appendText ("com.helger");
-    eProject.appendElement (NS, "artifactId").appendText ("external-dependencies");
-    eProject.appendElement (NS, "version")
-            .appendText ("1.0.0-" + DateTimeFormatter.BASIC_ISO_DATE.format (PDTFactory.getCurrentLocalDateTime ()));
+    final IMicroElement eProject = aDoc.addElementNS (NS, "project");
+    eProject.setAttributeNS (XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI,
+                             "schemaLocation",
+                             NS + " http://maven.apache.org/maven-v4_0_0.xsd");
+    eProject.addElementNS (NS, "modelVersion").addText ("4.0.0");
+    eProject.addElementNS (NS, "groupId").addText ("com.helger");
+    eProject.addElementNS (NS, "artifactId").addText ("external-dependencies");
+    eProject.addElementNS (NS, "version")
+            .addText ("1.0.0-" + DateTimeFormatter.BASIC_ISO_DATE.format (PDTFactory.getCurrentLocalDateTime ()));
 
-    final IMicroElement eDeps = eProject.appendElement (NS, "dependencies");
-    eDeps.appendComment ("External dependencies:");
+    final IMicroElement eDeps = eProject.addElementNS (NS, "dependencies");
+    eDeps.addComment ("External dependencies:");
     for (final EExternalDependency e : EExternalDependency.values ())
       if (!e.isLegacy ())
       {
-        final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
-        eDep.appendElement (NS, "groupId").appendText (e.getGroupID ());
-        eDep.appendElement (NS, "artifactId").appendText (e.getArtifactID ());
+        final IMicroElement eDep = eDeps.addElementNS (NS, "dependency");
+        eDep.addElementNS (NS, "groupId").addText (e.getGroupID ());
+        eDep.addElementNS (NS, "artifactId").addText (e.getArtifactID ());
 
         final String sMaxVersion = e.getMaxVersionString ();
-        if (StringHelper.hasNoText (sMaxVersion))
-          eDep.appendElement (NS, "version").appendText (e.getLastPublishedVersionString ());
+        if (StringHelper.isEmpty (sMaxVersion))
+          eDep.addElementNS (NS, "version").addText (e.getLastPublishedVersionString ());
         else
         {
           // User a version range
-          eDep.appendElement (NS, "version")
-              .appendText ("[" + e.getLastPublishedVersionString () + "," + sMaxVersion + ")");
+          eDep.addElementNS (NS, "version")
+              .addText ("[" + e.getLastPublishedVersionString () + "," + sMaxVersion + ")");
         }
 
         if (e.isBOM ())
-          eDep.appendElement (NS, "type").appendText ("pom");
+          eDep.addElementNS (NS, "type").addText ("pom");
       }
 
-    eDeps.appendComment ("Internal projects:");
+    eDeps.addComment ("Internal projects:");
     for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
                                                                     x.isPublished () &&
                                                                     !x.isDeprecated ()))
     {
-      final IMicroElement eDep = eDeps.appendElement (NS, "dependency");
-      eDep.appendElement (NS, "groupId").appendText (aProject.getMavenGroupID ());
-      eDep.appendElement (NS, "artifactId").appendText (aProject.getMavenArtifactID ());
-      eDep.appendElement (NS, "version").appendText (aProject.getLastPublishedVersionString ());
+      final IMicroElement eDep = eDeps.addElementNS (NS, "dependency");
+      eDep.addElementNS (NS, "groupId").addText (aProject.getMavenGroupID ());
+      eDep.addElementNS (NS, "artifactId").addText (aProject.getMavenArtifactID ());
+      eDep.addElementNS (NS, "version").addText (aProject.getLastPublishedVersionString ());
       switch (aProject.getProjectType ())
       {
         case MAVEN_POM:
-          eDep.appendElement (NS, "type").appendText ("pom");
+          eDep.addElementNS (NS, "type").addText ("pom");
           break;
         case JAVA_WEB_APPLICATION:
-          eDep.appendElement (NS, "type").appendText ("war");
+          eDep.addElementNS (NS, "type").addText ("war");
           break;
       }
     }
 
     {
-      final IMicroElement eBuild = eProject.appendElement (NS, "build");
-      final IMicroElement ePlugins = eBuild.appendElement (NS, "plugins");
-      final IMicroElement ePlugin = ePlugins.appendElement (NS, "plugin");
-      ePlugin.appendElement (NS, "groupId").appendText ("org.codehaus.mojo");
-      ePlugin.appendElement (NS, "artifactId").appendText ("versions-maven-plugin");
-      ePlugin.appendElement (NS, "version")
-             .appendText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
-      final IMicroElement eConfig = ePlugin.appendElement (NS, "configuration");
-      eConfig.appendElement (NS, "allowSnapshots").appendText ("false");
-      eConfig.appendElement (NS, "rulesUri").appendText ("file:versions-maven-plugin-rules.xml");
+      final IMicroElement eBuild = eProject.addElementNS (NS, "build");
+      final IMicroElement ePlugins = eBuild.addElementNS (NS, "plugins");
+      final IMicroElement ePlugin = ePlugins.addElementNS (NS, "plugin");
+      ePlugin.addElementNS (NS, "groupId").addText ("org.codehaus.mojo");
+      ePlugin.addElementNS (NS, "artifactId").addText ("versions-maven-plugin");
+      ePlugin.addElementNS (NS, "version")
+             .addText (EExternalDependency.VERSIONS_MAVEN_PLUGIN.getLastPublishedVersionString ());
+      final IMicroElement eConfig = ePlugin.addElementNS (NS, "configuration");
+      eConfig.addElementNS (NS, "allowSnapshots").addText ("false");
+      eConfig.addElementNS (NS, "rulesUri").addText ("file:versions-maven-plugin-rules.xml");
     }
 
     final File f = new File ("deps/pom.xml");

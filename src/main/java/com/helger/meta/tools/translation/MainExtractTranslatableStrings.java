@@ -21,9 +21,6 @@ import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.util.Iterator;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.ClassNode;
@@ -33,16 +30,14 @@ import org.objectweb.asm.tree.MethodNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.CommonsLinkedHashSet;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsOrderedSet;
-import com.helger.commons.io.file.FileHelper;
-import com.helger.commons.io.file.FileSystemRecursiveIterator;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.lang.ClassHelper;
-import com.helger.commons.text.IMultilingualText;
-import com.helger.commons.text.util.TextHelper;
+import com.helger.base.lang.clazz.ClassHelper;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.CommonsLinkedHashSet;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsOrderedSet;
+import com.helger.io.file.FileHelper;
+import com.helger.io.file.FileSystemRecursiveIterator;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMHelper;
@@ -50,6 +45,11 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.meta.translation.StringTable;
 import com.helger.meta.translation.StringTableSerializer;
+import com.helger.text.IMultilingualText;
+import com.helger.text.util.TextHelper;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {

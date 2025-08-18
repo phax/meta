@@ -19,11 +19,11 @@ package com.helger.meta.project;
 import java.io.File;
 import java.lang.reflect.Field;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.annotation.Nonempty;
+import com.helger.base.version.Version;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.version.Version;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Defines all the active projects.

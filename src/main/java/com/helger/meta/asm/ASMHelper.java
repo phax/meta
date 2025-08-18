@@ -20,10 +20,6 @@ import java.io.File;
 import java.lang.annotation.Annotation;
 import java.util.Iterator;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.annotation.concurrent.Immutable;
-
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
@@ -33,10 +29,14 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 
-import com.helger.commons.annotation.NoTranslationRequired;
-import com.helger.commons.annotation.Translatable;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.lang.ClassHelper;
+import com.helger.annotation.concurrent.Immutable;
+import com.helger.annotation.misc.NoTranslationRequired;
+import com.helger.annotation.misc.Translatable;
+import com.helger.base.lang.clazz.ClassHelper;
+import com.helger.io.file.SimpleFileIO;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 @Immutable
 public final class ASMHelper

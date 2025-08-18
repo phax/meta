@@ -19,11 +19,11 @@ package com.helger.meta.project;
 import java.io.File;
 import java.lang.reflect.Field;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.annotation.Nonempty;
+import com.helger.base.version.Version;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.version.Version;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Defines other projects.
@@ -53,8 +53,8 @@ public enum EProjectTemp implements IProject
   private final SimpleProject m_aProject;
 
   /**
-   * Constructor for child projects where project name equals directory name and
-   * the last published version is identical to the one of the parent project
+   * Constructor for child projects where project name equals directory name and the last published
+   * version is identical to the one of the parent project
    *
    * @param eParentProject
    *        Parent project. May not be <code>null</code>.

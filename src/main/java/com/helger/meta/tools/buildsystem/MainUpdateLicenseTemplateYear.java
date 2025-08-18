@@ -22,9 +22,9 @@ import java.nio.charset.StandardCharsets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.string.StringHelper;
+import com.helger.base.string.StringReplace;
+import com.helger.datetime.helper.PDTFactory;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -66,13 +66,13 @@ public final class MainUpdateLicenseTemplateYear extends AbstractProjectMain
       String sNew = sCurrent;
       if (sNew.contains (sSearch1))
       {
-        sNew = StringHelper.replaceAll (sNew, sSearch1, sReplace1);
+        sNew = StringReplace.replaceAll (sNew, sSearch1, sReplace1);
         bChange = true;
       }
       else
         if (sNew.contains (sSearch2) && !sNew.contains (sReplace2))
         {
-          sNew = StringHelper.replaceAll (sNew, sSearch2, sReplace2);
+          sNew = StringReplace.replaceAll (sNew, sSearch2, sReplace2);
           bChange = true;
         }
 

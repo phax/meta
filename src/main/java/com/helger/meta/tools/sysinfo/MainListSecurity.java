@@ -27,7 +27,7 @@ import java.util.List;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLParameters;
 
-import com.helger.commons.string.StringParser;
+import com.helger.base.string.StringParser;
 
 public class MainListSecurity
 {

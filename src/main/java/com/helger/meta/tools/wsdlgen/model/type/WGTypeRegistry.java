@@ -16,12 +16,12 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.collection.commons.CommonsHashMap;
+import com.helger.collection.commons.ICommonsMap;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.ICommonsMap;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public final class WGTypeRegistry
 {

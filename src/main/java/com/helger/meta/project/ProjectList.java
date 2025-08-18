@@ -19,29 +19,29 @@ package com.helger.meta.project;
 import java.io.File;
 import java.util.function.Predicate;
 
-import javax.annotation.Nonnegative;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.annotation.ReturnsMutableCopy;
-import com.helger.commons.collection.CollectionHelper;
-import com.helger.commons.collection.impl.CommonsLinkedHashMap;
-import com.helger.commons.collection.impl.CommonsLinkedHashSet;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsOrderedMap;
-import com.helger.commons.collection.impl.ICommonsOrderedSet;
-import com.helger.commons.io.resource.ClassPathResource;
-import com.helger.commons.io.resource.IReadableResource;
-import com.helger.commons.string.StringHelper;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.Nonnegative;
+import com.helger.annotation.style.ReturnsMutableCopy;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.string.StringHelper;
+import com.helger.collection.CollectionFind;
+import com.helger.collection.commons.CommonsLinkedHashMap;
+import com.helger.collection.commons.CommonsLinkedHashSet;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsOrderedMap;
+import com.helger.collection.commons.ICommonsOrderedSet;
+import com.helger.io.resource.ClassPathResource;
+import com.helger.io.resource.IReadableResource;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.convert.MicroTypeConverter;
 import com.helger.xml.microdom.serialize.MicroReader;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Overall project list. Contains:
@@ -144,10 +144,10 @@ public final class ProjectList
 
   public static boolean containsProjectOfDir (@Nullable final String sDirName)
   {
-    if (StringHelper.hasNoText (sDirName))
+    if (StringHelper.isNotEmpty (sDirName))
       return false;
 
-    return CollectionHelper.containsAny (NAME_TO_PROJECT.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
+    return CollectionFind.containsAny (NAME_TO_PROJECT.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
   }
 
   @Nonnull

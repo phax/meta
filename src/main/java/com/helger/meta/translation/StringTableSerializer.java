@@ -19,19 +19,19 @@ package com.helger.meta.translation;
 import java.io.File;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
-
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.collection.impl.ICommonsSortedMap;
-import com.helger.commons.hashcode.HashCodeCalculator;
-import com.helger.commons.hashcode.HashCodeGenerator;
-import com.helger.commons.state.ESuccess;
-import com.helger.commons.string.StringHelper;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.hashcode.HashCodeCalculator;
+import com.helger.base.hashcode.HashCodeGenerator;
+import com.helger.base.state.ESuccess;
+import com.helger.base.string.StringHex;
+import com.helger.collection.commons.ICommonsSortedMap;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroDocument;
 import com.helger.xml.microdom.MicroElement;
 import com.helger.xml.microdom.serialize.MicroWriter;
+
+import jakarta.annotation.Nonnull;
 
 public final class StringTableSerializer
 {
@@ -49,7 +49,7 @@ public final class StringTableSerializer
 
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : aST.directGetMap ().entrySet ())
     {
-      final IMicroElement eItem = eRoot.appendElement ("item");
+      final IMicroElement eItem = eRoot.addElement ("item");
 
       final String sID = aEntry.getKey ();
       eItem.setAttribute ("id", sID);
@@ -59,18 +59,18 @@ public final class StringTableSerializer
       {
         // Locale name as element name
         final String sLocale = aEntry2.getKey ();
-        final IMicroElement eText = eItem.appendElement (sLocale);
+        final IMicroElement eText = eItem.addElement (sLocale);
         nHashCode = HashCodeCalculator.append (nHashCode, sLocale);
 
         // Main text
         final String sText = aEntry2.getValue ();
-        eText.appendText (sText);
+        eText.addText (sText);
         nHashCode = HashCodeCalculator.append (nHashCode, sText);
       }
     }
 
     // Small consistency check
-    eRoot.setAttribute ("hashcode", StringHelper.getHexStringLeadingZero (nHashCode & 0xffffffffl, 8));
+    eRoot.setAttribute ("hashcode", StringHex.getHexStringLeadingZero (nHashCode & 0xffffffffL, 8));
     return eRoot;
   }
 
@@ -81,7 +81,7 @@ public final class StringTableSerializer
     ValueEnforcer.notNull (aST, "ST");
 
     final IMicroDocument aDoc = new MicroDocument ();
-    aDoc.appendChild (getStringTableAsXML (aST));
+    aDoc.addChild (getStringTableAsXML (aST));
 
     return MicroWriter.writeToFile (aDoc, aFile);
   }

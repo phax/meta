@@ -20,9 +20,6 @@ import java.io.File;
 import java.lang.reflect.Modifier;
 import java.util.Locale;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
@@ -31,20 +28,20 @@ import org.objectweb.asm.tree.MethodNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.annotation.CodingStyleguideUnaware;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.annotation.OverrideOnDemand;
-import com.helger.commons.annotation.ReturnsImmutableObject;
-import com.helger.commons.annotation.ReturnsMutableCopy;
-import com.helger.commons.annotation.ReturnsMutableObject;
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.io.file.FileSystemRecursiveIterator;
-import com.helger.commons.io.file.FilenameHelper;
-import com.helger.commons.lang.ClassHelper;
-import com.helger.commons.state.EContinue;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.string.StringParser;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.CodingStyleguideUnaware;
+import com.helger.annotation.style.OverrideOnDemand;
+import com.helger.annotation.style.ReturnsImmutableObject;
+import com.helger.annotation.style.ReturnsMutableCopy;
+import com.helger.annotation.style.ReturnsMutableObject;
+import com.helger.base.lang.clazz.ClassHelper;
+import com.helger.base.state.EContinue;
+import com.helger.base.string.StringHelper;
+import com.helger.base.string.StringParser;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.io.file.FileSystemRecursiveIterator;
+import com.helger.io.file.FilenameHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
@@ -52,6 +49,9 @@ import com.helger.meta.project.EProjectDeprecated;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {

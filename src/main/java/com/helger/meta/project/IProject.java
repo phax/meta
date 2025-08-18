@@ -18,12 +18,12 @@ package com.helger.meta.project;
 
 import java.io.File;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import com.helger.annotation.Nonempty;
+import com.helger.base.string.StringHelper;
+import com.helger.base.version.Version;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.version.Version;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public interface IProject
 {
@@ -31,8 +31,8 @@ public interface IProject
   String EXTENSION_WIKI_PROJECT = ".wiki";
 
   /**
-   * @return <code>true</code> if this project is part of {@link EProject},
-   *         <code>false</code> otherwise.
+   * @return <code>true</code> if this project is part of {@link EProject}, <code>false</code>
+   *         otherwise.
    */
   boolean isBuildInProject ();
 
@@ -74,10 +74,9 @@ public interface IProject
   File getBaseDir ();
 
   /**
-   * @return The complete base directory name with all parent projects included.
-   *         E.g. <code>ph-oton/ph-oton-basic</code>. If a project has no parent
-   *         project, the result is the same as from
-   *         <code>getBaseDir ().getName ()</code>.
+   * @return The complete base directory name with all parent projects included. E.g.
+   *         <code>ph-oton/ph-oton-basic</code>. If a project has no parent project, the result is
+   *         the same as from <code>getBaseDir ().getName ()</code>.
    */
   @Nonnull
   @Nonempty
@@ -123,14 +122,13 @@ public interface IProject
   }
 
   /**
-   * @return <code>true</code> if this project is deprecated and no longer
-   *         maintained, <code>false</code> for active projects
+   * @return <code>true</code> if this project is deprecated and no longer maintained,
+   *         <code>false</code> for active projects
    */
   boolean isDeprecated ();
 
   /**
-   * @return <code>true</code> if this project has the auto-generated
-   *         <code>gh-pages</code> branch.
+   * @return <code>true</code> if this project has the auto-generated <code>gh-pages</code> branch.
    */
   boolean hasPagesProject ();
 
@@ -154,12 +152,11 @@ public interface IProject
   }
 
   /**
-   * @return <code>true</code> if this project had at least one release,
-   *         <code>false</code> if not.
+   * @return <code>true</code> if this project had at least one release, <code>false</code> if not.
    */
   default boolean isPublished ()
   {
-    return StringHelper.hasText (getLastPublishedVersionString ());
+    return StringHelper.isNotEmpty (getLastPublishedVersionString ());
   }
 
   @Nullable
@@ -169,8 +166,7 @@ public interface IProject
   Version getLastPublishedVersion ();
 
   /**
-   * @return <code>true</code> if it is private on GitHub, <code>false</code> if
-   *         it is public
+   * @return <code>true</code> if it is private on GitHub, <code>false</code> if it is public
    */
   default boolean isGitHubPrivate ()
   {

@@ -16,14 +16,14 @@
  */
 package com.helger.meta.config;
 
-import javax.annotation.Nonnull;
-import javax.annotation.concurrent.Immutable;
-
-import com.helger.commons.annotation.IsSPIImplementation;
+import com.helger.annotation.concurrent.Immutable;
+import com.helger.annotation.style.IsSPIImplementation;
 import com.helger.meta.project.SimpleProject;
 import com.helger.meta.project.SimpleProjectMicroTypeConverter;
 import com.helger.xml.microdom.convert.IMicroTypeConverterRegistrarSPI;
 import com.helger.xml.microdom.convert.IMicroTypeConverterRegistry;
+
+import jakarta.annotation.Nonnull;
 
 @Immutable
 @IsSPIImplementation

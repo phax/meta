@@ -16,13 +16,13 @@
  */
 package com.helger.meta.tools.buildsystem;
 
-import javax.annotation.Nonnull;
-
-import com.helger.commons.collection.impl.CommonsTreeSet;
-import com.helger.commons.collection.impl.ICommonsList;
+import com.helger.collection.commons.CommonsTreeSet;
+import com.helger.collection.commons.ICommonsList;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * List all active Github repos

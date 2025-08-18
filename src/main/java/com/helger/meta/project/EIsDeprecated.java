@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public enum EIsDeprecated
 {

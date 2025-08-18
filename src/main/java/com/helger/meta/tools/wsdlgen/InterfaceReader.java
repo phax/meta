@@ -19,25 +19,24 @@ package com.helger.meta.tools.wsdlgen;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.io.resource.IReadableResource;
-import com.helger.commons.io.stream.NonBlockingStringReader;
-import com.helger.commons.io.stream.StreamHelper;
-import com.helger.commons.regex.RegExHelper;
-import com.helger.commons.state.ETriState;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.system.ENewLineMode;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.io.nonblocking.NonBlockingStringReader;
+import com.helger.base.state.ETriState;
+import com.helger.base.string.StringImplode;
+import com.helger.base.string.StringRemove;
+import com.helger.base.system.ENewLineMode;
+import com.helger.cache.regex.RegExHelper;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.io.resource.IReadableResource;
+import com.helger.io.stream.StreamHelperExt;
 import com.helger.json.IJson;
 import com.helger.json.IJsonArray;
 import com.helger.json.IJsonObject;
+import com.helger.json.parser.JsonParserSettings;
 import com.helger.json.parser.handler.CollectingJsonParserHandler;
 import com.helger.json.serialize.JsonReader;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
@@ -49,6 +48,9 @@ import com.helger.meta.tools.wsdlgen.model.type.WGEnumEntry;
 import com.helger.meta.tools.wsdlgen.model.type.WGSimpleType;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeDef;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeRegistry;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Class for reading the DSL and populating a {@link WGInterface}.
@@ -64,25 +66,26 @@ public class InterfaceReader
   {
     ValueEnforcer.notNull (aContent, "Content");
     // Replace comment lines with empty line
-    return StringHelper.getImplodedMapped (ENewLineMode.DEFAULT.getText (),
-                                           aContent,
-                                           sLine -> RegExHelper.stringMatchesPattern ("\\s*//.*", sLine) ? "" : sLine);
+    return StringImplode.getImplodedMapped (ENewLineMode.DEFAULT.getText (),
+                                            aContent,
+                                            sLine -> RegExHelper.stringMatchesPattern ("\\s*//.*", sLine) ? "" : sLine);
   }
 
   @Nullable
   private static IJsonObject _readAsJSON (@Nonnull final IReadableResource aRes)
   {
     // Read line by line
-    final ICommonsList <String> aContent = StreamHelper.readStreamLines (aRes, StandardCharsets.UTF_8);
+    final ICommonsList <String> aContent = StreamHelperExt.readStreamLines (aRes, StandardCharsets.UTF_8);
     // Preprocess content
     final String sPreprocessedContent = _preprocess (aContent);
     // Convert to JSON
     final CollectingJsonParserHandler aHandler = new CollectingJsonParserHandler ();
     if (JsonReader.parseJson (new NonBlockingStringReader (sPreprocessedContent),
                               aHandler,
-                              x -> x.setTrackPosition (true).setRequireStringQuotes (false).setAllowSpecialCharsInStrings (true),
-                              ex -> LOGGER.error ("Failed to parse JSON", ex))
-                  .isSuccess ())
+                              new JsonParserSettings ().setTrackPosition (true)
+                                                       .setRequireStringQuotes (false)
+                                                       .setAllowSpecialCharsInStrings (true),
+                              ex -> LOGGER.error ("Failed to parse JSON", ex)).isSuccess ())
     {
       final IJson aJson = aHandler.getJson ();
       if (aJson.isObject ())
@@ -96,7 +99,7 @@ public class InterfaceReader
   @Nullable
   private static String _cleanupText (@Nullable final String sText)
   {
-    return sText == null ? null : StringHelper.removeAll (sText, '\r');
+    return sText == null ? null : StringRemove.removeAll (sText, '\r');
   }
 
   @Nullable
@@ -121,7 +124,9 @@ public class InterfaceReader
   }
 
   @Nonnull
-  private static WGTypeDef _readTypeDef (final WGInterface aInterface, final String sTypeChildName, @Nonnull final IJson aTypeChildNode)
+  private static WGTypeDef _readTypeDef (final WGInterface aInterface,
+                                         final String sTypeChildName,
+                                         @Nonnull final IJson aTypeChildNode)
   {
     if (aTypeChildNode.isValue ())
     {
@@ -129,7 +134,11 @@ public class InterfaceReader
       final String sChildTypeName = aTypeChildNode.getAsValue ().getAsString ();
       final IWGType aChildType = aInterface.getTypeOfName (sChildTypeName);
       if (aChildType == null)
-        throw new IllegalArgumentException ("Property '" + sTypeChildName + "' has invalid type '" + sChildTypeName + "'");
+        throw new IllegalArgumentException ("Property '" +
+                                            sTypeChildName +
+                                            "' has invalid type '" +
+                                            sChildTypeName +
+                                            "'");
       return new WGTypeDef (aChildType);
     }
 
@@ -139,7 +148,11 @@ public class InterfaceReader
     final String sChildTypeName = _getChildAsText (aType, "$type");
     final IWGType aChildType = aInterface.getTypeOfName (sChildTypeName);
     if (aChildType == null)
-      throw new IllegalArgumentException ("Property '" + sTypeChildName + "' has invalid type '" + sChildTypeName + "'");
+      throw new IllegalArgumentException ("Property '" +
+                                          sTypeChildName +
+                                          "' has invalid type '" +
+                                          sChildTypeName +
+                                          "'");
     final WGTypeDef aTypeDef = new WGTypeDef (aChildType);
     aTypeDef.setDocumentation (_getDocumentation (_getChildAsText (aType, "$doc")));
     aTypeDef.setMin (_getChildAsText (aType, "$min"));
@@ -220,7 +233,9 @@ public class InterfaceReader
                     {
                       final IJsonArray aEntries = aTypeChildNode.getAsArray ();
                       if (aEntries == null)
-                        throw new IllegalArgumentException ("Simple type '" + aSimpleType.getName () + "' has invalid enum entries");
+                        throw new IllegalArgumentException ("Simple type '" +
+                                                            aSimpleType.getName () +
+                                                            "' has invalid enum entries");
 
                       // Convert all to string
                       final ICommonsList <WGEnumEntry> aEnumEntries = new CommonsArrayList <> ();
@@ -230,7 +245,8 @@ public class InterfaceReader
                         {
                           // [key, documentation]
                           final IJsonArray aProvValueList = aPropValue.getAsArray ();
-                          aEnumEntries.add (new WGEnumEntry (aProvValueList.getAsString (0), aProvValueList.getAsString (1)));
+                          aEnumEntries.add (new WGEnumEntry (aProvValueList.getAsString (0),
+                                                             aProvValueList.getAsString (1)));
                         }
                         else
                         {
@@ -286,7 +302,8 @@ public class InterfaceReader
                 aComplexTypeDef.setDocumentation (_getDocumentation (aTypeChildNode.getAsValue ().getAsString ()));
               else
                 if (sTypeChildName.equals ("$type"))
-                  aComplexType.setType (EComplexTypeType.getFromTagNameOrThrow (aTypeChildNode.getAsValue ().getAsString ()));
+                  aComplexType.setType (EComplexTypeType.getFromTagNameOrThrow (aTypeChildNode.getAsValue ()
+                                                                                              .getAsString ()));
                 else
                   if (!sTypeChildName.startsWith ("$"))
                   {

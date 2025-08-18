@@ -16,10 +16,10 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
-import javax.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
+import com.helger.base.id.IHasID;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.id.IHasID;
+import jakarta.annotation.Nonnull;
 
 public enum EElementType implements IHasID <String>
 {

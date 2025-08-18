@@ -24,24 +24,24 @@ import org.objectweb.asm.tree.ClassNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.annotation.IsSPIInterface;
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.CommonsLinkedHashMap;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsMap;
-import com.helger.commons.collection.impl.ICommonsOrderedMap;
-import com.helger.commons.collection.impl.ICommonsSortedMap;
-import com.helger.commons.collection.impl.ICommonsSortedSet;
-import com.helger.commons.io.file.FileSystemRecursiveIterator;
-import com.helger.commons.io.resource.ClassPathResource;
-import com.helger.commons.lang.ClassHelper;
-import com.helger.commons.mock.SPITestHelper;
-import com.helger.commons.string.StringHelper;
+import com.helger.annotation.style.IsSPIInterface;
+import com.helger.base.lang.clazz.ClassHelper;
+import com.helger.base.string.StringHelper;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.CommonsHashMap;
+import com.helger.collection.commons.CommonsLinkedHashMap;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsMap;
+import com.helger.collection.commons.ICommonsOrderedMap;
+import com.helger.collection.commons.ICommonsSortedMap;
+import com.helger.collection.commons.ICommonsSortedSet;
+import com.helger.io.file.FileSystemRecursiveIterator;
+import com.helger.io.resource.ClassPathResource;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+import com.helger.unittestext.SPITestHelper;
 import com.helger.xml.EXMLParserFeature;
 import com.helger.xml.EXMLParserProperty;
 import com.helger.xml.microdom.IMicroDocument;
@@ -122,7 +122,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                                                                            x.getTextContentTrimmed ()));
 
               final String sAutomaticModuleName = aInstructionMap.get (AUTOMATIC_MODULE_NAME);
-              if (StringHelper.hasNoText (sAutomaticModuleName))
+              if (StringHelper.isEmpty (sAutomaticModuleName))
                 _warn (aProject, "No " + AUTOMATIC_MODULE_NAME + " present!");
               else
               {
@@ -139,7 +139,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               }
 
               final String sExportPackage = aInstructionMap.get (EXPORT_PACKAGE);
-              if (StringHelper.hasNoText (sExportPackage))
+              if (StringHelper.isEmpty (sExportPackage))
                 _warn (aProject, "No " + EXPORT_PACKAGE + " present!");
               else
               {
@@ -153,7 +153,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                                    "' is already used in project " +
                                    aOld.getProjectName ());
                 }
-                if (StringHelper.hasText (sAutomaticModuleName) &&
+                if (StringHelper.isNotEmpty (sAutomaticModuleName) &&
                     !sExportPackage.contains (sAutomaticModuleName + ".*"))
                 {
                   _warn (aProject,
@@ -246,7 +246,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               {
                 // Update pom.xml!
                 eInstructions.removeAllChildren ();
-                aInstructionMap.forEach ( (k, v) -> eInstructions.appendElement (NS_MAVEN, k).appendText (v));
+                aInstructionMap.forEach ( (k, v) -> eInstructions.addElementNS (NS_MAVEN, k).addText (v));
                 MicroWriter.writeToFile (aPOM, aProject.getPOMFile (), aXWS);
                 _info (aProject, "Updated OSGI configuration!");
               }

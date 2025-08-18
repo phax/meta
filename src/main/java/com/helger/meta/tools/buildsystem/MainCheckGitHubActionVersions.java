@@ -19,19 +19,19 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
-import javax.annotation.Nonnull;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.FileHelper;
-import com.helger.commons.io.file.FileSystemIterator;
-import com.helger.commons.io.file.IFileFilter;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.io.stream.NonBlockingBufferedReader;
-import com.helger.commons.string.StringParser;
+import com.helger.base.io.nonblocking.NonBlockingBufferedReader;
+import com.helger.base.string.StringParser;
+import com.helger.io.file.FileHelper;
+import com.helger.io.file.FileSystemIterator;
+import com.helger.io.file.IFileFilter;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
 
 public class MainCheckGitHubActionVersions
 {

@@ -18,19 +18,19 @@ package com.helger.meta.project;
 
 import java.io.File;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.string.ToStringGenerator;
-import com.helger.commons.version.Version;
+import com.helger.annotation.Nonempty;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.tostring.ToStringGenerator;
+import com.helger.base.version.Version;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.serialize.MicroReader;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public class SimpleProject implements IProject
 {
@@ -83,7 +83,8 @@ public class SimpleProject implements IProject
     m_aBaseDir = aBaseDir;
     if (!m_aBaseDir.exists () && eIsDeprecated.isFalse ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
-    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") + aBaseDir.getName ();
+    m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") +
+                         aBaseDir.getName ();
     m_bIsDeprecated = eIsDeprecated.isTrue ();
     m_bHasPagesProject = eHasPagesProject.isTrue ();
     m_bHasWikiProject = eHasWikiProject.isTrue ();
@@ -241,6 +242,8 @@ public class SimpleProject implements IProject
   @Override
   public String toString ()
   {
-    return new ToStringGenerator (null).append ("ProjectName", m_sProjectName).append ("ProjectType", m_eProjectType).getToString ();
+    return new ToStringGenerator (null).append ("ProjectName", m_sProjectName)
+                                       .append ("ProjectType", m_eProjectType)
+                                       .getToString ();
   }
 }

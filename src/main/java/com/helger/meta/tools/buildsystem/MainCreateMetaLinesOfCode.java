@@ -23,33 +23,33 @@ import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
 import java.util.Locale;
 
-import javax.annotation.Nonnegative;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.CommonsTreeSet;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.collection.impl.ICommonsMap;
-import com.helger.commons.collection.impl.ICommonsSet;
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.io.file.FileHelper;
-import com.helger.commons.io.file.FileSystemRecursiveIterator;
-import com.helger.commons.io.file.FilenameHelper;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.io.stream.NonBlockingBufferedReader;
-import com.helger.commons.locale.LocaleFormatter;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.system.ENewLineMode;
-import com.helger.commons.timing.StopWatch;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.Nonnegative;
+import com.helger.base.io.nonblocking.NonBlockingBufferedReader;
+import com.helger.base.string.StringImplode;
+import com.helger.base.system.ENewLineMode;
+import com.helger.base.timing.StopWatch;
+import com.helger.collection.commons.CommonsHashMap;
+import com.helger.collection.commons.CommonsTreeSet;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsMap;
+import com.helger.collection.commons.ICommonsSet;
+import com.helger.datetime.helper.PDTFactory;
+import com.helger.io.file.FileHelper;
+import com.helger.io.file.FileSystemRecursiveIterator;
+import com.helger.io.file.FilenameHelper;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+import com.helger.text.locale.LocaleFormatter;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Create the README.md file of this project.
@@ -157,7 +157,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     EFileType (@Nonnull @Nonempty final String sName, final boolean bIsText, @Nonnull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
-      m_sExtensions = StringHelper.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
+      m_sExtensions = StringImplode.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
       m_bIsText = bIsText;
       m_aExts = aExts;
     }

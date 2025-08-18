@@ -25,9 +25,9 @@ import java.nio.charset.StandardCharsets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.system.ENewLineMode;
+import com.helger.base.string.StringReplace;
+import com.helger.base.system.ENewLineMode;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.CMeta;
 import com.helger.meta.project.EProjectOwner;
@@ -64,7 +64,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
           String sContent = SimpleFileIO.getFileAsString (f, README_CHARSET);
 
           // Unify newlines to "\n"
-          sContent = StringHelper.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n");
+          sContent = StringReplace.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n");
 
           // Number of chars is relevant for us
           final int nFileSize = sContent.length ();
@@ -105,7 +105,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
             if (sNewContent != null)
             {
               // Convert newline back to system default
-              sNewContent = StringHelper.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
+              sNewContent = StringReplace.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
 
               SimpleFileIO.writeFile (f, sNewContent, README_CHARSET);
               _warn (aProject, f.getName () + " was updated");

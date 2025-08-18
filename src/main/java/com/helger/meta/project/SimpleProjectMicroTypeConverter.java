@@ -18,15 +18,15 @@ package com.helger.meta.project;
 
 import java.io.File;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.string.StringHelper;
-import com.helger.commons.string.StringParser;
+import com.helger.annotation.Nonempty;
+import com.helger.base.string.StringHelper;
+import com.helger.base.string.StringParser;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroElement;
 import com.helger.xml.microdom.convert.IMicroTypeConverter;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter <SimpleProject>
 {
@@ -73,7 +73,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     EProjectOwner eProjectOwner = EProjectOwner.getFromGitOrgaOrNull (sProjectOwner);
     if (eProjectOwner == null)
     {
-      if (StringHelper.hasText (sProjectOwner))
+      if (StringHelper.isNotEmpty (sProjectOwner))
         throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
       eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
     }
@@ -95,7 +95,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
 
     final String sLastPublishedVersion = aElement.getAttributeValue (ATTR_LAST_PUBLISHED_VERSION);
 
-    final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION), -1));
+    final EJDK eMinJDK = EJDK.getFromMajorOrNull (StringParser.parseInt (aElement.getAttributeValue (ATTR_MIN_JDK_VERSION),
+                                                                         -1));
 
     final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, false);
 
@@ -114,7 +115,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   }
 
   @Nonnull
-  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject, @Nonnull final IMicroElement aElement)
+  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
+                                                         @Nonnull final IMicroElement aElement)
   {
     final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
                                                                                    EHostingPlatform.GITHUB);
@@ -124,7 +126,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     EProjectOwner eProjectOwner = EProjectOwner.getFromGitOrgaOrNull (sProjectOwner);
     if (eProjectOwner == null)
     {
-      if (StringHelper.hasText (sProjectOwner))
+      if (StringHelper.isNotEmpty (sProjectOwner))
         throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
       eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
     }
@@ -145,7 +147,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     if (sLastPublishedVersion == null)
       sLastPublishedVersion = aParentProject.getLastPublishedVersionString ();
 
-    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE, aParentProject.isGitHubPrivate ());
+    final boolean bIsGitHubPrivate = aElement.getAttributeValueAsBool (ATTR_GITHUB_PRIVATE,
+                                                                       aParentProject.isGitHubPrivate ());
 
     return new SimpleProject (eHostingPlatform,
                               aParentProject,

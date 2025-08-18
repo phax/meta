@@ -19,16 +19,16 @@ package com.helger.meta;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-import javax.annotation.Nonnegative;
-import javax.annotation.Nonnull;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.debug.GlobalDebug;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.Nonnegative;
+import com.helger.base.debug.GlobalDebug;
+import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.project.IProject;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * Base class for the main utilities in this package

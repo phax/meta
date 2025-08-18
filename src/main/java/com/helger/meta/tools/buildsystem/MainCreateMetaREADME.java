@@ -20,15 +20,15 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
 
-import javax.annotation.Nonnull;
-
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.io.file.SimpleFileIO;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.datetime.helper.PDTFactory;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * Create the README.md file of this project.

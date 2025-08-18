@@ -20,12 +20,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.string.StringHelper;
+import com.helger.annotation.Nonempty;
+import com.helger.base.string.StringHelper;
 import com.helger.meta.CMeta;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public enum EProjectOwner
 {
@@ -67,7 +67,7 @@ public enum EProjectOwner
   @Nullable
   public static EProjectOwner getFromGitOrgaOrNull (@Nullable final String s)
   {
-    if (StringHelper.hasText (s))
+    if (StringHelper.isNotEmpty (s))
       for (final EProjectOwner e : values ())
         if (s.equals (e.m_sGitOrgaName))
           return e;

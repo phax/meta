@@ -20,14 +20,13 @@ import java.io.OutputStream;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
 import javax.xml.XMLConstants;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.annotation.Nonempty;
+import com.helger.annotation.Nonempty;
+import com.helger.base.enforce.ValueEnforcer;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
 import com.helger.meta.tools.wsdlgen.model.WGMethod;
 import com.helger.meta.tools.wsdlgen.model.type.IWGType;
@@ -43,9 +42,11 @@ import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xml.serialize.write.XMLWriterSettings;
 
+import jakarta.annotation.Nonnull;
+
 /**
- * Create an XSD file with only the types from an existing {@link WGInterface}
- * object. This is used within the WSDL generation.
+ * Create an XSD file with only the types from an existing {@link WGInterface} object. This is used
+ * within the WSDL generation.
  *
  * @author Philip Helger
  */
@@ -92,9 +93,9 @@ public class XSDWriter
   {
     if (m_bCreateDocumentation)
     {
-      final IMicroElement aAnnotation = eParent.appendElement (XSD_NS, "annotation");
-      final IMicroElement aDocumentation = aAnnotation.appendElement (XSD_NS, "documentation");
-      aDocumentation.appendText (sDocumentation);
+      final IMicroElement aAnnotation = eParent.addElementNS (XSD_NS, "annotation");
+      final IMicroElement aDocumentation = aAnnotation.addElementNS (XSD_NS, "documentation");
+      aDocumentation.addText (sDocumentation);
     }
   }
 
@@ -103,7 +104,7 @@ public class XSDWriter
                                     @Nonnull final String sChildName,
                                     @Nonnull final WGTypeDef aChildTypeDef)
   {
-    final IMicroElement eAttribute = eParent.appendElement (XSD_NS, "attribute");
+    final IMicroElement eAttribute = eParent.addElementNS (XSD_NS, "attribute");
     eAttribute.setAttribute ("name", sChildName);
     eAttribute.setAttribute ("type", _getTypeRef (aNSC, aChildTypeDef.getType ()));
     if (aChildTypeDef.hasDefault ())
@@ -128,11 +129,12 @@ public class XSDWriter
     return sMethodName + sRealPartName + eType.getID ();
   }
 
-  private void _appendDocumentLiteralElements (@Nonnull final MapBasedNamespaceContext aNSC, @Nonnull final IMicroElement eSchema)
+  private void _appendDocumentLiteralElements (@Nonnull final MapBasedNamespaceContext aNSC,
+                                               @Nonnull final IMicroElement eSchema)
   {
     /*
-     * Note: when using document/literal the 3 strings created for the "name"
-     * attributes must match the names created in WSDLWriter.generatedWSDL!!!
+     * Note: when using document/literal the 3 strings created for the "name" attributes must match
+     * the names created in WSDLWriter.generatedWSDL!!!
      */
 
     for (final WGMethod aMethod : m_aInterface.getAllMethods ())
@@ -141,7 +143,7 @@ public class XSDWriter
       if (aMethod.isInput ())
         for (final Map.Entry <String, IWGType> aEntry : aMethod.getAllInputs ().entrySet ())
         {
-          final IMicroElement ePredefinedElement = eSchema.appendElement (XSD_NS, "element");
+          final IMicroElement ePredefinedElement = eSchema.addElementNS (XSD_NS, "element");
           ePredefinedElement.setAttribute ("name", getElementName (sMethodName, aEntry.getKey (), EElementType.INPUT));
           ePredefinedElement.setAttribute ("type", _getTypeRef (aNSC, aEntry.getValue ()));
         }
@@ -149,7 +151,7 @@ public class XSDWriter
       if (aMethod.isOutput ())
         for (final Map.Entry <String, IWGType> aEntry : aMethod.getAllOutputs ().entrySet ())
         {
-          final IMicroElement ePredefinedElement = eSchema.appendElement (XSD_NS, "element");
+          final IMicroElement ePredefinedElement = eSchema.addElementNS (XSD_NS, "element");
           ePredefinedElement.setAttribute ("name", getElementName (sMethodName, aEntry.getKey (), EElementType.OUTPUT));
           ePredefinedElement.setAttribute ("type", _getTypeRef (aNSC, aEntry.getValue ()));
         }
@@ -157,7 +159,7 @@ public class XSDWriter
       if (aMethod.isFault ())
         for (final Map.Entry <String, IWGType> aEntry : aMethod.getAllFaults ().entrySet ())
         {
-          final IMicroElement ePredefinedElement = eSchema.appendElement (XSD_NS, "element");
+          final IMicroElement ePredefinedElement = eSchema.addElementNS (XSD_NS, "element");
           ePredefinedElement.setAttribute ("name", getElementName (sMethodName, aEntry.getKey (), EElementType.FAULT));
           ePredefinedElement.setAttribute ("type", _getTypeRef (aNSC, aEntry.getValue ()));
         }
@@ -184,14 +186,14 @@ public class XSDWriter
         if (aSimpleType.isExtension ())
         {
           // complexType + simpleContent
-          final IMicroElement eComplexType = eSchema.appendElement (XSD_NS, "complexType");
+          final IMicroElement eComplexType = eSchema.addElementNS (XSD_NS, "complexType");
           eComplexType.setAttribute ("name", sName);
 
           if (aTypeDef.hasDocumentation ())
             _appendXSDDocumentation (eComplexType, aTypeDef.getDocumentation ());
 
-          final IMicroElement eSimpleContent = eComplexType.appendElement (XSD_NS, "simpleContent");
-          final IMicroElement eExtension = eSimpleContent.appendElement (XSD_NS, "extension");
+          final IMicroElement eSimpleContent = eComplexType.addElementNS (XSD_NS, "simpleContent");
+          final IMicroElement eExtension = eSimpleContent.addElementNS (XSD_NS, "extension");
           eExtension.setAttribute ("base", _getTypeRef (aNSC, aSimpleType.getExtension ()));
 
           // Child attributes
@@ -202,13 +204,13 @@ public class XSDWriter
           if (aSimpleType.isRestriction ())
           {
             // simpleType
-            final IMicroElement eSimpleType = eSchema.appendElement (XSD_NS, "simpleType");
+            final IMicroElement eSimpleType = eSchema.addElementNS (XSD_NS, "simpleType");
             eSimpleType.setAttribute ("name", sName);
 
             if (aTypeDef.hasDocumentation ())
               _appendXSDDocumentation (eSimpleType, aTypeDef.getDocumentation ());
 
-            final IMicroElement eRestriction = eSimpleType.appendElement (XSD_NS, "restriction");
+            final IMicroElement eRestriction = eSimpleType.addElementNS (XSD_NS, "restriction");
             eRestriction.setAttribute ("base", _getTypeRef (aNSC, aSimpleType.getRestriction ()));
 
             boolean bHasAnything = false;
@@ -216,7 +218,7 @@ public class XSDWriter
             {
               for (final WGEnumEntry aEnumEntry : aSimpleType.getAllEnumEntries ())
               {
-                final IMicroElement eEnumeration = eRestriction.appendElement (XSD_NS, "enumeration")
+                final IMicroElement eEnumeration = eRestriction.addElementNS (XSD_NS, "enumeration")
                                                                .setAttribute ("value", aEnumEntry.getKey ());
                 if (aEnumEntry.hasDocumentation ())
                   _appendXSDDocumentation (eEnumeration, aEnumEntry.getDocumentation ());
@@ -225,7 +227,7 @@ public class XSDWriter
             }
             if (aSimpleType.hasMaxLength ())
             {
-              eRestriction.appendElement (XSD_NS, "maxLength").setAttribute ("value", aSimpleType.getMaxLength ());
+              eRestriction.addElementNS (XSD_NS, "maxLength").setAttribute ("value", aSimpleType.getMaxLength ());
               bHasAnything = true;
             }
 
@@ -240,7 +242,7 @@ public class XSDWriter
         if (aType instanceof WGComplexType)
         {
           final WGComplexType aComplexType = (WGComplexType) aType;
-          final IMicroElement eComplexType = eSchema.appendElement (XSD_NS, "complexType");
+          final IMicroElement eComplexType = eSchema.addElementNS (XSD_NS, "complexType");
           eComplexType.setAttribute ("name", sName);
 
           if (aTypeDef.hasDocumentation ())
@@ -249,12 +251,12 @@ public class XSDWriter
           if (aComplexType.hasChildren ())
           {
             // Child elements
-            final IMicroElement eParent = eComplexType.appendElement (XSD_NS, aComplexType.getType ().getTagName ());
+            final IMicroElement eParent = eComplexType.addElementNS (XSD_NS, aComplexType.getType ().getTagName ());
             for (final Map.Entry <String, WGTypeDef> aChildEntry : aComplexType.getAllChildElements ().entrySet ())
             {
               final String sChildName = aChildEntry.getKey ();
               final WGTypeDef aChildTypeDef = aChildEntry.getValue ();
-              final IMicroElement eElement = eParent.appendElement (XSD_NS, "element");
+              final IMicroElement eElement = eParent.addElementNS (XSD_NS, "element");
               eElement.setAttribute ("name", sChildName);
               eElement.setAttribute ("type", _getTypeRef (aNSC, aChildTypeDef.getType ()));
               if (aChildTypeDef.hasDefault ())
@@ -300,8 +302,8 @@ public class XSDWriter
 
     // Wrap in document
     final IMicroDocument aDoc = new MicroDocument ();
-    aDoc.appendComment ("\nThis file was automatically generated by ph-wsdl-gen\n");
-    aDoc.appendChild (eSchema);
+    aDoc.addComment ("\nThis file was automatically generated by ph-wsdl-gen\n");
+    aDoc.addChild (eSchema);
 
     // Write to stream
     final XMLWriterSettings aSettings = new XMLWriterSettings ();

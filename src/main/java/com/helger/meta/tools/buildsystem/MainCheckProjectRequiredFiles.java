@@ -19,21 +19,21 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
-import javax.annotation.Nonnull;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.ValueEnforcer;
-import com.helger.commons.datetime.PDTFactory;
-import com.helger.commons.io.file.SimpleFileIO;
-import com.helger.commons.state.ESuccess;
-import com.helger.commons.string.StringHelper;
+import com.helger.base.enforce.ValueEnforcer;
+import com.helger.base.state.ESuccess;
+import com.helger.base.string.StringImplode;
+import com.helger.datetime.helper.PDTFactory;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * Check whether all project has all the required files
@@ -104,7 +104,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
            "File " +
                      f.getAbsolutePath () +
                      " does not contain phrase " +
-                     StringHelper.getImploded (", ", aExpectedContentsOR) +
+                     StringImplode.getImploded (", ", aExpectedContentsOR) +
                      "!");
     return false;
   }

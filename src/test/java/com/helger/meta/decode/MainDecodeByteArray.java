@@ -19,10 +19,10 @@ package com.helger.meta.decode;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import com.helger.commons.base64.Base64;
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.string.StringHelper;
+import com.helger.base.codec.base64.Base64;
+import com.helger.base.string.StringHelper;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
 
 public class MainDecodeByteArray
 {

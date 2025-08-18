@@ -21,8 +21,8 @@ import java.io.File;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.collection.impl.CommonsHashMap;
-import com.helger.commons.collection.impl.ICommonsMap;
+import com.helger.collection.commons.CommonsHashMap;
+import com.helger.collection.commons.ICommonsMap;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.ProjectList;
