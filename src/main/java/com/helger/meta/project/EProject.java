@@ -70,6 +70,7 @@ public enum EProject implements IProject
                EJDK.JDK8),
 
   // 10.2.6 for JDK 8
+  // 11.2.6 for JDK 11
   PH_COMMONS_PARENT_POM (null,
                          EProjectOwner.DEFAULT_PROJECT_OWNER,
                          "ph-commons-parent-pom",
@@ -194,7 +195,7 @@ public enum EProject implements IProject
           EHasPages.FALSE,
           EHasWiki.FALSE,
           "6.0.4",
-          EJDK.JDK11),
+          EJDK.JDK17),
   PH_XMLDSIG (null,
               EProjectOwner.DEFAULT_PROJECT_OWNER,
               "ph-xmldsig",
@@ -420,7 +421,7 @@ public enum EProject implements IProject
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
                           "5.0.1",
-                          EJDK.JDK11),
+                          EJDK.JDK17),
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
   PH_SCHEDULE (PH_SCHEDULE_PARENT_POM, "ph-schedule", EProjectType.JAVA_LIBRARY),
 
@@ -432,7 +433,7 @@ public enum EProject implements IProject
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
                             "7.0.2",
-                            EJDK.JDK11),
+                            EJDK.JDK17),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
   PH_TENANCY (PH_MASTERDATA_PARENT_POM, "ph-tenancy", EProjectType.JAVA_LIBRARY),
 
@@ -464,7 +465,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "7.0.4",
+                     "7.0.5",
                      EJDK.JDK11),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),
@@ -544,7 +545,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "5.1.5",
+                      "5.1.6",
                       EJDK.JDK11),
   AS2_LIB (AS2_LIB_PARENT_POM, "as2-lib", EProjectType.JAVA_LIBRARY),
   AS2_PARTNERSHIP_MONGODB (AS2_LIB_PARENT_POM, "as2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
@@ -787,7 +788,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        "7.2.7",
+                        "7.2.8",
                         EJDK.JDK11),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),

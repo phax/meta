@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250818</version>
+  <version>1.0.0-20250819</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.32.20</version>
+      <version>2.32.25</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -258,12 +258,12 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>11.11.0</version>
+      <version>11.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>11.11.0</version>
+      <version>11.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -298,7 +298,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>4.31.1</version>
+      <version>4.32.0</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -578,13 +578,13 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-bom</artifactId>
-      <version>12.0.24</version>
+      <version>12.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>12.0.24</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.relaxng</groupId>
@@ -599,12 +599,12 @@
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-impl</artifactId>
-      <version>0.12.6</version>
+      <version>0.12.7</version>
     </dependency>
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-orgjson</artifactId>
-      <version>0.12.6</version>
+      <version>0.12.7</version>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
@@ -895,7 +895,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>6.2.9</version>
+      <version>6.2.10</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1097,7 +1097,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-javadoc-plugin</artifactId>
-      <version>3.11.2</version>
+      <version>3.11.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1880,18 +1880,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>7.0.4</version>
+      <version>7.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
@@ -2106,39 +2106,39 @@
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib-parent-pom</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-lib</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-partnership-mongodb</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-servlet</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-server</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-webapp</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.as2</groupId>
       <artifactId>as2-demo-spring-boot</artifactId>
-      <version>5.1.5</version>
+      <version>5.1.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -2658,50 +2658,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>7.2.7</version>
+      <version>7.2.8</version>
       <type>war</type>
     </dependency>
     <dependency>
