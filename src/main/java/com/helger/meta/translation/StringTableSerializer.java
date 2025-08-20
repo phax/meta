@@ -21,7 +21,6 @@ import java.util.Map;
 
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.hashcode.HashCodeCalculator;
-import com.helger.base.hashcode.HashCodeGenerator;
 import com.helger.base.state.ESuccess;
 import com.helger.base.string.StringHex;
 import com.helger.collection.commons.ICommonsSortedMap;
@@ -45,7 +44,7 @@ public final class StringTableSerializer
     final IMicroElement eRoot = new MicroElement ("translationitems");
     eRoot.setAttribute ("count", aST.size ());
 
-    int nHashCode = HashCodeGenerator.INITIAL_HASHCODE;
+    int nHashCode = HashCodeCalculator.INITIAL_HASHCODE;
 
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : aST.directGetMap ().entrySet ())
     {
