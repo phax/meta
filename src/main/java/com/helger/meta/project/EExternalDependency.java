@@ -156,8 +156,10 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("6.0.0")
   JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK11),
+  // JakartaEE 10
+  JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
   // JakartaEE 11
-  JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.1.0", EJDK.JDK17),
+  JAKARTA_SERVLET_API_62 ("jakarta.servlet", "jakarta.servlet-api", "6.1.0", EJDK.JDK21),
 
   // JakartaEE 9
   @VersionMaxExcl ("3.1.0")
@@ -334,10 +336,7 @@ public enum EExternalDependency
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.3.0", EJDK.JDK8),
 
-  @VersionMaxExcl ("4.0.0")
-  XMLSEC_3("org.apache.santuario", "xmlsec", "3.0.6", EJDK.JDK11),
-  // Java 11
-  XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.4", EJDK.JDK11),
+  XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.4", EJDK.JDK17),
 
   XSOM ("com.sun.xsom", "xsom", "20140925", EJDK.JDK8),
   ZXING_CORE ("com.google.zxing", "core", "3.5.3", EJDK.JDK8),

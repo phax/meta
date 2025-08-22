@@ -62,6 +62,9 @@ Current list of all released projects (as of 2025-08-22):
  * [jcodemodel](https://github.com/phax/jcodemodel) - Version 3.4.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.jcodemodel/jcodemodel-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.jcodemodel/jcodemodel-parent-pom) 
+ * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 3.4.1 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 1.0.2 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support-parent-pom) 
@@ -494,7 +497,7 @@ Current list of all released projects (as of 2025-08-22):
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls) 
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.0 - JDK 17
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parent-pom) 
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 7.4.2 - JDK 17
