@@ -81,7 +81,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "11.2.6",
+                         "12.0.0",
                          EJDK.JDK17),
   PH_ANNOTATIONS (PH_COMMONS_PARENT_POM, "ph-annotations", EProjectType.JAVA_LIBRARY),
   PH_BASE (PH_COMMONS_PARENT_POM, "ph-base", EProjectType.JAVA_LIBRARY),
