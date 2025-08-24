@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-08-22):
+Current list of all released projects (as of 2025-08-24):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 5.3.4 - JDK 11
 
@@ -14,25 +14,25 @@ Current list of all released projects (as of 2025-08-22):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 1.1.4 - JDK 1.8
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/parser-generator-cc) 
- * [as2-lib](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib-parent-pom) 
- * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-demo-spring-boot](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-spring-boot) 
- * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-demo-webapp](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-demo-webapp) 
- * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-lib](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-lib) 
- * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-partnership-mongodb](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-partnership-mongodb) 
- * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-server](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-server) 
- * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 11
+ * [as2-lib/as2-servlet](https://github.com/phax/as2-lib) - Version 5.1.7 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.as2/as2-servlet) 
  * [ddd](https://github.com/phax/ddd) - Version 0.5.3 - JDK 11
@@ -404,22 +404,22 @@ Current list of all released projects (as of 2025-08-22):
  * [ph-oton](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom) 
- * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-parent-pom) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls) 
  * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 17
