@@ -266,49 +266,49 @@ Current list of all released projects (as of 2025-08-25):
  * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.commons/ph-xml) 
- * [ph-css](https://github.com/phax/ph-css) - Version 7.1.0 - JDK 11
+ * [ph-css](https://github.com/phax/ph-css) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css-parent-pom) 
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 7.1.0 - JDK 11
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-css) 
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 7.1.0 - JDK 11
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-csscompress-maven-plugin) 
- * [ph-datetime](https://github.com/phax/ph-datetime) - Version 7.0.0 - JDK 11
+ * [ph-datetime](https://github.com/phax/ph-datetime) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-datetime-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-datetime-parent-pom) 
- * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 7.0.0 - JDK 11
+ * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 7.1.0 - JDK 11
+ * [ph-db](https://github.com/phax/ph-db) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 7.1.0 - JDK 11
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 7.1.0 - JDK 11
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 7.1.0 - JDK 11
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.db/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 3.0.1 - JDK 11
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 3.0.1 - JDK 11
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 3.0.1 - JDK 11
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 3.0.1 - JDK 11
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 3.0.1 - JDK 11
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.0.0 - JDK 17
@@ -386,13 +386,13 @@ Current list of all released projects (as of 2025-08-25):
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 7.0.2 - JDK 11
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 7.0.2 - JDK 11
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 7.0.2 - JDK 11
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.masterdata/ph-tenancy) 
  * [ph-math](https://github.com/phax/ph-math) - Version 6.0.0 - JDK 17
@@ -404,100 +404,103 @@ Current list of all released projects (as of 2025-08-25):
  * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.5 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
- * [ph-oton](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-parent-pom) 
- * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-parent-pom) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-demo) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-pages) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-stub) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 9.2.3 - JDK 11
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap3-uictrls) 
- * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax) 
- * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api) 
- * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app) 
- * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom) 
- * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
-
-   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit) 
- * [ph-oton/ph-oton-bootstrap4](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-parent-pom) 
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4) 
- * [ph-oton/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-demo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-demo) 
- * [ph-oton/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-pages/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-pages) 
- * [ph-oton/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-stub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-stub) 
- * [ph-oton/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-bootstrap4-uictrls) 
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-ajax) 
+ * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-api) 
+ * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-app) 
+ * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-atom) 
+ * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-audit) 
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-connect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-connect) 
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-core/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-core) 
- * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-datatables/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-datatables) 
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-exchange/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-exchange) 
- * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-html/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-html) 
- * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-icon) 
- * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-io/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-io) 
- * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jdbc) 
- * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jetty) 
- * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jquery/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jquery) 
- * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jscode/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-jscode) 
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-security/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-security) 
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-tinymce4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-tinymce4) 
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uicore/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uicore) 
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 9.3.2 - JDK 11
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.photon/ph-oton-uictrls) 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.1 - JDK 17
@@ -518,40 +521,40 @@ Current list of all released projects (as of 2025-08-25):
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 6.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-sbdh) 
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 5.0.1 - JDK 11
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule-parent-pom) 
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 5.0.1 - JDK 11
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-mini-quartz/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-mini-quartz) 
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 5.0.1 - JDK 11
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schedule/ph-schedule) 
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-parent-pom) 
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-ant-task) 
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-api) 
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-pure) 
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-schxslt) 
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-testfiles) 
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-validator) 
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 8.0.6 - JDK 11
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 9.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.schematron/ph-schematron-xslt) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
@@ -605,40 +608,40 @@ Current list of all released projects (as of 2025-08-25):
  * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.ubl/ph-ubltr) 
- * [ph-web](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web-parent-pom) 
- * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-dns/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-dns) 
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-httpclient/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-httpclient) 
- * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-jsch/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-jsch) 
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-mail/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-mail) 
- * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-network/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-network) 
- * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-servlet) 
- * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-sitemap/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-sitemap) 
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-smtp) 
- * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-useragent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-useragent) 
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-web) 
- * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 10.5.1 - JDK 11
+ * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 11.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.web/ph-xservlet) 
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 5.0.0 - JDK 17
@@ -761,7 +764,7 @@ Current list of all released projects (as of 2025-08-25):
  * [phive](https://github.com/phax/phive) - Version 10.1.1 - JDK 11
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-parent-pom) 
- * [phive-binary](https://github.com/phax/phive-binary) - Version 0.1.0 - JDK 11
+ * [phive-binary](https://github.com/phax/phive-binary) - Version 0.2.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-binary/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive/phive-binary) 
  * [phive-rules](https://github.com/phax/phive-rules) - Version 3.2.15 - JDK 11
