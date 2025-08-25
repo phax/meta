@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.32.28", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.32.29", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -86,7 +86,6 @@ public enum EExternalDependency
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.7", EJDK.JDK11),
   ECLIPSELINK4_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK4_CORE),
 
-  ECLIPSE_JDT_CORE ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.26.0", EJDK.JDK8),
   ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.42.0", EJDK.JDK11),
 
   ECLIPSE_CORE_CONTENTTYPE2 ("org.eclipse.platform", "org.eclipse.core.contenttype", "3.9.600", EJDK.JDK11),
@@ -142,8 +141,6 @@ public enum EExternalDependency
 
   ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.2", EJDK.JDK11),
 
-  @VersionMaxExcl ("2.0.0")
-  JAKARTA_ANNOTATION_API("jakarta.annotation", "jakarta.annotation-api", "1.3.5", EJDK.JDK8),
   @VersionMaxExcl ("3.0.0")
   JAKARTA_ANNOTATION_API_2("jakarta.annotation", "jakarta.annotation-api", "2.1.1", EJDK.JDK11),
   // JakartaEE 11
@@ -154,16 +151,11 @@ public enum EExternalDependency
   JAKARTA_PERSISTENCE ("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
   JAKARTA_PERSISTENCE_11 ("jakarta.persistence", "jakarta.persistence-api", "3.2.0", EJDK.JDK17),
 
-  @VersionMaxExcl ("6.0.0")
-  JAKARTA_SERVLET_API_5("jakarta.servlet", "jakarta.servlet-api", "5.0.0", EJDK.JDK11),
   // JakartaEE 10
   JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
   // JakartaEE 11
-  JAKARTA_SERVLET_API_62 ("jakarta.servlet", "jakarta.servlet-api", "6.1.0", EJDK.JDK21),
+  JAKARTA_SERVLET_API_61 ("jakarta.servlet", "jakarta.servlet-api", "6.1.0", EJDK.JDK21),
 
-  // JakartaEE 9
-  @VersionMaxExcl ("3.1.0")
-  JAKARTA_JSP_API_30("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.0.0", EJDK.JDK11),
   // JakartaEE 10
   @VersionMaxExcl ("4.0.0")
   JAKARTA_JSP_API_31("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "3.1.1", EJDK.JDK17),
@@ -200,17 +192,6 @@ public enum EExternalDependency
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
   JERSEY3_HK2 ("org.glassfish.jersey.inject", "jersey-hk2", JERSEY3_BOM),
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
-
-  @IsBOM
-  @VersionMaxExcl ("12")
-  JETTY11_BOM("org.eclipse.jetty", "jetty-bom", "11.0.25", EJDK.JDK11),
-  JETTY11_WEBAPP ("org.eclipse.jetty", "jetty-webapp", JETTY11_BOM),
-  JETTY11_ANNOTATIONS ("org.eclipse.jetty", "jetty-annotations", JETTY11_BOM),
-  JETTY11_PLUS ("org.eclipse.jetty", "jetty-plus", JETTY11_BOM),
-  JETTY11_RUNNER ("org.eclipse.jetty", "jetty-runner", JETTY11_BOM),
-  JETTY11_APACHE_JSP ("org.eclipse.jetty", "apache-jsp", JETTY11_BOM),
-  JETTY11_SERVLET ("org.eclipse.jetty", "jetty-servlet", JETTY11_BOM),
-  JETTY11_SERVER ("org.eclipse.jetty", "jetty-server", JETTY11_BOM),
 
   @IsBOM
   JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.0", EJDK.JDK17),
