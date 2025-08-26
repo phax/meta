@@ -196,6 +196,10 @@ public enum EExternalDependency
   @IsBOM
   JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.0", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
+  JETTY12_WEBAPP ("org.eclipse.jetty.ee10", "jetty-ee10-webapp", JETTY12_BOM),
+  JETTY12_SERVLET ("org.eclipse.jetty.ee10", "jetty-ee10-servlet", JETTY12_BOM),
+  JETTY12_ANNOTATIONS ("org.eclipse.jetty.ee10", "jetty-ee10-annotations", JETTY12_BOM),
+  JETTY12_JSP ("org.eclipse.jetty.ee10", "jetty-ee10-apache-jsp", JETTY12_BOM),
 
   JING ("org.relaxng", "jing", "20241231", EJDK.JDK8),
   TRANG ("org.relaxng", "trang", "20241231", EJDK.JDK8),
