@@ -99,12 +99,11 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.21.0", EJDK.JDK8),
 
-  @VersionMaxExcl ("10")
-  FLYWAY9("org.flywaydb", "flyway-core", "9.22.3", EJDK.JDK8),
-  FLYWAY_MYSQL9 ("org.flywaydb", "flyway-mysql", FLYWAY9),
-
   FLYWAY11 ("org.flywaydb", "flyway-core", "11.11.2", EJDK.JDK17),
-  FLYWAY_MYSQL11 ("org.flywaydb", "flyway-mysql", FLYWAY11),
+  FLYWAY11_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY11),
+  FLYWAY11_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY11),
+  FLYWAY11_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY11),
+  FLYWAY11_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY11),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -121,8 +120,6 @@ public enum EExternalDependency
   @VersionMaxExcl ("3.0.0")
   HAMCREST_LIBRARY_2("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
   HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
-
-  HAZELCAST ("com.hazelcast", "hazelcast", "5.5.0", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.4", EJDK.JDK8),
   HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.5", EJDK.JDK8),
@@ -314,8 +311,6 @@ public enum EExternalDependency
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.1", EJDK.JDK8),
 
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.18.0", EJDK.JDK8),
-
-  WSS4J_3 ("org.apache.wss4j", "wss4j-ws-security-dom", "3.0.4", EJDK.JDK11),
 
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.0", EJDK.JDK17),
 
