@@ -619,6 +619,7 @@ public enum EProject implements IProject
   PEPPOL_MLS (PEPPOL_COMMONS_PARENT_POM, "peppol-mls", EProjectType.JAVA_LIBRARY),
   DBNALLIANCE_COMMONS (PEPPOL_COMMONS_PARENT_POM, "dbnalliance-commons", EProjectType.JAVA_LIBRARY),
   DBNALLIANCE_XHE (PEPPOL_COMMONS_PARENT_POM, "dbnalliance-xhe", EProjectType.JAVA_LIBRARY),
+  HREDELIVERY_COMMONS (PEPPOL_COMMONS_PARENT_POM, "hredelivery-commons", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_REPORTING_PARENT_POM (null,
                                EProjectOwner.DEFAULT_PROJECT_OWNER,
