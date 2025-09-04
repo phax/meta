@@ -121,6 +121,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
             {
               if (false)
                 _info (aProject, "Found Bundle instructions");
+
               bFoundInstructions = true;
               final ICommonsOrderedMap <String, String> aInstructionMap = new CommonsLinkedHashMap <> ();
               eInstructions.forAllChildElements (x -> aInstructionMap.put (x.getLocalName (),
@@ -235,6 +236,13 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                   bChanged = true;
                 }
               }
+              else
+              {
+                // Remove any eventually present Require Capability
+                if (aInstructionMap.remove (REQUIRE_CAPABILITY) != null)
+                  bChanged = true;
+              }
+
               if (aProvideC.isNotEmpty ())
               {
                 final StringBuilder aSB = new StringBuilder ();
@@ -249,6 +257,12 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
                   aInstructionMap.put (PROVIDE_CAPABILITY, sNew);
                   bChanged = true;
                 }
+              }
+              else
+              {
+                // Remove any eventually present Provide Capability
+                if (aInstructionMap.remove (PROVIDE_CAPABILITY) != null)
+                  bChanged = true;
               }
 
               if (bChanged)

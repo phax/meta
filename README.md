@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-09-02):
+Current list of all released projects (as of 2025-09-04):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.0.0 - JDK 17
 
@@ -83,6 +83,9 @@ Current list of all released projects (as of 2025-09-02):
  * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 12.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/dbnalliance-xhe) 
+ * [peppol-commons/hredelivery-commons](https://github.com/phax/peppol-commons) - Version 12.0.1 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/hredelivery-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/hredelivery-commons) 
  * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 12.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-commons) 

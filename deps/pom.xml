@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250902</version>
+  <version>1.0.0-20250904</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -48,12 +48,12 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-lambda-java-core</artifactId>
-      <version>1.3.0</version>
+      <version>1.4.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.33.0</version>
+      <version>2.33.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -243,27 +243,27 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>11.11.2</version>
+      <version>11.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>11.11.2</version>
+      <version>11.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>11.11.2</version>
+      <version>11.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>11.11.2</version>
+      <version>11.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>11.11.2</version>
+      <version>11.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -293,7 +293,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20250706</version>
+      <version>v20250820</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -2237,6 +2237,11 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
+      <version>12.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>hredelivery-commons</artifactId>
       <version>12.0.1</version>
     </dependency>
     <dependency>

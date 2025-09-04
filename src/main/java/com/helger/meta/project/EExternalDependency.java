@@ -47,9 +47,9 @@ public enum EExternalDependency
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
-  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.3.0", EJDK.JDK8),
+  AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.33.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.33.2", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -99,7 +99,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.21.0", EJDK.JDK8),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.11.2", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.12.0", EJDK.JDK17),
   FLYWAY11_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY11),
   FLYWAY11_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY11),
   FLYWAY11_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY11),
@@ -111,7 +111,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.2.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_17 ("com.google.javascript", "closure-compiler", "v20250706", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20250820", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.32.0", EJDK.JDK8),
 

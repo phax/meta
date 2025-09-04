@@ -138,6 +138,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     if (!aProject.isNestedProject ())
     {
       _checkFileExisting (aProject, "README.md");
+      if (aProject.getLastPublishedVersion () != null)
+      {
+        _checkFileContains (aProject, "README.md", "https://javadoc.io/badge2");
+        _checkFileContains (aProject, "README.md", "https://img.shields.io/maven-central/");
+      }
       _checkFileExisting (aProject, "CODE_OF_CONDUCT.md");
     }
     if (false)
@@ -149,8 +154,6 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
     }
     _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
-    if (false)
-      _checkFileExisting (aProject, "src/main/resources/changelog.xml");
     if (_isApache2Project (aProject))
     {
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
