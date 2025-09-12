@@ -905,7 +905,7 @@ Current list of all released projects (as of 2025-09-12):
 
 Current list of all unreleased projects:
 
- * [bozoo](https://github.com/phax/bozoo) - JDK 11
+ * [bozoo](https://github.com/phax/bozoo) - JDK 17
 
  * [meta](https://github.com/phax/meta) - JDK 17
 

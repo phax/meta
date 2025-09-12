@@ -311,7 +311,8 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               if (eProjectOwner.equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
-                _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+                if (aProject != EProject.PHASE4_PEPPOL_STANDALONE)
+                  _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }
           }
 
@@ -409,7 +410,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)
       {
-        if (!aProject.isNestedProject ())
+        if (!aProject.isNestedProject () && aProject != EProject.PHASE4_PEPPOL_STANDALONE)
         {
           // Nested projects might not use it
           _warn (aProject, "scm element is missing");

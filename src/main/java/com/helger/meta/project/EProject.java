@@ -850,7 +850,7 @@ public enum EProject implements IProject
          EHasPages.FALSE,
          EHasWiki.FALSE,
          null,
-         EJDK.JDK11),
+         EJDK.JDK17),
 
   PEPPOL_SHARED_UI (null,
                     EProjectOwner.DEFAULT_PROJECT_OWNER,
