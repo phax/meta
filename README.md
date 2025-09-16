@@ -803,6 +803,9 @@ Current list of all released projects (as of 2025-09-16):
  * [phive-rules/phive-rules-finvoice](https://github.com/phax/phive-rules) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-finvoice/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-finvoice) 
+ * [phive-rules/phive-rules-france](https://github.com/phax/phive-rules) - Version 4.0.1 - JDK 17
+
+   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-france/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-france) 
  * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-isdoc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.phive.rules/phive-rules-isdoc) 

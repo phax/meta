@@ -678,6 +678,7 @@ public enum EProject implements IProject
   PHIVE_RULES_FACTURAE (PHIVE_RULES_PARENT_POM, "phive-rules-facturae", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_FATTURAPA (PHIVE_RULES_PARENT_POM, "phive-rules-fatturapa", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_FINVOICE (PHIVE_RULES_PARENT_POM, "phive-rules-finvoice", EProjectType.JAVA_LIBRARY),
+  PHIVE_RULES_FRANCE (PHIVE_RULES_PARENT_POM, "phive-rules-france", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_ISDOC (PHIVE_RULES_PARENT_POM, "phive-rules-isdoc", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_OIOUBL (PHIVE_RULES_PARENT_POM, "phive-rules-oioubl", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_PEPPOL (PHIVE_RULES_PARENT_POM, "phive-rules-peppol", EProjectType.JAVA_LIBRARY),
