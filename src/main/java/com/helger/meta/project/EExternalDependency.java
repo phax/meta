@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.33.8", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.33.10", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -164,7 +164,7 @@ public enum EExternalDependency
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.13", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
 
-  JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.2", EJDK.JDK11),
+  JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.4", EJDK.JDK11),
   @IsBOM
   JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.5", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
@@ -236,7 +236,7 @@ public enum EExternalDependency
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
   LUCENE9_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE9_CORE),
 
-  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.2.2", EJDK.JDK21),
+  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.3.0", EJDK.JDK21),
   LUCENE10_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE10_CORE),
   LUCENE10_DEMO ("org.apache.lucene", "lucene-demo", LUCENE10_CORE),
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
@@ -276,7 +276,7 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.0", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
 
-  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.8", EJDK.JDK11),
+  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -288,7 +288,7 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
   SLF4J_JDK_PLATFORM_LOGGING ("org.slf4j", "slf4j-jdk-platform-logging", SLF4J_API),
 
-  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.4", EJDK.JDK8),
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.5", EJDK.JDK8),
 
   @IsBOM
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.11", EJDK.JDK11),
@@ -351,16 +351,16 @@ public enum EExternalDependency
   PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.1.1", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
-  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.0", EJDK.JDK8),
+  PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.21.0", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.3.1", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.3", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.3", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.3", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.4", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.4", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.4", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.4.2", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.5.0", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.1", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.8.0", EJDK.JDK8);
