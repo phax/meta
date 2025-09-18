@@ -22,8 +22,8 @@ import com.helger.base.CGlobal;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.tostring.ToStringGenerator;
 import com.helger.collection.CollectionHelper;
+import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.ICommonsList;
-import com.helger.collection.helper.CollectionHelperExt;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
@@ -124,7 +124,7 @@ public class WGSimpleType extends AbstractWGAssembledType
   @ReturnsMutableCopy
   public ICommonsList <WGEnumEntry> getAllEnumEntries ()
   {
-    return CollectionHelperExt.createList (m_aEnumEntries);
+    return new CommonsArrayList <> (m_aEnumEntries);
   }
 
   public boolean hasEnumEntries ()
@@ -151,10 +151,10 @@ public class WGSimpleType extends AbstractWGAssembledType
   public String toString ()
   {
     return ToStringGenerator.getDerived (super.toString ())
-                            .append ("extension", m_aExtension)
-                            .append ("restriction", m_aRestriction)
-                            .appendIfNotNull ("enumEntries", m_aEnumEntries)
-                            .append ("maxLength", m_nMaxLength)
+                            .append ("Extension", m_aExtension)
+                            .append ("Restriction", m_aRestriction)
+                            .appendIfNotNull ("EnumEntries", m_aEnumEntries)
+                            .append ("MaxLength", m_nMaxLength)
                             .getToString ();
   }
 }
