@@ -65,13 +65,13 @@ Current list of all released projects (as of 2025-09-19):
  * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/jcodemodel) 
- * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.0.0 - JDK 17
+ * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support-parent-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support-parent-pom) 
- * [peppol-ap-support/peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.0.0 - JDK 17
+ * [peppol-ap-support/peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-ap-support) 
- * [peppol-ap-support/peppol-reporting-support](https://github.com/phax/peppol-ap-support) - Version 2.0.0 - JDK 17
+ * [peppol-ap-support/peppol-reporting-support](https://github.com/phax/peppol-ap-support) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-support/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger.peppol/peppol-reporting-support) 
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 12.0.3 - JDK 17
