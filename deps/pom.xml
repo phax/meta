@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20250918</version>
+  <version>1.0.0-20250919</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.apiguardian</groupId>
@@ -139,6 +139,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-exec</artifactId>
       <version>1.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.18.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -794,7 +799,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.7.7</version>
+      <version>42.7.8</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -865,33 +870,33 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-dependencies</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
-      <version>3.5.5</version>
+      <version>3.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
@@ -1359,7 +1364,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parser-generator-cc</artifactId>
-      <version>1.1.4</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.font</groupId>
@@ -1693,9 +1698,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>io.github.tulipcc</groupId>
-      <artifactId>tulipcc-maven-plugin</artifactId>
-      <version>4.1.5</version>
+      <groupId>com.helger.maven</groupId>
+      <artifactId>ph-javacc-maven-plugin</artifactId>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
@@ -1731,23 +1736,23 @@
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -1907,108 +1912,108 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-io</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jdbc</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>10.0.0</version>
+      <version>10.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
@@ -2247,53 +2252,53 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-parent-pom</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-testfiles</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-datatypes</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-api</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-csv</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-inmemory</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-mongodb</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-redis</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-sql</artifactId>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2460,18 +2465,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
