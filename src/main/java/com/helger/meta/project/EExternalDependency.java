@@ -289,6 +289,8 @@ public enum EExternalDependency
   LOG4J2_OVER_SLF4J ("org.slf4j", "log4j-over-slf4j", SLF4J_API),
   SLF4J_JDK_PLATFORM_LOGGING ("org.slf4j", "slf4j-jdk-platform-logging", SLF4J_API),
 
+  SNAPPY ("org.iq80.snappy", "snappy", "0.5", EJDK.JDK8),
+
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.6", EJDK.JDK8),
 
   @IsBOM
