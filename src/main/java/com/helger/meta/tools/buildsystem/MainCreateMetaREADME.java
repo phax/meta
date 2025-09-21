@@ -54,7 +54,7 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
        .append (sGroupID)
        .append ("/")
        .append (sArticfactID)
-       .append ("](https://img.shields.io/maven-central/v/")
+       .append (")](https://img.shields.io/maven-central/v/")
        .append (sGroupID)
        .append ("/")
        .append (sArticfactID)
