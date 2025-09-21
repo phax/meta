@@ -49,11 +49,12 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final String sGroupID = aProject.getMavenGroupID ();
     final String sArticfactID = aProject.getMavenArtifactID ();
-    aSB.append ("\n   [![Maven Central](https://maven-badges.herokuapp.com/maven-central/")
+
+    aSB.append ("\n   [![Maven Central](https://img.shields.io/maven-central/v/")
        .append (sGroupID)
        .append ("/")
        .append (sArticfactID)
-       .append ("/badge.svg)](https://maven-badges.herokuapp.com/maven-central/")
+       .append ("](https://img.shields.io/maven-central/v/")
        .append (sGroupID)
        .append ("/")
        .append (sArticfactID)
@@ -64,12 +65,15 @@ public final class MainCreateMetaREADME extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () && !p.isGitHubPrivate ())
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+                                                                                     !p.isGitHubPrivate ())
                                                                .getSortedInline (Comparator.comparing (IProject::getBaseDir)
                                                                                            .thenComparing (IProject::getProjectName));
 
     // Show all
-    aSB.append ("Current list of all released projects (as of ").append (PDTFactory.getCurrentLocalDate ().toString ()).append ("):\n\n");
+    aSB.append ("Current list of all released projects (as of ")
+       .append (PDTFactory.getCurrentLocalDate ().toString ())
+       .append ("):\n\n");
     for (final IProject aProject : aSortedProjects)
       if (!aProject.isDeprecated () && aProject.isPublished ())
       {
