@@ -732,7 +732,7 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "2.0.0",
+                              "2.0.1",
                               EJDK.JDK17),
   EN16931_UBL2CII (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii", EProjectType.JAVA_LIBRARY),
   EN16931_UBL2CII_CLI (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii-cli", EProjectType.JAVA_LIBRARY),

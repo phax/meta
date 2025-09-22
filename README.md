@@ -26,13 +26,13 @@ Current list of all released projects (as of 2025-09-22):
  * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 3.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli) 
- * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.0.0 - JDK 17
+ * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom) 
- * [en16931-ubl2cii/en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.0.0 - JDK 17
+ * [en16931-ubl2cii/en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii) 
- * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 2.0.0 - JDK 17
+ * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.0 - JDK 17
