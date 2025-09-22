@@ -2087,39 +2087,39 @@
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-parent-pom</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-lib</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-partnership-mongodb</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-servlet</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-server</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-webapp</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-spring-boot</artifactId>
-      <version>5.1.7</version>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -2498,6 +2498,27 @@
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii-cli</artifactId>
       <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-uae-parent-pom</artifactId>
+      <version>0.8.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-uae-testfiles</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-uae-tdd-datatypes</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-uae-tdd</artifactId>
+      <version>0.8.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
