@@ -49,7 +49,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.33.13", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.34.0", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -122,7 +122,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY_2("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
   HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
 
-  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.5", EJDK.JDK8),
+  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.3.6", EJDK.JDK8),
   HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.5", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.2.0", EJDK.JDK8),
@@ -225,7 +225,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.25.1", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.25.2", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -257,7 +257,7 @@ public enum EExternalDependency
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.9.0.25.07", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.3", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.5", EJDK.JDK8),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.5", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
@@ -313,7 +313,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.1", EJDK.JDK8),
 
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.19.0", EJDK.JDK8),
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.19.1", EJDK.JDK8),
 
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.0", EJDK.JDK17),
 
@@ -335,7 +335,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.5.0", EJDK.JDK8),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.14.0", EJDK.JDK8),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.14.1", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.8.1", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
@@ -346,7 +346,7 @@ public enum EExternalDependency
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.4.2", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.11.3", EJDK.JDK8),
+  PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.12.0", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.27.0", EJDK.JDK8),

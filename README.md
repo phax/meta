@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-09-21):
+Current list of all released projects (as of 2025-09-22):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.0.0 - JDK 17
 
