@@ -194,12 +194,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           _checkFileContains (aProject, ".github/workflows/maven.yml", " -P release-snapshot");
           if (aProject.getMinimumJDKVersion () == EJDK.JDK11)
           {
-            _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 11, 17, 21, 24 ]");
+            _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 11, 17, 21, 25 ]");
             _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 11");
           }
           else
           {
-            _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 17, 21, 24 ]");
+            _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 17, 21, 25 ]");
             _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 17");
           }
         }
