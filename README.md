@@ -128,16 +128,16 @@ Current list of all released projects (as of 2025-10-03):
  * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles) 
- * [peppol-uae](https://github.com/phax/peppol-uae) - Version 0.8.0 - JDK 17
+ * [peppol-uae](https://github.com/phax/peppol-uae) - Version 0.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom) 
- * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 0.8.0 - JDK 17
+ * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 0.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd) 
- * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 0.8.0 - JDK 17
+ * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 0.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes) 
- * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 0.8.0 - JDK 17
+ * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 0.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 4.0.0 - JDK 17

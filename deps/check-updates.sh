@@ -16,5 +16,4 @@
 #
 
 #/bin/sh
-mvn versions:display-dependency-updates -U
-
+mvn versions:display-dependency-updates $@
