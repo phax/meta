@@ -17,6 +17,9 @@
 package com.helger.meta.tools.cmdline;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.attribute.PosixFilePermission;
 
 import com.helger.annotation.Nonempty;
 import com.helger.collection.commons.ICommonsList;
@@ -44,7 +47,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   }
 
   private static void _createShellScript (@Nonnull @Nonempty final String sCommand,
-                                          @Nonnull @Nonempty final String sBatchFileName)
+                                          @Nonnull @Nonempty final String sBatchFileName) throws IOException
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
                                                                                !x.isDeprecated () &&
@@ -71,16 +74,21 @@ public final class MainCreateShellScripts extends AbstractProjectMain
       ++nIndex;
     }
     aSB.append (SHELL_FOOTER);
-    SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
+    final File f = new File (CMeta.GIT_BASE_DIR, sBatchFileName);
+    SimpleFileIO.writeFile (f, aSB.toString (), BATCH_CHARSET);
+
+    final var aPerms = Files.getPosixFilePermissions (f.toPath ());
+    aPerms.add (PosixFilePermission.OWNER_EXECUTE);
+    Files.setPosixFilePermissions (f.toPath (), aPerms);
   }
 
   private static void _createMvnShellScript (@Nonnull @Nonempty final String sMavenCommand,
-                                             @Nonnull @Nonempty final String sBatchFileName)
+                                             @Nonnull @Nonempty final String sBatchFileName) throws IOException
   {
     _createShellScript ("mvn " + sMavenCommand + " $@", sBatchFileName);
   }
 
-  public static void main (final String [] args)
+  public static void main (final String [] args) throws IOException
   {
     _createMvnShellScript ("license:format", "mvn_license_format.sh");
     _createMvnShellScript ("dependency:go-offline dependency:sources", "mvn_dependency_go_offline_and_sources.sh");
