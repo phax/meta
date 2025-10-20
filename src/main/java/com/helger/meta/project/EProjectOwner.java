@@ -30,9 +30,11 @@ import jakarta.annotation.Nullable;
 public enum EProjectOwner
 {
   DEFAULT_PROJECT_OWNER ("phax", "git"),
+  PROJECT_OWNER_HELGER_IT ("Helger-IT", "git"),
   PROJECT_OWNER_AUSTRIAPRO ("austriapro", "git-austriapro"),
-  PROJECT_OWNER_TOOP ("TOOP4EU", "git-toop"),
-  PROJECT_OWNER_CENTC434 ("CenPc434", "git-en16931"),
+  @Deprecated (forRemoval = false)
+  PROJECT_OWNER_TOOP("TOOP4EU", "git-toop"),
+  PROJECT_OWNER_CONNECTING_EUROPE ("ConnectingEurope", "git-en16931"),
   PROJECT_ECOSIO_PH ("ecosio-ph", "git-ecosio");
 
   private final String m_sGitOrgaName;

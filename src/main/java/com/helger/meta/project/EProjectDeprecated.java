@@ -191,7 +191,7 @@ public enum EProjectDeprecated implements IProject
                    EJDK.JDK8),
 
   EN16931_PARENT_POM (null,
-                      EProjectOwner.PROJECT_OWNER_CENTC434,
+                      EProjectOwner.PROJECT_OWNER_CONNECTING_EUROPE,
                       "en16931-parent-pom",
                       "java-tools",
                       EProjectType.MAVEN_POM,

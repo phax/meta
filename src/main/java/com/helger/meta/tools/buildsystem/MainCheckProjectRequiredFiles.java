@@ -131,9 +131,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   {
     // Check for file existence
     if (false)
+    {
+      // IDE files not committed
       _checkFileExisting (aProject, ".classpath");
-    if (false)
       _checkFileExisting (aProject, ".project");
+    }
     _checkFileExisting (aProject, "pom.xml");
     if (!aProject.isNestedProject ())
     {
@@ -154,6 +156,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
     }
     _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
+
     if (_isApache2Project (aProject))
     {
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
