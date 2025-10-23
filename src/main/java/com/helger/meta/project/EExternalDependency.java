@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.35.10", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.36.0", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -187,7 +187,7 @@ public enum EExternalDependency
   JERSEY3_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY3_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.2", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.3", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
   JETTY12_WEBAPP ("org.eclipse.jetty.ee10", "jetty-ee10-webapp", JETTY12_BOM),
   JETTY12_SERVLET ("org.eclipse.jetty.ee10", "jetty-ee10-servlet", JETTY12_BOM),
@@ -319,7 +319,7 @@ public enum EExternalDependency
   PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "5.1.9", EJDK.JDK8),
   PARENT_POM_1_V6 ("org.apache.felix", "maven-bundle-plugin", "6.0.0", EJDK.JDK17),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.1.0", EJDK.JDK8),
-  PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.1.0", EJDK.JDK8),
+  PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.7.1", EJDK.JDK8),
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
@@ -352,7 +352,7 @@ public enum EExternalDependency
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
-  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.0", EJDK.JDK8),
+  PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.1", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.1", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.1", EJDK.JDK8),
   PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.9.0", EJDK.JDK8),
