@@ -1850,18 +1850,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css-parent-pom</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-css</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-csscompress-maven-plugin</artifactId>
-      <version>8.0.0</version>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
@@ -2638,38 +2638,38 @@
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui-parent-pom</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui-types</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-api</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-validation</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-as4</artifactId>
-      <version>0.9.0</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

@@ -30,6 +30,7 @@ import jakarta.annotation.Nullable;
  *
  * @author Philip Helger
  */
+@SuppressWarnings ("deprecation")
 public enum EProjectDeprecated implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
