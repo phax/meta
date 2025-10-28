@@ -1757,18 +1757,18 @@
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
