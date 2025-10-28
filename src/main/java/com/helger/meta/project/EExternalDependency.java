@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.36.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.36.3", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -103,7 +103,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.21.0", EJDK.JDK8),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.14.1", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.15.0", EJDK.JDK17),
   FLYWAY11_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY11),
   FLYWAY11_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY11),
   FLYWAY11_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY11),
@@ -244,10 +244,10 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.1", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.4.0", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "9.5.0", EJDK.JDK8),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.9.0.25.07", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.0.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.6", EJDK.JDK8),
@@ -265,7 +265,7 @@ public enum EExternalDependency
 
   POSTGRESQL ("org.postgresql", "postgresql", "42.7.8", EJDK.JDK8),
 
-  QUARTZ ("org.quartz-scheduler", "quartz", "2.5.0", EJDK.JDK8),
+  QUARTZ ("org.quartz-scheduler", "quartz", "2.5.1", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
 
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
@@ -288,7 +288,7 @@ public enum EExternalDependency
   SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.12", EJDK.JDK11),
 
   @IsBOM
-  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.5.6", EJDK.JDK11),
+  SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.5.7", EJDK.JDK11),
   SPRING_BOOT3_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT3_DEPENDENCIES),
   SPRING_BOOT3_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT3_DEPENDENCIES),
@@ -349,7 +349,7 @@ public enum EExternalDependency
   PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.4", EJDK.JDK8),
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.4", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.4", EJDK.JDK8),
-  PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.4.0", EJDK.JDK8),
+  PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
   PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.1", EJDK.JDK8),
@@ -358,7 +358,7 @@ public enum EExternalDependency
   PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.9.0", EJDK.JDK8),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.14", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.11", EJDK.JDK11),
-  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.1", EJDK.JDK8),
+  MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.1.8", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.19.1", EJDK.JDK8);
 
