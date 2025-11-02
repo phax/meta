@@ -21,6 +21,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -51,9 +53,6 @@ import com.helger.xml.microdom.serialize.MicroReader;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 /**
  * Check whether the Maven pom.xml of a project is consistent to the requirements
  *
@@ -69,9 +68,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   private static final String PARENT_POM_ARTIFACTID = "parent-pom";
   private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 
-  @Nonnull
+  @NonNull
   @Nonempty
-  private static String [] _getDesiredPackagings (@Nonnull final IProject eProject)
+  private static String [] _getDesiredPackagings (@NonNull final IProject eProject)
   {
     switch (eProject.getProjectType ())
     {
@@ -112,16 +111,16 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                              sVersion);
   }
 
-  @Nonnull
-  private static String _getParentPOMVersion (@Nonnull final IProject aProject)
+  @NonNull
+  private static String _getParentPOMVersion (@NonNull final IProject aProject)
   {
     assert aProject != null;
     return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
   }
 
-  @Nonnull
-  private static String _getResolvedVar (@Nonnull final String sText,
-                                         @Nonnull final ICommonsMap <String, String> aProps)
+  @NonNull
+  private static String _getResolvedVar (@NonNull final String sText,
+                                         @NonNull final ICommonsMap <String, String> aProps)
   {
     String ret = sText;
     while (true)
@@ -148,9 +147,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     return ret;
   }
 
-  private static void _addParentPOMProperties (@Nonnull final File aThisPOMFile,
-                                               @Nonnull final IMicroElement eProject,
-                                               @Nonnull final ICommonsMap <String, String> aProperties)
+  private static void _addParentPOMProperties (@NonNull final File aThisPOMFile,
+                                               @NonNull final IMicroElement eProject,
+                                               @NonNull final ICommonsMap <String, String> aProperties)
   {
     final IMicroElement eParent = eProject.getFirstChildElement ("parent");
     if (eParent != null)
@@ -182,7 +181,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     }
   }
 
-  private static void _validatePOM (@Nonnull final IProject aProject, @Nonnull final IMicroDocument aDoc)
+  private static void _validatePOM (@NonNull final IProject aProject, @NonNull final IMicroDocument aDoc)
   {
     if (LOGGER.isDebugEnabled ())
       LOGGER.debug (aProject.getProjectName ());

@@ -16,12 +16,12 @@
  */
 package com.helger.meta.project;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.Nonnegative;
 import com.helger.base.lang.EnumHelper;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public enum EJDK
 {
@@ -44,7 +44,7 @@ public enum EJDK
     return m_nMajor;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getDisplayName ()
   {
@@ -53,7 +53,7 @@ public enum EJDK
     return "JDK 1." + m_nMajor;
   }
 
-  public boolean isCompatibleToRuntimeVersion (@Nonnull final EJDK eRTVersion)
+  public boolean isCompatibleToRuntimeVersion (@NonNull final EJDK eRTVersion)
   {
     return m_nMajor <= eRTVersion.m_nMajor;
   }

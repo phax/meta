@@ -18,13 +18,13 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import javax.xml.XMLConstants;
 
-import com.helger.annotation.Nonempty;
+import org.jspecify.annotations.NonNull;
 
-import jakarta.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
 public class WGXSDType extends WGPredefinedType
 {
-  public WGXSDType (@Nonnull @Nonempty final String sName)
+  public WGXSDType (@NonNull @Nonempty final String sName)
   {
     // All XSD types are simple types
     super (XMLConstants.W3C_XML_SCHEMA_NS_URI, sName, true);

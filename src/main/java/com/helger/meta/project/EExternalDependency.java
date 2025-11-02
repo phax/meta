@@ -21,13 +21,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.lang.EnumHelper;
 import com.helger.base.version.Version;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Externally used dependencies in the latest applicable version per JDK.
@@ -372,9 +372,9 @@ public enum EExternalDependency
   private final boolean m_bIsLegacy;
   private final VersionMaxExcl m_aVersionMax;
 
-  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
-                       @Nonnull @Nonempty final String sArticfactID,
-                       @Nonnull final EExternalDependency eBase)
+  EExternalDependency (@NonNull @Nonempty final String sGroupID,
+                       @NonNull @Nonempty final String sArticfactID,
+                       @NonNull final EExternalDependency eBase)
   {
     this (sGroupID,
           sArticfactID,
@@ -383,10 +383,10 @@ public enum EExternalDependency
           eBase.getVersionMaxExcl ());
   }
 
-  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
-                       @Nonnull @Nonempty final String sArticfactID,
-                       @Nonnull @Nonempty final String sVersion,
-                       @Nonnull final EJDK eMinJDK)
+  EExternalDependency (@NonNull @Nonempty final String sGroupID,
+                       @NonNull @Nonempty final String sArticfactID,
+                       @NonNull @Nonempty final String sVersion,
+                       @NonNull final EJDK eMinJDK)
   {
     this (sGroupID, sArticfactID, sVersion, eMinJDK, null);
   }
@@ -397,10 +397,10 @@ public enum EExternalDependency
     return a != null ? a : b;
   }
 
-  EExternalDependency (@Nonnull @Nonempty final String sGroupID,
-                       @Nonnull @Nonempty final String sArticfactID,
-                       @Nonnull @Nonempty final String sVersion,
-                       @Nonnull final EJDK eMinJDK,
+  EExternalDependency (@NonNull @Nonempty final String sGroupID,
+                       @NonNull @Nonempty final String sArticfactID,
+                       @NonNull @Nonempty final String sVersion,
+                       @NonNull final EJDK eMinJDK,
                        @Nullable final VersionMaxExcl aVersionMaxParent)
   {
     m_sGroupID = sGroupID;
@@ -421,7 +421,7 @@ public enum EExternalDependency
     }
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getGroupID ()
   {
@@ -433,7 +433,7 @@ public enum EExternalDependency
     return getGroupID ().equals (sGroupID);
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getArtifactID ()
   {
@@ -445,13 +445,13 @@ public enum EExternalDependency
     return getArtifactID ().equals (sGroupID);
   }
 
-  @Nonnull
+  @NonNull
   public Version getLastPublishedVersion ()
   {
     return m_aVersion;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getLastPublishedVersionString ()
   {
@@ -470,28 +470,28 @@ public enum EExternalDependency
     return m_aVersionMax == null ? null : m_aVersionMax.value ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getDisplayName ()
   {
     return m_sGroupID + "::" + m_sArticfactID;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getDisplayNameWithVersion ()
   {
     return getDisplayName () + "::" + m_sVersion;
   }
 
-  @Nonnull
+  @NonNull
   public EJDK getMinimumJDKVersion ()
   {
     return m_eMinJDK;
   }
 
   @Nullable
-  public EExternalDependency getReplacement (@Nonnull final EJDK eForJDK)
+  public EExternalDependency getReplacement (@NonNull final EJDK eForJDK)
   {
     ValueEnforcer.notNull (eForJDK, "ForJDK");
     switch (this)
@@ -510,7 +510,7 @@ public enum EExternalDependency
     return null;
   }
 
-  public boolean isDeprecatedForJDK (@Nonnull final EJDK eForJDK)
+  public boolean isDeprecatedForJDK (@NonNull final EJDK eForJDK)
   {
     return getReplacement (eForJDK) != null;
   }
@@ -536,7 +536,7 @@ public enum EExternalDependency
   }
 
   @Nullable
-  public static List <EExternalDependency> findAll (@Nonnull final Predicate <EExternalDependency> aFilter)
+  public static List <EExternalDependency> findAll (@NonNull final Predicate <EExternalDependency> aFilter)
   {
     return EnumHelper.getAll (EExternalDependency.class, aFilter);
   }

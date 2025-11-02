@@ -19,6 +19,8 @@ package com.helger.meta.tools.wsdlgen;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,9 +51,6 @@ import com.helger.meta.tools.wsdlgen.model.type.WGSimpleType;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeDef;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeRegistry;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 /**
  * Class for reading the DSL and populating a {@link WGInterface}.
  *
@@ -61,8 +60,8 @@ public class InterfaceReader
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (InterfaceReader.class);
 
-  @Nonnull
-  private static String _preprocess (@Nonnull final ICommonsList <String> aContent)
+  @NonNull
+  private static String _preprocess (@NonNull final ICommonsList <String> aContent)
   {
     ValueEnforcer.notNull (aContent, "Content");
     // Replace comment lines with empty line
@@ -72,7 +71,7 @@ public class InterfaceReader
   }
 
   @Nullable
-  private static IJsonObject _readAsJSON (@Nonnull final IReadableResource aRes)
+  private static IJsonObject _readAsJSON (@NonNull final IReadableResource aRes)
   {
     // Read line by line
     final ICommonsList <String> aContent = StreamHelperExt.readStreamLines (aRes, StandardCharsets.UTF_8);
@@ -103,7 +102,7 @@ public class InterfaceReader
   }
 
   @Nullable
-  private static String _getChildAsText (@Nonnull final IJsonObject aNode, final String sFieldName)
+  private static String _getChildAsText (@NonNull final IJsonObject aNode, final String sFieldName)
   {
     return _cleanupText (aNode.getAsString (sFieldName));
   }
@@ -117,16 +116,16 @@ public class InterfaceReader
     return RegExHelper.stringReplacePattern ("\\n\\s+", _cleanupText (sDoc), "\n");
   }
 
-  @Nonnull
-  private static ETriState _getTriState (@Nonnull final IJsonObject aType, final String sProperty)
+  @NonNull
+  private static ETriState _getTriState (@NonNull final IJsonObject aType, final String sProperty)
   {
     return ETriState.valueOf (aType.getAsBooleanObj (sProperty));
   }
 
-  @Nonnull
+  @NonNull
   private static WGTypeDef _readTypeDef (final WGInterface aInterface,
                                          final String sTypeChildName,
-                                         @Nonnull final IJson aTypeChildNode)
+                                         @NonNull final IJson aTypeChildNode)
   {
     if (aTypeChildNode.isValue ())
     {
@@ -163,7 +162,7 @@ public class InterfaceReader
   }
 
   @Nullable
-  public static WGInterface readInterface (@Nonnull final IReadableResource aRes)
+  public static WGInterface readInterface (@NonNull final IReadableResource aRes)
   {
     final IJsonObject aInterfaceNode = _readAsJSON (aRes);
     if (aInterfaceNode == null)

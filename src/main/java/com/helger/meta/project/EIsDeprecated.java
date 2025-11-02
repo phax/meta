@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
 
 public enum EIsDeprecated
 {
@@ -33,7 +33,7 @@ public enum EIsDeprecated
     return this == FALSE;
   }
 
-  @Nonnull
+  @NonNull
   public static EIsDeprecated valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;

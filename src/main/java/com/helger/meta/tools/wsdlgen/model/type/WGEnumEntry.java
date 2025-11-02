@@ -18,12 +18,12 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import java.io.Serializable;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.string.StringHelper;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Represents a single enum entry
@@ -35,19 +35,19 @@ public class WGEnumEntry implements Serializable
   private final String m_sKey;
   private final String m_sDoc;
 
-  public WGEnumEntry (@Nonnull @Nonempty final String sKey)
+  public WGEnumEntry (@NonNull @Nonempty final String sKey)
   {
     this (sKey, null);
   }
 
-  public WGEnumEntry (@Nonnull @Nonempty final String sKey, @Nullable final String sDoc)
+  public WGEnumEntry (@NonNull @Nonempty final String sKey, @Nullable final String sDoc)
   {
     ValueEnforcer.notEmpty (sKey, "Key");
     m_sKey = sKey;
     m_sDoc = sDoc;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getKey ()
   {

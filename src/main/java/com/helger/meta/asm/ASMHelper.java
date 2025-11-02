@@ -20,6 +20,8 @@ import java.io.File;
 import java.lang.annotation.Annotation;
 import java.util.Iterator;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
@@ -35,9 +37,6 @@ import com.helger.annotation.misc.Translatable;
 import com.helger.base.lang.clazz.ClassHelper;
 import com.helger.io.file.SimpleFileIO;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 @Immutable
 public final class ASMHelper
 {
@@ -45,7 +44,7 @@ public final class ASMHelper
   {}
 
   @Nullable
-  public static MethodNode findMethod (@Nonnull final ClassNode cn, final String sMethodName)
+  public static MethodNode findMethod (@NonNull final ClassNode cn, final String sMethodName)
   {
     if (cn.methods != null)
       for (final Object o : cn.methods)
@@ -131,17 +130,17 @@ public final class ASMHelper
     return false;
   }
 
-  public static boolean containsRequiresTranslationAnnotation (@Nonnull final ClassNode cn)
+  public static boolean containsRequiresTranslationAnnotation (@NonNull final ClassNode cn)
   {
     return containsAnnotation (cn, Translatable.class);
   }
 
-  public static boolean containsNoTranslationRequiredAnnotation (@Nonnull final ClassNode cn)
+  public static boolean containsNoTranslationRequiredAnnotation (@NonNull final ClassNode cn)
   {
     return containsAnnotation (cn, NoTranslationRequired.class);
   }
 
-  public static boolean containsStaticCall (@Nonnull final MethodNode mn, @Nullable final String sOwner)
+  public static boolean containsStaticCall (@NonNull final MethodNode mn, @Nullable final String sOwner)
   {
     final Iterator <?> itinsn = mn.instructions.iterator ();
     while (itinsn.hasNext ())
@@ -157,7 +156,7 @@ public final class ASMHelper
     return false;
   }
 
-  public static boolean containsStaticCall (@Nonnull final MethodNode mn, @Nonnull final Class <?> aOwner)
+  public static boolean containsStaticCall (@NonNull final MethodNode mn, @NonNull final Class <?> aOwner)
   {
     return containsStaticCall (mn, ClassHelper.getPathFromClass (aOwner));
   }
@@ -169,8 +168,8 @@ public final class ASMHelper
    *        The file to read. May not be <code>null</code>.
    * @return The read {@link ClassNode}.
    */
-  @Nonnull
-  public static ClassNode readClassFile (@Nonnull final File aClassFile)
+  @NonNull
+  public static ClassNode readClassFile (@NonNull final File aClassFile)
   {
     // Read and interpret the class file
     return readClass (SimpleFileIO.getAllFileBytes (aClassFile));
@@ -184,8 +183,8 @@ public final class ASMHelper
    *        not be <code>null</code>.
    * @return The read {@link ClassNode}.
    */
-  @Nonnull
-  public static ClassNode readClass (@Nonnull final byte [] aBytes)
+  @NonNull
+  public static ClassNode readClass (@NonNull final byte [] aBytes)
   {
     // Interpret the class file
     final ClassReader cr = new ClassReader (aBytes);

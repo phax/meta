@@ -16,6 +16,8 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.enforce.ValueEnforcer;
@@ -23,14 +25,12 @@ import com.helger.base.tostring.ToStringGenerator;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsOrderedMap;
 
-import jakarta.annotation.Nonnull;
-
 public class WGComplexType extends AbstractWGAssembledType
 {
   private EComplexTypeType m_eType = EComplexTypeType.SEQUENCE;
   private final ICommonsOrderedMap <String, WGTypeDef> m_aElements = new CommonsLinkedHashMap <> ();
 
-  public WGComplexType (@Nonnull final String sNamespace, @Nonnull @Nonempty final String sName)
+  public WGComplexType (@NonNull final String sNamespace, @NonNull @Nonempty final String sName)
   {
     super (sNamespace, sName);
   }
@@ -45,12 +45,12 @@ public class WGComplexType extends AbstractWGAssembledType
     return true;
   }
 
-  public void setType (@Nonnull final EComplexTypeType eType)
+  public void setType (@NonNull final EComplexTypeType eType)
   {
     m_eType = ValueEnforcer.notNull (eType, "Type");
   }
 
-  @Nonnull
+  @NonNull
   public EComplexTypeType getType ()
   {
     return m_eType;
@@ -62,7 +62,7 @@ public class WGComplexType extends AbstractWGAssembledType
     return super.hasChildren () || m_aElements.isNotEmpty ();
   }
 
-  public void addChildElement (@Nonnull @Nonempty final String sName, @Nonnull final WGTypeDef aTypeDef)
+  public void addChildElement (@NonNull @Nonempty final String sName, @NonNull final WGTypeDef aTypeDef)
   {
     ValueEnforcer.notEmpty (sName, "Name");
     ValueEnforcer.notNull (aTypeDef, "TypeDef");
@@ -72,7 +72,7 @@ public class WGComplexType extends AbstractWGAssembledType
     m_aElements.put (sName, aTypeDef);
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, WGTypeDef> getAllChildElements ()
   {

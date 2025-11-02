@@ -16,9 +16,9 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
-import com.helger.annotation.Nonempty;
+import org.jspecify.annotations.NonNull;
 
-import jakarta.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
 /**
  * SOAP operation use.
@@ -32,12 +32,12 @@ public enum EUse
 
   private final String m_sValue;
 
-  private EUse (@Nonnull @Nonempty final String sValue)
+  private EUse (@NonNull @Nonempty final String sValue)
   {
     m_sValue = sValue;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getValue ()
   {

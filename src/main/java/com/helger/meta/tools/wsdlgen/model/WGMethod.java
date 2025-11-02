@@ -16,6 +16,8 @@
  */
 package com.helger.meta.tools.wsdlgen.model;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.concurrent.NotThreadSafe;
 import com.helger.annotation.style.ReturnsMutableCopy;
@@ -25,8 +27,6 @@ import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsOrderedMap;
 import com.helger.meta.tools.wsdlgen.model.type.IWGType;
 
-import jakarta.annotation.Nonnull;
-
 @NotThreadSafe
 public class WGMethod
 {
@@ -35,13 +35,13 @@ public class WGMethod
   private ICommonsOrderedMap <String, IWGType> m_aOutput;
   private ICommonsOrderedMap <String, IWGType> m_aFault;
 
-  public WGMethod (@Nonnull @Nonempty final String sName)
+  public WGMethod (@NonNull @Nonempty final String sName)
   {
     ValueEnforcer.notEmpty (sName, "Name");
     m_sName = sName;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getName ()
   {
@@ -58,7 +58,7 @@ public class WGMethod
     return m_aInput != null;
   }
 
-  public void addInputParam (@Nonnull @Nonempty final String sParamName, @Nonnull final IWGType aParamType)
+  public void addInputParam (@NonNull @Nonempty final String sParamName, @NonNull final IWGType aParamType)
   {
     if (m_aInput == null)
       throw new IllegalStateException ("No input!");
@@ -72,7 +72,7 @@ public class WGMethod
     return m_aInput != null && m_aInput.isNotEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, IWGType> getAllInputs ()
   {
@@ -89,7 +89,7 @@ public class WGMethod
     return m_aOutput != null;
   }
 
-  public void addOutputParam (@Nonnull @Nonempty final String sReturnName, @Nonnull final IWGType aReturnType)
+  public void addOutputParam (@NonNull @Nonempty final String sReturnName, @NonNull final IWGType aReturnType)
   {
     if (m_aOutput == null)
       throw new IllegalStateException ("No output!");
@@ -103,7 +103,7 @@ public class WGMethod
     return m_aOutput != null && m_aOutput.isNotEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, IWGType> getAllOutputs ()
   {
@@ -120,7 +120,7 @@ public class WGMethod
     return m_aFault != null;
   }
 
-  public void addFaultParam (@Nonnull @Nonempty final String sReturnName, @Nonnull final IWGType aReturnType)
+  public void addFaultParam (@NonNull @Nonempty final String sReturnName, @NonNull final IWGType aReturnType)
   {
     if (m_aFault == null)
       throw new IllegalStateException ("No output!");
@@ -134,7 +134,7 @@ public class WGMethod
     return m_aFault != null && m_aFault.isNotEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, IWGType> getAllFaults ()
   {

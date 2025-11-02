@@ -18,12 +18,12 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import java.io.Serializable;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.state.ETriState;
 import com.helger.base.string.StringHelper;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public class WGTypeDef implements Serializable
 {
@@ -34,12 +34,12 @@ public class WGTypeDef implements Serializable
   private String m_sDefault;
   private boolean m_bOptional = false;
 
-  public WGTypeDef (@Nonnull final IWGType aType)
+  public WGTypeDef (@NonNull final IWGType aType)
   {
     m_aType = ValueEnforcer.notNull (aType, "Type");
   }
 
-  @Nonnull
+  @NonNull
   public IWGType getType ()
   {
     return m_aType;
@@ -111,7 +111,7 @@ public class WGTypeDef implements Serializable
     return m_sDefault;
   }
 
-  public void setOptional (@Nonnull final ETriState eOptional)
+  public void setOptional (@NonNull final ETriState eOptional)
   {
     ValueEnforcer.notNull (eOptional, "Optional");
 

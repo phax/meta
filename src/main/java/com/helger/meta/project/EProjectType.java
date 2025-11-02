@@ -16,12 +16,12 @@
  */
 package com.helger.meta.project;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.id.IHasID;
 import com.helger.base.lang.EnumHelper;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Defines the overall project type, based on a very subjective point of view :)
@@ -40,12 +40,12 @@ public enum EProjectType implements IHasID <String>
 
   private final String m_sID;
 
-  EProjectType (@Nonnull @Nonempty final String sID)
+  EProjectType (@NonNull @Nonempty final String sID)
   {
     m_sID = sID;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getID ()
   {

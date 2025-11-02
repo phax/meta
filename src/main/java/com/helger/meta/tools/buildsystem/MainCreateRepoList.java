@@ -16,13 +16,13 @@
  */
 package com.helger.meta.tools.buildsystem;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.collection.commons.CommonsTreeSet;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * List all active Github repos
@@ -31,8 +31,8 @@ import jakarta.annotation.Nonnull;
  */
 public final class MainCreateRepoList extends AbstractProjectMain
 {
-  @Nonnull
-  static String getGitHubRepoName (@Nonnull final IProject aProject)
+  @NonNull
+  static String getGitHubRepoName (@NonNull final IProject aProject)
   {
     if (aProject.isNestedProject ())
       return getGitHubRepoName (aProject.getParentProject ());

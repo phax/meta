@@ -19,6 +19,7 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,8 +31,6 @@ import com.helger.io.file.IFileFilter;
 import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
-
-import jakarta.annotation.Nonnull;
 
 public class MainCheckGitHubActionVersions
 {
@@ -55,8 +54,8 @@ public class MainCheckGitHubActionVersions
       m_nLastVersion = nVersion;
     }
 
-    @Nonnull
-    static String findInLineWhenOutOfDate (@Nonnull final String sLine)
+    @NonNull
+    static String findInLineWhenOutOfDate (@NonNull final String sLine)
     {
       if (!sLine.startsWith ("#"))
         for (final EAction e : values ())

@@ -16,9 +16,9 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
-import com.helger.annotation.Nonempty;
+import org.jspecify.annotations.NonNull;
 
-import jakarta.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
 /**
  * SOAP binding/operation style.
@@ -32,12 +32,12 @@ public enum EStyle
 
   private final String m_sValue;
 
-  private EStyle (@Nonnull @Nonempty final String sValue)
+  private EStyle (@NonNull @Nonempty final String sValue)
   {
     m_sValue = sValue;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getValue ()
   {

@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
 
 public enum EHasPages
 {
@@ -28,7 +28,7 @@ public enum EHasPages
     return this == TRUE;
   }
 
-  @Nonnull
+  @NonNull
   public static EHasPages valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;

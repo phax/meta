@@ -23,6 +23,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Comparator;
 import java.util.Locale;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,9 +49,6 @@ import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.text.locale.LocaleFormatter;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Create the README.md file of this project.
@@ -154,7 +153,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     private final boolean m_bIsText;
     private final ICommonsSet <String> m_aExts;
 
-    EFileType (@Nonnull @Nonempty final String sName, final boolean bIsText, @Nonnull final ICommonsSet <String> aExts)
+    EFileType (@NonNull @Nonempty final String sName, final boolean bIsText, @NonNull final ICommonsSet <String> aExts)
     {
       m_sName = sName + " files";
       m_sExtensions = StringImplode.getImplodedMappedNonEmpty (", ", aExts, x -> x.length () == 0 ? x : "." + x);
@@ -162,14 +161,14 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       m_aExts = aExts;
     }
 
-    @Nonnull
+    @NonNull
     @Nonempty
     public String getName ()
     {
       return m_sName;
     }
 
-    @Nonnull
+    @NonNull
     public String getExtensions ()
     {
       return m_sExtensions;
@@ -180,7 +179,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       return m_bIsText;
     }
 
-    @Nonnull
+    @NonNull
     public Charset getCharset ()
     {
       if (this == BATCH)
@@ -188,7 +187,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       return StandardCharsets.UTF_8;
     }
 
-    @Nonnull
+    @NonNull
     public static EFileType getFromFilename (final String sFilename)
     {
       final String sExtension = FilenameHelper.getExtension (sFilename).toLowerCase (Locale.ROOT);
@@ -208,13 +207,13 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     private long m_nLinesTotal = 0;
     private long m_nLinesWhitespaceOnly = 0;
 
-    public void addFile (@Nonnull final File aFile)
+    public void addFile (@NonNull final File aFile)
     {
       m_nFilesTotal++;
       m_nFilesBytes += aFile.length ();
     }
 
-    public void addLine (@Nonnull final String sLine)
+    public void addLine (@NonNull final String sLine)
     {
       m_nLinesTotal++;
       int nNonWhitespaces = 0;
@@ -230,7 +229,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
         m_nLinesWhitespaceOnly++;
     }
 
-    public void addEndOfLine (@Nonnull final String sEOL)
+    public void addEndOfLine (@NonNull final String sEOL)
     {
       m_nCharsTotal += sEOL.length ();
     }
@@ -287,7 +286,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
       return (double) m_nCharsWhitepaces / m_nCharsTotal;
     }
 
-    public void incrementFrom (@Nonnull final FileTypeCount rhs)
+    public void incrementFrom (@NonNull final FileTypeCount rhs)
     {
       m_nFilesTotal += rhs.m_nFilesTotal;
       m_nFilesBytes += rhs.m_nFilesBytes;
@@ -298,7 +297,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@Nonnull final File aBaseDir, @Nonnull final ICommonsMap <EFileType, FileTypeCount> aMap)
+  private static void _scan (@NonNull final File aBaseDir, @NonNull final ICommonsMap <EFileType, FileTypeCount> aMap)
                                                                                                                        throws IOException
   {
     if (aBaseDir.isDirectory ())
@@ -334,7 +333,7 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
 
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateMetaLinesOfCode.class);
 
-  private static void _addTableHead (@Nonnull final StringBuilder aSB)
+  private static void _addTableHead (@NonNull final StringBuilder aSB)
   {
     aSB.append ("<tr>")
        .append ("<th>File type</th>")
@@ -350,11 +349,11 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
        .append ("</tr>\n");
   }
 
-  private static void _addTableRow (@Nonnull final StringBuilder aSB,
+  private static void _addTableRow (@NonNull final StringBuilder aSB,
                                     @Nullable final EFileType eFileType,
-                                    @Nonnull final String sType,
-                                    @Nonnull final String sContext,
-                                    @Nonnull final FileTypeCount aCount)
+                                    @NonNull final String sType,
+                                    @NonNull final String sContext,
+                                    @NonNull final FileTypeCount aCount)
   {
     final Locale aDisplayLocale = Locale.US;
     aSB.append ("<tr>");
@@ -398,17 +397,17 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
         put (eFileType, new FileTypeCount ());
     }
 
-    public void incrementFrom (@Nonnull final FileTypeCountMap aMap)
+    public void incrementFrom (@NonNull final FileTypeCountMap aMap)
     {
       for (final EFileType eFileType : EFileType.values ())
         get (eFileType).incrementFrom (aMap.get (eFileType));
     }
   }
 
-  private static void _addLineCount (@Nonnull final IProject aProject,
-                                     @Nonnull final StringBuilder aSB,
-                                     @Nonnull final FileTypeCountMap aOverallMain,
-                                     @Nonnull final FileTypeCountMap aOverallTest) throws IOException
+  private static void _addLineCount (@NonNull final IProject aProject,
+                                     @NonNull final StringBuilder aSB,
+                                     @NonNull final FileTypeCountMap aOverallMain,
+                                     @NonNull final FileTypeCountMap aOverallTest) throws IOException
   {
     final StopWatch aSW = StopWatch.createdStarted ();
     final File aBaseDir = new File (aProject.getBaseDir (), "src");

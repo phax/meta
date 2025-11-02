@@ -19,11 +19,11 @@ package com.helger.meta.project;
 import java.io.File;
 import java.lang.reflect.Field;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.version.Version;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Defines other projects.
@@ -63,17 +63,17 @@ public enum EProjectTemp implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProjectTemp (@Nonnull final EProjectTemp eParentProject,
-                @Nonnull @Nonempty final String sProjectName,
-                @Nonnull final EProjectType eProjectType)
+  EProjectTemp (@NonNull final EProjectTemp eParentProject,
+                @NonNull @Nonempty final String sProjectName,
+                @NonNull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  EProjectTemp (@Nonnull final EProjectTemp eParentProject,
-                @Nonnull @Nonempty final String sProjectName,
-                @Nonnull @Nonempty final String sProjectBaseDirName,
-                @Nonnull final EProjectType eProjectType)
+  EProjectTemp (@NonNull final EProjectTemp eParentProject,
+                @NonNull @Nonempty final String sProjectName,
+                @NonNull @Nonempty final String sProjectBaseDirName,
+                @NonNull final EProjectType eProjectType)
   {
     this (eParentProject,
           sProjectName,
@@ -82,9 +82,9 @@ public enum EProjectTemp implements IProject
           eParentProject.getLastPublishedVersionString ());
   }
 
-  EProjectTemp (@Nonnull final EProjectTemp eParentProject,
-                @Nonnull @Nonempty final String sProjectName,
-                @Nonnull final EProjectType eProjectType,
+  EProjectTemp (@NonNull final EProjectTemp eParentProject,
+                @NonNull @Nonempty final String sProjectName,
+                @NonNull final EProjectType eProjectType,
                 @Nullable final String sLastPublishedVersion)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
@@ -102,10 +102,10 @@ public enum EProjectTemp implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
-  EProjectTemp (@Nonnull final EProjectTemp eParentProject,
-                @Nonnull @Nonempty final String sProjectName,
-                @Nonnull @Nonempty final String sProjectBaseDirName,
-                @Nonnull final EProjectType eProjectType,
+  EProjectTemp (@NonNull final EProjectTemp eParentProject,
+                @NonNull @Nonempty final String sProjectName,
+                @NonNull @Nonempty final String sProjectBaseDirName,
+                @NonNull final EProjectType eProjectType,
                 @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
@@ -141,14 +141,14 @@ public enum EProjectTemp implements IProject
    *        Minimum JDK version to use
    */
   EProjectTemp (@Nullable final EProjectTemp eParentProject,
-                @Nonnull final EProjectOwner eProjectOwner,
-                @Nonnull @Nonempty final String sProjectName,
-                @Nonnull @Nonempty final String sProjectBaseDirName,
-                @Nonnull final EProjectType eProjectType,
-                @Nonnull final EHasPages eHasPagesProject,
-                @Nonnull final EHasWiki eHasWikiProject,
+                @NonNull final EProjectOwner eProjectOwner,
+                @NonNull @Nonempty final String sProjectName,
+                @NonNull @Nonempty final String sProjectBaseDirName,
+                @NonNull final EProjectType eProjectType,
+                @NonNull final EHasPages eHasPagesProject,
+                @NonNull final EHasWiki eHasWikiProject,
                 @Nullable final String sLastPublishedVersion,
-                @Nonnull final EJDK eMinJDK)
+                @NonNull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
@@ -192,7 +192,7 @@ public enum EProjectTemp implements IProject
     return true;
   }
 
-  @Nonnull
+  @NonNull
   public EHostingPlatform getHostingPlatform ()
   {
     return m_aProject.getHostingPlatform ();
@@ -204,52 +204,52 @@ public enum EProjectTemp implements IProject
     return m_aProject.getParentProject ();
   }
 
-  @Nonnull
+  @NonNull
   public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getProjectName ()
   {
     return m_aProject.getProjectName ();
   }
 
-  @Nonnull
+  @NonNull
   public EProjectType getProjectType ()
   {
     return m_aProject.getProjectType ();
   }
 
-  @Nonnull
+  @NonNull
   public File getBaseDir ()
   {
     return m_aProject.getBaseDir ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getFullBaseDirName ()
   {
     return m_aProject.getFullBaseDirName ();
   }
 
-  @Nonnull
+  @NonNull
   public EJDK getMinimumJDKVersion ()
   {
     return m_aProject.getMinimumJDKVersion ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenGroupID ()
   {
     return m_aProject.getMavenGroupID ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenArtifactID ()
   {
@@ -282,7 +282,7 @@ public enum EProjectTemp implements IProject
     return m_aProject.getLastPublishedVersion ();
   }
 
-  public int compareTo (@Nonnull final IProject aProject)
+  public int compareTo (@NonNull final IProject aProject)
   {
     return m_aProject.compareTo (aProject);
   }

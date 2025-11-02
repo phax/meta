@@ -20,6 +20,8 @@ import java.io.File;
 import java.util.Map;
 import java.util.Set;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,9 +46,6 @@ import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 /**
  * Check whether the Maven pom.xml of a project is consistent to the requirements
  *
@@ -62,9 +61,9 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     return "com.helger".equals (sGroupID) || "com.helger.maven".equals (sGroupID) || "eu.de4a.ial".equals (sGroupID);
   }
 
-  private static void _readPOM (@Nonnull final IProject aProject,
-                                @Nonnull final IMicroDocument aDoc,
-                                @Nonnull final ICommonsMap <IProject, ICommonsSet <IProject>> aTree)
+  private static void _readPOM (@NonNull final IProject aProject,
+                                @NonNull final IMicroDocument aDoc,
+                                @NonNull final ICommonsMap <IProject, ICommonsSet <IProject>> aTree)
   {
     if (LOGGER.isDebugEnabled ())
       LOGGER.debug (aProject.getProjectName ());

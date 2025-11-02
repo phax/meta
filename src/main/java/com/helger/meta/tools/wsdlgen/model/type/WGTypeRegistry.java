@@ -16,12 +16,12 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.collection.commons.CommonsHashMap;
 import com.helger.collection.commons.ICommonsMap;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public final class WGTypeRegistry
 {
@@ -82,7 +82,7 @@ public final class WGTypeRegistry
   private WGTypeRegistry ()
   {}
 
-  public static void registerType (@Nonnull final IWGType aType)
+  public static void registerType (@NonNull final IWGType aType)
   {
     ValueEnforcer.notNull (aType, "Type");
 

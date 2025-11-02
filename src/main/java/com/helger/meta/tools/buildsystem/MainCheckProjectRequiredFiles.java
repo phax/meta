@@ -19,6 +19,7 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,8 +34,6 @@ import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
-import jakarta.annotation.Nonnull;
-
 /**
  * Check whether all project has all the required files
  *
@@ -44,14 +43,14 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckProjectRequiredFiles.class);
 
-  private static boolean _isDirExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeDirName)
+  private static boolean _isDirExisting (@NonNull final IProject aProject, @NonNull final String sRelativeDirName)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeDirName);
     return f.isDirectory ();
   }
 
-  @Nonnull
-  private static ESuccess _checkFileExisting (@Nonnull final IProject aProject, @Nonnull final String sRelativeFilename)
+  @NonNull
+  private static ESuccess _checkFileExisting (@NonNull final IProject aProject, @NonNull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (f.exists ())
@@ -60,9 +59,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return ESuccess.FAILURE;
   }
 
-  @Nonnull
-  private static ESuccess _checkFileNotExisting (@Nonnull final IProject aProject,
-                                                 @Nonnull final String sRelativeFilename)
+  @NonNull
+  private static ESuccess _checkFileNotExisting (@NonNull final IProject aProject,
+                                                 @NonNull final String sRelativeFilename)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (!f.exists ())
@@ -71,9 +70,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return ESuccess.FAILURE;
   }
 
-  private static boolean _checkFileContains (@Nonnull final IProject aProject,
-                                             @Nonnull final String sRelativeFilename,
-                                             @Nonnull final String sExpectedContent)
+  private static boolean _checkFileContains (@NonNull final IProject aProject,
+                                             @NonNull final String sRelativeFilename,
+                                             @NonNull final String sExpectedContent)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
@@ -87,9 +86,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   }
 
   @SuppressWarnings ("unused")
-  private static boolean _checkFileContainsOR (@Nonnull final IProject aProject,
-                                               @Nonnull final String sRelativeFilename,
-                                               @Nonnull final String... aExpectedContentsOR)
+  private static boolean _checkFileContainsOR (@NonNull final IProject aProject,
+                                               @NonNull final String sRelativeFilename,
+                                               @NonNull final String... aExpectedContentsOR)
   {
     ValueEnforcer.notEmptyNoNullValue (aExpectedContentsOR, "ExpectedContentsOR");
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
@@ -110,9 +109,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   }
 
   @SuppressWarnings ("unused")
-  private static boolean _checkFileContainsNot (@Nonnull final IProject aProject,
-                                                @Nonnull final String sRelativeFilename,
-                                                @Nonnull final String sExpectedContent)
+  private static boolean _checkFileContainsNot (@NonNull final IProject aProject,
+                                                @NonNull final String sRelativeFilename,
+                                                @NonNull final String sExpectedContent)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
@@ -122,12 +121,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return false;
   }
 
-  private static boolean _isApache2Project (@Nonnull final IProject aProject)
+  private static boolean _isApache2Project (@NonNull final IProject aProject)
   {
     return aProject != EProject.JCODEMODEL;
   }
 
-  private static void _validateProjectWithJavaCode (@Nonnull final IProject aProject)
+  private static void _validateProjectWithJavaCode (@NonNull final IProject aProject)
   {
     // Check for file existence
     if (false)
@@ -168,7 +167,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     }
   }
 
-  private static void _validateProjectWithoutJavaCode (@Nonnull final IProject aProject)
+  private static void _validateProjectWithoutJavaCode (@NonNull final IProject aProject)
   {
     // Check for file existence
     if (false)

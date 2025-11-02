@@ -20,12 +20,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.string.StringHelper;
 import com.helger.meta.CMeta;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public enum EProjectOwner
 {
@@ -40,20 +40,20 @@ public enum EProjectOwner
   private final String m_sGitOrgaName;
   private final String m_sLocalGitDir;
 
-  EProjectOwner (@Nonnull @Nonempty final String sName, @Nonnull @Nonempty final String sGitDir)
+  EProjectOwner (@NonNull @Nonempty final String sName, @NonNull @Nonempty final String sGitDir)
   {
     m_sGitOrgaName = sName;
     m_sLocalGitDir = sGitDir;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getGitOrgaName ()
   {
     return m_sGitOrgaName;
   }
 
-  @Nonnull
+  @NonNull
   public File getLocalGitDir ()
   {
     try

@@ -16,6 +16,8 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.enforce.ValueEnforcer;
@@ -23,15 +25,13 @@ import com.helger.base.tostring.ToStringGenerator;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsOrderedMap;
 
-import jakarta.annotation.Nonnull;
-
 public abstract class AbstractWGAssembledType implements IWGType
 {
   private final String m_sNamespace;
   private final String m_sName;
   private final ICommonsOrderedMap <String, WGTypeDef> m_aAttributes = new CommonsLinkedHashMap <> ();
 
-  public AbstractWGAssembledType (@Nonnull final String sNamespace, @Nonnull @Nonempty final String sName)
+  public AbstractWGAssembledType (@NonNull final String sNamespace, @NonNull @Nonempty final String sName)
   {
     ValueEnforcer.notNull (sNamespace, "Namespace");
     ValueEnforcer.notEmpty (sName, "Name");
@@ -39,20 +39,20 @@ public abstract class AbstractWGAssembledType implements IWGType
     m_sName = sName;
   }
 
-  @Nonnull
+  @NonNull
   public String getNamespace ()
   {
     return m_sNamespace;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getName ()
   {
     return m_sName;
   }
 
-  public void addChildAttribute (@Nonnull @Nonempty final String sName, @Nonnull final WGTypeDef aTypeDef)
+  public void addChildAttribute (@NonNull @Nonempty final String sName, @NonNull final WGTypeDef aTypeDef)
   {
     ValueEnforcer.notEmpty (sName, "Name");
     ValueEnforcer.notNull (aTypeDef, "TypeDef");
@@ -61,7 +61,7 @@ public abstract class AbstractWGAssembledType implements IWGType
     m_aAttributes.put (sName, aTypeDef);
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, WGTypeDef> getAllChildAttributes ()
   {

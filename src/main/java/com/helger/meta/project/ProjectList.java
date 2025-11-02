@@ -19,6 +19,8 @@ package com.helger.meta.project;
 import java.io.File;
 import java.util.function.Predicate;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,9 +42,6 @@ import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.convert.MicroTypeConverter;
 import com.helger.xml.microdom.serialize.MicroReader;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 /**
  * Overall project list. Contains:
  * <ul>
@@ -59,7 +58,7 @@ public final class ProjectList
   private static final ICommonsOrderedSet <File> BASE_DIRS = new CommonsLinkedHashSet <> ();
   private static final ICommonsOrderedMap <String, IProject> NAME_TO_PROJECT = new CommonsLinkedHashMap <> ();
 
-  private static void _add (@Nonnull final IProject aProject)
+  private static void _add (@NonNull final IProject aProject)
   {
     final String sKey = aProject.getProjectName ();
     if (NAME_TO_PROJECT.containsKey (sKey))
@@ -122,16 +121,16 @@ public final class ProjectList
     return NAME_TO_PROJECT.get (sName);
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public static ICommonsList <IProject> getAllProjects ()
   {
     return NAME_TO_PROJECT.copyOfValues ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
-  public static ICommonsList <IProject> getAllProjects (@Nonnull final Predicate <IProject> aFilter)
+  public static ICommonsList <IProject> getAllProjects (@NonNull final Predicate <IProject> aFilter)
   {
     return NAME_TO_PROJECT.copyOfValues (aFilter);
   }
@@ -150,8 +149,8 @@ public final class ProjectList
     return CollectionFind.containsAny (NAME_TO_PROJECT.values (), p -> p.getBaseDir ().getName ().equals (sDirName));
   }
 
-  @Nonnull
-  public static File findBaseDirectory (@Nonnull @Nonempty final String sDir)
+  @NonNull
+  public static File findBaseDirectory (@NonNull @Nonempty final String sDir)
   {
     ValueEnforcer.notEmpty (sDir, "Dir");
     for (final File aBaseDir : BASE_DIRS)

@@ -18,6 +18,8 @@ package com.helger.meta.tools.cmdline;
 
 import java.io.File;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.io.file.SimpleFileIO;
@@ -27,8 +29,6 @@ import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
-import jakarta.annotation.Nonnull;
-
 /**
  * Create a set of batch files that contains content that in most cases is
  * relevant to all projects.
@@ -37,15 +37,15 @@ import jakarta.annotation.Nonnull;
  */
 public final class MainCreateBatchFiles extends AbstractProjectMain
 {
-  @Nonnull
+  @NonNull
   @Nonempty
-  private static String getBatchLabel (@Nonnull final String sPrefix, final int nIndex)
+  private static String getBatchLabel (@NonNull final String sPrefix, final int nIndex)
   {
     return sPrefix + nIndex;
   }
 
-  private static void _createBatchFile (@Nonnull @Nonempty final String sCommand,
-                                        @Nonnull @Nonempty final String sBatchFileName,
+  private static void _createBatchFile (@NonNull @Nonempty final String sCommand,
+                                        @NonNull @Nonempty final String sBatchFileName,
                                         final boolean bWithErrorCheck)
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
@@ -97,8 +97,8 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     SimpleFileIO.writeFile (new File (CMeta.GIT_BASE_DIR, sBatchFileName), aSB.toString (), BATCH_CHARSET);
   }
 
-  private static void _createMvnBatchFile (@Nonnull @Nonempty final String sMavenCommand,
-                                           @Nonnull @Nonempty final String sBatchFileName)
+  private static void _createMvnBatchFile (@NonNull @Nonempty final String sMavenCommand,
+                                           @NonNull @Nonempty final String sBatchFileName)
   {
     _createBatchFile ("call mvn " + sMavenCommand + " %*", sBatchFileName, true);
   }

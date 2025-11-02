@@ -16,13 +16,13 @@
  */
 package com.helger.meta.translation;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.concurrent.Immutable;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.hashcode.HashCodeGenerator;
 import com.helger.base.tostring.ToStringGenerator;
-
-import jakarta.annotation.Nonnull;
 
 @Immutable
 public final class TextInLocale
@@ -30,7 +30,7 @@ public final class TextInLocale
   private final String m_sLocale;
   private final String m_sText;
 
-  public TextInLocale (@Nonnull @Nonempty final String sLocale, @Nonnull final String sText)
+  public TextInLocale (@NonNull @Nonempty final String sLocale, @NonNull final String sText)
   {
     ValueEnforcer.notEmpty (sLocale, "Locale");
     ValueEnforcer.notNull (sText, "Text");
@@ -38,13 +38,13 @@ public final class TextInLocale
     m_sText = sText;
   }
 
-  @Nonnull
+  @NonNull
   public String getLocale ()
   {
     return m_sLocale;
   }
 
-  @Nonnull
+  @NonNull
   public String getText ()
   {
     return m_sText;

@@ -18,16 +18,16 @@ package com.helger.meta.tools.wsdlgen.model.type;
 
 import java.io.Serializable;
 
-import com.helger.annotation.Nonempty;
+import org.jspecify.annotations.NonNull;
 
-import jakarta.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
 public interface IWGType extends Serializable
 {
-  @Nonnull
+  @NonNull
   String getNamespace ();
 
-  @Nonnull
+  @NonNull
   @Nonempty
   String getName ();
 

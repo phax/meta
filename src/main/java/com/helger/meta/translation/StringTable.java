@@ -20,6 +20,8 @@ import java.util.Collection;
 import java.util.Locale;
 import java.util.Map;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,9 +42,6 @@ import com.helger.collection.commons.CommonsTreeMap;
 import com.helger.collection.commons.ICommonsMap;
 import com.helger.collection.commons.ICommonsSet;
 import com.helger.collection.commons.ICommonsSortedMap;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Represents a string table. This is a mapping from ID to texts in different
@@ -72,13 +71,13 @@ public final class StringTable implements ICloneable <StringTable>
     m_bWarnOnDuplicateIDs = bWarnOnDuplicateIDs;
   }
 
-  private StringTable (@Nonnull final StringTable rhs)
+  private StringTable (@NonNull final StringTable rhs)
   {
     this (rhs.m_bWarnOnDuplicateIDs);
     m_aMap.putAll (rhs.m_aMap);
   }
 
-  public void addAll (@Nonnull final StringTable aST)
+  public void addAll (@NonNull final StringTable aST)
   {
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : aST.m_aMap.entrySet ())
       setTexts (aEntry.getKey (), aEntry.getValue ());
@@ -97,25 +96,25 @@ public final class StringTable implements ICloneable <StringTable>
     return aMap == null ? null : aMap.get (sLocale);
   }
 
-  public void setTexts (@Nonnull final String sID, @Nonnull final Map <String, String> aTexts)
+  public void setTexts (@NonNull final String sID, @NonNull final Map <String, String> aTexts)
   {
     for (final Map.Entry <String, String> aText : aTexts.entrySet ())
       setText (sID, aText.getKey (), aText.getValue ());
   }
 
-  public void setText (@Nonnull final String sID, @Nonnull final TextInLocale aTIL)
+  public void setText (@NonNull final String sID, @NonNull final TextInLocale aTIL)
   {
     setText (sID, aTIL.getLocale (), aTIL.getText ());
   }
 
-  @Nonnull
-  public EChange setText (@Nonnull final String sID, @Nonnull final Locale aLocale, @Nonnull final String sNewText)
+  @NonNull
+  public EChange setText (@NonNull final String sID, @NonNull final Locale aLocale, @NonNull final String sNewText)
   {
     return setText (sID, aLocale.getLanguage (), sNewText);
   }
 
-  @Nonnull
-  public EChange setText (@Nonnull final String sID, @Nonnull @Nonempty final String sLocale, @Nonnull final String sNewText)
+  @NonNull
+  public EChange setText (@NonNull final String sID, @NonNull @Nonempty final String sLocale, @NonNull final String sNewText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -141,8 +140,8 @@ public final class StringTable implements ICloneable <StringTable>
     return overwriteText (sID, sLocale, sNewText);
   }
 
-  @Nonnull
-  public EChange overwriteText (@Nonnull final String sID, @Nonnull @Nonempty final String sLocale, @Nonnull final String sText)
+  @NonNull
+  public EChange overwriteText (@NonNull final String sID, @NonNull @Nonempty final String sLocale, @NonNull final String sText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -174,14 +173,14 @@ public final class StringTable implements ICloneable <StringTable>
     return m_aMap.isEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableObject ("Performance")
   public ICommonsSortedMap <String, ICommonsSortedMap <String, String>> directGetMap ()
   {
     return m_aMap;
   }
 
-  public void findAllIDsContainingText (@Nonnull final TextInLocale aSearchText, @Nonnull final Collection <String> aIDCont)
+  public void findAllIDsContainingText (@NonNull final TextInLocale aSearchText, @NonNull final Collection <String> aIDCont)
   {
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {
@@ -192,16 +191,16 @@ public final class StringTable implements ICloneable <StringTable>
     }
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
-  public ICommonsSet <String> findAllIDsContainingText (@Nonnull final TextInLocale aSearchText)
+  public ICommonsSet <String> findAllIDsContainingText (@NonNull final TextInLocale aSearchText)
   {
     final ICommonsSet <String> ret = new CommonsHashSet <> ();
     findAllIDsContainingText (aSearchText, ret);
     return ret;
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsSet <String> getAllUsedLocales ()
   {
@@ -218,7 +217,7 @@ public final class StringTable implements ICloneable <StringTable>
    *        The locale to use
    * @return A non-<code>null</code> map
    */
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsMap <String, String> getAllTextsInLocale (final String sLocale)
   {
@@ -233,13 +232,13 @@ public final class StringTable implements ICloneable <StringTable>
     return ret;
   }
 
-  @Nonnull
+  @NonNull
   public EChange removeID (final String sID)
   {
     return EChange.valueOf (m_aMap.remove (sID) != null);
   }
 
-  @Nonnull
+  @NonNull
   public StringTable getClone ()
   {
     return new StringTable (this);

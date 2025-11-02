@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.attribute.PosixFilePermission;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.io.file.SimpleFileIO;
@@ -30,8 +32,6 @@ import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
-import jakarta.annotation.Nonnull;
-
 /**
  * Create a set of batch files that contains content that in most cases is relevant to all projects.
  *
@@ -39,15 +39,15 @@ import jakarta.annotation.Nonnull;
  */
 public final class MainCreateShellScripts extends AbstractProjectMain
 {
-  @Nonnull
+  @NonNull
   @Nonempty
-  private static String getBatchLabel (@Nonnull final String sPrefix, final int nIndex)
+  private static String getBatchLabel (@NonNull final String sPrefix, final int nIndex)
   {
     return sPrefix + nIndex;
   }
 
-  private static void _createShellScript (@Nonnull @Nonempty final String sCommand,
-                                          @Nonnull @Nonempty final String sBatchFileName) throws IOException
+  private static void _createShellScript (@NonNull @Nonempty final String sCommand,
+                                          @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
                                                                                !x.isDeprecated () &&
@@ -82,8 +82,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     Files.setPosixFilePermissions (f.toPath (), aPerms);
   }
 
-  private static void _createMvnShellScript (@Nonnull @Nonempty final String sMavenCommand,
-                                             @Nonnull @Nonempty final String sBatchFileName) throws IOException
+  private static void _createMvnShellScript (@NonNull @Nonempty final String sMavenCommand,
+                                             @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     _createShellScript ("mvn " + sMavenCommand + " $@", sBatchFileName);
   }

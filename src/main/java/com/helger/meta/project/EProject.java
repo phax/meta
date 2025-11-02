@@ -19,11 +19,11 @@ package com.helger.meta.project;
 import java.io.File;
 import java.lang.reflect.Field;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.version.Version;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Defines all the active projects.
@@ -81,7 +81,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "12.0.4",
+                         "12.1.0",
                          EJDK.JDK17),
   PH_ANNOTATIONS (PH_COMMONS_PARENT_POM, "ph-annotations", EProjectType.JAVA_LIBRARY),
   PH_BASE (PH_COMMONS_PARENT_POM, "ph-base", EProjectType.JAVA_LIBRARY),
@@ -925,17 +925,17 @@ public enum EProject implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProject (@Nonnull final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull final EProjectType eProjectType)
+  EProject (@NonNull final EProject eParentProject,
+            @NonNull @Nonempty final String sProjectName,
+            @NonNull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  EProject (@Nonnull final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull @Nonempty final String sProjectBaseDirName,
-            @Nonnull final EProjectType eProjectType)
+  EProject (@NonNull final EProject eParentProject,
+            @NonNull @Nonempty final String sProjectName,
+            @NonNull @Nonempty final String sProjectBaseDirName,
+            @NonNull final EProjectType eProjectType)
   {
     this (eParentProject,
           sProjectName,
@@ -944,9 +944,9 @@ public enum EProject implements IProject
           eParentProject.getLastPublishedVersionString ());
   }
 
-  EProject (@Nonnull final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull final EProjectType eProjectType,
+  EProject (@NonNull final EProject eParentProject,
+            @NonNull @Nonempty final String sProjectName,
+            @NonNull final EProjectType eProjectType,
             @Nullable final String sLastPublishedVersion)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
@@ -964,10 +964,10 @@ public enum EProject implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
-  EProject (@Nonnull final EProject eParentProject,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull @Nonempty final String sProjectBaseDirName,
-            @Nonnull final EProjectType eProjectType,
+  EProject (@NonNull final EProject eParentProject,
+            @NonNull @Nonempty final String sProjectName,
+            @NonNull @Nonempty final String sProjectBaseDirName,
+            @NonNull final EProjectType eProjectType,
             @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
@@ -1003,14 +1003,14 @@ public enum EProject implements IProject
    *        Minimum JDK version to use
    */
   EProject (@Nullable final EProject eParentProject,
-            @Nonnull final EProjectOwner eProjectOwner,
-            @Nonnull @Nonempty final String sProjectName,
-            @Nonnull @Nonempty final String sProjectBaseDirName,
-            @Nonnull final EProjectType eProjectType,
-            @Nonnull final EHasPages eHasPagesProject,
-            @Nonnull final EHasWiki eHasWikiProject,
+            @NonNull final EProjectOwner eProjectOwner,
+            @NonNull @Nonempty final String sProjectName,
+            @NonNull @Nonempty final String sProjectBaseDirName,
+            @NonNull final EProjectType eProjectType,
+            @NonNull final EHasPages eHasPagesProject,
+            @NonNull final EHasWiki eHasWikiProject,
             @Nullable final String sLastPublishedVersion,
-            @Nonnull final EJDK eMinJDK)
+            @NonNull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
@@ -1053,7 +1053,7 @@ public enum EProject implements IProject
     return true;
   }
 
-  @Nonnull
+  @NonNull
   public EHostingPlatform getHostingPlatform ()
   {
     return m_aProject.getHostingPlatform ();
@@ -1065,53 +1065,53 @@ public enum EProject implements IProject
     return m_aProject.getParentProject ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getProjectName ()
   {
     return m_aProject.getProjectName ();
   }
 
-  @Nonnull
+  @NonNull
   public EProjectType getProjectType ()
   {
     return m_aProject.getProjectType ();
   }
 
-  @Nonnull
+  @NonNull
   public File getBaseDir ()
   {
     return m_aProject.getBaseDir ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getFullBaseDirName ()
   {
     return m_aProject.getFullBaseDirName ();
   }
 
-  @Nonnull
+  @NonNull
   public EJDK getMinimumJDKVersion ()
   {
     return m_aProject.getMinimumJDKVersion ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenGroupID ()
   {
     return m_aProject.getMavenGroupID ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenArtifactID ()
   {
@@ -1144,7 +1144,7 @@ public enum EProject implements IProject
     return m_aProject.getLastPublishedVersion ();
   }
 
-  public int compareTo (@Nonnull final IProject aProject)
+  public int compareTo (@NonNull final IProject aProject)
   {
     return m_aProject.compareTo (aProject);
   }

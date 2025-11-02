@@ -16,10 +16,10 @@
  */
 package com.helger.meta.tools.wsdlgen;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.id.IHasID;
-
-import jakarta.annotation.Nonnull;
 
 public enum EElementType implements IHasID <String>
 {
@@ -29,12 +29,12 @@ public enum EElementType implements IHasID <String>
 
   private final String m_sID;
 
-  private EElementType (@Nonnull @Nonempty final String sID)
+  private EElementType (@NonNull @Nonempty final String sID)
   {
     m_sID = sID;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getID ()
   {

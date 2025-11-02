@@ -19,6 +19,7 @@ package com.helger.meta;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,8 +28,6 @@ import com.helger.annotation.Nonnegative;
 import com.helger.base.debug.GlobalDebug;
 import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.project.IProject;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * Base class for the main utilities in this package
@@ -64,14 +63,14 @@ public abstract class AbstractProjectMain
     GlobalDebug.setDebugModeDirect (false);
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
-  protected static final String _getLogPrefix (@Nonnull final IProject aProject)
+  protected static final String _getLogPrefix (@NonNull final IProject aProject)
   {
     return "[" + aProject.getProjectName () + "] ";
   }
 
-  protected static final void _warn (@Nonnull final IProject aProject, @Nonnull final String sMsg)
+  protected static final void _warn (@NonNull final IProject aProject, @NonNull final String sMsg)
   {
     LOGGER.warn (_getLogPrefix (aProject) + sMsg);
     s_nWarnCount++;
@@ -83,7 +82,7 @@ public abstract class AbstractProjectMain
     return s_nWarnCount;
   }
 
-  protected static final void _info (@Nonnull final IProject aProject, @Nonnull final String sMsg)
+  protected static final void _info (@NonNull final IProject aProject, @NonNull final String sMsg)
   {
     LOGGER.info (_getLogPrefix (aProject) + sMsg);
   }

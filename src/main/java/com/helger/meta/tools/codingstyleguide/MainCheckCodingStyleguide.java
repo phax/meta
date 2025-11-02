@@ -20,6 +20,8 @@ import java.io.File;
 import java.lang.reflect.Modifier;
 import java.util.Locale;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
@@ -50,15 +52,12 @@ import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 public final class MainCheckCodingStyleguide extends AbstractProjectMain
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckCodingStyleguide.class);
   private static final Locale LOCALE_SYSTEM = Locale.US;
 
-  private static void _checkClassNaming (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
+  private static void _checkClassNaming (@NonNull final IProject aProject, @NonNull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = sClassLocalName.equals ("package-info");
@@ -139,12 +138,12 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       _warn (aProject, sPrefix + "'multilingual' should be spelled 'Multilingual'");
   }
 
-  private static boolean _isArrayClass (@Nonnull final Type aType)
+  private static boolean _isArrayClass (@NonNull final Type aType)
   {
     return aType.getSort () == Type.ARRAY;
   }
 
-  private static boolean _isJDKCollectionClass (@Nonnull final Type aType)
+  private static boolean _isJDKCollectionClass (@NonNull final Type aType)
   {
     if (aType.getSort () != Type.OBJECT)
       return false;
@@ -188,7 +187,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            java.util.concurrent.LinkedTransferQueue.class.getName ().equals (sClassName);
   }
 
-  private static boolean _isPhCollectionClass (@Nonnull final Type aType)
+  private static boolean _isPhCollectionClass (@NonNull final Type aType)
   {
     if (aType.getSort () != Type.OBJECT)
       return false;
@@ -199,7 +198,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
            "com.helger.commons.collection.impl".equals (sPackageName);
   }
 
-  private static void _checkMainMethods (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
+  private static void _checkMainMethods (@NonNull final IProject aProject, @NonNull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
@@ -330,7 +329,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  private static void _checkMainVariables (@Nonnull final IProject aProject, @Nonnull final ClassNode cn)
+  private static void _checkMainVariables (@NonNull final IProject aProject, @NonNull final ClassNode cn)
   {
     final String sClassLocalName = ClassHelper.getClassLocalName (ClassHelper.getClassFromPath (cn.name));
     final boolean bIsSpecialCase = (aProject.getProjectType () == EProjectType.MAVEN_PLUGIN &&
@@ -397,10 +396,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     }
   }
 
-  @Nonnull
-  private static EContinue _doScanMainClass (@Nonnull final IProject aProject,
-                                             @Nonnull final String sPackageName,
-                                             @Nonnull @Nonempty final String sClassLocalName)
+  @NonNull
+  private static EContinue _doScanMainClass (@NonNull final IProject aProject,
+                                             @NonNull final String sPackageName,
+                                             @NonNull @Nonempty final String sClassLocalName)
   {
     if (aProject == EProject.ERECHNUNG_WS_CLIENT &&
         (sPackageName.equals ("at.gv.brz.eproc.erb.ws.documentupload._20121205") ||
@@ -507,7 +506,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     return EContinue.CONTINUE;
   }
 
-  private static void _scanMainCode (@Nonnull final IProject aProject)
+  private static void _scanMainCode (@NonNull final IProject aProject)
   {
     // Find all main class files
     final File aMainClasses = new File (aProject.getBaseDir (), "target/classes");
@@ -535,7 +534,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
   }
 
-  private static void _checkTestClass (@Nonnull final IProject aProject,
+  private static void _checkTestClass (@NonNull final IProject aProject,
                                        @Nullable final String sBaseName,
                                        @Nullable final String sTestClass)
   {
@@ -565,10 +564,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
    *        Class name without package
    * @return {@link EContinue}
    */
-  @Nonnull
-  private static EContinue _doScanTestClass (@Nonnull final IProject aProject,
-                                             @Nonnull final String sPackageName,
-                                             @Nonnull @Nonempty final String sClassLocalName)
+  @NonNull
+  private static EContinue _doScanTestClass (@NonNull final IProject aProject,
+                                             @NonNull final String sPackageName,
+                                             @NonNull @Nonempty final String sClassLocalName)
   {
     if (aProject == EProject.PH_MINI_QUARTZ)
       return EContinue.BREAK;
@@ -579,7 +578,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     return EContinue.CONTINUE;
   }
 
-  private static void _scanTestCode (@Nonnull final IProject aProject)
+  private static void _scanTestCode (@NonNull final IProject aProject)
   {
     final File aTestClassDir = new File (aProject.getBaseDir (), "target/test-classes");
     for (final File aClassFile : new FileSystemRecursiveIterator (aTestClassDir))
@@ -643,7 +642,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
       }
   }
 
-  private static void _scanProject (@Nonnull final IProject aProject)
+  private static void _scanProject (@NonNull final IProject aProject)
   {
     if (false)
       LOGGER.info ("  " + aProject.getProjectName ());

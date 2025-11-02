@@ -16,6 +16,9 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.CGlobal;
@@ -25,9 +28,6 @@ import com.helger.collection.CollectionHelper;
 import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.ICommonsList;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 public class WGSimpleType extends AbstractWGAssembledType
 {
   private IWGType m_aExtension;
@@ -35,7 +35,7 @@ public class WGSimpleType extends AbstractWGAssembledType
   private ICommonsList <WGEnumEntry> m_aEnumEntries;
   private int m_nMaxLength = CGlobal.ILLEGAL_UINT;
 
-  public WGSimpleType (@Nonnull final String sNamespace, @Nonnull @Nonempty final String sName)
+  public WGSimpleType (@NonNull final String sNamespace, @NonNull @Nonempty final String sName)
   {
     super (sNamespace, sName);
   }
@@ -51,7 +51,7 @@ public class WGSimpleType extends AbstractWGAssembledType
   }
 
   @Override
-  public void addChildAttribute (@Nonnull @Nonempty final String sName, @Nonnull final WGTypeDef aTypeDef)
+  public void addChildAttribute (@NonNull @Nonempty final String sName, @NonNull final WGTypeDef aTypeDef)
   {
     if (m_aRestriction != null)
       throw new IllegalStateException ("Attributes cannot be present if a restriction is set!");
@@ -109,7 +109,7 @@ public class WGSimpleType extends AbstractWGAssembledType
     return m_aRestriction != null;
   }
 
-  public void setEnumEntries (@Nonnull final ICommonsList <WGEnumEntry> aEnumEntries)
+  public void setEnumEntries (@NonNull final ICommonsList <WGEnumEntry> aEnumEntries)
   {
     ValueEnforcer.notEmpty (aEnumEntries, "EnumEntries");
 
@@ -120,7 +120,7 @@ public class WGSimpleType extends AbstractWGAssembledType
     m_aEnumEntries = aEnumEntries.getClone ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsList <WGEnumEntry> getAllEnumEntries ()
   {

@@ -18,15 +18,15 @@ package com.helger.meta.project;
 
 import java.io.File;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.string.StringHelper;
 import com.helger.base.string.StringParser;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.MicroElement;
 import com.helger.xml.microdom.convert.IMicroTypeConverter;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverter <SimpleProject>
 {
@@ -42,10 +42,10 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
   private static final String ATTR_MIN_JDK_VERSION = "minjdk";
   private static final String ATTR_GITHUB_PRIVATE = "githubprivate";
 
-  @Nonnull
-  public IMicroElement convertToMicroElement (@Nonnull final SimpleProject aValue,
+  @NonNull
+  public IMicroElement convertToMicroElement (@NonNull final SimpleProject aValue,
                                               @Nullable final String sNamespaceURI,
-                                              @Nonnull @Nonempty final String sTagName)
+                                              @NonNull @Nonempty final String sTagName)
   {
     final IMicroElement ret = new MicroElement (sNamespaceURI, sTagName);
     ret.setAttribute (ATTR_HOSTING_PLATFORM, aValue.getHostingPlatform ().getID ());
@@ -62,8 +62,8 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     return ret;
   }
 
-  @Nonnull
-  public SimpleProject convertToNative (@Nonnull final IMicroElement aElement)
+  @NonNull
+  public SimpleProject convertToNative (@NonNull final IMicroElement aElement)
   {
     final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
                                                                                    EHostingPlatform.GITHUB);
@@ -114,9 +114,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               bIsGitHubPrivate);
   }
 
-  @Nonnull
-  public static SimpleProject convertToNativeWithParent (@Nonnull final IProject aParentProject,
-                                                         @Nonnull final IMicroElement aElement)
+  @NonNull
+  public static SimpleProject convertToNativeWithParent (@NonNull final IProject aParentProject,
+                                                         @NonNull final IMicroElement aElement)
   {
     final EHostingPlatform eHostingPlatform = EHostingPlatform.getFromIDOrDefault (aElement.getAttributeValue (ATTR_HOSTING_PLATFORM),
                                                                                    EHostingPlatform.GITHUB);

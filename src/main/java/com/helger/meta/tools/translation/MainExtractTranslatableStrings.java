@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.util.Iterator;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.ClassNode;
@@ -48,16 +50,13 @@ import com.helger.meta.translation.StringTableSerializer;
 import com.helger.text.IMultilingualText;
 import com.helger.text.util.TextHelper;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 public final class MainExtractTranslatableStrings extends AbstractProjectMain
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainExtractTranslatableStrings.class);
   private static final ICommonsOrderedSet <String> ACTIONS = new CommonsLinkedHashSet <> ();
 
   @Nullable
-  private static StringTable _extractSTFromFile (@Nonnull final IProject eProject, @Nonnull final ClassNode cn)
+  private static StringTable _extractSTFromFile (@NonNull final IProject eProject, @NonNull final ClassNode cn)
   {
     final StringTable ret = new StringTable ();
 
@@ -149,7 +148,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     return ret;
   }
 
-  private static void _scanProject (@Nonnull final IProject eProject) throws IOException
+  private static void _scanProject (@NonNull final IProject eProject) throws IOException
   {
     if (false)
       LOGGER.info ("  " + eProject.getProjectName ());

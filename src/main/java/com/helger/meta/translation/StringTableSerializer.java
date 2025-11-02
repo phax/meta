@@ -19,6 +19,8 @@ package com.helger.meta.translation;
 import java.io.File;
 import java.util.Map;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.hashcode.HashCodeCalculator;
 import com.helger.base.state.ESuccess;
@@ -30,15 +32,13 @@ import com.helger.xml.microdom.MicroDocument;
 import com.helger.xml.microdom.MicroElement;
 import com.helger.xml.microdom.serialize.MicroWriter;
 
-import jakarta.annotation.Nonnull;
-
 public final class StringTableSerializer
 {
   private StringTableSerializer ()
   {}
 
-  @Nonnull
-  public static IMicroElement getStringTableAsXML (@Nonnull final StringTable aST)
+  @NonNull
+  public static IMicroElement getStringTableAsXML (@NonNull final StringTable aST)
   {
     ValueEnforcer.notNull (aST, "ST");
     final IMicroElement eRoot = new MicroElement ("translationitems");
@@ -73,8 +73,8 @@ public final class StringTableSerializer
     return eRoot;
   }
 
-  @Nonnull
-  public static ESuccess writeStringTableAsXML (@Nonnull final File aFile, @Nonnull final StringTable aST)
+  @NonNull
+  public static ESuccess writeStringTableAsXML (@NonNull final File aFile, @NonNull final StringTable aST)
   {
     ValueEnforcer.notNull (aFile, "File");
     ValueEnforcer.notNull (aST, "ST");

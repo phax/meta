@@ -16,11 +16,11 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.tostring.ToStringGenerator;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * Base class for simple types that are predefined (like XSD types).
@@ -33,7 +33,7 @@ public class WGPredefinedType implements IWGType
   private final String m_sName;
   private final boolean m_bSimple;
 
-  public WGPredefinedType (@Nonnull final String sNamespace, @Nonnull @Nonempty final String sName, final boolean bSimple)
+  public WGPredefinedType (@NonNull final String sNamespace, @NonNull @Nonempty final String sName, final boolean bSimple)
   {
     ValueEnforcer.notNull (sNamespace, "Namespace");
     ValueEnforcer.notEmpty (sName, "Name");
@@ -42,14 +42,14 @@ public class WGPredefinedType implements IWGType
     m_bSimple = bSimple;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public final String getNamespace ()
   {
     return m_sNamespace;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public final String getName ()
   {

@@ -18,6 +18,8 @@ package com.helger.meta.project;
 
 import java.io.File;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,9 +30,6 @@ import com.helger.base.version.Version;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.serialize.MicroReader;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public class SimpleProject implements IProject
 {
@@ -53,17 +52,17 @@ public class SimpleProject implements IProject
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
 
-  public SimpleProject (@Nonnull final EHostingPlatform eHostingPlatform,
+  public SimpleProject (@NonNull final EHostingPlatform eHostingPlatform,
                         @Nullable final IProject aParentProject,
-                        @Nonnull final EProjectOwner eProjectOwner,
-                        @Nonnull @Nonempty final String sProjectName,
-                        @Nonnull final EProjectType eProjectType,
-                        @Nonnull final File aBaseDir,
-                        @Nonnull final EIsDeprecated eIsDeprecated,
-                        @Nonnull final EHasPages eHasPagesProject,
-                        @Nonnull final EHasWiki eHasWikiProject,
+                        @NonNull final EProjectOwner eProjectOwner,
+                        @NonNull @Nonempty final String sProjectName,
+                        @NonNull final EProjectType eProjectType,
+                        @NonNull final File aBaseDir,
+                        @NonNull final EIsDeprecated eIsDeprecated,
+                        @NonNull final EHasPages eHasPagesProject,
+                        @NonNull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion,
-                        @Nonnull final EJDK eMinJDK,
+                        @NonNull final EJDK eMinJDK,
                         final boolean bIsGitHubPrivate)
   {
     ValueEnforcer.notNull (eProjectOwner, "ProjectOwner");
@@ -136,7 +135,7 @@ public class SimpleProject implements IProject
     return false;
   }
 
-  @Nonnull
+  @NonNull
   public EHostingPlatform getHostingPlatform ()
   {
     return m_eHostingPlatform;
@@ -148,39 +147,39 @@ public class SimpleProject implements IProject
     return m_aParentProject;
   }
 
-  @Nonnull
+  @NonNull
   public EProjectOwner getProjectOwner ()
   {
     return m_eProjectOwner;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getProjectName ()
   {
     return m_sProjectName;
   }
 
-  @Nonnull
+  @NonNull
   public EProjectType getProjectType ()
   {
     return m_eProjectType;
   }
 
-  @Nonnull
+  @NonNull
   public File getBaseDir ()
   {
     return m_aBaseDir;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getFullBaseDirName ()
   {
     return m_sFullBaseDirName;
   }
 
-  @Nonnull
+  @NonNull
   public EJDK getMinimumJDKVersion ()
   {
     return m_eMinJDK;
@@ -192,7 +191,7 @@ public class SimpleProject implements IProject
     return m_sMavenGroupID;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenArtifactID ()
   {
@@ -231,7 +230,7 @@ public class SimpleProject implements IProject
     return m_bIsGitHubPrivate;
   }
 
-  public int compareTo (@Nonnull final IProject aProject)
+  public int compareTo (@NonNull final IProject aProject)
   {
     int ret = m_eProjectOwner.compareTo (aProject.getProjectOwner ());
     if (ret == 0)

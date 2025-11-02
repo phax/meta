@@ -16,6 +16,8 @@
  */
 package com.helger.meta.config;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.concurrent.Immutable;
 import com.helger.annotation.style.IsSPIImplementation;
 import com.helger.meta.project.SimpleProject;
@@ -23,13 +25,11 @@ import com.helger.meta.project.SimpleProjectMicroTypeConverter;
 import com.helger.xml.microdom.convert.IMicroTypeConverterRegistrarSPI;
 import com.helger.xml.microdom.convert.IMicroTypeConverterRegistry;
 
-import jakarta.annotation.Nonnull;
-
 @Immutable
 @IsSPIImplementation
 public final class MetaMicroTypeConverterRegistrar implements IMicroTypeConverterRegistrarSPI
 {
-  public void registerMicroTypeConverter (@Nonnull final IMicroTypeConverterRegistry aRegistry)
+  public void registerMicroTypeConverter (@NonNull final IMicroTypeConverterRegistry aRegistry)
   {
     aRegistry.registerMicroElementTypeConverter (SimpleProject.class, new SimpleProjectMicroTypeConverter ());
   }

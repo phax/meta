@@ -16,7 +16,7 @@
  */
 package com.helger.meta.project;
 
-import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
 
 public enum EHasWiki
 {
@@ -28,7 +28,7 @@ public enum EHasWiki
     return this == TRUE;
   }
 
-  @Nonnull
+  @NonNull
   public static EHasWiki valueOf (final boolean bTrue)
   {
     return bTrue ? TRUE : FALSE;

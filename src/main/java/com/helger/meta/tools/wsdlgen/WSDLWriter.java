@@ -20,6 +20,8 @@ import java.io.OutputStream;
 import java.util.Locale;
 import java.util.Map;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.meta.tools.wsdlgen.model.WGInterface;
@@ -32,8 +34,6 @@ import com.helger.xml.microdom.MicroDocument;
 import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xml.serialize.write.XMLWriterSettings;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * The main WSDL writer class. It takes a {@link WGInterface} and creates a WSDL file.
@@ -58,34 +58,34 @@ public class WSDLWriter
   private boolean m_bCreateDocumentation = true;
   private boolean m_bCreateWSAddressing = false;
 
-  public WSDLWriter (@Nonnull final WGInterface aInterface)
+  public WSDLWriter (@NonNull final WGInterface aInterface)
   {
     m_aInterface = ValueEnforcer.notNull (aInterface, "Interface");
   }
 
-  @Nonnull
+  @NonNull
   public WSDLWriter setCreateDocumentation (final boolean bCreateDocumentation)
   {
     m_bCreateDocumentation = bCreateDocumentation;
     return this;
   }
 
-  @Nonnull
+  @NonNull
   public WSDLWriter setCreateWSAddressing (final boolean bCreateWSAddressing)
   {
     m_bCreateWSAddressing = bCreateWSAddressing;
     return this;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
-  private static String _getTypeRef (@Nonnull final MapBasedNamespaceContext aNSC, @Nonnull final IWGType aType)
+  private static String _getTypeRef (@NonNull final MapBasedNamespaceContext aNSC, @NonNull final IWGType aType)
   {
     return aNSC.getPrefix (aType.getNamespace ()) + ":" + aType.getName ();
   }
 
-  private static String _getFaultName (@Nonnull @Nonempty final String sMethodName,
-                                       @Nonnull final String sLocalFaultName)
+  private static String _getFaultName (@NonNull @Nonempty final String sMethodName,
+                                       @NonNull final String sLocalFaultName)
   {
     // JAXWS expects fault names to start with uppercase *sigh*
     String sRealMethodName = sMethodName;
@@ -94,7 +94,7 @@ public class WSDLWriter
     return sRealMethodName + "Fault" + sLocalFaultName;
   }
 
-  public void generatedWSDL (@Nonnull final OutputStream aOS, @Nonnull final EStyle eStyle, @Nonnull final EUse eUse)
+  public void generatedWSDL (@NonNull final OutputStream aOS, @NonNull final EStyle eStyle, @NonNull final EUse eUse)
   {
     final MapBasedNamespaceContext aNSC = new MapBasedNamespaceContext ();
     aNSC.addMapping (PREFIX_WSDL, WSDL_NS);

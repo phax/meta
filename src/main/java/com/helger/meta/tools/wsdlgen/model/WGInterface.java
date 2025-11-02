@@ -16,6 +16,9 @@
  */
 package com.helger.meta.tools.wsdlgen.model;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.concurrent.NotThreadSafe;
 import com.helger.annotation.style.ReturnsMutableCopy;
@@ -30,9 +33,6 @@ import com.helger.meta.tools.wsdlgen.model.type.IWGType;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeDef;
 import com.helger.meta.tools.wsdlgen.model.type.WGTypeRegistry;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
-
 @NotThreadSafe
 public class WGInterface
 {
@@ -43,8 +43,8 @@ public class WGInterface
   private final ICommonsOrderedMap <String, WGTypeDef> m_aTypes = new CommonsLinkedHashMap <> ();
   private final ICommonsOrderedMap <String, WGMethod> m_aMethods = new CommonsLinkedHashMap <> ();
 
-  public WGInterface (@Nonnull @Nonempty final String sName,
-                      @Nonnull @Nonempty final String sNamespace,
+  public WGInterface (@NonNull @Nonempty final String sName,
+                      @NonNull @Nonempty final String sNamespace,
                       @Nullable final String sEndpoint)
   {
     ValueEnforcer.notEmpty (sName, "Name");
@@ -54,14 +54,14 @@ public class WGInterface
     m_sEndpoint = sEndpoint;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getName ()
   {
     return m_sName;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getNamespace ()
   {
@@ -95,8 +95,8 @@ public class WGInterface
     return m_sDoc;
   }
 
-  @Nonnull
-  public final EChange addType (@Nonnull final WGTypeDef aType)
+  @NonNull
+  public final EChange addType (@NonNull final WGTypeDef aType)
   {
     ValueEnforcer.notNull (aType, "Type");
 
@@ -122,15 +122,15 @@ public class WGInterface
     return m_aTypes.isNotEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsOrderedMap <String, WGTypeDef> getAllTypes ()
   {
     return m_aTypes.getClone ();
   }
 
-  @Nonnull
-  public final EChange addMethod (@Nonnull final WGMethod aMethod)
+  @NonNull
+  public final EChange addMethod (@NonNull final WGMethod aMethod)
   {
     ValueEnforcer.notNull (aMethod, "Method");
 
@@ -152,7 +152,7 @@ public class WGInterface
     return m_aMethods.isNotEmpty ();
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public ICommonsList <WGMethod> getAllMethods ()
   {

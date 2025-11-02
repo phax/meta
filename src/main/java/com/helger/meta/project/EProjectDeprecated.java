@@ -19,11 +19,11 @@ package com.helger.meta.project;
 import java.io.File;
 import java.lang.reflect.Field;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.version.Version;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Defines all the deprecated projects.
@@ -342,18 +342,18 @@ public enum EProjectDeprecated implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
-                      @Nonnull @Nonempty final String sProjectName,
-                      @Nonnull final EProjectType eProjectType)
+  EProjectDeprecated (@NonNull final EProjectDeprecated eParentProject,
+                      @NonNull @Nonempty final String sProjectName,
+                      @NonNull final EProjectType eProjectType)
   {
     // Project name equals project base directory name
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  EProjectDeprecated (@Nonnull final EProjectDeprecated eParentProject,
-                      @Nonnull @Nonempty final String sProjectName,
-                      @Nonnull @Nonempty final String sProjectBaseDirName,
-                      @Nonnull final EProjectType eProjectType)
+  EProjectDeprecated (@NonNull final EProjectDeprecated eParentProject,
+                      @NonNull @Nonempty final String sProjectName,
+                      @NonNull @Nonempty final String sProjectBaseDirName,
+                      @NonNull final EProjectType eProjectType)
   {
     this (eParentProject,
           EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -367,10 +367,10 @@ public enum EProjectDeprecated implements IProject
   }
 
   EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
-                      @Nonnull @Nonempty final String sProjectName,
-                      @Nonnull final EProjectType eProjectType,
-                      @Nonnull final EHasPages eHasPagesProject,
-                      @Nonnull final EHasWiki eHasWikiProject,
+                      @NonNull @Nonempty final String sProjectName,
+                      @NonNull final EProjectType eProjectType,
+                      @NonNull final EHasPages eHasPagesProject,
+                      @NonNull final EHasWiki eHasWikiProject,
                       @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
@@ -386,14 +386,14 @@ public enum EProjectDeprecated implements IProject
   }
 
   EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
-                      @Nonnull final EProjectOwner eProjectOwner,
-                      @Nonnull @Nonempty final String sProjectName,
-                      @Nonnull @Nonempty final String sProjectBaseDirName,
-                      @Nonnull final EProjectType eProjectType,
-                      @Nonnull final EHasPages eHasPagesProject,
-                      @Nonnull final EHasWiki eHasWikiProject,
+                      @NonNull final EProjectOwner eProjectOwner,
+                      @NonNull @Nonempty final String sProjectName,
+                      @NonNull @Nonempty final String sProjectBaseDirName,
+                      @NonNull final EProjectType eProjectType,
+                      @NonNull final EHasPages eHasPagesProject,
+                      @NonNull final EHasWiki eHasWikiProject,
                       @Nullable final String sLastPublishedVersion,
-                      @Nonnull final EJDK eMinJDK)
+                      @NonNull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
@@ -426,7 +426,7 @@ public enum EProjectDeprecated implements IProject
     return true;
   }
 
-  @Nonnull
+  @NonNull
   public EHostingPlatform getHostingPlatform ()
   {
     return m_aProject.getHostingPlatform ();
@@ -438,52 +438,52 @@ public enum EProjectDeprecated implements IProject
     return m_aProject.getParentProject ();
   }
 
-  @Nonnull
+  @NonNull
   public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getProjectName ()
   {
     return m_aProject.getProjectName ();
   }
 
-  @Nonnull
+  @NonNull
   public EProjectType getProjectType ()
   {
     return m_aProject.getProjectType ();
   }
 
-  @Nonnull
+  @NonNull
   public File getBaseDir ()
   {
     return m_aProject.getBaseDir ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getFullBaseDirName ()
   {
     return m_aProject.getFullBaseDirName ();
   }
 
-  @Nonnull
+  @NonNull
   public EJDK getMinimumJDKVersion ()
   {
     return m_aProject.getMinimumJDKVersion ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenGroupID ()
   {
     return m_aProject.getMavenGroupID ();
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getMavenArtifactID ()
   {
@@ -516,7 +516,7 @@ public enum EProjectDeprecated implements IProject
     return m_aProject.getLastPublishedVersion ();
   }
 
-  public int compareTo (@Nonnull final IProject aProject)
+  public int compareTo (@NonNull final IProject aProject)
   {
     return m_aProject.compareTo (aProject);
   }

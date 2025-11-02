@@ -22,6 +22,7 @@ import java.util.Map;
 
 import javax.xml.XMLConstants;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,8 +43,6 @@ import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xml.serialize.write.XMLWriterSettings;
 
-import jakarta.annotation.Nonnull;
-
 /**
  * Create an XSD file with only the types from an existing {@link WGInterface} object. This is used
  * within the WSDL generation.
@@ -63,33 +62,33 @@ public class XSDWriter
   private boolean m_bCreateDocumentation = true;
   private boolean m_bDocumentLiteral = false;
 
-  public XSDWriter (@Nonnull final WGInterface aInterface)
+  public XSDWriter (@NonNull final WGInterface aInterface)
   {
     m_aInterface = ValueEnforcer.notNull (aInterface, "Interface");
   }
 
-  @Nonnull
+  @NonNull
   public XSDWriter setCreateDocumentation (final boolean bCreateDocumentation)
   {
     m_bCreateDocumentation = bCreateDocumentation;
     return this;
   }
 
-  @Nonnull
+  @NonNull
   public XSDWriter setDocumentLiteral (final boolean bDocumentLiteral)
   {
     m_bDocumentLiteral = bDocumentLiteral;
     return this;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
-  private static String _getTypeRef (@Nonnull final MapBasedNamespaceContext aNSC, @Nonnull final IWGType aType)
+  private static String _getTypeRef (@NonNull final MapBasedNamespaceContext aNSC, @NonNull final IWGType aType)
   {
     return aNSC.getPrefix (aType.getNamespace ()) + ":" + aType.getName ();
   }
 
-  private void _appendXSDDocumentation (@Nonnull final IMicroElement eParent, @Nonnull final String sDocumentation)
+  private void _appendXSDDocumentation (@NonNull final IMicroElement eParent, @NonNull final String sDocumentation)
   {
     if (m_bCreateDocumentation)
     {
@@ -99,10 +98,10 @@ public class XSDWriter
     }
   }
 
-  private void _appendXSDAttribute (@Nonnull final MapBasedNamespaceContext aNSC,
-                                    @Nonnull final IMicroElement eParent,
-                                    @Nonnull final String sChildName,
-                                    @Nonnull final WGTypeDef aChildTypeDef)
+  private void _appendXSDAttribute (@NonNull final MapBasedNamespaceContext aNSC,
+                                    @NonNull final IMicroElement eParent,
+                                    @NonNull final String sChildName,
+                                    @NonNull final WGTypeDef aChildTypeDef)
   {
     final IMicroElement eAttribute = eParent.addElementNS (XSD_NS, "attribute");
     eAttribute.setAttribute ("name", sChildName);
@@ -115,11 +114,11 @@ public class XSDWriter
       _appendXSDDocumentation (eAttribute, aChildTypeDef.getDocumentation ());
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
-  public static String getElementName (@Nonnull final String sMethodName,
-                                       @Nonnull final String sPartName,
-                                       @Nonnull final EElementType eType)
+  public static String getElementName (@NonNull final String sMethodName,
+                                       @NonNull final String sPartName,
+                                       @NonNull final EElementType eType)
   {
     String sRealPartName = sPartName;
     if (!Character.isUpperCase (sRealPartName.charAt (0)))
@@ -129,8 +128,8 @@ public class XSDWriter
     return sMethodName + sRealPartName + eType.getID ();
   }
 
-  private void _appendDocumentLiteralElements (@Nonnull final MapBasedNamespaceContext aNSC,
-                                               @Nonnull final IMicroElement eSchema)
+  private void _appendDocumentLiteralElements (@NonNull final MapBasedNamespaceContext aNSC,
+                                               @NonNull final IMicroElement eSchema)
   {
     /*
      * Note: when using document/literal the 3 strings created for the "name" attributes must match
@@ -166,8 +165,8 @@ public class XSDWriter
     }
   }
 
-  @Nonnull
-  public IMicroElement getXSDSchemaElement (@Nonnull final MapBasedNamespaceContext aNSC)
+  @NonNull
+  public IMicroElement getXSDSchemaElement (@NonNull final MapBasedNamespaceContext aNSC)
   {
     aNSC.addMapping (PREFIX_XSD, XSD_NS);
 
@@ -294,7 +293,7 @@ public class XSDWriter
     return eSchema;
   }
 
-  public void generatedXSD (@Nonnull final OutputStream aOS)
+  public void generatedXSD (@NonNull final OutputStream aOS)
   {
     final MapBasedNamespaceContext aNSC = new MapBasedNamespaceContext ();
     aNSC.addMapping (PREFIX_TNS, m_aInterface.getNamespace ());

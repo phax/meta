@@ -18,12 +18,12 @@ package com.helger.meta.project;
 
 import java.io.File;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.string.StringHelper;
 import com.helger.base.version.Version;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public interface IProject
 {
@@ -36,7 +36,7 @@ public interface IProject
    */
   boolean isBuildInProject ();
 
-  @Nonnull
+  @NonNull
   EHostingPlatform getHostingPlatform ();
 
   @Nullable
@@ -54,23 +54,23 @@ public interface IProject
   /**
    * @return The project owner. E.g. <code>phax</code>
    */
-  @Nonnull
+  @NonNull
   EProjectOwner getProjectOwner ();
 
   /**
    * @return The project name. E.g. <code>ph-commons</code>
    */
-  @Nonnull
+  @NonNull
   @Nonempty
   String getProjectName ();
 
   /**
    * @return The project type.
    */
-  @Nonnull
+  @NonNull
   EProjectType getProjectType ();
 
-  @Nonnull
+  @NonNull
   File getBaseDir ();
 
   /**
@@ -78,20 +78,20 @@ public interface IProject
    *         <code>ph-oton/ph-oton-basic</code>. If a project has no parent project, the result is
    *         the same as from <code>getBaseDir ().getName ()</code>.
    */
-  @Nonnull
+  @NonNull
   @Nonempty
   String getFullBaseDirName ();
 
-  @Nonnull
+  @NonNull
   default File getPOMFile ()
   {
     return new File (getBaseDir (), "pom.xml");
   }
 
-  @Nonnull
+  @NonNull
   EJDK getMinimumJDKVersion ();
 
-  @Nonnull
+  @NonNull
   @Nonempty
   String getMavenGroupID ();
 
@@ -100,7 +100,7 @@ public interface IProject
     return getMavenGroupID ().equals (sGroupID);
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   String getMavenArtifactID ();
 
@@ -109,7 +109,7 @@ public interface IProject
     return getMavenArtifactID ().equals (sGroupID);
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   default String getMavenID ()
   {
@@ -132,7 +132,7 @@ public interface IProject
    */
   boolean hasPagesProject ();
 
-  @Nonnull
+  @NonNull
   @Nonempty
   default String getPagesProjectName ()
   {
@@ -144,7 +144,7 @@ public interface IProject
    */
   boolean hasWikiProject ();
 
-  @Nonnull
+  @NonNull
   @Nonempty
   default String getWikiProjectName ()
   {
@@ -173,5 +173,5 @@ public interface IProject
     return false;
   }
 
-  int compareTo (@Nonnull IProject aProject);
+  int compareTo (@NonNull IProject aProject);
 }

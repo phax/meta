@@ -16,11 +16,11 @@
  */
 package com.helger.meta.tools.wsdlgen.model.type;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.string.StringHelper;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 public enum EComplexTypeType
 {
@@ -29,19 +29,19 @@ public enum EComplexTypeType
 
   private final String m_sTagName;
 
-  EComplexTypeType (@Nonnull @Nonempty final String sTagName)
+  EComplexTypeType (@NonNull @Nonempty final String sTagName)
   {
     m_sTagName = sTagName;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getTagName ()
   {
     return m_sTagName;
   }
 
-  @Nonnull
+  @NonNull
   public static EComplexTypeType getFromTagNameOrThrow (@Nullable final String sTagName)
   {
     if (StringHelper.isNotEmpty (sTagName))
