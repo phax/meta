@@ -136,7 +136,11 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (aProject, ".classpath");
       _checkFileExisting (aProject, ".project");
     }
-    _checkFileExisting (aProject, "pom.xml");
+    if (_checkFileExisting (aProject, "pom.xml").isSuccess ())
+    {
+      _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
+    }
+
     if (!aProject.isNestedProject ())
     {
       _checkFileExisting (aProject, "README.md");

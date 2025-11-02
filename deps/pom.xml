@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251028</version>
+  <version>1.0.0-20251102</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.36.3</version>
+      <version>2.37.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -348,33 +348,33 @@
     <dependency>
       <groupId>com.fasterxml.jackson</groupId>
       <artifactId>jackson-bom</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-afterburner</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-cbor</artifactId>
-      <version>2.20.0</version>
+      <version>2.20.1</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -571,9 +571,9 @@
       <version>0.1.55</version>
     </dependency>
     <dependency>
-      <groupId>com.google.code.findbugs</groupId>
-      <artifactId>jsr305</artifactId>
-      <version>3.0.2</version>
+      <groupId>org.jspecify</groupId>
+      <artifactId>jspecify</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>edu.ucla.cs.compilers</groupId>
@@ -588,27 +588,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>6.0.0</version>
+      <version>6.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -1234,6 +1234,11 @@
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-config-json</artifactId>
+      <version>12.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.commons</groupId>
+      <artifactId>ph-csv</artifactId>
       <version>12.0.4</version>
     </dependency>
     <dependency>
@@ -2176,78 +2181,78 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>12.0.5</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2638,38 +2643,38 @@
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui-parent-pom</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui-types</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-api</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-validation</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-as4</artifactId>
-      <version>0.9.1</version>
+      <version>0.9.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2701,50 +2706,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>8.0.3</version>
+      <version>8.0.4</version>
       <type>war</type>
     </dependency>
     <dependency>

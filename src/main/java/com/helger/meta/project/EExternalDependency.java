@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.36.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.37.3", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -131,7 +131,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.2.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.20.0", EJDK.JDK8),
+  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.20.1", EJDK.JDK8),
   JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON_BOM),
   JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_BOM),
   JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_BOM),
@@ -205,11 +205,12 @@ public enum EExternalDependency
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
-  JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
+  JSPECIFY ("org.jspecify", "jspecify", "1.0.0", EJDK.JDK11),
+  // JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.0.0", EJDK.JDK17),
+  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.0.1", EJDK.JDK17),
   JUNIT6_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT6),
   JUNIT6_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT6),
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
