@@ -72,25 +72,17 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   @Nonempty
   private static String [] _getDesiredPackagings (@NonNull final IProject eProject)
   {
-    switch (eProject.getProjectType ())
+    return switch (eProject.getProjectType ())
     {
-      case JAVA_LIBRARY:
-        return new String [] { "bundle", "jar" };
-      case JAVA_APPLICATION:
-        return new String [] { "jar" };
-      case JAVA_WEB_APPLICATION:
-        return new String [] { "war" };
-      case MAVEN_PLUGIN:
-        return new String [] { "maven-plugin" };
-      case MAVEN_POM:
-        return new String [] { "pom" };
-      case OTHER_PLUGIN:
-        return new String [] { "jar" };
-      case RESOURCES_ONLY:
-        return new String [] { "jar" };
-      default:
-        throw new IllegalArgumentException ("Unsupported project type in " + eProject);
-    }
+      case JAVA_LIBRARY -> new String [] { "bundle", "jar" };
+      case JAVA_APPLICATION -> new String [] { "jar" };
+      case JAVA_WEB_APPLICATION -> new String [] { "war" };
+      case MAVEN_PLUGIN -> new String [] { "maven-plugin" };
+      case MAVEN_POM -> new String [] { "pom" };
+      case OTHER_PLUGIN -> new String [] { "jar" };
+      case RESOURCES_ONLY -> new String [] { "jar" };
+      default -> throw new IllegalArgumentException ("Unsupported project type in " + eProject);
+    };
   }
 
   private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
@@ -310,7 +302,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               if (eProjectOwner.equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
-                if (aProject != EProject.PHASE4_PEPPOL_STANDALONE)
+                if (aProject != EProject.PHASE4_PEPPOL_STANDALONE && aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
                   _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }
           }
