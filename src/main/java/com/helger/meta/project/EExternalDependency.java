@@ -112,6 +112,9 @@ public enum EExternalDependency
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.10", EJDK.JDK8),
+
+  GLASSFISH_JAKARTA_JSON ("org.glassfish", "jakarta.json", "2.0.1", EJDK.JDK17),
+
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.2.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),

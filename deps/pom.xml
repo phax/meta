@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251113</version>
+  <version>1.0.0-20251114</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -294,6 +294,11 @@
       <groupId>de.thetaphi</groupId>
       <artifactId>forbiddenapis</artifactId>
       <version>3.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish</groupId>
+      <artifactId>jakarta.json</artifactId>
+      <version>2.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.gmavenplus</groupId>
@@ -2212,78 +2217,78 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>12.1.1</version>
+      <version>12.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2689,38 +2694,38 @@
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui-parent-pom</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui-types</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-api</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-validation</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-as4</artifactId>
-      <version>0.9.5</version>
+      <version>0.9.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
