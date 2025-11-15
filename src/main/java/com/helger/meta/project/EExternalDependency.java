@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.38.4", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.38.7", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -120,7 +120,7 @@ public enum EExternalDependency
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
   GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20250820", EJDK.JDK21),
 
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.0", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.1", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.4.240", EJDK.JDK8),
 
@@ -228,7 +228,7 @@ public enum EExternalDependency
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
   JUNIT6_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", JUNIT6),
 
-  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "4.1.0", EJDK.JDK8),
+  KAFKA_CLIENT ("org.apache.kafka", "kafka-clients", "4.1.1", EJDK.JDK8),
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
@@ -268,11 +268,11 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.6", EJDK.JDK8),
+  PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.7", EJDK.JDK8),
 
   PICOCLI ("info.picocli", "picocli", "4.7.7", EJDK.JDK8),
 
-  POI ("org.apache.poi", "poi", "5.4.1", EJDK.JDK8),
+  POI ("org.apache.poi", "poi", "5.5.0", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
@@ -298,7 +298,12 @@ public enum EExternalDependency
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.9.8", EJDK.JDK8),
 
   @IsBOM
-  SPRING6_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "6.2.12", EJDK.JDK11),
+  @VersionMaxExcl ("7.0.0")
+  SPRING6_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "6.2.12", EJDK.JDK11),
+
+  // JakartaEE 11
+  @IsBOM
+  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.0", EJDK.JDK17),
 
   @IsBOM
   SPRING_BOOT3_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "3.5.7", EJDK.JDK11),
@@ -346,14 +351,14 @@ public enum EExternalDependency
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.2.8", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-idea-plugin", "2.2.1", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.4", EJDK.JDK8),
-  PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.4.2", EJDK.JDK8),
+  PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.12.0", EJDK.JDK8),
   PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.28.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.9.0", EJDK.JDK8),
-  PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.0.0", EJDK.JDK8),
+  PARENT_POM_24 ("org.apache.maven.plugins", "maven-rar-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_25 ("org.apache.maven.plugins", "maven-release-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-resources-plugin", "3.3.1", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.1", EJDK.JDK8),
