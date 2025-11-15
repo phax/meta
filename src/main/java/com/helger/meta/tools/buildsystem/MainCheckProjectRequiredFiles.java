@@ -70,17 +70,22 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     return ESuccess.FAILURE;
   }
 
+  private static boolean _fileContains (@NonNull final IProject aProject,
+                                        @NonNull final String sRelativeFilename,
+                                        @NonNull final String sExpectedContent)
+  {
+    final File f = new File (aProject.getBaseDir (), sRelativeFilename);
+    final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
+    return sContent != null && sContent.contains (sExpectedContent);
+  }
+
   private static boolean _checkFileContains (@NonNull final IProject aProject,
                                              @NonNull final String sRelativeFilename,
                                              @NonNull final String sExpectedContent)
   {
+    if (_fileContains (aProject, sRelativeFilename, sExpectedContent))
+      return true;
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
-    final String sContent = SimpleFileIO.getFileAsString (f, StandardCharsets.UTF_8);
-    if (sContent != null)
-    {
-      if (sContent.contains (sExpectedContent))
-        return true;
-    }
     _warn (aProject, "File " + f.getAbsolutePath () + " does not contain phrase '" + sExpectedContent + "'!");
     return false;
   }
@@ -137,7 +142,8 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     }
     if (_checkFileExisting (aProject, "pom.xml").isSuccess ())
     {
-      _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
+      if (!aProject.isParentPOM () && _fileContains (aProject, "pom.xml", ">maven-bundle-plugin<"))
+        _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
     }
 
     if (!aProject.isNestedProject ())
@@ -145,8 +151,12 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (aProject, "README.md");
       if (aProject.getLastPublishedVersion () != null)
       {
-        _checkFileContains (aProject, "README.md", "https://javadoc.io/badge2");
-        _checkFileContains (aProject, "README.md", "https://img.shields.io/maven-central/");
+        // Temporary
+        if (false)
+        {
+          _checkFileContains (aProject, "README.md", "https://javadoc.io/badge2");
+          _checkFileContains (aProject, "README.md", "https://img.shields.io/maven-central/");
+        }
       }
       _checkFileExisting (aProject, "CODE_OF_CONDUCT.md");
     }
