@@ -48,7 +48,7 @@
         <ignoreVersion>1.11.1-PUBLISHED-BY-MISTAKE</ignoreVersion>
       </ignoreVersions>
     </rule>
-    <rule groupId="com.helger.cii" artifactId="ph-cii-parent-pom" comparisonMethod="maven">
+    <rule groupId="com.helger.cii" artifactId="ph-cii-*" comparisonMethod="maven">
       <ignoreVersions>
         <!-- Published by accident -->
         <ignoreVersion>10.1.0</ignoreVersion>
