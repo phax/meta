@@ -39,7 +39,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
 {
   @NonNull
   @Nonempty
-  private static String getBatchLabel (@NonNull final String sPrefix, final int nIndex)
+  private static String _getBatchLabel (@NonNull final String sPrefix, final int nIndex)
   {
     return sPrefix + nIndex;
   }
@@ -69,7 +69,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
          .append ("\n")
          .append (sCommand);
       if (bWithErrorCheck)
-        aSB.append ("\nif errorlevel 1 goto ").append (getBatchLabel ("error", nIndex));
+        aSB.append ("\nif errorlevel 1 goto ").append (_getBatchLabel ("error", nIndex));
       aSB.append ("\ncd ..\n");
       ++nIndex;
     }
@@ -81,7 +81,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
       for (final IProject aProject : aProjects)
       {
         aSB.append (':')
-           .append (getBatchLabel ("error", nIndex))
+           .append (_getBatchLabel ("error", nIndex))
            .append ("\necho .\necho Error building ")
            .append (aProject.getProjectName ())
            .append (" [")

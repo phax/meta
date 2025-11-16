@@ -18,6 +18,7 @@ package com.helger.meta.tools.codingstyleguide;
 
 import java.io.File;
 import java.lang.reflect.Modifier;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 import org.jspecify.annotations.NonNull;
@@ -44,6 +45,7 @@ import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.io.file.FileSystemRecursiveIterator;
 import com.helger.io.file.FilenameHelper;
+import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
@@ -194,8 +196,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
 
     final String sClassName = aType.getClassName ();
     final String sPackageName = ClassHelper.getClassPackageName (sClassName);
-    return "com.helger.commons.collection.ext".equals (sPackageName) ||
-           "com.helger.commons.collection.impl".equals (sPackageName);
+    return "com.helger.collection.commons".equals (sPackageName);
   }
 
   private static void _checkMainMethods (@NonNull final IProject aProject, @NonNull final ClassNode cn)
@@ -243,6 +244,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             !mn.name.equals ("readResolve") &&
             !mn.name.equals ("writeObject") &&
             !mn.name.equals ("writeReplace") &&
+            !mn.name.equals ("$values") &&
             !mn.name.startsWith ("lambda$") &&
             !mn.name.endsWith ("$deserializeLambda$"))
           _warn (aProject, sPrefix + "Private methods should start with an underscore");
@@ -506,7 +508,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     return EContinue.CONTINUE;
   }
 
-  private static void _scanMainCode (@NonNull final IProject aProject)
+  private static void _scanMainCodeClassFiles (@NonNull final IProject aProject)
   {
     // Find all main class files
     final File aMainClasses = new File (aProject.getBaseDir (), "target/classes");
@@ -532,6 +534,31 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
         _checkMainVariables (aProject, cn);
         _checkMainMethods (aProject, cn);
       }
+  }
+
+  private static void _scanMainCodeSourceFiles (@NonNull final IProject aProject, @NonNull final String sRelDir)
+  {
+    // Find all main class files
+    final File aJavaDir = new File (aProject.getBaseDir (), "src/" + sRelDir + "/java");
+    if (aJavaDir.isDirectory ())
+      for (final File aJavaFile : new FileSystemRecursiveIterator (aJavaDir))
+        // Ignore this file explicitly :)
+        if (aJavaFile.isFile () &&
+            aJavaFile.getName ().endsWith (".java") &&
+            !aJavaFile.getName ().equals ("MainCheckCodingStyleguide.java"))
+        {
+          final String sContent = SimpleFileIO.getFileAsString (aJavaFile, StandardCharsets.UTF_8);
+
+          if (sContent.contains ("jakarta.annotation.Nonnull") || sContent.contains ("jakarta.annotation.Nullable"))
+            _warn (aProject, "File " + aJavaFile.getName () + " still uses Jakarta nullable annotations");
+        }
+  }
+
+  private static void _scanMainCode (@NonNull final IProject aProject)
+  {
+    _scanMainCodeClassFiles (aProject);
+    _scanMainCodeSourceFiles (aProject, "main");
+    _scanMainCodeSourceFiles (aProject, "test");
   }
 
   private static void _checkTestClass (@NonNull final IProject aProject,
@@ -655,6 +682,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
   {
     LOGGER.info ("Start checking coding style guide in .class files!");
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
+                                                                    p != EProject.PGCC &&
                                                                     p != EProject.PH_JAVACC_MAVEN_PLUGIN &&
                                                                     !p.isDeprecated ()))
       _scanProject (aProject);

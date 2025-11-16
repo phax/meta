@@ -41,7 +41,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
 {
   @NonNull
   @Nonempty
-  private static String getBatchLabel (@NonNull final String sPrefix, final int nIndex)
+  private static String _getBatchLabel (@NonNull final String sPrefix, final int nIndex)
   {
     return sPrefix + nIndex;
   }
