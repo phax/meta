@@ -547,10 +547,18 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
             aJavaFile.getName ().endsWith (".java") &&
             !aJavaFile.getName ().equals ("MainCheckCodingStyleguide.java"))
         {
+          final String sFilename = "[" + StringHelper.trimEnd (aJavaFile.getName (), ".java") + "]";
           final String sContent = SimpleFileIO.getFileAsString (aJavaFile, StandardCharsets.UTF_8);
 
           if (sContent.contains ("jakarta.annotation.Nonnull") || sContent.contains ("jakarta.annotation.Nullable"))
-            _warn (aProject, "File " + aJavaFile.getName () + " still uses Jakarta nullable annotations");
+            _warn (aProject, "File " + sFilename + " still uses Jakarta nullable annotations");
+
+          if (sContent.contains ("@Nullable ") && !sContent.contains ("import org.jspecify.annotations.Nullable;"))
+            _warn (aProject, "File " + sFilename + " contains the wrong Nullable annotation");
+          if (sContent.contains ("@NonNull ") && !sContent.contains ("import org.jspecify.annotations.NonNull;"))
+            _warn (aProject, "File " + sFilename + " contains the wrong NonNull annotation");
+          if (sContent.contains ("@Nonnull "))
+            _warn (aProject, "File " + sFilename + " contains the wrong NonNull annotation");
         }
   }
 

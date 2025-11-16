@@ -401,7 +401,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)
       {
-        if (!aProject.isNestedProject () && aProject != EProject.PHASE4_PEPPOL_STANDALONE)
+        if (!aProject.isNestedProject () &&
+            aProject != EProject.PHASE4_PEPPOL_STANDALONE &&
+            aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
         {
           // Nested projects might not use it
           _warn (aProject, "scm element is missing");
