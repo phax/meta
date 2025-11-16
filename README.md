@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-11-15):
+Current list of all released projects (as of 2025-11-16):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.0.0 - JDK 17
 
@@ -161,7 +161,7 @@ Current list of all released projects (as of 2025-11-15):
  * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 0.8.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
- * [ph-asic](https://github.com/phax/ph-asic) - Version 4.0.0 - JDK 17
+ * [ph-asic](https://github.com/phax/ph-asic) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-asic)](https://img.shields.io/maven-central/v/com.helger/ph-asic) 
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 5.0.0 - JDK 17
@@ -332,58 +332,58 @@ Current list of all released projects (as of 2025-11-15):
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface)](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface) 
- * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 3.0.0 - JDK 17
+ * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-fatturapa)](https://img.shields.io/maven-central/v/com.helger/ph-fatturapa) 
- * [ph-fonts](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-parent-pom)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-parent-pom) 
- * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-alegreya-sans](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-alegreya-sans)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-alegreya-sans) 
- * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-anaheim](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-anaheim)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-anaheim) 
- * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-api](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-api)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-api) 
- * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-exo2](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-exo2)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-exo2) 
- * [ph-fonts/ph-fonts-kurinto-mono](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-kurinto-mono](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-kurinto-mono)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-kurinto-mono) 
- * [ph-fonts/ph-fonts-kurinto-sans](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-kurinto-sans](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-kurinto-sans)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-kurinto-sans) 
- * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-lato2](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-lato2)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-lato2) 
- * [ph-fonts/ph-fonts-markazi](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-markazi](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-markazi)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-markazi) 
- * [ph-fonts/ph-fonts-noto-sans-hk](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-noto-sans-hk](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-hk)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-hk) 
- * [ph-fonts/ph-fonts-noto-sans-sc](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-noto-sans-sc](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-sc)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-sc) 
- * [ph-fonts/ph-fonts-noto-sans-tc](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-noto-sans-tc](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-tc)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-noto-sans-tc) 
- * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-open-sans](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-open-sans)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-open-sans) 
- * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-roboto](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-roboto)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-roboto) 
- * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-source-sans-pro](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-source-sans-pro)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-source-sans-pro) 
- * [ph-fonts/ph-fonts-source-sans3](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-source-sans3](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-source-sans3)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-source-sans3) 
- * [ph-fonts/ph-fonts-test](https://github.com/phax/ph-fonts) - Version 6.0.0 - JDK 17
+ * [ph-fonts/ph-fonts-test](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-test)](https://img.shields.io/maven-central/v/com.helger.font/ph-fonts-test) 
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
@@ -398,7 +398,7 @@ Current list of all released projects (as of 2025-11-15):
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin) 
- * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.0 - JDK 17
+ * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin)](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin) 
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.0 - JDK 17
@@ -524,13 +524,13 @@ Current list of all released projects (as of 2025-11-15):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.0.0 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.0.0 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
- * [ph-poi](https://github.com/phax/ph-poi) - Version 7.0.0 - JDK 17
+ * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-poi)](https://img.shields.io/maven-central/v/com.helger/ph-poi) 
  * [ph-regrep](https://github.com/phax/ph-regrep) - Version 4.0.0 - JDK 17
@@ -668,46 +668,46 @@ Current list of all released projects (as of 2025-11-15):
  * [ph-xhe](https://github.com/phax/ph-xhe) - Version 5.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-xhe)](https://img.shields.io/maven-central/v/com.helger/ph-xhe) 
- * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 6.0.0 - JDK 17
+ * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-xmldsig)](https://img.shields.io/maven-central/v/com.helger/ph-xmldsig) 
- * [ph-xsds](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-parent-pom)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-parent-pom) 
- * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp1)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp1) 
- * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp2)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp2) 
- * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-ccts-cct-schemamodule)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-ccts-cct-schemamodule) 
- * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-wsaddr)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-wsaddr) 
- * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades132)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades132) 
- * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades141)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades141) 
- * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xlink)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xlink) 
- * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xml)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xml) 
- * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig) 
- * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig11) 
- * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc) 
- * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.0.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11) 
  * [phase2](https://github.com/phax/phase2) - Version 6.0.0 - JDK 17
