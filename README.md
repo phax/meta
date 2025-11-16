@@ -11,7 +11,7 @@ Current list of all released projects (as of 2025-11-16):
  * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping)](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping) 
- * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.0 - JDK 17
+ * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
  * [ddd](https://github.com/phax/ddd) - Version 0.7.2 - JDK 17
@@ -38,12 +38,15 @@ Current list of all released projects (as of 2025-11-16):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client)](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client) 
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.0.0 - JDK 17
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom) 
- * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.0.0 - JDK 17
+ * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/jcodemodel)](https://img.shields.io/maven-central/v/com.helger/jcodemodel) 
+ * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support-parent-pom) 
@@ -164,22 +167,22 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-asic](https://github.com/phax/ph-asic) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-asic)](https://img.shields.io/maven-central/v/com.helger/ph-asic) 
- * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 5.0.0 - JDK 17
+ * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-buildinfo-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-buildinfo-maven-plugin) 
- * [ph-cii](https://github.com/phax/ph-cii) - Version 4.0.0 - JDK 17
+ * [ph-cii](https://github.com/phax/ph-cii) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-parent-pom)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-parent-pom) 
- * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 4.0.0 - JDK 17
+ * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16a-1)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16a-1) 
- * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 4.0.0 - JDK 17
+ * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16b)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16b) 
- * [ph-cii/ph-cii-d22b](https://github.com/phax/ph-cii) - Version 4.0.0 - JDK 17
+ * [ph-cii/ph-cii-d22b](https://github.com/phax/ph-cii) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d22b)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d22b) 
- * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.0.0 - JDK 17
+ * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles) 
  * [ph-commons](https://github.com/phax/ph-commons) - Version 12.1.0 - JDK 17
@@ -293,25 +296,25 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin) 
- * [ph-datetime](https://github.com/phax/ph-datetime) - Version 8.0.0 - JDK 17
+ * [ph-datetime](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-datetime-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-datetime-parent-pom) 
- * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.0.0 - JDK 17
+ * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-holiday)](https://img.shields.io/maven-central/v/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 8.0.1 - JDK 17
+ * [ph-db](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.0.1 - JDK 17
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.0.1 - JDK 17
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.0.1 - JDK 17
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa) 
- * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.0 - JDK 17
+ * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin) 
  * [ph-diver](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
@@ -329,7 +332,7 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3) 
- * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.0.0 - JDK 17
+ * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface)](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface) 
  * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 3.1.0 - JDK 17
@@ -389,37 +392,37 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-forbidden-apis](https://github.com/phax/ph-forbidden-apis) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-forbidden-apis)](https://img.shields.io/maven-central/v/com.helger/ph-forbidden-apis) 
- * [ph-genericode](https://github.com/phax/ph-genericode) - Version 8.0.0 - JDK 17
+ * [ph-genericode](https://github.com/phax/ph-genericode) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-genericode)](https://img.shields.io/maven-central/v/com.helger/ph-genericode) 
  * [ph-isorelax](https://github.com/phax/ph-isorelax) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-isorelax)](https://img.shields.io/maven-central/v/com.helger/ph-isorelax) 
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.0 - JDK 17
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin) 
  * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin)](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin) 
- * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.0 - JDK 17
+ * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.0.2 - JDK 17
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.0.2 - JDK 17
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.0.2 - JDK 17
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy) 
- * [ph-math](https://github.com/phax/ph-math) - Version 6.0.0 - JDK 17
+ * [ph-math](https://github.com/phax/ph-math) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-math-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-math-parent-pom) 
- * [ph-math/ph-math](https://github.com/phax/ph-math) - Version 6.0.0 - JDK 17
+ * [ph-math/ph-math](https://github.com/phax/ph-math) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-math)](https://img.shields.io/maven-central/v/com.helger/ph-math) 
- * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.5 - JDK 17
+ * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
  * [ph-oton](https://github.com/phax/ph-oton) - Version 10.0.2 - JDK 17
@@ -533,19 +536,19 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-poi)](https://img.shields.io/maven-central/v/com.helger/ph-poi) 
- * [ph-regrep](https://github.com/phax/ph-regrep) - Version 4.0.0 - JDK 17
+ * [ph-regrep](https://github.com/phax/ph-regrep) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-regrep)](https://img.shields.io/maven-central/v/com.helger/ph-regrep) 
- * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 6.0.0 - JDK 17
+ * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-sbdh)](https://img.shields.io/maven-central/v/com.helger/ph-sbdh) 
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.0.1 - JDK 17
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom) 
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.0.1 - JDK 17
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz) 
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.0.1 - JDK 17
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule) 
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 9.0.1 - JDK 17
@@ -575,97 +578,97 @@ Current list of all released projects (as of 2025-11-16):
  * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 9.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt) 
- * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-parent-pom)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-parent-pom) 
- * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl-api](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-api)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-api) 
- * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl-dian](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-dian)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-dian) 
- * [ph-ubl/ph-ubl-eforms](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl-eforms](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-eforms)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-eforms) 
- * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl-testfiles](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-testfiles)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl-testfiles) 
- * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl20](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl20)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl20) 
- * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl20-codelists](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl20-codelists)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl20-codelists) 
- * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl21](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl21)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl21) 
- * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl21-codelists](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl21-codelists)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl21-codelists) 
- * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl22](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl22)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl22) 
- * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl22-codelists](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl22-codelists)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl22-codelists) 
- * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl23](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl23)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl23) 
- * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl23-codelists](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl23-codelists)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl23-codelists) 
- * [ph-ubl/ph-ubl24](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl24](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl24)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl24) 
- * [ph-ubl/ph-ubl24-codelists](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubl24-codelists](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl24-codelists)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubl24-codelists) 
- * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ublpe](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ublpe)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ublpe) 
- * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 10.0.0 - JDK 17
+ * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubltr)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubltr) 
- * [ph-web](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-web-parent-pom)](https://img.shields.io/maven-central/v/com.helger.web/ph-web-parent-pom) 
- * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-dns)](https://img.shields.io/maven-central/v/com.helger.web/ph-dns) 
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-httpclient)](https://img.shields.io/maven-central/v/com.helger.web/ph-httpclient) 
- * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-jsch)](https://img.shields.io/maven-central/v/com.helger.web/ph-jsch) 
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-mail)](https://img.shields.io/maven-central/v/com.helger.web/ph-mail) 
- * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-network)](https://img.shields.io/maven-central/v/com.helger.web/ph-network) 
- * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-servlet)](https://img.shields.io/maven-central/v/com.helger.web/ph-servlet) 
- * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-sitemap)](https://img.shields.io/maven-central/v/com.helger.web/ph-sitemap) 
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-smtp)](https://img.shields.io/maven-central/v/com.helger.web/ph-smtp) 
- * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-useragent)](https://img.shields.io/maven-central/v/com.helger.web/ph-useragent) 
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-web)](https://img.shields.io/maven-central/v/com.helger.web/ph-web) 
- * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 11.1.2 - JDK 17
+ * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 11.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-xservlet)](https://img.shields.io/maven-central/v/com.helger.web/ph-xservlet) 
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 5.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-wsimport-plugin)](https://img.shields.io/maven-central/v/com.helger/ph-wsimport-plugin) 
- * [ph-xhe](https://github.com/phax/ph-xhe) - Version 5.0.0 - JDK 17
+ * [ph-xhe](https://github.com/phax/ph-xhe) - Version 5.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-xhe)](https://img.shields.io/maven-central/v/com.helger/ph-xhe) 
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 6.1.0 - JDK 17
