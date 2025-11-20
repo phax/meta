@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251118</version>
+  <version>1.0.0-20251120</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -831,6 +831,11 @@
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt</artifactId>
       <version>1.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>name.dmaus.schxslt</groupId>
+      <artifactId>schxslt2</artifactId>
+      <version>1.6</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
