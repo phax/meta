@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251126</version>
+  <version>1.0.0-20251204</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -2565,23 +2565,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-parent-pom</artifactId>
-      <version>0.8.4</version>
+      <version>0.9.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-testfiles</artifactId>
-      <version>0.8.4</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd-datatypes</artifactId>
-      <version>0.8.4</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd</artifactId>
-      <version>0.8.4</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
