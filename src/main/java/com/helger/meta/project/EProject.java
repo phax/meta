@@ -816,7 +816,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "0.9.7",
+                               "0.9.8",
                                EJDK.JDK17),
   PEPPOL_UI_TYPES (PEPPOL_SHARED_UI_PARENT_POM, "peppol-ui-types", EProjectType.JAVA_LIBRARY),
   PEPPOL_UI (PEPPOL_SHARED_UI_PARENT_POM, "peppol-ui", EProjectType.JAVA_LIBRARY),
