@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.40.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.40.4", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -90,20 +90,20 @@ public enum EExternalDependency
   ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.8", EJDK.JDK11),
   ECLIPSELINK4_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK4_CORE),
 
-  ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.43.0", EJDK.JDK11),
+  ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.44.0", EJDK.JDK11),
 
-  ECLIPSE_CORE_CONTENTTYPE2 ("org.eclipse.platform", "org.eclipse.core.contenttype", "3.9.700", EJDK.JDK11),
+  ECLIPSE_CORE_CONTENTTYPE2 ("org.eclipse.platform", "org.eclipse.core.contenttype", "3.9.800", EJDK.JDK11),
   ECLIPSE_CORE_JOBS2 ("org.eclipse.platform", "org.eclipse.core.jobs", "3.15.700", EJDK.JDK11),
-  ECLIPSE_CORE_RESOURCES2 ("org.eclipse.platform", "org.eclipse.core.resources", "3.23.0", EJDK.JDK11),
-  ECLIPSE_CORE_RUNTIME2 ("org.eclipse.platform", "org.eclipse.core.runtime", "3.34.0", EJDK.JDK11),
-  ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.20.200", EJDK.JDK11),
+  ECLIPSE_CORE_RESOURCES2 ("org.eclipse.platform", "org.eclipse.core.resources", "3.23.100", EJDK.JDK11),
+  ECLIPSE_CORE_RUNTIME2 ("org.eclipse.platform", "org.eclipse.core.runtime", "3.34.100", EJDK.JDK11),
+  ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.20.300", EJDK.JDK11),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.11", EJDK.JDK8),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.21.0", EJDK.JDK8),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.18.0", EJDK.JDK17),
+  FLYWAY11 ("org.flywaydb", "flyway-core", "11.19.0", EJDK.JDK17),
   FLYWAY11_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY11),
   FLYWAY11_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY11),
   FLYWAY11_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY11),
@@ -254,7 +254,7 @@ public enum EExternalDependency
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.2", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.5.0", EJDK.JDK8),
