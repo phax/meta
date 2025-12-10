@@ -551,31 +551,34 @@ Current list of all released projects (as of 2025-12-10):
  * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule) 
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-parent-pom)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-parent-pom) 
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-ant-task)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-ant-task) 
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-api)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-api) 
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure) 
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt) 
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-schxslt2](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt2)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt2) 
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-testfiles)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-testfiles) 
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-validator)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-validator) 
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 9.1.0 - JDK 17
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 9.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.1.0 - JDK 17
@@ -809,7 +812,7 @@ Current list of all released projects (as of 2025-12-10):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom) 
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
@@ -902,19 +905,19 @@ Current list of all released projects (as of 2025-12-10):
  * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive/phive-api](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-api)](https://img.shields.io/maven-central/v/com.helger.phive/phive-api) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive/phive-result](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 11.1.0 - JDK 17
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.14.9 - JDK 17
@@ -932,31 +935,31 @@ Current list of all released projects (as of 2025-12-10):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.14.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.0.7 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.0.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
 

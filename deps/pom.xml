@@ -1924,48 +1924,53 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-schxslt2</artifactId>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>9.1.0</version>
+      <version>9.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
@@ -2203,33 +2208,33 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-model</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-engine</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result</artifactId>
-      <version>11.1.0</version>
+      <version>11.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2779,50 +2784,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>8.0.7</version>
+      <version>8.0.9</version>
       <type>war</type>
     </dependency>
     <dependency>
