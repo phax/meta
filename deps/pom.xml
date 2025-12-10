@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251209</version>
+  <version>1.0.0-20251210</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -1794,23 +1794,23 @@
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>

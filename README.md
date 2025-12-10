@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2025-12-09):
+Current list of all released projects (as of 2025-12-10):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.0 - JDK 17
 
@@ -302,16 +302,16 @@ Current list of all released projects (as of 2025-12-09):
  * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-holiday)](https://img.shields.io/maven-central/v/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
+ * [ph-db](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.1.0 - JDK 17
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
