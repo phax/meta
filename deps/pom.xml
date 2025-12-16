@@ -1208,7 +1208,7 @@
     <!--Internal projects:-->    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>3.0.2</version>
+      <version>3.0.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
