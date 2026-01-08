@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.40.16", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.4", EJDK.JDK8),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
@@ -79,7 +79,7 @@ public enum EExternalDependency
   COMMONS_LANG3 ("org.apache.commons", "commons-lang3", "3.20.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.12.0", EJDK.JDK8),
-  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.0", EJDK.JDK8),
+  COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.6.3", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
@@ -87,7 +87,7 @@ public enum EExternalDependency
   EASYMOCK ("org.easymock", "easymock", "5.6.0", EJDK.JDK8),
 
   ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.9.0", EJDK.JDK11),
-  ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.8", EJDK.JDK11),
+  ECLIPSELINK4_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.9", EJDK.JDK11),
   ECLIPSELINK4_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK4_CORE),
 
   ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.44.0", EJDK.JDK11),
@@ -118,7 +118,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.2.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20251216", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260106", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.2", EJDK.JDK8),
 
@@ -222,7 +222,7 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.0.1", EJDK.JDK17),
+  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.0.2", EJDK.JDK17),
   JUNIT6_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT6),
   JUNIT6_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT6),
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
@@ -284,7 +284,7 @@ public enum EExternalDependency
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
-  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.7.1", EJDK.JDK8),
+  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.7.2", EJDK.JDK8),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
@@ -356,7 +356,7 @@ public enum EExternalDependency
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.12.0", EJDK.JDK8),
-  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.1.2", EJDK.JDK8),
+  PARENT_POM_20 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_21 ("org.apache.maven.plugins", "maven-jxr-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_22 ("org.apache.maven.plugins", "maven-pmd-plugin", "3.28.0", EJDK.JDK8),
   PARENT_POM_23 ("org.apache.maven.plugins", "maven-project-info-reports-plugin", "3.9.0", EJDK.JDK8),
@@ -375,7 +375,7 @@ public enum EExternalDependency
   PARENT_POM_37 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.2", EJDK.JDK8),
   PARENT_POM_38 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.1", EJDK.JDK8),
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
-  PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.9.0", EJDK.JDK8),
+  PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.14", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.12", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),

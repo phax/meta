@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20251230</version>
+  <version>1.0.0-20260108</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.40.16</version>
+      <version>2.41.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -168,7 +168,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.1</version>
     </dependency>
     <dependency>
       <groupId>dnsjava</groupId>
@@ -198,12 +198,12 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.core</artifactId>
-      <version>4.0.8</version>
+      <version>4.0.9</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.jpa</artifactId>
-      <version>4.0.8</version>
+      <version>4.0.9</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
@@ -313,7 +313,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20251216</version>
+      <version>v20260106</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -624,27 +624,27 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
-      <version>6.0.1</version>
+      <version>6.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
@@ -835,7 +835,7 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt2</artifactId>
-      <version>1.7.1</version>
+      <version>1.7.2</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1083,7 +1083,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jdeps-plugin</artifactId>
-      <version>3.1.2</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1178,7 +1178,7 @@
     <dependency>
       <groupId>org.sonatype.central</groupId>
       <artifactId>central-publishing-maven-plugin</artifactId>
-      <version>0.9.0</version>
+      <version>0.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.jacoco</groupId>
@@ -2239,78 +2239,78 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>12.3.4</version>
+      <version>12.3.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2538,18 +2538,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
