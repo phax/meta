@@ -4,7 +4,7 @@
 
 Basic user info:
 
-```
+```shell
 git config --global user.email "philip@helger.com"
 git config --global user.name "Philip Helger"
 ```
@@ -12,26 +12,26 @@ git config --global user.name "Philip Helger"
 Store credentials when using commandline git.
 Windows:
 
-```
+```shell
 git config --global credential.helper wincred
 ```
 
 Linux:
 
-```
+```shell
 git config --global credential.helper cache
 ```
 
 Newline settings for Windows users:
 
-```
+```shell
 git config --global core.autocrlf true
 # git config --global core.eol lf
 ```
 
 Proxy settings:
 
-```
+```shell
 set HTTP_PROXY=http://proxy.mycompany.org:80
 git config --global http.proxy %HTTP_PROXY%
 ```
@@ -40,7 +40,7 @@ Note: git does not differentiate between `http` and `https`
 
 Exclude certain hosts from using the proxy:
 
-```
+```shell
 set NO_PROXY=.company.com,localhost,127.0.0.1,::1
 ```
 
@@ -48,26 +48,26 @@ Note: change `.company.com` to your domain(s) and keep the leading dot!
 
 Disable TLS verification for all repos:
 
-```
+```shell
 git config --global http.sslVerify false
 ```
 
 Enable prune behaviour for every fetch
 
-```
+```shell
 git config --global fetch.prune true
 ```
 
 Define a custom git alias to prune all gone local branches (for Linux) (source https://stackoverflow.com/a/48649889/15254):
 
-```
+```shell
 git config --global alias.prune-branches '!git remote prune origin && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs -r git branch -d'
 ```
 
 ## Select a Diff Tool
 
 Select diff tool on Mac:
-```
+```shell
 brew install kdiff3
 git config --global merge.tool kdiff3
 git config --global diff.tool kdiff3
@@ -79,7 +79,7 @@ Set the `<scm><tag>` element to e.g. `origin/1.2` where *1.2* is the name of the
 
 ## How to remove a file from the index in git?
 
-```
+```shell
 git rm --cached [file]
 ```
 
@@ -87,7 +87,7 @@ If you omit the --cached option, it will also delete it from the working tree. g
 
 Remove ALL Eclipse project files:
 
-```
+```shell
 git rm --cached -r .classpath .project .settings
 ```
 
@@ -95,7 +95,7 @@ git rm --cached -r .classpath .project .settings
 
 Globally ignore all certificate errors:
 
-```
+```shell
 git config --global http.sslVerify false
 ```
 
@@ -103,13 +103,13 @@ git config --global http.sslVerify false
 
 Delete local:
 
-```
+```shell
 git tag --delete tagname
 ```
 
 Delete remote:
 
-```
+```shell
 git push --delete origin tagname
 ```
 
@@ -117,12 +117,23 @@ git push --delete origin tagname
 
 Get rid of all non-existing remote branches:
 
-```
+```shell
 git fetch --prune
 ```
 
 Disable acknowledgement box in Eclipse (not 100% sure):
 
-```
+```shell
 git config push.default simple
+```
+
+## Rename branch `master` to `main`
+
+Update the local branch config:
+
+```shell
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
 ```
