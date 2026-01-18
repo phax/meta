@@ -81,7 +81,7 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.12.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.6.3", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.6.4", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.2.0", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.6.0", EJDK.JDK8),
