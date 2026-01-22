@@ -308,7 +308,7 @@ public enum EExternalDependency
   SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.3", EJDK.JDK17),
 
   @IsBOM
-  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.1", EJDK.JDK11),
+  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.2", EJDK.JDK11),
   SPRING_BOOT4_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
