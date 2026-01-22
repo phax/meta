@@ -54,5 +54,10 @@
         <ignoreVersion>10.1.0</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="com.ibm.db2" artifactId="jcc" comparisonMethod="maven">
+      <ignoreVersions>
+        <ignoreVersion>12.1.3.0_special_74723</ignoreVersion>
+      </ignoreVersions>
+    </rule>
   </rules>  
 </ruleset>
