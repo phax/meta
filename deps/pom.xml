@@ -66,6 +66,11 @@
       <version>2.41.12</version>
     </dependency>
     <dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>s3-transfer-manager</artifactId>
+      <version>2.41.12</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>batik-bridge</artifactId>
       <version>1.19</version>
@@ -2757,29 +2762,29 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.15.1</version>
+      <version>0.15.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.15.1</version>
+      <version>0.15.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.15.1</version>
+      <version>0.15.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.15.1</version>
+      <version>0.15.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.15.1</version>
+      <version>0.15.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
