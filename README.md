@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-01-23):
+Current list of all released projects (as of 2026-01-25):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.0 - JDK 17
 
@@ -164,6 +164,18 @@ Current list of all released projects (as of 2026-01-23):
  * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
+ * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.1.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom) 
+ * [peppol-vida/peppol-vida-tdd](https://github.com/phax/peppol-vida) - Version 0.1.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd) 
+ * [peppol-vida/peppol-vida-tdd-datatypes](https://github.com/phax/peppol-vida) - Version 0.1.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes) 
+ * [peppol-vida/peppol-vida-testfiles](https://github.com/phax/peppol-vida) - Version 0.1.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-asic)](https://img.shields.io/maven-central/v/com.helger/ph-asic) 

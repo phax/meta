@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260123</version>
+  <version>1.0.0-20260125</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -2592,6 +2592,27 @@
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd</artifactId>
       <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-vida-parent-pom</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-vida-testfiles</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-vida-tdd-datatypes</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol</groupId>
+      <artifactId>peppol-vida-tdd</artifactId>
+      <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
