@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2025 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2026 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -668,7 +668,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "4.1.5",
+                          "4.1.7",
                           EJDK.JDK17),
   PHIVE_RULES_API (PHIVE_RULES_PARENT_POM, "phive-rules-api", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_CII (PHIVE_RULES_PARENT_POM, "phive-rules-cii", EProjectType.JAVA_LIBRARY),
@@ -749,7 +749,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         "0.9.1",
+                         "0.9.2",
                          EJDK.JDK17),
   PEPPOL_UAE_TESTFILES (PEPPOL_UAE_PARENT_POM, "peppol-uae-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_UAE_TDD_DATATYPES (PEPPOL_UAE_PARENT_POM, "peppol-uae-tdd-datatypes", EProjectType.JAVA_LIBRARY),

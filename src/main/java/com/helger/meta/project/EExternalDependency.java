@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2025 Philip Helger (www.helger.com)
+ * Copyright (C) 2014-2026 Philip Helger (www.helger.com)
  * philip[at]helger[dot]com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.15", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.17", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -104,11 +104,11 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.24.0", EJDK.JDK8),
 
-  FLYWAY11 ("org.flywaydb", "flyway-core", "11.20.3", EJDK.JDK17),
-  FLYWAY11_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY11),
-  FLYWAY11_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY11),
-  FLYWAY11_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY11),
-  FLYWAY11_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY11),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.0.0", EJDK.JDK17),
+  FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
+  FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
+  FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
+  FLYWAY_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -119,7 +119,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260125", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260127", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.4", EJDK.JDK8),
 
@@ -258,7 +258,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.2", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.5.0", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "9.6.0", EJDK.JDK8),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.0.0.0", EJDK.JDK8),
@@ -269,7 +269,7 @@ public enum EExternalDependency
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
-  PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.7", EJDK.JDK8),
+  PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.8", EJDK.JDK8),
 
   PICOCLI ("info.picocli", "picocli", "4.7.7", EJDK.JDK8),
 
