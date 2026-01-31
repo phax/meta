@@ -33,7 +33,8 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Create a set of batch files that contains content that in most cases is relevant to all projects.
+ * Create a set of Mac/Linux shell scripts that contains content that in most cases is relevant to
+ * all projects.
  *
  * @author Philip Helger
  */
@@ -110,6 +111,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         "git commit -m \"Normalize all the line endings\"",
                         "git_normalize_crlf.sh");
     _createShellScript ("git fetch --prune", "git_fetch_prune.sh");
+    _createShellScript ("git diff --quiet", "git_status.sh");
     System.out.println ("Shell scripts created in " + CMeta.GIT_BASE_DIR);
   }
 }
