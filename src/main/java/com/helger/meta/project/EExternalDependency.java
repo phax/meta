@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.17", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.20", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -71,7 +71,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.11.0", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.20.0", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.21.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
@@ -119,9 +119,9 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260127", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260128", EJDK.JDK21),
 
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.4", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.5", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.4.240", EJDK.JDK8),
 
@@ -192,7 +192,7 @@ public enum EExternalDependency
 
   // Jersey 4 for JakartaEE 11 only
   @IsBOM
-  JERSEY4_BOM ("org.glassfish.jersey", "jersey-bom", "4.0.1", EJDK.JDK17),
+  JERSEY4_BOM ("org.glassfish.jersey", "jersey-bom", "4.0.2", EJDK.JDK17),
   JERSEY4_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY4_BOM),
   JERSEY4_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY4_BOM),
   JERSEY4_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY4_BOM),
@@ -200,7 +200,7 @@ public enum EExternalDependency
   JERSEY4_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY4_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.5", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.6", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
   JETTY12_WEBAPP ("org.eclipse.jetty.ee10", "jetty-ee10-webapp", JETTY12_BOM),
   JETTY12_SERVLET ("org.eclipse.jetty.ee10", "jetty-ee10-servlet", JETTY12_BOM),
@@ -253,7 +253,7 @@ public enum EExternalDependency
 
   @IsLegacy
   M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
-  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.4", EJDK.JDK11),
+  METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.5", EJDK.JDK11),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.2", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
@@ -345,7 +345,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.5.0", EJDK.JDK8),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.14.1", EJDK.JDK8),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.15.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.9.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
