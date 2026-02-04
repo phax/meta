@@ -135,12 +135,20 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.3.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.0", EJDK.JDK8),
-  JACKSON_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON_BOM),
-  JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON_BOM),
-  JACKSON_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON_BOM),
-  JACKSON_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON_BOM),
-  JACKSON_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON_BOM),
+  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.0", EJDK.JDK8),
+  JACKSON2_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON2_BOM),
+  JACKSON2_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON2_BOM),
+  JACKSON2_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON2_BOM),
+  JACKSON2_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON2_BOM),
+  JACKSON2_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON2_BOM),
+
+  @IsBOM
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.0.4", EJDK.JDK17),
+  JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
+  JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
+  JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
+  JACKSON3_MODULE_AFTERBURNER ("tools.jackson.module", "jackson-module-afterburner", JACKSON3_BOM),
+  JACKSON3_DATAFORMAT_CBOR ("tools.jackson.dataformat", "jackson-dataformat-cbor", JACKSON3_BOM),
 
   @VersionMaxExcl ("3.0.0")
   JAKARTA_ANNOTATION_API_2("jakarta.annotation", "jakarta.annotation-api", "2.1.1", EJDK.JDK11),
