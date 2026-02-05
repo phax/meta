@@ -17,3 +17,6 @@
 
 #/bin/sh
 mvn versions:display-dependency-updates $@
+
+## When copying the file somewhere, call like this:
+# mvn versions:display-dependency-updates -Dmaven.version.rules=file:versions-maven-plugin-rules.xml
