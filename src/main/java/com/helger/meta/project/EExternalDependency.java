@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.41.33", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.1", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -120,7 +120,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260218", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260223", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.33.5", EJDK.JDK8),
 
@@ -136,7 +136,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.3.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.0", EJDK.JDK8),
+  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.1", EJDK.JDK8),
   JACKSON2_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON2_BOM),
   JACKSON2_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON2_BOM),
   JACKSON2_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON2_BOM),
@@ -144,7 +144,7 @@ public enum EExternalDependency
   JACKSON2_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON2_BOM),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.0.4", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.0", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -180,7 +180,7 @@ public enum EExternalDependency
   JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.6", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
 
-  JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.2", EJDK.JDK11),
+  JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.3", EJDK.JDK11),
 
   @IsBOM
   JAXWS4_RI_BOM ("com.sun.xml.ws", "jaxws-ri-bom", "4.0.3", EJDK.JDK11),
@@ -263,11 +263,9 @@ public enum EExternalDependency
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
 
-  @IsLegacy
-  M2E ("org.eclipse.m2e", "lifecycle-mapping", "1.0.0", EJDK.JDK8),
   METRO4 ("org.glassfish.metro", "webservices-rt", "4.0.5", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.3", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.4", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.2.1.jre11", EJDK.JDK11),
@@ -333,7 +331,6 @@ public enum EExternalDependency
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
   THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.8.0", EJDK.JDK8),
-  TYPESAFE_CONFIG ("com.typesafe", "config", "1.4.5", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
@@ -381,9 +378,9 @@ public enum EExternalDependency
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.1", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-site-plugin", "3.21.0", EJDK.JDK8),
   PARENT_POM_29 ("org.apache.maven.plugins", "maven-source-plugin", "3.4.0", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.4", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.4", EJDK.JDK8),
-  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.4", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.5", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.5", EJDK.JDK8),
+  PARENT_POM_32 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.5", EJDK.JDK8),
   PARENT_POM_33 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_34 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "findbugs-maven-plugin", "3.0.5", EJDK.JDK8),
