@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-02-20):
+Current list of all released projects (as of 2026-02-25):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.0 - JDK 17
 
@@ -14,7 +14,7 @@ Current list of all released projects (as of 2026-02-20):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
- * [ddd](https://github.com/phax/ddd) - Version 0.8.1 - JDK 17
+ * [ddd](https://github.com/phax/ddd) - Version 0.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 3.1.3 - JDK 17
@@ -314,16 +314,16 @@ Current list of all released projects (as of 2026-02-20):
  * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-holiday)](https://img.shields.io/maven-central/v/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
+ * [ph-db](https://github.com/phax/ph-db) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.1.1 - JDK 17
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
@@ -437,103 +437,109 @@ Current list of all released projects (as of 2026-02-20):
  * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
- * [ph-oton](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom) 
- * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-parent-pom) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-demo](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-demo)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-demo) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-pages](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-pages)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-pages) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-stub](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-stub)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-stub) 
- * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap3/ph-oton-bootstrap3-uictrls](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap3-uictrls) 
- * [ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-parent-pom) 
- * [ph-oton-bootstrap4/ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4) 
- * [ph-oton-bootstrap4/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-demo](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-demo)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-demo) 
- * [ph-oton-bootstrap4/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-pages](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-pages)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-pages) 
- * [ph-oton-bootstrap4/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-stub](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-stub)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-stub) 
- * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.1 - JDK 17
+ * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls) 
- * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax) 
- * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-api)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-api) 
- * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-app)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-app) 
- * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-atom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-atom) 
- * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-audit)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-audit) 
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-connect)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-connect) 
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-core)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-core) 
- * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-datatables)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-datatables) 
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-exchange)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-exchange) 
- * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-html)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-html) 
- * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-icon)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-icon) 
- * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-io)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-io) 
- * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jdbc)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jdbc) 
- * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jetty)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jetty) 
- * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jquery)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jquery) 
- * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jscode)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jscode) 
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-markdown](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-markdown)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-markdown) 
+ * [ph-oton/ph-oton-mgrs](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-mgrs)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-mgrs) 
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-security)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-security) 
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-tinymce4)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-tinymce4) 
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uicore)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uicore) 
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.1.2 - JDK 17
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls) 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.3 - JDK 17
@@ -824,112 +830,118 @@ Current list of all released projects (as of 2026-02-20):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom) 
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-binary)](https://img.shields.io/maven-central/v/com.helger.phive/phive-binary) 
- * [phive-rules](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-parent-pom) 
- * [phive-rules/phive-rules-api](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-api](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-api)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-api) 
- * [phive-rules/phive-rules-cii](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-cii](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii) 
- * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-pt)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-pt) 
- * [phive-rules/phive-rules-cius-ro](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-cius-ro](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-ro)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-ro) 
- * [phive-rules/phive-rules-ebinterface](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-ebinterface](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ebinterface)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ebinterface) 
- * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ehf)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ehf) 
- * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-en16931)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-en16931) 
- * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-energieefactuur)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-energieefactuur) 
- * [phive-rules/phive-rules-eracun](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-eracun](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-eracun)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-eracun) 
- * [phive-rules/phive-rules-facturae](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-facturae](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-facturae)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-facturae) 
- * [phive-rules/phive-rules-fatturapa](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-fatturapa](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-fatturapa)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-fatturapa) 
- * [phive-rules/phive-rules-finvoice](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-finvoice](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-finvoice)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-finvoice) 
- * [phive-rules/phive-rules-france](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-france](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-france)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-france) 
- * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-isdoc)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-isdoc) 
- * [phive-rules/phive-rules-ksef](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-ksef](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ksef)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ksef) 
- * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl) 
- * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol) 
- * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy) 
- * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy) 
- * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu) 
- * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-simplerinvoicing)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-simplerinvoicing) 
- * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-svefaktura)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-svefaktura) 
- * [phive-rules/phive-rules-teapps](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-teapps](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-teapps)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-teapps) 
- * [phive-rules/phive-rules-ubl](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-ubl](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl) 
- * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ublbe)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ublbe) 
- * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-xrechnung)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-xrechnung) 
- * [phive-rules/phive-rules-zatca](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-zatca](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zatca)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zatca) 
- * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.1.8 - JDK 17
+ * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive/phive-api](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-api)](https://img.shields.io/maven-central/v/com.helger.phive/phive-api) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive/phive-result](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html) 
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 11.1.1 - JDK 17
+ * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo) 
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.15.3 - JDK 17
@@ -947,31 +959,31 @@ Current list of all released projects (as of 2026-02-20):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.15.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.0.15 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.0.16 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
 

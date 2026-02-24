@@ -109,6 +109,7 @@ public enum EExternalDependency
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
   FLYWAY_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY),
+  FLYWAY_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -223,7 +224,10 @@ public enum EExternalDependency
 
   @IsLegacy
   JDK ("JDK", "runtime", "1.8", EJDK.JDK8),
+
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.27.8", EJDK.JDK11),
+
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
   JSPECIFY ("org.jspecify", "jspecify", "1.0.0", EJDK.JDK11),
@@ -265,6 +269,8 @@ public enum EExternalDependency
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.3", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
+
+  MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.2.1.jre11", EJDK.JDK11),
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.6.0", EJDK.JDK8),
 

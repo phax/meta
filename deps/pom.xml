@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260220</version>
+  <version>1.0.0-20260225</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -283,6 +283,11 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
+      <version>12.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-sqlserver</artifactId>
       <version>12.0.2</version>
     </dependency>
     <dependency>
@@ -643,6 +648,11 @@
       <version>0.1.55</version>
     </dependency>
     <dependency>
+      <groupId>com.github.mwiede</groupId>
+      <artifactId>jsch</artifactId>
+      <version>2.27.8</version>
+    </dependency>
+    <dependency>
       <groupId>org.jspecify</groupId>
       <artifactId>jspecify</artifactId>
       <version>1.0.0</version>
@@ -781,6 +791,11 @@
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
       <version>5.6.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>mssql-jdbc</artifactId>
+      <version>13.2.1.jre11</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
@@ -1830,23 +1845,23 @@
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>8.1.1</version>
+      <version>8.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>8.1.1</version>
+      <version>8.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>8.1.1</version>
+      <version>8.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>8.1.1</version>
+      <version>8.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2011,172 +2026,182 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.photon</groupId>
+      <artifactId>ph-oton-markdown</artifactId>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-io</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.photon</groupId>
+      <artifactId>ph-oton-mgrs</artifactId>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jdbc</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>10.1.2</version>
+      <version>10.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-parent-pom</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-demo</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-pages</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-stub</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap3-uictrls</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-parent-pom</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-demo</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-pages</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-uictrls</artifactId>
-      <version>10.1.1</version>
+      <version>10.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
@@ -2244,33 +2269,43 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-model</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive</groupId>
+      <artifactId>phive-ves-repo</artifactId>
+      <version>12.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-engine</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result</artifactId>
-      <version>11.1.1</version>
+      <version>12.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive</groupId>
+      <artifactId>phive-result-html</artifactId>
+      <version>12.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2418,148 +2453,148 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-api</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-ro</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ebinterface</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-eracun</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-facturae</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-fatturapa</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-finvoice</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-france</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ksef</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-italy</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-legacy</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-setu</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-teapps</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ubl</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zatca</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zugferd</artifactId>
-      <version>4.1.8</version>
+      <version>4.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
@@ -2569,7 +2604,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.8.1</version>
+      <version>0.8.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2841,50 +2876,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>8.0.15</version>
+      <version>8.0.16</version>
       <type>war</type>
     </dependency>
     <dependency>
