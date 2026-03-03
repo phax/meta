@@ -96,7 +96,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     _createMvnShellScript ("clean", "mvn_clean.sh");
     _createMvnShellScript ("clean install", "mvn_clean_install.sh");
     _createMvnShellScript ("clean install -DskipTests=true", "mvn_clean_install_skip_tests.sh");
-    _createMvnShellScript ("clean install sonar:sonar", "mvn_clean_install_sonar.sh");
+    if (false)
+      _createMvnShellScript ("clean install sonar:sonar", "mvn_clean_install_sonar.sh");
     _createMvnShellScript ("clean install forbiddenapis:check forbiddenapis:testCheck",
                            "mvn_clean_install_forbiddenapis.sh");
     _createShellScript ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", "mvn_javadoc.sh");

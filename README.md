@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-03-02):
+Current list of all released projects (as of 2026-03-03):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -131,25 +131,25 @@ Current list of all released projects (as of 2026-03-02):
  * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles) 
- * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui-parent-pom) 
- * [peppol-shared-ui/peppol-shared-api](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-shared-api](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-api)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-api) 
- * [peppol-shared-ui/peppol-shared-as4](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-shared-as4](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-as4)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-as4) 
- * [peppol-shared-ui/peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui) 
- * [peppol-shared-ui/peppol-shared-validation](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-shared-validation](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-validation)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-validation) 
- * [peppol-shared-ui/peppol-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-ui](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui) 
- * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.9.12 - JDK 17
+ * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.9.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types) 
  * [peppol-uae](https://github.com/phax/peppol-uae) - Version 0.9.2 - JDK 17
@@ -437,7 +437,7 @@ Current list of all released projects (as of 2026-03-02):
  * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
- * [ph-oton](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom) 
  * [ph-oton-bootstrap3](https://github.com/phax/ph-oton-bootstrap3) - Version 10.1.2 - JDK 17
@@ -476,70 +476,70 @@ Current list of all released projects (as of 2026-03-02):
  * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls) 
- * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax) 
- * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-api](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-api)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-api) 
- * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-app](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-app)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-app) 
- * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-atom](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-atom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-atom) 
- * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-audit](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-audit)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-audit) 
- * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-connect](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-connect)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-connect) 
- * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-core](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-core)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-core) 
- * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-datatables](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-datatables)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-datatables) 
- * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-exchange](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-exchange)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-exchange) 
- * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-html](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-html)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-html) 
- * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-icon](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-icon)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-icon) 
- * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-io](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-io)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-io) 
- * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-jdbc](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jdbc)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jdbc) 
- * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-jetty](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jetty)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jetty) 
- * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-jquery](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jquery)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jquery) 
- * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-jscode](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jscode)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-jscode) 
- * [ph-oton/ph-oton-markdown](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-markdown](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-markdown)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-markdown) 
- * [ph-oton/ph-oton-mgrs](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-mgrs](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-mgrs)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-mgrs) 
- * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-security](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-security)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-security) 
- * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-tinymce4](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-tinymce4)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-tinymce4) 
- * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-uicore](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uicore)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uicore) 
- * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.2.1 - JDK 17
+ * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls) 
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.3 - JDK 17
