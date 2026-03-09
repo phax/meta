@@ -31,7 +31,7 @@ The following list gives a short overview of special programming techniques that
 * All projects include Eclipse project files (`.project`, `.classpath` and `.settings`)
 * All projects use Apache Maven 3.x for building (`pom.xml`)
 * Most projects contain a FindBugs configuration. Therefore the file `findbugs-exclude.xml` must be present in each projects root directory. 
-* All logging is done via SLF4J. The logger is more or less always declared as `private static final Logger s_aLogger`. In certain cases it might also be `protected`.
+* All logging is done via SLF4J. The logger is more or less always declared as `private static final Logger LOGGER`. In certain cases it might also be `protected`.
 * All projects (except for JDK extensions) use [ph-commons](https://github.com/phax/ph-commons) which is the most basic library and can be considered a JDK extension.
 * Synchronization (thread-safety) of code is achieved using `java.util.concurrent.locks.ReadWriteLock` which allows multiple readers but only a single writer to access a critical section at a time. For projects using JDK 8 (or higher) the respective class `com.helger.commons.concurrent.SimpleReadWriteLock` is used for better Lambda support.
 * Interface methods never contain the visibility specifier as it is implied (public).
