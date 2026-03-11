@@ -36,12 +36,12 @@ public class MainCheckGitHubActionVersions
 {
   private enum EAction
   {
-    CACHE ("actions/cache", 4),
-    CHECKOUT ("actions/checkout", 4),
-    SETUP_JAVA ("actions/setup-java", 4),
-    CODEQL_INIT ("github/codeql-action/init", 3),
-    CODEQL_AUTOBUILD ("github/codeql-action/autobuild", 3),
-    CODEQL_ANALYZE ("github/codeql-action/analyze", 3);
+    CACHE ("actions/cache", 5),
+    CHECKOUT ("actions/checkout", 6),
+    SETUP_JAVA ("actions/setup-java", 5),
+    CODEQL_INIT ("github/codeql-action/init", 4),
+    CODEQL_AUTOBUILD ("github/codeql-action/autobuild", 4),
+    CODEQL_ANALYZE ("github/codeql-action/analyze", 4);
 
     private final String m_sName;
     private final String m_sSearch;
