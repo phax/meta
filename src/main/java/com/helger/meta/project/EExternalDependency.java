@@ -100,6 +100,7 @@ public enum EExternalDependency
   ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.20.300", EJDK.JDK11),
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.11", EJDK.JDK8),
+  FAILSAFE ("dev.failsafe", "failsafe", "3.3.2", EJDK.JDK11),
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.24.0", EJDK.JDK8),
@@ -177,7 +178,7 @@ public enum EExternalDependency
 
   JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.5", EJDK.JDK11),
   @IsBOM
-  JAXB4_BOM ("com.sun.xml.bind", "jaxb-bom-ext", "4.0.7", EJDK.JDK11),
+  JAXB4_BOM ("org.glassfish.jaxb", "jaxb-bom-ext", "4.0.7", EJDK.JDK11),
   JAXB4_CODEMODEL ("com.sun.xml.bind", "jaxb-impl", JAXB4_BOM),
 
   JAXWS4_API ("jakarta.xml.ws", "jakarta.xml.ws-api", "4.0.3", EJDK.JDK11),
@@ -299,6 +300,9 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.9", EJDK.JDK8),
 
+  SENTRY ("io.sentry", "sentry", "8.35.0", EJDK.JDK11),
+  SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
+
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
   SLF4J_API ("org.slf4j", "slf4j-api", "2.0.17", EJDK.JDK8),
@@ -327,6 +331,8 @@ public enum EExternalDependency
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_DEVTOOLS ("org.springframework.boot", "spring-boot-devtools", SPRING_BOOT4_DEPENDENCIES),
+
+  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.17.1", EJDK.JDK11),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
