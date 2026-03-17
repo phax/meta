@@ -18,6 +18,7 @@ package com.helger.meta.tools.buildsystem;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
+import java.util.function.Function;
 
 import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
@@ -50,13 +51,23 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   }
 
   @NonNull
-  private static ESuccess _checkFileExisting (@NonNull final IProject aProject, @NonNull final String sRelativeFilename)
+  private static ESuccess _checkFileExisting (@NonNull final IProject aProject,
+                                              @NonNull final String sRelativeFilename,
+                                              @NonNull final Function <File, ESuccess> aFallback)
   {
     final File f = new File (aProject.getBaseDir (), sRelativeFilename);
     if (f.exists ())
       return ESuccess.SUCCESS;
-    _warn (aProject, "File " + f.getAbsolutePath () + " does not exist!");
-    return ESuccess.FAILURE;
+    return aFallback.apply (f);
+  }
+
+  @NonNull
+  private static ESuccess _checkFileExisting (@NonNull final IProject aProject, @NonNull final String sRelativeFilename)
+  {
+    return _checkFileExisting (aProject, sRelativeFilename, f -> {
+      _warn (aProject, "File " + f.getAbsolutePath () + " does not exist!");
+      return ESuccess.FAILURE;
+    });
   }
 
   @NonNull
@@ -140,9 +151,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       _checkFileExisting (aProject, ".classpath");
       _checkFileExisting (aProject, ".project");
     }
+
     if (_checkFileExisting (aProject, "pom.xml").isSuccess ())
     {
-      if (!aProject.isParentPOM () && _fileContains (aProject, "pom.xml", ">maven-bundle-plugin<"))
+      if (!aProject.isParentPOM () && _fileContains (aProject, "pom.xml", "<packaging>bundle</packaging>"))
         _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
     }
 
@@ -152,29 +164,38 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       if (aProject.getLastPublishedVersion () != null)
       {
         // Temporary
-        if (false)
-        {
-          _checkFileContains (aProject, "README.md", "https://javadoc.io/badge2");
-          _checkFileContains (aProject, "README.md", "https://img.shields.io/maven-central/");
-        }
+        _checkFileContains (aProject, "README.md", "https://maven-badges.sml.io/sonatype-central/");
+        _checkFileContains (aProject, "README.md", "https://javadoc.io/badge2/");
       }
       _checkFileExisting (aProject, "CODE_OF_CONDUCT.md");
     }
-    if (false)
-      _checkFileExisting (aProject, "findbugs-exclude.xml");
+
     _checkFileExisting (aProject, "src/etc/javadoc.css");
-    if (_checkFileExisting (aProject, "src/etc/license-template.txt").isSuccess ())
+
+    // If not present in project folder can exist in parent project instead
+    if (_checkFileExisting (aProject, "src/etc/license-template.txt", f -> {
+      if (!aProject.isNestedProject ())
+      {
+        _warn (aProject, "File " + f.getAbsolutePath () + " does not exist!");
+        return ESuccess.FAILURE;
+      }
+      return _checkFileExisting (aProject.getParentProject (), "src/etc/license-template.txt");
+    }).isSuccess ())
     {
       // Check for file contents
-      _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
+      if (_checkFileExisting (aProject, "src/etc/license-template.txt", f -> ESuccess.FAILURE).isSuccess ())
+        _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
     }
-    _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
 
     if (_isApache2Project (aProject))
     {
       _checkFileExisting (aProject, "src/main/resources/LICENSE");
       _checkFileExisting (aProject, "src/main/resources/NOTICE");
     }
+
+    // Non-existing files at the end
+    _checkFileNotExisting (aProject, "findbugs-exclude.xml");
+    _checkFileNotExisting (aProject, "pom.xml.versionsBackup");
   }
 
   private static void _validateProjectWithoutJavaCode (@NonNull final IProject aProject)
@@ -203,22 +224,33 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
       if (_isDirExisting (aProject, ".github"))
       {
         _checkFileNotExisting (aProject, ".github/stale.yml");
-        if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess () &&
-            aProject != EProject.PHASE4_PEPPOL_STANDALONE &&
-            aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
+        if (_checkFileExisting (aProject, ".github/workflows/maven.yml").isSuccess ())
         {
-          _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
-          _checkFileContains (aProject, ".github/workflows/maven.yml", " -P release-snapshot");
+          if (aProject.getLastPublishedVersion () != null)
+          {
+            _checkFileContains (aProject, ".github/workflows/maven.yml", "server-id: central");
+            _checkFileContains (aProject, ".github/workflows/maven.yml", " -P release-snapshot");
+          }
+
           if (aProject.getMinimumJDKVersion () == EJDK.JDK11)
           {
             _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 11, 17, 21, 25 ]");
-            _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 11");
+            if (aProject.getLastPublishedVersion () != null)
+              _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 11");
           }
           else
-          {
-            _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 17, 21, 25 ]");
-            _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 17");
-          }
+            if (aProject.getMinimumJDKVersion () == EJDK.JDK17)
+            {
+              _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 17, 21, 25 ]");
+              if (aProject.getLastPublishedVersion () != null)
+                _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 17");
+            }
+            else
+            {
+              _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 21, 25 ]");
+              if (aProject.getLastPublishedVersion () != null)
+                _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 21");
+            }
         }
       }
     }
@@ -226,6 +258,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
+    // Check all existing non-deprecated built-in projects
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated ()))
