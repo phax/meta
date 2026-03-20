@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-03-18):
+Current list of all released projects (as of 2026-03-20):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -767,79 +767,79 @@ Current list of all released projects (as of 2026-03-18):
  * [phase2/phase2-servlet](https://github.com/phax/phase2) - Version 6.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet) 
- * [phase4](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-parent-pom) 
- * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-bdew-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client) 
- * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client) 
- * [phase4/phase4-dbnalliance-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-dbnalliance-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-client) 
- * [phase4/phase4-dbnalliance-server-webapp](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-dbnalliance-server-webapp](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-server-webapp)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-server-webapp) 
- * [phase4/phase4-dbnalliance-servlet](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-dbnalliance-servlet](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-servlet)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dbnalliance-servlet) 
- * [phase4/phase4-dynamic-discovery](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-dynamic-discovery](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dynamic-discovery)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-dynamic-discovery) 
- * [phase4/phase4-entsog-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-entsog-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-entsog-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-entsog-client) 
- * [phase4/phase4-euctp-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-euctp-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-euctp-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-euctp-client) 
- * [phase4/phase4-eudamed-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-eudamed-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-eudamed-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-eudamed-client) 
- * [phase4/phase4-hredelivery-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-hredelivery-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-hredelivery-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-hredelivery-client) 
- * [phase4/phase4-hredelivery-servlet](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-hredelivery-servlet](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-hredelivery-servlet)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-hredelivery-servlet) 
- * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-lib](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-lib)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-lib) 
- * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-peppol-client](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-client) 
- * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-peppol-server-webapp](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-server-webapp)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-server-webapp) 
- * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-peppol-servlet](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-servlet)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-peppol-servlet) 
- * [phase4/phase4-profile-bdew](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-bdew](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-bdew)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-bdew) 
- * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-cef](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-cef)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-cef) 
- * [phase4/phase4-profile-dbnalliance](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-dbnalliance](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-dbnalliance)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-dbnalliance) 
- * [phase4/phase4-profile-entsog](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-entsog](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-entsog)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-entsog) 
- * [phase4/phase4-profile-euctp](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-euctp](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-euctp)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-euctp) 
- * [phase4/phase4-profile-hredelivery](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-hredelivery](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-hredelivery)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-hredelivery) 
- * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-peppol)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-peppol) 
- * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-server-webapp](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-server-webapp)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-server-webapp) 
- * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.3.2 - JDK 17
+ * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
  * [phive](https://github.com/phax/phive) - Version 12.0.1 - JDK 17
@@ -956,6 +956,39 @@ Current list of all released projects (as of 2026-03-18):
  * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
+ * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom) 
+ * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api) 
+ * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic) 
+ * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core) 
+ * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db) 
+ * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding) 
+ * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry) 
+ * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend) 
+ * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender) 
+ * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation) 
+ * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.1.1 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.15.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom) 
@@ -1012,28 +1045,6 @@ Current list of all unreleased projects:
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
  * [phive-central-tools](https://github.com/phax/phive-central-tools) - JDK 17
-
- * [phoss-ap](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - JDK 21
-
- * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - JDK 21
 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - JDK 17
 
