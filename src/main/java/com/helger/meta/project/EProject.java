@@ -987,7 +987,16 @@ public enum EProject implements IProject
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
                     null,
-                    EJDK.JDK17);
+                    EJDK.JDK17),
+  PHOSS_AP_PRO (null,
+                EProjectOwner.DEFAULT_PROJECT_OWNER,
+                "phoss-peppol-ap-pro",
+                "phoss-peppol-ap-pro",
+                EProjectType.JAVA_APPLICATION,
+                EHasPages.FALSE,
+                EHasWiki.FALSE,
+                null,
+                EJDK.JDK21);
 
   private final SimpleProject m_aProject;
 
