@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260320</version>
+  <version>1.0.0-20260324</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -2463,148 +2463,148 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-api</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-ro</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ebinterface</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-eracun</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-facturae</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-fatturapa</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-finvoice</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-france</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ksef</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-italy</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-legacy</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-setu</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-teapps</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ubl</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zatca</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zugferd</artifactId>
-      <version>4.2.3</version>
+      <version>4.2.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
@@ -2745,6 +2745,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
+      <artifactId>phase4-profile-edelivery2</artifactId>
+      <version>4.4.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-entsog</artifactId>
       <version>4.4.1</version>
     </dependency>
@@ -2808,6 +2813,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
+      <artifactId>phase4-edelivery2-client</artifactId>
+      <version>4.4.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-entsog-client</artifactId>
       <version>4.4.1</version>
     </dependency>
@@ -2850,38 +2860,38 @@
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui-parent-pom</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui-types</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-api</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-validation</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-as4</artifactId>
-      <version>0.9.13</version>
+      <version>0.9.14</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
