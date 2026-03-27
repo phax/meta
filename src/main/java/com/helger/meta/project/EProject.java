@@ -438,7 +438,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "8.1.0",
+                            "8.1.1",
                             EJDK.JDK17),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
   PH_TENANCY (PH_MASTERDATA_PARENT_POM, "ph-tenancy", EProjectType.JAVA_LIBRARY),
@@ -450,7 +450,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "11.2.4",
+                     "11.2.5",
                      EJDK.JDK17),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
@@ -603,6 +603,19 @@ public enum EProject implements IProject
   PHIVE_VES_ENGINE (PHIVE_PARENT_POM, "phive-ves-engine", EProjectType.JAVA_LIBRARY),
   PHIVE_RESULT (PHIVE_PARENT_POM, "phive-result", EProjectType.JAVA_LIBRARY),
   PHIVE_RESULT_HTML (PHIVE_PARENT_POM, "phive-result-html", EProjectType.JAVA_LIBRARY),
+
+  PH_SCUBA_PARENT_POM (null,
+                       EProjectOwner.DEFAULT_PROJECT_OWNER,
+                       "ph-scuba-parent-pom",
+                       "ph-scuba",
+                       EProjectType.MAVEN_POM,
+                       EHasPages.FALSE,
+                       EHasWiki.FALSE,
+                       "0.8.0",
+                       EJDK.JDK17),
+  PH_SCUBA_API (PH_SCUBA_PARENT_POM, "ph-scuba-api", EProjectType.JAVA_LIBRARY),
+  PH_SCUBA_CORE (PH_SCUBA_PARENT_POM, "ph-scuba-core", EProjectType.JAVA_LIBRARY),
+  PH_SCUBA_PHIVE (PH_SCUBA_PARENT_POM, "ph-scuba-phive", EProjectType.JAVA_LIBRARY),
 
   PEPPOL_COMMONS_PARENT_POM (null,
                              EProjectOwner.DEFAULT_PROJECT_OWNER,
@@ -988,15 +1001,16 @@ public enum EProject implements IProject
                     EHasWiki.FALSE,
                     null,
                     EJDK.JDK17),
-  PHOSS_AP_PRO (null,
-                EProjectOwner.DEFAULT_PROJECT_OWNER,
-                "phoss-peppol-ap-pro",
-                "phoss-peppol-ap-pro",
-                EProjectType.JAVA_APPLICATION,
-                EHasPages.FALSE,
-                EHasWiki.FALSE,
-                null,
-                EJDK.JDK21);
+  // PHOSS_AP_PRO (null,
+  // EProjectOwner.PROJECT_OWNER_HELGER_IT,
+  // "phoss-peppol-ap-pro",
+  // "phoss-peppol-ap-pro",
+  // EProjectType.JAVA_APPLICATION,
+  // EHasPages.FALSE,
+  // EHasWiki.FALSE,
+  // null,
+  // EJDK.JDK21)
+  ;
 
   private final SimpleProject m_aProject;
 
