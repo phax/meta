@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260328</version>
+  <version>1.0.0-20260401</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -63,12 +63,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.42.22</version>
+      <version>2.42.25</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.42.22</version>
+      <version>2.42.25</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -278,32 +278,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>12.2.0</version>
+      <version>12.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -338,7 +338,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260324</version>
+      <version>v20260330</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -409,33 +409,33 @@
     <dependency>
       <groupId>tools.jackson</groupId>
       <artifactId>jackson-bom</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.module</groupId>
       <artifactId>jackson-module-afterburner</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-cbor</artifactId>
-      <version>3.1.0</version>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -499,18 +499,18 @@
     </dependency>
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
-      <artifactId>jaxb-bom-ext</artifactId>
+      <artifactId>jaxb-bom</artifactId>
       <version>4.0.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
+      <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-core</artifactId>
       <version>4.0.7</version>
     </dependency>
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
       <version>4.0.7</version>
     </dependency>
     <dependency>
@@ -670,7 +670,7 @@
     <dependency>
       <groupId>com.github.mwiede</groupId>
       <artifactId>jsch</artifactId>
-      <version>2.27.9</version>
+      <version>2.28.0</version>
     </dependency>
     <dependency>
       <groupId>org.jspecify</groupId>
@@ -720,27 +720,27 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.25.3</version>
+      <version>2.25.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.25.3</version>
+      <version>2.25.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j2-impl</artifactId>
-      <version>2.25.3</version>
+      <version>2.25.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-to-slf4j</artifactId>
-      <version>2.25.3</version>
+      <version>2.25.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.25.3</version>
+      <version>2.25.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -1239,7 +1239,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.9.8.2</version>
+      <version>4.9.8.3</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -2231,39 +2231,39 @@
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-parent-pom</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-lib</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-partnership-mongodb</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-servlet</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-server</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-webapp</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-spring-boot</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -2335,23 +2335,23 @@
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-parent-pom</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-api</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-core</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-phive</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2432,53 +2432,53 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-parent-pom</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-testfiles</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-datatypes</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-api</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-csv</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-inmemory</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-mongodb</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-redis</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-sql</artifactId>
-      <version>4.1.1</version>
+      <version>4.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2655,7 +2655,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phorm</artifactId>
-      <version>2.0.0</version>
+      <version>2.0.1</version>
       <type>war</type>
     </dependency>
     <dependency>
@@ -2714,23 +2714,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-parent-pom</artifactId>
-      <version>0.2.0</version>
+      <version>0.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-testfiles</artifactId>
-      <version>0.2.0</version>
+      <version>0.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-tdd-datatypes</artifactId>
-      <version>0.2.0</version>
+      <version>0.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-tdd</artifactId>
-      <version>0.2.0</version>
+      <version>0.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -3023,58 +3023,63 @@
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-parent-pom</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-api</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-basic</artifactId>
-      <version>0.1.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phoss.ap</groupId>
-      <artifactId>phoss-ap-db</artifactId>
-      <version>0.1.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phoss.ap</groupId>
-      <artifactId>phoss-ap-forwarding</artifactId>
-      <version>0.1.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phoss.ap</groupId>
-      <artifactId>phoss-ap-sentry</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-core</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
-      <artifactId>phoss-ap-validation</artifactId>
-      <version>0.1.2</version>
+      <artifactId>phoss-ap-db</artifactId>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
-      <artifactId>phoss-ap-webapp</artifactId>
-      <version>0.1.2</version>
+      <artifactId>phoss-ap-dirsender</artifactId>
+      <version>0.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoss.ap</groupId>
+      <artifactId>phoss-ap-forwarding</artifactId>
+      <version>0.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoss.ap</groupId>
+      <artifactId>phoss-ap-sentry</artifactId>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-testbackend</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-testsender</artifactId>
-      <version>0.1.2</version>
+      <version>0.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoss.ap</groupId>
+      <artifactId>phoss-ap-validation</artifactId>
+      <version>0.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoss.ap</groupId>
+      <artifactId>phoss-ap-webapp</artifactId>
+      <version>0.2.0</version>
     </dependency>
   </dependencies>
   <build>
