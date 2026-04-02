@@ -742,7 +742,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.0.1",
+         "2.0.2",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,
@@ -950,7 +950,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.TRUE,
-                       "0.2.0",
+                       "0.2.1",
                        EJDK.JDK21),
   PHOSS_AP_API (PHOSS_AP_PARENT_POM, "phoss-ap-api", EProjectType.JAVA_LIBRARY),
   PHOSS_AP_BASIC (PHOSS_AP_PARENT_POM, "phoss-ap-basic", EProjectType.JAVA_LIBRARY),
