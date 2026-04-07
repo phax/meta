@@ -41,7 +41,8 @@ public class MainCheckGitHubActionVersions
     SETUP_JAVA ("actions/setup-java", 5),
     CODEQL_INIT ("github/codeql-action/init", 4),
     CODEQL_AUTOBUILD ("github/codeql-action/autobuild", 4),
-    CODEQL_ANALYZE ("github/codeql-action/analyze", 4);
+    CODEQL_ANALYZE ("github/codeql-action/analyze", 4),
+    DOCKER_LOGIN ("docker/login-action", 4);
 
     private final String m_sName;
     private final String m_sSearch;
