@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260402</version>
+  <version>1.0.0-20260407</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -63,12 +63,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.42.26x</version>
+      <version>2.42.29</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.42.26x</version>
+      <version>2.42.29</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -338,7 +338,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260331</version>
+      <version>v20260405</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -542,7 +542,7 @@
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
-      <version>7.4.0</version>
+      <version>7.4.1</version>
     </dependency>
     <dependency>
       <groupId>org.zeromq</groupId>
@@ -896,7 +896,7 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt2</artifactId>
-      <version>1.10</version>
+      <version>1.10.1</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
