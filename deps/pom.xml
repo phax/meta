@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260407</version>
+  <version>1.0.0-20260409</version>
   <dependencies>
     <!--External dependencies:-->    <dependency>
       <groupId>org.eclipse.angus</groupId>
@@ -63,12 +63,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.42.29</version>
+      <version>2.42.30</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.42.29</version>
+      <version>2.42.30</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -338,7 +338,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260405</version>
+      <version>v20260406</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -1488,7 +1488,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb-plugin</artifactId>
-      <version>5.1.1</version>
+      <version>5.1.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1870,23 +1870,23 @@
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>8.1.2</version>
+      <version>8.1.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>8.1.2</version>
+      <version>8.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>8.1.2</version>
+      <version>8.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>8.1.2</version>
+      <version>8.1.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2335,99 +2335,99 @@
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-parent-pom</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-api</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-core</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-phive</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>12.4.0</version>
+      <version>12.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2650,7 +2650,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.8.3</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
