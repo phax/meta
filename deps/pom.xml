@@ -18,17 +18,17 @@
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant</artifactId>
-      <version>1.10.16</version>
+      <version>1.10.17</version>
     </dependency>
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-apache-resolver</artifactId>
-      <version>1.10.16</version>
+      <version>1.10.17</version>
     </dependency>
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-testutil</artifactId>
-      <version>1.10.16</version>
+      <version>1.10.17</version>
     </dependency>
     <dependency>
       <groupId>org.apiguardian</groupId>
@@ -63,12 +63,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.42.30</version>
+      <version>2.42.32</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.42.30</version>
+      <version>2.42.32</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -338,7 +338,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260406</version>
+      <version>v20260407</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -795,12 +795,12 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>5.6.4</version>
+      <version>5.6.5</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>5.6.4</version>
+      <version>5.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.microsoft.sqlserver</groupId>
@@ -896,17 +896,17 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt2</artifactId>
-      <version>1.10.1</version>
+      <version>1.10.2</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.37.1</version>
+      <version>8.38.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.37.1</version>
+      <version>8.38.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>

@@ -39,7 +39,7 @@ public enum EExternalDependency
   ANGUAS_ACTIVATION ("org.eclipse.angus", "angus-activation", "2.0.3", EJDK.JDK11),
   ANGUS_MAIL ("org.eclipse.angus", "angus-mail", "2.0.5", EJDK.JDK11),
 
-  ANT ("org.apache.ant", "ant", "1.10.16", EJDK.JDK8),
+  ANT ("org.apache.ant", "ant", "1.10.17", EJDK.JDK8),
   ANT_APACHE_RESOLVER ("org.apache.ant", "ant-apache-resolver", ANT),
   ANT_TESTUTIL ("org.apache.ant", "ant-testutil", ANT),
 
@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.30", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.32", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260406", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260407", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -268,7 +268,7 @@ public enum EExternalDependency
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.4", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.5", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.4.0.jre11", EJDK.JDK11),
@@ -300,9 +300,9 @@ public enum EExternalDependency
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
-  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.1", EJDK.JDK8),
+  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.37.1", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.38.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
