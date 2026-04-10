@@ -594,7 +594,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "12.0.2",
+                    "12.0.3",
                     EJDK.JDK17),
   PHIVE_API (PHIVE_PARENT_POM, "phive-api", EProjectType.JAVA_LIBRARY),
   PHIVE_VES_MODEL (PHIVE_PARENT_POM, "phive-ves-model", EProjectType.JAVA_LIBRARY),
@@ -732,7 +732,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.8.4",
+       "0.8.5",
        EJDK.JDK17),
 
   PHORM (null,
@@ -742,7 +742,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.0.2",
+         "2.0.3",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,

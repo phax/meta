@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-04-09):
+Current list of all released projects (as of 2026-04-10):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -14,7 +14,7 @@ Current list of all released projects (as of 2026-04-09):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
- * [ddd](https://github.com/phax/ddd) - Version 0.8.4 - JDK 17
+ * [ddd](https://github.com/phax/ddd) - Version 0.8.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 3.1.3 - JDK 17
@@ -860,7 +860,7 @@ Current list of all released projects (as of 2026-04-09):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.4.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom) 
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
@@ -953,28 +953,28 @@ Current list of all released projects (as of 2026-04-09):
  * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-api](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-api)](https://img.shields.io/maven-central/v/com.helger.phive/phive-api) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-result](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result) 
- * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model) 
- * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.2 - JDK 17
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phorm](https://github.com/phax/phorm) - Version 2.0.2 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.2.1 - JDK 21
