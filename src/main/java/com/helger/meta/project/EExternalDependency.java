@@ -52,12 +52,12 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.32", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.35", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
-  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.83", EJDK.JDK8),
+  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.84", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
@@ -110,7 +110,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.24.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.3.0", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.4.0", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260407", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260415", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -150,7 +150,7 @@ public enum EExternalDependency
   JACKSON2_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON2_BOM),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.1", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.2", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -300,10 +300,10 @@ public enum EExternalDependency
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
-  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.2", EJDK.JDK8),
+  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.3", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.38.0", EJDK.JDK11),
-  SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
+  SENTRY ("io.sentry", "sentry", "8.39.1", EJDK.JDK11),
+  SENTRY_LOGBACK ("io.sentry", "sentry-logback", "8.39.0", EJDK.JDK11),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
@@ -324,7 +324,7 @@ public enum EExternalDependency
 
   // JakartaEE 11
   @IsBOM
-  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.6", EJDK.JDK17),
+  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.7", EJDK.JDK17),
 
   @IsBOM
   SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.5", EJDK.JDK11),
@@ -401,7 +401,7 @@ public enum EExternalDependency
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.14", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.12", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.0", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.1", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.21.0", EJDK.JDK8);
 
   private final String m_sGroupID;
