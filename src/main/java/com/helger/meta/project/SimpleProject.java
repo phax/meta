@@ -80,6 +80,7 @@ public class SimpleProject implements IProject
     m_sProjectName = sProjectName;
     m_eProjectType = eProjectType;
     m_aBaseDir = aBaseDir;
+    // if (false)
     if (!m_aBaseDir.exists () && eIsDeprecated.isFalse ())
       throw new IllegalStateException ("Project base directory does not exist: " + m_aBaseDir);
     m_sFullBaseDirName = (aParentProject != null ? aParentProject.getFullBaseDirName () + "/" : "") +
