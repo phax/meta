@@ -182,8 +182,9 @@ public enum EExternalDependency
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
 
   JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.5", EJDK.JDK11),
+  // 4.0.7 has a regression
   @IsBOM
-  JAXB4_BOM ("org.glassfish.jaxb", "jaxb-bom", "4.0.7", EJDK.JDK11),
+  JAXB4_BOM ("org.glassfish.jaxb", "jaxb-bom", "4.0.6", EJDK.JDK11),
   JAXB4_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB4_BOM),
   JAXB4_IMPL ("org.glassfish.jaxb", "jaxb-runtime", JAXB4_BOM),
 
