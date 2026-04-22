@@ -251,6 +251,8 @@ public enum EExternalDependency
 
   LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
 
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.32", EJDK.JDK11),
+
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.25.4", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_CORE),
@@ -268,6 +270,8 @@ public enum EExternalDependency
   LUCENE10_DEMO ("org.apache.lucene", "lucene-demo", LUCENE10_CORE),
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
+
+  MCP ("io.modelcontextprotocol.sdk", "mcp", "1.1.1", EJDK.JDK11),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.5", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),

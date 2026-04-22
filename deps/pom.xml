@@ -3,9 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260421</version>
+  <version>1.0.0-20260422</version>
   <dependencies>
-    <!--External dependencies:-->    <dependency>
+    <!--External dependencies:-->
+    <dependency>
       <groupId>org.eclipse.angus</groupId>
       <artifactId>angus-activation</artifactId>
       <version>2.0.3</version>
@@ -718,6 +719,11 @@
       <version>1.1.2</version>
     </dependency>
     <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.32</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
       <version>2.25.4</version>
@@ -791,6 +797,11 @@
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
       <version>10.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.modelcontextprotocol.sdk</groupId>
+      <artifactId>mcp</artifactId>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
@@ -1281,7 +1292,8 @@
       <artifactId>versions-maven-plugin</artifactId>
       <version>2.21.0</version>
     </dependency>
-    <!--Internal projects:-->    <dependency>
+    <!--Internal projects:-->
+    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
       <version>3.0.3</version>
@@ -1300,173 +1312,173 @@
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-commons-parent-pom</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-annotations</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-base</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-bc</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-cache</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-cli</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-collection</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-commons</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-config</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-config-json</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-csv</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-dao</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-datetime</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-diagnostics</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-graph</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-http</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-io</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-jaxb</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-jaxb-adapter</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-json</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-matrix</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-mime</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-scopes</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-security</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-settings</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-statistics</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-text</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-tree</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-typeconvert</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-unittest-support</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-unittest-support-ext</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-url</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-wsclient</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.commons</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>12.2.0</version>
+      <version>12.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.jcodemodel</groupId>
@@ -1928,63 +1940,63 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>11.2.6</version>
+      <version>11.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2671,34 +2683,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>3.1.5</version>
+      <version>3.1.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>3.1.5</version>
+      <version>3.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>3.1.5</version>
+      <version>3.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii-parent-pom</artifactId>
-      <version>2.1.0</version>
+      <version>2.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii</artifactId>
-      <version>2.1.0</version>
+      <version>2.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii-cli</artifactId>
-      <version>2.1.0</version>
+      <version>2.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
