@@ -74,7 +74,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   {
     return switch (eProject.getProjectType ())
     {
-      case JAVA_LIBRARY -> new String [] { "bundle", "jar" };
+      case JAVA_LIBRARY -> new String [] { "jar" };
       case JAVA_APPLICATION -> new String [] { "jar" };
       case JAVA_WEB_APPLICATION -> new String [] { "war" };
       case MAVEN_PLUGIN -> new String [] { "maven-plugin" };

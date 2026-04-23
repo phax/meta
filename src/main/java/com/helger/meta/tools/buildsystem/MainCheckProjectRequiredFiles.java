@@ -154,8 +154,9 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
 
     if (_checkFileExisting (aProject, "pom.xml").isSuccess ())
     {
-      if (!aProject.isParentPOM () && _fileContains (aProject, "pom.xml", "<packaging>bundle</packaging>"))
-        _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
+      if (false)
+        if (!aProject.isParentPOM () && _fileContains (aProject, "pom.xml", "<packaging>bundle</packaging>"))
+          _checkFileContains (aProject, "pom.xml", "!org.jspecify.annotations.*,*");
     }
 
     if (!aProject.isNestedProject ())

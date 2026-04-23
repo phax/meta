@@ -14,13 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.meta.tools.buildsystem;
+package com.helger.meta.tools.buildsystem.old;
 
 import javax.xml.XMLConstants;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.helger.io.resource.ClassPathResource;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -30,19 +31,19 @@ import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.IMicroNode;
 import com.helger.xml.microdom.serialize.MicroReader;
+import com.helger.xml.microdom.serialize.MicroReaderSettings;
 import com.helger.xml.microdom.serialize.MicroWriter;
 import com.helger.xml.microdom.util.MicroHelper;
 import com.helger.xml.microdom.util.MicroRecursiveIterator;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xml.sax.InputSourceFactory;
-import com.helger.xml.serialize.read.SAXReaderSettings;
 import com.helger.xml.serialize.write.XMLWriterSettings;
-import com.helger.io.resource.ClassPathResource;
 
 /**
  * One-time tool to remove OSGi bundle packaging from all projects.
  * <ul>
- * <li>Changes &lt;packaging&gt;bundle&lt;/packaging&gt; to &lt;packaging&gt;jar&lt;/packaging&gt;</li>
+ * <li>Changes &lt;packaging&gt;bundle&lt;/packaging&gt; to
+ * &lt;packaging&gt;jar&lt;/packaging&gt;</li>
  * <li>Removes the maven-bundle-plugin &lt;plugin&gt; element entirely</li>
  * <li>Cleans up empty &lt;plugins&gt; and &lt;build&gt; elements</li>
  * </ul>
@@ -64,7 +65,7 @@ public final class MainRemoveBundlePackaging extends AbstractProjectMain
                                                                     !x.isDeprecated () &&
                                                                     x.getProjectType ().hasJavaCode ()))
     {
-      final SAXReaderSettings aSRS = new SAXReaderSettings ();
+      final MicroReaderSettings aSRS = new MicroReaderSettings ();
       aSRS.setFeatureValue (EXMLParserFeature.VALIDATION, true);
       aSRS.setFeatureValue (EXMLParserFeature.SCHEMA, true);
       aSRS.setFeatureValue (EXMLParserFeature.NAMESPACES, true);
@@ -75,6 +76,7 @@ public final class MainRemoveBundlePackaging extends AbstractProjectMain
           return InputSourceFactory.create (aMavenXSD);
         return null;
       });
+      aSRS.setSaveNamespaceDeclarations (true);
 
       final IMicroDocument aPOM = MicroReader.readMicroXML (aProject.getPOMFile (), aSRS);
       if (aPOM == null)
