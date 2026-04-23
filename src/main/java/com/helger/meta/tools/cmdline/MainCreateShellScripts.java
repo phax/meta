@@ -48,7 +48,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     return sPrefix + nIndex;
   }
 
-  private static void _createShellScript (@NonNull @Nonempty final Function<IProject, String> aCommandProvider,
+  private static void _createShellScript (@NonNull @Nonempty final Function <IProject, String> aCommandProvider,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
@@ -69,7 +69,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
          .append ('/')
          .append (aProjects.size ())
          .append ("]\n");
-      aSB.append (aCommandProvider.apply(aProject));
+      aSB.append (aCommandProvider.apply (aProject));
       ++nIndex;
     }
     aSB.append (SHELL_FOOTER);
@@ -84,7 +84,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   private static void _createShellScript (@NonNull @Nonempty final String sCommand,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-     _createShellScript (p -> "cd "+p.getFullBaseDirName ()+"\n"+sCommand+"\ncd ..\n", sBatchFileName);
+    _createShellScript (p -> "cd " + p.getFullBaseDirName () + "\n" + sCommand + "\ncd ..\n", sBatchFileName);
   }
 
   private static void _createMvnShellScript (@NonNull @Nonempty final String sMavenCommand,
@@ -117,7 +117,12 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         "git_normalize_crlf.sh");
     _createShellScript ("git fetch --prune", "git_fetch_prune.sh");
     _createShellScript ("git diff --quiet", "git_status.sh");
-    _createShellScript (p-> "[ ! -d "+p.getBaseDir().getName()+" ] && git clone https://github.com/phax/"+p.getBaseDir().getName()+"\n", "git_clone.sh");
+    _createShellScript ("git reset --hard", "git_reset_hard.sh");
+    _createShellScript (p -> "[ ! -d " +
+                             p.getBaseDir ().getName () +
+                             " ] && git clone https://github.com/phax/" +
+                             p.getBaseDir ().getName () +
+                             "\n", "git_clone.sh");
     System.out.println ("Shell scripts created in " + CMeta.GIT_BASE_DIR);
   }
 }
