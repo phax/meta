@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-04-22):
+Current list of all released projects (as of 2026-04-24):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -572,6 +572,9 @@ Current list of all released projects (as of 2026-04-22):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-poi)](https://img.shields.io/maven-central/v/com.helger/ph-poi) 
+ * [ph-redact](https://github.com/phax/ph-redact) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-redact)](https://img.shields.io/maven-central/v/com.helger/ph-redact) 
  * [ph-regrep](https://github.com/phax/ph-regrep) - Version 4.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-regrep)](https://img.shields.io/maven-central/v/com.helger/ph-regrep) 
