@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.37", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.42.41", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -71,7 +71,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.11.0", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.21.0", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.22.0", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260415", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260422", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -271,14 +271,14 @@ public enum EExternalDependency
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
 
-  MCP ("io.modelcontextprotocol.sdk", "mcp", "1.1.1", EJDK.JDK11),
+  MCP ("io.modelcontextprotocol.sdk", "mcp", "1.1.2", EJDK.JDK11),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.6.5", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.4.0.jre11", EJDK.JDK11),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.6.0", EJDK.JDK8),
+  MYSQL ("com.mysql", "mysql-connector-j", "9.7.0", EJDK.JDK11),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.1.0.0", EJDK.JDK8),
@@ -307,8 +307,8 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.3", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.39.1", EJDK.JDK11),
-  SENTRY_LOGBACK ("io.sentry", "sentry-logback", "8.39.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.40.0", EJDK.JDK11),
+  SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
@@ -332,7 +332,7 @@ public enum EExternalDependency
   SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.7", EJDK.JDK17),
 
   @IsBOM
-  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.5", EJDK.JDK11),
+  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.6", EJDK.JDK11),
   SPRING_BOOT4_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
