@@ -249,7 +249,7 @@ public enum EExternalDependency
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
   JUNIT6_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", JUNIT6),
 
-  LITTLEPROXY ("org.littleshoot", "littleproxy", "1.1.2", EJDK.JDK8),
+  LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.7.0", EJDK.JDK11),
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.32", EJDK.JDK11),
 
