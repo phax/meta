@@ -1,9 +1,11 @@
+.claude/
 .settings/ 
 bin/
 target/
 generated/
 
 .classpath 
+.DS_Store
 .iml
 .pmd
 .project 
