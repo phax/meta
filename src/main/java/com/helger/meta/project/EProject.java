@@ -1011,7 +1011,7 @@ public enum EProject implements IProject
                            EProjectType.JAVA_APPLICATION,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           null,
+                           "0.5.1",
                            EJDK.JDK17),
   PH_REDACT (null,
              EProjectOwner.DEFAULT_PROJECT_OWNER,

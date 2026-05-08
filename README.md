@@ -1037,6 +1037,9 @@ Current list of all released projects (as of 2026-05-08):
  * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.15.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
+ * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.5.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
  * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.1.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
@@ -1078,8 +1081,6 @@ Current list of all unreleased projects:
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
  * [phive-central-tools](https://github.com/phax/phive-central-tools) - JDK 17
-
- * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - JDK 17
 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - JDK 17
 
