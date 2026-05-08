@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.43.2", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.4", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260429", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260506", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -176,15 +176,14 @@ public enum EExternalDependency
   // JakartaEE 11
   JAKARTA_JSP_API_40 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "4.0.0", EJDK.JDK17),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.28.0", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.28.1", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.13", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
 
   JAXB4_API ("jakarta.xml.bind", "jakarta.xml.bind-api", "4.0.5", EJDK.JDK11),
-  // 4.0.7 has a regression
   @IsBOM
-  JAXB4_BOM ("org.glassfish.jaxb", "jaxb-bom", "4.0.6", EJDK.JDK11),
+  JAXB4_BOM ("org.glassfish.jaxb", "jaxb-bom", "4.0.8", EJDK.JDK11),
   JAXB4_CORE ("org.glassfish.jaxb", "jaxb-core", JAXB4_BOM),
   JAXB4_IMPL ("org.glassfish.jaxb", "jaxb-runtime", JAXB4_BOM),
 
@@ -217,7 +216,7 @@ public enum EExternalDependency
   JERSEY4_SERVLET ("org.glassfish.jersey.containers", "jersey-container-servlet", JERSEY4_BOM),
 
   @IsBOM
-  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.8", EJDK.JDK17),
+  JETTY12_BOM ("org.eclipse.jetty", "jetty-bom", "12.1.9", EJDK.JDK17),
   JETTY12_SERVER ("org.eclipse.jetty", "jetty-server", JETTY12_BOM),
   JETTY12_WEBAPP ("org.eclipse.jetty.ee10", "jetty-ee10-webapp", JETTY12_BOM),
   JETTY12_SERVLET ("org.eclipse.jetty.ee10", "jetty-ee10-servlet", JETTY12_BOM),
@@ -253,7 +252,7 @@ public enum EExternalDependency
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.32", EJDK.JDK11),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.25.4", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
   LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_CORE),
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
@@ -307,7 +306,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.10.3", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.40.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.41.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -404,9 +403,9 @@ public enum EExternalDependency
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.14", EJDK.JDK8),
-  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.12", EJDK.JDK11),
+  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.13", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.1", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.2", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.21.0", EJDK.JDK8);
 
   private final String m_sGroupID;
