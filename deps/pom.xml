@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260509</version>
+  <version>1.0.0-20260511</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -3115,8 +3115,19 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>ph-redact-parent-pom</artifactId>
+      <version>1.0.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>ph-redact</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-redact-cli</artifactId>
+      <version>1.0.1</version>
     </dependency>
   </dependencies>
   <build>
