@@ -737,7 +737,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.8.5",
+       "0.8.6",
        EJDK.JDK17),
 
   PHORM (null,
@@ -747,7 +747,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.0.3",
+         "2.0.4",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,
@@ -1028,6 +1028,20 @@ public enum EProject implements IProject
                         EJDK.JDK17),
   PH_REDACT (PH_REDACT_PARENT_POM, "ph-redact", EProjectType.JAVA_LIBRARY),
   PH_REDACT_CLI (PH_REDACT_PARENT_POM, "ph-redact-cli", EProjectType.JAVA_APPLICATION),
+
+  FLUGESEL_PARENT_POM (null,
+                       EProjectOwner.DEFAULT_PROJECT_OWNER,
+                       "flugesel-parent-pom",
+                       "flugesel",
+                       EProjectType.MAVEN_POM,
+                       EHasPages.FALSE,
+                       EHasWiki.FALSE,
+                       null,
+                       EJDK.JDK17),
+  FLUGESEL_TESTFILES (FLUGESEL_PARENT_POM, "flugesel-testfiles", EProjectType.JAVA_LIBRARY),
+  FLUGESEL_CORE (FLUGESEL_PARENT_POM, "flugesel-core", EProjectType.JAVA_LIBRARY),
+  FLUGESEL_VERAPDF (FLUGESEL_PARENT_POM, "flugesel-verapdf", EProjectType.JAVA_LIBRARY),
+  FLUGESEL_CLI (FLUGESEL_PARENT_POM, "flugesel-cli", EProjectType.JAVA_APPLICATION),
 
   // PHOSS_AP_PRO (null,
   // EProjectOwner.PROJECT_OWNER_HELGER_IT,

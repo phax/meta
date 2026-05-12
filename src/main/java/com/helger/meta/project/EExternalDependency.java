@@ -110,7 +110,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.24.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.6.0", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.6.1", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260506", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260510", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -352,6 +352,8 @@ public enum EExternalDependency
 
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.1", EJDK.JDK17),
 
+  VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.1", EJDK.JDK17),
+
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.3.0", EJDK.JDK8),
 
   XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.4", EJDK.JDK17),
@@ -403,7 +405,7 @@ public enum EExternalDependency
   PARENT_POM_39 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_40 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.14", EJDK.JDK8),
-  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.13", EJDK.JDK11),
+  JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.14", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.2", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.21.0", EJDK.JDK8);
