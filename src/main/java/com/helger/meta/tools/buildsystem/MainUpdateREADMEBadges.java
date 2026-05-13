@@ -211,7 +211,7 @@ public final class MainUpdateREADMEBadges extends AbstractProjectMain
       }
 
       // Normalize newlines to \n
-      sContent = StringReplace.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n");
+      sContent = StringReplace.replaceAll (sContent, ENewLineMode.DEFAULT.getText (), "\n").trim ();
 
       // Determine Sonatype badge coordinates (always from the project itself)
       final String sSonatypeGroupID = aProject.getMavenGroupID ();

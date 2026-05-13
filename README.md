@@ -953,6 +953,9 @@ Current list of all released projects (as of 2026-05-13):
  * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 4.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl) 
+ * [phive-rules/phive-rules-osa](https://github.com/phax/phive-rules) - Version 4.3.2 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-osa)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-osa) 
  * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 4.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol) 
