@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260512</version>
+  <version>1.0.0-20260513</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1073,6 +1073,11 @@
       <version>5.0.0</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>maven-bundle-plugin</artifactId>
+      <version>6.0.2</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-acr-plugin</artifactId>
       <version>3.2.0</version>
@@ -1136,11 +1141,6 @@
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-gpg-plugin</artifactId>
       <version>3.2.8</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-idea-plugin</artifactId>
-      <version>2.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1236,11 +1236,6 @@
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>clirr-maven-plugin</artifactId>
       <version>2.8</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>findbugs-maven-plugin</artifactId>
-      <version>3.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.github.spotbugs</groupId>
@@ -2526,153 +2521,153 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-api</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-ro</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ebinterface</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-eracun</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-facturae</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-fatturapa</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-finvoice</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-france</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ksef</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-italy</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-legacy</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-setu</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-teapps</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-turkey</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ubl</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zatca</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zugferd</artifactId>
-      <version>4.3.1</version>
+      <version>4.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
@@ -3133,6 +3128,32 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-redact-cli</artifactId>
       <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.kaltblut</groupId>
+      <artifactId>kaltblut-parent-pom</artifactId>
+      <version>0.9.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.kaltblut</groupId>
+      <artifactId>kaltblut-testfiles</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.kaltblut</groupId>
+      <artifactId>kaltblut-core</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.kaltblut</groupId>
+      <artifactId>kaltblut-verapdf</artifactId>
+      <version>0.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.kaltblut</groupId>
+      <artifactId>kaltblut-cli</artifactId>
+      <version>0.9.1</version>
     </dependency>
   </dependencies>
   <build>

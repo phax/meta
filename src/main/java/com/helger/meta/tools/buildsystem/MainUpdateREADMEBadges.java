@@ -280,7 +280,9 @@ public final class MainUpdateREADMEBadges extends AbstractProjectMain
       if (!sNewContent.equals (sContent))
       {
         // Convert newlines back to system default
-        final String sFinalContent = StringReplace.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ());
+        // Make sure file ends with a newline
+        final String sFinalContent = StringReplace.replaceAll (sNewContent, "\n", ENewLineMode.DEFAULT.getText ()) +
+                                     ENewLineMode.DEFAULT.getText ();
         SimpleFileIO.writeFile (fReadme, sFinalContent, README_CHARSET);
         _info (aProject, "README.md badges updated");
         nUpdated++;
