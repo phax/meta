@@ -2682,7 +2682,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.8.6</version>
+      <version>0.8.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

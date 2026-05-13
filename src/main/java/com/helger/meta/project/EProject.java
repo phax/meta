@@ -738,7 +738,7 @@ public enum EProject implements IProject
        EProjectType.JAVA_LIBRARY,
        EHasPages.FALSE,
        EHasWiki.FALSE,
-       "0.8.6",
+       "0.8.7",
        EJDK.JDK17),
 
   PHORM (null,
