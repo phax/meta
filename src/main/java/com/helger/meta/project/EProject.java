@@ -113,7 +113,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.TRUE,
                          EHasWiki.FALSE,
-                         "4.1.0",
+                         "4.2.0",
                          EJDK.JDK17),
   JCODEMODEL (JCODEMODEL_PARENT_POM, "jcodemodel", EProjectType.JAVA_LIBRARY),
   JCODEMODEL_MAVEN_PLUGIN (JCODEMODEL_PARENT_POM, "jcodemodel-maven-plugin", "plugin", EProjectType.MAVEN_POM),
@@ -748,7 +748,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.0.4",
+         "2.1.0",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,

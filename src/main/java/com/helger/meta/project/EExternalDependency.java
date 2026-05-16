@@ -45,14 +45,14 @@ public enum EExternalDependency
 
   API_GUARDIAN ("org.apiguardian", "apiguardian-api", "1.1.2", EJDK.JDK8),
 
-  ASM ("org.ow2.asm", "asm", "9.9.1", EJDK.JDK8),
+  ASM ("org.ow2.asm", "asm", "9.10", EJDK.JDK8),
   ASM_ANALYSIS ("org.ow2.asm", "asm-analysis", ASM),
   ASM_COMMONS ("org.ow2.asm", "asm-commons", ASM),
   ASM_TREE ("org.ow2.asm", "asm-tree", ASM),
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.4", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.7", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260510", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260513", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -280,7 +280,7 @@ public enum EExternalDependency
   MYSQL ("com.mysql", "mysql-connector-j", "9.7.0", EJDK.JDK11),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.1.0.0", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.7", EJDK.JDK8),

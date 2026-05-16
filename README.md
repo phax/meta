@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-05-13):
+Current list of all released projects (as of 2026-05-16):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -38,13 +38,13 @@ Current list of all released projects (as of 2026-05-13):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client)](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client) 
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom) 
- * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
+ * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/jcodemodel)](https://img.shields.io/maven-central/v/com.helger/jcodemodel) 
- * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.1.0 - JDK 17
+ * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
  * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.1 - JDK 17
@@ -116,6 +116,18 @@ Current list of all released projects (as of 2026-05-13):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 12.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles) 
+ * [peppol-om](https://github.com/phax/peppol-om) - Version 0.8.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom) 
+ * [peppol-om/peppol-om-tdd](https://github.com/phax/peppol-om) - Version 0.8.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd) 
+ * [peppol-om/peppol-om-tdd-datatypes](https://github.com/phax/peppol-om) - Version 0.8.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes) 
+ * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 0.8.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles) 
  * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-parent-pom) 
@@ -1016,7 +1028,7 @@ Current list of all released projects (as of 2026-05-13):
  * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phorm](https://github.com/phax/phorm) - Version 2.0.4 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.2.3 - JDK 21
