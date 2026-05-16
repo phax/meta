@@ -189,7 +189,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "8.1.0",
+                            "8.1.2",
                             EJDK.JDK17),
   PH_PDF_LAYOUT (PH_PDF_LAYOUT_PARENT_POM, "ph-pdf-layout", EProjectType.JAVA_LIBRARY),
 
@@ -474,7 +474,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "8.2.0",
+                     "8.2.1",
                      EJDK.JDK17),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
   PH_CSSCOMPRESS_MAVEN_PLUGIN (PH_CSS_PARENT_POM, "ph-csscompress-maven-plugin", EProjectType.MAVEN_PLUGIN),

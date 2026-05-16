@@ -341,13 +341,13 @@ Current list of all released projects (as of 2026-05-16):
  * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 12.2.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml)](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml) 
- * [ph-css](https://github.com/phax/ph-css) - Version 8.2.0 - JDK 17
+ * [ph-css](https://github.com/phax/ph-css) - Version 8.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-css-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-css-parent-pom) 
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 8.2.0 - JDK 17
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 8.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-css)](https://img.shields.io/maven-central/v/com.helger/ph-css) 
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.2.0 - JDK 17
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin) 
  * [ph-datetime](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
@@ -590,10 +590,10 @@ Current list of all released projects (as of 2026-05-16):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.0 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.0 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
