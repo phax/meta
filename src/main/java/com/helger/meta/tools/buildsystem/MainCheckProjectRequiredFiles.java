@@ -162,7 +162,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     if (!aProject.isNestedProject ())
     {
       _checkFileExisting (aProject, "README.md");
-      if (aProject.getLastPublishedVersion () != null)
+      if (aProject.isPublished ())
       {
         // Temporary
         _checkFileContains (aProject, "README.md", "https://maven-badges.sml.io/sonatype-central/");
