@@ -279,6 +279,8 @@ public enum EExternalDependency
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.7.0", EJDK.JDK11),
 
+  OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.3.2", EJDK.JDK17),
+
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
