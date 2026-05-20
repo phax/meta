@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.7", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.8", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260513", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260517", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.34.1", EJDK.JDK8),
 
@@ -288,7 +288,7 @@ public enum EExternalDependency
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.62.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
-                            "2.27.0",
+                            "2.28.0",
                             EJDK.JDK17),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.7", EJDK.JDK8),
@@ -384,7 +384,7 @@ public enum EExternalDependency
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.6.2", EJDK.JDK8),
+  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.6.3", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.2.8", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.0", EJDK.JDK8),
