@@ -590,7 +590,7 @@ Current list of all released projects (as of 2026-05-29):
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls) 
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.4 - JDK 17
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.2.0 - JDK 17
