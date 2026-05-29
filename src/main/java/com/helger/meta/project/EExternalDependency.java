@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.44.14", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.45.0", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -141,7 +141,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.4.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.3", EJDK.JDK8),
+  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.4", EJDK.JDK8),
   JACKSON2_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON2_BOM),
   JACKSON2_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON2_BOM),
   JACKSON2_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON2_BOM),
@@ -271,7 +271,7 @@ public enum EExternalDependency
 
   MCP ("io.modelcontextprotocol.sdk", "mcp", "1.1.3", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.7.1", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.8.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.4.0.jre11", EJDK.JDK11),
@@ -345,7 +345,7 @@ public enum EExternalDependency
   SPRING_BOOT4_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_DEVTOOLS ("org.springframework.boot", "spring-boot-devtools", SPRING_BOOT4_DEPENDENCIES),
 
-  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.17.1", EJDK.JDK11),
+  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.18.0", EJDK.JDK11),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
@@ -379,7 +379,7 @@ public enum EExternalDependency
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.5.0", EJDK.JDK8),
   PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.15.0", EJDK.JDK8),
-  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.10.0", EJDK.JDK8),
+  PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.11.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.3.0", EJDK.JDK8),
