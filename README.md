@@ -38,13 +38,13 @@ Current list of all released projects (as of 2026-06-01):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client)](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client) 
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom) 
- * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
+ * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/jcodemodel)](https://img.shields.io/maven-central/v/com.helger/jcodemodel) 
- * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.2.0 - JDK 17
+ * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
  * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.1 - JDK 17
@@ -593,10 +593,10 @@ Current list of all released projects (as of 2026-06-01):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.2.0 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.2.0 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
@@ -1031,46 +1031,46 @@ Current list of all released projects (as of 2026-06-01):
  * [phive/phive-xml](https://github.com/phax/phive) - Version 12.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phorm](https://github.com/phax/phorm) - Version 2.1.1 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.1.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
- * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom) 
- * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api) 
- * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic) 
- * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core) 
- * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db) 
- * [phoss-ap/phoss-ap-dirsender](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-dirsender](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender) 
- * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding) 
- * [phoss-ap/phoss-ap-otel](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-otel](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-otel)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-otel) 
- * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry) 
- * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend) 
- * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender) 
- * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation) 
- * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.9.0 - JDK 21
+ * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.9.1 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.15.6 - JDK 17

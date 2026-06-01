@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.45.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.45.1", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -86,7 +86,7 @@ public enum EExternalDependency
   DOM4J ("org.dom4j", "dom4j", "2.2.0", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.6.0", EJDK.JDK8),
 
-  ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.9.0", EJDK.JDK11),
+  ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.10.0", EJDK.JDK11),
 
   @VersionMaxExcl ("5.0.0")
   ECLIPSELINK4_CORE("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.9", EJDK.JDK11),
@@ -109,7 +109,7 @@ public enum EExternalDependency
   FINDBUGS_ANNOTATIONS_3 ("com.google.code.findbugs", "annotations", "3.0.1u2", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.24.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.6.2", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.7.0", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -125,7 +125,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "4.3.1", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260526", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260531", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.0", EJDK.JDK8),
 
@@ -141,15 +141,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.4.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON2_BOM ("com.fasterxml.jackson", "jackson-bom", "2.21.4", EJDK.JDK8),
-  JACKSON2_CORE ("com.fasterxml.jackson.core", "jackson-core", JACKSON2_BOM),
-  JACKSON2_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", JACKSON2_BOM),
-  JACKSON2_DATABIND ("com.fasterxml.jackson.core", "jackson-databind", JACKSON2_BOM),
-  JACKSON2_MODULE_AFTERBURNER ("com.fasterxml.jackson.module", "jackson-module-afterburner", JACKSON2_BOM),
-  JACKSON2_DATAFORMAT_CBOR ("com.fasterxml.jackson.dataformat", "jackson-dataformat-cbor", JACKSON2_BOM),
-
-  @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.3", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.4", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -175,7 +167,7 @@ public enum EExternalDependency
   // JakartaEE 11
   JAKARTA_JSP_API_40 ("jakarta.servlet.jsp", "jakarta.servlet.jsp-api", "4.0.0", EJDK.JDK17),
 
-  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.28.1", EJDK.JDK8),
+  JAVA_PARSER_CORE ("com.github.javaparser", "javaparser-core", "3.28.2", EJDK.JDK8),
 
   JAVACC ("net.java.dev.javacc", "javacc", "7.0.13", EJDK.JDK8),
   JAVAX_EL ("org.glassfish", "javax.el", "3.0.0", EJDK.JDK8),
@@ -194,7 +186,7 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.5", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "7.5.0", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "7.5.2", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
@@ -249,7 +241,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.7.0", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.33", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.34", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -351,7 +343,7 @@ public enum EExternalDependency
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
 
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.8.0", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.9.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
