@@ -105,6 +105,7 @@ public enum EExternalDependency
 
   EXPIRING_MAP ("net.jodah", "expiringmap", "0.5.11", EJDK.JDK8),
   FAILSAFE ("dev.failsafe", "failsafe", "3.3.2", EJDK.JDK11),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
   FLYWAY ("org.flywaydb", "flyway-core", "12.7.0", EJDK.JDK17),

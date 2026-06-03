@@ -262,6 +262,11 @@
       <version>3.3.2</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.apache.felix.framework</artifactId>
+      <version>7.0.5</version>
+    </dependency>
+    <dependency>
       <groupId>de.flapdoodle.embed</groupId>
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
       <version>4.33.0</version>
