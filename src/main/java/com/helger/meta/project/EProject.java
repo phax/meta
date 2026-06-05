@@ -193,6 +193,7 @@ public enum EProject implements IProject
                             "8.2.0",
                             EJDK.JDK17),
   PH_PDF_LAYOUT (PH_PDF_LAYOUT_PARENT_POM, "ph-pdf-layout", EProjectType.JAVA_LIBRARY),
+  PH_PDF_LAYOUT_RICHTEXT (PH_PDF_LAYOUT_PARENT_POM, "ph-pdf-layout-richtext", EProjectType.JAVA_LIBRARY),
 
   PH_POI (null,
           EProjectOwner.DEFAULT_PROJECT_OWNER,
