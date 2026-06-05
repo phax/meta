@@ -45,8 +45,6 @@ import com.helger.meta.CMeta;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
-import com.helger.meta.translation.StringTable;
-import com.helger.meta.translation.StringTableSerializer;
 import com.helger.text.IMultilingualText;
 import com.helger.text.util.TextHelper;
 

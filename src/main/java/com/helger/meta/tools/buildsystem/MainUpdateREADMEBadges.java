@@ -135,6 +135,8 @@ public final class MainUpdateREADMEBadges extends AbstractProjectMain
            "/" +
            sJavadocArtifactID +
            ")\n" +
+           "\n" +
+           "> If this project saved you some time or made your day a little easier, a star would mean a lot — it helps others find it too.\n" +
            BADGE_END +
            "\n";
   }
