@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-06-03):
+Current list of all released projects (as of 2026-06-08):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -206,16 +206,16 @@ Current list of all released projects (as of 2026-06-03):
  * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
- * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.2.1 - JDK 17
+ * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom) 
- * [peppol-vida/peppol-vida-tdd](https://github.com/phax/peppol-vida) - Version 0.2.1 - JDK 17
+ * [peppol-vida/peppol-vida-tdd](https://github.com/phax/peppol-vida) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd) 
- * [peppol-vida/peppol-vida-tdd-datatypes](https://github.com/phax/peppol-vida) - Version 0.2.1 - JDK 17
+ * [peppol-vida/peppol-vida-tdd-datatypes](https://github.com/phax/peppol-vida) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes) 
- * [peppol-vida/peppol-vida-testfiles](https://github.com/phax/peppol-vida) - Version 0.2.1 - JDK 17
+ * [peppol-vida/peppol-vida-testfiles](https://github.com/phax/peppol-vida) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 4.1.0 - JDK 17
@@ -593,12 +593,15 @@ Current list of all released projects (as of 2026-06-03):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.1 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.1 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
+ * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-poi)](https://img.shields.io/maven-central/v/com.helger/ph-poi) 
@@ -638,9 +641,12 @@ Current list of all released projects (as of 2026-06-03):
  * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 9.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-pure](https://github.com/phax/ph-schematron) - Version 9.2.0 - JDK 17
+ * [ph-schematron/ph-schematron-pure-xpath](https://github.com/phax/ph-schematron) - Version 9.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure) 
+ * [ph-schematron/ph-schematron-pure-xslt](https://github.com/phax/ph-schematron) - Version 9.2.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt) 
  * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 9.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt) 
@@ -1123,6 +1129,8 @@ Current list of all unreleased projects:
 
  * [bozoo](https://github.com/phax/bozoo) - JDK 17
 
+ * [jcrepdl](https://github.com/phax/jcrepdl) - JDK 17
+
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
@@ -1140,7 +1148,7 @@ All deprecated projects:
 
  * ebinterface-rendering - Version 1.0.0
 
-   [![Maven Central](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-rendering)](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-rendering) 
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ebinterface-rendering)](https://img.shields.io/maven-central/v/com.helger/ebinterface-rendering) 
  * java-tools - Version 2.0.4
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-parent-pom) 

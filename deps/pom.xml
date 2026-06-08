@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260603</version>
+  <version>1.0.0-20260608</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,12 +64,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.46.2</version>
+      <version>2.46.5</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.46.2</version>
+      <version>2.46.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -224,7 +224,7 @@
     <dependency>
       <groupId>org.eclipse.jdt</groupId>
       <artifactId>org.eclipse.jdt.core</artifactId>
-      <version>3.45.0</version>
+      <version>3.46.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -234,12 +234,12 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.core.jobs</artifactId>
-      <version>3.15.700</version>
+      <version>3.15.800</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.core.resources</artifactId>
-      <version>3.23.200</version>
+      <version>3.24.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.platform</groupId>
@@ -249,7 +249,7 @@
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.equinox.common</artifactId>
-      <version>3.20.300</version>
+      <version>3.20.400</version>
     </dependency>
     <dependency>
       <groupId>net.jodah</groupId>
@@ -274,32 +274,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>12.7.0</version>
+      <version>12.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -334,7 +334,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260531</version>
+      <version>v20260607</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -486,18 +486,18 @@
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-ri-bom</artifactId>
-      <version>4.0.4</version>
+      <version>4.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-rt</artifactId>
-      <version>4.0.4</version>
+      <version>4.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-maven-plugin</artifactId>
-      <version>4.0.4</version>
+      <version>4.0.5</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -806,7 +806,7 @@
     <dependency>
       <groupId>io.opentelemetry</groupId>
       <artifactId>opentelemetry-bom</artifactId>
-      <version>1.62.0</version>
+      <version>1.63.0</version>
     </dependency>
     <dependency>
       <groupId>io.opentelemetry.instrumentation</groupId>
@@ -886,17 +886,17 @@
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
       <artifactId>schxslt2</artifactId>
-      <version>1.10.3</version>
+      <version>1.11</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.43.0</version>
+      <version>8.43.1</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.43.0</version>
+      <version>8.43.1</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -941,7 +941,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.9.8</version>
+      <version>4.10.1</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -1029,7 +1029,7 @@
     <dependency>
       <groupId>org.verapdf</groupId>
       <artifactId>validation-model-jakarta</artifactId>
-      <version>1.30.1</version>
+      <version>1.30.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -1249,12 +1249,12 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.14</version>
+      <version>0.8.15</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.jaxb</groupId>
       <artifactId>jaxb-maven-plugin</artifactId>
-      <version>4.0.15</version>
+      <version>4.0.16</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1585,13 +1585,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
-      <version>8.3.1</version>
+      <version>8.3.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>8.3.1</version>
+      <version>8.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
+      <artifactId>ph-pdf-layout-richtext</artifactId>
+      <version>8.3.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2037,6 +2042,11 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
+      <version>9.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-pure-xslt</artifactId>
       <version>9.2.0</version>
     </dependency>
     <dependency>
@@ -2782,23 +2792,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-parent-pom</artifactId>
-      <version>0.2.1</version>
+      <version>0.9.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-testfiles</artifactId>
-      <version>0.2.1</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-tdd-datatypes</artifactId>
-      <version>0.2.1</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-vida-tdd</artifactId>
-      <version>0.2.1</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase4</groupId>
