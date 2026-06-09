@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260608</version>
+  <version>1.0.0-20260609</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,12 +64,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.46.5</version>
+      <version>2.46.6</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.46.5</version>
+      <version>2.46.6</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -374,33 +374,33 @@
     <dependency>
       <groupId>tools.jackson</groupId>
       <artifactId>jackson-bom</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.module</groupId>
       <artifactId>jackson-module-afterburner</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-cbor</artifactId>
-      <version>3.1.4</version>
+      <version>3.2.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.annotation</groupId>
@@ -790,7 +790,7 @@
     <dependency>
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp-jvm</artifactId>
-      <version>5.3.2</version>
+      <version>5.4.0</version>
     </dependency>
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
@@ -952,7 +952,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-framework-bom</artifactId>
-      <version>7.0.7</version>
+      <version>7.0.8</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1229,7 +1229,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.9.8.3</version>
+      <version>4.9.8.4</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>

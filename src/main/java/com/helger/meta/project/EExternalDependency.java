@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.5", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.6", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -140,7 +140,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.4.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.1.4", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.0", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -266,7 +266,7 @@ public enum EExternalDependency
 
   MYSQL ("com.mysql", "mysql-connector-j", "9.7.0", EJDK.JDK11),
 
-  OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.3.2", EJDK.JDK17),
+  OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.4.0", EJDK.JDK17),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
@@ -323,7 +323,7 @@ public enum EExternalDependency
 
   // JakartaEE 11
   @IsBOM
-  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.7", EJDK.JDK17),
+  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.8", EJDK.JDK17),
 
   @IsBOM
   SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.6", EJDK.JDK11),
@@ -395,7 +395,7 @@ public enum EExternalDependency
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.6", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
-  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.3", EJDK.JDK8),
+  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.4", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.0", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
