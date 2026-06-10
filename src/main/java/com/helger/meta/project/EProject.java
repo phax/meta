@@ -1063,7 +1063,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "0.9.1",
+                       "0.9.2",
                        EJDK.JDK17),
   KALTBLUT_TESTFILES (KALTBLUT_PARENT_POM, "kaltblut-testfiles", EProjectType.JAVA_LIBRARY),
   KALTBLUT_CORE (KALTBLUT_PARENT_POM, "kaltblut-core", EProjectType.JAVA_LIBRARY),
