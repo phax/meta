@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.6", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.7", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -296,10 +296,10 @@ public enum EExternalDependency
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
 
-  SAXON_12 ("net.sf.saxon", "Saxon-HE", "12.9", EJDK.JDK11),
+  SAXON_12 ("net.sf.saxon", "Saxon-HE", "13.0", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
-  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11", EJDK.JDK8),
+  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
   SENTRY ("io.sentry", "sentry", "8.43.1", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
@@ -315,7 +315,7 @@ public enum EExternalDependency
 
   SNAPPY ("org.iq80.snappy", "snappy", "0.5", EJDK.JDK8),
 
-  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.10.1", EJDK.JDK8),
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.10.2", EJDK.JDK8),
 
   @IsBOM
   @VersionMaxExcl ("7.0.0")
@@ -395,7 +395,7 @@ public enum EExternalDependency
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.6", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
-  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.9.8.4", EJDK.JDK8),
+  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.2.0", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.0", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
