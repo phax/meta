@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.7", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.8", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -124,7 +124,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260607", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260609", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.0", EJDK.JDK8),
 
@@ -220,7 +220,7 @@ public enum EExternalDependency
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
-  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.2", EJDK.JDK11),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.3", EJDK.JDK11),
 
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
@@ -301,7 +301,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.43.1", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.43.2", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -326,7 +326,7 @@ public enum EExternalDependency
   SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.8", EJDK.JDK17),
 
   @IsBOM
-  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.0.6", EJDK.JDK11),
+  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.1.0", EJDK.JDK11),
   SPRING_BOOT4_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
