@@ -48,7 +48,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     return sPrefix + nIndex;
   }
 
-  private static void _createShellScript (@NonNull @Nonempty final Function <IProject, String> aCommandProvider,
+  private static void _createShellScript (@NonNull final String sPreamble,
+                                          @NonNull @Nonempty final Function <IProject, String> aCommandProvider,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
@@ -59,6 +60,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (SHELL_HEADER);
+    aSB.append (sPreamble);
     int nIndex = 1;
     for (final IProject aProject : aProjects)
     {
@@ -81,16 +83,31 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     Files.setPosixFilePermissions (f.toPath (), aPerms);
   }
 
-  private static void _createShellScript (@NonNull @Nonempty final String sCommand,
-                                          @NonNull @Nonempty final String sBatchFileName) throws IOException
+  private static void _createShellScriptPerDir (@NonNull @Nonempty final String sCommand,
+                                                @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-    _createShellScript (p -> "cd " + p.getFullBaseDirName () + "\n" + sCommand + "\ncd ..\n", sBatchFileName);
+    _createShellScript ("", p -> "cd " + p.getFullBaseDirName () + "\n" + sCommand + "\ncd ..\n", sBatchFileName);
   }
 
   private static void _createMvnShellScript (@NonNull @Nonempty final String sMavenCommand,
                                              @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-    _createShellScript ("mvn " + sMavenCommand + " $@", sBatchFileName);
+    _createShellScriptPerDir ("mvn " + sMavenCommand + " $@", sBatchFileName);
+  }
+
+  private static void _createGhSetSecretShellScript () throws IOException
+  {
+    final String sPreamble = "if [ $# -ne 2 ]; then\n" +
+                             "  echo \"Usage: $0 <SECRET_KEY> <SECRET_VALUE>\" >&2\n" +
+                             "  exit 1\n" +
+                             "fi\n";
+    _createShellScript (sPreamble,
+                        p -> "gh secret set \"$1\" --repo " +
+                             p.getProjectOwner ().getGitOrgaName () +
+                             "/" +
+                             p.getBaseDir ().getName () +
+                             " --body \"$2\"\n",
+                        "gh_secret_set.sh");
   }
 
   public static void main (final String [] args) throws IOException
@@ -104,25 +121,28 @@ public final class MainCreateShellScripts extends AbstractProjectMain
       _createMvnShellScript ("clean install sonar:sonar", "mvn_clean_install_sonar.sh");
     _createMvnShellScript ("clean install forbiddenapis:check forbiddenapis:testCheck",
                            "mvn_clean_install_forbiddenapis.sh");
-    _createShellScript ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", "mvn_javadoc.sh");
-    _createShellScript ("git pull", "git_pull.sh");
-    _createShellScript ("git gc", "git_gc.sh");
-    _createShellScript ("git gc --auto", "git_gc_auto.sh");
-    _createShellScript ("git add . -u\n" +
-                        "git commit -m \"Saving files before refreshing line endings\"\n" +
-                        "git rm --cached -r .\n" +
-                        "git reset --hard\n" +
-                        "git add .\n" +
-                        "git commit -m \"Normalize all the line endings\"",
-                        "git_normalize_crlf.sh");
-    _createShellScript ("git fetch --prune", "git_fetch_prune.sh");
-    _createShellScript ("git diff --quiet", "git_status.sh");
-    _createShellScript ("git reset --hard", "git_reset_hard.sh");
-    _createShellScript (p -> "[ ! -d " +
+    _createShellScriptPerDir ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", "mvn_javadoc.sh");
+    _createShellScriptPerDir ("git pull", "git_pull.sh");
+    _createShellScriptPerDir ("git gc", "git_gc.sh");
+    _createShellScriptPerDir ("git gc --auto", "git_gc_auto.sh");
+    _createShellScriptPerDir ("git add . -u\n" +
+                              "git commit -m \"Saving files before refreshing line endings\"\n" +
+                              "git rm --cached -r .\n" +
+                              "git reset --hard\n" +
+                              "git add .\n" +
+                              "git commit -m \"Normalize all the line endings\"",
+                              "git_normalize_crlf.sh");
+    _createShellScriptPerDir ("git fetch --prune", "git_fetch_prune.sh");
+    _createShellScriptPerDir ("git diff --quiet", "git_status.sh");
+    _createShellScriptPerDir ("git reset --hard", "git_reset_hard.sh");
+    _createShellScript ("",
+                        p -> "[ ! -d " +
                              p.getBaseDir ().getName () +
                              " ] && git clone https://github.com/phax/" +
                              p.getBaseDir ().getName () +
-                             "\n", "git_clone.sh");
+                             "\n",
+                        "git_clone.sh");
+    _createGhSetSecretShellScript ();
     System.out.println ("Shell scripts created in " + CMeta.GIT_BASE_DIR);
   }
 }
