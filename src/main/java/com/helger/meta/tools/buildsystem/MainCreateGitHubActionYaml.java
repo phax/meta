@@ -59,7 +59,8 @@ public class MainCreateGitHubActionYaml
 
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
                                                                     p.getBaseDir ().exists () &&
-                                                                    !p.isDeprecated ()))
+                                                                    !p.isDeprecated () &&
+                                                                    !p.isNestedProject ()))
     {
       final File fGitHub = new File (aProject.getBaseDir (), ".github/workflows");
       fGitHub.mkdirs ();
