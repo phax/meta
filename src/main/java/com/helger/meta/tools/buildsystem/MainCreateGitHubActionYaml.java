@@ -28,6 +28,20 @@ import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
+/**
+ * 1. Create a Slack Incoming Webhook Create a Slack app at api.slack.com/apps → enable "Incoming
+ * Webhooks" → add a webhook to your target channel. You'll get a URL like
+ * https://hooks.slack.com/services/T.../B.../....
+ * <p>
+ * 2. Store it as a secret In each repo (or as an org-level secret to share across all your repos):
+ * Settings → Secrets and variables → Actions → add SLACK_WEBHOOK_URL.
+ * <p>
+ * 3. Add the workflow .github/workflows/release-to-slack.yml:
+ * <p>
+ * gh secret set SLACK_WEBHOOK_URL --repo phax/phase4 --body "https://hooks.slack.com/services/..."
+ *
+ * @author Philip Helger
+ */
 public class MainCreateGitHubActionYaml
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateGitHubActionYaml.class);
@@ -48,10 +62,10 @@ public class MainCreateGitHubActionYaml
                 env:
                   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
                 run: |
-                  curl -sf -X POST -H 'Content-type: application/json' \
+                  curl -sf -X POST -H 'Content-type: application/json' \\
                     --data '{
-                      "text": "*New release: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}*\n${{ github.event.release.html_url }}"
-                    }' \
+                      "text": "*New release: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}*\\n${{ github.event.release.html_url }}"
+                    }' \\
                     "$SLACK_WEBHOOK_URL"
         """;
     final ICommonsMap <String, String> aFiles = new CommonsHashMap <> ();
