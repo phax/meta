@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.8", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.11", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -124,9 +124,9 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260609", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260614", EJDK.JDK21),
 
-  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.0", EJDK.JDK8),
+  GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
   H2 ("com.h2database", "h2", "2.4.240", EJDK.JDK8),
 
@@ -257,7 +257,7 @@ public enum EExternalDependency
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
 
-  MCP ("io.modelcontextprotocol.sdk", "mcp", "1.1.3", EJDK.JDK11),
+  MCP ("io.modelcontextprotocol.sdk", "mcp", "2.0.0", EJDK.JDK11),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.8.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
@@ -338,7 +338,7 @@ public enum EExternalDependency
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
   SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.0.3", EJDK.JDK17),
-  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.50", EJDK.JDK17),
+  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.51", EJDK.JDK17),
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
 
@@ -398,7 +398,7 @@ public enum EExternalDependency
   PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.2.0", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.0", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
-  PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.10.0", EJDK.JDK8),
+  PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.11.0", EJDK.JDK8),
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.15", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.16", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
@@ -572,7 +572,7 @@ public enum EExternalDependency
   {
     final List <EExternalDependency> ret = findAll (x -> x.hasGroupID (sGroupID) && x.hasArtifactID (sArtifactID));
     // Sort by JDK descending
-    ret.sort (Comparator.comparingInt ( (final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
+    ret.sort (Comparator.comparingInt ((final EExternalDependency e) -> e.getMinimumJDKVersion ().getMajor ())
                         .reversed ());
     return ret;
   }
