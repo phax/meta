@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.11", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.15", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -108,7 +108,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.8.1", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.9.0", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -124,7 +124,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260614", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260617", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -275,7 +275,7 @@ public enum EExternalDependency
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.63.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
-                            "2.28.1",
+                            "2.29.0",
                             EJDK.JDK17),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.7", EJDK.JDK8),
@@ -301,7 +301,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.43.2", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.44.1", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -332,6 +332,8 @@ public enum EExternalDependency
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_WEB ("org.springframework.boot", "spring-boot-starter-web", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_DEVTOOLS ("org.springframework.boot", "spring-boot-devtools", SPRING_BOOT4_DEPENDENCIES),
+  SPRING_BOOT4_VALIDATION ("org.springframework.boot", "spring-boot-validation", SPRING_BOOT4_DEPENDENCIES),
+  SPRING_BOOT4_WEB_SERVER ("org.springframework.boot", "spring-boot-web-server", SPRING_BOOT4_DEPENDENCIES),
 
   SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.18.0", EJDK.JDK11),
 
@@ -342,7 +344,7 @@ public enum EExternalDependency
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
 
-  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.9.0", EJDK.JDK8),
+  THREE_TEN_EXTRA ("org.threeten", "threeten-extra", "1.10.0", EJDK.JDK8),
 
   @IsLegacy (replacedWith = "jakarta.validation:jakarta.validation-api")
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
