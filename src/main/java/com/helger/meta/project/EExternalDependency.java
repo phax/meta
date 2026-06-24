@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.15", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.17", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -124,7 +124,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260617", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260622", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -237,7 +237,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.7.0", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.34", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.35", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -340,7 +340,7 @@ public enum EExternalDependency
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
   SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.0.3", EJDK.JDK17),
-  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.51", EJDK.JDK17),
+  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.52", EJDK.JDK17),
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
 
