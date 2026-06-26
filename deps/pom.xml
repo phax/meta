@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260625</version>
+  <version>1.0.0-20260626</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -369,7 +369,7 @@
     <dependency>
       <groupId>com.ibm.db2</groupId>
       <artifactId>jcc</artifactId>
-      <version>12.1.4.0</version>
+      <version>12.1.5.0</version>
     </dependency>
     <dependency>
       <groupId>tools.jackson</groupId>
@@ -685,7 +685,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.5.35</version>
+      <version>1.5.37</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -740,27 +740,27 @@
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-backward-codecs</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-demo</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-grouping</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>io.modelcontextprotocol.sdk</groupId>
@@ -891,12 +891,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.45.0</version>
+      <version>8.46.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.45.0</version>
+      <version>8.46.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -2766,23 +2766,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-parent-pom</artifactId>
-      <version>0.9.0</version>
+      <version>1.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-testfiles</artifactId>
-      <version>0.9.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd-datatypes</artifactId>
-      <version>0.9.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd</artifactId>
-      <version>0.9.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -3053,50 +3053,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>8.1.6</version>
+      <version>8.1.7</version>
       <type>war</type>
     </dependency>
     <dependency>

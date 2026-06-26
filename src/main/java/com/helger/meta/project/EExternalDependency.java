@@ -137,7 +137,7 @@ public enum EExternalDependency
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.4.3", EJDK.JDK8),
   HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.1", EJDK.JDK8),
 
-  IBM_JCC ("com.ibm.db2", "jcc", "12.1.4.0", EJDK.JDK8),
+  IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0", EJDK.JDK8),
 
   @IsBOM
   JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.0", EJDK.JDK17),
@@ -237,7 +237,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.7.0", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.35", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.37", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.0", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -251,7 +251,7 @@ public enum EExternalDependency
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
   LUCENE9_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE9_CORE),
 
-  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.4.0", EJDK.JDK21),
+  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.5.0", EJDK.JDK21),
   LUCENE10_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE10_CORE),
   LUCENE10_DEMO ("org.apache.lucene", "lucene-demo", LUCENE10_CORE),
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
@@ -301,7 +301,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.45.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.46.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
