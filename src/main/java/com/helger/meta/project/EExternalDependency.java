@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.17", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.46.19", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -92,7 +92,7 @@ public enum EExternalDependency
   ECLIPSELINK4_CORE("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.9", EJDK.JDK11),
   ECLIPSELINK4_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK4_CORE),
 
-  ECLIPSELINK5_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "5.0.0", EJDK.JDK17),
+  ECLIPSELINK5_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "5.0.1", EJDK.JDK17),
   ECLIPSELINK5_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK5_CORE),
 
   ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.46.0", EJDK.JDK11),
@@ -108,7 +108,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.9.0", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.10.0", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -124,7 +124,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.0.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260622", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260629", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -135,7 +135,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.4.3", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.1", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.2", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0", EJDK.JDK8),
 
@@ -185,7 +185,7 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.5", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "7.5.2", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "7.5.3", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
@@ -229,13 +229,13 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.1.0", EJDK.JDK17),
+  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.1.1", EJDK.JDK17),
   JUNIT6_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT6),
   JUNIT6_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT6),
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
   JUNIT6_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", JUNIT6),
 
-  LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.7.0", EJDK.JDK11),
+  LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.8.0", EJDK.JDK11),
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.37", EJDK.JDK11),
 
@@ -291,7 +291,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.7.11", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.7.12", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
