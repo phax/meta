@@ -47,19 +47,19 @@ Current list of all released projects (as of 2026-07-02):
  * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
- * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.2 - JDK 17
+ * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom) 
- * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.2 - JDK 17
+ * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli) 
- * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.2 - JDK 17
+ * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core) 
- * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.2 - JDK 17
+ * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles) 
- * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.2 - JDK 17
+ * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.1.3 - JDK 17
