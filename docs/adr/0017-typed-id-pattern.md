@@ -1,6 +1,6 @@
 ---
 status: accepted
-date: long-standing convention
+date: since Java 1.8
 decision-makers: Philip Helger
 ---
 

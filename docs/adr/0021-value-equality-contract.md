@@ -1,6 +1,6 @@
 ---
 status: accepted
-date: TODO — long-standing ph-commons convention; back-fill if known
+date: long-standing ph-commons convention
 decision-makers: Philip Helger
 ---
 

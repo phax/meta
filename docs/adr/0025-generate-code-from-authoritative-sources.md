@@ -1,6 +1,6 @@
 ---
 status: accepted
-date: TODO — back-fill if a specific date is wanted
+date: long-standing convention
 decision-makers: Philip Helger
 ---
 

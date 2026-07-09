@@ -51,7 +51,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.47.1", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.47.3", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -110,7 +110,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.10.0", EJDK.JDK17),
+  FLYWAY ("org.flywaydb", "flyway-core", "12.11.0", EJDK.JDK17),
   FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
   FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
   FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
@@ -222,7 +222,7 @@ public enum EExternalDependency
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
-  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.3", EJDK.JDK11),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.4", EJDK.JDK11),
 
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
@@ -239,7 +239,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.8.0", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.37", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.5.38", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -337,7 +337,7 @@ public enum EExternalDependency
   SPRING_BOOT4_VALIDATION ("org.springframework.boot", "spring-boot-validation", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_WEB_SERVER ("org.springframework.boot", "spring-boot-web-server", SPRING_BOOT4_DEPENDENCIES),
 
-  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.18.0", EJDK.JDK11),
+  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.19.0", EJDK.JDK11),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 

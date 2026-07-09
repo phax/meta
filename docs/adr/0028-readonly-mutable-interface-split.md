@@ -1,6 +1,6 @@
 ---
 status: accepted
-date: TODO — long-standing convention (stated in CodingStyleguide); back-fill if known
+date: long-standing convention
 decision-makers: Philip Helger
 ---
 
