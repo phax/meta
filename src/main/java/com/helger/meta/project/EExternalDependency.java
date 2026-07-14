@@ -51,12 +51,12 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.47.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.47.6", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
 
-  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.84", EJDK.JDK8),
+  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.85", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", BC_MAIL18),
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
@@ -126,7 +126,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260629", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260712", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -142,7 +142,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0", EJDK.JDK8),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.0", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.1", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -231,7 +231,7 @@ public enum EExternalDependency
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
 
-  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.1.1", EJDK.JDK17),
+  JUNIT6 ("org.junit.jupiter", "junit-jupiter", "6.1.2", EJDK.JDK17),
   JUNIT6_JUPITER_API ("org.junit.jupiter", "junit-jupiter-api", JUNIT6),
   JUNIT6_JUPITER_ENGINE ("org.junit.jupiter", "junit-jupiter-engine", JUNIT6),
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
@@ -274,13 +274,13 @@ public enum EExternalDependency
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
 
-  OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.63.0", EJDK.JDK17),
+  OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.64.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
                             "2.29.0",
                             EJDK.JDK17),
 
-  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.7", EJDK.JDK8),
+  PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.8", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
   PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
@@ -317,7 +317,7 @@ public enum EExternalDependency
 
   SNAPPY ("org.iq80.snappy", "snappy", "0.5", EJDK.JDK8),
 
-  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.10.2", EJDK.JDK8),
+  SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.10.3", EJDK.JDK8),
 
   @IsBOM
   @VersionMaxExcl ("7.0.0")
@@ -399,7 +399,7 @@ public enum EExternalDependency
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.6", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
-  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.2.0", EJDK.JDK8),
+  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.3.0", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.0", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.11.0", EJDK.JDK8),
