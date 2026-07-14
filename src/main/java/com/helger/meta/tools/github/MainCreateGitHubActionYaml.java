@@ -54,6 +54,9 @@ public class MainCreateGitHubActionYaml
           release:
             types: [published]
 
+        permissions:
+          contents: read
+
         jobs:
           notify:
             runs-on: ubuntu-latest
@@ -61,16 +64,19 @@ public class MainCreateGitHubActionYaml
               - name: Post to Slack
                 env:
                   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+                  REPO_NAME: ${{ github.event.repository.name }}
+                  TAG_NAME: ${{ github.event.release.tag_name }}
+                  RELEASE_URL: ${{ github.event.release.html_url }}
                 run: |
                   curl -sf -X POST -H 'Content-type: application/json' \\
-                    --data '{
-                      "text": "*New release: ${{ github.event.repository.name }} ${{ github.event.release.tag_name }}*\\n${{ github.event.release.html_url }}"
-                    }' \\
+                    --data "$(jq -n --arg repo "$REPO_NAME" --arg tag "$TAG_NAME" --arg url "$RELEASE_URL" \\
+                      '{text: ("*New release: " + $repo + " " + $tag + "*\\n" + $url)}')" \\
                     "$SLACK_WEBHOOK_URL"
-        """;
+                """;
     final ICommonsMap <String, String> aFiles = new CommonsHashMap <> ();
     aFiles.put ("release-to-slack.yml", sContentReleaseToSlack);
 
+    int nFiles = 0;
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
@@ -80,8 +86,11 @@ public class MainCreateGitHubActionYaml
       fGitHub.mkdirs ();
 
       for (final var e : aFiles.entrySet ())
+      {
         SimpleFileIO.writeFile (new File (fGitHub, e.getKey ()), e.getValue (), StandardCharsets.UTF_8);
+        nFiles++;
+      }
     }
-    LOGGER.info ("Done");
+    LOGGER.info ("Done for " + nFiles + " files");
   }
 }

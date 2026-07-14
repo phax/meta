@@ -58,7 +58,14 @@ public final class MainUpdateGitHubActionMavenYml extends AbstractProjectMain
   private static final ICommonsList <Replacement> REPLACEMENTS = new CommonsArrayList <> (new Replacement ("distribution: adopt",
                                                                                                            "distribution: temurin"),
                                                                                           new Replacement ("distribution: 'adopt'",
-                                                                                                           "distribution: 'temurin'"));
+                                                                                                           "distribution: 'temurin'"),
+                                                                                          new Replacement ("if: matrix.java == 17",
+                                                                                                           "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 17"),
+                                                                                          new Replacement ("if: matrix.java != 17",
+                                                                                                           "if: github.event_name != 'push' || github.ref != format('refs/heads/{0}', github.event.repository.default_branch) || matrix.java != 17"));
+
+  /** The read-only permissions block to be inserted before the top-level "jobs:" element. */
+  private static final String PERMISSIONS_BLOCK = "\npermissions:\n  contents: read\n";
 
   private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateGitHubActionMavenYml.class);
 
@@ -80,6 +87,14 @@ public final class MainUpdateGitHubActionMavenYml extends AbstractProjectMain
       }
 
       String sNew = sCurrent;
+
+      // Limit the GITHUB_TOKEN to read-only repository access (only if not yet present)
+      if (!sNew.contains ("\npermissions:") && sNew.contains ("\njobs:\n"))
+      {
+        _info (aProject, "Adding read-only 'permissions' block");
+        sNew = StringReplace.replaceAll (sNew, "\njobs:\n", PERMISSIONS_BLOCK + "\njobs:\n");
+      }
+
       for (final Replacement aReplacement : REPLACEMENTS)
         if (sNew.contains (aReplacement.search))
         {
