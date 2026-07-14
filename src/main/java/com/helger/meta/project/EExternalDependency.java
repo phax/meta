@@ -272,7 +272,7 @@ public enum EExternalDependency
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
-  ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc8", ORACLE_JDBC),
+  ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc17", ORACLE_JDBC),
 
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.64.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
@@ -282,7 +282,6 @@ public enum EExternalDependency
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.8", EJDK.JDK8),
   PDFBOX_APP ("org.apache.pdfbox", "pdfbox-app", PDFBOX),
-  PDFBOX_EXAMPLES ("org.apache.pdfbox", "pdfbox-examples", PDFBOX),
   PDFBOX_XMPBOX ("org.apache.pdfbox", "xmpbox", PDFBOX),
 
   PDFCOMPARE ("de.redsix", "pdfcompare", "1.2.9", EJDK.JDK8),
