@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-07-14):
+Current list of all released projects (as of 2026-07-15):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -71,49 +71,49 @@ Current list of all released projects (as of 2026-07-14):
  * [peppol-ap-support/peppol-reporting-support](https://github.com/phax/peppol-ap-support) - Version 2.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-support)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-support) 
- * [peppol-commons](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-commons-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-commons-parent-pom) 
- * [peppol-commons/dbnalliance-commons](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/dbnalliance-commons](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/dbnalliance-commons)](https://img.shields.io/maven-central/v/com.helger.peppol/dbnalliance-commons) 
- * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/dbnalliance-xhe](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/dbnalliance-xhe)](https://img.shields.io/maven-central/v/com.helger.peppol/dbnalliance-xhe) 
- * [peppol-commons/hredelivery-commons](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/hredelivery-commons](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/hredelivery-commons)](https://img.shields.io/maven-central/v/com.helger.peppol/hredelivery-commons) 
- * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-commons](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-commons)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-commons) 
- * [peppol-commons/peppol-directory-businesscard](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-directory-businesscard](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-directory-businesscard)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-directory-businesscard) 
- * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-id](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-id)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-id) 
- * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-id-datatypes](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-id-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-id-datatypes) 
- * [peppol-commons/peppol-mlr](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-mlr](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-mlr)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-mlr) 
- * [peppol-commons/peppol-mls](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-mls](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-mls)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-mls) 
- * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-sbdh](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sbdh)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sbdh) 
- * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-sml-client](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sml-client)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sml-client) 
- * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-smp-client](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-smp-client)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-smp-client) 
- * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-smp-datatypes](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-smp-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-smp-datatypes) 
- * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 12.5.4 - JDK 17
+ * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 12.5.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles) 
  * [peppol-om](https://github.com/phax/peppol-om) - Version 1.0.0 - JDK 17
@@ -239,106 +239,106 @@ Current list of all released projects (as of 2026-07-14):
  * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles) 
- * [ph-commons](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons-parent-pom)](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons-parent-pom) 
- * [ph-commons/ph-annotations](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-annotations](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-annotations)](https://img.shields.io/maven-central/v/com.helger.commons/ph-annotations) 
- * [ph-commons/ph-base](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-base](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-base)](https://img.shields.io/maven-central/v/com.helger.commons/ph-base) 
- * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-bc](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-bc)](https://img.shields.io/maven-central/v/com.helger.commons/ph-bc) 
- * [ph-commons/ph-cache](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-cache](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-cache)](https://img.shields.io/maven-central/v/com.helger.commons/ph-cache) 
- * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-cli](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-cli)](https://img.shields.io/maven-central/v/com.helger.commons/ph-cli) 
- * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-collection](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-collection)](https://img.shields.io/maven-central/v/com.helger.commons/ph-collection) 
- * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-commons](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons)](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons) 
- * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-config](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-config)](https://img.shields.io/maven-central/v/com.helger.commons/ph-config) 
- * [ph-commons/ph-config-json](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-config-json](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-config-json)](https://img.shields.io/maven-central/v/com.helger.commons/ph-config-json) 
- * [ph-commons/ph-csv](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-csv](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-csv)](https://img.shields.io/maven-central/v/com.helger.commons/ph-csv) 
- * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-dao](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-dao)](https://img.shields.io/maven-central/v/com.helger.commons/ph-dao) 
- * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-datetime](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-datetime)](https://img.shields.io/maven-central/v/com.helger.commons/ph-datetime) 
- * [ph-commons/ph-diagnostics](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-diagnostics](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-diagnostics)](https://img.shields.io/maven-central/v/com.helger.commons/ph-diagnostics) 
- * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-graph](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-graph)](https://img.shields.io/maven-central/v/com.helger.commons/ph-graph) 
- * [ph-commons/ph-http](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-http](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-http)](https://img.shields.io/maven-central/v/com.helger.commons/ph-http) 
- * [ph-commons/ph-io](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-io](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-io)](https://img.shields.io/maven-central/v/com.helger.commons/ph-io) 
- * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-jaxb](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-jaxb)](https://img.shields.io/maven-central/v/com.helger.commons/ph-jaxb) 
- * [ph-commons/ph-jaxb-adapter](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-jaxb-adapter](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-jaxb-adapter)](https://img.shields.io/maven-central/v/com.helger.commons/ph-jaxb-adapter) 
- * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-json](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-json)](https://img.shields.io/maven-central/v/com.helger.commons/ph-json) 
- * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-matrix](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-matrix)](https://img.shields.io/maven-central/v/com.helger.commons/ph-matrix) 
- * [ph-commons/ph-mime](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-mime](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-mime)](https://img.shields.io/maven-central/v/com.helger.commons/ph-mime) 
- * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-scopes](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-scopes)](https://img.shields.io/maven-central/v/com.helger.commons/ph-scopes) 
- * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-security](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-security)](https://img.shields.io/maven-central/v/com.helger.commons/ph-security) 
- * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-settings](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-settings)](https://img.shields.io/maven-central/v/com.helger.commons/ph-settings) 
- * [ph-commons/ph-statistics](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-statistics](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-statistics)](https://img.shields.io/maven-central/v/com.helger.commons/ph-statistics) 
- * [ph-commons/ph-text](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-text](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-text)](https://img.shields.io/maven-central/v/com.helger.commons/ph-text) 
- * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-tree](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-tree)](https://img.shields.io/maven-central/v/com.helger.commons/ph-tree) 
- * [ph-commons/ph-typeconvert](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-typeconvert](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-typeconvert)](https://img.shields.io/maven-central/v/com.helger.commons/ph-typeconvert) 
- * [ph-commons/ph-unittest-support](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-unittest-support](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support)](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support) 
- * [ph-commons/ph-unittest-support-ext](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-unittest-support-ext](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support-ext)](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support-ext) 
- * [ph-commons/ph-url](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-url](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-url)](https://img.shields.io/maven-central/v/com.helger.commons/ph-url) 
- * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-wsclient](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-wsclient)](https://img.shields.io/maven-central/v/com.helger.commons/ph-wsclient) 
- * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 12.3.2 - JDK 17
+ * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 12.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml)](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml) 
  * [ph-css](https://github.com/phax/ph-css) - Version 8.2.1 - JDK 17
@@ -587,7 +587,7 @@ Current list of all released projects (as of 2026-07-14):
  * [ph-oton/ph-oton-uictrls](https://github.com/phax/ph-oton) - Version 10.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-uictrls) 
- * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.0.5 - JDK 17
+ * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
  * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
@@ -1001,6 +1001,9 @@ Current list of all released projects (as of 2026-07-14):
  * [phive-rules/phive-rules-peppol-legacy](https://github.com/phax/phive-rules) - Version 4.3.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy) 
+ * [phive-rules/phive-rules-serbia](https://github.com/phax/phive-rules) - Version 4.3.9 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia) 
  * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 4.3.9 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu) 
