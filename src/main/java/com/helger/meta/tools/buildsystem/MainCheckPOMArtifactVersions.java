@@ -19,10 +19,8 @@ package com.helger.meta.tools.buildsystem;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,7 +31,6 @@ import com.helger.base.string.StringParser;
 import com.helger.base.system.SystemProperties;
 import com.helger.base.version.Version;
 import com.helger.base.version.VersionRange;
-import com.helger.cache.regex.RegExHelper;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsMap;
 import com.helger.datetime.helper.PDTFactory;
@@ -63,11 +60,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckPOMArtifactVersions.class);
   private static final boolean DEBUG_LOG = false;
 
-  // Parent POM requirements
-  private static final String PARENT_POM_GROUPID = "com.helger";
-  private static final String PARENT_POM_ARTIFACTID = "parent-pom";
-  private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
-
   @NonNull
   @Nonempty
   private static String [] _getDesiredPackagings (@NonNull final IProject eProject)
@@ -83,24 +75,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       case RESOURCES_ONLY -> new String [] { "jar" };
       default -> throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     };
-  }
-
-  private static boolean _isSupportedGroupID (@Nullable final String sGroupID)
-  {
-    if (sGroupID == null)
-      return false;
-    return PARENT_POM_GROUPID.equals (sGroupID) ||
-           sGroupID.startsWith ("com.helger.") ||
-           "at.austriapro".equals (sGroupID) ||
-           "eu.de4a".equals (sGroupID);
-  }
-
-  private static boolean _isSnapshotVersion (final String sVersion)
-  {
-    return sVersion.endsWith (SUFFIX_SNAPSHOT) ||
-           RegExHelper.stringMatchesPattern (".+[-_\\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|rc|RC|M|EA|SNAOSHOT)[-_\\.]?[0-9]+",
-                                             Pattern.CASE_INSENSITIVE,
-                                             sVersion);
   }
 
   @NonNull
@@ -281,7 +255,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         // Found a "<parent>" element
         final String sGroupId = MicroHelper.getChildTextContent (eParent, "groupId");
         sParentPOMGroupId = sGroupId;
-        if (!_isSupportedGroupID (sGroupId))
+        if (!Shared.isSupportedGroupID (sGroupId))
         {
           if (aProject.isBuildInProject ())
             _warn (aProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
@@ -292,7 +266,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           final String sArtifactId = MicroHelper.getChildTextContent (eParent, "artifactId");
           sParentPOMArtifactId = sArtifactId;
           boolean bCheckVersion = true;
-          if (!PARENT_POM_ARTIFACTID.equals (sArtifactId))
+          if (!Shared.PARENT_POM_ARTIFACTID.equals (sArtifactId))
           {
             bCheckVersion = false;
             if (aProject.isNestedProject () && aProject.getParentProject ().getProjectName ().equals (sArtifactId))
@@ -484,7 +458,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             sVersion = _getResolvedVar (sVersion, aProperties);
           }
 
-          if (_isSupportedGroupID (sGroupID))
+          if (Shared.isSupportedGroupID (sGroupID))
           {
             // Match!
             final IProject aReferencedProject = ProjectList.getProjectOfName (sArtifactID);
@@ -522,17 +496,17 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
               if (sVersion != null)
               {
-                final boolean bIsSnapshot = _isSnapshotVersion (sVersion);
+                final boolean bIsSnapshot = Shared.isSnapshotVersion (sVersion);
                 if (aReferencedProject.isPublished ())
                 {
                   // Referenced project published at least once
-                  final boolean bPublishedIsSnapshot = _isSnapshotVersion (aReferencedProject.getLastPublishedVersionString ());
+                  final boolean bPublishedIsSnapshot = Shared.isSnapshotVersion (aReferencedProject.getLastPublishedVersionString ());
                   final Version aLastPublishedVersion = bPublishedIsSnapshot ? Version.parse (StringHelper.trimEnd (aReferencedProject.getLastPublishedVersionString (),
-                                                                                                                    SUFFIX_SNAPSHOT))
+                                                                                                                    Shared.SUFFIX_SNAPSHOT))
                                                                              : aReferencedProject.getLastPublishedVersion ();
 
                   final Version aVersionInFile = Version.parse (bIsSnapshot ? StringHelper.trimEnd (sVersion,
-                                                                                                    SUFFIX_SNAPSHOT)
+                                                                                                    Shared.SUFFIX_SNAPSHOT)
                                                                             : sVersion);
                   if (aVersionInFile.isLT (aLastPublishedVersion))
                   {

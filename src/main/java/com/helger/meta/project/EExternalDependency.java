@@ -192,7 +192,8 @@ public enum EExternalDependency
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
-  JERSEY3_BOM ("org.glassfish.jersey", "jersey-bom", "3.1.11", EJDK.JDK11),
+  @VersionMaxExcl ("4.0.0")
+  JERSEY3_BOM("org.glassfish.jersey", "jersey-bom", "3.1.11", EJDK.JDK11),
   JERSEY3_SERVER ("org.glassfish.jersey.core", "jersey-server", JERSEY3_BOM),
   JERSEY3_COMMON ("org.glassfish.jersey.core", "jersey-common", JERSEY3_BOM),
   JERSEY3_CLIENT ("org.glassfish.jersey.core", "jersey-client", JERSEY3_BOM),
@@ -248,7 +249,8 @@ public enum EExternalDependency
   LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
   LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
 
-  LUCENE9_CORE ("org.apache.lucene", "lucene-core", "9.12.3", EJDK.JDK8),
+  @VersionMaxExcl ("10.0.0")
+  LUCENE9_CORE("org.apache.lucene", "lucene-core", "9.12.3", EJDK.JDK8),
   LUCENE9_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE9_CORE),
   LUCENE9_DEMO ("org.apache.lucene", "lucene-demo", LUCENE9_CORE),
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
