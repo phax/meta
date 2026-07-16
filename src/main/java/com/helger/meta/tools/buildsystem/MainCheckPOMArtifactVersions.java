@@ -28,9 +28,7 @@ import com.helger.annotation.Nonempty;
 import com.helger.base.array.ArrayHelper;
 import com.helger.base.string.StringHelper;
 import com.helger.base.string.StringParser;
-import com.helger.base.system.SystemProperties;
 import com.helger.base.version.Version;
-import com.helger.base.version.VersionRange;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsMap;
 import com.helger.datetime.helper.PDTFactory;
@@ -75,13 +73,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       case RESOURCES_ONLY -> new String [] { "jar" };
       default -> throw new IllegalArgumentException ("Unsupported project type in " + eProject);
     };
-  }
-
-  @NonNull
-  private static String _getParentPOMVersion (@NonNull final IProject aProject)
-  {
-    assert aProject != null;
-    return EProject.PH_PARENT_POM.getLastPublishedVersionString ();
   }
 
   @NonNull
@@ -177,8 +168,6 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 
     // Read all profile properties
     {
-      final Version aCurrentVersion = Version.parse (SystemProperties.getJavaVersion ());
-
       final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
       if (eProfiles != null)
         for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
@@ -189,21 +178,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           {
             final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
             if (eJdk != null)
-            {
-              final String sValue = eJdk.getTextContentTrimmed ();
-              if (sValue.indexOf (',') >= 0)
-              {
-                // Version range
-                final VersionRange aRange = VersionRange.parse (sValue);
-                bCanUseProfile = aRange.versionMatches (aCurrentVersion);
-              }
-              else
-              {
-                // Single version
-                final Version aVersion = Version.parse (sValue);
-                bCanUseProfile = aVersion.equals (aCurrentVersion);
-              }
-            }
+              bCanUseProfile = Shared.matchesCurrentJDK (eJdk.getTextContentTrimmed ());
             else
             {
               if (DEBUG_LOG)
@@ -284,7 +259,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           {
             // Check version only if group and artifact match
             final String sVersion = MicroHelper.getChildTextContent (eParent, "version");
-            if (bCheckVersion && !_getParentPOMVersion (aProject).equals (sVersion))
+            if (bCheckVersion && !Shared.getParentPOMVersionString ().equals (sVersion))
               _warn (aProject, "Parent POM uses non-standard version '" + sVersion + "'");
             sParentPOMVersion = sVersion;
           }

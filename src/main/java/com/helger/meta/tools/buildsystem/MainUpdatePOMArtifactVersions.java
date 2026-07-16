@@ -28,9 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.base.string.StringHelper;
-import com.helger.base.system.SystemProperties;
 import com.helger.base.version.Version;
-import com.helger.base.version.VersionRange;
 import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsList;
@@ -343,7 +341,6 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
 
     // Properties of JDK-active profiles
     {
-      final Version aCurrentJavaVersion = Version.parse (SystemProperties.getJavaVersion ());
       final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
       if (eProfiles != null)
         for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
@@ -354,13 +351,7 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
           {
             final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
             if (eJdk != null)
-            {
-              final String sValue = eJdk.getTextContentTrimmed ();
-              if (sValue.indexOf (',') >= 0)
-                bCanUseProfile = VersionRange.parse (sValue).versionMatches (aCurrentJavaVersion);
-              else
-                bCanUseProfile = Version.parse (sValue).equals (aCurrentJavaVersion);
-            }
+              bCanUseProfile = Shared.matchesCurrentJDK (eJdk.getTextContentTrimmed ());
           }
 
           if (bCanUseProfile)
@@ -534,8 +525,8 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
         if (sVersion == null || sVersion.contains ("$") || Shared.isSnapshotVersion (sVersion))
           return;
 
-        final String sLastPublished = EProject.PH_PARENT_POM.getLastPublishedVersionString ();
-        if (Version.parse (sVersion).isLT (EProject.PH_PARENT_POM.getLastPublishedVersion ()))
+        final String sLastPublished = Shared.getParentPOMVersionString ();
+        if (Version.parse (sVersion).isLT (Shared.getParentPOMVersion ()))
         {
           final Replacement aReplacement = new Replacement (EReplaceKind.PARENT, null, sVersion, sLastPublished);
           aReplacements.putIfAbsent (aReplacement.getKey (), aReplacement);
