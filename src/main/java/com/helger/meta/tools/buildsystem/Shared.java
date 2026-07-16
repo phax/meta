@@ -1,15 +1,22 @@
 package com.helger.meta.tools.buildsystem;
 
+import java.io.File;
+import java.util.function.BiConsumer;
 import java.util.regex.Pattern;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
+import com.helger.base.string.StringHelper;
 import com.helger.base.system.SystemProperties;
 import com.helger.base.version.Version;
 import com.helger.base.version.VersionRange;
 import com.helger.cache.regex.RegExHelper;
+import com.helger.io.file.FileHelper;
+import com.helger.io.file.FilenameHelper;
 import com.helger.meta.project.EProject;
+import com.helger.xml.microdom.IMicroElement;
+import com.helger.xml.microdom.util.MicroHelper;
 
 final class Shared
 {
@@ -56,6 +63,54 @@ final class Shared
     return Version.parse (sJdkActivation).equals (aCurrentJavaVersion);
   }
 
+  /**
+   * Invoke the passed consumer for every property that is effective for the JDK this tool runs on:
+   * all unconditional <code>&lt;properties&gt;</code> plus the <code>&lt;properties&gt;</code> of all
+   * JDK-active profiles. The raw (unresolved, but trimmed) value is passed - the caller decides
+   * whether and how to resolve and store it.
+   *
+   * @param eRoot
+   *        The root element of a pom.xml.
+   * @param aConsumer
+   *        The consumer invoked with (property name, raw trimmed value) for every property.
+   */
+  static void forEachActiveProperty (@NonNull final IMicroElement eRoot,
+                                     @NonNull final BiConsumer <String, String> aConsumer)
+  {
+    // Unconditional properties
+    {
+      final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
+      if (eProperties != null)
+        eProperties.forAllChildElements (eProperty -> aConsumer.accept (eProperty.getTagName (),
+                                                                        eProperty.getTextContentTrimmed ()));
+    }
+
+    // Properties of JDK-active profiles
+    {
+      final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
+      if (eProfiles != null)
+        for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
+        {
+          boolean bCanUseProfile = false;
+          final IMicroElement eActivation = eProfile.getFirstChildElement ("activation");
+          if (eActivation != null)
+          {
+            final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
+            if (eJdk != null)
+              bCanUseProfile = matchesCurrentJDK (eJdk.getTextContentTrimmed ());
+          }
+
+          if (bCanUseProfile)
+          {
+            final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
+            if (eProperties != null)
+              eProperties.forAllChildElements (eProperty -> aConsumer.accept (eProperty.getTagName (),
+                                                                              eProperty.getTextContentTrimmed ()));
+          }
+        }
+    }
+  }
+
   @NonNull
   static String getParentPOMVersionString ()
   {
@@ -66,5 +121,36 @@ final class Shared
   static Version getParentPOMVersion ()
   {
     return EProject.PH_PARENT_POM.getLastPublishedVersion ();
+  }
+
+  /**
+   * Resolve the parent pom.xml of the passed pom.xml via its <code>&lt;parent&gt;&lt;relativePath&gt;</code>
+   * (defaulting to <code>../</code>). The result is returned in canonical form.
+   *
+   * @param aThisPOMFile
+   *        The pom.xml file to resolve the parent of.
+   * @param eRoot
+   *        The already parsed root element of that pom.xml.
+   * @return The parent pom.xml file, or <code>null</code> if there is no <code>&lt;parent&gt;</code>
+   *         element or the resolved parent pom.xml does not exist (e.g. the shared external parent
+   *         POM, which is not reachable via a relative path).
+   */
+  @Nullable
+  static File getParentPOMFileOrNull (@NonNull final File aThisPOMFile, @NonNull final IMicroElement eRoot)
+  {
+    final IMicroElement eParent = eRoot.getFirstChildElement ("parent");
+    if (eParent == null)
+      return null;
+
+    String sRelativePath = MicroHelper.getChildTextContent (eParent, "relativePath");
+    if (StringHelper.isEmpty (sRelativePath))
+      sRelativePath = "../";
+    else
+      sRelativePath = FilenameHelper.ensurePathEndingWithSeparator (sRelativePath);
+
+    final File aParentFile = new File (aThisPOMFile.getParentFile (), sRelativePath + "pom.xml");
+    final File aCanonical = FileHelper.getCanonicalFileOrNull (aParentFile);
+    final File aResult = aCanonical != null ? aCanonical : aParentFile.getAbsoluteFile ();
+    return aResult.exists () ? aResult : null;
   }
 }

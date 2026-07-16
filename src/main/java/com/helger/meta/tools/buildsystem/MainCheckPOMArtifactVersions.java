@@ -32,7 +32,6 @@ import com.helger.base.version.Version;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsMap;
 import com.helger.datetime.helper.PDTFactory;
-import com.helger.io.file.FilenameHelper;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
@@ -108,33 +107,27 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
                                                @NonNull final IMicroElement eProject,
                                                @NonNull final ICommonsMap <String, String> aProperties)
   {
-    final IMicroElement eParent = eProject.getFirstChildElement ("parent");
-    if (eParent != null)
+    final File fParentPOM = Shared.getParentPOMFileOrNull (aThisPOMFile, eProject);
+    if (fParentPOM == null)
+      return;
+
+    final IMicroDocument aParentPOM = MicroReader.readMicroXML (fParentPOM);
+    if (aParentPOM != null)
     {
-      String sParentPath = MicroHelper.getChildTextContent (eParent, "relativePath");
-      if (StringHelper.isEmpty (sParentPath))
-        sParentPath = "../";
-      else
-        sParentPath = FilenameHelper.ensurePathEndingWithSeparator (sParentPath);
-      final File fParentPOM = new File (aThisPOMFile.getParentFile (), sParentPath + "pom.xml").getAbsoluteFile ();
-      final IMicroDocument aParentPOM = MicroReader.readMicroXML (fParentPOM);
-      if (aParentPOM != null)
-      {
-        if (LOGGER.isDebugEnabled ())
-          LOGGER.debug ("Successfully resolved parent POM " + fParentPOM.getAbsolutePath ());
+      if (LOGGER.isDebugEnabled ())
+        LOGGER.debug ("Successfully resolved parent POM " + fParentPOM.getAbsolutePath ());
 
-        // First read parent of parent properties
-        _addParentPOMProperties (fParentPOM, aParentPOM.getDocumentElement (), aProperties);
+      // First read parent of parent properties
+      _addParentPOMProperties (fParentPOM, aParentPOM.getDocumentElement (), aProperties);
 
-        // Than read the properties
-        final IMicroElement eProperties = aParentPOM.getDocumentElement ().getFirstChildElement ("properties");
-        if (eProperties != null)
-          eProperties.forAllChildElements (eProperty -> {
-            String sValue = eProperty.getTextContentTrimmed ();
-            sValue = _getResolvedVar (sValue, aProperties);
-            aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
-          });
-      }
+      // Than read the properties
+      final IMicroElement eProperties = aParentPOM.getDocumentElement ().getFirstChildElement ("properties");
+      if (eProperties != null)
+        eProperties.forAllChildElements (eProperty -> {
+          String sValue = eProperty.getTextContentTrimmed ();
+          sValue = _getResolvedVar (sValue, aProperties);
+          aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
+        });
     }
   }
 
@@ -155,61 +148,11 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     // Try read the parent POM properties
     _addParentPOMProperties (aProject.getPOMFile (), eRoot, aProperties);
 
-    // Read all unconditional properties
-    {
-      final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
-      if (eProperties != null)
-        eProperties.forAllChildElements (eProperty -> {
-          String sValue = eProperty.getTextContentTrimmed ();
-          sValue = _getResolvedVar (sValue, aProperties);
-          aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
-        });
-    }
-
-    // Read all profile properties
-    {
-      final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
-      if (eProfiles != null)
-        for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
-        {
-          boolean bCanUseProfile = false;
-          final IMicroElement eActivation = eProfile.getFirstChildElement ("activation");
-          if (eActivation != null)
-          {
-            final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
-            if (eJdk != null)
-              bCanUseProfile = Shared.matchesCurrentJDK (eJdk.getTextContentTrimmed ());
-            else
-            {
-              if (DEBUG_LOG)
-                _warn (aProject, "Only profile activations with JDK version are supported");
-            }
-          }
-          else
-          {
-            // Happens in parent POM
-            if (DEBUG_LOG)
-              _warn (aProject, "Found profile without activation");
-          }
-
-          if (bCanUseProfile)
-          {
-            // Add all properties from profile
-            final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
-            if (eProperties != null)
-            {
-              if (DEBUG_LOG)
-                _info (aProject,
-                       "Using properties from profile '" + MicroHelper.getChildTextContent (eProfile, "id") + "'");
-              eProperties.forAllChildElements (eProperty -> {
-                String sValue = eProperty.getTextContentTrimmed ();
-                sValue = _getResolvedVar (sValue, aProperties);
-                aProperties.put ("${" + eProperty.getTagName () + "}", sValue);
-              });
-            }
-          }
-        }
-    }
+    // Read all own and JDK-active profile properties
+    Shared.forEachActiveProperty (eRoot, (sTag, sRawValue) -> {
+      final String sValue = _getResolvedVar (sRawValue, aProperties);
+      aProperties.put ("${" + sTag + "}", sValue);
+    });
 
     if (LOGGER.isDebugEnabled ())
       LOGGER.debug ("Having the following POM properties: " + aProperties.toString ());

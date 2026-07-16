@@ -33,6 +33,7 @@ import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.CommonsLinkedHashMap;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.collection.commons.ICommonsMap;
+import com.helger.io.file.FileHelper;
 import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
@@ -100,26 +101,37 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
   private static final class Replacement
   {
     private final EReplaceKind m_eKind;
+    // The pom.xml file to modify. May be the project's own pom.xml or an ancestor pom.xml (for a
+    // property defined in a parent POM of the same repository).
+    private final File m_aTargetFile;
     // artifactId for LITERAL, property name for PROPERTY, unused for PARENT
     private final String m_sAnchor;
     private final String m_sOldVersion;
     private final String m_sNewVersion;
 
     Replacement (@NonNull final EReplaceKind eKind,
+                 @NonNull final File aTargetFile,
                  @Nullable final String sAnchor,
                  @NonNull final String sOldVersion,
                  @NonNull final String sNewVersion)
     {
       m_eKind = eKind;
+      m_aTargetFile = aTargetFile;
       m_sAnchor = sAnchor;
       m_sOldVersion = sOldVersion;
       m_sNewVersion = sNewVersion;
     }
 
     @NonNull
+    File getTargetFile ()
+    {
+      return m_aTargetFile;
+    }
+
+    @NonNull
     String getKey ()
     {
-      return m_eKind + "|" + StringHelper.getNotNull (m_sAnchor) + "|" + m_sOldVersion;
+      return m_aTargetFile.getAbsolutePath () + "|" + m_eKind + "|" + StringHelper.getNotNull (m_sAnchor) + "|" + m_sOldVersion;
     }
 
     /**
@@ -229,35 +241,135 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
   }
 
   /**
-   * For a version reference of the form <code>${name}</code>, follow potential property chains and
-   * return the property that actually holds the literal version value, but only as long as all
-   * involved properties are defined in the current pom.xml.
+   * A single pom.xml in the parent chain of a project, together with the raw properties it defines.
+   *
+   * @author Philip Helger
+   */
+  private static final class PomLayer
+  {
+    private final File m_aFile;
+    private final IMicroElement m_aRoot;
+    private final ICommonsMap <String, String> m_aOwnProps;
+
+    PomLayer (@NonNull final File aFile, @NonNull final IMicroElement aRoot)
+    {
+      m_aFile = aFile;
+      m_aRoot = aRoot;
+      m_aOwnProps = new CommonsLinkedHashMap <> ();
+      Shared.forEachActiveProperty (aRoot, m_aOwnProps::put);
+    }
+  }
+
+  /**
+   * The property that actually holds a literal version value, together with the pom.xml file it is
+   * defined in.
+   *
+   * @author Philip Helger
+   */
+  private static final class TerminalProperty
+  {
+    private final String m_sName;
+    private final String m_sValue;
+    private final File m_aFile;
+
+    TerminalProperty (@NonNull final String sName, @NonNull final String sValue, @NonNull final File aFile)
+    {
+      m_sName = sName;
+      m_sValue = sValue;
+      m_aFile = aFile;
+    }
+  }
+
+  /**
+   * Build the list of pom.xml layers of a project, starting with the project's own pom.xml, followed
+   * by its parent POMs (resolved via <code>&lt;relativePath&gt;</code>) as long as they can be read.
+   * The chain naturally stops at the repository boundary, because the shared external parent POM is
+   * not reachable via a relative path.
+   *
+   * @param aOwnPOMFile
+   *        The project's own pom.xml file
+   * @param eOwnRoot
+   *        The already parsed root element of the project's own pom.xml
+   * @return The ordered list of layers, nearest (own) first. Never empty.
+   */
+  @NonNull
+  private static File _canonical (@NonNull final File aFile)
+  {
+    final File aCanonical = FileHelper.getCanonicalFileOrNull (aFile);
+    return aCanonical != null ? aCanonical : aFile.getAbsoluteFile ();
+  }
+
+  @NonNull
+  private static ICommonsList <PomLayer> _buildLayers (@NonNull final File aOwnPOMFile,
+                                                       @NonNull final IMicroElement eOwnRoot)
+  {
+    final ICommonsList <PomLayer> aLayers = new CommonsArrayList <> ();
+    final ICommonsList <String> aVisited = new CommonsArrayList <> ();
+
+    File aFile = _canonical (aOwnPOMFile);
+    IMicroElement eRoot = eOwnRoot;
+    for (int nDepth = 0; nDepth < MAX_DEPTH; ++nDepth)
+    {
+      // Avoid cycles
+      if (aVisited.contains (aFile.getAbsolutePath ()))
+        break;
+      aVisited.add (aFile.getAbsolutePath ());
+
+      aLayers.add (new PomLayer (aFile, eRoot));
+
+      final File aParentFile = Shared.getParentPOMFileOrNull (aFile, eRoot);
+      if (aParentFile == null)
+        break;
+
+      final IMicroDocument aParentDoc = MicroReader.readMicroXML (aParentFile);
+      if (aParentDoc == null)
+        break;
+
+      aFile = aParentFile;
+      eRoot = aParentDoc.getDocumentElement ();
+    }
+    return aLayers;
+  }
+
+  /**
+   * For a version reference of the form <code>${name}</code>, follow potential property chains
+   * across the passed pom.xml layers (own pom.xml plus parent POMs) and return the property that
+   * actually holds the literal version value, together with the file it is defined in. A child
+   * definition overrides a parent definition (Maven semantics).
    *
    * @param sVarName
    *        The initial property name
-   * @param aOwnPropRaw
-   *        Raw properties defined in this pom.xml (name to raw value)
-   * @return A two element array (property name, literal value) or <code>null</code> if the terminal
-   *         property is not defined in this pom.xml or the chain is not a simple property
-   *         reference.
+   * @param aLayers
+   *        The pom.xml layers, nearest first
+   * @return The terminal property or <code>null</code> if it is not defined in the chain or the
+   *         chain is not a simple property reference.
    */
   @Nullable
-  private static String [] _findTerminalOwnProperty (@NonNull final String sVarName,
-                                                     @NonNull final ICommonsMap <String, String> aOwnPropRaw)
+  private static TerminalProperty _findTerminalProperty (@NonNull final String sVarName,
+                                                         @NonNull final ICommonsList <PomLayer> aLayers)
   {
     String sCur = sVarName;
     for (int nDepth = 0; nDepth < MAX_DEPTH; ++nDepth)
     {
-      final String sRaw = aOwnPropRaw.get (sCur);
-      if (sRaw == null)
+      // Nearest layer that defines this property wins
+      PomLayer aDefiningLayer = null;
+      for (final PomLayer aLayer : aLayers)
+        if (aLayer.m_aOwnProps.containsKey (sCur))
+        {
+          aDefiningLayer = aLayer;
+          break;
+        }
+      if (aDefiningLayer == null)
       {
-        // Not defined in this pom.xml (e.g. defined in parent POM)
+        // Not defined anywhere in the chain (e.g. defined in the external parent POM)
         return null;
       }
+
+      final String sRaw = aDefiningLayer.m_aOwnProps.get (sCur);
       if (!sRaw.contains ("${"))
       {
         // Found the literal
-        return new String [] { sCur, sRaw };
+        return new TerminalProperty (sCur, sRaw, aDefiningLayer.m_aFile);
       }
       // Only follow simple "${next}" references
       if (sRaw.startsWith ("${") && sRaw.endsWith ("}") && sRaw.indexOf ("${", 2) < 0)
@@ -328,52 +440,15 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     return aBest;
   }
 
-  private static void _collectOwnProperties (@NonNull final IMicroElement eRoot,
-                                             @NonNull final ICommonsMap <String, String> aOwnPropRaw)
-  {
-    // Unconditional properties
-    {
-      final IMicroElement eProperties = eRoot.getFirstChildElement ("properties");
-      if (eProperties != null)
-        eProperties.forAllChildElements (eProperty -> aOwnPropRaw.put (eProperty.getTagName (),
-                                                                       eProperty.getTextContentTrimmed ()));
-    }
-
-    // Properties of JDK-active profiles
-    {
-      final IMicroElement eProfiles = eRoot.getFirstChildElement ("profiles");
-      if (eProfiles != null)
-        for (final IMicroElement eProfile : eProfiles.getAllChildElements ("profile"))
-        {
-          boolean bCanUseProfile = false;
-          final IMicroElement eActivation = eProfile.getFirstChildElement ("activation");
-          if (eActivation != null)
-          {
-            final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
-            if (eJdk != null)
-              bCanUseProfile = Shared.matchesCurrentJDK (eJdk.getTextContentTrimmed ());
-          }
-
-          if (bCanUseProfile)
-          {
-            final IMicroElement eProperties = eProfile.getFirstChildElement ("properties");
-            if (eProperties != null)
-              eProperties.forAllChildElements (eProperty -> aOwnPropRaw.put (eProperty.getTagName (),
-                                                                             eProperty.getTextContentTrimmed ()));
-          }
-        }
-    }
-  }
-
   private static void _collectDependencyUpdates (@NonNull final IProject aProject,
-                                                 @NonNull final IMicroElement eRoot,
-                                                 @NonNull final ICommonsMap <String, String> aOwnPropRaw,
+                                                 @NonNull final ICommonsList <PomLayer> aLayers,
                                                  @NonNull final ICommonsMap <String, String> aUnionRaw,
                                                  @NonNull final ICommonsMap <String, Replacement> aReplacements)
   {
     final EJDK eProjectJDK = aProject.getMinimumJDKVersion ();
+    final PomLayer aOwnLayer = aLayers.get (0);
 
-    for (final IMicroNode aNode : new MicroRecursiveIterator (eRoot))
+    for (final IMicroNode aNode : new MicroRecursiveIterator (aOwnLayer.m_aRoot))
       if (aNode.isElement ())
       {
         final IMicroElement aElement = (IMicroElement) aNode;
@@ -403,34 +478,38 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
 
         // Determine the literal version currently in use and where to replace it
         final EReplaceKind eKind;
+        final File aTargetFile;
         final String sAnchor;
         final String sCurVerStr;
         if (!sVersionRaw.contains ("$"))
         {
-          // Literal version directly on the dependency/plugin
+          // Literal version directly on the dependency/plugin (always in the project's own pom.xml)
           if (sArtifactRaw.contains ("$"))
           {
             // Cannot anchor the text replacement on a non-literal artifactId
             continue;
           }
           eKind = EReplaceKind.LITERAL;
+          aTargetFile = aOwnLayer.m_aFile;
           sAnchor = sArtifactRaw;
           sCurVerStr = sVersionRaw;
         }
         else
           if (sVersionRaw.startsWith ("${") && sVersionRaw.endsWith ("}") && sVersionRaw.indexOf ("${", 2) < 0)
           {
-            // Version defined via a single property
+            // Version defined via a single property - may live in this pom.xml or a parent POM of
+            // the same repository
             final String sVarName = sVersionRaw.substring (2, sVersionRaw.length () - 1);
-            final String [] aTerminal = _findTerminalOwnProperty (sVarName, aOwnPropRaw);
+            final TerminalProperty aTerminal = _findTerminalProperty (sVarName, aLayers);
             if (aTerminal == null)
             {
-              // Not defined in this pom.xml (e.g. parent POM or ${project.version})
+              // Not defined in the parent chain (e.g. external parent POM or ${project.version})
               continue;
             }
             eKind = EReplaceKind.PROPERTY;
-            sAnchor = aTerminal[0];
-            sCurVerStr = aTerminal[1];
+            aTargetFile = aTerminal.m_aFile;
+            sAnchor = aTerminal.m_sName;
+            sCurVerStr = aTerminal.m_sValue;
           }
           else
           {
@@ -503,12 +582,13 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
         if (sNewVerStr == null || sNewVerStr.equals (sCurVerStr))
           continue;
 
-        final Replacement aReplacement = new Replacement (eKind, sAnchor, sCurVerStr, sNewVerStr);
+        final Replacement aReplacement = new Replacement (eKind, aTargetFile, sAnchor, sCurVerStr, sNewVerStr);
         aReplacements.putIfAbsent (aReplacement.getKey (), aReplacement);
       }
   }
 
-  private static void _collectParentUpdate (@NonNull final IMicroElement eRoot,
+  private static void _collectParentUpdate (@NonNull final File aOwnPOMFile,
+                                            @NonNull final IMicroElement eRoot,
                                             @NonNull final ICommonsMap <String, Replacement> aReplacements)
   {
     // parent POM present?
@@ -528,7 +608,7 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
         final String sLastPublished = Shared.getParentPOMVersionString ();
         if (Version.parse (sVersion).isLT (Shared.getParentPOMVersion ()))
         {
-          final Replacement aReplacement = new Replacement (EReplaceKind.PARENT, null, sVersion, sLastPublished);
+          final Replacement aReplacement = new Replacement (EReplaceKind.PARENT, aOwnPOMFile, null, sVersion, sLastPublished);
           aReplacements.putIfAbsent (aReplacement.getKey (), aReplacement);
         }
       }
@@ -554,12 +634,15 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     }
     final IMicroElement eRoot = aDoc.getDocumentElement ();
 
-    // Predefined and own properties (raw)
-    final ICommonsMap <String, String> aOwnPropRaw = new CommonsLinkedHashMap <> ();
-    _collectOwnProperties (eRoot, aOwnPropRaw);
+    // Build the pom.xml layer chain (own pom.xml + parent POMs of the same repository)
+    final ICommonsList <PomLayer> aLayers = _buildLayers (aPOMFile, eRoot);
 
-    // Get own coordinates
-    final ICommonsMap <String, String> aUnionRaw = new CommonsLinkedHashMap <> (aOwnPropRaw);
+    // Union of all properties (nearest definition wins) plus the predefined project coordinates -
+    // used to resolve ${...} in groupId/artifactId/version
+    final ICommonsMap <String, String> aUnionRaw = new CommonsLinkedHashMap <> ();
+    // Far-to-near, so that a nearer definition overrides a farther one
+    for (int i = aLayers.size () - 1; i >= 0; --i)
+      aUnionRaw.putAll (aLayers.get (i).m_aOwnProps);
     {
       String sGroupID = MicroHelper.getChildTextContentTrimmed (eRoot, "groupId");
       if (sGroupID == null)
@@ -578,29 +661,45 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
         aUnionRaw.put ("project.version", sVersion);
     }
 
-    // Collect all required replacements
+    // Collect all required replacements (may target the own pom.xml or an ancestor pom.xml)
     final ICommonsMap <String, Replacement> aReplacements = new CommonsLinkedHashMap <> ();
-    _collectParentUpdate (eRoot, aReplacements);
-    _collectDependencyUpdates (aProject, eRoot, aOwnPropRaw, aUnionRaw, aReplacements);
+    _collectParentUpdate (aLayers.get (0).m_aFile, eRoot, aReplacements);
+    _collectDependencyUpdates (aProject, aLayers, aUnionRaw, aReplacements);
 
     if (aReplacements.isEmpty ())
       return;
 
-    // Apply them on the raw text to preserve formatting
-    String sContent = SimpleFileIO.getFileAsString (aPOMFile, StandardCharsets.UTF_8);
+    // Group the replacements by the file they target and apply them file by file
+    final ICommonsMap <File, ICommonsList <Replacement>> aByFile = new CommonsLinkedHashMap <> ();
+    for (final Replacement aReplacement : aReplacements.values ())
+      aByFile.computeIfAbsent (aReplacement.getTargetFile (), k -> new CommonsArrayList <> ()).add (aReplacement);
+
+    aByFile.forEach ( (aFile, aFileReplacements) -> _applyToFile (aProject, aFile, aFileReplacements));
+  }
+
+  private static void _applyToFile (@NonNull final IProject aProject,
+                                    @NonNull final File aFile,
+                                    @NonNull final ICommonsList <Replacement> aReplacements)
+  {
+    // Apply on the raw text to preserve formatting
+    String sContent = SimpleFileIO.getFileAsString (aFile, StandardCharsets.UTF_8);
     if (sContent == null)
     {
-      _warn (aProject, "Failed to read POM file content of " + aPOMFile.getAbsolutePath ());
+      _warn (aProject, "Failed to read POM file content of " + aFile.getAbsolutePath ());
       return;
     }
 
     final ICommonsList <Replacement> aApplied = new CommonsArrayList <> ();
-    for (final Replacement aReplacement : aReplacements.values ())
+    for (final Replacement aReplacement : aReplacements)
     {
       final String sNewContent = aReplacement.apply (sContent);
       if (sNewContent == null)
       {
-        _warn (aProject, "Failed to locate the text to update for " + aReplacement.getLogText ());
+        _warn (aProject,
+               "Failed to locate the text to update for " +
+                         aReplacement.getLogText () +
+                         " in " +
+                         aFile.getAbsolutePath ());
         continue;
       }
       sContent = sNewContent;
@@ -611,12 +710,12 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
       return;
 
     if (!DRY_RUN)
-      SimpleFileIO.writeFile (aPOMFile, sContent, StandardCharsets.UTF_8);
+      SimpleFileIO.writeFile (aFile, sContent, StandardCharsets.UTF_8);
 
     s_nModifiedFiles++;
     _info (aProject,
            (DRY_RUN ? "Would update " : "Updated ") +
-                     aPOMFile.getAbsolutePath () +
+                     aFile.getAbsolutePath () +
                      " (" +
                      aApplied.size () +
                      " change(s))");
