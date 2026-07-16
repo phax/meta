@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.47.6", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.48.1", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -127,7 +127,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260712", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260714", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -305,7 +305,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.48.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.49.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
