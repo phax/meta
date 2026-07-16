@@ -21,7 +21,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * Indicator, that a project resides in a non-public repository.
+ *
+ * @author Philip Helger
+ */
 @Target (ElementType.FIELD)
 @Retention (RetentionPolicy.RUNTIME)
 public @interface IsPrivateRepo
-{}
+{
+  // empty
+}
