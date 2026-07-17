@@ -2304,39 +2304,39 @@
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-parent-pom</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-lib</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-partnership-mongodb</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-servlet</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-server</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-webapp</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-spring-boot</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -2367,140 +2367,140 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-parent-pom</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-api</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-model</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-repo</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-ves-engine</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-result-html</artifactId>
-      <version>12.0.3</version>
+      <version>12.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-parent-pom</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-api</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-core</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-phive</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>12.5.5</version>
+      <version>12.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
