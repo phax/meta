@@ -608,7 +608,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "6.2.0",
+                     "6.2.1",
                      EJDK.JDK17),
   PHASE2_LIB (PHASE2_PARENT_POM, "phase2-lib", EProjectType.JAVA_LIBRARY),
   PHASE2_PARTNERSHIP_MONGODB (PHASE2_PARENT_POM, "phase2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
