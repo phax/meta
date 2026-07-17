@@ -56,8 +56,10 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
  * <p>
  * The update is performed purely on the text of the file (only the affected version substring is
  * replaced), so the existing formatting of the pom.xml is preserved. A version is only rewritten if
- * the version in the file is <b>strictly lower</b> than the known latest version; equal, newer and
- * SNAPSHOT/pre-release versions are left untouched.
+ * the version in the file is <b>strictly lower</b> than the known latest version. A
+ * <code>-SNAPSHOT</code> version whose base version was already released (e.g.
+ * <code>10.0.0-SNAPSHOT</code> when <code>10.0.0</code> is the latest version) is also rewritten to
+ * the release version; equal, newer and other pre-release versions are left untouched.
  * <p>
  * Versions are rewritten in three places:
  * <ul>
@@ -517,10 +519,16 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
             continue;
           }
 
-        if (Shared.isSnapshotVersion (sCurVerStr))
+        // A "-SNAPSHOT" version whose base version was already released is out of date as well -
+        // compare on the base version. Other pre-release versions (alpha, beta, rc, ...) are left
+        // untouched.
+        final boolean bCurIsSnapshot = sCurVerStr.endsWith (Shared.SUFFIX_SNAPSHOT);
+        if (!bCurIsSnapshot && Shared.isSnapshotVersion (sCurVerStr))
           continue;
 
-        final Version aCurVer = Version.parse (sCurVerStr);
+        final Version aCurVer = Version.parse (bCurIsSnapshot ? StringHelper.trimEnd (sCurVerStr,
+                                                                                      Shared.SUFFIX_SNAPSHOT)
+                                                              : sCurVerStr);
 
         // Determine the desired latest version
         String sNewVerStr = null;
@@ -536,7 +544,9 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
           final String sLastPublished = aRef.getLastPublishedVersionString ();
           if (Shared.isSnapshotVersion (sLastPublished))
             continue;
-          if (aCurVer.isLT (aRef.getLastPublishedVersion ()))
+          // For a SNAPSHOT the equal base version means the release is out
+          if (bCurIsSnapshot ? aCurVer.isLE (aRef.getLastPublishedVersion ())
+                             : aCurVer.isLT (aRef.getLastPublishedVersion ()))
             sNewVerStr = sLastPublished;
         }
         else
@@ -575,7 +585,9 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
                                aNewerMajor.getDisplayNameWithVersion () +
                                " is available");
 
-          if (aSel != null && aCurVer.isLT (aSel.getLastPublishedVersion ()))
+          if (aSel != null &&
+              (bCurIsSnapshot ? aCurVer.isLE (aSel.getLastPublishedVersion ())
+                              : aCurVer.isLT (aSel.getLastPublishedVersion ())))
             sNewVerStr = aSel.getLastPublishedVersionString ();
         }
 
@@ -602,11 +614,20 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
       // Use only our own parent POM
       if (Shared.PARENT_POM_GROUPID.equals (sGroupID) && Shared.PARENT_POM_ARTIFACTID.equals (sArtifactID))
       {
-        if (sVersion == null || sVersion.contains ("$") || Shared.isSnapshotVersion (sVersion))
+        if (sVersion == null || sVersion.contains ("$"))
+          return;
+
+        // A "-SNAPSHOT" version whose base version was already released is out of date as well
+        final boolean bCurIsSnapshot = sVersion.endsWith (Shared.SUFFIX_SNAPSHOT);
+        if (!bCurIsSnapshot && Shared.isSnapshotVersion (sVersion))
           return;
 
         final String sLastPublished = Shared.getParentPOMVersionString ();
-        if (Version.parse (sVersion).isLT (Shared.getParentPOMVersion ()))
+        final Version aCurVer = Version.parse (bCurIsSnapshot ? StringHelper.trimEnd (sVersion,
+                                                                                      Shared.SUFFIX_SNAPSHOT)
+                                                              : sVersion);
+        if (bCurIsSnapshot ? aCurVer.isLE (Shared.getParentPOMVersion ())
+                           : aCurVer.isLT (Shared.getParentPOMVersion ()))
         {
           final Replacement aReplacement = new Replacement (EReplaceKind.PARENT, aOwnPOMFile, null, sVersion, sLastPublished);
           aReplacements.putIfAbsent (aReplacement.getKey (), aReplacement);
