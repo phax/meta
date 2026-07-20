@@ -62,13 +62,13 @@ Current list of all released projects (as of 2026-07-20):
  * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf) 
- * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.2.0 - JDK 17
+ * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support-parent-pom) 
- * [peppol-ap-support/peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.2.0 - JDK 17
+ * [peppol-ap-support/peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-ap-support) 
- * [peppol-ap-support/peppol-reporting-support](https://github.com/phax/peppol-ap-support) - Version 2.2.0 - JDK 17
+ * [peppol-ap-support/peppol-reporting-support](https://github.com/phax/peppol-ap-support) - Version 2.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-support)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-support) 
  * [peppol-commons](https://github.com/phax/peppol-commons) - Version 12.6.0 - JDK 17
