@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-07-20):
+Current list of all released projects (as of 2026-07-21):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.1 - JDK 17
 
@@ -1091,6 +1091,9 @@ Current list of all released projects (as of 2026-07-20):
  * [phoss-ap/phoss-ap-dirsender](https://github.com/phax/phoss-ap) - Version 0.10.3 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender) 
+ * [phoss-ap/phoss-ap-extension-demo](https://github.com/phax/phoss-ap) - Version 0.10.3 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-extension-demo)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-extension-demo) 
  * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.10.3 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding) 

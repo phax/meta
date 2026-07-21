@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260720</version>
+  <version>1.0.0-20260721</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -3173,6 +3173,11 @@
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-dirsender</artifactId>
+      <version>0.10.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoss.ap</groupId>
+      <artifactId>phoss-ap-extension-demo</artifactId>
       <version>0.10.3</version>
     </dependency>
     <dependency>

@@ -1022,6 +1022,7 @@ public enum EProject implements IProject
   PHOSS_AP_CORE (PHOSS_AP_PARENT_POM, "phoss-ap-core", EProjectType.JAVA_LIBRARY),
   PHOSS_AP_DB (PHOSS_AP_PARENT_POM, "phoss-ap-db", EProjectType.JAVA_LIBRARY),
   PHOSS_AP_DIRSENDER (PHOSS_AP_PARENT_POM, "phoss-ap-dirsender", EProjectType.JAVA_LIBRARY),
+  PHOSS_AP_EXTENSION_DEMO (PHOSS_AP_PARENT_POM, "phoss-ap-extension-demo", EProjectType.JAVA_APPLICATION),
   PHOSS_AP_FORWARDING (PHOSS_AP_PARENT_POM, "phoss-ap-forwarding", EProjectType.JAVA_LIBRARY),
   PHOSS_AP_OTEL (PHOSS_AP_PARENT_POM, "phoss-ap-otel", EProjectType.JAVA_LIBRARY),
   PHOSS_AP_SENTRY (PHOSS_AP_PARENT_POM, "phoss-ap-sentry", EProjectType.JAVA_LIBRARY),
