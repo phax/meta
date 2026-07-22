@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260721</version>
+  <version>1.0.0-20260722</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -2577,23 +2577,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-parent-pom</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-testfiles</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd-datatypes</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd</artifactId>
-      <version>1.1.0</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -3132,7 +3132,7 @@
     <dependency>
       <groupId>at.austriapro</groupId>
       <artifactId>ebinterface-ubl-mapping</artifactId>
-      <version>6.1.1</version>
+      <version>6.1.2</version>
     </dependency>
     <dependency>
       <groupId>at.austriapro</groupId>
@@ -3147,73 +3147,73 @@
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-parent-pom</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-api</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-basic</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-core</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-db</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-dirsender</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-extension-demo</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-forwarding</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-otel</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-sentry</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-testbackend</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-testsender</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-validation</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoss.ap</groupId>
       <artifactId>phoss-ap-webapp</artifactId>
-      <version>0.10.3</version>
+      <version>0.10.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.mcp</groupId>
