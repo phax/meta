@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260722</version>
+  <version>1.0.0-20260723</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,12 +64,12 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.48.3</version>
+      <version>2.49.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.48.3</version>
+      <version>2.49.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -279,32 +279,62 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>12.11.0</version>
+      <version>[12.11.0,13.0.0)</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>13.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-db2</artifactId>
+      <version>13.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-mysql</artifactId>
+      <version>13.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-oracle</artifactId>
+      <version>13.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-postgresql</artifactId>
+      <version>13.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-sqlserver</artifactId>
+      <version>13.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -339,7 +369,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20260714</version>
+      <version>v20260720</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -640,7 +670,7 @@
     <dependency>
       <groupId>com.github.mwiede</groupId>
       <artifactId>jsch</artifactId>
-      <version>2.28.4</version>
+      <version>2.28.5</version>
     </dependency>
     <dependency>
       <groupId>org.jspecify</groupId>
@@ -891,12 +921,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.49.0</version>
+      <version>8.50.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.49.0</version>
+      <version>8.50.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1149,7 +1179,7 @@
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-jar-plugin</artifactId>
-      <version>3.5.0</version>
+      <version>3.5.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugins</groupId>
@@ -1606,18 +1636,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
-      <version>8.3.2</version>
+      <version>8.3.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>8.3.2</version>
+      <version>8.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-richtext</artifactId>
-      <version>8.3.2</version>
+      <version>8.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2577,23 +2607,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-parent-pom</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-testfiles</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd-datatypes</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -2619,23 +2649,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-parent-pom</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-testfiles</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd-datatypes</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>

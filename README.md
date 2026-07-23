@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-07-22):
+Current list of all released projects (as of 2026-07-23):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -116,16 +116,16 @@ Current list of all released projects (as of 2026-07-22):
  * [peppol-commons/peppol-testfiles](https://github.com/phax/peppol-commons) - Version 12.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-testfiles) 
- * [peppol-om](https://github.com/phax/peppol-om) - Version 1.2.0 - JDK 17
+ * [peppol-om](https://github.com/phax/peppol-om) - Version 1.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom) 
- * [peppol-om/peppol-om-tdd](https://github.com/phax/peppol-om) - Version 1.2.0 - JDK 17
+ * [peppol-om/peppol-om-tdd](https://github.com/phax/peppol-om) - Version 1.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd) 
- * [peppol-om/peppol-om-tdd-datatypes](https://github.com/phax/peppol-om) - Version 1.2.0 - JDK 17
+ * [peppol-om/peppol-om-tdd-datatypes](https://github.com/phax/peppol-om) - Version 1.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes) 
- * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 1.2.0 - JDK 17
+ * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 1.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles) 
  * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
@@ -194,16 +194,16 @@ Current list of all released projects (as of 2026-07-22):
  * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles) 
- * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.0 - JDK 17
+ * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom) 
- * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 1.1.0 - JDK 17
+ * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd) 
- * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 1.1.0 - JDK 17
+ * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes) 
- * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 1.1.0 - JDK 17
+ * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
  * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.10.0 - JDK 17
@@ -593,13 +593,13 @@ Current list of all released projects (as of 2026-07-22):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
- * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.2 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17

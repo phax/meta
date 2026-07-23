@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.48.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.1", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -111,12 +111,20 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  FLYWAY ("org.flywaydb", "flyway-core", "12.11.0", EJDK.JDK17),
-  FLYWAY_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY),
-  FLYWAY_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY),
-  FLYWAY_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY),
-  FLYWAY_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY),
-  FLYWAY_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY),
+  @VersionMaxExcl ("13.0.0")
+  FLYWAY12("org.flywaydb", "flyway-core", "12.11.0", EJDK.JDK17),
+  FLYWAY12_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY12),
+  FLYWAY12_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY12),
+  FLYWAY12_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY12),
+  FLYWAY12_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY12),
+  FLYWAY12_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY12),
+
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.0.0", EJDK.JDK21),
+  FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
+  FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
+  FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
+  FLYWAY13_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY13),
+  FLYWAY13_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY13),
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
@@ -127,7 +135,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260714", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260720", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -223,8 +231,9 @@ public enum EExternalDependency
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.13.0", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
+  @Deprecated
   JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
-  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.4", EJDK.JDK11),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.5", EJDK.JDK11),
 
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
@@ -305,7 +314,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.1", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.49.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.50.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -383,7 +392,7 @@ public enum EExternalDependency
   PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.6.3", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.2.8", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-install-plugin", "3.1.4", EJDK.JDK8),
-  PARENT_POM_16 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.0", EJDK.JDK8),
+  PARENT_POM_16 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_17 ("org.apache.maven.plugins", "maven-jarsigner-plugin", "3.1.0", EJDK.JDK8),
   PARENT_POM_18 ("org.apache.maven.plugins", "maven-javadoc-plugin", "3.12.0", EJDK.JDK8),
   PARENT_POM_19 ("org.apache.maven.plugins", "maven-jdeps-plugin", "3.2.0", EJDK.JDK8),
