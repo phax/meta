@@ -237,20 +237,26 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
           {
             _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 11, 17, 21, 25 ]");
             if (aProject.getLastPublishedVersion () != null)
-              _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 11");
+              _checkFileContains (aProject,
+                                  ".github/workflows/maven.yml",
+                                  "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 11");
           }
           else
             if (aProject.getMinimumJDKVersion () == EJDK.JDK17)
             {
               _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 17, 21, 25 ]");
               if (aProject.getLastPublishedVersion () != null)
-                _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 17");
+                _checkFileContains (aProject,
+                                    ".github/workflows/maven.yml",
+                                    "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 17");
             }
             else
             {
               _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 21, 25 ]");
               if (aProject.getLastPublishedVersion () != null)
-                _checkFileContains (aProject, ".github/workflows/maven.yml", "if: matrix.java == 21");
+                _checkFileContains (aProject,
+                                    ".github/workflows/maven.yml",
+                                    "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 21");
             }
         }
       }
