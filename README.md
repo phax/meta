@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-07-24):
+Current list of all released projects (as of 2026-07-25):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -38,13 +38,13 @@ Current list of all released projects (as of 2026-07-24):
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client)](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client) 
- * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
+ * [jcodemodel](https://github.com/phax/jcodemodel) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/jcodemodel-parent-pom) 
- * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
+ * [jcodemodel/jcodemodel](https://github.com/phax/jcodemodel) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/jcodemodel)](https://img.shields.io/maven-central/v/com.helger/jcodemodel) 
- * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.2.1 - JDK 17
+ * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
  * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.4 - JDK 17
@@ -1170,6 +1170,16 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
+
+ * [ph-oton-icon](https://github.com/phax/ph-oton-icon) - JDK 17
+
+ * [ph-oton-icon/ph-oton-icon-bootstrap](https://github.com/phax/ph-oton-icon) - JDK 17
+
+ * [ph-oton-icon/ph-oton-icon-fontawesome4](https://github.com/phax/ph-oton-icon) - JDK 17
+
+ * [ph-oton-icon/ph-oton-icon-fontawesome5](https://github.com/phax/ph-oton-icon) - JDK 17
+
+ * [ph-oton-icon/ph-oton-icon-materialdesign](https://github.com/phax/ph-oton-icon) - JDK 17
 
  * [phase4-hredelivery-standalone](https://github.com/phax/phase4-hredelivery-standalone) - JDK 17
 

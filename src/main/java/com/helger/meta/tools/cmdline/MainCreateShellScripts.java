@@ -143,6 +143,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         "git_clone.sh");
     _createGhSetSecretShellScript ();
+    _createShellScriptPerDir ("git mv LICENSE.txt LICENSE && git commit -m \"Renamed file\" && git push",
+                              "git_migrate_x.sh");
     System.out.println ("Shell scripts created in " + CMeta.GIT_BASE_DIR);
   }
 }

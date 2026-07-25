@@ -217,10 +217,10 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     {
       // So that GitHub displays the license
       if (aProject.isBuildInProject ())
-        _checkFileExisting (aProject, "LICENSE.txt");
+        _checkFileExisting (aProject, "LICENSE");
       else
-        _checkFileNotExisting (aProject, "LICENSE.txt");
-      _checkFileNotExisting (aProject, "LICENSE");
+        _checkFileNotExisting (aProject, "LICENSE");
+      _checkFileNotExisting (aProject, "LICENSE.txt");
 
       if (_isDirExisting (aProject, ".github"))
       {
