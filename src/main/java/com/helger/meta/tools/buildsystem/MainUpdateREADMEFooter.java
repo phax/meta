@@ -54,7 +54,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
                                                                     !p.isNestedProject ()))
-      if (aProject.getProjectOwner ().equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
+      if (aProject.getProjectOwner ().equals (EProjectOwner.PROJECT_OWNER_PHAX))
       {
         if (false)
           _info (aProject, "Checking");

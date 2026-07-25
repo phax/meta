@@ -55,8 +55,12 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                                !x.isDeprecated () &&
                                                                                !x.isNestedProject () &&
-                                                                               x.getProjectOwner () ==
-                                                                                                        EProjectOwner.DEFAULT_PROJECT_OWNER);
+                                                                               (x.getProjectOwner () ==
+                                                                                EProjectOwner.PROJECT_OWNER_PHAX ||
+                                                                                x.getProjectOwner () ==
+                                                                                                                    EProjectOwner.PROJECT_OWNER_HELGER_IT ||
+                                                                                x.getProjectOwner () ==
+                                                                                                                                                             EProjectOwner.PROJECT_OWNER_AUSTRIAPRO));
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (SHELL_HEADER);

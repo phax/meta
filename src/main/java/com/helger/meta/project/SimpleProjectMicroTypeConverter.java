@@ -75,7 +75,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     {
       if (StringHelper.isNotEmpty (sProjectOwner))
         throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
-      eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
+      eProjectOwner = EProjectOwner.PROJECT_OWNER_PHAX;
     }
 
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);
@@ -128,7 +128,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
     {
       if (StringHelper.isNotEmpty (sProjectOwner))
         throw new IllegalStateException ("Unsupported project owner '" + sProjectOwner + "'");
-      eProjectOwner = EProjectOwner.DEFAULT_PROJECT_OWNER;
+      eProjectOwner = EProjectOwner.PROJECT_OWNER_PHAX;
     }
 
     final String sProjectName = aElement.getAttributeValue (ATTR_PROJECT_NAME);

@@ -51,7 +51,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                                !x.isDeprecated () &&
                                                                                !x.isNestedProject () &&
-                                                                               x.getProjectOwner () == EProjectOwner.DEFAULT_PROJECT_OWNER);
+                                                                               x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX);
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (BATCH_HEADER);

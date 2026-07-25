@@ -193,7 +193,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             }
             else
             {
-              if (eProjectOwner.equals (EProjectOwner.DEFAULT_PROJECT_OWNER))
+              if (eProjectOwner.equals (EProjectOwner.PROJECT_OWNER_PHAX))
                 if (aProject != EProject.PHASE4_PEPPOL_STANDALONE && aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
                   _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }

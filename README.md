@@ -524,6 +524,21 @@ Current list of all released projects (as of 2026-07-25):
  * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls) 
+ * [ph-oton-icon](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-parent-pom) 
+ * [ph-oton-icon/ph-oton-icon-bootstrap](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-bootstrap)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-bootstrap) 
+ * [ph-oton-icon/ph-oton-icon-fontawesome4](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome4)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome4) 
+ * [ph-oton-icon/ph-oton-icon-fontawesome5](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome5)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome5) 
+ * [ph-oton-icon/ph-oton-icon-materialdesign](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-materialdesign)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-materialdesign) 
  * [ph-oton/ph-oton-ajax](https://github.com/phax/ph-oton) - Version 10.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-ajax) 
@@ -1170,16 +1185,6 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
-
- * [ph-oton-icon](https://github.com/phax/ph-oton-icon) - JDK 17
-
- * [ph-oton-icon/ph-oton-icon-bootstrap](https://github.com/phax/ph-oton-icon) - JDK 17
-
- * [ph-oton-icon/ph-oton-icon-fontawesome4](https://github.com/phax/ph-oton-icon) - JDK 17
-
- * [ph-oton-icon/ph-oton-icon-fontawesome5](https://github.com/phax/ph-oton-icon) - JDK 17
-
- * [ph-oton-icon/ph-oton-icon-materialdesign](https://github.com/phax/ph-oton-icon) - JDK 17
 
  * [phase4-hredelivery-standalone](https://github.com/phax/phase4-hredelivery-standalone) - JDK 17
 

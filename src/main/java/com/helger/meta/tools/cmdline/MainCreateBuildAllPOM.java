@@ -114,7 +114,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     !p.isDeprecated () &&
                                                                     p.getProjectOwner () ==
-                                                                                          EProjectOwner.DEFAULT_PROJECT_OWNER))
+                                                                                          EProjectOwner.PROJECT_OWNER_PHAX))
     {
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)

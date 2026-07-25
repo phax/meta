@@ -29,7 +29,7 @@ import com.helger.meta.CMeta;
 
 public enum EProjectOwner
 {
-  DEFAULT_PROJECT_OWNER ("phax", "git"),
+  PROJECT_OWNER_PHAX ("phax", "git"),
   PROJECT_OWNER_HELGER_IT ("Helger-IT", "git"),
   PROJECT_OWNER_AUSTRIAPRO ("austriapro", "git-austriapro"),
   @Deprecated (forRemoval = false)
