@@ -186,7 +186,7 @@ public final class MainUpdateREADMEBadges extends AbstractProjectMain
   {
     int nUpdated = 0;
 
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
                                                                     !p.isNestedProject () &&

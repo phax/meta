@@ -48,7 +48,7 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
                                         @NonNull @Nonempty final String sBatchFileName,
                                         final boolean bWithErrorCheck)
   {
-    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                                !x.isDeprecated () &&
                                                                                !x.isNestedProject () &&
                                                                                x.getProjectOwner () == EProjectOwner.DEFAULT_PROJECT_OWNER);

@@ -421,7 +421,7 @@ public enum EProjectDeprecated implements IProject
                                     true);
   }
 
-  public boolean isBuildInProject ()
+  public boolean isPhProject ()
   {
     return true;
   }

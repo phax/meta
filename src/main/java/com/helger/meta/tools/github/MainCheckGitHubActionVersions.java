@@ -86,7 +86,7 @@ public class MainCheckGitHubActionVersions
 
   public static void main (final String [] args) throws Exception
   {
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated ()))
     {

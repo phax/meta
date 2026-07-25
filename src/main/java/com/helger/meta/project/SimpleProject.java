@@ -131,7 +131,7 @@ public class SimpleProject implements IProject
     }
   }
 
-  public boolean isBuildInProject ()
+  public boolean isPhProject ()
   {
     return false;
   }

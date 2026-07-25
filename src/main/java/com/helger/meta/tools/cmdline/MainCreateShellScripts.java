@@ -52,7 +52,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                                           @NonNull @Nonempty final Function <IProject, String> aCommandProvider,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                                !x.isDeprecated () &&
                                                                                !x.isNestedProject () &&
                                                                                x.getProjectOwner () ==

@@ -175,7 +175,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         sParentPOMGroupId = sGroupId;
         if (!Shared.isSupportedGroupID (sGroupId))
         {
-          if (aProject.isBuildInProject ())
+          if (aProject.isPhProject ())
             _warn (aProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
         }
         else
@@ -257,7 +257,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     }
 
     // Check URL
-    if (aProject.isBuildInProject ())
+    if (aProject.isPhProject ())
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
       final String sExpectedURL = "https://" +
@@ -281,14 +281,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     }
 
     // Check for license element
-    if (aProject.isBuildInProject ())
+    if (aProject.isPhProject ())
     {
       if (!eRoot.hasChildElements ("licenses"))
         _warn (aProject, "licenses element is missing");
     }
 
     // Check SCM
-    if (aProject.isBuildInProject ())
+    if (aProject.isPhProject ())
     {
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)

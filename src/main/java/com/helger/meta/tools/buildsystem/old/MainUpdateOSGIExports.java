@@ -77,7 +77,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
     final ICommonsMap <String, IProject> aUsedAutomaticModuleNames = new CommonsHashMap <> ();
     final ICommonsMap <String, IProject> aUsedExportPackages = new CommonsHashMap <> ();
 
-    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                     !x.isDeprecated () &&
                                                                     x.getProjectType ().hasJavaCode ()))
     {

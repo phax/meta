@@ -187,7 +187,7 @@ public enum EProjectTemp implements IProject
                                     bIsPrivateRepo);
   }
 
-  public boolean isBuildInProject ()
+  public boolean isPhProject ()
   {
     return true;
   }

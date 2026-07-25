@@ -50,7 +50,7 @@ public final class MainUpdateREADMEFooter extends AbstractProjectMain
   {
     final StringBuilder aSB = new StringBuilder ();
 
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
                                                                     !p.isNestedProject ()))

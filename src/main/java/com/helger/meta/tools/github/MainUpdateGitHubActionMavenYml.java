@@ -71,7 +71,7 @@ public final class MainUpdateGitHubActionMavenYml extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated ()))
     {

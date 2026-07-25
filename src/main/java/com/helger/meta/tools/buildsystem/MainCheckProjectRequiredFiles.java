@@ -216,7 +216,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     if (!aProject.isNestedProject ())
     {
       // So that GitHub displays the license
-      if (aProject.isBuildInProject ())
+      if (aProject.isPhProject ())
         _checkFileExisting (aProject, "LICENSE");
       else
         _checkFileNotExisting (aProject, "LICENSE");
@@ -266,7 +266,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
   public static void main (final String [] args)
   {
     // Check all existing non-deprecated built-in projects
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated ()))
     {

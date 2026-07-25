@@ -41,7 +41,7 @@ public final class MainCreateRepoList extends AbstractProjectMain
 
   public static void main (final String [] args)
   {
-    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    final ICommonsList <IProject> aSortedProjects = ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                                      !p.isDeprecated ());
 
     final ICommonsList <String> repoNames = new CommonsTreeSet <> (aSortedProjects,

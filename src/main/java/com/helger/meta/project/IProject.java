@@ -34,7 +34,7 @@ public interface IProject
    * @return <code>true</code> if this project is part of {@link EProject}, <code>false</code>
    *         otherwise.
    */
-  boolean isBuildInProject ();
+  boolean isPhProject ();
 
   @NonNull
   EHostingPlatform getHostingPlatform ();

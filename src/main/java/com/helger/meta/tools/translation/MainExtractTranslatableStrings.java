@@ -176,7 +176,7 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
         }
       }
 
-    if (!aSTProject.isEmpty () && eProject.isBuildInProject ())
+    if (!aSTProject.isEmpty () && eProject.isPhProject ())
     {
       final File aDstFileXML = new File (eProject.getBaseDir (),
                                          "src/main/resources/translation/translatable-texts.xml");

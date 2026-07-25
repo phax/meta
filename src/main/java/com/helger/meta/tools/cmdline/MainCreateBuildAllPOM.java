@@ -111,7 +111,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
   {
     // Read all dependencies
     final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     !p.isDeprecated () &&
                                                                     p.getProjectOwner () ==
                                                                                           EProjectOwner.DEFAULT_PROJECT_OWNER))

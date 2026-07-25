@@ -61,7 +61,7 @@ public final class MainRemoveBundlePackaging extends AbstractProjectMain
     aNSCtx.addMapping ("xsi", "http://www.w3.org/2001/XMLSchema-instance");
     final XMLWriterSettings aXWS = new XMLWriterSettings ().setNamespaceContext (aNSCtx);
 
-    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                     !x.isDeprecated () &&
                                                                     x.getProjectType ().hasJavaCode ()))
     {

@@ -85,7 +85,7 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       }
 
     eDeps.addComment ("Internal projects:");
-    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                     x.isPublished () &&
                                                                     !x.isDeprecated ()))
     {

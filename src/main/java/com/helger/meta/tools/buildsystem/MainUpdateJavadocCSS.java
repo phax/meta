@@ -43,7 +43,7 @@ public final class MainUpdateJavadocCSS extends AbstractProjectMain
     final String sSrcCSS = SimpleFileIO.getFileAsString (new File ("src/raw/source-javadoc.css"),
                                                          StandardCharsets.UTF_8);
 
-    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isBuildInProject () &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated () &&
                                                                     p.getProjectType ().hasJavaCode ()))
