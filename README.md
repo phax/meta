@@ -536,6 +536,9 @@ Current list of all released projects (as of 2026-07-30):
  * [ph-oton-icon/ph-oton-icon-fontawesome5](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome5)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome5) 
+ * [ph-oton-icon/ph-oton-icon-fontawesome6](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome6)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-fontawesome6) 
  * [ph-oton-icon/ph-oton-icon-materialdesign](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-materialdesign)](https://img.shields.io/maven-central/v/com.helger.photon.icon/ph-oton-icon-materialdesign) 
@@ -1185,6 +1188,18 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
+
+ * [ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
+
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
+
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-demo](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
+
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-pages](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
+
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-stub](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
+
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-uictrls](https://github.com/phax/ph-oton-bootstrap5) - JDK 17
 
  * [phase4-hredelivery-standalone](https://github.com/phax/phase4-hredelivery-standalone) - JDK 17
 

@@ -2250,6 +2250,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
+      <artifactId>ph-oton-icon-fontawesome6</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-materialdesign</artifactId>
       <version>1.0.1</version>
     </dependency>
