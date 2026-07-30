@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.4", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -111,15 +111,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  @VersionMaxExcl ("13.0.0")
-  FLYWAY12("org.flywaydb", "flyway-core", "12.11.0", EJDK.JDK17),
-  FLYWAY12_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY12),
-  FLYWAY12_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY12),
-  FLYWAY12_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY12),
-  FLYWAY12_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY12),
-  FLYWAY12_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY12),
-
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.0.0", EJDK.JDK21),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.0.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -135,7 +127,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260720", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260726", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.35.1", EJDK.JDK8),
 
@@ -250,7 +242,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.8.0", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.0", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.1", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -283,7 +275,7 @@ public enum EExternalDependency
   OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.4.0", EJDK.JDK17),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.2.0.0", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.3.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc17", ORACLE_JDBC),
 
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.64.0", EJDK.JDK17),
