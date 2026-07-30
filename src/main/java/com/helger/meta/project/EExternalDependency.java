@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.4", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.6", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -223,13 +223,11 @@ public enum EExternalDependency
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.13.0", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
-  @Deprecated
-  JSCH ("com.jcraft", "jsch", "0.1.55", EJDK.JDK8),
-  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.5", EJDK.JDK11),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.8", EJDK.JDK11),
 
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
-  JSPECIFY ("org.jspecify", "jspecify", "1.0.0", EJDK.JDK11),
+  JSPECIFY ("org.jspecify", "jspecify", "1.0.1", EJDK.JDK11),
   // JSR305 ("com.google.code.findbugs", "jsr305", "3.0.2", EJDK.JDK8),
   JTB ("edu.ucla.cs.compilers", "jtb", "1.3.2", EJDK.JDK8),
   JUNIT ("junit", "junit", "4.13.2", EJDK.JDK8),
@@ -270,7 +268,7 @@ public enum EExternalDependency
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.4.0.jre11", EJDK.JDK11),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "9.7.0", EJDK.JDK11),
+  MYSQL ("com.mysql", "mysql-connector-j", "26.7.0", EJDK.JDK11),
 
   OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.4.0", EJDK.JDK17),
 
@@ -306,7 +304,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.50.1", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.51.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -369,7 +367,7 @@ public enum EExternalDependency
 
   // parent POM dependencies
   PARENT_POM_0 ("com.mycila", "license-maven-plugin", "5.1.1", EJDK.JDK8),
-  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "6.0.2", EJDK.JDK8),
+  PARENT_POM_1 ("org.apache.felix", "maven-bundle-plugin", "6.1.0", EJDK.JDK8),
   PARENT_POM_2 ("org.apache.maven.plugins", "maven-acr-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_3 ("org.apache.maven.plugins", "maven-antrun-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_4 ("org.apache.maven.plugins", "maven-assembly-plugin", "3.8.0", EJDK.JDK8),
