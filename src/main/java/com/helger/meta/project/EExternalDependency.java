@@ -223,7 +223,7 @@ public enum EExternalDependency
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.13.0", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
 
-  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.8", EJDK.JDK11),
+  JSCH_FORK ("com.github.mwiede", "jsch", "2.28.6", EJDK.JDK11),
 
   @IsLegacy (replacedWith = "jakarta.servlet.jsp-api")
   JAVAX_JSP_API("javax.servlet.jsp", "javax.servlet.jsp-api", "2.3.3", EJDK.JDK8),
