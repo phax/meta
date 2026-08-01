@@ -786,7 +786,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.FALSE,
-                         "1.1.1",
+                         "1.1.2",
                          EJDK.JDK17),
   PEPPOL_UAE_TESTFILES (PEPPOL_UAE_PARENT_POM, "peppol-uae-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_UAE_TDD_DATATYPES (PEPPOL_UAE_PARENT_POM, "peppol-uae-tdd-datatypes", EProjectType.JAVA_LIBRARY),
