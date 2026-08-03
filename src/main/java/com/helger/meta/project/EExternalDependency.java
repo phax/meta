@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.49.6", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.50.2", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -71,7 +71,7 @@ public enum EExternalDependency
                                EJDK.JDK8),
   CODEMODEL ("com.sun.codemodel", "codemodel", "2.6", EJDK.JDK8),
   COMMONS_BEANUTILS ("commons-beanutils", "commons-beanutils", "1.11.0", EJDK.JDK8),
-  COMMONS_CODEC ("commons-codec", "commons-codec", "1.22.0", EJDK.JDK8),
+  COMMONS_CODEC ("commons-codec", "commons-codec", "1.22.1", EJDK.JDK8),
   COMMONS_COLLECTIONS_3 ("commons-collections", "commons-collections", "3.2.2", EJDK.JDK8),
   COMMONS_COLLECTIONS_4 ("org.apache.commons", "commons-collections4", "4.5.0", EJDK.JDK8),
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
@@ -82,7 +82,7 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.13.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
 
-  CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.2", EJDK.JDK17),
+  CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.3", EJDK.JDK17),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.6.5", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
@@ -111,7 +111,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "4.33.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.0.0", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.1.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -138,7 +138,7 @@ public enum EExternalDependency
   HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
 
   HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.4.3", EJDK.JDK8),
-  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.2", EJDK.JDK8),
+  HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.3", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0", EJDK.JDK8),
 
@@ -342,8 +342,8 @@ public enum EExternalDependency
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
-  SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.0.3", EJDK.JDK17),
-  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.52", EJDK.JDK17),
+  SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.1.0", EJDK.JDK17),
+  SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.53", EJDK.JDK17),
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
 
@@ -407,7 +407,7 @@ public enum EExternalDependency
   JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.15", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.16", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.15.2", EJDK.JDK8),
-  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "12.2.2", EJDK.JDK8),
+  OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "13.0.0", EJDK.JDK8),
   VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.21.0", EJDK.JDK8);
 
   private final String m_sGroupID;
