@@ -69,6 +69,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     for (final IProject aProject : aProjects)
     {
       aSB.append ("echo ")
+         .append (aProject.getProjectOwner ().getLocalGitDirName ())
+         .append ('/')
          .append (aProject.getProjectName ())
          .append (" [")
          .append (nIndex)
