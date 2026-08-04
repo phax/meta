@@ -39,7 +39,7 @@ public enum EProjectForked implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "2.4.3",
+                             "2.4.4",
                              EJDK.JDK17),
   VEFA_VALIDATOR_API (VEFA_VALIDATOR_PARENT_POM, "validator-api", EProjectType.JAVA_LIBRARY),
   VEFA_VALIDATOR_CORE (VEFA_VALIDATOR_PARENT_POM, "validator-core", EProjectType.JAVA_LIBRARY),
