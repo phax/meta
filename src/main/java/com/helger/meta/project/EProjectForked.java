@@ -26,29 +26,26 @@ import com.helger.annotation.Nonempty;
 import com.helger.base.version.Version;
 
 /**
- * Defines other projects.
+ * Defines all the forked projects that are actively maintained.
  *
  * @author Philip Helger
  */
-public enum EProjectTemp implements IProject
+public enum EProjectForked implements IProject
 {
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER (null,
-             EProjectOwner.PROJECT_ECOSIO_PH,
-             "entwerter-parent-pom",
-             "entwerter",
-             EProjectType.MAVEN_POM,
-             EHasPages.FALSE,
-             EHasWiki.FALSE,
-             null,
-             EJDK.JDK8),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_ENGINE (ENTWERTER, "entwerter-engine", EProjectType.JAVA_LIBRARY),
-  @IsGitLab
-  @IsPrivateRepo
-  ENTWERTER_WEBAPP (ENTWERTER, "entwerter-webapp", EProjectType.JAVA_WEB_APPLICATION);
+  VEFA_VALIDATOR_PARENT_POM (null,
+                             EProjectOwner.PROJECT_OWNER_PHAX,
+                             "validator-parent",
+                             "vefa-validator",
+                             EProjectType.MAVEN_POM,
+                             EHasPages.FALSE,
+                             EHasWiki.FALSE,
+                             "2.4.3",
+                             EJDK.JDK17),
+  VEFA_VALIDATOR_API (VEFA_VALIDATOR_PARENT_POM, "validator-api", EProjectType.JAVA_LIBRARY),
+  VEFA_VALIDATOR_CORE (VEFA_VALIDATOR_PARENT_POM, "validator-core", EProjectType.JAVA_LIBRARY),
+  VEFA_VALIDATOR_TESTER (VEFA_VALIDATOR_PARENT_POM, "validator-tester", EProjectType.JAVA_APPLICATION),
+  VEFA_VALIDATOR_BUILD (VEFA_VALIDATOR_PARENT_POM, "validator-build", EProjectType.JAVA_APPLICATION),
+  VEFA_VALIDATOR_DIST (VEFA_VALIDATOR_PARENT_POM, "validator-dist", EProjectType.JAVA_APPLICATION);
 
   private final SimpleProject m_aProject;
 
@@ -63,17 +60,17 @@ public enum EProjectTemp implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProjectTemp (@NonNull final EProjectTemp eParentProject,
-                @NonNull @Nonempty final String sProjectName,
-                @NonNull final EProjectType eProjectType)
+  EProjectForked (@NonNull final EProjectForked eParentProject,
+                  @NonNull @Nonempty final String sProjectName,
+                  @NonNull final EProjectType eProjectType)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  EProjectTemp (@NonNull final EProjectTemp eParentProject,
-                @NonNull @Nonempty final String sProjectName,
-                @NonNull @Nonempty final String sProjectBaseDirName,
-                @NonNull final EProjectType eProjectType)
+  EProjectForked (@NonNull final EProjectForked eParentProject,
+                  @NonNull @Nonempty final String sProjectName,
+                  @NonNull @Nonempty final String sProjectBaseDirName,
+                  @NonNull final EProjectType eProjectType)
   {
     this (eParentProject,
           sProjectName,
@@ -82,10 +79,10 @@ public enum EProjectTemp implements IProject
           eParentProject.getLastPublishedVersionString ());
   }
 
-  EProjectTemp (@NonNull final EProjectTemp eParentProject,
-                @NonNull @Nonempty final String sProjectName,
-                @NonNull final EProjectType eProjectType,
-                @Nullable final String sLastPublishedVersion)
+  EProjectForked (@NonNull final EProjectForked eParentProject,
+                  @NonNull @Nonempty final String sProjectName,
+                  @NonNull final EProjectType eProjectType,
+                  @Nullable final String sLastPublishedVersion)
   {
     this (eParentProject, sProjectName, sProjectName, eProjectType, sLastPublishedVersion);
   }
@@ -102,11 +99,11 @@ public enum EProjectTemp implements IProject
    * @param sLastPublishedVersion
    *        Last published version
    */
-  EProjectTemp (@NonNull final EProjectTemp eParentProject,
-                @NonNull @Nonempty final String sProjectName,
-                @NonNull @Nonempty final String sProjectBaseDirName,
-                @NonNull final EProjectType eProjectType,
-                @Nullable final String sLastPublishedVersion)
+  EProjectForked (@NonNull final EProjectForked eParentProject,
+                  @NonNull @Nonempty final String sProjectName,
+                  @NonNull @Nonempty final String sProjectBaseDirName,
+                  @NonNull final EProjectType eProjectType,
+                  @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
     this (eParentProject,
@@ -140,20 +137,20 @@ public enum EProjectTemp implements IProject
    * @param eMinJDK
    *        Minimum JDK version to use
    */
-  EProjectTemp (@Nullable final EProjectTemp eParentProject,
-                @NonNull final EProjectOwner eProjectOwner,
-                @NonNull @Nonempty final String sProjectName,
-                @NonNull @Nonempty final String sProjectBaseDirName,
-                @NonNull final EProjectType eProjectType,
-                @NonNull final EHasPages eHasPagesProject,
-                @NonNull final EHasWiki eHasWikiProject,
-                @Nullable final String sLastPublishedVersion,
-                @NonNull final EJDK eMinJDK)
+  EProjectForked (@Nullable final EProjectForked eParentProject,
+                  @NonNull final EProjectOwner eProjectOwner,
+                  @NonNull @Nonempty final String sProjectName,
+                  @NonNull @Nonempty final String sProjectBaseDirName,
+                  @NonNull final EProjectType eProjectType,
+                  @NonNull final EHasPages eHasPagesProject,
+                  @NonNull final EHasWiki eHasWikiProject,
+                  @Nullable final String sLastPublishedVersion,
+                  @NonNull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
     {
-      final Field aField = EProjectTemp.class.getField (name ());
+      final Field aField = EProjectForked.class.getField (name ());
       bIsGitLab = aField.isAnnotationPresent (IsGitLab.class);
     }
     catch (final Exception ex)
@@ -163,14 +160,13 @@ public enum EProjectTemp implements IProject
     final boolean bIsPrivateRepo;
     try
     {
-      final Field aField = EProjectTemp.class.getField (name ());
+      final Field aField = EProjectForked.class.getField (name ());
       bIsPrivateRepo = aField.isAnnotationPresent (IsPrivateRepo.class);
     }
     catch (final Exception ex)
     {
       throw new IllegalStateException (ex);
     }
-
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
                                     eProjectOwner,
@@ -205,6 +201,7 @@ public enum EProjectTemp implements IProject
   }
 
   @NonNull
+  @Nonempty
   public EProjectOwner getProjectOwner ()
   {
     return m_aProject.getProjectOwner ();
