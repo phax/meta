@@ -90,7 +90,17 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   private static void _createShellScriptPerDir (@NonNull @Nonempty final String sCommand,
                                                 @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-    _createShellScript ("", p -> "cd " + p.getFullBaseDirName () + "\n" + sCommand + "\ncd ..\n", sBatchFileName);
+    _createShellScript ("",
+                        p -> "cd ../" +
+                             p.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             p.getFullBaseDirName () +
+                             "\n" +
+                             sCommand +
+                             "\ncd ../../" +
+                             EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
+                             "\n",
+                        sBatchFileName);
   }
 
   private static void _createMvnShellScript (@NonNull @Nonempty final String sMavenCommand,
@@ -147,8 +157,11 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         "git_clone.sh");
     _createGhSetSecretShellScript ();
-    _createShellScriptPerDir ("git mv LICENSE.txt LICENSE && git commit -m \"Renamed file\" && git push",
-                              "git_migrate_x.sh");
+
+    // Enable when needed
+    if (false)
+      _createShellScriptPerDir ("git mv LICENSE.txt LICENSE && git commit -m \"Renamed file\" && git push",
+                                "git_migrate_x.sh");
     System.out.println ("Shell scripts created in " + CMeta.GIT_BASE_DIR);
   }
 }

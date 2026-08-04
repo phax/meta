@@ -54,6 +54,13 @@ public enum EProjectOwner
   }
 
   @NonNull
+  @Nonempty
+  public String getLocalGitDirName ()
+  {
+    return m_sLocalGitDir;
+  }
+
+  @NonNull
   public File getLocalGitDir ()
   {
     try
