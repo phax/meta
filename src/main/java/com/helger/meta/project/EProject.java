@@ -896,7 +896,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.2.3",
+         "2.2.4",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,
