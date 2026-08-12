@@ -2367,28 +2367,28 @@
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-parent-pom</artifactId>
-      <version>4.2.1</version>
+      <version>4.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-api</artifactId>
-      <version>4.2.1</version>
+      <version>4.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo</artifactId>
-      <version>4.2.1</version>
+      <version>4.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-http</artifactId>
-      <version>4.2.1</version>
+      <version>4.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
       <artifactId>ph-diver-repo-s3</artifactId>
-      <version>4.2.1</version>
+      <version>4.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>

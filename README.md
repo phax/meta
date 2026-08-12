@@ -377,19 +377,19 @@ Current list of all released projects (as of 2026-08-12):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 4.2.1 - JDK 17
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.2.1 - JDK 17
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.2.1 - JDK 17
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.2.1 - JDK 17
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.2.1 - JDK 17
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.1.0 - JDK 17
