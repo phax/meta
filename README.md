@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-08-09):
+Current list of all released projects (as of 2026-08-12):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -467,15 +467,18 @@ Current list of all released projects (as of 2026-08-09):
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.1.1 - JDK 17
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.1.1 - JDK 17
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.1.1 - JDK 17
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy) 
+ * [ph-masterdata/ph-tenancy-accarea](https://github.com/phax/ph-masterdata) - Version 8.2.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy-accarea)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy-accarea) 
  * [ph-math](https://github.com/phax/ph-math) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-math-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-math-parent-pom) 
@@ -1094,7 +1097,7 @@ Current list of all released projects (as of 2026-08-09):
  * [phive/phive-xml](https://github.com/phax/phive) - Version 12.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.4 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.5 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.11.0 - JDK 21

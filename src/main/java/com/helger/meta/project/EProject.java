@@ -476,10 +476,11 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "8.1.1",
+                            "8.2.0",
                             EJDK.JDK17),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
   PH_TENANCY (PH_MASTERDATA_PARENT_POM, "ph-tenancy", EProjectType.JAVA_LIBRARY),
+  PH_TENANCY_ACCAREA (PH_MASTERDATA_PARENT_POM, "ph-tenancy-accarea", EProjectType.JAVA_LIBRARY),
 
   PH_WEB_PARENT_POM (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
@@ -910,7 +911,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.2.4",
+         "2.2.5",
          EJDK.JDK17),
 
   EN16931_CII2UBL_PARENT_POM (null,
