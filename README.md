@@ -527,22 +527,22 @@ Current list of all released projects (as of 2026-08-19):
  * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls) 
- * [ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-parent-pom) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-demo](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-demo](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-demo)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-demo) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-pages](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-pages](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-pages)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-pages) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-stub](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-stub](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-stub)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-stub) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-uictrls](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.0 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-uictrls](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-uictrls) 
  * [ph-oton-icon](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
@@ -1169,6 +1169,15 @@ Current list of all released projects (as of 2026-08-19):
  * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.15.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer) 
+ * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.15.7 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance) 
+ * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.15.7 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene) 
+ * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.15.7 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch) 
  * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.15.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher) 
