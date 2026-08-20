@@ -527,22 +527,22 @@ Current list of all released projects (as of 2026-08-20):
  * [ph-oton-bootstrap4/ph-oton-bootstrap4-uictrls](https://github.com/phax/ph-oton-bootstrap4) - Version 10.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap4-uictrls) 
- * [ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-parent-pom) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-demo](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-demo](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-demo)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-demo) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-pages](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-pages](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-pages)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-pages) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-stub](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-stub](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-stub)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-stub) 
- * [ph-oton-bootstrap5/ph-oton-bootstrap5-uictrls](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.2 - JDK 17
+ * [ph-oton-bootstrap5/ph-oton-bootstrap5-uictrls](https://github.com/phax/ph-oton-bootstrap5) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-uictrls)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-bootstrap5-uictrls) 
  * [ph-oton-icon](https://github.com/phax/ph-oton-icon) - Version 1.0.1 - JDK 17
