@@ -22,8 +22,10 @@ import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
 import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.string.StringHelper;
 import com.helger.base.version.Version;
+import com.helger.collection.commons.ICommonsList;
 
 public interface IProject
 {
@@ -164,6 +166,36 @@ public interface IProject
 
   @Nullable
   Version getLastPublishedVersion ();
+
+  /**
+   * @return All tail trains of this project, in the order in which they were declared. Never
+   *         <code>null</code> but maybe empty. Tails are declared on the root project of a
+   *         repository and are inherited by all contained modules.
+   * @see ProjectTail
+   */
+  @NonNull
+  @ReturnsMutableCopy
+  ICommonsList <ProjectTail> getAllTails ();
+
+  /**
+   * @return <code>true</code> if this project has at least one tail train, <code>false</code> if it
+   *         consists of the tip only.
+   * @see #getAllTails()
+   */
+  default boolean hasTails ()
+  {
+    return getAllTails ().isNotEmpty ();
+  }
+
+  /**
+   * @return <code>true</code> if this project has at least one tail train that still receives
+   *         fixes, <code>false</code> otherwise.
+   * @see #getAllTails()
+   */
+  default boolean hasMaintainedTail ()
+  {
+    return getAllTails ().containsAny (ProjectTail::isMaintained);
+  }
 
   /**
    * @return <code>true</code> if it is private on GitHub, <code>false</code> if it is public

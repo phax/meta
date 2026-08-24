@@ -17,6 +17,7 @@
 package com.helger.meta.project;
 
 import java.io.File;
+import java.util.List;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -24,9 +25,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.tostring.ToStringGenerator;
 import com.helger.base.version.Version;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.serialize.MicroReader;
@@ -48,6 +52,7 @@ public class SimpleProject implements IProject
   private final String m_sLastPublishedVersion;
   private final Version m_aLastPublishedVersion;
   private final EJDK m_eMinJDK;
+  private final ICommonsList <ProjectTail> m_aTails;
   private final boolean m_bIsGitHubPrivate;
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
@@ -63,6 +68,7 @@ public class SimpleProject implements IProject
                         @NonNull final EHasWiki eHasWikiProject,
                         @Nullable final String sLastPublishedVersion,
                         @NonNull final EJDK eMinJDK,
+                        @Nullable final List <ProjectTail> aTails,
                         final boolean bIsGitHubPrivate)
   {
     ValueEnforcer.notNull (eProjectOwner, "ProjectOwner");
@@ -91,6 +97,7 @@ public class SimpleProject implements IProject
     m_sLastPublishedVersion = sLastPublishedVersion;
     m_aLastPublishedVersion = sLastPublishedVersion == null ? null : Version.parse (sLastPublishedVersion);
     m_eMinJDK = eMinJDK;
+    m_aTails = new CommonsArrayList <> (aTails);
     m_bIsGitHubPrivate = bIsGitHubPrivate;
 
     // Determine group and artifact from POM
@@ -224,6 +231,16 @@ public class SimpleProject implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aLastPublishedVersion;
+  }
+
+  @NonNull
+  @ReturnsMutableCopy
+  public ICommonsList <ProjectTail> getAllTails ()
+  {
+    // Tails are declared on the root project only - modules inherit them
+    if (m_aTails.isEmpty () && m_aParentProject != null)
+      return m_aParentProject.getAllTails ();
+    return m_aTails.getClone ();
   }
 
   public boolean isGitHubPrivate ()

@@ -23,7 +23,10 @@ import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
 import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.version.Version;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
 
 /**
  * Defines all the active projects.
@@ -40,7 +43,17 @@ public enum EProject implements IProject
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
                  "3.1.0",
-                 EJDK.JDK17),
+                 EJDK.JDK17,
+                 // Branch "v2.x"
+                 ProjectTail.builder ()
+                            .lastPublishedVersion ("2.1.4")
+                            .minJDK (EJDK.JDK11)
+                            .build (),
+                 // Branch "v1.x"
+                 ProjectTail.builder ()
+                            .lastPublishedVersion ("1.12.0")
+                            .minJDK (EJDK.JDK8)
+                            .build ()),
   PH_FORBIDDEN_APIS (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
                      "ph-forbidden-apis",
@@ -61,8 +74,6 @@ public enum EProject implements IProject
                "1.1.1",
                EJDK.JDK8),
 
-  // 10.2.6 for JDK 8
-  // 11.2.6 for JDK 11
   PH_COMMONS_PARENT_POM (null,
                          EProjectOwner.PROJECT_OWNER_PHAX,
                          "ph-commons-parent-pom",
@@ -71,7 +82,13 @@ public enum EProject implements IProject
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
                          "12.3.5",
-                         EJDK.JDK17),
+                         EJDK.JDK17, // Branch "v11"
+                         ProjectTail.builder ().lastPublishedVersion ("11.2.7").minJDK (EJDK.JDK11).build (), // Branch "10.x"
+                         ProjectTail.builder ()
+                                    .lastPublishedVersion ("10.2.5")
+                                    .minJDK (EJDK.JDK8)
+                                    .maintained (false)
+                                    .build ()),
   PH_ANNOTATIONS (PH_COMMONS_PARENT_POM, "ph-annotations", EProjectType.JAVA_LIBRARY),
   PH_BASE (PH_COMMONS_PARENT_POM, "ph-base", EProjectType.JAVA_LIBRARY),
   PH_BC (PH_COMMONS_PARENT_POM, "ph-bc", EProjectType.JAVA_LIBRARY),
@@ -640,7 +657,18 @@ public enum EProject implements IProject
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
                      "6.2.1",
-                     EJDK.JDK17),
+                     EJDK.JDK17,
+                     // Branch "v5.1"
+                     ProjectTail.builder ()
+                                .lastPublishedVersion ("5.1.8")
+                                .minJDK (EJDK.JDK11)
+                                .build (),
+                     // Branch "5.0.x"
+                     ProjectTail.builder ()
+                                .lastPublishedVersion ("5.0.8")
+                                .minJDK (EJDK.JDK11)
+                                .maintained (false)
+                                .build ()),
   PHASE2_LIB (PHASE2_PARENT_POM, "phase2-lib", EProjectType.JAVA_LIBRARY),
   PHASE2_PARTNERSHIP_MONGODB (PHASE2_PARENT_POM, "phase2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
   PHASE2_SERVLET (PHASE2_PARENT_POM, "phase2-servlet", EProjectType.JAVA_LIBRARY),
@@ -1265,6 +1293,9 @@ public enum EProject implements IProject
    *        Last published version number
    * @param eMinJDK
    *        Minimum JDK version to use
+   * @param aTails
+   *        The tail trains of this project. Only to be provided for root projects - modules inherit
+   *        the tails of their parent project.
    */
   EProject (@Nullable final EProject eParentProject,
             @NonNull final EProjectOwner eProjectOwner,
@@ -1274,7 +1305,8 @@ public enum EProject implements IProject
             @NonNull final EHasPages eHasPagesProject,
             @NonNull final EHasWiki eHasWikiProject,
             @Nullable final String sLastPublishedVersion,
-            @NonNull final EJDK eMinJDK)
+            @NonNull final EJDK eMinJDK,
+            final ProjectTail... aTails)
   {
     final boolean bIsGitLab;
     try
@@ -1309,6 +1341,7 @@ public enum EProject implements IProject
                                     eHasWikiProject,
                                     sLastPublishedVersion,
                                     eMinJDK,
+                                    new CommonsArrayList <> (aTails),
                                     bIsPrivateRepo);
   }
 
@@ -1406,6 +1439,13 @@ public enum EProject implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aProject.getLastPublishedVersion ();
+  }
+
+  @NonNull
+  @ReturnsMutableCopy
+  public ICommonsList <ProjectTail> getAllTails ()
+  {
+    return m_aProject.getAllTails ();
   }
 
   public int compareTo (@NonNull final IProject aProject)

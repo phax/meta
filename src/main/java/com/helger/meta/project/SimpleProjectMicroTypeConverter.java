@@ -111,6 +111,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               EHasWiki.valueOf (bHasWiki),
                               sLastPublishedVersion,
                               eMinJDK,
+                              null,
                               bIsGitHubPrivate);
   }
 
@@ -161,6 +162,7 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               EHasWiki.valueOf (aParentProject.hasWikiProject ()),
                               sLastPublishedVersion,
                               aParentProject.getMinimumJDKVersion (),
+                              null,
                               bIsGitHubPrivate);
   }
 }

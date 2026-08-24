@@ -23,7 +23,9 @@ import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
 import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
 import com.helger.base.version.Version;
+import com.helger.collection.commons.ICommonsList;
 
 /**
  * Defines all the forked projects that are actively maintained.
@@ -180,6 +182,7 @@ public enum EProjectForked implements IProject
                                     eHasWikiProject,
                                     sLastPublishedVersion,
                                     eMinJDK,
+                                    null,
                                     bIsPrivateRepo);
   }
 
@@ -277,6 +280,13 @@ public enum EProjectForked implements IProject
   public Version getLastPublishedVersion ()
   {
     return m_aProject.getLastPublishedVersion ();
+  }
+
+  @NonNull
+  @ReturnsMutableCopy
+  public ICommonsList <ProjectTail> getAllTails ()
+  {
+    return m_aProject.getAllTails ();
   }
 
   public int compareTo (@NonNull final IProject aProject)
