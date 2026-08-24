@@ -56,8 +56,7 @@ systems.
 | Where the baseline is set | `<java.version>17</java.version>` feeding `maven.compiler.source/target/release` | `../ph-parent-pom/pom.xml:47`, `:72-75` |
 | Per-project override | `<java.version>21</java.version>` in the project's own parent POM | `../phoss-ap/pom.xml` |
 | CI matrix | `java: [ 17, 21, 25 ]`, snapshot deploy on 17 only | `.github/workflows/maven.yml` in every repo |
-| Known JDK levels in tooling | `JDK8`, `JDK11`, `JDK17`, `JDK21`, `JDK24` | `src/main/java/com/helger/meta/project/EJDK.java` |
-| Project types | 330 `JAVA_LIBRARY`, 46 `MAVEN_POM`, 16 `JAVA_WEB_APPLICATION`, 12 `JAVA_APPLICATION`, 7 `MAVEN_PLUGIN` | `EProject.java` |
+| Known JDK levels in tooling | `JDK8`, `JDK11`, `JDK17`, `JDK21`, `JDK25` | `src/main/java/com/helger/meta/project/EJDK.java` |
 | Preview features in use | none (`--enable-preview` appears in no POM) | grep over `../*/pom.xml` |
 
 **Honest assessment.** Today I run one-size-fits-all with a conservative baseline: one train per

@@ -29,7 +29,7 @@ public enum EJDK
   JDK11 (11),
   JDK17 (17),
   JDK21 (21),
-  JDK24 (24);
+  JDK25 (25);
 
   private final int m_nMajor;
 
