@@ -43,17 +43,9 @@ public enum EProject implements IProject
                  EHasPages.FALSE,
                  EHasWiki.FALSE,
                  "3.1.0",
-                 EJDK.JDK17,
-                 // Branch "v2.x"
-                 ProjectTail.builder ()
-                            .lastPublishedVersion ("2.1.4")
-                            .minJDK (EJDK.JDK11)
-                            .build (),
-                 // Branch "v1.x"
-                 ProjectTail.builder ()
-                            .lastPublishedVersion ("1.12.0")
-                            .minJDK (EJDK.JDK8)
-                            .build ()),
+                 EJDK.JDK17, // Branch "v2.x"
+                 ProjectTail.builder ().lastPublishedVersion ("2.1.4").minJDK (EJDK.JDK11).build (), // Branch "v1.x"
+                 ProjectTail.builder ().lastPublishedVersion ("1.12.0").minJDK (EJDK.JDK8).build ()),
   PH_FORBIDDEN_APIS (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
                      "ph-forbidden-apis",
@@ -371,7 +363,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.2.0",
+                     "10.2.1",
                      EJDK.JDK17),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
   PH_UBL_TESTFILES (PH_UBL_PARENT_POM, "ph-ubl-testfiles", EProjectType.JAVA_LIBRARY),
@@ -657,13 +649,8 @@ public enum EProject implements IProject
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
                      "6.2.1",
-                     EJDK.JDK17,
-                     // Branch "v5.1"
-                     ProjectTail.builder ()
-                                .lastPublishedVersion ("5.1.8")
-                                .minJDK (EJDK.JDK11)
-                                .build (),
-                     // Branch "5.0.x"
+                     EJDK.JDK17, // Branch "v5.1"
+                     ProjectTail.builder ().lastPublishedVersion ("5.1.8").minJDK (EJDK.JDK11).build (), // Branch "5.0.x"
                      ProjectTail.builder ()
                                 .lastPublishedVersion ("5.0.8")
                                 .minJDK (EJDK.JDK11)
