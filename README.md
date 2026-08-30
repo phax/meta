@@ -1163,28 +1163,28 @@ Current list of all released projects (as of 2026-08-30):
  * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.11.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
- * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom) 
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client) 
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer) 
- * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance) 
- * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene) 
- * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch) 
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher) 
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.16.0 - JDK 17
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.17.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
  * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.5.1 - JDK 17
