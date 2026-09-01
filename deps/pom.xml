@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260831</version>
+  <version>1.0.0-20260901</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -3156,44 +3156,44 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-conformance</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-lucene</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-opensearch</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.17.0</version>
+      <version>0.17.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
