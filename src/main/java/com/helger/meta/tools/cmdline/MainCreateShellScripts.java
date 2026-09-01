@@ -50,17 +50,15 @@ public final class MainCreateShellScripts extends AbstractProjectMain
 
   private static void _createShellScript (@NonNull final String sPreamble,
                                           @NonNull @Nonempty final Function <IProject, String> aCommandProvider,
+                                          final boolean bEchoProgress,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
-                                                                               !x.isDeprecated () &&
-                                                                               !x.isNestedProject () &&
-                                                                               (x.getProjectOwner () ==
-                                                                                EProjectOwner.PROJECT_OWNER_PHAX ||
-                                                                                x.getProjectOwner () ==
-                                                                                                                    EProjectOwner.PROJECT_OWNER_HELGER_IT ||
-                                                                                x.getProjectOwner () ==
-                                                                                                                                                             EProjectOwner.PROJECT_OWNER_AUSTRIAPRO));
+      !x.isDeprecated () &&
+      !x.isNestedProject () &&
+      (x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX ||
+        x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_HELGER_IT ||
+        x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_AUSTRIAPRO));
 
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (SHELL_HEADER);
@@ -68,15 +66,16 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     int nIndex = 1;
     for (final IProject aProject : aProjects)
     {
-      aSB.append ("echo ")
-         .append (aProject.getProjectOwner ().getLocalGitDirName ())
-         .append ('/')
-         .append (aProject.getProjectName ())
-         .append (" [")
-         .append (nIndex)
-         .append ('/')
-         .append (aProjects.size ())
-         .append ("]\n");
+      if (bEchoProgress)
+        aSB.append ("echo ")
+           .append (aProject.getProjectOwner ().getLocalGitDirName ())
+           .append ('/')
+           .append (aProject.getProjectName ())
+           .append (" [")
+           .append (nIndex)
+           .append ('/')
+           .append (aProjects.size ())
+           .append ("]\n");
       aSB.append (aCommandProvider.apply (aProject));
       ++nIndex;
     }
@@ -102,6 +101,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\ncd ../../" +
                              EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
                              "\n",
+                        true,
                         sBatchFileName);
   }
 
@@ -123,7 +123,31 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "/" +
                              p.getBaseDir ().getName () +
                              " --body \"$2\"\n",
+                        true,
                         "gh_secret_set.sh");
+  }
+
+  private static void _createGitBranchCheckShellScript () throws IOException
+  {
+    _createShellScript ("echo Projects on a branch other than main or master:\n",
+                        p -> "cd ../" +
+                             p.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             p.getFullBaseDirName () +
+                             "\n" +
+                             "BRANCH=$(git rev-parse --abbrev-ref HEAD)\n" +
+                             "if [ \"$BRANCH\" != \"main\" ] && [ \"$BRANCH\" != \"master\" ]; then\n" +
+                             "  echo \"  " +
+                             p.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             p.getProjectName () +
+                             ": $BRANCH\"\n" +
+                             "fi\n" +
+                             "cd ../../" +
+                             EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
+                             "\n",
+                        false,
+                        "git_branch_check.sh");
   }
 
   public static void main (final String [] args) throws IOException
@@ -157,7 +181,9 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              " ] && git clone https://github.com/phax/" +
                              p.getBaseDir ().getName () +
                              "\n",
+                        true,
                         "git_clone.sh");
+    _createGitBranchCheckShellScript ();
     _createGhSetSecretShellScript ();
 
     // Enable when needed
