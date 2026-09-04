@@ -150,7 +150,7 @@ public interface IProject
   @Nonempty
   default String getWikiProjectName ()
   {
-    return getProjectName () + EXTENSION_WIKI_PROJECT;
+    return getBaseDir ().getName () + EXTENSION_WIKI_PROJECT;
   }
 
   /**

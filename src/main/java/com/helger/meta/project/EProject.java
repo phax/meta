@@ -121,7 +121,7 @@ public enum EProject implements IProject
                            "ph-telemetry",
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
-                           EHasWiki.TRUE,
+                           EHasWiki.FALSE,
                            "1.0.1",
                            EJDK.JDK17),
   PH_TELEMETRY (PH_TELEMETRY_PARENT_POM, "ph-telemetry", EProjectType.JAVA_LIBRARY),
@@ -1321,8 +1321,8 @@ public enum EProject implements IProject
                                     eProjectOwner,
                                     sProjectName,
                                     eProjectType,
-                                    new File (eParentProject != null ? eParentProject.getBaseDir ()
-                                                                     : eProjectOwner.getLocalGitDir (),
+                                    new File (eParentProject != null ? eParentProject.getBaseDir () : eProjectOwner
+                                                                                                                   .getLocalGitDir (),
                                               sProjectBaseDirName),
                                     EIsDeprecated.FALSE,
                                     eHasPagesProject,
