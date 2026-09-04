@@ -518,7 +518,7 @@ public enum EProject implements IProject
                      "ph-css",
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
-                     EHasWiki.TRUE,
+                     EHasWiki.FALSE,
                      "8.2.1",
                      EJDK.JDK17),
   PH_CSS (PH_CSS_PARENT_POM, "ph-css", EProjectType.JAVA_LIBRARY),
