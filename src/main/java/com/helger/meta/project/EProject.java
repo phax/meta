@@ -942,6 +942,18 @@ public enum EProject implements IProject
   EN16931_CII2UBL (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl", EProjectType.JAVA_LIBRARY),
   EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_LIBRARY),
 
+  EN16931_PURIFIER_PARENT_POM (null,
+                               EProjectOwner.PROJECT_OWNER_PHAX,
+                               "en16931-purifier-parent-pom",
+                               "en16931-purifier",
+                               EProjectType.MAVEN_POM,
+                               EHasPages.FALSE,
+                               EHasWiki.FALSE,
+                               "1.0.0",
+                               EJDK.JDK17),
+  EN16931_PURIFIER (EN16931_PURIFIER_PARENT_POM, "en16931-purifier", EProjectType.JAVA_LIBRARY),
+  EN16931_PURIFIER_CLI (EN16931_PURIFIER_PARENT_POM, "en16931-purifier-cli", EProjectType.JAVA_APPLICATION),
+
   EN16931_UBL2CII_PARENT_POM (null,
                               EProjectOwner.PROJECT_OWNER_PHAX,
                               "en16931-ubl2cii-parent-pom",

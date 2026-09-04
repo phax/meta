@@ -26,6 +26,15 @@ Current list of all released projects (as of 2026-09-04):
  * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 3.1.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli) 
+ * [en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-parent-pom) 
+ * [en16931-purifier/en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier) 
+ * [en16931-purifier/en16931-purifier-cli](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli) 
  * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom) 
