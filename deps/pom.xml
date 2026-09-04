@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260903</version>
+  <version>1.0.0-20260904</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -2053,118 +2053,118 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-markdown</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-io</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-mgrs</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jdbc</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>10.4.0</version>
+      <version>10.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
@@ -2232,66 +2232,66 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-parent-pom</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-demo</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-pages</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-uictrls</artifactId>
-      <version>10.2.1</version>
+      <version>10.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-parent-pom</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-demo</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-pages</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-stub</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-uictrls</artifactId>
-      <version>0.9.3</version>
+      <version>0.9.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
