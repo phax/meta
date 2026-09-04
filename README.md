@@ -1199,31 +1199,31 @@ Current list of all released projects (as of 2026-09-04):
  * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.5.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.3.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
  * [vefa-validator](https://github.com/phax/vefa-validator) - Version 2.4.4 - JDK 17

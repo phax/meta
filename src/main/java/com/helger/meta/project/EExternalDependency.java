@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.54.10", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.54.12", EJDK.JDK8),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -110,7 +110,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.4.0", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.5.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -130,7 +130,7 @@ public enum EExternalDependency
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.1", EJDK.JDK8),
 
-  H2 ("com.h2database", "h2", "2.4.240", EJDK.JDK8),
+  H2 ("com.h2database", "h2", "2.5.250", EJDK.JDK8),
 
   @VersionMaxExcl ("3.0.0")
   HAMCREST_LIBRARY_2("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
@@ -303,12 +303,12 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.54.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.55.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.18", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.19", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
@@ -373,7 +373,7 @@ public enum EExternalDependency
   PARENT_POM_5 ("org.apache.maven.plugins", "maven-changes-plugin", "2.12.1", EJDK.JDK8),
   PARENT_POM_6 ("org.apache.maven.plugins", "maven-checkstyle-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_7 ("org.apache.maven.plugins", "maven-clean-plugin", "3.5.0", EJDK.JDK8),
-  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.15.0", EJDK.JDK8),
+  PARENT_POM_8 ("org.apache.maven.plugins", "maven-compiler-plugin", "3.16.0", EJDK.JDK8),
   PARENT_POM_9 ("org.apache.maven.plugins", "maven-dependency-plugin", "3.11.0", EJDK.JDK8),
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.1.4", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
@@ -394,9 +394,9 @@ public enum EExternalDependency
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.2", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-site-plugin", "3.22.0", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-source-plugin", "3.4.0", EJDK.JDK8),
-  PARENT_POM_29 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.5.6", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.5.6", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.5.6", EJDK.JDK8),
+  PARENT_POM_29 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.6.0", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.6.0", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
   PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.4.0", EJDK.JDK8),
