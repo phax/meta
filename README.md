@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-04):
+Current list of all released projects (as of 2026-09-05):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -1248,6 +1248,8 @@ Current list of all released projects (as of 2026-09-04):
 Current list of all unreleased projects:
 
  * [bozoo](https://github.com/phax/bozoo) - JDK 17
+
+ * [en16931-basics](https://github.com/phax/en16931-basics) - JDK 17
 
  * [jcrepdl](https://github.com/phax/jcrepdl) - JDK 17
 
