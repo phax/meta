@@ -399,7 +399,7 @@ public enum EExternalDependency
   PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.6.0", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.8", EJDK.JDK8),
-  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.4.0", EJDK.JDK8),
+  PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.4.1", EJDK.JDK8),
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.0", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.2", EJDK.JDK8),
   PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.11.0", EJDK.JDK8),
