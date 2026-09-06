@@ -143,37 +143,37 @@ Current list of all released projects (as of 2026-09-06):
  * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 1.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles) 
- * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-parent-pom) 
- * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting) 
- * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-api](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-api)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-api) 
- * [peppol-reporting/peppol-reporting-backend-csv](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-backend-csv](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-csv)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-csv) 
- * [peppol-reporting/peppol-reporting-backend-inmemory](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-backend-inmemory](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-inmemory)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-inmemory) 
- * [peppol-reporting/peppol-reporting-backend-mongodb](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-backend-mongodb](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-mongodb) 
- * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-backend-redis](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-redis)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-redis) 
- * [peppol-reporting/peppol-reporting-backend-sql](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-backend-sql](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-sql)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-backend-sql) 
- * [peppol-reporting/peppol-reporting-datatypes](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-datatypes](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-datatypes) 
- * [peppol-reporting/peppol-reporting-test](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-test](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-test)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-test) 
- * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 4.2.0 - JDK 17
+ * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 4.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles) 
  * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.10.2 - JDK 17
