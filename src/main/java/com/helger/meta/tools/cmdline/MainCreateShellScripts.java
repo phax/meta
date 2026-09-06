@@ -230,6 +230,36 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         "git_branch_check.sh");
   }
 
+  private static void _createGitUnpushedCheckShellScript () throws IOException
+  {
+    _createShellScript ("echo Projects with commits that were not yet pushed:\n",
+                        t -> "cd ../" +
+                             t.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             t.getDirName () +
+                             "\n" +
+                             "UNPUSHED=$(git rev-list --count '@{upstream}..HEAD' 2>/dev/null || echo NOUPSTREAM)\n" +
+                             "if [ \"$UNPUSHED\" = \"NOUPSTREAM\" ]; then\n" +
+                             "  echo \"  " +
+                             t.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             t.getDisplayName () +
+                             ": no upstream branch configured\"\n" +
+                             "elif [ \"$UNPUSHED\" != \"0\" ]; then\n" +
+                             "  echo \"  " +
+                             t.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             t.getDisplayName () +
+                             ": $UNPUSHED unpushed commit(s)\"\n" +
+                             "fi\n" +
+                             "cd ../../" +
+                             EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
+                             "\n",
+                        false,
+                        true,
+                        "git_unpushed_check.sh");
+  }
+
   private static void _warnOnMissingWikiDirectories ()
   {
     for (final IProject aProject : ProjectList.getAllProjects (x -> x.hasWikiProject () && !x.isDeprecated ()))
@@ -276,6 +306,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         true,
                         "git_clone.sh");
     _createGitBranchCheckShellScript ();
+    _createGitUnpushedCheckShellScript ();
     _createGhSetSecretShellScript ();
 
     // Enable when needed
