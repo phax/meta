@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-05):
+Current list of all released projects (as of 2026-09-06):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -17,22 +17,25 @@ Current list of all released projects (as of 2026-09-05):
  * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 3.1.7 - JDK 17
+ * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 3.1.7 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 3.1.7 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli) 
- * [en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+ * [en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-parent-pom) 
- * [en16931-purifier/en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+ * [en16931-purifier/en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier) 
- * [en16931-purifier/en16931-purifier-cli](https://github.com/phax/en16931-purifier) - Version 1.0.0 - JDK 17
+ * [en16931-purifier/en16931-purifier-cli](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli) 
  * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.2.0 - JDK 17
@@ -731,13 +734,13 @@ Current list of all released projects (as of 2026-09-05):
  * [ph-scuba/ph-scuba-phive](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive) 
- * [ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.0.1 - JDK 17
+ * [ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-parent-pom)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-parent-pom) 
- * [ph-telemetry/ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.0.1 - JDK 17
+ * [ph-telemetry/ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry) 
- * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.0.1 - JDK 17
+ * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel) 
  * [ph-totp](https://github.com/phax/ph-totp) - Version 2.0.0 - JDK 17
@@ -1172,58 +1175,58 @@ Current list of all released projects (as of 2026-09-05):
  * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
- * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom) 
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client) 
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer) 
- * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance) 
- * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene) 
- * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch) 
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher) 
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.17.2 - JDK 17
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.17.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
  * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.5.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.4.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
  * [vefa-validator](https://github.com/phax/vefa-validator) - Version 2.4.4 - JDK 17
@@ -1248,8 +1251,6 @@ Current list of all released projects (as of 2026-09-05):
 Current list of all unreleased projects:
 
  * [bozoo](https://github.com/phax/bozoo) - JDK 17
-
- * [en16931-basics](https://github.com/phax/en16931-basics) - JDK 17
 
  * [jcrepdl](https://github.com/phax/jcrepdl) - JDK 17
 
