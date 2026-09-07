@@ -17,16 +17,16 @@ Current list of all released projects (as of 2026-09-07):
  * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
- * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.0 - JDK 17
+ * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 4.0.0 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 4.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli) 
  * [en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
@@ -38,13 +38,13 @@ Current list of all released projects (as of 2026-09-07):
  * [en16931-purifier/en16931-purifier-cli](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-purifier-cli) 
- * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.2.0 - JDK 17
+ * [en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-parent-pom) 
- * [en16931-ubl2cii/en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 2.2.0 - JDK 17
+ * [en16931-ubl2cii/en16931-ubl2cii](https://github.com/phax/en16931-ubl2cii) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii) 
- * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 2.2.0 - JDK 17
+ * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.1 - JDK 17
