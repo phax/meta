@@ -623,7 +623,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.TRUE,
                             EHasWiki.TRUE,
-                            "10.0.1",
+                            "10.0.2",
                             EJDK.JDK17),
   PH_SCHEMATRON_API (PH_SCHEMATRON_PARENT_POM, "ph-schematron-api", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_MODEL (PH_SCHEMATRON_PARENT_POM, "ph-schematron-model", EProjectType.JAVA_LIBRARY),
