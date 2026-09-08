@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-07):
+Current list of all released projects (as of 2026-09-08):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -11,7 +11,7 @@ Current list of all released projects (as of 2026-09-07):
  * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping)](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping) 
- * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.1 - JDK 17
+ * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
  * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
@@ -473,7 +473,7 @@ Current list of all released projects (as of 2026-09-07):
  * [ph-isorelax](https://github.com/phax/ph-isorelax) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-isorelax)](https://img.shields.io/maven-central/v/com.helger/ph-isorelax) 
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.1 - JDK 17
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin) 
  * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.2 - JDK 17
@@ -659,13 +659,13 @@ Current list of all released projects (as of 2026-09-07):
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-poi)](https://img.shields.io/maven-central/v/com.helger/ph-poi) 
- * [ph-redact](https://github.com/phax/ph-redact) - Version 1.0.1 - JDK 17
+ * [ph-redact](https://github.com/phax/ph-redact) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-redact-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-redact-parent-pom) 
- * [ph-redact/ph-redact](https://github.com/phax/ph-redact) - Version 1.0.1 - JDK 17
+ * [ph-redact/ph-redact](https://github.com/phax/ph-redact) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-redact)](https://img.shields.io/maven-central/v/com.helger/ph-redact) 
- * [ph-redact/ph-redact-cli](https://github.com/phax/ph-redact) - Version 1.0.1 - JDK 17
+ * [ph-redact/ph-redact-cli](https://github.com/phax/ph-redact) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-redact-cli)](https://img.shields.io/maven-central/v/com.helger/ph-redact-cli) 
  * [ph-regrep](https://github.com/phax/ph-regrep) - Version 4.1.0 - JDK 17
