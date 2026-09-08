@@ -1056,7 +1056,7 @@ public enum EProject implements IProject
                               EProjectType.MAVEN_POM,
                               EHasPages.FALSE,
                               EHasWiki.FALSE,
-                              "0.18.0",
+                              "0.18.1",
                               EJDK.JDK17),
   PHOSS_DIRECTORY_INDEXER (PHOSS_DIRECTORY_PARENT_POM, "phoss-directory-indexer", EProjectType.JAVA_LIBRARY),
   PHOSS_DIRECTORY_INDEXER_CONFORMANCE (PHOSS_DIRECTORY_PARENT_POM,
