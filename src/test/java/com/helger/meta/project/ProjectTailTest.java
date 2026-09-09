@@ -28,7 +28,7 @@ import org.junit.Test;
 import com.helger.base.version.Version;
 
 /**
- * Test class for class {@link ProjectTail} and {@link ProjectTailBuilder}
+ * Test class for class {@link ProjectTail} and {@link Builder}
  *
  * @author Philip Helger
  */

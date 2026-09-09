@@ -17,12 +17,16 @@
 package com.helger.meta.project;
 
 import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.Nonnegative;
 import com.helger.annotation.concurrent.Immutable;
+import com.helger.annotation.concurrent.NotThreadSafe;
+import com.helger.base.builder.IBuilder;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.hashcode.HashCodeGenerator;
+import com.helger.base.string.StringHelper;
 import com.helger.base.tostring.ToStringGenerator;
 import com.helger.base.version.Version;
 
@@ -34,7 +38,7 @@ import com.helger.base.version.Version;
  * nearly every case - and are inherited by all contained modules.
  *
  * @author Philip Helger
- * @see ProjectTailBuilder
+ * @see Builder
  * @see IProject#getAllTails()
  */
 @Immutable
@@ -155,9 +159,9 @@ public class ProjectTail
    * @return A new builder for {@link ProjectTail} objects. Never <code>null</code>.
    */
   @NonNull
-  public static ProjectTailBuilder builder ()
+  public static Builder builder ()
   {
-    return new ProjectTailBuilder ();
+    return new Builder ();
   }
 
   /**
@@ -168,8 +172,102 @@ public class ProjectTail
    * @return A new builder for {@link ProjectTail} objects. Never <code>null</code>.
    */
   @NonNull
-  public static ProjectTailBuilder builder (@NonNull final ProjectTail aSrc)
+  public static Builder builder (@NonNull final ProjectTail aSrc)
   {
-    return new ProjectTailBuilder (aSrc);
+    return new Builder (aSrc);
+  }
+
+  /**
+   * Builder class for class {@link ProjectTail}. A newly created builder assumes the tail train to
+   * be maintained - call {@link #maintained(boolean)} with <code>false</code> for trains that
+   * reached their end of life.
+   *
+   * @author Philip Helger
+   */
+  @NotThreadSafe
+  public static class Builder implements IBuilder <ProjectTail>
+  {
+    private String m_sLastPublishedVersion;
+    private EJDK m_eMinJDK;
+    private boolean m_bIsMaintained = true;
+
+    /**
+     * Default constructor.
+     */
+    public Builder ()
+    {}
+
+    /**
+     * Copy constructor from an existing tail train.
+     *
+     * @param aSrc
+     *        The source object to copy from. May not be <code>null</code>.
+     */
+    public Builder (@NonNull final ProjectTail aSrc)
+    {
+      lastPublishedVersion (aSrc.getLastPublishedVersionString ()).minJDK (aSrc.getMinimumJDKVersion ())
+                                                                  .maintained (aSrc.isMaintained ());
+    }
+
+    /**
+     * Set the last published version of the tail train.
+     *
+     * @param s
+     *        The version to use. May be <code>null</code>.
+     * @return this for chaining
+     */
+    @NonNull
+    public final Builder lastPublishedVersion (@Nullable final String s)
+    {
+      m_sLastPublishedVersion = s;
+      return this;
+    }
+
+    /**
+     * Set the JDK version the tail train is baselined on.
+     *
+     * @param e
+     *        The JDK version to use. May be <code>null</code>.
+     * @return this for chaining
+     */
+    @NonNull
+    public final Builder minJDK (@Nullable final EJDK e)
+    {
+      m_eMinJDK = e;
+      return this;
+    }
+
+    /**
+     * Set whether the tail train still receives fixes. The default is <code>true</code>.
+     *
+     * @param b
+     *        <code>true</code> if the train is maintained, <code>false</code> if it reached its end
+     *        of life.
+     * @return this for chaining
+     */
+    @NonNull
+    public final Builder maintained (final boolean b)
+    {
+      m_bIsMaintained = b;
+      return this;
+    }
+
+    /**
+     * Build the {@link ProjectTail} from the provided parameters.
+     *
+     * @return A new {@link ProjectTail} instance. Never <code>null</code>.
+     * @throws IllegalStateException
+     *         if any required parameter is missing.
+     */
+    @NonNull
+    public ProjectTail build () throws IllegalStateException
+    {
+      if (StringHelper.isEmpty (m_sLastPublishedVersion))
+        throw new IllegalStateException ("LastPublishedVersion is empty");
+      if (m_eMinJDK == null)
+        throw new IllegalStateException ("MinJDK is missing");
+
+      return new ProjectTail (m_sLastPublishedVersion, m_eMinJDK, m_bIsMaintained);
+    }
   }
 }

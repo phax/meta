@@ -18,6 +18,7 @@ package com.helger.meta.tools.github;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
+import java.util.function.Predicate;
 
 import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ import org.slf4j.LoggerFactory;
 
 import com.helger.base.io.nonblocking.NonBlockingBufferedReader;
 import com.helger.base.string.StringParser;
+import com.helger.base.version.Version;
 import com.helger.io.file.FileHelper;
 import com.helger.io.file.FileSystemIterator;
 import com.helger.io.file.IFileFilter;
@@ -36,23 +38,43 @@ public class MainCheckGitHubActionVersions
 {
   private enum EAction
   {
-    CACHE ("actions/cache", 5),
-    CHECKOUT ("actions/checkout", 6),
-    SETUP_JAVA ("actions/setup-java", 5),
+    CACHE ("actions/cache", 6),
+    CHECKOUT ("actions/checkout", 7),
+    SETUP_JAVA ("actions/setup-java", 6),
     CODEQL_INIT ("github/codeql-action/init", 4),
     CODEQL_AUTOBUILD ("github/codeql-action/autobuild", 4),
     CODEQL_ANALYZE ("github/codeql-action/analyze", 4),
-    DOCKER_LOGIN ("docker/login-action", 4);
+    DOCKER_LOGIN ("docker/login-action", 4),
+    POSTGRES ("ikalnytskyi/action-setup-postgres", 8),
+    MONGODB ("supercharge/mongodb-github-action", "1.12.1");
 
     private final String m_sName;
     private final String m_sSearch;
-    private final int m_nLastVersion;
+    private final String m_sReplace;
+    private final Predicate <String> m_aNeedsUpdateTest;
 
-    EAction (final String sName, final int nVersion)
+    EAction (final String sName, final int nLatestVersion)
+    {
+      this (sName, sName + "@v", sName + "@v" + nLatestVersion, sFileVersion -> {
+        final int nFileVersion = StringParser.parseInt (sFileVersion, -1);
+        return nFileVersion > 0 && nLatestVersion > nFileVersion;
+      });
+    }
+
+    EAction (final String sName, final String sLatestVersion)
+    {
+      this (sName, sName + "@", sName + "@" + sLatestVersion, sFileVersion -> {
+        final Version aFileVersion = Version.parse (sFileVersion);
+        return aFileVersion != null && Version.parse (sLatestVersion).compareTo (aFileVersion) > 0;
+      });
+    }
+
+    EAction (final String sName, final String sSearch, final String sReplace, final Predicate <String> aTest)
     {
       m_sName = sName;
-      m_sSearch = sName + "@v";
-      m_nLastVersion = nVersion;
+      m_sSearch = sSearch;
+      m_sReplace = sReplace;
+      m_aNeedsUpdateTest = aTest;
     }
 
     @NonNull
@@ -64,16 +86,14 @@ public class MainCheckGitHubActionVersions
           final int n = sLine.indexOf (e.m_sSearch);
           if (n > 0)
           {
-            final int nStart = n + e.m_sSearch.length ();
-            final int nVersion = StringParser.parseInt (sLine.substring (nStart), -1);
-            if (nVersion > 0 && nVersion < e.m_nLastVersion)
+            final int nStartIndex = n + e.m_sSearch.length ();
+            final String sFileVersion = sLine.substring (nStartIndex);
+            if (e.m_aNeedsUpdateTest.test (sFileVersion))
             {
-              LOGGER.warn ("  Action " + e.m_sName + " uses v" + nVersion + " but requires v" + e.m_nLastVersion);
+              LOGGER.warn ("  Action " + e.m_sName + " uses " + sFileVersion + " but an update");
 
               // Replace
-              final String sSearchWithVer = e.m_sSearch + nVersion;
-              final String sNewWithVer = e.m_sSearch + e.m_nLastVersion;
-              return sLine.replace (sSearchWithVer, sNewWithVer);
+              return sLine.replace (e.m_sSearch + sFileVersion, e.m_sReplace);
             }
             break;
           }
