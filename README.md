@@ -11,7 +11,7 @@ Current list of all released projects (as of 2026-09-09):
  * [ebinterface-xrechnung-mapping](https://github.com/austriapro/ebinterface-xrechnung-mapping) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping)](https://img.shields.io/maven-central/v/at.austriapro/ebinterface-xrechnung-mapping) 
- * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 2.0.3 - JDK 17
+ * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
  * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
