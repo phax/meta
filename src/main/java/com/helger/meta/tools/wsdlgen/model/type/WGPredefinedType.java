@@ -33,7 +33,9 @@ public class WGPredefinedType implements IWGType
   private final String m_sName;
   private final boolean m_bSimple;
 
-  public WGPredefinedType (@NonNull final String sNamespace, @NonNull @Nonempty final String sName, final boolean bSimple)
+  public WGPredefinedType (@NonNull final String sNamespace,
+                           @NonNull @Nonempty final String sName,
+                           final boolean bSimple)
   {
     ValueEnforcer.notNull (sNamespace, "Namespace");
     ValueEnforcer.notEmpty (sName, "Name");

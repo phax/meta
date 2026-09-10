@@ -30,8 +30,7 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Create a set of batch files that contains content that in most cases is
- * relevant to all projects.
+ * Create a set of batch files that contains content that in most cases is relevant to all projects.
  *
  * @author Philip Helger
  */

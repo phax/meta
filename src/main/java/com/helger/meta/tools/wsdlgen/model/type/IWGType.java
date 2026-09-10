@@ -32,14 +32,12 @@ public interface IWGType extends Serializable
   String getName ();
 
   /**
-   * @return <code>true</code> if it is a simple type, <code>false</code> if it
-   *         is a complex type.
+   * @return <code>true</code> if it is a simple type, <code>false</code> if it is a complex type.
    */
   boolean isSimple ();
 
   /**
-   * @return <code>true</code> if it is a complex type, <code>false</code> if it
-   *         is a simple type.
+   * @return <code>true</code> if it is a complex type, <code>false</code> if it is a simple type.
    */
   boolean isComplex ();
 }

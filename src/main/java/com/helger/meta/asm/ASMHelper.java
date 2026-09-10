@@ -179,8 +179,8 @@ public final class ASMHelper
    * Read the passed class file using ASM and build a {@link ClassNode}.
    *
    * @param aBytes
-   *        The bytes representing the content of the class file to read. May
-   *        not be <code>null</code>.
+   *        The bytes representing the content of the class file to read. May not be
+   *        <code>null</code>.
    * @return The read {@link ClassNode}.
    */
   @NonNull

@@ -302,8 +302,8 @@ public final class MainCreateMetaLinesOfCode extends AbstractProjectMain
     }
   }
 
-  private static void _scan (@NonNull final File aBaseDir, @NonNull final ICommonsMap <EFileType, FileTypeCount> aMap)
-                                                                                                                       throws IOException
+  private static void _scan (@NonNull final File aBaseDir,
+                             @NonNull final ICommonsMap <EFileType, FileTypeCount> aMap) throws IOException
   {
     if (aBaseDir.isDirectory ())
     {

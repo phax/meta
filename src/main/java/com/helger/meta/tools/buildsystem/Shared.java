@@ -63,8 +63,8 @@ final class Shared
   }
 
   /**
-   * Check if a Maven profile <code>&lt;activation&gt;&lt;jdk&gt;</code> value matches the JDK version
-   * this tool is currently running on.
+   * Check if a Maven profile <code>&lt;activation&gt;&lt;jdk&gt;</code> value matches the JDK
+   * version this tool is currently running on.
    *
    * @param sJdkActivation
    *        The content of the <code>jdk</code> activation element. Either a single version (e.g.
@@ -81,8 +81,8 @@ final class Shared
 
   /**
    * Invoke the passed consumer for every property that is effective for the JDK this tool runs on:
-   * all unconditional <code>&lt;properties&gt;</code> plus the <code>&lt;properties&gt;</code> of all
-   * JDK-active profiles. The raw (unresolved, but trimmed) value is passed - the caller decides
+   * all unconditional <code>&lt;properties&gt;</code> plus the <code>&lt;properties&gt;</code> of
+   * all JDK-active profiles. The raw (unresolved, but trimmed) value is passed - the caller decides
    * whether and how to resolve and store it.
    *
    * @param eRoot
@@ -140,16 +140,17 @@ final class Shared
   }
 
   /**
-   * Resolve the parent pom.xml of the passed pom.xml via its <code>&lt;parent&gt;&lt;relativePath&gt;</code>
-   * (defaulting to <code>../</code>). The result is returned in canonical form.
+   * Resolve the parent pom.xml of the passed pom.xml via its
+   * <code>&lt;parent&gt;&lt;relativePath&gt;</code> (defaulting to <code>../</code>). The result is
+   * returned in canonical form.
    *
    * @param aThisPOMFile
    *        The pom.xml file to resolve the parent of.
    * @param eRoot
    *        The already parsed root element of that pom.xml.
-   * @return The parent pom.xml file, or <code>null</code> if there is no <code>&lt;parent&gt;</code>
-   *         element or the resolved parent pom.xml does not exist (e.g. the shared external parent
-   *         POM, which is not reachable via a relative path).
+   * @return The parent pom.xml file, or <code>null</code> if there is no
+   *         <code>&lt;parent&gt;</code> element or the resolved parent pom.xml does not exist (e.g.
+   *         the shared external parent POM, which is not reachable via a relative path).
    */
   @Nullable
   static File getParentPOMFileOrNull (@NonNull final File aThisPOMFile, @NonNull final IMicroElement eRoot)

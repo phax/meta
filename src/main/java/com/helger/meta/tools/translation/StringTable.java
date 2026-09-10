@@ -44,8 +44,7 @@ import com.helger.collection.commons.ICommonsSet;
 import com.helger.collection.commons.ICommonsSortedMap;
 
 /**
- * Represents a string table. This is a mapping from ID to texts in different
- * locales.
+ * Represents a string table. This is a mapping from ID to texts in different locales.
  *
  * @author Philip Helger
  */
@@ -114,7 +113,9 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @NonNull
-  public EChange setText (@NonNull final String sID, @NonNull @Nonempty final String sLocale, @NonNull final String sNewText)
+  public EChange setText (@NonNull final String sID,
+                          @NonNull @Nonempty final String sLocale,
+                          @NonNull final String sNewText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -141,7 +142,9 @@ public final class StringTable implements ICloneable <StringTable>
   }
 
   @NonNull
-  public EChange overwriteText (@NonNull final String sID, @NonNull @Nonempty final String sLocale, @NonNull final String sText)
+  public EChange overwriteText (@NonNull final String sID,
+                                @NonNull @Nonempty final String sLocale,
+                                @NonNull final String sText)
   {
     ValueEnforcer.notNull (sID, "ID");
     ValueEnforcer.notEmpty (sLocale, "Locale");
@@ -180,7 +183,8 @@ public final class StringTable implements ICloneable <StringTable>
     return m_aMap;
   }
 
-  public void findAllIDsContainingText (@NonNull final TextInLocale aSearchText, @NonNull final Collection <String> aIDCont)
+  public void findAllIDsContainingText (@NonNull final TextInLocale aSearchText,
+                                        @NonNull final Collection <String> aIDCont)
   {
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {

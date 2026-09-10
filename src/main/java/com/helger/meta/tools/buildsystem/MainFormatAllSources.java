@@ -192,17 +192,21 @@ public final class MainFormatAllSources extends AbstractProjectMain
                  "'" +
                  (bDryRun ? " (dry run)" : ""));
 
-    for (final IProject aProject : ProjectList.getAllProjects (p -> (p.getProjectOwner () ==
-                                                                     EProjectOwner.PROJECT_OWNER_PHAX ||
-                                                                     p.getProjectOwner () ==
-                                                                                                         EProjectOwner.PROJECT_OWNER_HELGER_IT) &&
+    for (final IProject aProject : ProjectList.getAllProjects (p -> (p.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX ||
+                                                                     p.getProjectOwner () == EProjectOwner.PROJECT_OWNER_HELGER_IT) &&
                                                                     p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     (aOnlyProjectNames.isEmpty () ||
                                                                      aOnlyProjectNames.contains (p.getProjectName ()))))
     {
+      final int n1 = s_nChanged;
       _formatProject (aProject, aBaseOptions, bDryRun);
+      final int n2 = s_nChanged;
+      if (n2 > n1)
+      {
+        LOGGER.info ("  " + aProject.getProjectName () + " - " + (n2 - n1) + " changes");
+      }
     }
 
     LOGGER.info ("Done - " +

@@ -133,7 +133,13 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     @NonNull
     String getKey ()
     {
-      return m_aTargetFile.getAbsolutePath () + "|" + m_eKind + "|" + StringHelper.getNotNull (m_sAnchor) + "|" + m_sOldVersion;
+      return m_aTargetFile.getAbsolutePath () +
+             "|" +
+             m_eKind +
+             "|" +
+             StringHelper.getNotNull (m_sAnchor) +
+             "|" +
+             m_sOldVersion;
     }
 
     /**
@@ -283,10 +289,10 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
   }
 
   /**
-   * Build the list of pom.xml layers of a project, starting with the project's own pom.xml, followed
-   * by its parent POMs (resolved via <code>&lt;relativePath&gt;</code>) as long as they can be read.
-   * The chain naturally stops at the repository boundary, because the shared external parent POM is
-   * not reachable via a relative path.
+   * Build the list of pom.xml layers of a project, starting with the project's own pom.xml,
+   * followed by its parent POMs (resolved via <code>&lt;relativePath&gt;</code>) as long as they
+   * can be read. The chain naturally stops at the repository boundary, because the shared external
+   * parent POM is not reachable via a relative path.
    *
    * @param aOwnPOMFile
    *        The project's own pom.xml file
@@ -623,13 +629,16 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
           return;
 
         final String sLastPublished = Shared.getParentPOMVersionString ();
-        final Version aCurVer = Version.parse (bCurIsSnapshot ? StringHelper.trimEnd (sVersion,
-                                                                                      Shared.SUFFIX_SNAPSHOT)
+        final Version aCurVer = Version.parse (bCurIsSnapshot ? StringHelper.trimEnd (sVersion, Shared.SUFFIX_SNAPSHOT)
                                                               : sVersion);
         if (bCurIsSnapshot ? aCurVer.isLE (Shared.getParentPOMVersion ())
                            : aCurVer.isLT (Shared.getParentPOMVersion ()))
         {
-          final Replacement aReplacement = new Replacement (EReplaceKind.PARENT, aOwnPOMFile, null, sVersion, sLastPublished);
+          final Replacement aReplacement = new Replacement (EReplaceKind.PARENT,
+                                                            aOwnPOMFile,
+                                                            null,
+                                                            sVersion,
+                                                            sLastPublished);
           aReplacements.putIfAbsent (aReplacement.getKey (), aReplacement);
         }
       }
@@ -695,7 +704,7 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     for (final Replacement aReplacement : aReplacements.values ())
       aByFile.computeIfAbsent (aReplacement.getTargetFile (), k -> new CommonsArrayList <> ()).add (aReplacement);
 
-    aByFile.forEach ( (aFile, aFileReplacements) -> _applyToFile (aProject, aFile, aFileReplacements));
+    aByFile.forEach ((aFile, aFileReplacements) -> _applyToFile (aProject, aFile, aFileReplacements));
   }
 
   private static void _applyToFile (@NonNull final IProject aProject,

@@ -93,7 +93,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
         aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_SOURCE, aMavenXSD.getAsFile ());
       // Required from Java 17 onwards
       aSRS.setPropertyValue (EXMLParserProperty.ACCESS_EXTERNAL_SCHEMA, "all");
-      aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
+      aSRS.setEntityResolver ((sPublicId, sSystemId) -> {
         // Public ID is unfortunately null
         if (sSystemId != null && (sSystemId.endsWith ("/maven-v4_0_0.xsd") || sSystemId.endsWith ("/maven-4.0.0.xsd")))
           return InputSourceFactory.create (aMavenXSD);
@@ -175,8 +175,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               }
 
               final String sImportPackage = aInstructionMap.get (IMPORT_PACKAGE);
-              final String sExpectedImportPackage = aProject.getMinimumJDKVersion () == EJDK.JDK11
-                                                                                                   ? "!javax.annotation.*,*"
+              final String sExpectedImportPackage = aProject.getMinimumJDKVersion () == EJDK.JDK11 ? "!javax.annotation.*,*"
                                                                                                    : "!jakarta.annotation.*,*";
               if (!sExpectedImportPackage.equals (sImportPackage))
                 _warn (aProject, IMPORT_PACKAGE + " is weird: " + sImportPackage);
@@ -224,7 +223,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               if (aRequireC.isNotEmpty ())
               {
                 final StringBuilder aSB = new StringBuilder ();
-                aRequireC.forEachByIndex ( (x, idx) -> {
+                aRequireC.forEachByIndex ((x, idx) -> {
                   if (idx > 0)
                     aSB.append (",\n");
                   aSB.append (x);
@@ -246,7 +245,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               if (aProvideC.isNotEmpty ())
               {
                 final StringBuilder aSB = new StringBuilder ();
-                aProvideC.forEachByIndex ( (x, idx) -> {
+                aProvideC.forEachByIndex ((x, idx) -> {
                   if (idx > 0)
                     aSB.append (",\n");
                   aSB.append (x);
@@ -269,7 +268,7 @@ public final class MainUpdateOSGIExports extends AbstractProjectMain
               {
                 // Update pom.xml!
                 eInstructions.removeAllChildren ();
-                aInstructionMap.forEach ( (k, v) -> eInstructions.addElementNS (NS_MAVEN, k).addText (v));
+                aInstructionMap.forEach ((k, v) -> eInstructions.addElementNS (NS_MAVEN, k).addText (v));
                 MicroWriter.writeToFile (aPOM, aProject.getPOMFile (), aXWS);
                 _info (aProject, "Updated OSGI configuration!");
               }

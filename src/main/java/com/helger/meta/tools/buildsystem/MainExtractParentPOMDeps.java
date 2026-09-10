@@ -86,11 +86,9 @@ public final class MainExtractParentPOMDeps extends AbstractProjectMain
             if (!sVersion.endsWith ("-SNAPSHOT") &&
                 EExternalDependency.findAll (x -> !x.name ().startsWith ("PARENT_POM_") &&
                                                   x.hasGroupID (sFinalGroupID) &&
-                                                  x.hasArtifactID (sFinalArtifactID))
-                                   .isEmpty () &&
+                                                  x.hasArtifactID (sFinalArtifactID)).isEmpty () &&
                 ProjectList.getAllProjects (x -> x.hasMavenGroupID (sFinalGroupID) &&
-                                                 x.hasMavenArtifactID (sFinalArtifactID))
-                           .isEmpty ())
+                                                 x.hasMavenArtifactID (sFinalArtifactID)).isEmpty ())
             {
               aSB.append ("PARENT_POM_")
                  .append (i++)

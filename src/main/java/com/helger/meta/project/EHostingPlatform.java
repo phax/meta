@@ -52,7 +52,8 @@ public enum EHostingPlatform implements IHasID <String>
   }
 
   @Nullable
-  public static EHostingPlatform getFromIDOrDefault (@Nullable final String sID, @Nullable final EHostingPlatform eDefault)
+  public static EHostingPlatform getFromIDOrDefault (@Nullable final String sID,
+                                                     @Nullable final EHostingPlatform eDefault)
   {
     return EnumHelper.getFromIDOrDefault (EHostingPlatform.class, sID, eDefault);
   }

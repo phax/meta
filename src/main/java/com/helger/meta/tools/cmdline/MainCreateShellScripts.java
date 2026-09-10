@@ -110,11 +110,11 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   private static ICommonsList <ScriptTarget> _getAllScriptTargets (final boolean bIncludeWiki)
   {
     final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (x -> x.isPhProject () &&
-      !x.isDeprecated () &&
-      !x.isNestedProject () &&
-      (x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX ||
-        x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_HELGER_IT ||
-        x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_AUSTRIAPRO));
+                                                                               !x.isDeprecated () &&
+                                                                               !x.isNestedProject () &&
+                                                                               (x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX ||
+                                                                                x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_HELGER_IT ||
+                                                                                x.getProjectOwner () == EProjectOwner.PROJECT_OWNER_AUSTRIAPRO));
 
     final ICommonsList <ScriptTarget> ret = new CommonsArrayList <> ();
     for (final IProject aProject : aProjects)

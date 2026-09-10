@@ -71,7 +71,7 @@ public final class MainRemoveBundlePackaging extends AbstractProjectMain
       aSRS.setFeatureValue (EXMLParserFeature.NAMESPACES, true);
       aSRS.setPropertyValue (EXMLParserProperty.JAXP_SCHEMA_LANGUAGE, XMLConstants.W3C_XML_SCHEMA_NS_URI);
       aSRS.setPropertyValue (EXMLParserProperty.ACCESS_EXTERNAL_SCHEMA, "all");
-      aSRS.setEntityResolver ( (sPublicId, sSystemId) -> {
+      aSRS.setEntityResolver ((sPublicId, sSystemId) -> {
         if (sSystemId != null && (sSystemId.endsWith ("/maven-v4_0_0.xsd") || sSystemId.endsWith ("/maven-4.0.0.xsd")))
           return InputSourceFactory.create (aMavenXSD);
         return null;

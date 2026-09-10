@@ -28,9 +28,8 @@ import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
 /**
- * Ensure the src/etc/javadoc.css file is the same in all projects, based on a
- * template in this project. Afterwards <code>mvn license:format</code> must be
- * run on all projects!
+ * Ensure the src/etc/javadoc.css file is the same in all projects, based on a template in this
+ * project. Afterwards <code>mvn license:format</code> must be run on all projects!
  *
  * @author Philip Helger
  */

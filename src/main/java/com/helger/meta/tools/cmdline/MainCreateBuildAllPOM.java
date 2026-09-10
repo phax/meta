@@ -113,8 +113,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
     final ICommonsMap <IProject, ICommonsSet <IProject>> aTree = new CommonsHashMap <> ();
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     !p.isDeprecated () &&
-                                                                    p.getProjectOwner () ==
-                                                                                          EProjectOwner.PROJECT_OWNER_PHAX))
+                                                                    p.getProjectOwner () == EProjectOwner.PROJECT_OWNER_PHAX))
     {
       final IMicroDocument aDoc = MicroReader.readMicroXML (aProject.getPOMFile ());
       if (aDoc == null)
@@ -146,7 +145,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
 
     // Evaluate dependencies
     final ICommonsList <Map.Entry <IProject, ICommonsSet <IProject>>> aEntries = new CommonsArrayList <> (aTree.entrySet ());
-    aEntries.sort ( (o1, o2) -> {
+    aEntries.sort ((o1, o2) -> {
       // Less dependencies before many dependencies, because transitivity was
       // already handled
       int ret = o1.getValue ().size () - o2.getValue ().size ();
