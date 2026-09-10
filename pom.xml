@@ -100,6 +100,16 @@
       <version>9.10.1</version>
     </dependency>
     <dependency>
+      <groupId>org.eclipse.jdt</groupId>
+      <artifactId>org.eclipse.jdt.core</artifactId>
+      <version>3.46.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.text</artifactId>
+      <version>3.14.700</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
     </dependency>
