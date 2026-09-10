@@ -15,6 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+#
 # Lists all GitHub repositories of the configured owners and extracts the Maven
 # groupId and artifactId of every Maven module contained in them.
 #
