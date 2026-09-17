@@ -816,7 +816,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "0.10.1",
+                          "0.11.0",
                           EJDK.JDK17),
   PEPPOL_VIDA_TESTFILES (PEPPOL_VIDA_PARENT_POM, "peppol-vida-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_VIDA_TDD_DATATYPES (PEPPOL_VIDA_PARENT_POM, "peppol-vida-tdd-datatypes", EProjectType.JAVA_LIBRARY),
