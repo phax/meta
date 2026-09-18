@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-17):
+Current list of all released projects (as of 2026-09-18):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -473,7 +473,7 @@ Current list of all released projects (as of 2026-09-17):
  * [ph-isorelax](https://github.com/phax/ph-isorelax) - Version 1.1.1 - JDK 1.8
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-isorelax)](https://img.shields.io/maven-central/v/com.helger/ph-isorelax) 
- * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.2 - JDK 17
+ * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin) 
  * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.2 - JDK 17
@@ -743,13 +743,13 @@ Current list of all released projects (as of 2026-09-17):
  * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel) 
- * [ph-totp](https://github.com/phax/ph-totp) - Version 2.0.0 - JDK 17
+ * [ph-totp](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-totp-parent-pom) 
- * [ph-totp/ph-totp](https://github.com/phax/ph-totp) - Version 2.0.0 - JDK 17
+ * [ph-totp/ph-totp](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp)](https://img.shields.io/maven-central/v/com.helger/ph-totp) 
- * [ph-totp/ph-totp-qrcode](https://github.com/phax/ph-totp) - Version 2.0.0 - JDK 17
+ * [ph-totp/ph-totp-qrcode](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp-qrcode)](https://img.shields.io/maven-central/v/com.helger/ph-totp-qrcode) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.2.1 - JDK 17
