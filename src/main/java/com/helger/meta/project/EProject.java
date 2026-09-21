@@ -73,7 +73,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "12.4.0",
+                         "12.5.0",
                          EJDK.JDK17, // Branch "v11"
                          ProjectTail.builder ().lastPublishedVersion ("11.2.7").minJDK (EJDK.JDK11).build (), // Branch "10.x"
                          ProjectTail.builder ()
