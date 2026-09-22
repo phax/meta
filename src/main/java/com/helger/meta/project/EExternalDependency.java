@@ -52,7 +52,11 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.2", EJDK.JDK8),
+  AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
+  AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
+  AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
+  AWS_REGIONS ("software.amazon.awssdk", "regions", AWS_S3),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
@@ -104,6 +108,7 @@ public enum EExternalDependency
   ECLIPSE_CORE_JOBS2 ("org.eclipse.platform", "org.eclipse.core.jobs", "3.15.900", EJDK.JDK11),
   ECLIPSE_CORE_RESOURCES2 ("org.eclipse.platform", "org.eclipse.core.resources", "3.24.100", EJDK.JDK11),
   ECLIPSE_CORE_RUNTIME2 ("org.eclipse.platform", "org.eclipse.core.runtime", "3.35.0", EJDK.JDK11),
+  ECLIPSE_CORE_TEXT ("org.eclipse.platform", "org.eclipse.text", "3.14.800", EJDK.JDK11),
   ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.21.0", EJDK.JDK11),
 
   FAILSAFE ("dev.failsafe", "failsafe", "3.3.2", EJDK.JDK11),
@@ -119,14 +124,14 @@ public enum EExternalDependency
 
   FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
-  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.10", EJDK.JDK8),
+  FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.11", EJDK.JDK8),
 
   GLASSFISH_JAKARTA_JSON ("org.glassfish", "jakarta.json", "2.0.1", EJDK.JDK17),
 
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260915", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260920", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -142,7 +147,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0_special_89304", EJDK.JDK8),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.2", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.3", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
@@ -271,6 +276,8 @@ public enum EExternalDependency
 
   OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.5.0", EJDK.JDK17),
 
+  OPENSEARCH_JAVA ("org.opensearch.client", "opensearch-java", "3.10.0", EJDK.JDK17),
+
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.3.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc17", ORACLE_JDBC),
@@ -308,7 +315,7 @@ public enum EExternalDependency
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
 
-  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.19", EJDK.JDK8),
+  SLF4J_API ("org.slf4j", "slf4j-api", "2.0.20", EJDK.JDK8),
   SLF4J_SIMPLE ("org.slf4j", "slf4j-simple", SLF4J_API),
   JUL_TO_SLF4J ("org.slf4j", "jul-to-slf4j", SLF4J_API),
   JCL_OVER_SLF4J ("org.slf4j", "jcl-over-slf4j", SLF4J_API),
