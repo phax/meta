@@ -239,22 +239,22 @@ Current list of all released projects (as of 2026-09-22):
  * [ph-buildinfo-maven-plugin](https://github.com/phax/ph-buildinfo-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-buildinfo-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-buildinfo-maven-plugin) 
- * [ph-cii](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-parent-pom)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-parent-pom) 
- * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii/ph-cii-d16a-1](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16a-1)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16a-1) 
- * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii/ph-cii-d16b](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16b)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d16b) 
- * [ph-cii/ph-cii-d22b](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii/ph-cii-d22b](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d22b)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d22b) 
- * [ph-cii/ph-cii-d25a](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii/ph-cii-d25a](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d25a)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-d25a) 
- * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.1.2 - JDK 17
+ * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles) 
  * [ph-commons](https://github.com/phax/ph-commons) - Version 12.5.0 - JDK 17
