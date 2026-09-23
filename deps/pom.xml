@@ -1748,6 +1748,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>ph-nss</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>ph-regrep</artifactId>
       <version>4.1.0</version>
     </dependency>
@@ -2691,23 +2696,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sk-parent-pom</artifactId>
-      <version>0.2.1</version>
+      <version>0.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sk-testfiles</artifactId>
-      <version>0.2.1</version>
+      <version>0.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sk-tdd-datatypes</artifactId>
-      <version>0.2.1</version>
+      <version>0.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sk-tdd</artifactId>
-      <version>0.2.1</version>
+      <version>0.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>

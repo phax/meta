@@ -197,16 +197,16 @@ Current list of all released projects (as of 2026-09-23):
  * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types) 
- * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.2.1 - JDK 17
+ * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom) 
- * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.2.1 - JDK 17
+ * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd) 
- * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.2.1 - JDK 17
+ * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes) 
- * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.2.1 - JDK 17
+ * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles) 
  * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.2 - JDK 17
@@ -503,6 +503,9 @@ Current list of all released projects (as of 2026-09-23):
  * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
+ * [ph-nss](https://github.com/phax/ph-nss) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-nss)](https://img.shields.io/maven-central/v/com.helger/ph-nss) 
  * [ph-oton](https://github.com/phax/ph-oton) - Version 10.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom)](https://img.shields.io/maven-central/v/com.helger.photon/ph-oton-parent-pom) 
