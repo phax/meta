@@ -274,7 +274,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   {
     _createMvnShellScript ("license:format", "mvn_license_format.sh");
     _createMvnShellScript ("dependency:go-offline dependency:sources", "mvn_dependency_go_offline_and_sources.sh");
-    _createMvnShellScript ("clean", "mvn_clean.sh");
+    if (false)
+      _createMvnShellScript ("clean", "mvn_clean.sh");
     _createMvnShellScript ("clean install", "mvn_clean_install.sh");
     _createMvnShellScript ("clean install -DskipTests=true", "mvn_clean_install_skip_tests.sh");
     if (false)
@@ -283,7 +284,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                            "mvn_clean_install_forbiddenapis.sh");
     _createShellScriptPerDir ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", false, "mvn_javadoc.sh");
     _createShellScriptPerDir ("git pull", true, "git_pull.sh");
-    _createShellScriptPerDir ("git gc", true, "git_gc.sh");
+    if (false)
+      _createShellScriptPerDir ("git gc", true, "git_gc.sh");
     _createShellScriptPerDir ("git gc --auto", true, "git_gc_auto.sh");
     _createShellScriptPerDir ("git add . -u\n" +
                               "git commit -m \"Saving files before refreshing line endings\"\n" +
@@ -293,9 +295,14 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                               "git commit -m \"Normalize all the line endings\"",
                               true,
                               "git_normalize_crlf.sh");
-    _createShellScriptPerDir ("git fetch --prune", true, "git_fetch_prune.sh");
+    if (false)
+      _createShellScriptPerDir ("git fetch --prune", true, "git_fetch_prune.sh");
     _createShellScriptPerDir ("git diff --quiet", true, "git_status.sh");
-    _createShellScriptPerDir ("git reset --hard", true, "git_reset_hard.sh");
+    if (false)
+      _createShellScriptPerDir ("git reset --hard", true, "git_reset_hard.sh");
+    _createShellScriptPerDir ("git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == \"[gone]\" {sub(\"refs/heads/\", \"\", $1); print $1}'); do git branch -D $branch; done",
+                              true,
+                              "git_remove_deleted_branches.sh");
     _createShellScript ("",
                         t -> "[ ! -d " +
                              t.getDirName () +
