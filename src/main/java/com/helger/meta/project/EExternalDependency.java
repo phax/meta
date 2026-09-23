@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.2", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.3", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -310,7 +310,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.57.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.58.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -363,7 +363,7 @@ public enum EExternalDependency
 
   VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.2", EJDK.JDK17),
 
-  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.4.0", EJDK.JDK8),
+  XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.4.1", EJDK.JDK8),
 
   XMLSEC_4 ("org.apache.santuario", "xmlsec", "4.0.4", EJDK.JDK17),
 
