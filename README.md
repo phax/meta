@@ -1037,13 +1037,13 @@ Current list of all released projects (as of 2026-09-23):
  * [phive-rules-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-parent-pom) 
- * [phive-rules-legacy/phive-rules-all-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.5.7 - JDK 17
+ * [phive-rules-legacy/phive-rules-all-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all-legacy) 
  * [phive-rules-legacy/phive-rules-oioubl-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl-legacy) 
- * [phive-rules-legacy/phive-rules-peppol-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.5.7 - JDK 17
+ * [phive-rules-legacy/phive-rules-peppol-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy) 
  * [phive-rules-shared](https://github.com/phax/phive-rules-shared) - Version 1.0.0 - JDK 17
@@ -1091,6 +1091,12 @@ Current list of all released projects (as of 2026-09-23):
  * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy) 
+ * [phive-rules/phive-rules-peppol-pint](https://github.com/phax/phive-rules) - Version 4.6.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-pint)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-pint) 
+ * [phive-rules/phive-rules-peppol-taxdata](https://github.com/phax/phive-rules) - Version 4.6.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-taxdata)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-taxdata) 
  * [phive-rules/phive-rules-serbia](https://github.com/phax/phive-rules) - Version 4.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia) 
@@ -1272,10 +1278,6 @@ Current list of all unreleased projects:
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
  * [phive-central-tools](https://github.com/phax/phive-central-tools) - JDK 17
-
- * [phive-rules/phive-rules-peppol-pint](https://github.com/phax/phive-rules) - JDK 17
-
- * [phive-rules/phive-rules-peppol-taxdata](https://github.com/phax/phive-rules) - JDK 17
 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - JDK 17
 

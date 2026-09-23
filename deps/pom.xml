@@ -2885,6 +2885,16 @@
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-peppol-pint</artifactId>
+      <version>4.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-peppol-taxdata</artifactId>
+      <version>4.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-serbia</artifactId>
       <version>4.6.0</version>
     </dependency>
@@ -2937,7 +2947,7 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-all-legacy</artifactId>
-      <version>4.5.7</version>
+      <version>4.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
@@ -2947,7 +2957,7 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-legacy</artifactId>
-      <version>4.5.7</version>
+      <version>4.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive</groupId>
