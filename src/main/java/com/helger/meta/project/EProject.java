@@ -122,7 +122,7 @@ public enum EProject implements IProject
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "1.1.0",
+                           "1.1.1",
                            EJDK.JDK17),
   PH_TELEMETRY (PH_TELEMETRY_PARENT_POM, "ph-telemetry", EProjectType.JAVA_LIBRARY),
   PH_TELEMETRY_JFR (PH_TELEMETRY_PARENT_POM, "ph-telemetry-jfr", EProjectType.JAVA_LIBRARY),

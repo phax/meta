@@ -752,16 +752,16 @@ Current list of all released projects (as of 2026-09-24):
  * [ph-scuba/ph-scuba-phive](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive) 
- * [ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.1.0 - JDK 17
+ * [ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-parent-pom)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-parent-pom) 
- * [ph-telemetry/ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.1.0 - JDK 17
+ * [ph-telemetry/ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry) 
- * [ph-telemetry/ph-telemetry-jfr](https://github.com/phax/ph-telemetry) - Version 1.1.0 - JDK 17
+ * [ph-telemetry/ph-telemetry-jfr](https://github.com/phax/ph-telemetry) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-jfr)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-jfr) 
- * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.1.0 - JDK 17
+ * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel) 
  * [ph-totp](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
