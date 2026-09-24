@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-23):
+Current list of all released projects (as of 2026-09-24):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.2 - JDK 17
 
@@ -191,25 +191,25 @@ Current list of all released projects (as of 2026-09-23):
  * [peppol-reporting/peppol-reporting-testfiles](https://github.com/phax/peppol-reporting) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-reporting-testfiles) 
- * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui-parent-pom) 
- * [peppol-shared-ui/peppol-shared-api](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-shared-api](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-api)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-api) 
- * [peppol-shared-ui/peppol-shared-as4](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-shared-as4](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-as4)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-as4) 
- * [peppol-shared-ui/peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-shared-ui](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-ui) 
- * [peppol-shared-ui/peppol-shared-validation](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-shared-validation](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-validation)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-shared-validation) 
- * [peppol-shared-ui/peppol-ui](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-ui](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui) 
- * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.10.3 - JDK 17
+ * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.11.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types) 
  * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.2.2 - JDK 17
@@ -1211,31 +1211,31 @@ Current list of all released projects (as of 2026-09-23):
  * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
- * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom) 
- * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-client](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-client) 
- * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer) 
- * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-conformance](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-conformance) 
- * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-lucene](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-lucene) 
- * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-indexer-opensearch](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer-opensearch) 
- * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-publisher](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-publisher) 
- * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.18.2 - JDK 17
+ * [phoss-directory/phoss-directory-searchapi](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-searchapi) 
- * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.5.1 - JDK 17
+ * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
  * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
@@ -1265,6 +1265,9 @@ Current list of all released projects (as of 2026-09-23):
  * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
+ * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - Version 1.0.1 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/smp-query-webapp)](https://img.shields.io/maven-central/v/com.helger/smp-query-webapp) 
  * [vefa-validator](https://github.com/phax/vefa-validator) - Version 2.4.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.vefa/validator-parent)](https://img.shields.io/maven-central/v/com.helger.vefa/validator-parent) 
@@ -1299,8 +1302,6 @@ Current list of all unreleased projects:
  * [phase4-peppol-standalone](https://github.com/phax/phase4-peppol-standalone) - JDK 17
 
  * [phive-central-tools](https://github.com/phax/phive-central-tools) - JDK 17
-
- * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - JDK 17
 
 
 All deprecated projects:
