@@ -1169,46 +1169,46 @@ Current list of all released projects (as of 2026-09-24):
  * [phorm](https://github.com/phax/phorm) - Version 2.2.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
- * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-parent-pom) 
- * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-api](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-api) 
- * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-basic](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-basic) 
- * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-core](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-core) 
- * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-db](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-db) 
- * [phoss-ap/phoss-ap-dirsender](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-dirsender](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-dirsender) 
- * [phoss-ap/phoss-ap-extension-demo](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-extension-demo](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-extension-demo)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-extension-demo) 
- * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-forwarding](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-forwarding) 
- * [phoss-ap/phoss-ap-otel](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-otel](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-otel)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-otel) 
- * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-sentry](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-sentry) 
- * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-testbackend](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testbackend) 
- * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-testsender](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-testsender) 
- * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-validation](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-validation) 
- * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.12.0 - JDK 21
+ * [phoss-ap/phoss-ap-webapp](https://github.com/phax/phoss-ap) - Version 0.13.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp)](https://img.shields.io/maven-central/v/com.helger.phoss.ap/phoss-ap-webapp) 
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.19.0 - JDK 17
@@ -1238,31 +1238,31 @@ Current list of all released projects (as of 2026-09-24):
  * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.4.3 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - Version 1.0.1 - JDK 17
