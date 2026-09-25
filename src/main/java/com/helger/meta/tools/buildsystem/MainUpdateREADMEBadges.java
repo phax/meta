@@ -193,7 +193,8 @@ public final class MainUpdateREADMEBadges extends AbstractProjectMain
                                                                     p.isPublished ()))
     {
       if (!aProject.getProjectOwner ().equals (EProjectOwner.PROJECT_OWNER_PHAX) &&
-          !aProject.getProjectOwner ().equals (EProjectOwner.PROJECT_OWNER_HELGER_IT))
+          !aProject.getProjectOwner ().equals (EProjectOwner.PROJECT_OWNER_HELGER_IT) &&
+          !aProject.getProjectOwner ().equals (EProjectOwner.PROJECT_OWNER_AUSTRIAPRO))
         continue;
 
       if (aProject == EProject.PH_PARENT_POM)
