@@ -14,13 +14,13 @@ Current list of all released projects (as of 2026-09-28):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
- * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
+ * [ddd](https://github.com/phax/ddd) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom) 
- * [ddd/ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
+ * [ddd/ddd](https://github.com/phax/ddd) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
- * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
+ * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-model)](https://img.shields.io/maven-central/v/com.helger/ddd-model) 
  * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.1 - JDK 17

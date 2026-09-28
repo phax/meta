@@ -936,7 +936,7 @@ public enum EProject implements IProject
                   EProjectType.MAVEN_POM,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "0.8.10",
+                  "0.9.0",
                   EJDK.JDK17),
   DDD_MODEL (DDD_PARENT_POM, "ddd-model", EProjectType.JAVA_LIBRARY),
   DDD (DDD_PARENT_POM, "ddd", EProjectType.JAVA_LIBRARY),
@@ -971,7 +971,7 @@ public enum EProject implements IProject
                 EProjectType.JAVA_LIBRARY,
                 EHasPages.FALSE,
                 EHasWiki.FALSE,
-                null,
+                "1.0.0",
                 EJDK.JDK17),
 
   EN16931_BASICS (null,

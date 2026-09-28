@@ -3027,18 +3027,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd-parent-pom</artifactId>
-      <version>0.8.10</version>
+      <version>0.9.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd-model</artifactId>
-      <version>0.8.10</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.8.10</version>
+      <version>0.9.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
