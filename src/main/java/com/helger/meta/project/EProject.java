@@ -877,7 +877,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "4.6.1",
+                          "4.6.2",
                           EJDK.JDK17),
   PHIVE_RULES_ALL (PHIVE_RULES_PARENT_POM, "phive-rules-all", EProjectType.JAVA_LIBRARY),
   PHIVE_RULES_API (PHIVE_RULES_PARENT_POM, "phive-rules-api", EProjectType.JAVA_LIBRARY),
