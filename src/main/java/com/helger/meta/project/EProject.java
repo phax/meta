@@ -925,6 +925,7 @@ public enum EProject implements IProject
                 EHasWiki.FALSE,
                 "0.3.0",
                 EJDK.JDK17),
+
   DDD_PARENT_POM (null,
                   EProjectOwner.PROJECT_OWNER_PHAX,
                   "ddd-parent-pom",
