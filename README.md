@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-25):
+Current list of all released projects (as of 2026-09-28):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -16,7 +16,7 @@ Current list of all released projects (as of 2026-09-25):
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
  * [ddd](https://github.com/phax/ddd) - Version 0.8.10 - JDK 17
 
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom) 
  * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
@@ -692,13 +692,13 @@ Current list of all released projects (as of 2026-09-25):
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-sbdh)](https://img.shields.io/maven-central/v/com.helger/ph-sbdh) 
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.0 - JDK 17
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom) 
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.2.0 - JDK 17
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz) 
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.0 - JDK 17
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule) 
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 10.1.0 - JDK 17

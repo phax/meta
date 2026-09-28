@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260925</version>
+  <version>1.0.0-20260928</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1979,18 +1979,18 @@
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>6.2.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
@@ -3011,7 +3011,7 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ddd</artifactId>
+      <artifactId>ddd-parent-pom</artifactId>
       <version>0.8.10</version>
     </dependency>
     <dependency>
