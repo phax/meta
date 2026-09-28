@@ -3074,6 +3074,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
+      <artifactId>phorm-client</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger</groupId>
       <artifactId>en16931-basics</artifactId>
       <version>1.0.1</version>
     </dependency>
@@ -3268,80 +3273,80 @@
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui-parent-pom</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui-types</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-ui</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-api</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-ui</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-validation</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol.ui</groupId>
       <artifactId>peppol-shared-as4</artifactId>
-      <version>0.11.0</version>
+      <version>0.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-parent-pom</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-conformance</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-lucene</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer-opensearch</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-publisher</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-client</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.19.0</version>
+      <version>0.19.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
