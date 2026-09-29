@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20260928</version>
+  <version>1.0.0-20260929</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -3339,14 +3339,25 @@
       <type>war</type>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>phoss-directory-client</artifactId>
-      <version>0.19.1</version>
+      <groupId>com.helger.peppol.directory</groupId>
+      <artifactId>peppol-directory-client-parent-pom</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.helger</groupId>
-      <artifactId>phoss-directory-searchapi</artifactId>
-      <version>0.19.1</version>
+      <groupId>com.helger.peppol.directory</groupId>
+      <artifactId>peppol-directory-client</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol.directory</groupId>
+      <artifactId>peppol-directory-searchapi</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.peppol.directory</groupId>
+      <artifactId>peppol-directory-searchclient</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
