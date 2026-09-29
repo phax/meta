@@ -788,13 +788,13 @@ Current list of all released projects (as of 2026-09-29):
  * [ph-telemetry/ph-telemetry-otel](https://github.com/phax/ph-telemetry) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel)](https://img.shields.io/maven-central/v/com.helger.telemetry/ph-telemetry-otel) 
- * [ph-totp](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
+ * [ph-totp](https://github.com/phax/ph-totp) - Version 2.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-totp-parent-pom) 
- * [ph-totp/ph-totp](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
+ * [ph-totp/ph-totp](https://github.com/phax/ph-totp) - Version 2.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp)](https://img.shields.io/maven-central/v/com.helger/ph-totp) 
- * [ph-totp/ph-totp-qrcode](https://github.com/phax/ph-totp) - Version 2.1.0 - JDK 17
+ * [ph-totp/ph-totp-qrcode](https://github.com/phax/ph-totp) - Version 2.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-totp-qrcode)](https://img.shields.io/maven-central/v/com.helger/ph-totp-qrcode) 
  * [ph-ubl](https://github.com/phax/ph-ubl) - Version 10.2.1 - JDK 17
@@ -1268,31 +1268,31 @@ Current list of all released projects (as of 2026-09-29):
  * [phoss-peppol-mcp](https://github.com/Helger-IT/phoss-peppol-mcp) - Version 0.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server)](https://img.shields.io/maven-central/v/com.helger.peppol.mcp/phoss-peppol-mcp-server) 
- * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-parent-pom) 
- * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend) 
- * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-mongodb](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-mongodb) 
- * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-sql](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-sql) 
- * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-backend-xml](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-backend-xml) 
- * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp) 
- * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-mongodb](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-mongodb) 
- * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-sql](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-sql) 
- * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.5.0 - JDK 17
+ * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.6.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - Version 1.0.1 - JDK 17

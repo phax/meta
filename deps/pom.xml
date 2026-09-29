@@ -1652,18 +1652,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-totp-parent-pom</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-totp</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-totp-qrcode</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -3362,50 +3362,50 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-parent-pom</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-mongodb</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-sql</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-backend-xml</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-mongodb</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-sql</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>phoss-smp-webapp-xml</artifactId>
-      <version>8.5.0</version>
+      <version>8.6.0</version>
       <type>war</type>
     </dependency>
     <dependency>
