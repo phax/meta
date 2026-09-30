@@ -1631,18 +1631,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
-      <version>8.3.3</version>
+      <version>8.3.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>8.3.3</version>
+      <version>8.3.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-richtext</artifactId>
-      <version>8.3.3</version>
+      <version>8.3.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2809,58 +2809,58 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-foundations-parent-pom</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-crs</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ebinterface</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-facturae</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-fatturapa</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-finvoice</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ksef</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-osa</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-teapps</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ubl</artifactId>
-      <version>5.0.4</version>
+      <version>5.0.5</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
