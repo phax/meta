@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-09-29):
+Current list of all released projects (as of 2026-09-30):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -1199,7 +1199,7 @@ Current list of all released projects (as of 2026-09-29):
  * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.9 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.10 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17
