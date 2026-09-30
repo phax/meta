@@ -16,7 +16,17 @@
 #
 
 #/bin/sh
-mvn versions:display-dependency-updates $@
+# Only the list of updates is written to dependency-updates.txt - no Maven logging
+rm -f dependency-updates.txt
+mvn -B -q -ntp versions:display-dependency-updates \
+    -Dversions.outputFile=dependency-updates.txt \
+    -Dversions.overwriteOutput=true \
+    -Dversions.logOutput=false \
+    -Dversions.outputLineWidth=120 \
+    $@ || exit $?
+if [ -f dependency-updates.txt ]; then
+  cat dependency-updates.txt
+fi
 
 ## When copying the file somewhere, call like this:
 # mvn versions:display-dependency-updates -Dmaven.version.rules=file:versions-maven-plugin-rules.xml
