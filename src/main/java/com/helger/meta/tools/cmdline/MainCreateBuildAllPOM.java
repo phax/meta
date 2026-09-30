@@ -99,7 +99,7 @@ public final class MainCreateBuildAllPOM extends AbstractProjectMain
             {
               if (!sArtifactID.equals (sThisArtefactID))
               {
-                aTree.computeIfAbsent (aThisProject, k -> new CommonsHashSet <> ()).add (aReferencedProject);
+                aTree.computeIfAbsent (aThisProject, _ -> new CommonsHashSet <> ()).add (aReferencedProject);
               }
             }
           }

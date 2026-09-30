@@ -702,7 +702,7 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     // Group the replacements by the file they target and apply them file by file
     final ICommonsMap <File, ICommonsList <Replacement>> aByFile = new CommonsLinkedHashMap <> ();
     for (final Replacement aReplacement : aReplacements.values ())
-      aByFile.computeIfAbsent (aReplacement.getTargetFile (), k -> new CommonsArrayList <> ()).add (aReplacement);
+      aByFile.computeIfAbsent (aReplacement.getTargetFile (), _ -> new CommonsArrayList <> ()).add (aReplacement);
 
     aByFile.forEach ((aFile, aFileReplacements) -> _applyToFile (aProject, aFile, aFileReplacements));
   }

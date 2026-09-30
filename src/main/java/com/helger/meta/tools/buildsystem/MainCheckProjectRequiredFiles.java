@@ -184,7 +184,7 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     }).isSuccess ())
     {
       // Check for file contents
-      if (_checkFileExisting (aProject, "src/etc/license-template.txt", f -> ESuccess.FAILURE).isSuccess ())
+      if (_checkFileExisting (aProject, "src/etc/license-template.txt", _ -> ESuccess.FAILURE).isSuccess ())
         _checkFileContains (aProject, "src/etc/license-template.txt", Integer.toString (PDTFactory.getCurrentYear ()));
     }
 

@@ -9,4 +9,5 @@ generated/
 .iml
 .pmd
 .project 
+deps/dependency-updates.txt
 zz

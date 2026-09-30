@@ -60,6 +60,10 @@
     </developer>
   </developers>
   
+  <properties>
+    <java.version>25</java.version>
+  </properties>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
