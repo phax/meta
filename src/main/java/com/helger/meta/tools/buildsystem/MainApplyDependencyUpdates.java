@@ -89,27 +89,23 @@ public final class MainApplyDependencyUpdates extends AbstractProjectMain
    * The enum constant that contains the version literal in the source code. Other constants may
    * inherit their version from it.
    */
-  private static final class VersionOwner
+  private static record VersionOwner (@NonNull Class <?> enumClass,
+                                      @NonNull String constantName,
+                                      @NonNull String oldVersion,
+                                      @NonNull ICommonsOrderedSet <String> newVersions,
+                                      @NonNull ICommonsOrderedSet <String> allGAs)
   {
-    private final Class <?> m_aEnumClass;
-    private final String m_sConstantName;
-    private final String m_sOldVersion;
-    private final ICommonsOrderedSet <String> m_aNewVersions = new CommonsLinkedHashSet <> ();
-    private final ICommonsOrderedSet <String> m_aGAs = new CommonsLinkedHashSet <> ();
-
     VersionOwner (@NonNull final Class <?> aEnumClass,
                   @NonNull final String sConstantName,
                   @NonNull final String sOldVersion)
     {
-      m_aEnumClass = aEnumClass;
-      m_sConstantName = sConstantName;
-      m_sOldVersion = sOldVersion;
+      this (aEnumClass, sConstantName, sOldVersion, new CommonsLinkedHashSet <> (), new CommonsLinkedHashSet <> ());
     }
 
     @NonNull
     String getDisplayName ()
     {
-      return m_aEnumClass.getSimpleName () + "." + m_sConstantName;
+      return enumClass.getSimpleName () + "." + constantName;
     }
   }
 
@@ -446,8 +442,8 @@ public final class MainApplyDependencyUpdates extends AbstractProjectMain
                                                              _ -> new VersionOwner (aEnumClass,
                                                                                     sOwnerName,
                                                                                     sOldVersion));
-        aOwner.m_aNewVersions.add (aUpdate.newVersion ());
-        aOwner.m_aGAs.add (aUpdate.getGA ());
+        aOwner.newVersions ().add (aUpdate.newVersion ());
+        aOwner.allGAs ().add (aUpdate.getGA ());
       }
     }
 
@@ -456,21 +452,21 @@ public final class MainApplyDependencyUpdates extends AbstractProjectMain
     final ICommonsOrderedSet <File> aChangedFiles = new CommonsLinkedHashSet <> ();
     for (final VersionOwner aOwner : aOwners.values ())
     {
-      if (aOwner.m_aNewVersions.size () > 1)
+      if (aOwner.newVersions ().size () > 1)
       {
         aProblems.add (aOwner.getDisplayName () +
                        ": conflicting new versions " +
-                       aOwner.m_aNewVersions +
+                       aOwner.newVersions () +
                        " from " +
-                       aOwner.m_aGAs);
+                       aOwner.allGAs ());
         continue;
       }
 
-      final String sNewVersion = aOwner.m_aNewVersions.getFirstOrNull ();
-      final File aFile = _getSourceFile (aOwner.m_aEnumClass);
+      final String sNewVersion = aOwner.newVersions ().getFirstOrNull ();
+      final File aFile = _getSourceFile (aOwner.enumClass ());
       final String sSource = aSources.get (aFile);
-      final int [] aRange = _findConstantArguments (sSource, aOwner.m_sConstantName);
-      final String sOldLiteral = "\"" + aOwner.m_sOldVersion + "\"";
+      final int [] aRange = _findConstantArguments (sSource, aOwner.constantName ());
+      final String sOldLiteral = "\"" + aOwner.oldVersion () + "\"";
       final int nIndex = aRange == null ? -1 : sSource.indexOf (sOldLiteral, aRange[0]);
       if (nIndex < 0 || nIndex >= aRange[1])
       {
@@ -487,11 +483,11 @@ public final class MainApplyDependencyUpdates extends AbstractProjectMain
       aChangedFiles.add (aFile);
       aApplied.add (aOwner.getDisplayName () +
                     ": " +
-                    aOwner.m_sOldVersion +
+                    aOwner.oldVersion () +
                     " -> " +
                     sNewVersion +
                     " (" +
-                    StringImplode.getImploded (", ", aOwner.m_aGAs) +
+                    StringImplode.getImploded (", ", aOwner.allGAs ()) +
                     ")");
     }
 

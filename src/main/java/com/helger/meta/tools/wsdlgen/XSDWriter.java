@@ -179,9 +179,8 @@ public class XSDWriter
       final String sName = aEntry.getKey ();
       final WGTypeDef aTypeDef = aEntry.getValue ();
       final IWGType aType = aTypeDef.getType ();
-      if (aType instanceof WGSimpleType)
+      if (aType instanceof final WGSimpleType aSimpleType)
       {
-        final WGSimpleType aSimpleType = (WGSimpleType) aType;
         if (aSimpleType.isExtension ())
         {
           // complexType + simpleContent
@@ -218,9 +217,9 @@ public class XSDWriter
               for (final WGEnumEntry aEnumEntry : aSimpleType.getAllEnumEntries ())
               {
                 final IMicroElement eEnumeration = eRestriction.addElementNS (XSD_NS, "enumeration")
-                                                               .setAttribute ("value", aEnumEntry.getKey ());
+                                                               .setAttribute ("value", aEnumEntry.key ());
                 if (aEnumEntry.hasDocumentation ())
-                  _appendXSDDocumentation (eEnumeration, aEnumEntry.getDocumentation ());
+                  _appendXSDDocumentation (eEnumeration, aEnumEntry.documentation ());
               }
               bHasAnything = true;
             }
@@ -238,9 +237,8 @@ public class XSDWriter
             throw new UnsupportedOperationException ("Neither extension nor restriction is present!");
       }
       else
-        if (aType instanceof WGComplexType)
+        if (aType instanceof final WGComplexType aComplexType)
         {
-          final WGComplexType aComplexType = (WGComplexType) aType;
           final IMicroElement eComplexType = eSchema.addElementNS (XSD_NS, "complexType");
           eComplexType.setAttribute ("name", sName);
 

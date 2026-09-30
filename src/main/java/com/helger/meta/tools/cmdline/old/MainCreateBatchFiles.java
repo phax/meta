@@ -116,14 +116,13 @@ public final class MainCreateBatchFiles extends AbstractProjectMain
     _createBatchFile ("git pull", "git_pull.cmd", true);
     _createBatchFile ("git gc", "git_gc.cmd", true);
     _createBatchFile ("git gc --auto", "git_gc_auto.cmd", true);
-    _createBatchFile ("git add . -u\n" +
-                      "git commit -m \"Saving files before refreshing line endings\"\n" +
-                      "git rm --cached -r .\n" +
-                      "git reset --hard\n" +
-                      "git add .\n" +
-                      "git commit -m \"Normalize all the line endings\"",
-                      "git_normalize_crlf.cmd",
-                      false);
+    _createBatchFile ("""
+        git add . -u
+        git commit -m "Saving files before refreshing line endings"
+        git rm --cached -r .
+        git reset --hard
+        git add .
+        git commit -m "Normalize all the line endings\"""", "git_normalize_crlf.cmd", false);
     _createBatchFile ("git fetch --prune", "git_fetch_prune.cmd", true);
     System.out.println ("Batch files created in " + CMeta.GIT_BASE_DIR);
   }

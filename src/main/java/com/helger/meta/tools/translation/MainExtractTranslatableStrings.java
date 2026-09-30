@@ -117,10 +117,10 @@ public final class MainExtractTranslatableStrings extends AbstractProjectMain
     while (aInstructionIter.hasNext ())
     {
       final AbstractInsnNode in = (AbstractInsnNode) aInstructionIter.next ();
-      if (in instanceof LdcInsnNode)
+      if (in instanceof final LdcInsnNode aLdc)
       {
         // Load constant node
-        final Object aConstant = ((LdcInsnNode) in).cst;
+        final Object aConstant = aLdc.cst;
         // This is always supposed to be a String but may not be, in case any
         // other field and therefore any other argument is present
         aAllConstantStrings.add ((String) aConstant);

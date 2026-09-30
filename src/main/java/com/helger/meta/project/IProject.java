@@ -194,7 +194,7 @@ public interface IProject
    */
   default boolean hasMaintainedTail ()
   {
-    return getAllTails ().containsAny (ProjectTail::isMaintained);
+    return getAllTails ().containsAny (ProjectTail::maintained);
   }
 
   /**

@@ -103,7 +103,7 @@ public final class StringTable implements ICloneable <StringTable>
 
   public void setText (@NonNull final String sID, @NonNull final TextInLocale aTIL)
   {
-    setText (sID, aTIL.getLocale (), aTIL.getText ());
+    setText (sID, aTIL.locale (), aTIL.text ());
   }
 
   @NonNull
@@ -189,8 +189,8 @@ public final class StringTable implements ICloneable <StringTable>
     for (final Map.Entry <String, ICommonsSortedMap <String, String>> aEntry : m_aMap.entrySet ())
     {
       // Get current text in the search languages
-      final String sText = aEntry.getValue ().get (aSearchText.getLocale ());
-      if (sText != null && sText.contains (aSearchText.getText ()))
+      final String sText = aEntry.getValue ().get (aSearchText.locale ());
+      if (sText != null && sText.contains (aSearchText.text ()))
         aIDCont.add (aEntry.getKey ());
     }
   }

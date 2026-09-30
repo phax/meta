@@ -21,55 +21,14 @@ import org.jspecify.annotations.NonNull;
 import com.helger.annotation.Nonempty;
 import com.helger.annotation.concurrent.Immutable;
 import com.helger.base.enforce.ValueEnforcer;
-import com.helger.base.hashcode.HashCodeGenerator;
-import com.helger.base.tostring.ToStringGenerator;
 
 @Immutable
-public final class TextInLocale
+public record TextInLocale (@NonNull @Nonempty String locale, @NonNull String text)
 {
-  private final String m_sLocale;
-  private final String m_sText;
-
-  public TextInLocale (@NonNull @Nonempty final String sLocale, @NonNull final String sText)
+  public TextInLocale
   {
-    ValueEnforcer.notEmpty (sLocale, "Locale");
-    ValueEnforcer.notNull (sText, "Text");
-    m_sLocale = sLocale.intern ();
-    m_sText = sText;
-  }
-
-  @NonNull
-  public String getLocale ()
-  {
-    return m_sLocale;
-  }
-
-  @NonNull
-  public String getText ()
-  {
-    return m_sText;
-  }
-
-  @Override
-  public boolean equals (final Object o)
-  {
-    if (o == this)
-      return true;
-    if (o == null || !getClass ().equals (o.getClass ()))
-      return false;
-    final TextInLocale rhs = (TextInLocale) o;
-    return m_sLocale.equals (rhs.m_sLocale) && m_sText.equals (rhs.m_sText);
-  }
-
-  @Override
-  public int hashCode ()
-  {
-    return new HashCodeGenerator (this).append (m_sLocale).append (m_sText).getHashCode ();
-  }
-
-  @Override
-  public String toString ()
-  {
-    return new ToStringGenerator (this).append ("locale", m_sLocale).append ("text", m_sText).getToString ();
+    ValueEnforcer.notEmpty (locale, "Locale");
+    ValueEnforcer.notNull (text, "Text");
+    locale = locale.intern ();
   }
 }

@@ -34,12 +34,14 @@ public final class MainEclipseCompilerErrorsSetDefault extends AbstractProjectMa
 
   public static void main (final String [] args)
   {
-    final String sContent = "eclipse.preferences.version=1\n" +
-                            "org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8\n" +
-                            "org.eclipse.jdt.core.compiler.compliance=1.8\n" +
-                            "org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning\n" +
-                            "org.eclipse.jdt.core.compiler.source=1.8\n" +
-                            "org.eclipse.jdt.core.javaFormatter=org.eclipse.jdt.core.defaultJavaFormatter\n";
+    final String sContent = """
+        eclipse.preferences.version=1
+        org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+        org.eclipse.jdt.core.compiler.compliance=1.8
+        org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
+        org.eclipse.jdt.core.compiler.source=1.8
+        org.eclipse.jdt.core.javaFormatter=org.eclipse.jdt.core.defaultJavaFormatter
+        """;
 
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.getProjectType ().hasJavaCode () &&
                                                                     !p.isDeprecated () &&

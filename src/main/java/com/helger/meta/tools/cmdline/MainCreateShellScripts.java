@@ -48,21 +48,12 @@ public final class MainCreateShellScripts extends AbstractProjectMain
    *
    * @author Philip Helger
    */
-  private static final class ScriptTarget
+  private static record ScriptTarget (@NonNull IProject project, boolean wiki)
   {
-    private final IProject m_aProject;
-    private final boolean m_bIsWiki;
-
-    ScriptTarget (@NonNull final IProject aProject, final boolean bIsWiki)
-    {
-      m_aProject = aProject;
-      m_bIsWiki = bIsWiki;
-    }
-
     @NonNull
     public EProjectOwner getProjectOwner ()
     {
-      return m_aProject.getProjectOwner ();
+      return project.getProjectOwner ();
     }
 
     /**
@@ -73,7 +64,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     @Nonempty
     public String getDisplayName ()
     {
-      return m_bIsWiki ? m_aProject.getWikiProjectName () : m_aProject.getProjectName ();
+      return wiki ? project.getWikiProjectName () : project.getProjectName ();
     }
 
     /**
@@ -84,7 +75,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     @Nonempty
     public String getDirName ()
     {
-      return m_bIsWiki ? m_aProject.getWikiProjectName () : m_aProject.getFullBaseDirName ();
+      return wiki ? project.getWikiProjectName () : project.getFullBaseDirName ();
     }
 
     /**
@@ -95,7 +86,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     @Nonempty
     public String getGitRepoName ()
     {
-      return m_bIsWiki ? m_aProject.getWikiProjectName () + ".git" : m_aProject.getBaseDir ().getName ();
+      return wiki ? project.getWikiProjectName () + ".git" : project.getBaseDir ().getName ();
     }
   }
 
@@ -190,10 +181,12 @@ public final class MainCreateShellScripts extends AbstractProjectMain
 
   private static void _createGhSetSecretShellScript () throws IOException
   {
-    final String sPreamble = "if [ $# -ne 2 ]; then\n" +
-                             "  echo \"Usage: $0 <SECRET_KEY> <SECRET_VALUE>\" >&2\n" +
-                             "  exit 1\n" +
-                             "fi\n";
+    final String sPreamble = """
+        if [ $# -ne 2 ]; then
+          echo "Usage: $0 <SECRET_KEY> <SECRET_VALUE>" >&2
+          exit 1
+        fi
+        """;
     // Wiki projects are no separate GitHub repositories and have no own secrets
     _createShellScript (sPreamble,
                         t -> "gh secret set \"$1\" --repo " +
@@ -287,14 +280,13 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     if (false)
       _createShellScriptPerDir ("git gc", true, "git_gc.sh");
     _createShellScriptPerDir ("git gc --auto", true, "git_gc_auto.sh");
-    _createShellScriptPerDir ("git add . -u\n" +
-                              "git commit -m \"Saving files before refreshing line endings\"\n" +
-                              "git rm --cached -r .\n" +
-                              "git reset --hard\n" +
-                              "git add .\n" +
-                              "git commit -m \"Normalize all the line endings\"",
-                              true,
-                              "git_normalize_crlf.sh");
+    _createShellScriptPerDir ("""
+        git add . -u
+        git commit -m "Saving files before refreshing line endings"
+        git rm --cached -r .
+        git reset --hard
+        git add .
+        git commit -m "Normalize all the line endings\"""", true, "git_normalize_crlf.sh");
     if (false)
       _createShellScriptPerDir ("git fetch --prune", true, "git_fetch_prune.sh");
     _createShellScriptPerDir ("git diff --quiet", true, "git_status.sh");

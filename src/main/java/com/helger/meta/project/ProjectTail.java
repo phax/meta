@@ -25,9 +25,7 @@ import com.helger.annotation.concurrent.Immutable;
 import com.helger.annotation.concurrent.NotThreadSafe;
 import com.helger.base.builder.IBuilder;
 import com.helger.base.enforce.ValueEnforcer;
-import com.helger.base.hashcode.HashCodeGenerator;
 import com.helger.base.string.StringHelper;
-import com.helger.base.tostring.ToStringGenerator;
 import com.helger.base.version.Version;
 
 /**
@@ -42,48 +40,27 @@ import com.helger.base.version.Version;
  * @see IProject#getAllTails()
  */
 @Immutable
-public class ProjectTail
+public record ProjectTail (@NonNull @Nonempty String lastPublishedVersionString,
+                           @NonNull EJDK minimumJDKVersion,
+                           boolean maintained)
 {
-  private final String m_sLastPublishedVersion;
-  private final Version m_aLastPublishedVersion;
-  private final EJDK m_eMinJDK;
-  private final boolean m_bIsMaintained;
-
   /**
    * Constructor.
    *
-   * @param sLastPublishedVersion
+   * @param lastPublishedVersionString
    *        The last published version of this tail train. May neither be <code>null</code> nor
    *        empty.
-   * @param eMinJDK
+   * @param minimumJDKVersion
    *        The JDK version this tail train is baselined on. It is frozen for the life time of the
    *        train. May not be <code>null</code>.
-   * @param bIsMaintained
+   * @param maintained
    *        <code>true</code> if this tail train still receives fixes, <code>false</code> if it
    *        reached its end of life.
    */
-  public ProjectTail (@NonNull @Nonempty final String sLastPublishedVersion,
-                      @NonNull final EJDK eMinJDK,
-                      final boolean bIsMaintained)
+  public ProjectTail
   {
-    ValueEnforcer.notEmpty (sLastPublishedVersion, "LastPublishedVersion");
-    ValueEnforcer.notNull (eMinJDK, "MinJDK");
-
-    m_sLastPublishedVersion = sLastPublishedVersion;
-    m_aLastPublishedVersion = Version.parse (sLastPublishedVersion);
-    m_eMinJDK = eMinJDK;
-    m_bIsMaintained = bIsMaintained;
-  }
-
-  /**
-   * @return The last published version of this tail train as a String. Neither <code>null</code>
-   *         nor empty.
-   */
-  @NonNull
-  @Nonempty
-  public final String getLastPublishedVersionString ()
-  {
-    return m_sLastPublishedVersion;
+    ValueEnforcer.notEmpty (lastPublishedVersionString, "LastPublishedVersion");
+    ValueEnforcer.notNull (minimumJDKVersion, "MinJDK");
   }
 
   /**
@@ -91,9 +68,9 @@ public class ProjectTail
    *         <code>null</code>.
    */
   @NonNull
-  public final Version getLastPublishedVersion ()
+  public Version getLastPublishedVersion ()
   {
-    return m_aLastPublishedVersion;
+    return Version.parse (lastPublishedVersionString);
   }
 
   /**
@@ -101,58 +78,9 @@ public class ProjectTail
    *         changes, so this is the identity of the train.
    */
   @Nonnegative
-  public final int getMajorVersion ()
+  public int getMajorVersion ()
   {
-    return m_aLastPublishedVersion.getMajor ();
-  }
-
-  /**
-   * @return The JDK version this tail train is baselined on. Never <code>null</code>.
-   */
-  @NonNull
-  public final EJDK getMinimumJDKVersion ()
-  {
-    return m_eMinJDK;
-  }
-
-  /**
-   * @return <code>true</code> if this tail train still receives critical fixes and security
-   *         patches, <code>false</code> if it reached its end of life.
-   */
-  public final boolean isMaintained ()
-  {
-    return m_bIsMaintained;
-  }
-
-  @Override
-  public boolean equals (final Object o)
-  {
-    if (o == this)
-      return true;
-    if (o == null || !getClass ().equals (o.getClass ()))
-      return false;
-    final ProjectTail rhs = (ProjectTail) o;
-    return m_sLastPublishedVersion.equals (rhs.m_sLastPublishedVersion) &&
-           m_eMinJDK.equals (rhs.m_eMinJDK) &&
-           m_bIsMaintained == rhs.m_bIsMaintained;
-  }
-
-  @Override
-  public int hashCode ()
-  {
-    return new HashCodeGenerator (this).append (m_sLastPublishedVersion)
-                                       .append (m_eMinJDK)
-                                       .append (m_bIsMaintained)
-                                       .getHashCode ();
-  }
-
-  @Override
-  public String toString ()
-  {
-    return new ToStringGenerator (null).append ("LastPublishedVersion", m_sLastPublishedVersion)
-                                       .append ("MinJDK", m_eMinJDK)
-                                       .append ("IsMaintained", m_bIsMaintained)
-                                       .getToString ();
+    return getLastPublishedVersion ().getMajor ();
   }
 
   /**
@@ -205,8 +133,8 @@ public class ProjectTail
      */
     public Builder (@NonNull final ProjectTail aSrc)
     {
-      lastPublishedVersion (aSrc.getLastPublishedVersionString ()).minJDK (aSrc.getMinimumJDKVersion ())
-                                                                  .maintained (aSrc.isMaintained ());
+      lastPublishedVersion (aSrc.lastPublishedVersionString ()).minJDK (aSrc.minimumJDKVersion ())
+                                                               .maintained (aSrc.maintained ());
     }
 
     /**

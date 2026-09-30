@@ -146,12 +146,8 @@ public final class ASMHelper
     while (itinsn.hasNext ())
     {
       final AbstractInsnNode in = (AbstractInsnNode) itinsn.next ();
-      if (in instanceof MethodInsnNode)
-      {
-        final MethodInsnNode min = (MethodInsnNode) in;
-        if (min.owner.equals (sOwner))
-          return true;
-      }
+      if (in instanceof final MethodInsnNode min && min.owner.equals (sOwner))
+        return true;
     }
     return false;
   }

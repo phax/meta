@@ -20,6 +20,7 @@ import java.io.File;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.ToolFactory;
@@ -53,7 +54,8 @@ import com.helger.xml.microdom.serialize.MicroReader;
  * <code>eclipse-formatter-ph.xml</code>. This is the command line equivalent of "Source / Format"
  * in Eclipse and requires no Eclipse installation. Pass <code>--dry-run</code> to just list the
  * files that would be changed. Pass one or more project names to limit the run to those projects
- * instead of all of them.
+ * instead of all of them. Files using the <code>@CodingStyleguideUnaware</code> annotation are not
+ * formatted.
  *
  * @author Philip Helger
  */
@@ -68,9 +70,14 @@ public final class MainFormatAllSources extends AbstractProjectMain
   // All sources use Unix line endings - pin it, so that no CRLF can sneak in
   private static final String LINE_SEPARATOR = "\n";
   private static final String [] SOURCE_DIRS = { "src/main/java", "src/test/java" };
+  // Matches both the simple and the fully qualified annotation usage. The annotation must start the
+  // line, so that mentions in comments and JavaDoc are ignored
+  private static final Pattern CODING_STYLEGUIDE_UNAWARE = Pattern.compile ("^\\s*@(\\w+\\.)*CodingStyleguideUnaware\\b",
+                                                                            Pattern.MULTILINE);
 
   private static int s_nChanged = 0;
   private static int s_nUnchanged = 0;
+  private static int s_nSkipped = 0;
 
   @NonNull
   private static ICommonsOrderedMap <String, String> _readFormatterOptions (@NonNull final File aConfigFile)
@@ -110,6 +117,12 @@ public final class MainFormatAllSources extends AbstractProjectMain
     if (sOldContent == null)
     {
       _warn (aProject, "Failed to read " + aFile.getAbsolutePath ());
+      return;
+    }
+
+    if (CODING_STYLEGUIDE_UNAWARE.matcher (sOldContent).find ())
+    {
+      s_nSkipped++;
       return;
     }
 
@@ -214,6 +227,8 @@ public final class MainFormatAllSources extends AbstractProjectMain
                  (bDryRun ? " file(s) would be changed, " : " file(s) changed, ") +
                  s_nUnchanged +
                  " file(s) unchanged, " +
+                 s_nSkipped +
+                 " file(s) skipped, " +
                  getWarnCount () +
                  " warning(s)");
   }

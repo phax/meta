@@ -95,12 +95,8 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       eDep.addElementNS (NS, "version").addText (aProject.getLastPublishedVersionString ());
       switch (aProject.getProjectType ())
       {
-        case MAVEN_POM:
-          eDep.addElementNS (NS, "type").addText ("pom");
-          break;
-        case JAVA_WEB_APPLICATION:
-          eDep.addElementNS (NS, "type").addText ("war");
-          break;
+        case MAVEN_POM -> eDep.addElementNS (NS, "type").addText ("pom");
+        case JAVA_WEB_APPLICATION -> eDep.addElementNS (NS, "type").addText ("war");
       }
     }
 

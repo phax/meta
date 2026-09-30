@@ -40,14 +40,16 @@ public abstract class AbstractProjectMain
                                             "rem This files is generated - DO NOT EDIT - " +
                                             PDTFactory.getCurrentLocalDateTime ().toString () +
                                             "\n";
-  public static final String BATCH_FOOTER = "goto end\n" +
-                                            ":error\n" +
-                                            "echo An error occured!!!\n" +
-                                            "pause\n" +
-                                            "goto exit\n" +
-                                            ":end\n" +
-                                            "echo Successfully done\n" +
-                                            ":exit\n";
+  public static final String BATCH_FOOTER = """
+      goto end
+      :error
+      echo An error occured!!!
+      pause
+      goto exit
+      :end
+      echo Successfully done
+      :exit
+      """;
   public static final Charset BATCH_CHARSET = StandardCharsets.ISO_8859_1;
   public static final String SHELL_HEADER = "#!/bin/bash -e\n" +
                                             "# This files is generated - DO NOT EDIT - " +

@@ -73,13 +73,13 @@ public final class EProjectTest
 
     final ProjectTail aTail11 = aCommonsTails.getFirstOrNull ();
     assertEquals (11, aTail11.getMajorVersion ());
-    assertEquals (EJDK.JDK11, aTail11.getMinimumJDKVersion ());
-    assertTrue (aTail11.isMaintained ());
+    assertEquals (EJDK.JDK11, aTail11.minimumJDKVersion ());
+    assertTrue (aTail11.maintained ());
 
     final ProjectTail aTail10 = aCommonsTails.getLastOrNull ();
     assertEquals (10, aTail10.getMajorVersion ());
-    assertEquals (EJDK.JDK8, aTail10.getMinimumJDKVersion ());
-    assertFalse (aTail10.isMaintained ());
+    assertEquals (EJDK.JDK8, aTail10.minimumJDKVersion ());
+    assertFalse (aTail10.maintained ());
 
     // Modules inherit the tails of their root project
     assertEquals (aCommonsTails, EProject.PH_BASE.getAllTails ());
@@ -88,23 +88,23 @@ public final class EProjectTest
     final ICommonsList <ProjectTail> aParentTails = EProject.PH_PARENT_POM.getAllTails ();
     assertEquals (2, aParentTails.size ());
     assertEquals (2, aParentTails.getFirstOrNull ().getMajorVersion ());
-    assertEquals (EJDK.JDK11, aParentTails.getFirstOrNull ().getMinimumJDKVersion ());
+    assertEquals (EJDK.JDK11, aParentTails.getFirstOrNull ().minimumJDKVersion ());
     assertEquals (1, aParentTails.getLastOrNull ().getMajorVersion ());
-    assertEquals (EJDK.JDK8, aParentTails.getLastOrNull ().getMinimumJDKVersion ());
+    assertEquals (EJDK.JDK8, aParentTails.getLastOrNull ().minimumJDKVersion ());
 
     // phase2: branch "v5.1" and the superseded branch "5.0.x" - both on JDK 11
     final ICommonsList <ProjectTail> aPhase2Tails = EProject.PHASE2_PARENT_POM.getAllTails ();
     assertEquals (2, aPhase2Tails.size ());
     for (final ProjectTail aTail : aPhase2Tails)
-      assertEquals (EJDK.JDK11, aTail.getMinimumJDKVersion ());
-    assertTrue (aPhase2Tails.getFirstOrNull ().isMaintained ());
-    assertFalse (aPhase2Tails.getLastOrNull ().isMaintained ());
+      assertEquals (EJDK.JDK11, aTail.minimumJDKVersion ());
+    assertTrue (aPhase2Tails.getFirstOrNull ().maintained ());
+    assertFalse (aPhase2Tails.getLastOrNull ().maintained ());
 
     // A tail baseline may never be newer than the tip baseline
     for (final IProject aProject : EProject.values ())
       for (final ProjectTail aTail : aProject.getAllTails ())
-        assertTrue (aProject.getProjectName () + " tail " + aTail.getLastPublishedVersionString (),
-                    aTail.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()));
+        assertTrue (aProject.getProjectName () + " tail " + aTail.lastPublishedVersionString (),
+                    aTail.minimumJDKVersion ().isCompatibleToRuntimeVersion (aProject.getMinimumJDKVersion ()));
   }
 
   @Test

@@ -30,38 +30,20 @@ import com.helger.base.string.StringHelper;
  *
  * @author Philip Helger
  */
-public class WGEnumEntry implements Serializable
+public record WGEnumEntry (@NonNull @Nonempty String key, @Nullable String documentation) implements Serializable
 {
-  private final String m_sKey;
-  private final String m_sDoc;
+  public WGEnumEntry
+  {
+    ValueEnforcer.notEmpty (key, "Key");
+  }
 
   public WGEnumEntry (@NonNull @Nonempty final String sKey)
   {
     this (sKey, null);
   }
 
-  public WGEnumEntry (@NonNull @Nonempty final String sKey, @Nullable final String sDoc)
-  {
-    ValueEnforcer.notEmpty (sKey, "Key");
-    m_sKey = sKey;
-    m_sDoc = sDoc;
-  }
-
-  @NonNull
-  @Nonempty
-  public String getKey ()
-  {
-    return m_sKey;
-  }
-
   public boolean hasDocumentation ()
   {
-    return StringHelper.isNotEmpty (m_sDoc);
-  }
-
-  @Nullable
-  public String getDocumentation ()
-  {
-    return m_sDoc;
+    return StringHelper.isNotEmpty (documentation);
   }
 }

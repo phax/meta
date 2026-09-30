@@ -38,11 +38,11 @@ public final class ProjectTailTest
   public void testBasic ()
   {
     final ProjectTail aTail = new ProjectTail ("11.2.7", EJDK.JDK11, true);
-    assertEquals ("11.2.7", aTail.getLastPublishedVersionString ());
+    assertEquals ("11.2.7", aTail.lastPublishedVersionString ());
     assertEquals (new Version (11, 2, 7), aTail.getLastPublishedVersion ());
     assertEquals (11, aTail.getMajorVersion ());
-    assertEquals (EJDK.JDK11, aTail.getMinimumJDKVersion ());
-    assertTrue (aTail.isMaintained ());
+    assertEquals (EJDK.JDK11, aTail.minimumJDKVersion ());
+    assertTrue (aTail.maintained ());
     assertNotNull (aTail.toString ());
   }
 
@@ -51,18 +51,18 @@ public final class ProjectTailTest
   {
     // Maintained is true by default
     final ProjectTail aTail = ProjectTail.builder ().lastPublishedVersion ("12.4.1").minJDK (EJDK.JDK17).build ();
-    assertEquals ("12.4.1", aTail.getLastPublishedVersionString ());
+    assertEquals ("12.4.1", aTail.lastPublishedVersionString ());
     assertEquals (12, aTail.getMajorVersion ());
-    assertEquals (EJDK.JDK17, aTail.getMinimumJDKVersion ());
-    assertTrue (aTail.isMaintained ());
+    assertEquals (EJDK.JDK17, aTail.minimumJDKVersion ());
+    assertTrue (aTail.maintained ());
 
     final ProjectTail aEOL = ProjectTail.builder ()
                                         .lastPublishedVersion ("10.2.5")
                                         .minJDK (EJDK.JDK8)
                                         .maintained (false)
                                         .build ();
-    assertEquals (EJDK.JDK8, aEOL.getMinimumJDKVersion ());
-    assertFalse (aEOL.isMaintained ());
+    assertEquals (EJDK.JDK8, aEOL.minimumJDKVersion ());
+    assertFalse (aEOL.maintained ());
   }
 
   @Test
@@ -92,7 +92,7 @@ public final class ProjectTailTest
       ProjectTail.builder ().minJDK (EJDK.JDK17).build ();
       fail ();
     }
-    catch (final IllegalStateException ex)
+    catch (final IllegalStateException _)
     {
       // Expected
     }
@@ -103,7 +103,7 @@ public final class ProjectTailTest
       ProjectTail.builder ().lastPublishedVersion ("12.4.1").build ();
       fail ();
     }
-    catch (final IllegalStateException ex)
+    catch (final IllegalStateException _)
     {
       // Expected
     }
