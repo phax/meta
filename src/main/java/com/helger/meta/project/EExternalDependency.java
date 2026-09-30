@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.8", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -81,7 +81,7 @@ public enum EExternalDependency
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.14.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.6.0", EJDK.JDK8),
-  COMMONS_LANG3 ("org.apache.commons", "commons-lang3", "3.20.0", EJDK.JDK8),
+  COMMONS_LANG3 ("org.apache.commons", "commons-lang3", "3.21.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.13.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
@@ -99,7 +99,7 @@ public enum EExternalDependency
   ECLIPSELINK4_CORE("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.9", EJDK.JDK11),
   ECLIPSELINK4_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK4_CORE),
 
-  ECLIPSELINK5_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "5.0.1", EJDK.JDK17),
+  ECLIPSELINK5_CORE ("org.eclipse.persistence", "org.eclipse.persistence.core", "5.0.2", EJDK.JDK17),
   ECLIPSELINK5_JPA ("org.eclipse.persistence", "org.eclipse.persistence.jpa", ECLIPSELINK5_CORE),
 
   ECLIPSE_JDT_CORE_11 ("org.eclipse.jdt", "org.eclipse.jdt.core", "3.47.0", EJDK.JDK11),
@@ -115,7 +115,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.7.0", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.8.1", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -131,17 +131,17 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260920", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260928", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
-  H2 ("com.h2database", "h2", "2.5.250", EJDK.JDK8),
+  H2 ("com.h2database", "h2", "2.5.252", EJDK.JDK8),
 
   @VersionMaxExcl ("3.0.0")
   HAMCREST_LIBRARY_2("org.hamcrest", "hamcrest-library", "2.2", EJDK.JDK8),
   HAMCREST_LIBRARY_3 ("org.hamcrest", "hamcrest-library", "3.0", EJDK.JDK8),
 
-  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.4.3", EJDK.JDK8),
+  HTTP_CORE5 ("org.apache.httpcomponents.core5", "httpcore5", "5.4.4", EJDK.JDK8),
   HTTP_CLIENT5 ("org.apache.httpcomponents.client5", "httpclient5", "5.6.4", EJDK.JDK8),
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0_special_89304", EJDK.JDK8),
@@ -244,7 +244,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.9.1", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.3", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.4", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -267,7 +267,7 @@ public enum EExternalDependency
 
   MCP ("io.modelcontextprotocol.sdk", "mcp", "2.0.1", EJDK.JDK11),
 
-  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.12.0", EJDK.JDK8),
+  MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.13.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.0.jre11", EJDK.JDK11),
@@ -344,7 +344,7 @@ public enum EExternalDependency
   SPRING_BOOT4_VALIDATION ("org.springframework.boot", "spring-boot-validation", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_WEB_SERVER ("org.springframework.boot", "spring-boot-web-server", SPRING_BOOT4_DEPENDENCIES),
 
-  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.19.0", EJDK.JDK11),
+  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.20.0", EJDK.JDK11),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
@@ -359,7 +359,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.1", EJDK.JDK8),
 
-  WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.1", EJDK.JDK17),
+  WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.2", EJDK.JDK17),
 
   VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.2", EJDK.JDK17),
 
