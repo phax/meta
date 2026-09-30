@@ -294,7 +294,7 @@ public enum EProject implements IProject
                 EProjectType.JAVA_LIBRARY,
                 EHasPages.FALSE,
                 EHasWiki.FALSE,
-                "3.1.0",
+                "3.1.1",
                 EJDK.JDK17),
   PH_GENERICODE (null,
                  EProjectOwner.PROJECT_OWNER_PHAX,

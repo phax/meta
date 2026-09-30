@@ -446,7 +446,7 @@ Current list of all released projects (as of 2026-09-30):
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface)](https://img.shields.io/maven-central/v/com.helger/ph-ebinterface) 
- * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 3.1.0 - JDK 17
+ * [ph-fatturapa](https://github.com/phax/ph-fatturapa) - Version 3.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-fatturapa)](https://img.shields.io/maven-central/v/com.helger/ph-fatturapa) 
  * [ph-fonts](https://github.com/phax/ph-fonts) - Version 6.1.0 - JDK 17
