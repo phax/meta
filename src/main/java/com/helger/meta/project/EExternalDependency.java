@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.8", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.9", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -131,7 +131,7 @@ public enum EExternalDependency
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
   GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260928", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260929", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -244,7 +244,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.9.1", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.4", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.5", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -310,7 +310,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.58.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.59.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),

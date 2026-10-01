@@ -1199,7 +1199,7 @@ Current list of all released projects (as of 2026-10-01):
  * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.10 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.11 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17
