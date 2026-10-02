@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.0", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.9", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.55.10", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -115,7 +115,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.8.1", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.9.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -130,8 +130,9 @@ public enum EExternalDependency
 
   GMAVEN_PLUS ("org.codehaus.gmavenplus", "gmavenplus-plugin", "5.1.0", EJDK.JDK8),
 
-  GOOGLE_CLOSURE_11 ("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260929", EJDK.JDK21),
+  @VersionMaxExcl ("v20240317")
+  GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20260930", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -159,11 +160,13 @@ public enum EExternalDependency
   // JakartaEE 11
   JAKARTA_ANNOTATION_API_3 ("jakarta.annotation", "jakarta.annotation-api", "3.0.0", EJDK.JDK11),
 
-  JAKARTA_PERSISTENCE ("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
+  @VersionMaxExcl ("3.2.0")
+  JAKARTA_PERSISTENCE("jakarta.persistence", "jakarta.persistence-api", "3.1.0", EJDK.JDK11),
   JAKARTA_PERSISTENCE_11 ("jakarta.persistence", "jakarta.persistence-api", "3.2.0", EJDK.JDK17),
 
   // JakartaEE 10
-  JAKARTA_SERVLET_API_6 ("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
+  @VersionMaxExcl ("6.1.0")
+  JAKARTA_SERVLET_API_6("jakarta.servlet", "jakarta.servlet-api", "6.0.0", EJDK.JDK17),
   // JakartaEE 11
   JAKARTA_SERVLET_API_61 ("jakarta.servlet", "jakarta.servlet-api", "6.1.0", EJDK.JDK21),
 
@@ -325,10 +328,6 @@ public enum EExternalDependency
   SNAPPY ("org.iq80.snappy", "snappy", "0.5", EJDK.JDK8),
 
   SPOTBUGS_ANNOTATIONS ("com.github.spotbugs", "spotbugs-annotations", "4.10.4", EJDK.JDK8),
-
-  @IsBOM
-  @VersionMaxExcl ("7.0.0")
-  SPRING6_FRAMEWORK_BOM("org.springframework", "spring-framework-bom", "6.2.12", EJDK.JDK11),
 
   // JakartaEE 11
   @IsBOM
