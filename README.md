@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-10-02):
+Current list of all released projects (as of 2026-10-03):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -167,16 +167,16 @@ Current list of all released projects (as of 2026-10-02):
  * [peppol-directory-client/peppol-directory-searchclient](https://github.com/phax/peppol-directory-client) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchclient)](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchclient) 
- * [peppol-om](https://github.com/phax/peppol-om) - Version 1.2.2 - JDK 17
+ * [peppol-om](https://github.com/phax/peppol-om) - Version 1.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-parent-pom) 
- * [peppol-om/peppol-om-tdd](https://github.com/phax/peppol-om) - Version 1.2.2 - JDK 17
+ * [peppol-om/peppol-om-tdd](https://github.com/phax/peppol-om) - Version 1.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd) 
- * [peppol-om/peppol-om-tdd-datatypes](https://github.com/phax/peppol-om) - Version 1.2.2 - JDK 17
+ * [peppol-om/peppol-om-tdd-datatypes](https://github.com/phax/peppol-om) - Version 1.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-tdd-datatypes) 
- * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 1.2.2 - JDK 17
+ * [peppol-om/peppol-om-testfiles](https://github.com/phax/peppol-om) - Version 1.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-om-testfiles) 
  * [peppol-reporting](https://github.com/phax/peppol-reporting) - Version 4.4.0 - JDK 17

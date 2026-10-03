@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261002</version>
+  <version>1.0.0-20261003</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -2618,23 +2618,23 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-parent-pom</artifactId>
-      <version>1.2.2</version>
+      <version>1.2.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-testfiles</artifactId>
-      <version>1.2.2</version>
+      <version>1.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd-datatypes</artifactId>
-      <version>1.2.2</version>
+      <version>1.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-om-tdd</artifactId>
-      <version>1.2.2</version>
+      <version>1.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
