@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-10-03):
+Current list of all released projects (as of 2026-10-05):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -512,7 +512,7 @@ Current list of all released projects (as of 2026-10-03):
  * [ph-javacc-maven-plugin](https://github.com/phax/ph-javacc-maven-plugin) - Version 5.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-javacc-maven-plugin) 
- * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.2 - JDK 17
+ * [ph-jaxb-plugin](https://github.com/phax/ph-jaxb-plugin) - Version 5.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin)](https://img.shields.io/maven-central/v/com.helger/ph-jaxb-plugin) 
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.1 - JDK 17
