@@ -1672,7 +1672,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-ebinterface</artifactId>
-      <version>8.1.0</version>
+      <version>8.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.cii</groupId>
@@ -2983,34 +2983,34 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-parent-pom</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-cii2ubl-cli</artifactId>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii-parent-pom</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-ubl2cii-cli</artifactId>
-      <version>3.0.0</version>
+      <version>3.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
