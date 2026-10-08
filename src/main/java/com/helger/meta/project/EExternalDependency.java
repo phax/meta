@@ -67,7 +67,7 @@ public enum EExternalDependency
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
-  BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", "1.86.1", EJDK.JDK8),
+  BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", "1.86.2", EJDK.JDK8),
 
   CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
                                "classloader-leak-prevention-core",
@@ -115,7 +115,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.9.0", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.10.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -195,7 +195,7 @@ public enum EExternalDependency
   JAXWS4_MAVEN_PLUGIN ("com.sun.xml.ws", "jaxws-maven-plugin", JAXWS4_RI_BOM),
 
   JBIG2_APACHE ("org.apache.pdfbox", "jbig2-imageio", "3.0.5", EJDK.JDK8),
-  JEDIS ("redis.clients", "jedis", "8.0.1", EJDK.JDK8),
+  JEDIS ("redis.clients", "jedis", "8.0.2", EJDK.JDK8),
   JEROMQ ("org.zeromq", "jeromq", "0.6.0", EJDK.JDK8),
 
   @IsBOM
@@ -303,7 +303,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.7.13", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.7.14", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -313,7 +313,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.59.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.60.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -360,7 +360,7 @@ public enum EExternalDependency
 
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.2", EJDK.JDK17),
 
-  VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.2", EJDK.JDK17),
+  VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.3", EJDK.JDK17),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.4.1", EJDK.JDK8),
 

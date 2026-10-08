@@ -129,7 +129,7 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bctls-jdk18on</artifactId>
-      <version>1.86.1</version>
+      <version>1.86.2</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -289,32 +289,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>13.9.0</version>
+      <version>13.10.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -492,7 +492,7 @@
     <dependency>
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
-      <version>8.0.1</version>
+      <version>8.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.zeromq</groupId>
@@ -785,7 +785,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.7.13</version>
+      <version>42.7.14</version>
     </dependency>
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
@@ -815,12 +815,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.59.0</version>
+      <version>8.60.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.59.0</version>
+      <version>8.60.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -957,7 +957,7 @@
     <dependency>
       <groupId>org.verapdf</groupId>
       <artifactId>validation-model-jakarta</artifactId>
-      <version>1.30.2</version>
+      <version>1.30.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -1914,63 +1914,63 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>11.4.6</version>
+      <version>11.4.7</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
