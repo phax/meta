@@ -155,16 +155,16 @@ Current list of all released projects (as of 2026-10-08):
  * [peppol-commons/smp-client-base](https://github.com/phax/peppol-commons) - Version 13.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/smp-client-base)](https://img.shields.io/maven-central/v/com.helger.peppol/smp-client-base) 
- * [peppol-directory-client](https://github.com/phax/peppol-directory-client) - Version 1.0.0 - JDK 17
+ * [peppol-directory-client](https://github.com/phax/peppol-directory-client) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-client-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-client-parent-pom) 
- * [peppol-directory-client/peppol-directory-client](https://github.com/phax/peppol-directory-client) - Version 1.0.0 - JDK 17
+ * [peppol-directory-client/peppol-directory-client](https://github.com/phax/peppol-directory-client) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-client)](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-client) 
- * [peppol-directory-client/peppol-directory-searchapi](https://github.com/phax/peppol-directory-client) - Version 1.0.0 - JDK 17
+ * [peppol-directory-client/peppol-directory-searchapi](https://github.com/phax/peppol-directory-client) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchapi)](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchapi) 
- * [peppol-directory-client/peppol-directory-searchclient](https://github.com/phax/peppol-directory-client) - Version 1.0.0 - JDK 17
+ * [peppol-directory-client/peppol-directory-searchclient](https://github.com/phax/peppol-directory-client) - Version 1.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchclient)](https://img.shields.io/maven-central/v/com.helger.peppol.directory/peppol-directory-searchclient) 
  * [peppol-om](https://github.com/phax/peppol-om) - Version 1.2.3 - JDK 17

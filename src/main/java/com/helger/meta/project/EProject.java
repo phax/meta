@@ -1124,7 +1124,7 @@ public enum EProject implements IProject
                                       EProjectType.MAVEN_POM,
                                       EHasPages.FALSE,
                                       EHasWiki.FALSE,
-                                      "1.0.0",
+                                      "1.0.1",
                                       EJDK.JDK17),
   PEPPOL_DIRECTORY_CLIENT (PEPPOL_DIRECTORY_CLIENT_PARENT_POM, "peppol-directory-client", EProjectType.JAVA_LIBRARY),
   PEPPOL_DIRECTORY_SEARCHAPI (PEPPOL_DIRECTORY_CLIENT_PARENT_POM,
