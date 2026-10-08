@@ -1991,118 +1991,118 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-parent-pom</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-html</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-markdown</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jscode</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jquery</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-atom</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-io</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-app</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-audit</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-ajax</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-api</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-connect</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-mgrs</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-core</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-exchange</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jdbc</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-jetty</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-security</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-tinymce4</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-datatables</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uicore</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-icon</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-uictrls</artifactId>
-      <version>10.6.0</version>
+      <version>10.7.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
@@ -2202,34 +2202,34 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-parent-pom</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-demo</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-pages</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-stub</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap5-uictrls</artifactId>
-      <version>0.9.5</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
@@ -2435,113 +2435,113 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-commons</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-codelist-datatypes</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-id</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>bdxr-id</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-checks</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-sbdh</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>smp-client-base</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>13.1.1</version>
+      <version>13.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
