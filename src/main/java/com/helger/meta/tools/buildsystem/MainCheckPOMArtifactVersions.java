@@ -35,7 +35,6 @@ import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
-import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
@@ -194,8 +193,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
             else
             {
               if (eProjectOwner.equals (EProjectOwner.PROJECT_OWNER_PHAX))
-                if (aProject != EProject.PHASE4_PEPPOL_STANDALONE && aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
-                  _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
+                _warn (aProject, "Parent POM uses non-standard artifactId '" + sArtifactId + "'");
             }
           }
 
@@ -293,9 +291,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
       final IMicroElement eSCM = eRoot.getFirstChildElement ("scm");
       if (eSCM == null)
       {
-        if (!aProject.isNestedProject () &&
-            aProject != EProject.PHASE4_PEPPOL_STANDALONE &&
-            aProject != EProject.PHASE4_HREDELIVERY_STANDALONE)
+        if (!aProject.isNestedProject ())
         {
           // Nested projects might not use it
           _warn (aProject, "scm element is missing");
