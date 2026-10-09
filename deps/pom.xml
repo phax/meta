@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261008</version>
+  <version>1.0.0-20261009</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1571,68 +1571,68 @@
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-parent-pom</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xml</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xlink</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmldsig</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmldsig11</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmlenc</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmlenc11</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xades132</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xades141</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-ccts-cct-schemamodule</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-wsaddr</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-bdxr-smp1</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-bdxr-smp2</artifactId>
-      <version>4.1.0</version>
+      <version>4.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

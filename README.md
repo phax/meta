@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-10-08):
+Current list of all released projects (as of 2026-10-09):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -899,43 +899,43 @@ Current list of all released projects (as of 2026-10-08):
  * [ph-xmldsig](https://github.com/phax/ph-xmldsig) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-xmldsig)](https://img.shields.io/maven-central/v/com.helger/ph-xmldsig) 
- * [ph-xsds](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-parent-pom)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-parent-pom) 
- * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-bdxr-smp1](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp1)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp1) 
- * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-bdxr-smp2](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp2)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-bdxr-smp2) 
- * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-ccts-cct-schemamodule](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-ccts-cct-schemamodule)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-ccts-cct-schemamodule) 
- * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-wsaddr](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-wsaddr)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-wsaddr) 
- * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xades132](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades132)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades132) 
- * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xades141](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades141)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xades141) 
- * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xlink](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xlink)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xlink) 
- * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xml](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xml)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xml) 
- * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmldsig](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig) 
- * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmldsig11](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmldsig11) 
- * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmlenc](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc) 
- * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.1.0 - JDK 17
+ * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11) 
  * [phase2](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17

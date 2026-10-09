@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies-future</artifactId>
-  <version>1.0.0-20261008</version>
+  <version>1.0.0-20261009</version>
   <dependencies>
     <!--External dependencies with the newest version of group+artifact IDs occurring more than once:-->
     <dependency>
