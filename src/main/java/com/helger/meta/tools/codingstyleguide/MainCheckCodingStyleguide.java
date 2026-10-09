@@ -49,7 +49,7 @@ import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.asm.ASMHelper;
 import com.helger.meta.project.EProject;
-import com.helger.meta.project.EProjectDeprecated;
+import com.helger.meta.project.EProjectArchived;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
@@ -481,7 +481,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sPackageName.equals ("un.unece.uncefact.data.specification.corecomponenttypeschemamodule._21")))
       return EContinue.BREAK;
 
-    if (aProject == EProjectDeprecated.PH_XPATH2 &&
+    if (aProject == EProjectArchived.PH_XPATH2 &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserXP2") ||
@@ -492,10 +492,10 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
          sClassLocalName.equals ("SimpleNode")))
       return EContinue.BREAK;
 
-    if (aProject == EProjectDeprecated.PH_STX_ENGINE)
+    if (aProject == EProjectArchived.PH_STX_ENGINE)
       return EContinue.BREAK;
 
-    if (aProject == EProjectDeprecated.PH_STX_PARSER &&
+    if (aProject == EProjectArchived.PH_STX_PARSER &&
         (sClassLocalName.equals ("CharStream") ||
          sClassLocalName.equals ("ParseException") ||
          sClassLocalName.startsWith ("ParserSTX") ||
@@ -607,7 +607,7 @@ public final class MainCheckCodingStyleguide extends AbstractProjectMain
     if (aProject == EProject.PH_MINI_QUARTZ)
       return EContinue.BREAK;
 
-    if (aProject == EProjectDeprecated.PH_STX_ENGINE)
+    if (aProject == EProjectArchived.PH_STX_ENGINE)
       return EContinue.BREAK;
 
     return EContinue.CONTINUE;

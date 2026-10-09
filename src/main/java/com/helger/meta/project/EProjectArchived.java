@@ -33,7 +33,7 @@ import com.helger.collection.commons.ICommonsList;
  * @author Philip Helger
  */
 @SuppressWarnings ("deprecation")
-public enum EProjectDeprecated implements IProject
+public enum EProjectArchived implements IProject
 {
   CIPA_START_JMS_API (null, "cipa-start-jms-api", EProjectType.JAVA_LIBRARY, EHasPages.FALSE, EHasWiki.FALSE, "1.5.0"),
   CIPA_START_JMSRECEIVER (null,
@@ -363,7 +363,7 @@ public enum EProjectDeprecated implements IProject
    * @param eProjectType
    *        Project type
    */
-  EProjectDeprecated (@NonNull final EProjectDeprecated eParentProject,
+  EProjectArchived (@NonNull final EProjectArchived eParentProject,
                       @NonNull @Nonempty final String sProjectName,
                       @NonNull final EProjectType eProjectType)
   {
@@ -371,7 +371,7 @@ public enum EProjectDeprecated implements IProject
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
-  EProjectDeprecated (@NonNull final EProjectDeprecated eParentProject,
+  EProjectArchived (@NonNull final EProjectArchived eParentProject,
                       @NonNull @Nonempty final String sProjectName,
                       @NonNull @Nonempty final String sProjectBaseDirName,
                       @NonNull final EProjectType eProjectType)
@@ -387,7 +387,7 @@ public enum EProjectDeprecated implements IProject
           EJDK.JDK8);
   }
 
-  EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
+  EProjectArchived (@Nullable final EProjectArchived eParentProject,
                       @NonNull @Nonempty final String sProjectName,
                       @NonNull final EProjectType eProjectType,
                       @NonNull final EHasPages eHasPagesProject,
@@ -406,7 +406,7 @@ public enum EProjectDeprecated implements IProject
           EJDK.JDK8);
   }
 
-  EProjectDeprecated (@Nullable final EProjectDeprecated eParentProject,
+  EProjectArchived (@Nullable final EProjectArchived eParentProject,
                       @NonNull final EProjectOwner eProjectOwner,
                       @NonNull @Nonempty final String sProjectName,
                       @NonNull @Nonempty final String sProjectBaseDirName,
@@ -419,7 +419,7 @@ public enum EProjectDeprecated implements IProject
     final boolean bIsGitLab;
     try
     {
-      final Field aField = EProjectDeprecated.class.getField (name ());
+      final Field aField = EProjectArchived.class.getField (name ());
       bIsGitLab = aField.isAnnotationPresent (IsGitLab.class);
     }
     catch (final Exception ex)

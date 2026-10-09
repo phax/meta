@@ -47,7 +47,7 @@ import com.helger.xml.microdom.serialize.MicroReader;
  * <ul>
  * <li>{@link EProject}</li>
  * <li>{@link EProjectForked}</li>
- * <li>{@link EProjectDeprecated}</li>
+ * <li>{@link EProjectArchived}</li>
  * <li>and all custom projects</li>
  * </ul>
  *
@@ -74,7 +74,7 @@ public final class ProjectList
       _add (aProject);
     for (final IProject aProject : EProjectForked.values ())
       _add (aProject);
-    for (final IProject aProject : EProjectDeprecated.values ())
+    for (final IProject aProject : EProjectArchived.values ())
       _add (aProject);
 
     // Other projects
