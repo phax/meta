@@ -39,57 +39,57 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>9.10.1</version>
+      <version>9.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-analysis</artifactId>
-      <version>9.10.1</version>
+      <version>9.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>9.10.1</version>
+      <version>9.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-tree</artifactId>
-      <version>9.10.1</version>
+      <version>9.11.1</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-lambda-java-core</artifactId>
-      <version>1.4.0</version>
+      <version>1.4.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.55.12</version>
+      <version>2.56.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -149,7 +149,7 @@
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
-      <version>1.22.1</version>
+      <version>1.23.0</version>
     </dependency>
     <dependency>
       <groupId>commons-collections</groupId>
@@ -289,32 +289,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>13.10.0</version>
+      <version>13.10.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -344,7 +344,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20261005</version>
+      <version>v20261015</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -369,7 +369,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5</artifactId>
-      <version>5.6.4</version>
+      <version>5.6.5</version>
     </dependency>
     <dependency>
       <groupId>com.ibm.db2</groupId>
@@ -584,7 +584,7 @@
     <dependency>
       <groupId>com.github.mwiede</groupId>
       <artifactId>jsch</artifactId>
-      <version>2.28.7</version>
+      <version>2.28.8</version>
     </dependency>
     <dependency>
       <groupId>org.jspecify</groupId>
@@ -689,7 +689,7 @@
     <dependency>
       <groupId>io.modelcontextprotocol.sdk</groupId>
       <artifactId>mcp</artifactId>
-      <version>2.0.1</version>
+      <version>2.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
@@ -704,7 +704,7 @@
     <dependency>
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>mssql-jdbc</artifactId>
-      <version>13.6.0.jre11</version>
+      <version>13.6.1.jre11</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
@@ -735,7 +735,7 @@
     <dependency>
       <groupId>io.opentelemetry</groupId>
       <artifactId>opentelemetry-bom</artifactId>
-      <version>1.66.0</version>
+      <version>1.67.0</version>
     </dependency>
     <dependency>
       <groupId>io.opentelemetry.instrumentation</groupId>
@@ -800,7 +800,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>13.0</version>
+      <version>13.1</version>
     </dependency>
     <dependency>
       <groupId>name.dmaus.schxslt</groupId>
@@ -815,12 +815,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.60.0</version>
+      <version>8.61.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.60.0</version>
+      <version>8.61.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -865,7 +865,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.10.4</version>
+      <version>4.10.5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -942,7 +942,7 @@
     <dependency>
       <groupId>org.threeten</groupId>
       <artifactId>threeten-extra</artifactId>
-      <version>1.10.0</version>
+      <version>1.11.0</version>
     </dependency>
     <dependency>
       <groupId>jakarta.validation</groupId>
@@ -1157,7 +1157,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-maven-plugin</artifactId>
-      <version>4.10.4.1</version>
+      <version>4.10.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
@@ -1172,7 +1172,7 @@
     <dependency>
       <groupId>org.sonatype.central</groupId>
       <artifactId>central-publishing-maven-plugin</artifactId>
-      <version>0.11.0</version>
+      <version>0.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.jacoco</groupId>
@@ -1197,7 +1197,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>versions-maven-plugin</artifactId>
-      <version>2.22.0</version>
+      <version>2.23.0</version>
     </dependency>
     <!--Internal projects:-->
     <dependency>
@@ -1567,6 +1567,17 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-xmldsig</artifactId>
       <version>6.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.codelists</groupId>
+      <artifactId>ph-codelists-parent-pom</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.codelists</groupId>
+      <artifactId>ph-codelists-unit</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
@@ -2305,39 +2316,39 @@
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-parent-pom</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-lib</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-partnership-mongodb</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-servlet</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-server</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-webapp</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
       <artifactId>phase2-demo-spring-boot</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.diver</groupId>
@@ -3456,7 +3467,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.22.0</version>
+        <version>2.23.0</version>
         <configuration>
           <allowSnapshots>false</allowSnapshots>
           <rulesUri>file:versions-maven-plugin-rules.xml</rulesUri>

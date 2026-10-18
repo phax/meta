@@ -264,7 +264,7 @@ public enum EProject implements IProject
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           null,
+                           "1.0.0",
                            EJDK.JDK17),
   PH_CODELISTS_UNIT (PH_CODELISTS_PARENT_POM, "ph-codelists-unit", EProjectType.JAVA_LIBRARY),
 
@@ -671,7 +671,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.TRUE,
-                     "6.2.1",
+                     "6.2.2",
                      EJDK.JDK17, // Branch "v5.1"
                      ProjectTail.builder ().lastPublishedVersion ("5.1.8").minJDK (EJDK.JDK11).build (), // Branch "5.0.x"
                      ProjectTail.builder ()

@@ -293,6 +293,12 @@ Current list of all released projects (as of 2026-10-18):
  * [ph-cii/ph-cii-testfiles](https://github.com/phax/ph-cii) - Version 4.1.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles)](https://img.shields.io/maven-central/v/com.helger.cii/ph-cii-testfiles) 
+ * [ph-codelists](https://github.com/phax/ph-codelists) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.codelists/ph-codelists-parent-pom)](https://img.shields.io/maven-central/v/com.helger.codelists/ph-codelists-parent-pom) 
+ * [ph-codelists/ph-codelists-unit](https://github.com/phax/ph-codelists) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.codelists/ph-codelists-unit)](https://img.shields.io/maven-central/v/com.helger.codelists/ph-codelists-unit) 
  * [ph-commons](https://github.com/phax/ph-commons) - Version 12.5.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons-parent-pom)](https://img.shields.io/maven-central/v/com.helger.commons/ph-commons-parent-pom) 
@@ -938,25 +944,25 @@ Current list of all released projects (as of 2026-10-18):
  * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11) 
- * [phase2](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-parent-pom) 
- * [phase2/phase2-demo-spring-boot](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-demo-spring-boot](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-spring-boot)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-spring-boot) 
- * [phase2/phase2-demo-webapp](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-demo-webapp](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-webapp)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-webapp) 
- * [phase2/phase2-lib](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-lib](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-lib)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-lib) 
- * [phase2/phase2-partnership-mongodb](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-partnership-mongodb](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-partnership-mongodb)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-partnership-mongodb) 
- * [phase2/phase2-server](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-server](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-server)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-server) 
- * [phase2/phase2-servlet](https://github.com/phax/phase2) - Version 6.2.1 - JDK 17
+ * [phase2/phase2-servlet](https://github.com/phax/phase2) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet) 
  * [phase4](https://github.com/phax/phase4) - Version 4.8.1 - JDK 17
@@ -1326,10 +1332,6 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
-
- * [ph-codelists](https://github.com/phax/ph-codelists) - JDK 17
-
- * [ph-codelists/ph-codelists-unit](https://github.com/phax/ph-codelists) - JDK 17
 
  * [phive-central-tools](https://github.com/phax/phive-central-tools) - JDK 17
 
