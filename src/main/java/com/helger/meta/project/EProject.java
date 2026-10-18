@@ -257,6 +257,17 @@ public enum EProject implements IProject
               "6.1.0",
               EJDK.JDK17),
 
+  PH_CODELISTS_PARENT_POM (null,
+                           EProjectOwner.PROJECT_OWNER_PHAX,
+                           "ph-codelists-parent-pom",
+                           "ph-codelists",
+                           EProjectType.MAVEN_POM,
+                           EHasPages.FALSE,
+                           EHasWiki.FALSE,
+                           null,
+                           EJDK.JDK17),
+  PH_CODELISTS_UNIT (PH_CODELISTS_PARENT_POM, "ph-codelists-unit", EProjectType.JAVA_LIBRARY),
+
   PH_XSDS_PARENT_POM (null,
                       EProjectOwner.PROJECT_OWNER_PHAX,
                       "ph-xsds-parent-pom",
