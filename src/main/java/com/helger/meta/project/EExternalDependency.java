@@ -148,7 +148,7 @@ public enum EExternalDependency
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0_special_89304", EJDK.JDK8),
 
   @IsBOM
-  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.3", EJDK.JDK17),
+  JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.2.4", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
   JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
