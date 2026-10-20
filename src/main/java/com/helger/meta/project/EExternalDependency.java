@@ -52,14 +52,14 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.56.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.0", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
   AWS_REGIONS ("software.amazon.awssdk", "regions", AWS_S3),
   AWS_S3_TM ("software.amazon.awssdk", "s3-transfer-manager", AWS_S3),
 
-  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.19", EJDK.JDK8),
+  BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.20", EJDK.JDK8),
 
   BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.86", EJDK.JDK8),
   BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", "1.86", EJDK.JDK8),
@@ -122,7 +122,7 @@ public enum EExternalDependency
   FLYWAY13_POSTGRES ("org.flywaydb", "flyway-database-postgresql", FLYWAY13),
   FLYWAY13_SQLSERVER ("org.flywaydb", "flyway-sqlserver", FLYWAY13),
 
-  FOP ("org.apache.xmlgraphics", "fop", "2.11", EJDK.JDK8),
+  FOP ("org.apache.xmlgraphics", "fop", "2.12", EJDK.JDK8),
   FOP_HYPH ("net.sf.offo", "fop-hyph", "2.0", EJDK.JDK8),
   FORBIDDEN_APIS ("de.thetaphi", "forbiddenapis", "3.11", EJDK.JDK8),
 
@@ -132,7 +132,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("v20240317")
   GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261015", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261019", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -275,7 +275,7 @@ public enum EExternalDependency
 
   MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.1.jre11", EJDK.JDK11),
 
-  MYSQL ("com.mysql", "mysql-connector-j", "26.7.0", EJDK.JDK11),
+  MYSQL ("com.mysql", "mysql-connector-j", "26.10.0", EJDK.JDK11),
 
   OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.5.0", EJDK.JDK17),
 
