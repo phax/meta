@@ -770,7 +770,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "4.4.0",
+                               "4.4.1",
                                EJDK.JDK17),
   PEPPOL_REPORTING_TESTFILES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-testfiles", EProjectType.JAVA_LIBRARY),
   PEPPOL_REPORTING_TEST (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-test", EProjectType.JAVA_LIBRARY),
