@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.2", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -115,7 +115,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.10.3", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.11.1", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -132,7 +132,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("v20240317")
   GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261019", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261020", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -277,7 +277,7 @@ public enum EExternalDependency
 
   MYSQL ("com.mysql", "mysql-connector-j", "26.10.0", EJDK.JDK11),
 
-  OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.5.0", EJDK.JDK17),
+  OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.5.1", EJDK.JDK17),
 
   OPENSEARCH_JAVA ("org.opensearch.client", "opensearch-java", "3.10.0", EJDK.JDK17),
 
@@ -313,7 +313,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.61.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.61.1", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -331,7 +331,7 @@ public enum EExternalDependency
 
   // JakartaEE 11
   @IsBOM
-  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.9", EJDK.JDK17),
+  SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.10", EJDK.JDK17),
 
   @IsBOM
   SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.1.1", EJDK.JDK11),

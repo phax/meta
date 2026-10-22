@@ -65,7 +65,7 @@ import com.helger.meta.project.ProjectList;
  *
  * @author Philip Helger
  */
-public final class MainApplyDependencyUpdates extends AbstractProjectMain
+public final class MainUpdateExternalDependencies extends AbstractProjectMain
 {
   /**
    * One line of the versions-maven-plugin output
@@ -109,7 +109,7 @@ public final class MainApplyDependencyUpdates extends AbstractProjectMain
     }
   }
 
-  private static final Logger LOGGER = LoggerFactory.getLogger (MainApplyDependencyUpdates.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger (MainUpdateExternalDependencies.class);
   private static final Charset SOURCE_CHARSET = StandardCharsets.UTF_8;
   private static final File DEPS_DIR = new File ("deps");
   // Must match the file name used in check-updates.sh

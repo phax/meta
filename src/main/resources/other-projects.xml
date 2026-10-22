@@ -21,6 +21,23 @@
   <basedir>c:\dev\git</basedir>
   <basedir>c:\dev\svn-philip\dev</basedir>
   <basedir>/Users/philip/svn-philip/dev</basedir>
+  <basedir>/Users/philip/dev/git-silvaconnect</basedir>
+
+  <project projectname="silvaconnect-ap-parent-pom" dir="poc-ap" projecttype="maven-pom" minjdk="25">
+    <project projectname="silvaconnect-commons" projecttype="java-library" />
+    <project projectname="silvaconnect-codelists" projecttype="java-library" />
+    <project projectname="silvaconnect-sbdh" projecttype="java-library" />
+    <project projectname="silvaconnect-smp-client" projecttype="java-library" />
+    <project projectname="silvaconnect-phase4-client" projecttype="java-library" />
+    <project projectname="silvaconnect-phase4-servlet" projecttype="java-library" />
+    <project projectname="silvaconnect-ap-api" projecttype="java-library" />
+    <project projectname="silvaconnect-ap-db" projecttype="java-library" />
+    <project projectname="silvaconnect-ap-core" projecttype="java-library" />
+    <project projectname="silvaconnect-ap-webapp" projecttype="java-web-application" />
+    <project projectname="silvaconnect-ap-testbackend" projecttype="java-application" />
+    <project projectname="silvaconnect-ap-testsender" projecttype="java-application" />
+    <project projectname="silvaconnect-network-tools" projecttype="java-application" />
+  </project>
 
 <!-- 
   <project projectname="peppol-analytics" projecttype="java-application" minjdk="11" />
