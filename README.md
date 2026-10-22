@@ -26,13 +26,13 @@ Current list of all released projects (as of 2026-10-22):
  * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
- * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.2 - JDK 17
+ * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-parent-pom) 
- * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.2 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl) 
- * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 4.0.2 - JDK 17
+ * [en16931-cii2ubl/en16931-cii2ubl-cli](https://github.com/phax/en16931-cii2ubl) - Version 4.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-cii2ubl-cli) 
  * [en16931-purifier](https://github.com/phax/en16931-purifier) - Version 1.1.0 - JDK 17
