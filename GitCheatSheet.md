@@ -9,6 +9,12 @@ git config --global user.email "philip@helger.com"
 git config --global user.name "Philip Helger"
 ```
 
+General infos:
+
+```shell
+git config --global init.defaultBranch main
+```
+
 Store credentials when using commandline git.
 Windows:
 

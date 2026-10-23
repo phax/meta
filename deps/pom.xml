@@ -1925,63 +1925,63 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>11.4.7</version>
+      <version>11.4.8</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2723,6 +2723,11 @@
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-brazil</artifactId>
+      <version>5.0.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cii</artifactId>
       <version>5.0.6</version>
     </dependency>
@@ -3083,6 +3088,11 @@
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-hredelivery</artifactId>
+      <version>4.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phase4</groupId>
+      <artifactId>phase4-profile-nemhandel</artifactId>
       <version>4.8.2</version>
     </dependency>
     <dependency>

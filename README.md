@@ -860,40 +860,40 @@ Current list of all released projects (as of 2026-10-23):
  * [ph-ubl/ph-ubltr](https://github.com/phax/ph-ubl) - Version 10.2.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubltr)](https://img.shields.io/maven-central/v/com.helger.ubl/ph-ubltr) 
- * [ph-web](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-web-parent-pom)](https://img.shields.io/maven-central/v/com.helger.web/ph-web-parent-pom) 
- * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-dns](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-dns)](https://img.shields.io/maven-central/v/com.helger.web/ph-dns) 
- * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-httpclient](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-httpclient)](https://img.shields.io/maven-central/v/com.helger.web/ph-httpclient) 
- * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-jsch](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-jsch)](https://img.shields.io/maven-central/v/com.helger.web/ph-jsch) 
- * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-mail](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-mail)](https://img.shields.io/maven-central/v/com.helger.web/ph-mail) 
- * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-network](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-network)](https://img.shields.io/maven-central/v/com.helger.web/ph-network) 
- * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-servlet](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-servlet)](https://img.shields.io/maven-central/v/com.helger.web/ph-servlet) 
- * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-sitemap](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-sitemap)](https://img.shields.io/maven-central/v/com.helger.web/ph-sitemap) 
- * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-smtp](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-smtp)](https://img.shields.io/maven-central/v/com.helger.web/ph-smtp) 
- * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-useragent](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-useragent)](https://img.shields.io/maven-central/v/com.helger.web/ph-useragent) 
- * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-web](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-web)](https://img.shields.io/maven-central/v/com.helger.web/ph-web) 
- * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 11.4.7 - JDK 17
+ * [ph-web/ph-xservlet](https://github.com/phax/ph-web) - Version 11.4.8 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.web/ph-xservlet)](https://img.shields.io/maven-central/v/com.helger.web/ph-xservlet) 
  * [ph-wsimport-plugin](https://github.com/phax/ph-wsimport-plugin) - Version 5.0.0 - JDK 17
@@ -1037,6 +1037,9 @@ Current list of all released projects (as of 2026-10-23):
  * [phase4/phase4-profile-hredelivery](https://github.com/phax/phase4) - Version 4.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-hredelivery)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-hredelivery) 
+ * [phase4/phase4-profile-nemhandel](https://github.com/phax/phase4) - Version 4.8.2 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-nemhandel)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-nemhandel) 
  * [phase4/phase4-profile-peppol](https://github.com/phax/phase4) - Version 4.8.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-peppol)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-profile-peppol) 
@@ -1058,6 +1061,9 @@ Current list of all released projects (as of 2026-10-23):
  * [phive-rules-foundations](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-parent-pom) 
+ * [phive-rules-foundations/phive-rules-brazil](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-brazil)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-brazil) 
  * [phive-rules-foundations/phive-rules-cii](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii) 
