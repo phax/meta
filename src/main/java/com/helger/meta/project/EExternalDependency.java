@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.2", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.3", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -132,7 +132,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("v20240317")
   GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261020", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261021", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -299,7 +299,7 @@ public enum EExternalDependency
 
   PICOCLI ("info.picocli", "picocli", "4.7.7", EJDK.JDK8),
 
-  POI ("org.apache.poi", "poi", "5.5.1", EJDK.JDK8),
+  POI ("org.apache.poi", "poi", "6.0.0", EJDK.JDK8),
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
@@ -334,7 +334,7 @@ public enum EExternalDependency
   SPRING7_FRAMEWORK_BOM ("org.springframework", "spring-framework-bom", "7.0.10", EJDK.JDK17),
 
   @IsBOM
-  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.1.1", EJDK.JDK11),
+  SPRING_BOOT4_DEPENDENCIES ("org.springframework.boot", "spring-boot-dependencies", "4.1.2", EJDK.JDK11),
   SPRING_BOOT4_STARTER ("org.springframework.boot", "spring-boot-starter", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_ACTUATOR ("org.springframework.boot", "spring-boot-starter-actuator", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_STARTER_TEST ("org.springframework.boot", "spring-boot-starter-test", SPRING_BOOT4_DEPENDENCIES),
