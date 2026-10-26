@@ -73,7 +73,7 @@ public enum EProject implements IProject
                          EProjectType.MAVEN_POM,
                          EHasPages.FALSE,
                          EHasWiki.TRUE,
-                         "12.5.2",
+                         "12.5.3",
                          EJDK.JDK17, // Branch "v11"
                          ProjectTail.builder ().lastPublishedVersion ("11.2.7").minJDK (EJDK.JDK11).build (), // Branch "10.x"
                          ProjectTail.builder ()
@@ -434,7 +434,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_PLUGIN,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "5.0.1",
+                             "5.0.2",
                              EJDK.JDK17),
   PH_DIRINDEX_MAVEN_PLUGIN (null,
                             EProjectOwner.PROJECT_OWNER_PHAX,
@@ -461,7 +461,7 @@ public enum EProject implements IProject
                                        EProjectType.MAVEN_PLUGIN,
                                        EHasPages.FALSE,
                                        EHasWiki.FALSE,
-                                       "0.0.6",
+                                       "0.0.7",
                                        EJDK.JDK17),
 
   PH_DATETIME_PARENT_POM (null,
@@ -950,7 +950,7 @@ public enum EProject implements IProject
                   EProjectType.MAVEN_POM,
                   EHasPages.FALSE,
                   EHasWiki.FALSE,
-                  "0.9.1",
+                  "0.9.2",
                   EJDK.JDK17),
   DDD_MODEL (DDD_PARENT_POM, "ddd-model", EProjectType.JAVA_LIBRARY),
   DDD (DDD_PARENT_POM, "ddd", EProjectType.JAVA_LIBRARY),
@@ -1136,7 +1136,7 @@ public enum EProject implements IProject
                         EProjectType.MAVEN_POM,
                         EHasPages.FALSE,
                         EHasWiki.TRUE,
-                        "8.6.2",
+                        "8.7.0",
                         EJDK.JDK17),
   PHOSS_SMP_BACKEND (PHOSS_SMP_PARENT_POM, "phoss-smp-backend", EProjectType.JAVA_LIBRARY),
   PHOSS_SMP_BACKEND_MONGODB (PHOSS_SMP_PARENT_POM, "phoss-smp-backend-mongodb", EProjectType.JAVA_LIBRARY),

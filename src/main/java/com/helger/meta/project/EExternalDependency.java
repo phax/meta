@@ -88,7 +88,7 @@ public enum EExternalDependency
 
   CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.3", EJDK.JDK17),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.6.5", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.7.0", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.2.0", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.7.0", EJDK.JDK8),
@@ -247,7 +247,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.9.1", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.5", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.6", EJDK.JDK11),
 
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
@@ -288,7 +288,7 @@ public enum EExternalDependency
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.67.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
-                            "2.32.0",
+                            "2.33.0",
                             EJDK.JDK17),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.8", EJDK.JDK8),
@@ -347,7 +347,7 @@ public enum EExternalDependency
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
-  SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.1.1", EJDK.JDK17),
+  SPRINGDOC_OPENAPI ("org.springdoc", "springdoc-openapi-starter-webmvc-api", "3.2.0", EJDK.JDK17),
   SWAGGER_ANNOTATIONS ("io.swagger.core.v3", "swagger-annotations-jakarta", "2.2.55", EJDK.JDK17),
 
   TESTCONTAINERS_LOCALSTACK ("org.testcontainers", "localstack", "1.21.4", EJDK.JDK11),
@@ -400,9 +400,9 @@ public enum EExternalDependency
   PARENT_POM_26 ("org.apache.maven.plugins", "maven-shade-plugin", "3.6.2", EJDK.JDK8),
   PARENT_POM_27 ("org.apache.maven.plugins", "maven-site-plugin", "3.22.0", EJDK.JDK8),
   PARENT_POM_28 ("org.apache.maven.plugins", "maven-source-plugin", "3.4.0", EJDK.JDK8),
-  PARENT_POM_29 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.6.0", EJDK.JDK8),
-  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.6.0", EJDK.JDK8),
-  PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.6.0", EJDK.JDK8),
+  PARENT_POM_29 ("org.apache.maven.plugins", "maven-surefire-plugin", "3.6.1", EJDK.JDK8),
+  PARENT_POM_30 ("org.apache.maven.plugins", "maven-surefire-report-plugin", "3.6.1", EJDK.JDK8),
+  PARENT_POM_31 ("org.apache.maven.plugins", "maven-failsafe-plugin", "3.6.1", EJDK.JDK8),
   PARENT_POM_32 ("org.apache.maven.plugins", "maven-war-plugin", "3.5.1", EJDK.JDK8),
   PARENT_POM_33 ("org.codehaus.mojo", "clirr-maven-plugin", "2.9", EJDK.JDK8),
   PARENT_POM_34 ("com.github.spotbugs", "spotbugs-maven-plugin", "4.10.5.0", EJDK.JDK8),
