@@ -3004,7 +3004,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-basics</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

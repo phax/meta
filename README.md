@@ -23,7 +23,7 @@ Current list of all released projects (as of 2026-10-26):
  * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-model)](https://img.shields.io/maven-central/v/com.helger/ddd-model) 
- * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.2 - JDK 17
+ * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.3 - JDK 17
