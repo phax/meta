@@ -86,6 +86,8 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.13.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
 
+  COMMONMARK ("org.commonmark", "commonmark", "0.31.0", EJDK.JDK17),
+
   CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.3", EJDK.JDK17),
 
   DNSJAVA ("dnsjava", "dnsjava", "3.7.0", EJDK.JDK8),
@@ -229,6 +231,8 @@ public enum EExternalDependency
 
   JJWT_IMPL ("io.jsonwebtoken", "jjwt-impl", "0.13.0", EJDK.JDK8),
   JJWT_ORG_JSON ("io.jsonwebtoken", "jjwt-orgjson", JJWT_IMPL),
+
+  JMUSTACHE ("com.samskivert", "jmustache", "1.16", EJDK.JDK17),
 
   JSCH_FORK ("com.github.mwiede", "jsch", "2.28.8", EJDK.JDK11),
 

@@ -692,13 +692,13 @@ Current list of all released projects (as of 2026-10-26):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.5 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.5 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
- * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.5 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.2.0 - JDK 17
@@ -1211,6 +1211,36 @@ Current list of all released projects (as of 2026-10-26):
  * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
+ * [phlox](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-parent-pom) 
+ * [phlox/phlox-api](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api) 
+ * [phlox/phlox-cii](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii) 
+ * [phlox/phlox-cli](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cli)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cli) 
+ * [phlox/phlox-html](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-html)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-html) 
+ * [phlox/phlox-pdf](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-pdf)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-pdf) 
+ * [phlox/phlox-template](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-template)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-template) 
+ * [phlox/phlox-testfiles](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-testfiles)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-testfiles) 
+ * [phlox/phlox-theme](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-theme)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-theme) 
+ * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
  * [phorm](https://github.com/phax/phorm) - Version 2.2.11 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 

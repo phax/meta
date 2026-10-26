@@ -197,6 +197,11 @@
       <version>2.13.1</version>
     </dependency>
     <dependency>
+      <groupId>org.commonmark</groupId>
+      <artifactId>commonmark</artifactId>
+      <version>0.31.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.cyclonedx</groupId>
       <artifactId>cyclonedx-maven-plugin</artifactId>
       <version>2.9.3</version>
@@ -580,6 +585,11 @@
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt-orgjson</artifactId>
       <version>0.13.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.samskivert</groupId>
+      <artifactId>jmustache</artifactId>
+      <version>1.16</version>
     </dependency>
     <dependency>
       <groupId>com.github.mwiede</groupId>
@@ -1534,18 +1544,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-parent-pom</artifactId>
-      <version>8.3.5</version>
+      <version>8.3.6</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout</artifactId>
-      <version>8.3.5</version>
+      <version>8.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-pdf-layout-richtext</artifactId>
-      <version>8.3.5</version>
+      <version>8.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -3439,6 +3449,57 @@
       <groupId>com.helger</groupId>
       <artifactId>ph-redact-cli</artifactId>
       <version>1.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-parent-pom</artifactId>
+      <version>0.0.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-api</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-testfiles</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-ubl</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-cii</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-template</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-theme</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-html</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-pdf</artifactId>
+      <version>0.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-cli</artifactId>
+      <version>0.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.vefa</groupId>

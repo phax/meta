@@ -24,6 +24,7 @@ import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.helger.base.array.ArrayHelper;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.state.ESuccess;
 import com.helger.base.string.StringImplode;
@@ -32,6 +33,7 @@ import com.helger.io.file.SimpleFileIO;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
+import com.helger.meta.project.EProjectForked;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 
@@ -251,13 +253,22 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
                                     "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 17");
             }
             else
-            {
-              _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 21, 25 ]");
-              if (aProject.getLastPublishedVersion () != null)
-                _checkFileContains (aProject,
-                                    ".github/workflows/maven.yml",
-                                    "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 21");
-            }
+              if (aProject.getMinimumJDKVersion () == EJDK.JDK21)
+              {
+                _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 21, 25 ]");
+                if (aProject.getLastPublishedVersion () != null)
+                  _checkFileContains (aProject,
+                                      ".github/workflows/maven.yml",
+                                      "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 21");
+              }
+              else
+              {
+                _checkFileContains (aProject, ".github/workflows/maven.yml", "[ 25 ]");
+                if (aProject.getLastPublishedVersion () != null)
+                  _checkFileContains (aProject,
+                                      ".github/workflows/maven.yml",
+                                      "if: github.event_name == 'push' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && matrix.java == 25");
+              }
         }
       }
     }
@@ -269,14 +280,15 @@ public final class MainCheckProjectRequiredFiles extends AbstractProjectMain
     for (final IProject aProject : ProjectList.getAllProjects (p -> p.isPhProject () &&
                                                                     p.getBaseDir ().exists () &&
                                                                     !p.isDeprecated ()))
-    {
-      if (aProject.getProjectType ().hasJavaCode ())
-        _validateProjectWithJavaCode (aProject);
-      else
-        _validateProjectWithoutJavaCode (aProject);
+      if (!ArrayHelper.contains (EProjectForked.values (), aProject))
+      {
+        if (aProject.getProjectType ().hasJavaCode ())
+          _validateProjectWithJavaCode (aProject);
+        else
+          _validateProjectWithoutJavaCode (aProject);
 
-      _validateTopLevelProject (aProject);
-    }
+        _validateTopLevelProject (aProject);
+      }
     LOGGER.info ("Done - " + getWarnCount () + " warning(s) for " + ProjectList.size () + " projects");
   }
 }
