@@ -45,7 +45,7 @@ public class MainCheckGitHubActionVersions
     CODEQL_AUTOBUILD ("github/codeql-action/autobuild", 4),
     CODEQL_ANALYZE ("github/codeql-action/analyze", 4),
     DOCKER_LOGIN ("docker/login-action", 4),
-    POSTGRES ("ikalnytskyi/action-setup-postgres", 8),
+    POSTGRES ("ikalnytskyi/action-setup-postgres", 9),
     MONGODB ("supercharge/mongodb-github-action", "1.12.1");
 
     private final String m_sName;
