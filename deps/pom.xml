@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261026</version>
+  <version>1.0.0-20261027</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,32 +64,32 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.57.3</version>
+      <version>2.57.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -750,7 +750,7 @@
     <dependency>
       <groupId>io.opentelemetry.instrumentation</groupId>
       <artifactId>opentelemetry-instrumentation-bom</artifactId>
-      <version>2.33.0</version>
+      <version>2.33.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -825,12 +825,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.61.1</version>
+      <version>8.62.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.61.1</version>
+      <version>8.62.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -1187,7 +1187,7 @@
     <dependency>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.15</version>
+      <version>0.8.16</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.jaxb</groupId>
@@ -3453,53 +3453,53 @@
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-parent-pom</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-api</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-testfiles</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-ubl</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-cii</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-template</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-theme</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-html</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-pdf</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-cli</artifactId>
-      <version>0.0.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.vefa</groupId>

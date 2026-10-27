@@ -672,9 +672,9 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.TRUE,
-                     "6.2.2",
+                     "6.3.0",
                      EJDK.JDK17, // Branch "v5.1"
-                     ProjectTail.builder ().lastPublishedVersion ("5.1.8").minJDK (EJDK.JDK11).build (), // Branch "5.0.x"
+                     ProjectTail.builder ().lastPublishedVersion ("5.1.9").minJDK (EJDK.JDK11).build (), // Branch "5.0.x"
                      ProjectTail.builder ()
                                 .lastPublishedVersion ("5.0.8")
                                 .minJDK (EJDK.JDK11)
@@ -1265,7 +1265,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.TRUE,
-                    "0.0.0",
+                    "0.5.0",
                     EJDK.JDK17),
   PHLOX_API (PHLOX_PARENT_POM, "phlox-api", EProjectType.JAVA_LIBRARY),
   PHLOX_TESTFILES (PHLOX_PARENT_POM, "phlox-testfiles", EProjectType.JAVA_LIBRARY),

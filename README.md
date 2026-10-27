@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-10-26):
+Current list of all released projects (as of 2026-10-27):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -1211,34 +1211,34 @@ Current list of all released projects (as of 2026-10-26):
  * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
- * [phlox](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-parent-pom) 
- * [phlox/phlox-api](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-api](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api) 
- * [phlox/phlox-cii](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-cii](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii) 
- * [phlox/phlox-cli](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-cli](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cli)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cli) 
- * [phlox/phlox-html](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-html](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-html)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-html) 
- * [phlox/phlox-pdf](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-pdf](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-pdf)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-pdf) 
- * [phlox/phlox-template](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-template](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-template)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-template) 
- * [phlox/phlox-testfiles](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-testfiles](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-testfiles)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-testfiles) 
- * [phlox/phlox-theme](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-theme](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-theme)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-theme) 
- * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.0.0 - JDK 17
+ * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.5.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
  * [phorm](https://github.com/phax/phorm) - Version 2.2.11 - JDK 17

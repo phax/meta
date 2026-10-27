@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.3", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.4", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -292,7 +292,7 @@ public enum EExternalDependency
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.67.0", EJDK.JDK17),
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
-                            "2.33.0",
+                            "2.33.1",
                             EJDK.JDK17),
 
   PDFBOX ("org.apache.pdfbox", "pdfbox", "3.0.8", EJDK.JDK8),
@@ -317,7 +317,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.61.1", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.62.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -413,7 +413,7 @@ public enum EExternalDependency
   PARENT_POM_35 ("org.codehaus.mojo", "jdepend-maven-plugin", "2.2.1", EJDK.JDK8),
   PARENT_POM_36 ("org.codehaus.mojo", "taglist-maven-plugin", "3.2.3", EJDK.JDK8),
   PARENT_POM_37 ("org.sonatype.central", "central-publishing-maven-plugin", "0.12.0", EJDK.JDK8),
-  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.15", EJDK.JDK8),
+  JACOCO ("org.jacoco", "jacoco-maven-plugin", "0.8.16", EJDK.JDK8),
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.16", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.16.0", EJDK.JDK8),
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "13.0.0", EJDK.JDK8),
