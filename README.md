@@ -692,13 +692,13 @@ Current list of all released projects (as of 2026-10-28):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
- * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.3.6 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.2.0 - JDK 17
