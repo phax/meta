@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-10-27):
+Current list of all released projects (as of 2026-10-28):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -233,16 +233,16 @@ Current list of all released projects (as of 2026-10-27):
  * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types) 
- * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.9.0 - JDK 17
+ * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom) 
- * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.9.0 - JDK 17
+ * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd) 
- * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.9.0 - JDK 17
+ * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes) 
- * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.9.0 - JDK 17
+ * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles) 
  * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
