@@ -3453,53 +3453,53 @@
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-parent-pom</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-api</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-testfiles</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-ubl</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-cii</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-template</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-theme</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-html</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-pdf</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-cli</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.vefa</groupId>
