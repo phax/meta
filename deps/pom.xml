@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261029</version>
+  <version>1.0.0-20261030</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -2789,138 +2789,143 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-all</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-api</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-dk</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-ro</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-eracun</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-france</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-italy</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phive.rules</groupId>
+      <artifactId>phive-rules-peppol-logistics</artifactId>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-pint</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-taxdata</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-serbia</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-setu</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-singapore</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-turkey</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zatca</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zugferd</artifactId>
-      <version>4.6.3</version>
+      <version>4.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
@@ -2951,18 +2956,18 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd-parent-pom</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd-model</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ddd</artifactId>
-      <version>0.9.2</version>
+      <version>0.9.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
