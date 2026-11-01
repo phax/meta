@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.5", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.8", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -86,7 +86,7 @@ public enum EExternalDependency
   COMMONS_NET ("commons-net", "commons-net", "3.13.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
 
-  COMMONMARK ("org.commonmark", "commonmark", "0.31.0", EJDK.JDK17),
+  COMMONMARK ("org.commonmark", "commonmark", "0.32.0", EJDK.JDK17),
 
   CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.3", EJDK.JDK17),
 
@@ -117,7 +117,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.11.1", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.12.0", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -134,7 +134,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("v20240317")
   GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261026", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261028", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -266,7 +266,7 @@ public enum EExternalDependency
   LUCENE9_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE9_CORE),
   LUCENE9_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE9_CORE),
 
-  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.5.2", EJDK.JDK21),
+  LUCENE10_CORE ("org.apache.lucene", "lucene-core", "10.6.0", EJDK.JDK21),
   LUCENE10_BACKWARD_CODECS ("org.apache.lucene", "lucene-backward-codecs", LUCENE10_CORE),
   LUCENE10_DEMO ("org.apache.lucene", "lucene-demo", LUCENE10_CORE),
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
@@ -286,7 +286,7 @@ public enum EExternalDependency
   OPENSEARCH_JAVA ("org.opensearch.client", "opensearch-java", "3.10.0", EJDK.JDK17),
 
   @IsBOM
-  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.3.0.0", EJDK.JDK8),
+  ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.4.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc17", ORACLE_JDBC),
 
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.67.0", EJDK.JDK17),
@@ -315,7 +315,7 @@ public enum EExternalDependency
   SAXON_12 ("net.sf.saxon", "Saxon-HE", "13.1", EJDK.JDK11),
 
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
-  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.2", EJDK.JDK8),
+  SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.3", EJDK.JDK8),
 
   SENTRY ("io.sentry", "sentry", "8.62.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
@@ -347,7 +347,7 @@ public enum EExternalDependency
   SPRING_BOOT4_VALIDATION ("org.springframework.boot", "spring-boot-validation", SPRING_BOOT4_DEPENDENCIES),
   SPRING_BOOT4_WEB_SERVER ("org.springframework.boot", "spring-boot-web-server", SPRING_BOOT4_DEPENDENCIES),
 
-  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.20.0", EJDK.JDK11),
+  SSHD_SFTP ("org.apache.sshd", "sshd-sftp", "2.20.1", EJDK.JDK11),
 
   STAX_EX ("org.jvnet.staxex", "stax-ex", "2.1.0", EJDK.JDK8),
 
@@ -388,7 +388,7 @@ public enum EExternalDependency
   PARENT_POM_10 ("org.apache.maven.plugins", "maven-deploy-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_11 ("org.apache.maven.plugins", "maven-ear-plugin", "3.4.0", EJDK.JDK8),
   PARENT_POM_12 ("org.apache.maven.plugins", "maven-ejb-plugin", "3.3.0", EJDK.JDK8),
-  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.6.3", EJDK.JDK8),
+  PARENT_POM_13 ("org.apache.maven.plugins", "maven-enforcer-plugin", "3.7.0", EJDK.JDK8),
   PARENT_POM_14 ("org.apache.maven.plugins", "maven-gpg-plugin", "3.2.8", EJDK.JDK8),
   PARENT_POM_15 ("org.apache.maven.plugins", "maven-install-plugin", "3.2.0", EJDK.JDK8),
   PARENT_POM_16 ("org.apache.maven.plugins", "maven-jar-plugin", "3.5.1", EJDK.JDK8),
