@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-01):
+Current list of all released projects (as of 2026-11-03):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -23,7 +23,7 @@ Current list of all released projects (as of 2026-11-01):
  * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.9.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-model)](https://img.shields.io/maven-central/v/com.helger/ddd-model) 
- * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.3 - JDK 17
+ * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.0.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-basics)](https://img.shields.io/maven-central/v/com.helger/en16931-basics) 
  * [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Version 4.0.3 - JDK 17

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261101</version>
+  <version>1.0.0-20261103</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -209,7 +209,7 @@
     <dependency>
       <groupId>dnsjava</groupId>
       <artifactId>dnsjava</artifactId>
-      <version>3.7.0</version>
+      <version>3.7.1</version>
     </dependency>
     <dependency>
       <groupId>org.umlgraph</groupId>
@@ -229,7 +229,7 @@
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.asm</artifactId>
-      <version>9.10.0</version>
+      <version>9.11.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.persistence</groupId>
@@ -284,7 +284,7 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.framework</artifactId>
-      <version>7.0.5</version>
+      <version>8.0.0</version>
     </dependency>
     <dependency>
       <groupId>de.flapdoodle.embed</groupId>
@@ -714,7 +714,7 @@
     <dependency>
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>mssql-jdbc</artifactId>
-      <version>13.6.1.jre11</version>
+      <version>13.6.2.jre11</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
@@ -3009,7 +3009,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>en16931-basics</artifactId>
-      <version>1.0.3</version>
+      <version>1.0.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

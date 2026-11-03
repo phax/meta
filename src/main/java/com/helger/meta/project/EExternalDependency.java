@@ -90,12 +90,12 @@ public enum EExternalDependency
 
   CYCLONEDX ("org.cyclonedx", "cyclonedx-maven-plugin", "2.9.3", EJDK.JDK17),
 
-  DNSJAVA ("dnsjava", "dnsjava", "3.7.0", EJDK.JDK8),
+  DNSJAVA ("dnsjava", "dnsjava", "3.7.1", EJDK.JDK8),
   DOCLET ("org.umlgraph", "doclet", "5.1", EJDK.JDK8),
   DOM4J ("org.dom4j", "dom4j", "2.2.0", EJDK.JDK8),
   EASYMOCK ("org.easymock", "easymock", "5.7.0", EJDK.JDK8),
 
-  ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.10.0", EJDK.JDK11),
+  ECLIPSELINK_ASM ("org.eclipse.persistence", "org.eclipse.persistence.asm", "9.11.0", EJDK.JDK11),
 
   @VersionMaxExcl ("5.0.0")
   ECLIPSELINK4_CORE("org.eclipse.persistence", "org.eclipse.persistence.core", "4.0.9", EJDK.JDK11),
@@ -114,7 +114,7 @@ public enum EExternalDependency
   ECLIPSE_EQUINOX_COMMON2 ("org.eclipse.platform", "org.eclipse.equinox.common", "3.21.0", EJDK.JDK11),
 
   FAILSAFE ("dev.failsafe", "failsafe", "3.3.2", EJDK.JDK11),
-  FELIX ("org.apache.felix", "org.apache.felix.framework", "7.0.5", EJDK.JDK8),
+  FELIX ("org.apache.felix", "org.apache.felix.framework", "8.0.0", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
   FLYWAY13 ("org.flywaydb", "flyway-core", "13.12.0", EJDK.JDK17),
@@ -277,7 +277,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.14.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.1.jre11", EJDK.JDK11),
+  MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.2.jre11", EJDK.JDK11),
 
   MYSQL ("com.mysql", "mysql-connector-j", "26.10.0", EJDK.JDK11),
 
