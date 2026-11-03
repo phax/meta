@@ -10,4 +10,5 @@ generated/
 .pmd
 .project 
 deps/dependency-updates.txt
+failed-github-actions.txt
 zz

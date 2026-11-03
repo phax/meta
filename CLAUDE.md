@@ -34,7 +34,7 @@ Uses Maven 3.x with parent POM `com.helger:parent-pom`. JUnit 4 for tests. JDK 2
 All tools are runnable `Main*` classes (with `public static void main`), not tests. They extend `AbstractProjectMain` and iterate over `ProjectList` entries:
 
 - **`buildsystem/`** — POM version checking, README generation (`MainCreateMetaREADME`), lines-of-code stats, license year updates, Eclipse settings management, required files checks.
-- **`github/`** — GitHub Actions workflow tooling: action version checking/updating, workflow YAML creation, and `MainCheckGitHubActionRunStatus` (reports workflows whose latest completed run on the default branch failed; shells out to the logged-in `gh` CLI).
+- **`github/`** — GitHub Actions workflow tooling: action version checking/updating, workflow YAML creation, and `MainCheckGitHubActionRunStatus` (reports workflows whose latest completed run on the default branch failed; shells out to the logged-in `gh` CLI and overwrites the git-ignored `failed-github-actions.txt` in the meta root).
 - **`cmdline/`** — Generates batch/shell scripts and build-all POMs.
 - **`wsdlgen/`** — Reads `.interface` files and generates WSDL/XSD into `generated/`.
 - **`codingstyleguide/`** — Validates coding conventions across projects.
