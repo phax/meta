@@ -401,13 +401,13 @@ Current list of all released projects (as of 2026-11-03):
  * [ph-commons/ph-xml](https://github.com/phax/ph-commons) - Version 12.5.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml)](https://img.shields.io/maven-central/v/com.helger.commons/ph-xml) 
- * [ph-css](https://github.com/phax/ph-css) - Version 8.3.0 - JDK 17
+ * [ph-css](https://github.com/phax/ph-css) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-css-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-css-parent-pom) 
- * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 8.3.0 - JDK 17
+ * [ph-css/ph-css](https://github.com/phax/ph-css) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-css)](https://img.shields.io/maven-central/v/com.helger/ph-css) 
- * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.3.0 - JDK 17
+ * [ph-css/ph-csscompress-maven-plugin](https://github.com/phax/ph-css) - Version 8.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-csscompress-maven-plugin) 
  * [ph-datetime](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
