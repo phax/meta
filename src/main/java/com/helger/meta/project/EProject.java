@@ -1266,7 +1266,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.TRUE,
-                    "0.5.1",
+                    "0.6.0",
                     EJDK.JDK17),
   PHLOX_API (PHLOX_PARENT_POM, "phlox-api", EProjectType.JAVA_LIBRARY),
   PHLOX_TESTFILES (PHLOX_PARENT_POM, "phlox-testfiles", EProjectType.JAVA_LIBRARY),
