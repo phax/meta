@@ -27,10 +27,13 @@ import org.slf4j.LoggerFactory;
 
 import com.helger.base.io.stream.StreamHelper;
 import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.CommonsHashSet;
 import com.helger.collection.commons.ICommonsList;
+import com.helger.collection.commons.ICommonsSet;
+import com.helger.io.file.SimpleFileIO;
+import com.helger.json.IJson;
 import com.helger.json.IJsonArray;
 import com.helger.json.IJsonObject;
-import com.helger.io.file.SimpleFileIO;
 import com.helger.json.serialize.JsonReader;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EHostingPlatform;
@@ -40,7 +43,8 @@ import com.helger.meta.project.ProjectList;
 /**
  * Check for all active phax projects on GitHub that contain at least one workflow file in
  * <code>.github/workflows</code>, whether the latest completed run of each workflow on the default
- * branch (or triggered by a release) failed. Workflows that are not defined in a file (like the dynamic Dependabot and CodeQL
+ * branch (or triggered by a release) failed. Only workflows whose file is present on the default
+ * branch are considered. Workflows that are not defined in a file (like the dynamic Dependabot and CodeQL
  * default setup workflows) are ignored. All failed workflows are written to
  * <code>failed-github-actions.txt</code> in the meta project directory, overwriting the previous
  * content.<br>
@@ -67,7 +71,7 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
   }
 
   /**
-   * Invoke <code>gh api</code> for the provided path and parse the result as a JSON object.
+   * Invoke <code>gh api</code> for the provided path and parse the result as JSON.
    *
    * @param aProject
    *        The project for logging purposes.
@@ -76,7 +80,7 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
    * @return <code>null</code> if invoking <code>gh</code> or parsing the result failed.
    */
   @Nullable
-  private static IJsonObject _callGitHubAPI (@NonNull final IProject aProject, @NonNull final String sAPIPath)
+  private static IJson _callGitHubAPI (@NonNull final IProject aProject, @NonNull final String sAPIPath)
   {
     try
     {
@@ -90,9 +94,9 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
         _warn (aProject, "'gh api " + sAPIPath + "' failed with exit code " + nExitCode);
         return null;
       }
-      final IJsonObject ret = JsonReader.builder ().source (sOutput).readAsObject ();
+      final IJson ret = JsonReader.builder ().source (sOutput).read ();
       if (ret == null)
-        _warn (aProject, "Failed to parse the result of 'gh api " + sAPIPath + "' as a JSON object");
+        _warn (aProject, "Failed to parse the result of 'gh api " + sAPIPath + "' as JSON");
       return ret;
     }
     catch (final IOException ex)
@@ -106,6 +110,54 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
       LOGGER.error (_getLogPrefix (aProject) + "Interrupted while running 'gh api " + sAPIPath + "'", ex);
       return null;
     }
+  }
+
+  @Nullable
+  private static IJsonObject _callGitHubAPIForObject (@NonNull final IProject aProject,
+                                                      @NonNull final String sAPIPath)
+  {
+    final IJson aJson = _callGitHubAPI (aProject, sAPIPath);
+    if (aJson == null)
+      return null;
+    if (!aJson.isObject ())
+    {
+      _warn (aProject, "The result of 'gh api " + sAPIPath + "' is not a JSON object");
+      return null;
+    }
+    return aJson.getAsObject ();
+  }
+
+  /**
+   * Get the paths of all workflow files that are present on the provided branch. The workflow list
+   * of the GitHub API also contains workflows that only exist on other branches.
+   *
+   * @param aProject
+   *        The project for logging purposes.
+   * @param sRepo
+   *        The repository in the form <code>owner/name</code>.
+   * @param sBranch
+   *        The branch to check.
+   * @return <code>null</code> if the files could not be determined.
+   */
+  @Nullable
+  private static ICommonsSet <String> _getAllWorkflowPathsOnBranch (@NonNull final IProject aProject,
+                                                                   @NonNull final String sRepo,
+                                                                   @NonNull final String sBranch)
+  {
+    final IJson aJson = _callGitHubAPI (aProject, "repos/" + sRepo + "/contents/.github/workflows?ref=" + sBranch);
+    if (aJson == null)
+      return null;
+    if (!aJson.isArray ())
+    {
+      _warn (aProject, "The content of '.github/workflows' on branch '" + sBranch + "' is not a JSON array");
+      return null;
+    }
+
+    final ICommonsSet <String> ret = new CommonsHashSet <> ();
+    for (final IJsonObject aEntry : aJson.getAsArray ().iteratorObjects ())
+      if ("file".equals (aEntry.getAsString ("type")))
+        ret.add (aEntry.getAsString ("path"));
+    return ret;
   }
 
   private static boolean _isFailedConclusion (@Nullable final String sConclusion)
@@ -140,12 +192,18 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
   {
     final String sRepo = aProject.getProjectOwner ().getGitOrgaName () + "/" + aProject.getBaseDir ().getName ();
 
-    final IJsonObject aRepo = _callGitHubAPI (aProject, "repos/" + sRepo);
+    final IJsonObject aRepo = _callGitHubAPIForObject (aProject, "repos/" + sRepo);
     if (aRepo == null)
       return;
     final String sDefaultBranch = aRepo.getAsString ("default_branch");
 
-    final IJsonObject aWorkflows = _callGitHubAPI (aProject, "repos/" + sRepo + "/actions/workflows?per_page=100");
+    final ICommonsSet <String> aWorkflowPathsOnDefaultBranch = _getAllWorkflowPathsOnBranch (aProject,
+                                                                                             sRepo,
+                                                                                             sDefaultBranch);
+    if (aWorkflowPathsOnDefaultBranch == null)
+      return;
+
+    final IJsonObject aWorkflows = _callGitHubAPIForObject (aProject, "repos/" + sRepo + "/actions/workflows?per_page=100");
     if (aWorkflows == null)
       return;
     final IJsonArray aWorkflowList = aWorkflows.getAsArray ("workflows");
@@ -158,20 +216,21 @@ public final class MainCheckGitHubActionRunStatus extends AbstractProjectMain
     for (final IJsonObject aWorkflow : aWorkflowList.iteratorObjects ())
     {
       final String sWorkflowPath = aWorkflow.getAsString ("path");
-      // Ignore dynamic workflows and disabled workflows
+      // Ignore dynamic workflows, disabled workflows and workflows not present on the default branch
       if (sWorkflowPath == null ||
           !sWorkflowPath.startsWith (".github/workflows/") ||
-          !"active".equals (aWorkflow.getAsString ("state")))
+          !"active".equals (aWorkflow.getAsString ("state")) ||
+          !aWorkflowPathsOnDefaultBranch.contains (sWorkflowPath))
         continue;
 
       final String sWorkflowName = aWorkflow.getAsString ("name") + " (" + sWorkflowPath + ")";
-      final IJsonObject aRuns = _callGitHubAPI (aProject,
-                                                "repos/" +
-                                                          sRepo +
-                                                          "/actions/workflows/" +
-                                                          aWorkflow.getAsString ("id") +
-                                                          "/runs?status=completed&exclude_pull_requests=true&per_page=" +
-                                                          RUNS_PER_WORKFLOW);
+      final IJsonObject aRuns = _callGitHubAPIForObject (aProject,
+                                                         "repos/" +
+                                                                   sRepo +
+                                                                   "/actions/workflows/" +
+                                                                   aWorkflow.getAsString ("id") +
+                                                                   "/runs?status=completed&exclude_pull_requests=true&per_page=" +
+                                                                   RUNS_PER_WORKFLOW);
       if (aRuns == null)
         continue;
 

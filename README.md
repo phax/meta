@@ -65,19 +65,19 @@ Current list of all released projects (as of 2026-11-03):
  * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
- * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.5 - JDK 17
+ * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom) 
- * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.5 - JDK 17
+ * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli) 
- * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.5 - JDK 17
+ * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core) 
- * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.5 - JDK 17
+ * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles) 
- * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.5 - JDK 17
+ * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.4.1 - JDK 17
@@ -692,13 +692,13 @@ Current list of all released projects (as of 2026-11-03):
  * [ph-parent-pom](https://github.com/phax/ph-parent-pom) - Version 3.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom) 
- * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.2 - JDK 17
+ * [ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-parent-pom) 
- * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.2 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout](https://github.com/phax/ph-pdf-layout) - Version 8.4.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout) 
- * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.4.2 - JDK 17
+ * [ph-pdf-layout/ph-pdf-layout-richtext](https://github.com/phax/ph-pdf-layout) - Version 8.4.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext)](https://img.shields.io/maven-central/v/com.helger/ph-pdf-layout-richtext) 
  * [ph-poi](https://github.com/phax/ph-poi) - Version 7.2.0 - JDK 17
