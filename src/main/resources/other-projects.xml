@@ -21,6 +21,7 @@
   <basedir>c:\dev\git</basedir>
   <basedir>c:\dev\svn-philip\dev</basedir>
   <basedir>/Users/philip/svn-philip/dev</basedir>
+  <basedir>/Users/philip/dev/git</basedir>
   <basedir>/Users/philip/dev/git-silvaconnect</basedir>
 
   <project projectname="silvaconnect-ap-parent-pom" dir="poc-ap" projecttype="maven-pom" minjdk="25">
@@ -37,6 +38,11 @@
     <project projectname="silvaconnect-ap-testbackend" projecttype="java-application" />
     <project projectname="silvaconnect-ap-testsender" projecttype="java-application" />
     <project projectname="silvaconnect-network-tools" projecttype="java-application" />
+  </project>
+
+  <project projectname="zugferd-to-peppol-bis-parent-pom" dir="zugferd-to-peppol-bis" projecttype="maven-pom" minjdk="17">
+    <project projectname="zugferd-to-peppol-bis-lib" projecttype="java-library" />
+    <project projectname="zugferd-to-peppol-bis-cli" projecttype="java-application" />
   </project>
 
 <!-- 
