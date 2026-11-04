@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-03):
+Current list of all released projects (as of 2026-11-04):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -944,25 +944,25 @@ Current list of all released projects (as of 2026-11-03):
  * [ph-xsds/ph-xsds-xmlenc11](https://github.com/phax/ph-xsds) - Version 4.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11)](https://img.shields.io/maven-central/v/com.helger.xsd/ph-xsds-xmlenc11) 
- * [phase2](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-parent-pom) 
- * [phase2/phase2-demo-spring-boot](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-demo-spring-boot](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-spring-boot)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-spring-boot) 
- * [phase2/phase2-demo-webapp](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-demo-webapp](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-webapp)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-demo-webapp) 
- * [phase2/phase2-lib](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-lib](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-lib)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-lib) 
- * [phase2/phase2-partnership-mongodb](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-partnership-mongodb](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-partnership-mongodb)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-partnership-mongodb) 
- * [phase2/phase2-server](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-server](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-server)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-server) 
- * [phase2/phase2-servlet](https://github.com/phax/phase2) - Version 6.3.0 - JDK 17
+ * [phase2/phase2-servlet](https://github.com/phax/phase2) - Version 6.3.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet)](https://img.shields.io/maven-central/v/com.helger.phase2/phase2-servlet) 
  * [phase4](https://github.com/phax/phase4) - Version 4.8.4 - JDK 17
