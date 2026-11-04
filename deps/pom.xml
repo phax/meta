@@ -2191,34 +2191,34 @@
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-parent-pom</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-demo</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
       <type>war</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-pages</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-stub</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
       <artifactId>ph-oton-bootstrap4-uictrls</artifactId>
-      <version>10.2.2</version>
+      <version>10.2.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>

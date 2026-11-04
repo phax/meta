@@ -616,7 +616,7 @@ public enum EProject implements IProject
                                  EProjectType.MAVEN_POM,
                                  EHasPages.FALSE,
                                  EHasWiki.FALSE,
-                                 "10.2.2",
+                                 "10.2.3",
                                  EJDK.JDK17),
   PH_OTON_BOOTSTRAP4 (PH_OTON_BOOTSTRAP4_PARENT_POM, "ph-oton-bootstrap4", EProjectType.JAVA_LIBRARY),
   PH_OTON_BOOTSTRAP4_DEMO (PH_OTON_BOOTSTRAP4_PARENT_POM, "ph-oton-bootstrap4-demo", EProjectType.JAVA_WEB_APPLICATION),
