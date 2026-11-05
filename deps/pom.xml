@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261104</version>
+  <version>1.0.0-20261105</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,32 +64,32 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.57.8</version>
+      <version>2.57.9</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -294,32 +294,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>13.12.0</version>
+      <version>13.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -349,7 +349,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20261102</version>
+      <version>v20261104</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -825,12 +825,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.62.0</version>
+      <version>8.63.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.62.0</version>
+      <version>8.63.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -2255,73 +2255,73 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-saxon</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-model</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-isosch</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt2</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure-xslt</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>10.3.0</version>
+      <version>10.3.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
