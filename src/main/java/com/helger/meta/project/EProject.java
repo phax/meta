@@ -1049,6 +1049,18 @@ public enum EProject implements IProject
   EN16931_PURIFIER (EN16931_PURIFIER_PARENT_POM, "en16931-purifier", EProjectType.JAVA_LIBRARY),
   EN16931_PURIFIER_CLI (EN16931_PURIFIER_PARENT_POM, "en16931-purifier-cli", EProjectType.JAVA_APPLICATION),
 
+  EN16931_UPDATE_PARENT_POM (null,
+                             EProjectOwner.PROJECT_OWNER_PHAX,
+                             "en16931-update-parent-pom",
+                             "en16931-update",
+                             EProjectType.MAVEN_POM,
+                             EHasPages.FALSE,
+                             EHasWiki.FALSE,
+                             "0.9.0",
+                             EJDK.JDK17),
+  EN16931_UPDATE (EN16931_UPDATE_PARENT_POM, "en16931-update", EProjectType.JAVA_LIBRARY),
+  EN16931_UPDATE_CLI (EN16931_UPDATE_PARENT_POM, "en16931-update-cli", EProjectType.JAVA_APPLICATION),
+
   PHASE4_PARENT_POM (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
                      "phase4-parent-pom",
