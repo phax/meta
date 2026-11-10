@@ -117,14 +117,40 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     return ret;
   }
 
+  /**
+   * @return The root project directories of all projects whose pom.xml files may be modified by
+   *         {@link com.helger.meta.tools.buildsystem.Main1}. Nested projects are mapped to their
+   *         root project, because they share its Git repository.
+   */
+  @NonNull
+  private static ICommonsList <ScriptTarget> _getAllMain1ScriptTargets ()
+  {
+    // Same filter as in MainUpdatePOMArtifactVersions
+    final ICommonsList <IProject> aProjects = ProjectList.getAllProjects (p -> p.getBaseDir ().exists () &&
+                                                                               !p.isDeprecated ());
+
+    final ICommonsList <IProject> aRootProjects = new CommonsArrayList <> ();
+    for (final IProject aProject : aProjects)
+    {
+      IProject aRootProject = aProject;
+      while (aRootProject.getParentProject () != null)
+        aRootProject = aRootProject.getParentProject ();
+      if (!aRootProjects.contains (aRootProject))
+        aRootProjects.add (aRootProject);
+    }
+
+    final ICommonsList <ScriptTarget> ret = new CommonsArrayList <> ();
+    for (final IProject aRootProject : aRootProjects)
+      ret.add (new ScriptTarget (aRootProject, false));
+    return ret;
+  }
+
   private static void _createShellScript (@NonNull final String sPreamble,
+                                          @NonNull final ICommonsList <ScriptTarget> aTargets,
                                           @NonNull @Nonempty final Function <ScriptTarget, String> aCommandProvider,
                                           final boolean bEchoProgress,
-                                          final boolean bIncludeWiki,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
-    final ICommonsList <ScriptTarget> aTargets = _getAllScriptTargets (bIncludeWiki);
-
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (SHELL_HEADER);
     aSB.append (sPreamble);
@@ -151,6 +177,19 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     final var aPerms = Files.getPosixFilePermissions (f.toPath ());
     aPerms.add (PosixFilePermission.OWNER_EXECUTE);
     Files.setPosixFilePermissions (f.toPath (), aPerms);
+  }
+
+  private static void _createShellScript (@NonNull final String sPreamble,
+                                          @NonNull @Nonempty final Function <ScriptTarget, String> aCommandProvider,
+                                          final boolean bEchoProgress,
+                                          final boolean bIncludeWiki,
+                                          @NonNull @Nonempty final String sBatchFileName) throws IOException
+  {
+    _createShellScript (sPreamble,
+                        _getAllScriptTargets (bIncludeWiki),
+                        aCommandProvider,
+                        bEchoProgress,
+                        sBatchFileName);
   }
 
   private static void _createShellScriptPerDir (@NonNull @Nonempty final String sCommand,
@@ -253,6 +292,32 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         "git_unpushed_check.sh");
   }
 
+  private static void _createGitCommitPushPOMShellScript () throws IOException
+  {
+    // Covers the pom.xml of the root project, of all nested projects and of all parent POMs
+    final String sPathSpec = "':(glob)**/pom.xml'";
+    _createShellScript ("",
+                        _getAllMain1ScriptTargets (),
+                        t -> "cd ../" +
+                             t.getProjectOwner ().getLocalGitDirName () +
+                             "/" +
+                             t.getDirName () +
+                             "\n" +
+                             "if ! git diff HEAD --quiet -- " +
+                             sPathSpec +
+                             "; then\n" +
+                             "  git commit -m \"Updated dependency versions\" -- " +
+                             sPathSpec +
+                             "\n" +
+                             "  git push\n" +
+                             "fi\n" +
+                             "cd ../../" +
+                             EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
+                             "\n",
+                        true,
+                        "git_commit_push_pom.sh");
+  }
+
   private static void _warnOnMissingWikiDirectories ()
   {
     for (final IProject aProject : ProjectList.getAllProjects (x -> x.hasWikiProject () && !x.isDeprecated ()))
@@ -306,6 +371,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                         "git_clone.sh");
     _createGitBranchCheckShellScript ();
     _createGitUnpushedCheckShellScript ();
+    _createGitCommitPushPOMShellScript ();
     _createGhSetSecretShellScript ();
 
     // Enable when needed
