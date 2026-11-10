@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies-future</artifactId>
-  <version>1.0.0-20261105</version>
+  <version>1.0.0-20261110</version>
   <dependencies>
     <!--External dependencies with the newest version of group+artifact IDs occurring more than once:-->
     <dependency>
@@ -108,7 +108,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.23.0</version>
+        <version>2.25.1</version>
         <configuration>
           <allowSnapshots>false</allowSnapshots>
           <rulesUri>file:versions-maven-plugin-rules.xml</rulesUri>

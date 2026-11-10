@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-05):
+Current list of all released projects (as of 2026-11-10):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -53,6 +53,15 @@ Current list of all released projects (as of 2026-11-05):
  * [en16931-ubl2cii/en16931-ubl2cii-cli](https://github.com/phax/en16931-ubl2cii) - Version 3.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-ubl2cii-cli) 
+ * [en16931-update](https://github.com/phax/en16931-update) - Version 0.9.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-update-parent-pom)](https://img.shields.io/maven-central/v/com.helger/en16931-update-parent-pom) 
+ * [en16931-update/en16931-update](https://github.com/phax/en16931-update) - Version 0.9.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-update)](https://img.shields.io/maven-central/v/com.helger/en16931-update) 
+ * [en16931-update/en16931-update-cli](https://github.com/phax/en16931-update) - Version 0.9.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/en16931-update-cli)](https://img.shields.io/maven-central/v/com.helger/en16931-update-cli) 
  * [erechnung.gv.at-webservice-client](https://github.com/phax/erechnung.gv.at-webservice-client) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client)](https://img.shields.io/maven-central/v/com.helger.erechnung.gv.at/webservice-client) 
@@ -1244,7 +1253,7 @@ Current list of all released projects (as of 2026-11-05):
  * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.12 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.13 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17
@@ -1340,6 +1349,21 @@ Current list of all released projects (as of 2026-11-05):
  * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
+ * [phoxtrot](https://github.com/phax/phoxtrot) - Version 0.1.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-parent-pom) 
+ * [phoxtrot/phoxtrot-xdm](https://github.com/phax/phoxtrot) - Version 0.1.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xdm)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xdm) 
+ * [phoxtrot/phoxtrot-xpath](https://github.com/phax/phoxtrot) - Version 0.1.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath) 
+ * [phoxtrot/phoxtrot-xsd](https://github.com/phax/phoxtrot) - Version 0.1.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd) 
+ * [phoxtrot/phoxtrot-xslt](https://github.com/phax/phoxtrot) - Version 0.1.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt) 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/smp-query-webapp)](https://img.shields.io/maven-central/v/com.helger/smp-query-webapp) 
