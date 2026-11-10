@@ -554,7 +554,7 @@ Current list of all released projects (as of 2026-11-10):
  * [ph-merge-jaxb-episodes-maven-plugin](https://github.com/phax/ph-merge-jaxb-episodes-maven-plugin) - Version 0.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-merge-jaxb-episodes-maven-plugin) 
- * [ph-nss](https://github.com/phax/ph-nss) - Version 1.0.1 - JDK 17
+ * [ph-nss](https://github.com/phax/ph-nss) - Version 1.0.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-nss)](https://img.shields.io/maven-central/v/com.helger/ph-nss) 
  * [ph-oton](https://github.com/phax/ph-oton) - Version 10.7.0 - JDK 17
