@@ -57,6 +57,22 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     }
 
     /**
+     * @return The name of the local directory containing the Git repository of the project. It is
+     *         derived from the base directory of the root project, because projects read from
+     *         <code>other-projects.xml</code> may be located outside the local Git directory of the
+     *         project owner. E.g. <code>git</code> or <code>git-silvaconnect</code>
+     */
+    @NonNull
+    @Nonempty
+    public String getLocalGitDirName ()
+    {
+      IProject aRootProject = project;
+      while (aRootProject.getParentProject () != null)
+        aRootProject = aRootProject.getParentProject ();
+      return aRootProject.getBaseDir ().getParentFile ().getName ();
+    }
+
+    /**
      * @return The name to be used in progress messages. E.g. <code>ph-commons-parent-pom</code> or
      *         <code>ph-commons.wiki</code>
      */
@@ -68,7 +84,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     }
 
     /**
-     * @return The directory name relative to the local Git directory of the project owner. E.g.
+     * @return The directory name relative to the local Git directory. E.g.
      *         <code>ph-commons</code> or <code>ph-commons.wiki</code>
      */
     @NonNull
@@ -159,7 +175,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     {
       if (bEchoProgress)
         aSB.append ("echo ")
-           .append (aTarget.getProjectOwner ().getLocalGitDirName ())
+           .append (aTarget.getLocalGitDirName ())
            .append ('/')
            .append (aTarget.getDisplayName ())
            .append (" [")
@@ -198,7 +214,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   {
     _createShellScript ("",
                         t -> "cd ../" +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDirName () +
                              "\n" +
@@ -242,14 +258,14 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   {
     _createShellScript ("echo Projects on a branch other than main or master:\n",
                         t -> "cd ../" +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDirName () +
                              "\n" +
                              "BRANCH=$(git rev-parse --abbrev-ref HEAD)\n" +
                              "if [ \"$BRANCH\" != \"main\" ] && [ \"$BRANCH\" != \"master\" ]; then\n" +
                              "  echo \"  " +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDisplayName () +
                              ": $BRANCH\"\n" +
@@ -266,20 +282,20 @@ public final class MainCreateShellScripts extends AbstractProjectMain
   {
     _createShellScript ("echo Projects with commits that were not yet pushed:\n",
                         t -> "cd ../" +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDirName () +
                              "\n" +
                              "UNPUSHED=$(git rev-list --count '@{upstream}..HEAD' 2>/dev/null || echo NOUPSTREAM)\n" +
                              "if [ \"$UNPUSHED\" = \"NOUPSTREAM\" ]; then\n" +
                              "  echo \"  " +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDisplayName () +
                              ": no upstream branch configured\"\n" +
                              "elif [ \"$UNPUSHED\" != \"0\" ]; then\n" +
                              "  echo \"  " +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDisplayName () +
                              ": $UNPUSHED unpushed commit(s)\"\n" +
@@ -299,7 +315,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     _createShellScript ("",
                         _getAllMain1ScriptTargets (),
                         t -> "cd ../" +
-                             t.getProjectOwner ().getLocalGitDirName () +
+                             t.getLocalGitDirName () +
                              "/" +
                              t.getDirName () +
                              "\n" +
