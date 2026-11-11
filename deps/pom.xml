@@ -2482,113 +2482,113 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons-parent-pom</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-commons</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-datatypes</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-codelist-datatypes</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-id</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>bdxr-id</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-id-checks</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-commons</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-testfiles</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>edelivery-sbdh</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sbdh</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-sml-client</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-datatypes</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>smp-client-base</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-smp-client</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-directory-businesscard</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mlr</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-mls</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-commons</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>dbnalliance-xhe</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>hredelivery-commons</artifactId>
-      <version>13.2.1</version>
+      <version>13.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
