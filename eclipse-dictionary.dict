@@ -534,3 +534,5 @@ colours
 workflows
 serialising
 namespaced
+variadic
+arity

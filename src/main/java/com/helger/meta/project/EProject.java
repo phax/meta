@@ -554,7 +554,7 @@ public enum EProject implements IProject
                       EProjectType.MAVEN_POM,
                       EHasPages.FALSE,
                       EHasWiki.FALSE,
-                      "10.7.0",
+                      "10.8.0",
                       EJDK.JDK17),
   PH_OTON_HTML (PH_OTON_PARENT_POM, "ph-oton-html", EProjectType.JAVA_LIBRARY),
   PH_OTON_MARKDOWN (PH_OTON_PARENT_POM, "ph-oton-markdown", EProjectType.JAVA_LIBRARY),
