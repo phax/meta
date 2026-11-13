@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.57.12", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.59.0", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -61,13 +61,13 @@ public enum EExternalDependency
 
   BATIK_BRIDGE ("org.apache.xmlgraphics", "batik-bridge", "1.20", EJDK.JDK8),
 
-  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.86", EJDK.JDK8),
-  BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", "1.86", EJDK.JDK8),
+  BC_MAIL18 ("org.bouncycastle", "bcmail-jdk18on", "1.87", EJDK.JDK8),
+  BC_PROV18 ("org.bouncycastle", "bcprov-jdk18on", "1.87", EJDK.JDK8),
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
   BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
-  BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", "1.86.2", EJDK.JDK8),
+  BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", "1.87", EJDK.JDK8),
 
   CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
                                "classloader-leak-prevention-core",
@@ -81,7 +81,7 @@ public enum EExternalDependency
   COMMONS_COMPRESS ("org.apache.commons", "commons-compress", "1.28.0", EJDK.JDK8),
   COMMONS_DBCP2 ("org.apache.commons", "commons-dbcp2", "2.14.0", EJDK.JDK8),
   COMMONS_EXEC ("org.apache.commons", "commons-exec", "1.6.0", EJDK.JDK8),
-  COMMONS_LANG3 ("org.apache.commons", "commons-lang3", "3.21.0", EJDK.JDK8),
+  COMMONS_LANG3 ("org.apache.commons", "commons-lang3", "3.22.0", EJDK.JDK8),
   COMMONS_MATH3 ("org.apache.commons", "commons-math3", "3.6.1", EJDK.JDK8),
   COMMONS_NET ("commons-net", "commons-net", "3.13.0", EJDK.JDK8),
   COMMONS_POOL2 ("org.apache.commons", "commons-pool2", "2.13.1", EJDK.JDK8),
@@ -117,7 +117,7 @@ public enum EExternalDependency
   FELIX ("org.apache.felix", "org.apache.felix.framework", "8.0.0", EJDK.JDK8),
   FLAPDOODLE_MONGO ("de.flapdoodle.embed", "de.flapdoodle.embed.mongo", "5.0.0", EJDK.JDK8),
 
-  FLYWAY13 ("org.flywaydb", "flyway-core", "13.12.1", EJDK.JDK17),
+  FLYWAY13 ("org.flywaydb", "flyway-core", "13.12.2", EJDK.JDK17),
   FLYWAY13_DB2 ("org.flywaydb", "flyway-database-db2", FLYWAY13),
   FLYWAY13_MYSQL ("org.flywaydb", "flyway-mysql", FLYWAY13),
   FLYWAY13_ORACLE ("org.flywaydb", "flyway-database-oracle", FLYWAY13),
@@ -134,7 +134,7 @@ public enum EExternalDependency
 
   @VersionMaxExcl ("v20240317")
   GOOGLE_CLOSURE_11("com.google.javascript", "closure-compiler", "v20240317", EJDK.JDK11),
-  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261108", EJDK.JDK21),
+  GOOGLE_CLOSURE_21 ("com.google.javascript", "closure-compiler", "v20261109", EJDK.JDK21),
 
   GOOGLE_PROTOBUF ("com.google.protobuf", "protobuf-java", "4.36.2", EJDK.JDK8),
 
@@ -283,7 +283,7 @@ public enum EExternalDependency
 
   OKHTTP ("com.squareup.okhttp3", "okhttp-jvm", "5.5.1", EJDK.JDK17),
 
-  OPENSEARCH_JAVA ("org.opensearch.client", "opensearch-java", "3.10.0", EJDK.JDK17),
+  OPENSEARCH_JAVA ("org.opensearch.client", "opensearch-java", "3.11.0", EJDK.JDK17),
 
   @IsBOM
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.4.0.0", EJDK.JDK8),
@@ -317,7 +317,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.3", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.63.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.64.0", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -364,7 +364,7 @@ public enum EExternalDependency
 
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.2", EJDK.JDK17),
 
-  VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.3", EJDK.JDK17),
+  VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.4", EJDK.JDK17),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.4.1", EJDK.JDK8),
 

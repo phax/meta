@@ -45,7 +45,7 @@ public final class MainCreateBOMs extends AbstractProjectMain
   /**
    * If <code>true</code> the changes are only logged but the files are not written.
    */
-  private static final boolean DRY_RUN = true;
+  private static final boolean DRY_RUN = false;
 
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCreateBOMs.class);
 
