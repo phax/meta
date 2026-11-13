@@ -205,5 +205,34 @@ public interface IProject
     return false;
   }
 
+  /**
+   * @return <code>true</code> if this child project must not be part of the BOM of its root
+   *         project, even though its project type would include it.
+   * @see IsExcludedFromBOM
+   */
+  default boolean isExcludedFromBOM ()
+  {
+    return false;
+  }
+
+  /**
+   * @return <code>true</code> if this child project must be part of the BOM of its root project,
+   *         even though its project type would exclude it.
+   * @see IsIncludedInBOM
+   */
+  default boolean isIncludedInBOM ()
+  {
+    return false;
+  }
+
+  /**
+   * @return <code>true</code> if this multi-module root project does not get a BOM module.
+   * @see HasNoBOM
+   */
+  default boolean hasNoBOM ()
+  {
+    return false;
+  }
+
   int compareTo (@NonNull IProject aProject);
 }

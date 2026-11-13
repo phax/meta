@@ -112,7 +112,10 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               sLastPublishedVersion,
                               eMinJDK,
                               null,
-                              bIsGitHubPrivate);
+                              bIsGitHubPrivate,
+                              false,
+                              false,
+                              false);
   }
 
   @NonNull
@@ -163,6 +166,9 @@ public final class SimpleProjectMicroTypeConverter implements IMicroTypeConverte
                               sLastPublishedVersion,
                               aParentProject.getMinimumJDKVersion (),
                               null,
-                              bIsGitHubPrivate);
+                              bIsGitHubPrivate,
+                              false,
+                              false,
+                              false);
   }
 }

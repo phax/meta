@@ -138,6 +138,7 @@ public enum EProject implements IProject
   PH_TELEMETRY_JFR (PH_TELEMETRY_PARENT_POM, "ph-telemetry-jfr", EProjectType.JAVA_LIBRARY),
   PH_TELEMETRY_OTEL (PH_TELEMETRY_PARENT_POM, "ph-telemetry-otel", EProjectType.JAVA_LIBRARY),
 
+  @HasNoBOM
   JCODEMODEL_PARENT_POM (null,
                          EProjectOwner.PROJECT_OWNER_PHAX,
                          "jcodemodel-parent-pom",
@@ -149,6 +150,9 @@ public enum EProject implements IProject
                          EJDK.JDK17),
   JCODEMODEL (JCODEMODEL_PARENT_POM, "jcodemodel", EProjectType.JAVA_LIBRARY),
   JCODEMODEL_MAVEN_PLUGIN (JCODEMODEL_PARENT_POM, "jcodemodel-maven-plugin", "plugin", EProjectType.MAVEN_POM),
+  JCODEMODEL_EXAMPLES (JCODEMODEL_PARENT_POM, "jcodemodel-examples", "examples", EProjectType.MAVEN_POM),
+  @IsExcludedFromBOM
+  JCODEMODEL_TESTS (JCODEMODEL_PARENT_POM, "jcodemodel-tests", "jcodemodeltests", EProjectType.JAVA_LIBRARY),
 
   JCREPDL (null,
            EProjectOwner.PROJECT_OWNER_PHAX,
@@ -267,6 +271,7 @@ public enum EProject implements IProject
               "6.1.0",
               EJDK.JDK17),
 
+  @HasNoBOM
   PH_CODELISTS_PARENT_POM (null,
                            EProjectOwner.PROJECT_OWNER_PHAX,
                            "ph-codelists-parent-pom",
@@ -406,7 +411,9 @@ public enum EProject implements IProject
   PH_UBLTR (PH_UBL_PARENT_POM, "ph-ubltr", EProjectType.JAVA_LIBRARY),
   PH_UBL_DIAN (PH_UBL_PARENT_POM, "ph-ubl-dian", EProjectType.JAVA_LIBRARY),
   PH_UBL_EFORMS (PH_UBL_PARENT_POM, "ph-ubl-eforms", EProjectType.JAVA_LIBRARY),
+  PH_UBL_HR (PH_UBL_PARENT_POM, "ph-ubl-hr", EProjectType.JAVA_LIBRARY),
 
+  @HasNoBOM
   PH_MATH_PARENT_POM (null,
                       EProjectOwner.PROJECT_OWNER_PHAX,
                       "ph-math-parent-pom",
@@ -464,6 +471,7 @@ public enum EProject implements IProject
                                        "0.0.7",
                                        EJDK.JDK17),
 
+  @HasNoBOM
   PH_DATETIME_PARENT_POM (null,
                           EProjectOwner.PROJECT_OWNER_PHAX,
                           "ph-datetime-parent-pom",
@@ -523,6 +531,7 @@ public enum EProject implements IProject
                      EHasWiki.FALSE,
                      "11.5.0",
                      EJDK.JDK17),
+  PH_WEB_BOM (PH_WEB_PARENT_POM, "ph-web-bom", EProjectType.MAVEN_POM),
   PH_DNS (PH_WEB_PARENT_POM, "ph-dns", EProjectType.JAVA_LIBRARY),
   PH_NETWORK (PH_WEB_PARENT_POM, "ph-network", EProjectType.JAVA_LIBRARY),
   PH_USERAGENT (PH_WEB_PARENT_POM, "ph-useragent", EProjectType.JAVA_LIBRARY),
@@ -535,6 +544,7 @@ public enum EProject implements IProject
   PH_XSERVLET (PH_WEB_PARENT_POM, "ph-xservlet", EProjectType.JAVA_LIBRARY),
   PH_JSCH (PH_WEB_PARENT_POM, "ph-jsch", EProjectType.JAVA_LIBRARY),
 
+  @HasNoBOM
   PH_CSS_PARENT_POM (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
                      "ph-css-parent-pom",
@@ -652,6 +662,12 @@ public enum EProject implements IProject
   PHOXTROT_XPATH (PHOXTROT_PARENT_POM, "phoxtrot-xpath", EProjectType.JAVA_LIBRARY),
   PHOXTROT_XSLT (PHOXTROT_PARENT_POM, "phoxtrot-xslt", EProjectType.JAVA_LIBRARY),
   PHOXTROT_XSD (PHOXTROT_PARENT_POM, "phoxtrot-xsd", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
+  PHOXTROT_XPATH_CONFORMANCE (PHOXTROT_PARENT_POM, "phoxtrot-xpath-conformance", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
+  PHOXTROT_XSLT_CONFORMANCE (PHOXTROT_PARENT_POM, "phoxtrot-xslt-conformance", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
+  PHOXTROT_XSD_CONFORMANCE (PHOXTROT_PARENT_POM, "phoxtrot-xsd-conformance", EProjectType.JAVA_LIBRARY),
 
   PH_SCHEMATRON_PARENT_POM (null,
                             EProjectOwner.PROJECT_OWNER_PHAX,
@@ -664,7 +680,9 @@ public enum EProject implements IProject
                             EJDK.JDK17),
   PH_SCHEMATRON_API (PH_SCHEMATRON_PARENT_POM, "ph-schematron-api", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_SAXON (PH_SCHEMATRON_PARENT_POM, "ph-schematron-saxon", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_PHOXTROT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-phoxtrot", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_MODEL (PH_SCHEMATRON_PARENT_POM, "ph-schematron-model", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_STREAMABILITY (PH_SCHEMATRON_PARENT_POM, "ph-schematron-streamability", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_XSLT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-xslt", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_ISOSCH (PH_SCHEMATRON_PARENT_POM, "ph-schematron-isosch", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_SCHXSLT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-schxslt", EProjectType.JAVA_LIBRARY),
@@ -678,6 +696,10 @@ public enum EProject implements IProject
   PH_SCHEMATRON_VALIDATOR (PH_SCHEMATRON_PARENT_POM, "ph-schematron-validator", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-schematron-maven-plugin", EProjectType.MAVEN_PLUGIN),
   PH_SCHEMATRON_ANT_TASK (PH_SCHEMATRON_PARENT_POM, "ph-schematron-ant-task", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
+  PH_SCHEMATRON_BENCHMARKS (PH_SCHEMATRON_PARENT_POM, "ph-schematron-benchmarks", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
+  PH_SCHEMATRON_IT (PH_SCHEMATRON_PARENT_POM, "ph-schematron-it", EProjectType.JAVA_LIBRARY),
 
   PHASE2_PARENT_POM (null,
                      EProjectOwner.PROJECT_OWNER_PHAX,
@@ -697,6 +719,7 @@ public enum EProject implements IProject
   PHASE2_LIB (PHASE2_PARENT_POM, "phase2-lib", EProjectType.JAVA_LIBRARY),
   PHASE2_PARTNERSHIP_MONGODB (PHASE2_PARENT_POM, "phase2-partnership-mongodb", EProjectType.JAVA_LIBRARY),
   PHASE2_SERVLET (PHASE2_PARENT_POM, "phase2-servlet", EProjectType.JAVA_LIBRARY),
+  @IsExcludedFromBOM
   PHASE2_SERVER (PHASE2_PARENT_POM, "phase2-server", EProjectType.JAVA_LIBRARY),
   PHASE2_DEMO_WEBAPP (PHASE2_PARENT_POM, "phase2-demo-webapp", EProjectType.JAVA_WEB_APPLICATION),
   PHASE2_DEMO_SPRING_BOOT (PHASE2_PARENT_POM, "phase2-demo-spring-boot", EProjectType.JAVA_APPLICATION),
@@ -1013,6 +1036,7 @@ public enum EProject implements IProject
                   "1.1.0",
                   EJDK.JDK17),
 
+  @HasNoBOM
   EN16931_CII2UBL_PARENT_POM (null,
                               EProjectOwner.PROJECT_OWNER_PHAX,
                               "en16931-cii2ubl-parent-pom",
@@ -1023,8 +1047,9 @@ public enum EProject implements IProject
                               "4.0.3",
                               EJDK.JDK17),
   EN16931_CII2UBL (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl", EProjectType.JAVA_LIBRARY),
-  EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_LIBRARY),
+  EN16931_CII2UBL_CLI (EN16931_CII2UBL_PARENT_POM, "en16931-cii2ubl-cli", EProjectType.JAVA_APPLICATION),
 
+  @HasNoBOM
   EN16931_UBL2CII_PARENT_POM (null,
                               EProjectOwner.PROJECT_OWNER_PHAX,
                               "en16931-ubl2cii-parent-pom",
@@ -1035,8 +1060,9 @@ public enum EProject implements IProject
                               "3.0.1",
                               EJDK.JDK17),
   EN16931_UBL2CII (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii", EProjectType.JAVA_LIBRARY),
-  EN16931_UBL2CII_CLI (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii-cli", EProjectType.JAVA_LIBRARY),
+  EN16931_UBL2CII_CLI (EN16931_UBL2CII_PARENT_POM, "en16931-ubl2cii-cli", EProjectType.JAVA_APPLICATION),
 
+  @HasNoBOM
   EN16931_PURIFIER_PARENT_POM (null,
                                EProjectOwner.PROJECT_OWNER_PHAX,
                                "en16931-purifier-parent-pom",
@@ -1049,6 +1075,7 @@ public enum EProject implements IProject
   EN16931_PURIFIER (EN16931_PURIFIER_PARENT_POM, "en16931-purifier", EProjectType.JAVA_LIBRARY),
   EN16931_PURIFIER_CLI (EN16931_PURIFIER_PARENT_POM, "en16931-purifier-cli", EProjectType.JAVA_APPLICATION),
 
+  @HasNoBOM
   EN16931_UPDATE_PARENT_POM (null,
                              EProjectOwner.PROJECT_OWNER_PHAX,
                              "en16931-update-parent-pom",
@@ -1223,6 +1250,7 @@ public enum EProject implements IProject
   PHOSS_AP_TESTBACKEND (PHOSS_AP_PARENT_POM, "phoss-ap-testbackend", EProjectType.JAVA_APPLICATION),
   PHOSS_AP_TESTSENDER (PHOSS_AP_PARENT_POM, "phoss-ap-testsender", EProjectType.JAVA_APPLICATION),
   PHOSS_AP_VALIDATION (PHOSS_AP_PARENT_POM, "phoss-ap-validation", EProjectType.JAVA_LIBRARY),
+  @IsIncludedInBOM
   PHOSS_AP_WEBAPP (PHOSS_AP_PARENT_POM, "phoss-ap-webapp", EProjectType.JAVA_APPLICATION),
 
   @IsPrivateRepo
@@ -1273,6 +1301,7 @@ public enum EProject implements IProject
                            "0.9.0",
                            EJDK.JDK17),
 
+  @HasNoBOM
   PH_REDACT_PARENT_POM (null,
                         EProjectOwner.PROJECT_OWNER_PHAX,
                         "ph-redact-parent-pom",
@@ -1302,6 +1331,7 @@ public enum EProject implements IProject
   PHLOX_THEME (PHLOX_PARENT_POM, "phlox-theme", EProjectType.JAVA_LIBRARY),
   PHLOX_HTML (PHLOX_PARENT_POM, "phlox-html", EProjectType.JAVA_LIBRARY),
   PHLOX_PDF (PHLOX_PARENT_POM, "phlox-pdf", EProjectType.JAVA_LIBRARY),
+  PHLOX_TEXT (PHLOX_PARENT_POM, "phlox-text", EProjectType.JAVA_LIBRARY),
   PHLOX_CLI (PHLOX_PARENT_POM, "phlox-cli", EProjectType.JAVA_APPLICATION),
 
   // PHOSS_AP_PRO (null,
@@ -1439,6 +1469,20 @@ public enum EProject implements IProject
     {
       throw new IllegalStateException (ex);
     }
+    final boolean bIsExcludedFromBOM;
+    final boolean bIsIncludedInBOM;
+    final boolean bHasNoBOM;
+    try
+    {
+      final Field aField = EProject.class.getField (name ());
+      bIsExcludedFromBOM = aField.isAnnotationPresent (IsExcludedFromBOM.class);
+      bIsIncludedInBOM = aField.isAnnotationPresent (IsIncludedInBOM.class);
+      bHasNoBOM = aField.isAnnotationPresent (HasNoBOM.class);
+    }
+    catch (final Exception ex)
+    {
+      throw new IllegalStateException (ex);
+    }
     m_aProject = new SimpleProject (bIsGitLab ? EHostingPlatform.GITLAB : EHostingPlatform.GITHUB,
                                     eParentProject,
                                     eProjectOwner,
@@ -1453,7 +1497,10 @@ public enum EProject implements IProject
                                     sLastPublishedVersion,
                                     eMinJDK,
                                     new CommonsArrayList <> (aTails),
-                                    bIsPrivateRepo);
+                                    bIsPrivateRepo,
+                                    bIsExcludedFromBOM,
+                                    bIsIncludedInBOM,
+                                    bHasNoBOM);
   }
 
   public boolean isPhProject ()
@@ -1557,6 +1604,26 @@ public enum EProject implements IProject
   public ICommonsList <ProjectTail> getAllTails ()
   {
     return m_aProject.getAllTails ();
+  }
+
+  public boolean isGitHubPrivate ()
+  {
+    return m_aProject.isGitHubPrivate ();
+  }
+
+  public boolean isExcludedFromBOM ()
+  {
+    return m_aProject.isExcludedFromBOM ();
+  }
+
+  public boolean isIncludedInBOM ()
+  {
+    return m_aProject.isIncludedInBOM ();
+  }
+
+  public boolean hasNoBOM ()
+  {
+    return m_aProject.hasNoBOM ();
   }
 
   public int compareTo (@NonNull final IProject aProject)

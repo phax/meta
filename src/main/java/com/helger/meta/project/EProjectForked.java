@@ -183,7 +183,10 @@ public enum EProjectForked implements IProject
                                     sLastPublishedVersion,
                                     eMinJDK,
                                     null,
-                                    bIsPrivateRepo);
+                                    bIsPrivateRepo,
+                                    false,
+                                    false,
+                                    false);
   }
 
   public boolean isPhProject ()

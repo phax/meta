@@ -54,6 +54,9 @@ public class SimpleProject implements IProject
   private final EJDK m_eMinJDK;
   private final ICommonsList <ProjectTail> m_aTails;
   private final boolean m_bIsGitHubPrivate;
+  private final boolean m_bIsExcludedFromBOM;
+  private final boolean m_bIsIncludedInBOM;
+  private final boolean m_bHasNoBOM;
   private final String m_sMavenGroupID;
   private final String m_sMavenArtifactID;
 
@@ -69,7 +72,10 @@ public class SimpleProject implements IProject
                         @Nullable final String sLastPublishedVersion,
                         @NonNull final EJDK eMinJDK,
                         @Nullable final List <ProjectTail> aTails,
-                        final boolean bIsGitHubPrivate)
+                        final boolean bIsGitHubPrivate,
+                        final boolean bIsExcludedFromBOM,
+                        final boolean bIsIncludedInBOM,
+                        final boolean bHasNoBOM)
   {
     ValueEnforcer.notNull (eProjectOwner, "ProjectOwner");
     ValueEnforcer.notEmpty (sProjectName, "ProjectName");
@@ -99,6 +105,9 @@ public class SimpleProject implements IProject
     m_eMinJDK = eMinJDK;
     m_aTails = new CommonsArrayList <> (aTails);
     m_bIsGitHubPrivate = bIsGitHubPrivate;
+    m_bIsExcludedFromBOM = bIsExcludedFromBOM;
+    m_bIsIncludedInBOM = bIsIncludedInBOM;
+    m_bHasNoBOM = bHasNoBOM;
 
     // Determine group and artifact from POM
     String sGroupID = null;
@@ -246,6 +255,21 @@ public class SimpleProject implements IProject
   public boolean isGitHubPrivate ()
   {
     return m_bIsGitHubPrivate;
+  }
+
+  public boolean isExcludedFromBOM ()
+  {
+    return m_bIsExcludedFromBOM;
+  }
+
+  public boolean isIncludedInBOM ()
+  {
+    return m_bIsIncludedInBOM;
+  }
+
+  public boolean hasNoBOM ()
+  {
+    return m_bHasNoBOM;
   }
 
   public int compareTo (@NonNull final IProject aProject)

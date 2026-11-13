@@ -364,17 +364,17 @@ public enum EProjectArchived implements IProject
    *        Project type
    */
   EProjectArchived (@NonNull final EProjectArchived eParentProject,
-                      @NonNull @Nonempty final String sProjectName,
-                      @NonNull final EProjectType eProjectType)
+                    @NonNull @Nonempty final String sProjectName,
+                    @NonNull final EProjectType eProjectType)
   {
     // Project name equals project base directory name
     this (eParentProject, sProjectName, sProjectName, eProjectType);
   }
 
   EProjectArchived (@NonNull final EProjectArchived eParentProject,
-                      @NonNull @Nonempty final String sProjectName,
-                      @NonNull @Nonempty final String sProjectBaseDirName,
-                      @NonNull final EProjectType eProjectType)
+                    @NonNull @Nonempty final String sProjectName,
+                    @NonNull @Nonempty final String sProjectBaseDirName,
+                    @NonNull final EProjectType eProjectType)
   {
     this (eParentProject,
           EProjectOwner.PROJECT_OWNER_PHAX,
@@ -388,11 +388,11 @@ public enum EProjectArchived implements IProject
   }
 
   EProjectArchived (@Nullable final EProjectArchived eParentProject,
-                      @NonNull @Nonempty final String sProjectName,
-                      @NonNull final EProjectType eProjectType,
-                      @NonNull final EHasPages eHasPagesProject,
-                      @NonNull final EHasWiki eHasWikiProject,
-                      @Nullable final String sLastPublishedVersion)
+                    @NonNull @Nonempty final String sProjectName,
+                    @NonNull final EProjectType eProjectType,
+                    @NonNull final EHasPages eHasPagesProject,
+                    @NonNull final EHasWiki eHasWikiProject,
+                    @Nullable final String sLastPublishedVersion)
   {
     // Project name equals project base directory name
     this (eParentProject,
@@ -407,14 +407,14 @@ public enum EProjectArchived implements IProject
   }
 
   EProjectArchived (@Nullable final EProjectArchived eParentProject,
-                      @NonNull final EProjectOwner eProjectOwner,
-                      @NonNull @Nonempty final String sProjectName,
-                      @NonNull @Nonempty final String sProjectBaseDirName,
-                      @NonNull final EProjectType eProjectType,
-                      @NonNull final EHasPages eHasPagesProject,
-                      @NonNull final EHasWiki eHasWikiProject,
-                      @Nullable final String sLastPublishedVersion,
-                      @NonNull final EJDK eMinJDK)
+                    @NonNull final EProjectOwner eProjectOwner,
+                    @NonNull @Nonempty final String sProjectName,
+                    @NonNull @Nonempty final String sProjectBaseDirName,
+                    @NonNull final EProjectType eProjectType,
+                    @NonNull final EHasPages eHasPagesProject,
+                    @NonNull final EHasWiki eHasWikiProject,
+                    @Nullable final String sLastPublishedVersion,
+                    @NonNull final EJDK eMinJDK)
   {
     final boolean bIsGitLab;
     try
@@ -440,7 +440,10 @@ public enum EProjectArchived implements IProject
                                     sLastPublishedVersion,
                                     eMinJDK,
                                     null,
-                                    true);
+                                    true,
+                                    false,
+                                    false,
+                                    false);
   }
 
   public boolean isPhProject ()
