@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261111</version>
+  <version>1.0.0-20261113</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,32 +64,32 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.57.12</version>
+      <version>2.59.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -99,37 +99,37 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcmail-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpg-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcjmail-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk18on</artifactId>
-      <version>1.86</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bctls-jdk18on</artifactId>
-      <version>1.86.2</version>
+      <version>1.87</version>
     </dependency>
     <dependency>
       <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
@@ -179,7 +179,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.21.0</version>
+      <version>3.22.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -294,32 +294,32 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-core</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-db2</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-mysql</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-oracle</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-postgresql</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-sqlserver</artifactId>
-      <version>13.12.1</version>
+      <version>13.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -349,7 +349,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20261108</version>
+      <version>v20261109</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -729,7 +729,7 @@
     <dependency>
       <groupId>org.opensearch.client</groupId>
       <artifactId>opensearch-java</artifactId>
-      <version>3.10.0</version>
+      <version>3.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.oracle.database.jdbc</groupId>
@@ -825,12 +825,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.63.0</version>
+      <version>8.64.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.63.0</version>
+      <version>8.64.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -967,7 +967,7 @@
     <dependency>
       <groupId>org.verapdf</groupId>
       <artifactId>validation-model-jakarta</artifactId>
-      <version>1.30.3</version>
+      <version>1.30.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -1213,7 +1213,7 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>parent-pom</artifactId>
-      <version>3.1.1</version>
+      <version>3.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
@@ -1439,6 +1439,17 @@
       <artifactId>plugin</artifactId>
       <version>4.4.1</version>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.jcodemodel</groupId>
+      <artifactId>examples</artifactId>
+      <version>4.4.1</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.jcodemodel</groupId>
+      <artifactId>JCodeModel-Tests</artifactId>
+      <version>4.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -1820,6 +1831,11 @@
     <dependency>
       <groupId>com.helger.ubl</groupId>
       <artifactId>ph-ubl-eforms</artifactId>
+      <version>10.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl-hr</artifactId>
       <version>10.2.1</version>
     </dependency>
     <dependency>
@@ -2279,6 +2295,21 @@
       <version>0.1.0</version>
     </dependency>
     <dependency>
+      <groupId>com.helger.phoxtrot</groupId>
+      <artifactId>phoxtrot-xpath-conformance</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoxtrot</groupId>
+      <artifactId>phoxtrot-xslt-conformance</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phoxtrot</groupId>
+      <artifactId>phoxtrot-xsd-conformance</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
       <version>10.3.1</version>
@@ -2296,7 +2327,17 @@
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-phoxtrot</artifactId>
+      <version>10.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-model</artifactId>
+      <version>10.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-streamability</artifactId>
       <version>10.3.1</version>
     </dependency>
     <dependency>
@@ -2347,6 +2388,16 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
+      <version>10.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-benchmarks</artifactId>
+      <version>10.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-it</artifactId>
       <version>10.3.1</version>
     </dependency>
     <dependency>
@@ -3541,6 +3592,11 @@
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-pdf</artifactId>
+      <version>0.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.phlox</groupId>
+      <artifactId>phlox-text</artifactId>
       <version>0.6.1</version>
     </dependency>
     <dependency>
