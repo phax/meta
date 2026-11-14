@@ -398,7 +398,7 @@ public enum EProject implements IProject
                      EProjectType.MAVEN_POM,
                      EHasPages.FALSE,
                      EHasWiki.FALSE,
-                     "10.2.1",
+                     "10.3.0",
                      EJDK.JDK17),
   PH_UBL_BOM (PH_UBL_PARENT_POM, "ph-ubl-bom", EProjectType.MAVEN_POM),
   PH_UBL_API (PH_UBL_PARENT_POM, "ph-ubl-api", EProjectType.JAVA_LIBRARY),
