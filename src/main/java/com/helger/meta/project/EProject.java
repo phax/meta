@@ -608,7 +608,7 @@ public enum EProject implements IProject
                            EProjectType.MAVEN_POM,
                            EHasPages.FALSE,
                            EHasWiki.FALSE,
-                           "1.0.1",
+                           "1.0.2",
                            EJDK.JDK17),
   PH_OTON_ICON_BOM (PH_OTON_ICON_PARENT_POM, "ph-oton-icon-bom", EProjectType.MAVEN_POM),
   PH_OTON_ICON_FONTAWESOME4 (PH_OTON_ICON_PARENT_POM, "ph-oton-icon-fontawesome4", EProjectType.JAVA_LIBRARY),

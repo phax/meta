@@ -2222,39 +2222,39 @@
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-parent-pom</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-bom</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-fontawesome4</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-fontawesome5</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-fontawesome6</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-materialdesign</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon.icon</groupId>
       <artifactId>ph-oton-icon-bootstrap</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.photon</groupId>
