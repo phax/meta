@@ -439,7 +439,8 @@ public final class BOMBuilder
     aSB.append ("    <version>").append (aModel.parentVersion ()).append ("</version>\n");
     aSB.append ("    <relativePath />\n");
     aSB.append ("  </parent>\n");
-    aSB.append ("  <groupId>").append (aModel.groupID ()).append ("</groupId>\n");
+    if (!PARENT_POM_GROUPID.equals (aModel.groupID ()))
+      aSB.append ("  <groupId>").append (aModel.groupID ()).append ("</groupId>\n");
     aSB.append ("  <artifactId>").append (aModel.artifactID ()).append ("</artifactId>\n");
     aSB.append ("  <version>").append (aModel.version ()).append ("</version>\n");
     aSB.append ("  <packaging>pom</packaging>\n");
