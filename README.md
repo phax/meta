@@ -470,22 +470,22 @@ Current list of all released projects (as of 2026-11-14):
  * [ph-datetime/ph-holiday](https://github.com/phax/ph-datetime) - Version 8.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-holiday)](https://img.shields.io/maven-central/v/com.helger/ph-holiday) 
- * [ph-db](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-parent-pom) 
- * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db/ph-db-api](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-api) 
- * [ph-db/ph-db-bom](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db/ph-db-bom](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-bom)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-bom) 
- * [ph-db/ph-db-flyway](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db/ph-db-flyway](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-flyway)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-flyway) 
- * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db/ph-db-jdbc](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jdbc) 
- * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.5.1 - JDK 17
+ * [ph-db/ph-db-jpa](https://github.com/phax/ph-db) - Version 8.5.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa)](https://img.shields.io/maven-central/v/com.helger.db/ph-db-jpa) 
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17

@@ -498,7 +498,7 @@ public enum EProject implements IProject
                     EProjectType.MAVEN_POM,
                     EHasPages.FALSE,
                     EHasWiki.FALSE,
-                    "8.5.1",
+                    "8.5.2",
                     EJDK.JDK17),
   PH_DB_BOM (PH_DB_PARENT_POM, "ph-db-bom", EProjectType.MAVEN_POM),
   PH_DB_API (PH_DB_PARENT_POM, "ph-db-api", EProjectType.JAVA_LIBRARY),
