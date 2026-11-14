@@ -587,19 +587,19 @@ Current list of all released projects (as of 2026-11-14):
  * [ph-jscompress-maven-plugin](https://github.com/phax/ph-jscompress-maven-plugin) - Version 3.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-jscompress-maven-plugin) 
- * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.1 - JDK 17
+ * [ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-parent-pom) 
- * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.1 - JDK 17
+ * [ph-masterdata/ph-masterdata](https://github.com/phax/ph-masterdata) - Version 8.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata) 
- * [ph-masterdata/ph-masterdata-bom](https://github.com/phax/ph-masterdata) - Version 8.2.1 - JDK 17
+ * [ph-masterdata/ph-masterdata-bom](https://github.com/phax/ph-masterdata) - Version 8.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-bom)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-masterdata-bom) 
- * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.2.1 - JDK 17
+ * [ph-masterdata/ph-tenancy](https://github.com/phax/ph-masterdata) - Version 8.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy) 
- * [ph-masterdata/ph-tenancy-accarea](https://github.com/phax/ph-masterdata) - Version 8.2.1 - JDK 17
+ * [ph-masterdata/ph-tenancy-accarea](https://github.com/phax/ph-masterdata) - Version 8.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy-accarea)](https://img.shields.io/maven-central/v/com.helger.masterdata/ph-tenancy-accarea) 
  * [ph-math](https://github.com/phax/ph-math) - Version 6.1.0 - JDK 17
