@@ -803,16 +803,16 @@ Current list of all released projects (as of 2026-11-14):
  * [ph-sbdh](https://github.com/phax/ph-sbdh) - Version 6.1.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ph-sbdh)](https://img.shields.io/maven-central/v/com.helger/ph-sbdh) 
- * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
+ * [ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-parent-pom) 
- * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
+ * [ph-schedule/ph-mini-quartz](https://github.com/phax/ph-schedule) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-mini-quartz) 
- * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
+ * [ph-schedule/ph-schedule](https://github.com/phax/ph-schedule) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule) 
- * [ph-schedule/ph-schedule-bom](https://github.com/phax/ph-schedule) - Version 6.2.1 - JDK 17
+ * [ph-schedule/ph-schedule-bom](https://github.com/phax/ph-schedule) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-bom)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-bom) 
  * [ph-schematron](https://github.com/phax/ph-schematron) - Version 10.3.1 - JDK 17

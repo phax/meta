@@ -1968,24 +1968,24 @@
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule-parent-pom</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule-bom</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-mini-quartz</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
       <artifactId>ph-schedule</artifactId>
-      <version>6.2.1</version>
+      <version>6.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>

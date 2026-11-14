@@ -513,7 +513,7 @@ public enum EProject implements IProject
                           EProjectType.MAVEN_POM,
                           EHasPages.FALSE,
                           EHasWiki.FALSE,
-                          "6.2.1",
+                          "6.2.2",
                           EJDK.JDK17),
   PH_SCHEDULE_BOM (PH_SCHEDULE_PARENT_POM, "ph-schedule-bom", EProjectType.MAVEN_POM),
   PH_MINI_QUARTZ (PH_SCHEDULE_PARENT_POM, "ph-mini-quartz", EProjectType.JAVA_LIBRARY),
