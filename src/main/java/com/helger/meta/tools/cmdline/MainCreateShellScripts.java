@@ -165,14 +165,29 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                                           @NonNull final ICommonsList <ScriptTarget> aTargets,
                                           @NonNull @Nonempty final Function <ScriptTarget, String> aCommandProvider,
                                           final boolean bEchoProgress,
+                                          final boolean bSupportStartIndex,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     final StringBuilder aSB = new StringBuilder ();
     aSB.append (SHELL_HEADER);
+    if (bSupportStartIndex)
+    {
+      // An optional numeric first argument is the 1-based index of the first target to process. It
+      // is removed, so that all remaining arguments can still be passed on via $@
+      aSB.append ("""
+          START=1
+          if [[ "$1" =~ ^[0-9]+$ ]]; then
+            START=$1
+            shift
+          fi
+          """);
+    }
     aSB.append (sPreamble);
     int nIndex = 1;
     for (final ScriptTarget aTarget : aTargets)
     {
+      if (bSupportStartIndex)
+        aSB.append ("if [ $START -le ").append (nIndex).append (" ]; then\n");
       if (bEchoProgress)
         aSB.append ("echo ")
            .append (aTarget.getLocalGitDirName ())
@@ -184,6 +199,8 @@ public final class MainCreateShellScripts extends AbstractProjectMain
            .append (aTargets.size ())
            .append ("]\n");
       aSB.append (aCommandProvider.apply (aTarget));
+      if (bSupportStartIndex)
+        aSB.append ("fi\n");
       ++nIndex;
     }
     aSB.append (SHELL_FOOTER);
@@ -199,17 +216,20 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                                           @NonNull @Nonempty final Function <ScriptTarget, String> aCommandProvider,
                                           final boolean bEchoProgress,
                                           final boolean bIncludeWiki,
+                                          final boolean bSupportStartIndex,
                                           @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     _createShellScript (sPreamble,
                         _getAllScriptTargets (bIncludeWiki),
                         aCommandProvider,
                         bEchoProgress,
+                        bSupportStartIndex,
                         sBatchFileName);
   }
 
   private static void _createShellScriptPerDir (@NonNull @Nonempty final String sCommand,
                                                 final boolean bIncludeWiki,
+                                                final boolean bSupportStartIndex,
                                                 @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     _createShellScript ("",
@@ -224,6 +244,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         true,
                         bIncludeWiki,
+                        bSupportStartIndex,
                         sBatchFileName);
   }
 
@@ -231,7 +252,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                                              @NonNull @Nonempty final String sBatchFileName) throws IOException
   {
     // Wiki projects contain no POM
-    _createShellScriptPerDir ("mvn " + sMavenCommand + " $@", false, sBatchFileName);
+    _createShellScriptPerDir ("mvn " + sMavenCommand + " $@", false, true, sBatchFileName);
   }
 
   private static void _createGhSetSecretShellScript () throws IOException
@@ -250,6 +271,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              t.getGitRepoName () +
                              " --body \"$2\"\n",
                         true,
+                        false,
                         false,
                         "gh_secret_set.sh");
   }
@@ -275,6 +297,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         false,
                         true,
+                        false,
                         "git_branch_check.sh");
   }
 
@@ -305,6 +328,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         false,
                         true,
+                        false,
                         "git_unpushed_check.sh");
   }
 
@@ -331,6 +355,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              EProjectOwner.PROJECT_OWNER_PHAX.getLocalGitDirName () +
                              "\n",
                         true,
+                        false,
                         "git_commit_push_pom.sh");
   }
 
@@ -356,25 +381,26 @@ public final class MainCreateShellScripts extends AbstractProjectMain
       _createMvnShellScript ("clean install sonar:sonar", "mvn_clean_install_sonar.sh");
     _createMvnShellScript ("clean install forbiddenapis:check forbiddenapis:testCheck",
                            "mvn_clean_install_forbiddenapis.sh");
-    _createShellScriptPerDir ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", false, "mvn_javadoc.sh");
-    _createShellScriptPerDir ("git pull", true, "git_pull.sh");
+    _createShellScriptPerDir ("mvn javadoc:javadoc $@ > ../javadoc-results.txt 2>&1", false, true, "mvn_javadoc.sh");
+    _createShellScriptPerDir ("git pull", true, false, "git_pull.sh");
     if (false)
-      _createShellScriptPerDir ("git gc", true, "git_gc.sh");
-    _createShellScriptPerDir ("git gc --auto", true, "git_gc_auto.sh");
+      _createShellScriptPerDir ("git gc", true, false, "git_gc.sh");
+    _createShellScriptPerDir ("git gc --auto", true, false, "git_gc_auto.sh");
     _createShellScriptPerDir ("""
         git add . -u
         git commit -m "Saving files before refreshing line endings"
         git rm --cached -r .
         git reset --hard
         git add .
-        git commit -m "Normalize all the line endings\"""", true, "git_normalize_crlf.sh");
+        git commit -m "Normalize all the line endings\"""", true, false, "git_normalize_crlf.sh");
     if (false)
-      _createShellScriptPerDir ("git fetch --prune", true, "git_fetch_prune.sh");
-    _createShellScriptPerDir ("git diff --quiet", true, "git_status.sh");
+      _createShellScriptPerDir ("git fetch --prune", true, false, "git_fetch_prune.sh");
+    _createShellScriptPerDir ("git diff --quiet", true, false, "git_status.sh");
     if (false)
-      _createShellScriptPerDir ("git reset --hard", true, "git_reset_hard.sh");
+      _createShellScriptPerDir ("git reset --hard", true, false, "git_reset_hard.sh");
     _createShellScriptPerDir ("git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == \"[gone]\" {sub(\"refs/heads/\", \"\", $1); print $1}'); do git branch -D $branch; done",
                               true,
+                              false,
                               "git_remove_deleted_branches.sh");
     _createShellScript ("",
                         t -> "[ ! -d " +
@@ -384,6 +410,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
                              "\n",
                         true,
                         true,
+                        false,
                         "git_clone.sh");
     _createGitBranchCheckShellScript ();
     _createGitUnpushedCheckShellScript ();
@@ -393,6 +420,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
     // Enable when needed
     if (false)
       _createShellScriptPerDir ("git mv LICENSE.txt LICENSE && git commit -m \"Renamed file\" && git push",
+                                false,
                                 false,
                                 "git_migrate_x.sh");
     _warnOnMissingWikiDirectories ();
