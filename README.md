@@ -491,22 +491,22 @@ Current list of all released projects (as of 2026-11-15):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-bom](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver/ph-diver-bom](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-bom)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-bom) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.2.2 - JDK 17
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.2.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.1.1 - JDK 17
@@ -1169,7 +1169,7 @@ Current list of all released projects (as of 2026-11-15):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.9.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom) 
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
@@ -1319,31 +1319,31 @@ Current list of all released projects (as of 2026-11-15):
  * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-api](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-api)](https://img.shields.io/maven-central/v/com.helger.phive/phive-api) 
- * [phive/phive-bom](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-bom](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-bom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-bom) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-result](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result) 
- * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model) 
- * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.2.0 - JDK 17
+ * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
  * [phlox](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
