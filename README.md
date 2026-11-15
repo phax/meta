@@ -863,19 +863,19 @@ Current list of all released projects (as of 2026-11-15):
  * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt) 
- * [ph-scuba](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
+ * [ph-scuba](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-parent-pom)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-parent-pom) 
- * [ph-scuba/ph-scuba-api](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
+ * [ph-scuba/ph-scuba-api](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-api)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-api) 
- * [ph-scuba/ph-scuba-bom](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
+ * [ph-scuba/ph-scuba-bom](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-bom)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-bom) 
- * [ph-scuba/ph-scuba-core](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
+ * [ph-scuba/ph-scuba-core](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-core)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-core) 
- * [ph-scuba/ph-scuba-phive](https://github.com/phax/ph-scuba) - Version 1.1.0 - JDK 17
+ * [ph-scuba/ph-scuba-phive](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive)](https://img.shields.io/maven-central/v/com.helger.scuba/ph-scuba-phive) 
  * [ph-telemetry](https://github.com/phax/ph-telemetry) - Version 1.1.2 - JDK 17

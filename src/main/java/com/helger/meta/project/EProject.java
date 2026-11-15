@@ -786,7 +786,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "1.1.0",
+                       "1.1.1",
                        EJDK.JDK17),
   PH_SCUBA_BOM (PH_SCUBA_PARENT_POM, "ph-scuba-bom", EProjectType.MAVEN_POM),
   PH_SCUBA_API (PH_SCUBA_PARENT_POM, "ph-scuba-api", EProjectType.JAVA_LIBRARY),

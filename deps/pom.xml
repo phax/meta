@@ -2628,29 +2628,29 @@
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-parent-pom</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-bom</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-api</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-core</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.scuba</groupId>
       <artifactId>ph-scuba-phive</artifactId>
-      <version>1.1.0</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
