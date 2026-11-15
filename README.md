@@ -14,16 +14,16 @@ Current list of all released projects (as of 2026-11-15):
  * [ParserGeneratorCC](https://github.com/phax/ParserGeneratorCC) - Version 3.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc)](https://img.shields.io/maven-central/v/com.helger/parser-generator-cc) 
- * [ddd](https://github.com/phax/ddd) - Version 0.9.3 - JDK 17
+ * [ddd](https://github.com/phax/ddd) - Version 0.9.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom)](https://img.shields.io/maven-central/v/com.helger/ddd-parent-pom) 
- * [ddd/ddd](https://github.com/phax/ddd) - Version 0.9.3 - JDK 17
+ * [ddd/ddd](https://github.com/phax/ddd) - Version 0.9.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd)](https://img.shields.io/maven-central/v/com.helger/ddd) 
- * [ddd/ddd-bom](https://github.com/phax/ddd) - Version 0.9.3 - JDK 17
+ * [ddd/ddd-bom](https://github.com/phax/ddd) - Version 0.9.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-bom)](https://img.shields.io/maven-central/v/com.helger/ddd-bom) 
- * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.9.3 - JDK 17
+ * [ddd/ddd-model](https://github.com/phax/ddd) - Version 0.9.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/ddd-model)](https://img.shields.io/maven-central/v/com.helger/ddd-model) 
  * [en16931-basics](https://github.com/phax/en16931-basics) - Version 1.1.0 - JDK 17
@@ -83,22 +83,22 @@ Current list of all released projects (as of 2026-11-15):
  * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
- * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom) 
- * [kaltblut/kaltblut-bom](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut/kaltblut-bom](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-bom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-bom) 
- * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli) 
- * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core) 
- * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles) 
- * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.6 - JDK 17
+ * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.4.2 - JDK 17
@@ -1217,19 +1217,19 @@ Current list of all released projects (as of 2026-11-15):
  * [phive-rules-foundations/phive-rules-ubl](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl) 
- * [phive-rules-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
+ * [phive-rules-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-parent-pom) 
- * [phive-rules-legacy/phive-rules-all-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
+ * [phive-rules-legacy/phive-rules-all-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all-legacy) 
- * [phive-rules-legacy/phive-rules-legacy-bom](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
+ * [phive-rules-legacy/phive-rules-legacy-bom](https://github.com/phax/phive-rules-legacy) - Version 4.6.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-bom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-legacy-bom) 
- * [phive-rules-legacy/phive-rules-oioubl-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
+ * [phive-rules-legacy/phive-rules-oioubl-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl-legacy) 
- * [phive-rules-legacy/phive-rules-peppol-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
+ * [phive-rules-legacy/phive-rules-peppol-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-legacy) 
  * [phive-rules-shared](https://github.com/phax/phive-rules-shared) - Version 1.0.0 - JDK 17
@@ -1382,7 +1382,7 @@ Current list of all released projects (as of 2026-11-15):
  * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.13 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.14 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17
