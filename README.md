@@ -272,49 +272,49 @@ Current list of all released projects (as of 2026-11-15):
  * [peppol-shared-ui/peppol-ui-types](https://github.com/phax/peppol-shared-ui) - Version 0.11.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types)](https://img.shields.io/maven-central/v/com.helger.peppol.ui/peppol-ui-types) 
- * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
+ * [peppol-sk](https://github.com/phax/peppol-sk) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-parent-pom) 
- * [peppol-sk/peppol-sk-bom](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
+ * [peppol-sk/peppol-sk-bom](https://github.com/phax/peppol-sk) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-bom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-bom) 
- * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
+ * [peppol-sk/peppol-sk-tdd](https://github.com/phax/peppol-sk) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd) 
- * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
+ * [peppol-sk/peppol-sk-tdd-datatypes](https://github.com/phax/peppol-sk) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-tdd-datatypes) 
- * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.9.1 - JDK 17
+ * [peppol-sk/peppol-sk-testfiles](https://github.com/phax/peppol-sk) - Version 0.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-sk-testfiles) 
- * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
+ * [peppol-uae](https://github.com/phax/peppol-uae) - Version 1.1.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-parent-pom) 
- * [peppol-uae/peppol-uae-bom](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
+ * [peppol-uae/peppol-uae-bom](https://github.com/phax/peppol-uae) - Version 1.1.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-bom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-bom) 
- * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
+ * [peppol-uae/peppol-uae-tdd](https://github.com/phax/peppol-uae) - Version 1.1.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd) 
- * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
+ * [peppol-uae/peppol-uae-tdd-datatypes](https://github.com/phax/peppol-uae) - Version 1.1.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-tdd-datatypes) 
- * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 1.1.3 - JDK 17
+ * [peppol-uae/peppol-uae-testfiles](https://github.com/phax/peppol-uae) - Version 1.1.4 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-uae-testfiles) 
- * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.11.1 - JDK 17
+ * [peppol-vida](https://github.com/phax/peppol-vida) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-parent-pom) 
- * [peppol-vida/peppol-vida-bom](https://github.com/phax/peppol-vida) - Version 0.11.1 - JDK 17
+ * [peppol-vida/peppol-vida-bom](https://github.com/phax/peppol-vida) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-bom)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-bom) 
- * [peppol-vida/peppol-vida-tdd](https://github.com/phax/peppol-vida) - Version 0.11.1 - JDK 17
+ * [peppol-vida/peppol-vida-tdd](https://github.com/phax/peppol-vida) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd) 
- * [peppol-vida/peppol-vida-tdd-datatypes](https://github.com/phax/peppol-vida) - Version 0.11.1 - JDK 17
+ * [peppol-vida/peppol-vida-tdd-datatypes](https://github.com/phax/peppol-vida) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-tdd-datatypes) 
- * [peppol-vida/peppol-vida-testfiles](https://github.com/phax/peppol-vida) - Version 0.11.1 - JDK 17
+ * [peppol-vida/peppol-vida-testfiles](https://github.com/phax/peppol-vida) - Version 0.11.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles)](https://img.shields.io/maven-central/v/com.helger.peppol/peppol-vida-testfiles) 
  * [ph-asic](https://github.com/phax/ph-asic) - Version 4.1.0 - JDK 17
@@ -1175,46 +1175,46 @@ Current list of all released projects (as of 2026-11-15):
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-binary)](https://img.shields.io/maven-central/v/com.helger.phive/phive-binary) 
- * [phive-rules](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-parent-pom) 
- * [phive-rules-foundations](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-parent-pom) 
- * [phive-rules-foundations/phive-rules-brazil](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-brazil](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-brazil)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-brazil) 
- * [phive-rules-foundations/phive-rules-cii](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-cii](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cii) 
- * [phive-rules-foundations/phive-rules-crs](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-crs](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-crs)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-crs) 
- * [phive-rules-foundations/phive-rules-ebinterface](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-ebinterface](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ebinterface)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ebinterface) 
- * [phive-rules-foundations/phive-rules-facturae](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-facturae](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-facturae)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-facturae) 
- * [phive-rules-foundations/phive-rules-fatturapa](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-fatturapa](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-fatturapa)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-fatturapa) 
- * [phive-rules-foundations/phive-rules-finvoice](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-finvoice](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-finvoice)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-finvoice) 
- * [phive-rules-foundations/phive-rules-foundations-bom](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-foundations-bom](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-bom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-foundations-bom) 
- * [phive-rules-foundations/phive-rules-ksef](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-ksef](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ksef)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ksef) 
- * [phive-rules-foundations/phive-rules-osa](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-osa](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-osa)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-osa) 
- * [phive-rules-foundations/phive-rules-teapps](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-teapps](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-teapps)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-teapps) 
- * [phive-rules-foundations/phive-rules-ubl](https://github.com/phax/phive-rules-foundations) - Version 5.0.6 - JDK 17
+ * [phive-rules-foundations/phive-rules-ubl](https://github.com/phax/phive-rules-foundations) - Version 5.0.7 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ubl) 
  * [phive-rules-legacy](https://github.com/phax/phive-rules-legacy) - Version 4.6.1 - JDK 17
@@ -1235,88 +1235,88 @@ Current list of all released projects (as of 2026-11-15):
  * [phive-rules-shared](https://github.com/phax/phive-rules-shared) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-shared)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-shared) 
- * [phive-rules/phive-rules-all](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-all](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-all) 
- * [phive-rules/phive-rules-api](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-api](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-api)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-api) 
- * [phive-rules/phive-rules-bom](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-bom](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-bom)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-bom) 
- * [phive-rules/phive-rules-cius-dk](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-cius-dk](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-dk)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-dk) 
- * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-cius-pt](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-pt)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-pt) 
- * [phive-rules/phive-rules-cius-ro](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-cius-ro](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-ro)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-cius-ro) 
- * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-ehf](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ehf)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ehf) 
- * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-en16931](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-en16931)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-en16931) 
- * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-energieefactuur](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-energieefactuur)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-energieefactuur) 
- * [phive-rules/phive-rules-eracun](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-eracun](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-eracun)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-eracun) 
- * [phive-rules/phive-rules-france](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-france](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-france)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-france) 
- * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-isdoc](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-isdoc)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-isdoc) 
- * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-oioubl](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-oioubl) 
- * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-peppol](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol) 
- * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-peppol-italy](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-italy) 
- * [phive-rules/phive-rules-peppol-logistics](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-peppol-logistics](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-logistics)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-logistics) 
- * [phive-rules/phive-rules-peppol-pint](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-peppol-pint](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-pint)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-pint) 
- * [phive-rules/phive-rules-peppol-taxdata](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-peppol-taxdata](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-taxdata)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-peppol-taxdata) 
- * [phive-rules/phive-rules-serbia](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-serbia](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-serbia) 
- * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-setu](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-setu) 
- * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-simplerinvoicing](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-simplerinvoicing)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-simplerinvoicing) 
- * [phive-rules/phive-rules-singapore](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-singapore](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-singapore)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-singapore) 
- * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-svefaktura](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-svefaktura)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-svefaktura) 
- * [phive-rules/phive-rules-turkey](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-turkey](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-turkey)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-turkey) 
- * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-ublbe](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ublbe)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-ublbe) 
- * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-xrechnung](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-xrechnung)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-xrechnung) 
- * [phive-rules/phive-rules-zatca](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-zatca](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zatca)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zatca) 
- * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.6.4 - JDK 17
+ * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.7.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
  * [phive/phive-api](https://github.com/phax/phive) - Version 12.3.0 - JDK 17
