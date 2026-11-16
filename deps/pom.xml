@@ -64,32 +64,32 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.59.0</version>
+      <version>2.59.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -644,7 +644,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.6.6</version>
+      <version>1.6.7</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -704,7 +704,7 @@
     <dependency>
       <groupId>io.modelcontextprotocol.sdk</groupId>
       <artifactId>mcp</artifactId>
-      <version>2.1.0</version>
+      <version>2.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
@@ -967,7 +967,7 @@
     <dependency>
       <groupId>org.apache.wss4j</groupId>
       <artifactId>wss4j-ws-security-dom</artifactId>
-      <version>4.0.2</version>
+      <version>4.0.3</version>
     </dependency>
     <dependency>
       <groupId>org.verapdf</groupId>
@@ -1217,7 +1217,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>versions-maven-plugin</artifactId>
-      <version>2.25.1</version>
+      <version>2.25.2</version>
     </dependency>
     <!--Internal projects:-->
     <dependency>
@@ -2783,64 +2783,64 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-parent-pom</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-bom</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-testfiles</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-test</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-datatypes</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-api</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-csv</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-inmemory</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-mongodb</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-redis</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-reporting-backend-sql</artifactId>
-      <version>4.4.2</version>
+      <version>4.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -3888,7 +3888,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.25.1</version>
+        <version>2.25.2</version>
         <configuration>
           <allowSnapshots>false</allowSnapshots>
           <rulesUri>file:versions-maven-plugin-rules.xml</rulesUri>

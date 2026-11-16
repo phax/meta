@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.59.0", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.59.1", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -251,7 +251,7 @@ public enum EExternalDependency
 
   LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.9.1", EJDK.JDK11),
 
-  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.6", EJDK.JDK11),
+  LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.7", EJDK.JDK11),
 
   LOG4J2_BOM ("org.apache.logging.log4j", "log4j-bom", "2.26.1", EJDK.JDK8),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", LOG4J2_BOM),
@@ -273,7 +273,7 @@ public enum EExternalDependency
   LUCENE10_GROUPING ("org.apache.lucene", "lucene-grouping", LUCENE10_CORE),
   LUCENE10_QUERYPARSER ("org.apache.lucene", "lucene-queryparser", LUCENE10_CORE),
 
-  MCP ("io.modelcontextprotocol.sdk", "mcp", "2.1.0", EJDK.JDK11),
+  MCP ("io.modelcontextprotocol.sdk", "mcp", "2.2.0", EJDK.JDK11),
 
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.14.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
@@ -363,7 +363,7 @@ public enum EExternalDependency
   JAVAX_VALIDATION_API("javax.validation", "validation-api", "2.0.1.Final", EJDK.JDK8),
   JAKARTA_VALIDATION_API ("jakarta.validation", "jakarta.validation-api", "3.1.1", EJDK.JDK8),
 
-  WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.2", EJDK.JDK17),
+  WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.3", EJDK.JDK17),
 
   VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.4", EJDK.JDK17),
 
@@ -420,7 +420,7 @@ public enum EExternalDependency
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.16", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.16.0", EJDK.JDK8),
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "13.0.0", EJDK.JDK8),
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.25.1", EJDK.JDK8);
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.25.2", EJDK.JDK8);
 
   private final String m_sGroupID;
   private final String m_sArticfactID;

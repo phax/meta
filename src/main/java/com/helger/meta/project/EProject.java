@@ -719,6 +719,7 @@ public enum EProject implements IProject
                                 null),
   PH_SCHEMATRON_TESTFILES (PH_SCHEMATRON_PARENT_POM, "ph-schematron-testfiles", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_VALIDATOR (PH_SCHEMATRON_PARENT_POM, "ph-schematron-validator", EProjectType.JAVA_LIBRARY),
+  PH_SCHEMATRON_CLI (PH_SCHEMATRON_PARENT_POM, "ph-schematron-cli", EProjectType.JAVA_APPLICATION, null),
   PH_SCHEMATRON_MAVEN_PLUGIN (PH_SCHEMATRON_PARENT_POM, "ph-schematron-maven-plugin", EProjectType.MAVEN_PLUGIN),
   PH_SCHEMATRON_ANT_TASK (PH_SCHEMATRON_PARENT_POM, "ph-schematron-ant-task", EProjectType.JAVA_LIBRARY),
   @IsExcludedFromBOM
@@ -837,7 +838,7 @@ public enum EProject implements IProject
                                EProjectType.MAVEN_POM,
                                EHasPages.FALSE,
                                EHasWiki.FALSE,
-                               "4.4.2",
+                               "4.5.0",
                                EJDK.JDK17),
   PEPPOL_REPORTING_BOM (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-bom", EProjectType.MAVEN_POM),
   PEPPOL_REPORTING_TESTFILES (PEPPOL_REPORTING_PARENT_POM, "peppol-reporting-testfiles", EProjectType.JAVA_LIBRARY),
