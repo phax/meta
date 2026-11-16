@@ -22,6 +22,8 @@ import java.util.regex.Pattern;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.helger.base.string.StringHelper;
 import com.helger.base.system.SystemProperties;
@@ -36,6 +38,8 @@ import com.helger.xml.microdom.util.MicroHelper;
 
 final class Shared
 {
+  private static final Logger LOGGER = LoggerFactory.getLogger (Shared.class);
+
   // Parent POM requirements
   static final String PARENT_POM_GROUPID = "com.helger";
   static final String PARENT_POM_ARTIFACTID = "parent-pom";
@@ -114,6 +118,12 @@ final class Shared
             final IMicroElement eJdk = eActivation.getFirstChildElement ("jdk");
             if (eJdk != null)
               bCanUseProfile = matchesCurrentJDK (eJdk.getTextContentTrimmed ());
+            else
+            {
+              final String sActivationType = eProfile.getFirstChildElement ().getLocalName ();
+              if (!"id".equals (sActivationType))
+                LOGGER.warn ("Unuspported activation rule: '" + sActivationType + "'");
+            }
           }
 
           if (bCanUseProfile)

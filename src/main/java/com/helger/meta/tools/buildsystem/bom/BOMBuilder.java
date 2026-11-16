@@ -57,7 +57,6 @@ public final class BOMBuilder
   public static final ICommonsList <String> METADATA_ELEMENTS = new CommonsArrayList <> ("url",
                                                                                          "inceptionYear",
                                                                                          "licenses",
-                                                                                         "scm",
                                                                                          "organization",
                                                                                          "developers",
                                                                                          "issueManagement");
@@ -373,20 +372,31 @@ public final class BOMBuilder
     if (StringHelper.isEmpty (sVersion))
       throw new IllegalStateException ("Root pom.xml of " + aRoot.getProjectName () + " has no <version>");
 
+    final String sBOMArtifactID = getBOMArtifactID (aRoot);
+
     final ICommonsList <TopLevelElement> aTopLevel = getAllTopLevelElements (sRootPOMContent);
     final ICommonsList <String> aMetadataBlocks = new CommonsArrayList <> ();
     for (final String sElementName : METADATA_ELEMENTS)
     {
       final TopLevelElement aElement = aTopLevel.findFirst (x -> x.name ().equals (sElementName));
       if (aElement != null)
-        aMetadataBlocks.add (_normaliseLineEndings (sRootPOMContent.substring (aElement.start (), aElement.end ())));
+      {
+        String sXml = sRootPOMContent.substring (aElement.start (), aElement.end ());
+        if ("url".equals (sElementName))
+        {
+          // Add BOM submodule
+          // Disabled, as the link is not valid
+          if (false)
+            sXml = StringReplace.replaceAll (sXml, "</url>", "/" + sBOMArtifactID + "</url>");
+        }
+        aMetadataBlocks.add (_normaliseLineEndings (sXml));
+      }
     }
 
     final ICommonsList <BOMModel.Member> aMembers = new CommonsArrayList <> ();
     for (final IProject aChild : getAllBOMMemberProjects (aRoot))
       aMembers.add (new BOMModel.Member (aChild.getMavenGroupID (), aChild.getMavenArtifactID ()));
 
-    final String sBOMArtifactID = getBOMArtifactID (aRoot);
     return new BOMModel (sParentPOMVersion,
                          aRoot.getMavenGroupID (),
                          sBOMArtifactID,

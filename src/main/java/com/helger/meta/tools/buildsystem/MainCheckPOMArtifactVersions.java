@@ -35,6 +35,7 @@ import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
+import com.helger.meta.project.EProject;
 import com.helger.meta.project.EProjectOwner;
 import com.helger.meta.project.EProjectType;
 import com.helger.meta.project.IProject;
@@ -55,6 +56,9 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainCheckPOMArtifactVersions.class);
   private static final boolean DEBUG_LOG = false;
+
+  // The properties of the shared parent POM - read only once
+  private static ICommonsMap <String, String> s_aGlobalParentPOMProperties;
 
   @NonNull
   @Nonempty
@@ -130,6 +134,30 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     }
   }
 
+  @NonNull
+  private static ICommonsMap <String, String> _getGlobalParentPOMProperties ()
+  {
+    if (s_aGlobalParentPOMProperties == null)
+    {
+      final ICommonsMap <String, String> aProperties = new CommonsLinkedHashMap <> ();
+      final File fParentPOM = EProject.PH_PARENT_POM.getPOMFile ();
+      final IMicroDocument aParentPOM = MicroReader.readMicroXML (fParentPOM);
+      if (aParentPOM == null)
+        throw new IllegalStateException ("Failed to read parent POM " + fParentPOM.getAbsolutePath ());
+
+      // Read all own and JDK-active profile properties
+      Shared.forEachActiveProperty (aParentPOM.getDocumentElement (), (sTag, sRawValue) -> {
+        final String sValue = _getResolvedVar (sRawValue, aProperties);
+        aProperties.put ("${" + sTag + "}", sValue);
+      });
+
+      if (LOGGER.isDebugEnabled ())
+        LOGGER.debug ("Having the following parent POM properties: " + aProperties.toString ());
+      s_aGlobalParentPOMProperties = aProperties;
+    }
+    return s_aGlobalParentPOMProperties;
+  }
+
   private static void _validatePOM (@NonNull final IProject aProject, @NonNull final IMicroDocument aDoc)
   {
     if (LOGGER.isDebugEnabled ())
@@ -174,6 +202,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
         sParentPOMGroupId = sGroupId;
         if (!Shared.isSupportedGroupID (sGroupId))
         {
+          // Invalid group ID
           if (aProject.isPhProject ())
             _warn (aProject, "Parent POM uses non-standard groupId '" + sGroupId + "'");
         }
@@ -183,8 +212,14 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
           final String sArtifactId = MicroHelper.getChildTextContent (eParent, "artifactId");
           sParentPOMArtifactId = sArtifactId;
           boolean bCheckVersion = true;
-          if (!Shared.PARENT_POM_ARTIFACTID.equals (sArtifactId))
+          if (Shared.PARENT_POM_ARTIFACTID.equals (sArtifactId))
           {
+            // Add global properties from parent POM - own properties take precedence
+            _getGlobalParentPOMProperties ().forEach (aProperties::putIfAbsent);
+          }
+          else
+          {
+            // Special parent POM (e.g. for submodules)
             bCheckVersion = false;
             if (aProject.isNestedProject () && aProject.getParentProject ().getProjectName ().equals (sArtifactId))
             {
@@ -258,6 +293,7 @@ public final class MainCheckPOMArtifactVersions extends AbstractProjectMain
     if (aProject.isPhProject ())
     {
       final String sURL = MicroHelper.getChildTextContent (eRoot, "url");
+      // TODO fix to check parent base dir only
       final String sExpectedURL = "https://" +
                                   aProject.getHostingPlatform ().getDomain () +
                                   "/" +

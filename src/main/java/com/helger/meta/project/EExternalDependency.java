@@ -253,11 +253,12 @@ public enum EExternalDependency
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.6", EJDK.JDK11),
 
-  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", "2.26.1", EJDK.JDK8),
-  LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_CORE),
-  LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_CORE),
-  LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_CORE),
-  LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_CORE),
+  LOG4J2_BOM ("org.apache.logging.log4j", "log4j-bom", "2.26.1", EJDK.JDK8),
+  LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", LOG4J2_BOM),
+  LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_BOM),
+  LOG4J2_SLF4J2_IMPL ("org.apache.logging.log4j", "log4j-slf4j2-impl", LOG4J2_BOM),
+  LOG4J2_TO_SLF4J ("org.apache.logging.log4j", "log4j-to-slf4j", LOG4J2_BOM),
+  LOG4J2_WEB ("org.apache.logging.log4j", "log4j-web", LOG4J2_BOM),
 
   @VersionMaxExcl ("10.0.0")
   LUCENE9_CORE("org.apache.lucene", "lucene-core", "9.12.3", EJDK.JDK8),
@@ -365,6 +366,8 @@ public enum EExternalDependency
   WSS4J_4 ("org.apache.wss4j", "wss4j-ws-security-dom", "4.0.2", EJDK.JDK17),
 
   VERAPDF ("org.verapdf", "validation-model-jakarta", "1.30.4", EJDK.JDK17),
+
+  XERCES ("xerces", "xercesImpl", "2.12.2", EJDK.JDK8),
 
   XMLBEANS ("org.apache.xmlbeans", "xmlbeans", "5.4.1", EJDK.JDK8),
 
