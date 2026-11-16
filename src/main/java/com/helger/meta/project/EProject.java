@@ -1287,7 +1287,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.TRUE,
-                       "0.13.3",
+                       "0.14.0",
                        EJDK.JDK21),
   PHOSS_AP_BOM (PHOSS_AP_PARENT_POM, "phoss-ap-bom", EProjectType.MAVEN_POM),
   PHOSS_AP_API (PHOSS_AP_PARENT_POM, "phoss-ap-api", EProjectType.JAVA_LIBRARY),
