@@ -395,7 +395,7 @@ public final class MainCreateShellScripts extends AbstractProjectMain
         git commit -m "Normalize all the line endings\"""", true, false, "git_normalize_crlf.sh");
     if (false)
       _createShellScriptPerDir ("git fetch --prune", true, false, "git_fetch_prune.sh");
-    _createShellScriptPerDir ("git diff --quiet", true, false, "git_status.sh");
+    _createShellScriptPerDir ("git diff --quiet", true, true, "git_status.sh");
     if (false)
       _createShellScriptPerDir ("git reset --hard", true, false, "git_reset_hard.sh");
     _createShellScriptPerDir ("git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == \"[gone]\" {sub(\"refs/heads/\", \"\", $1); print $1}'); do git branch -D $branch; done",
