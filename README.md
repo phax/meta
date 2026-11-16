@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-15):
+Current list of all released projects (as of 2026-11-16):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -815,52 +815,52 @@ Current list of all released projects (as of 2026-11-15):
  * [ph-schedule/ph-schedule-bom](https://github.com/phax/ph-schedule) - Version 6.2.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-bom)](https://img.shields.io/maven-central/v/com.helger.schedule/ph-schedule-bom) 
- * [ph-schematron](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-parent-pom)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-parent-pom) 
- * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-ant-task](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-ant-task)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-ant-task) 
- * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-api](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-api)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-api) 
- * [ph-schematron/ph-schematron-benchmarks](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-benchmarks](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-benchmarks)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-benchmarks) 
- * [ph-schematron/ph-schematron-isosch](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-bom](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-bom)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-bom) 
+ * [ph-schematron/ph-schematron-isosch](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-isosch)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-isosch) 
- * [ph-schematron/ph-schematron-it](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-it](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-it)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-it) 
- * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-maven-plugin](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-schematron-maven-plugin) 
- * [ph-schematron/ph-schematron-model](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-model](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-model)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-model) 
- * [ph-schematron/ph-schematron-pure-xpath](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-pure-xpath](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure) 
- * [ph-schematron/ph-schematron-pure-xslt](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-pure-xslt](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt) 
- * [ph-schematron/ph-schematron-saxon](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
-
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-saxon)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-saxon) 
- * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt) 
- * [ph-schematron/ph-schematron-schxslt2](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-schxslt2](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt2)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt2) 
- * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-testfiles](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-testfiles)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-testfiles) 
- * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-validator](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-validator)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-validator) 
- * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 10.3.2 - JDK 17
+ * [ph-schematron/ph-schematron-xslt](https://github.com/phax/ph-schematron) - Version 10.3.3 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-xslt) 
  * [ph-scuba](https://github.com/phax/ph-scuba) - Version 1.1.1 - JDK 17
@@ -1543,6 +1543,14 @@ Current list of all unreleased projects:
  * [meta](https://github.com/phax/meta) - JDK 17
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
+
+ * [ph-schematron/ph-schematron-engine-factory](https://github.com/phax/ph-schematron) - JDK 17
+
+ * [ph-schematron/ph-schematron-phoxtrot](https://github.com/phax/ph-schematron) - JDK 17
+
+ * [ph-schematron/ph-schematron-saxon](https://github.com/phax/ph-schematron) - JDK 17
+
+ * [ph-schematron/ph-schematron-streamability](https://github.com/phax/ph-schematron) - JDK 17
 
 
 All deprecated projects:

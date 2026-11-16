@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright (C) 2014-2026 Philip Helger (www.helger.com)
-    philip[at]helger[dot]com
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-            http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261115</version>
+  <version>1.0.0-20261116</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -666,6 +648,11 @@
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-bom</artifactId>
+      <version>2.26.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
       <version>2.26.1</version>
     </dependency>
@@ -986,6 +973,11 @@
       <groupId>org.verapdf</groupId>
       <artifactId>validation-model-jakarta</artifactId>
       <version>1.30.4</version>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <version>2.12.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
@@ -2438,83 +2430,84 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-bom</artifactId>
+      <version>10.3.3</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>10.3.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.schematron</groupId>
-      <artifactId>ph-schematron-saxon</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-model</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-isosch</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt2</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure-xslt</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-benchmarks</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-it</artifactId>
-      <version>10.3.2</version>
+      <version>10.3.3</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
