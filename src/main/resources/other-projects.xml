@@ -24,7 +24,8 @@
   <basedir>/Users/philip/dev/git</basedir>
   <basedir>/Users/philip/dev/git-silvaconnect</basedir>
 
-  <project projectname="silvaconnect-ap-parent-pom" dir="poc-ap" projecttype="maven-pom" minjdk="25">
+  <!-- minjdk is 25 but for dependency management I leave it at 17 -->
+  <project projectname="silvaconnect-ap-parent-pom" dir="poc-ap" projecttype="maven-pom" minjdk="17">
     <project projectname="silvaconnect-commons" projecttype="java-library" />
     <project projectname="silvaconnect-codelists" projecttype="java-library" />
     <project projectname="silvaconnect-sbdh" projecttype="java-library" />

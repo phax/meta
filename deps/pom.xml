@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261116</version>
+  <version>1.0.0-20261117</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -64,32 +64,32 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>apache5-client</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>auth</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>cloudfront</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>regions</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3-transfer-manager</artifactId>
-      <version>2.59.1</version>
+      <version>2.59.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
@@ -349,7 +349,7 @@
     <dependency>
       <groupId>com.google.javascript</groupId>
       <artifactId>closure-compiler</artifactId>
-      <version>v20261109</version>
+      <version>v20261112</version>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -830,12 +830,12 @@
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry</artifactId>
-      <version>8.64.0</version>
+      <version>8.65.0</version>
     </dependency>
     <dependency>
       <groupId>io.sentry</groupId>
       <artifactId>sentry-logback</artifactId>
-      <version>8.64.0</version>
+      <version>8.65.0</version>
     </dependency>
     <dependency>
       <groupId>org.odftoolkit</groupId>
@@ -947,7 +947,7 @@
     <dependency>
       <groupId>io.swagger.core.v3</groupId>
       <artifactId>swagger-annotations-jakarta</artifactId>
-      <version>2.2.55</version>
+      <version>2.2.56</version>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
@@ -2383,131 +2383,131 @@
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-parent-pom</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-bom</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xdm</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xpath</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xslt</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xsd</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xpath-conformance</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xslt-conformance</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xsd-conformance</artifactId>
-      <version>0.2.0</version>
+      <version>0.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-bom</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-model</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-xslt</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-isosch</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-schxslt2</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-pure-xslt</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-testfiles</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.maven</groupId>
       <artifactId>ph-schematron-maven-plugin</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-ant-task</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-benchmarks</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-it</artifactId>
-      <version>10.3.3</version>
+      <version>11.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phase2</groupId>
@@ -2921,29 +2921,29 @@
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-parent-pom</artifactId>
-      <version>1.1.4</version>
+      <version>1.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-bom</artifactId>
-      <version>1.1.4</version>
+      <version>1.2.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-testfiles</artifactId>
-      <version>1.1.4</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd-datatypes</artifactId>
-      <version>1.1.4</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
       <artifactId>peppol-uae-tdd</artifactId>
-      <version>1.1.4</version>
+      <version>1.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.peppol</groupId>
@@ -3047,149 +3047,149 @@
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-parent-pom</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-bom</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-all</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-api</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-dk</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-pt</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-cius-ro</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ehf</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-en16931</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-energieefactuur</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-eracun</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-france</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-isdoc</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-oioubl</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-italy</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-logistics</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-pint</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-peppol-taxdata</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-serbia</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-setu</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-simplerinvoicing</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-singapore</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-svefaktura</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-turkey</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-ublbe</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-xrechnung</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zatca</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-zugferd</artifactId>
-      <version>4.7.0</version>
+      <version>4.7.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
