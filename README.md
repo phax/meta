@@ -1382,7 +1382,7 @@ Current list of all released projects (as of 2026-11-17):
  * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.14 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.15 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17

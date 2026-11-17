@@ -1059,7 +1059,7 @@ public enum EProject implements IProject
          EProjectType.JAVA_WEB_APPLICATION,
          EHasPages.FALSE,
          EHasWiki.FALSE,
-         "2.2.14",
+         "2.2.15",
          EJDK.JDK17),
   PHORM_CLIENT (null,
                 EProjectOwner.PROJECT_OWNER_PHAX,
