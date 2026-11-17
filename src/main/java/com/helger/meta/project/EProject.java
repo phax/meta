@@ -759,7 +759,7 @@ public enum EProject implements IProject
                        EProjectType.MAVEN_POM,
                        EHasPages.FALSE,
                        EHasWiki.FALSE,
-                       "4.2.3",
+                       "4.3.0",
                        EJDK.JDK17),
   PH_DIVER_BOM (PH_DIVER_PARENT_POM, "ph-diver-bom", EProjectType.MAVEN_POM),
   PH_DIVER_API (PH_DIVER_PARENT_POM, "ph-diver-api", EProjectType.JAVA_LIBRARY),
