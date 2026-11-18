@@ -37,6 +37,7 @@ import com.helger.datetime.helper.PDTFactory;
 import com.helger.meta.AbstractProjectMain;
 import com.helger.meta.project.EExternalDependency;
 import com.helger.meta.project.EJDK;
+import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
 import com.helger.xml.microdom.IMicroDocument;
@@ -152,7 +153,12 @@ public final class MainCreateKnownDependencyPOM extends AbstractProjectMain
       eDeps.addComment ("Internal projects:");
       for (final IProject aProject : ProjectList.getAllProjects (x -> x.isPhProject () &&
                                                                       x.isPublished () &&
-                                                                      !x.isDeprecated ()))
+                                                                      !x.isDeprecated () &&
+                                                                      x != EProject.PHOXTROT_XPATH_CONFORMANCE &&
+                                                                      x != EProject.PHOXTROT_XSLT_CONFORMANCE &&
+                                                                      x != EProject.PHOXTROT_XSD_CONFORMANCE &&
+                                                                      x != EProject.JCODEMODEL_EXAMPLES &&
+                                                                      x != EProject.JCODEMODEL_TESTS))
       {
         final IMicroElement eDep = eDeps.addElementNS (NS, "dependency");
         eDep.addElementNS (NS, "groupId").addText (aProject.getMavenGroupID ());

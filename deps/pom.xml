@@ -123,11 +123,6 @@
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-ext-jdk18on</artifactId>
-      <version>1.87</version>
-    </dependency>
-    <dependency>
-      <groupId>org.bouncycastle</groupId>
       <artifactId>bctls-jdk18on</artifactId>
       <version>1.87</version>
     </dependency>
@@ -382,6 +377,11 @@
       <version>12.1.5.0_special_89304</version>
     </dependency>
     <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.23</version>
+    </dependency>
+    <dependency>
       <groupId>tools.jackson</groupId>
       <artifactId>jackson-bom</artifactId>
       <version>3.3.0</version>
@@ -390,11 +390,6 @@
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>tools.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
       <version>3.3.0</version>
     </dependency>
     <dependency>
@@ -650,6 +645,7 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-bom</artifactId>
       <version>2.26.1</version>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -751,11 +747,13 @@
       <groupId>io.opentelemetry</groupId>
       <artifactId>opentelemetry-bom</artifactId>
       <version>1.68.0</version>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>io.opentelemetry.instrumentation</groupId>
       <artifactId>opentelemetry-instrumentation-bom</artifactId>
       <version>2.33.1</version>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
@@ -1461,17 +1459,6 @@
       <artifactId>plugin</artifactId>
       <version>4.4.1</version>
       <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.jcodemodel</groupId>
-      <artifactId>examples</artifactId>
-      <version>4.4.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.jcodemodel</groupId>
-      <artifactId>JCodeModel-Tests</artifactId>
-      <version>4.4.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger.xsd</groupId>
@@ -2413,21 +2400,6 @@
       <version>0.3.0</version>
     </dependency>
     <dependency>
-      <groupId>com.helger.phoxtrot</groupId>
-      <artifactId>phoxtrot-xpath-conformance</artifactId>
-      <version>0.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phoxtrot</groupId>
-      <artifactId>phoxtrot-xslt-conformance</artifactId>
-      <version>0.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phoxtrot</groupId>
-      <artifactId>phoxtrot-xsd-conformance</artifactId>
-      <version>0.3.0</version>
-    </dependency>
-    <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-parent-pom</artifactId>
       <version>11.0.0</version>
@@ -2442,6 +2414,16 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-api</artifactId>
+      <version>11.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-saxon</artifactId>
+      <version>11.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-phoxtrot</artifactId>
       <version>11.0.0</version>
     </dependency>
     <dependency>
@@ -2487,6 +2469,11 @@
     <dependency>
       <groupId>com.helger.schematron</groupId>
       <artifactId>ph-schematron-validator</artifactId>
+      <version>11.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.schematron</groupId>
+      <artifactId>ph-schematron-cli</artifactId>
       <version>11.0.0</version>
     </dependency>
     <dependency>
@@ -3558,12 +3545,6 @@
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>phoss-directory-bom</artifactId>
-      <version>0.20.0</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger</groupId>
       <artifactId>phoss-directory-indexer</artifactId>
       <version>0.20.0</version>
     </dependency>
@@ -3792,12 +3773,6 @@
     <dependency>
       <groupId>com.helger.phlox</groupId>
       <artifactId>phlox-parent-pom</artifactId>
-      <version>0.6.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>com.helger.phlox</groupId>
-      <artifactId>phlox-bom</artifactId>
       <version>0.6.1</version>
       <type>pom</type>
     </dependency>

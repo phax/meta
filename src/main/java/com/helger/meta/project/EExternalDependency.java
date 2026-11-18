@@ -66,7 +66,6 @@ public enum EExternalDependency
   BC_PG18 ("org.bouncycastle", "bcpg-jdk18on", BC_MAIL18),
   BC_JMAIL18 ("org.bouncycastle", "bcjmail-jdk18on", BC_MAIL18),
   BC_PKIX18 ("org.bouncycastle", "bcpkix-jdk18on", BC_MAIL18),
-  BC_PROV_EXT18 ("org.bouncycastle", "bcprov-ext-jdk18on", BC_MAIL18),
   BC_TLS18 ("org.bouncycastle", "bctls-jdk18on", "1.87", EJDK.JDK8),
 
   CLASSLOADER_LEAK_PROTECTION ("se.jiderhamn.classloader-leak-prevention",
@@ -149,10 +148,12 @@ public enum EExternalDependency
 
   IBM_JCC ("com.ibm.db2", "jcc", "12.1.5.0_special_89304", EJDK.JDK8),
 
+  // Used by v2 and v3
+  JACKSON_ANNOTATIONS ("com.fasterxml.jackson.core", "jackson-annotations", "2.23", EJDK.JDK17),
+
   @IsBOM
   JACKSON3_BOM ("tools.jackson", "jackson-bom", "3.3.0", EJDK.JDK17),
   JACKSON3_CORE ("tools.jackson.core", "jackson-core", JACKSON3_BOM),
-  JACKSON3_ANNOTATIONS ("tools.jackson.core", "jackson-annotations", JACKSON3_BOM),
   JACKSON3_DATABIND ("tools.jackson.core", "jackson-databind", JACKSON3_BOM),
   JACKSON3_MODULE_AFTERBURNER ("tools.jackson.module", "jackson-module-afterburner", JACKSON3_BOM),
   JACKSON3_DATAFORMAT_CBOR ("tools.jackson.dataformat", "jackson-dataformat-cbor", JACKSON3_BOM),
@@ -253,6 +254,7 @@ public enum EExternalDependency
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.7", EJDK.JDK11),
 
+  @IsBOM
   LOG4J2_BOM ("org.apache.logging.log4j", "log4j-bom", "2.26.1", EJDK.JDK8),
   LOG4J2_CORE ("org.apache.logging.log4j", "log4j-core", LOG4J2_BOM),
   LOG4J2_API ("org.apache.logging.log4j", "log4j-api", LOG4J2_BOM),
@@ -290,7 +292,10 @@ public enum EExternalDependency
   ORACLE_JDBC ("com.oracle.database.jdbc", "ojdbc-bom", "23.26.4.0.0", EJDK.JDK8),
   ORACLE_OJDBC8 ("com.oracle.database.jdbc", "ojdbc17", ORACLE_JDBC),
 
+  @IsBOM
   OTEL_BOM ("io.opentelemetry", "opentelemetry-bom", "1.68.0", EJDK.JDK17),
+
+  @IsBOM
   OTEL_INSTRUMENTATION_BOM ("io.opentelemetry.instrumentation",
                             "opentelemetry-instrumentation-bom",
                             "2.33.1",

@@ -830,6 +830,9 @@ Current list of all released projects (as of 2026-11-18):
  * [ph-schematron/ph-schematron-bom](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-bom)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-bom) 
+ * [ph-schematron/ph-schematron-cli](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-cli)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-cli) 
  * [ph-schematron/ph-schematron-isosch](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-isosch)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-isosch) 
@@ -842,12 +845,18 @@ Current list of all released projects (as of 2026-11-18):
  * [ph-schematron/ph-schematron-model](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-model)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-model) 
+ * [ph-schematron/ph-schematron-phoxtrot](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-phoxtrot)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-phoxtrot) 
  * [ph-schematron/ph-schematron-pure-xpath](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure) 
  * [ph-schematron/ph-schematron-pure-xslt](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-pure-xslt) 
+ * [ph-schematron/ph-schematron-saxon](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-saxon)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-saxon) 
  * [ph-schematron/ph-schematron-schxslt](https://github.com/phax/ph-schematron) - Version 11.0.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt)](https://img.shields.io/maven-central/v/com.helger.schematron/ph-schematron-schxslt) 
@@ -1352,9 +1361,6 @@ Current list of all released projects (as of 2026-11-18):
  * [phlox/phlox-api](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-api) 
- * [phlox/phlox-bom](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
-
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-bom)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-bom) 
  * [phlox/phlox-cii](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-cii) 
@@ -1436,9 +1442,6 @@ Current list of all released projects (as of 2026-11-18):
  * [phoss-directory](https://github.com/phax/phoss-directory) - Version 0.20.0 - JDK 25
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-parent-pom) 
- * [phoss-directory/phoss-directory-bom](https://github.com/phax/phoss-directory) - Version 0.20.0 - JDK 25
-
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-bom)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-bom) 
  * [phoss-directory/phoss-directory-indexer](https://github.com/phax/phoss-directory) - Version 0.20.0 - JDK 25
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer)](https://img.shields.io/maven-central/v/com.helger/phoss-directory-indexer) 
@@ -1544,15 +1547,13 @@ Current list of all unreleased projects:
 
  * [peppol-practical](https://github.com/phax/peppol-practical) - JDK 17
 
- * [ph-schematron/ph-schematron-cli](https://github.com/phax/ph-schematron) - JDK 21
-
  * [ph-schematron/ph-schematron-engine-factory](https://github.com/phax/ph-schematron) - JDK 21
 
- * [ph-schematron/ph-schematron-phoxtrot](https://github.com/phax/ph-schematron) - JDK 21
-
- * [ph-schematron/ph-schematron-saxon](https://github.com/phax/ph-schematron) - JDK 21
-
  * [ph-schematron/ph-schematron-streamability](https://github.com/phax/ph-schematron) - JDK 21
+
+ * [phlox/phlox-bom](https://github.com/phax/phlox) - JDK 17
+
+ * [phoss-directory/phoss-directory-bom](https://github.com/phax/phoss-directory) - JDK 25
 
 
 All deprecated projects:
