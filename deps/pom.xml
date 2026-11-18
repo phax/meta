@@ -1533,6 +1533,11 @@
       <version>4.1.2</version>
     </dependency>
     <dependency>
+      <groupId>com.helger.crepdl</groupId>
+      <artifactId>jcrepdl</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-jaxb-plugin</artifactId>
       <version>5.1.3</version>
@@ -3235,34 +3240,34 @@
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-parent-pom</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-bom</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-testfiles</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-core</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-verapdf</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.kaltblut</groupId>
       <artifactId>kaltblut-cli</artifactId>
-      <version>0.9.7</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>

@@ -83,22 +83,25 @@ Current list of all released projects (as of 2026-11-18):
  * [jcodemodel/plugin](https://github.com/phax/jcodemodel) - Version 4.4.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin)](https://img.shields.io/maven-central/v/com.helger.jcodemodel/plugin) 
- * [kaltblut](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [jcrepdl](https://github.com/phax/jcrepdl) - Version 1.0.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.crepdl/jcrepdl)](https://img.shields.io/maven-central/v/com.helger.crepdl/jcrepdl) 
+ * [kaltblut](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-parent-pom) 
- * [kaltblut/kaltblut-bom](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [kaltblut/kaltblut-bom](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-bom)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-bom) 
- * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [kaltblut/kaltblut-cli](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-cli) 
- * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [kaltblut/kaltblut-core](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-core) 
- * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [kaltblut/kaltblut-testfiles](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-testfiles) 
- * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 0.9.7 - JDK 17
+ * [kaltblut/kaltblut-verapdf](https://github.com/phax/kaltblut) - Version 1.0.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf)](https://img.shields.io/maven-central/v/com.helger.kaltblut/kaltblut-verapdf) 
  * [peppol-ap-support](https://github.com/phax/peppol-ap-support) - Version 2.4.2 - JDK 17
@@ -1540,8 +1543,6 @@ Current list of all released projects (as of 2026-11-18):
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.vefa/validator-tester)](https://img.shields.io/maven-central/v/com.helger.vefa/validator-tester) 
 
 Current list of all unreleased projects:
-
- * [jcrepdl](https://github.com/phax/jcrepdl) - JDK 17
 
  * [meta](https://github.com/phax/meta) - JDK 17
 
