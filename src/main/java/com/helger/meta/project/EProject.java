@@ -807,7 +807,7 @@ public enum EProject implements IProject
                              EProjectType.MAVEN_POM,
                              EHasPages.FALSE,
                              EHasWiki.FALSE,
-                             "13.2.3",
+                             "13.3.0",
                              EJDK.JDK17),
   PEPPOL_COMMONS_BOM (PEPPOL_COMMONS_PARENT_POM, "peppol-commons-bom", EProjectType.MAVEN_POM),
   EDELIVERY_COMMONS (PEPPOL_COMMONS_PARENT_POM, "edelivery-commons", EProjectType.JAVA_LIBRARY),
