@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-18):
+Current list of all released projects (as of 2026-11-19):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -494,22 +494,22 @@ Current list of all released projects (as of 2026-11-18):
  * [ph-dirindex-maven-plugin](https://github.com/phax/ph-dirindex-maven-plugin) - Version 5.0.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin)](https://img.shields.io/maven-central/v/com.helger.maven/ph-dirindex-maven-plugin) 
- * [ph-diver](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-parent-pom) 
- * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver/ph-diver-api](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-api) 
- * [ph-diver/ph-diver-bom](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver/ph-diver-bom](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-bom)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-bom) 
- * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver/ph-diver-repo](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo) 
- * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver/ph-diver-repo-http](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-http) 
- * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.3.0 - JDK 17
+ * [ph-diver/ph-diver-repo-s3](https://github.com/phax/ph-diver) - Version 4.4.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3)](https://img.shields.io/maven-central/v/com.helger.diver/ph-diver-repo-s3) 
  * [ph-ebinterface](https://github.com/phax/ph-ebinterface) - Version 8.1.1 - JDK 17
@@ -1551,6 +1551,8 @@ Current list of all unreleased projects:
  * [ph-schematron/ph-schematron-engine-factory](https://github.com/phax/ph-schematron) - JDK 21
 
  * [ph-schematron/ph-schematron-streamability](https://github.com/phax/ph-schematron) - JDK 21
+
+ * [ph-scuba/ph-scuba-cli](https://github.com/phax/ph-scuba) - JDK 17
 
  * [phlox/phlox-bom](https://github.com/phax/phlox) - JDK 17
 
