@@ -1992,29 +1992,29 @@
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-masterdata-parent-pom</artifactId>
-      <version>8.2.2</version>
+      <version>8.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-masterdata-bom</artifactId>
-      <version>8.2.2</version>
+      <version>8.3.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-masterdata</artifactId>
-      <version>8.2.2</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-tenancy</artifactId>
-      <version>8.2.2</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.masterdata</groupId>
       <artifactId>ph-tenancy-accarea</artifactId>
-      <version>8.2.2</version>
+      <version>8.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>

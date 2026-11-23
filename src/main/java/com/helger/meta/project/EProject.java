@@ -526,7 +526,7 @@ public enum EProject implements IProject
                             EProjectType.MAVEN_POM,
                             EHasPages.FALSE,
                             EHasWiki.FALSE,
-                            "8.2.2",
+                            "8.3.0",
                             EJDK.JDK17),
   PH_MASTERDATA_BOM (PH_MASTERDATA_PARENT_POM, "ph-masterdata-bom", EProjectType.MAVEN_POM),
   PH_MASTERDATA (PH_MASTERDATA_PARENT_POM, "ph-masterdata", EProjectType.JAVA_LIBRARY),
