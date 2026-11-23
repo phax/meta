@@ -250,7 +250,7 @@ public enum EExternalDependency
   JUNIT6_VINTAGE_ENGINE ("org.junit.vintage", "junit-vintage-engine", JUNIT6),
   JUNIT6_PLATFORM_LAUNCHER ("org.junit.platform", "junit-platform-launcher", JUNIT6),
 
-  LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.9.1", EJDK.JDK11),
+  LITTLEPROXY ("io.github.littleproxy", "littleproxy", "2.10.0", EJDK.JDK11),
 
   LOGBACK1 ("ch.qos.logback", "logback-classic", "1.6.8", EJDK.JDK11),
 
@@ -313,7 +313,7 @@ public enum EExternalDependency
   POI_OOXML ("org.apache.poi", "poi-ooxml", POI),
   POI_SCRATCHPAD ("org.apache.poi", "poi-scratchpad", POI),
 
-  POSTGRESQL ("org.postgresql", "postgresql", "42.7.14", EJDK.JDK8),
+  POSTGRESQL ("org.postgresql", "postgresql", "42.7.15", EJDK.JDK8),
 
   QUARTZ ("org.quartz-scheduler", "quartz", "2.5.2", EJDK.JDK8),
   RATELIMITJ_INMEMORY ("es.moki.ratelimitj", "ratelimitj-inmemory", "0.7.0", EJDK.JDK8),
@@ -323,7 +323,7 @@ public enum EExternalDependency
   SCHXSLT ("name.dmaus.schxslt", "schxslt", "1.10.1", EJDK.JDK8),
   SCHXSLT2 ("name.dmaus.schxslt", "schxslt2", "1.11.4", EJDK.JDK8),
 
-  SENTRY ("io.sentry", "sentry", "8.65.0", EJDK.JDK11),
+  SENTRY ("io.sentry", "sentry", "8.65.1", EJDK.JDK11),
   SENTRY_LOGBACK ("io.sentry", "sentry-logback", SENTRY),
 
   SIMPLE_ODF ("org.odftoolkit", "simple-odf", "0.9.0", EJDK.JDK8),
@@ -425,7 +425,7 @@ public enum EExternalDependency
   JAXB4_MAVEN_PLUGIN ("org.jvnet.jaxb", "jaxb-maven-plugin", "4.0.16", EJDK.JDK11),
   MAVEN_PLUGIN_PLUGIN ("org.apache.maven.plugins", "maven-plugin-plugin", "3.16.0", EJDK.JDK8),
   OWASP_DEPENDENCY_CHECK ("org.owasp", "dependency-check-maven", "13.0.0", EJDK.JDK8),
-  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.25.2", EJDK.JDK8);
+  VERSIONS_MAVEN_PLUGIN ("org.codehaus.mojo", "versions-maven-plugin", "2.25.3", EJDK.JDK8);
 
   private final String m_sGroupID;
   private final String m_sArticfactID;
