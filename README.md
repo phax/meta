@@ -1181,7 +1181,7 @@ Current list of all released projects (as of 2026-11-24):
  * [phase4/phase4-test](https://github.com/phax/phase4) - Version 4.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-test) 
- * [phive](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-parent-pom) 
  * [phive-binary](https://github.com/phax/phive-binary) - Version 0.3.0 - JDK 17
@@ -1331,31 +1331,31 @@ Current list of all released projects (as of 2026-11-24):
  * [phive-rules/phive-rules-zugferd](https://github.com/phax/phive-rules) - Version 4.7.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd)](https://img.shields.io/maven-central/v/com.helger.phive.rules/phive-rules-zugferd) 
- * [phive/phive-api](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-api](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-api)](https://img.shields.io/maven-central/v/com.helger.phive/phive-api) 
- * [phive/phive-bom](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-bom](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-bom)](https://img.shields.io/maven-central/v/com.helger.phive/phive-bom) 
- * [phive/phive-result](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-result](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result) 
- * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-result-html](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html)](https://img.shields.io/maven-central/v/com.helger.phive/phive-result-html) 
- * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-ves-engine](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-engine) 
- * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-ves-model](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-model) 
- * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-ves-repo](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo)](https://img.shields.io/maven-central/v/com.helger.phive/phive-ves-repo) 
- * [phive/phive-xml](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-xml](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml) 
- * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.3.1 - JDK 17
+ * [phive/phive-xml-source](https://github.com/phax/phive) - Version 12.3.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source)](https://img.shields.io/maven-central/v/com.helger.phive/phive-xml-source) 
  * [phlox](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
