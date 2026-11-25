@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-25):
+Current list of all released projects (as of 2026-11-26):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -1105,7 +1105,7 @@ Current list of all released projects (as of 2026-11-25):
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client) 
  * [phase4/phase4-bom](https://github.com/phax/phase4) - Version 4.9.2 - JDK 17
 
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phase4-bom)](https://img.shields.io/maven-central/v/com.helger/phase4-bom) 
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bom)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bom) 
  * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 4.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client) 
@@ -1496,31 +1496,34 @@ Current list of all released projects (as of 2026-11-25):
  * [phoss-smp/phoss-smp-webapp-xml](https://github.com/phax/phoss-smp) - Version 8.8.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml)](https://img.shields.io/maven-central/v/com.helger/phoss-smp-webapp-xml) 
- * [phoxtrot](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-parent-pom)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-parent-pom) 
- * [phoxtrot/phoxtrot-bom](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-bom](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-bom)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-bom) 
- * [phoxtrot/phoxtrot-xdm](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-cli](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-cli)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-cli) 
+ * [phoxtrot/phoxtrot-xdm](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xdm)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xdm) 
- * [phoxtrot/phoxtrot-xpath](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xpath](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath) 
- * [phoxtrot/phoxtrot-xpath-conformance](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xpath-conformance](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath-conformance)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xpath-conformance) 
- * [phoxtrot/phoxtrot-xsd](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xsd](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd) 
- * [phoxtrot/phoxtrot-xsd-conformance](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xsd-conformance](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd-conformance)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xsd-conformance) 
- * [phoxtrot/phoxtrot-xslt](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xslt](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt) 
- * [phoxtrot/phoxtrot-xslt-conformance](https://github.com/phax/phoxtrot) - Version 0.3.0 - JDK 21
+ * [phoxtrot/phoxtrot-xslt-conformance](https://github.com/phax/phoxtrot) - Version 0.4.0 - JDK 21
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt-conformance)](https://img.shields.io/maven-central/v/com.helger.phoxtrot/phoxtrot-xslt-conformance) 
  * [smp-query-webapp](https://github.com/Helger-IT/smp-query-webapp) - Version 1.0.2 - JDK 17
