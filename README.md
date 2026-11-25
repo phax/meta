@@ -3,7 +3,7 @@
 A meta project for easy management of my other projects :)
 This project is not meant to be released but only helps me internally to get all of them aligned.
 
-Current list of all released projects (as of 2026-11-24):
+Current list of all released projects (as of 2026-11-25):
 
  * [ebinterface-ubl-mapping](https://github.com/austriapro/ebinterface-ubl-mapping) - Version 6.1.3 - JDK 17
 
@@ -443,6 +443,9 @@ Current list of all released projects (as of 2026-11-24):
  * [ph-commons/ph-typeconvert](https://github.com/phax/ph-commons) - Version 12.8.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-typeconvert)](https://img.shields.io/maven-central/v/com.helger.commons/ph-typeconvert) 
+ * [ph-commons/ph-unittest-property](https://github.com/phax/ph-commons) - Version 12.8.0 - JDK 17
+
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-property)](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-property) 
  * [ph-commons/ph-unittest-support](https://github.com/phax/ph-commons) - Version 12.8.0 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support)](https://img.shields.io/maven-central/v/com.helger.commons/ph-unittest-support) 
@@ -1102,7 +1105,7 @@ Current list of all released projects (as of 2026-11-24):
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bdew-client) 
  * [phase4/phase4-bom](https://github.com/phax/phase4) - Version 4.9.2 - JDK 17
 
-   [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bom)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-bom) 
+   [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phase4-bom)](https://img.shields.io/maven-central/v/com.helger/phase4-bom) 
  * [phase4/phase4-cef-client](https://github.com/phax/phase4) - Version 4.9.2 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client)](https://img.shields.io/maven-central/v/com.helger.phase4/phase4-cef-client) 
@@ -1391,7 +1394,7 @@ Current list of all released projects (as of 2026-11-24):
  * [phlox/phlox-ubl](https://github.com/phax/phlox) - Version 0.6.1 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl)](https://img.shields.io/maven-central/v/com.helger.phlox/phlox-ubl) 
- * [phorm](https://github.com/phax/phorm) - Version 2.2.15 - JDK 17
+ * [phorm](https://github.com/phax/phorm) - Version 2.2.17 - JDK 17
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.helger/phorm)](https://img.shields.io/maven-central/v/com.helger/phorm) 
  * [phorm-client](https://github.com/phax/phorm-client) - Version 1.0.0 - JDK 17
