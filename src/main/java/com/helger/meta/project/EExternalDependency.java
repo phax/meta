@@ -52,7 +52,7 @@ public enum EExternalDependency
 
   AWS_LAMBDA_CORE ("com.amazonaws", "aws-lambda-java-core", "1.4.1", EJDK.JDK8),
 
-  AWS_S3 ("software.amazon.awssdk", "s3", "2.59.7", EJDK.JDK8),
+  AWS_S3 ("software.amazon.awssdk", "s3", "2.59.10", EJDK.JDK8),
   AWS_APACHE5_CLIENT ("software.amazon.awssdk", "apache5-client", AWS_S3),
   AWS_AUTH ("software.amazon.awssdk", "auth", AWS_S3),
   AWS_CLOUDFRONT ("software.amazon.awssdk", "cloudfront", AWS_S3),
@@ -280,7 +280,7 @@ public enum EExternalDependency
   MONGO_DRIVER_REACTIVESTREAMS ("org.mongodb", "mongodb-driver-reactivestreams", "5.15.0", EJDK.JDK8),
   MONGO_DRIVER_SYNC ("org.mongodb", "mongodb-driver-sync", MONGO_DRIVER_REACTIVESTREAMS),
 
-  MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.2.jre11", EJDK.JDK11),
+  MSSQL ("com.microsoft.sqlserver", "mssql-jdbc", "13.6.3.jre11", EJDK.JDK11),
 
   MYSQL ("com.mysql", "mysql-connector-j", "26.10.0", EJDK.JDK11),
 
