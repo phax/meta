@@ -697,7 +697,7 @@ public enum EProject implements IProject
                             EHasWiki.TRUE,
                             "11.0.0",
                             EJDK.JDK21, // Branch "v10"
-                            ProjectTail.builder ().lastPublishedVersion ("10.3.4").minJDK (EJDK.JDK17).build ()),
+                            ProjectTail.builder ().lastPublishedVersion ("10.3.5").minJDK (EJDK.JDK17).build ()),
   PH_SCHEMATRON_BOM (PH_SCHEMATRON_PARENT_POM, "ph-schematron-bom", EProjectType.MAVEN_POM),
   PH_SCHEMATRON_API (PH_SCHEMATRON_PARENT_POM, "ph-schematron-api", EProjectType.JAVA_LIBRARY),
   PH_SCHEMATRON_SAXON (PH_SCHEMATRON_PARENT_POM, "ph-schematron-saxon", EProjectType.JAVA_LIBRARY),
