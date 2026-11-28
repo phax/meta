@@ -41,6 +41,7 @@ import com.helger.meta.project.EJDK;
 import com.helger.meta.project.EProject;
 import com.helger.meta.project.IProject;
 import com.helger.meta.project.ProjectList;
+import com.helger.meta.project.ProjectTail;
 import com.helger.xml.microdom.IMicroDocument;
 import com.helger.xml.microdom.IMicroElement;
 import com.helger.xml.microdom.IMicroNode;
@@ -69,6 +70,10 @@ import com.helger.xml.microdom.util.MicroRecursiveIterator;
  * <li>the <code>com.helger:parent-pom</code> version of the <code>&lt;parent&gt;</code>
  * element.</li>
  * </ul>
+ * For referenced helger projects, a version whose major version belongs to one of the project's
+ * {@link com.helger.meta.project.ProjectTail tail trains} is only bumped to the last published
+ * version of that tail train (if its JDK baseline is compatible), and never to the tip.
+ * <p>
  * For external dependencies that exist in multiple variants sharing the same groupId/artifactId
  * (e.g. different JDK levels or {@link com.helger.meta.project.VersionMaxExcl major lines}), the
  * variant of the currently used major line is picked, and an info is emitted if a newer major line
@@ -421,6 +426,30 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
     return aBest;
   }
 
+  /**
+   * Find the tail train of the passed project that belongs to the passed major version.
+   *
+   * @param aProject
+   *        The referenced project. May not be <code>null</code>.
+   * @param nMajor
+   *        The major version currently in use.
+   * @return The matching tail train or <code>null</code> if the major version is not a tail train
+   *         (e.g. because it is the tip).
+   */
+  @Nullable
+  private static ProjectTail _findTailOfMajor (@NonNull final IProject aProject, final int nMajor)
+  {
+    // The tip always wins over a tail of the same major version
+    final Version aTipVersion = aProject.getLastPublishedVersion ();
+    if (aTipVersion != null && aTipVersion.getMajor () == nMajor)
+      return null;
+
+    for (final ProjectTail aTail : aProject.getAllTails ())
+      if (aTail.getMajorVersion () == nMajor)
+        return aTail;
+    return null;
+  }
+
   private static void _collectDependencyUpdates (@NonNull final IProject aProject,
                                                  @NonNull final ICommonsList <PomLayer> aLayers,
                                                  @NonNull final ICommonsMap <String, String> aUnionRaw,
@@ -517,16 +546,30 @@ public final class MainUpdatePOMArtifactVersions extends AbstractProjectMain
           final IProject aRef = ProjectList.getProjectOfName (sArtifactID);
           if (aRef == null || aRef.isDeprecated () || !aRef.isPublished ())
             continue;
-          // Avoid bumping to a version requiring a newer JDK than this project supports
-          if (!aRef.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
-            continue;
-          final String sLastPublished = aRef.getLastPublishedVersionString ();
-          if (Shared.isSnapshotVersion (sLastPublished))
-            continue;
-          // For a SNAPSHOT the equal base version means the release is out
-          if (bCurIsSnapshot ? aCurVer.isLE (aRef.getLastPublishedVersion ())
-                             : aCurVer.isLT (aRef.getLastPublishedVersion ()))
-            sNewVerStr = sLastPublished;
+
+          // If the current version belongs to a tail train, stay on that train
+          final ProjectTail aTail = _findTailOfMajor (aRef, aCurVer.getMajor ());
+          if (aTail != null)
+          {
+            if (!aTail.minimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
+              continue;
+            if (bCurIsSnapshot ? aCurVer.isLE (aTail.getLastPublishedVersion ())
+                               : aCurVer.isLT (aTail.getLastPublishedVersion ()))
+              sNewVerStr = aTail.lastPublishedVersionString ();
+          }
+          else
+          {
+            // Avoid bumping to a version requiring a newer JDK than this project supports
+            if (!aRef.getMinimumJDKVersion ().isCompatibleToRuntimeVersion (eProjectJDK))
+              continue;
+            final String sLastPublished = aRef.getLastPublishedVersionString ();
+            if (Shared.isSnapshotVersion (sLastPublished))
+              continue;
+            // For a SNAPSHOT the equal base version means the release is out
+            if (bCurIsSnapshot ? aCurVer.isLE (aRef.getLastPublishedVersion ())
+                               : aCurVer.isLT (aRef.getLastPublishedVersion ()))
+              sNewVerStr = sLastPublished;
+          }
         }
         else
         {
