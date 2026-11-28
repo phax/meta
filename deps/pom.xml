@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>external-dependencies</artifactId>
-  <version>1.0.0-20261127</version>
+  <version>1.0.0-20261128</version>
   <dependencies>
     <!--External dependencies:-->
     <dependency>
@@ -1943,34 +1943,34 @@
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-parent-pom</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-bom</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-api</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jdbc</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-jpa</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.db</groupId>
       <artifactId>ph-db-flyway</artifactId>
-      <version>8.5.3</version>
+      <version>8.5.4</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schedule</groupId>
@@ -2024,69 +2024,69 @@
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-parent-pom</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web-bom</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-dns</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-network</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-useragent</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-servlet</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-mail</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-smtp</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-httpclient</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-sitemap</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-web</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-xservlet</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger.web</groupId>
       <artifactId>ph-jsch</artifactId>
-      <version>11.5.1</version>
+      <version>11.5.2</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
@@ -2380,39 +2380,39 @@
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-parent-pom</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-bom</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-cli</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xdm</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xpath</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xslt</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.phoxtrot</groupId>
       <artifactId>phoxtrot-xsd</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.0</version>
     </dependency>
     <dependency>
       <groupId>com.helger.schematron</groupId>
